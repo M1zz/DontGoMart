@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B127DB2A3D365B004040EA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DA2A3D365B004040EA /* Task.swift */; };
+		58B127DD2A3D3673004040EA /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* CustomDatePicker.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ContentView.swift */; };
 		58B693D42A3B56E900FF904B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B693D32A3B56E900FF904B /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		58B127DA2A3D365B004040EA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		58B127DC2A3D3673004040EA /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		58B693CC2A3B56E800FF904B /* DontGoMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontGoMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontGoMartApp.swift; sourceTree = "<group>"; };
 		58B693D12A3B56E800FF904B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				58B693D12A3B56E800FF904B /* ContentView.swift */,
 				58B693D32A3B56E900FF904B /* Assets.xcassets */,
 				58B693D52A3B56E900FF904B /* Preview Content */,
+				58B127DA2A3D365B004040EA /* Task.swift */,
+				58B127DC2A3D3673004040EA /* CustomDatePicker.swift */,
 			);
 			path = DontGoMart;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B127DD2A3D3673004040EA /* CustomDatePicker.swift in Sources */,
+				58B127DB2A3D365B004040EA /* Task.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ContentView.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
@@ -397,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
@@ -414,9 +422,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
@@ -444,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -41,9 +41,29 @@ struct DayEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
+
+struct MartHolyday: Hashable {
+    let month: Int
+    let day: Int
+}
 struct CalendarWidgetEntryView : View {
     var entry: DayEntry
     var config: MonthConfig
+    
+    var data = [MartHolyday(month: 6, day: 25),
+                MartHolyday(month: 7, day: 9),
+                MartHolyday(month: 7, day: 23),
+                MartHolyday(month: 8, day: 13),
+                MartHolyday(month: 8, day: 27),
+                MartHolyday(month: 9, day: 10),
+                MartHolyday(month: 9, day: 24),
+                MartHolyday(month: 10, day: 8),
+                MartHolyday(month: 10, day: 22),
+                MartHolyday(month: 11, day: 12),
+                MartHolyday(month: 11, day: 26),
+                MartHolyday(month: 12, day: 10),
+                MartHolyday(month: 12, day: 24)
+    ]
     
     init(entry: DayEntry) {
         self.entry = entry
@@ -55,6 +75,16 @@ struct CalendarWidgetEntryView : View {
             ContainerRelativeShape()
                 .fill(config.backgroundColor.gradient)
             VStack {
+                ForEach(data, id: \.self) { datum in
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day) {
+                        Text("Don't go mart")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    }
+                }
+                
                 HStack(spacing: 0) {
                     Text(config.emojiText)
                         .font(.title)
@@ -73,6 +103,12 @@ struct CalendarWidgetEntryView : View {
             .padding()
         }
     }
+    
+    func dateToDisplay(month: Int, day: Int) -> Date {
+        let components = DateComponents(calendar: Calendar.current,
+                                        year: 2023, month: month, day: day)
+        return Calendar.current.date(from: components)!
+    }
 }
 
 struct CalendarWidget: Widget {
@@ -90,13 +126,13 @@ struct CalendarWidget: Widget {
 
 struct CalendarWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 3, day: 5), configuration: ConfigurationIntent()))
+        CalendarWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 6, day: 28), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
     
     static func dateToDisplay(month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
-                                        year: 2022, month: month, day: day)
+                                        year: 2023, month: month, day: day)
         return Calendar.current.date(from: components)!
     }
 }
