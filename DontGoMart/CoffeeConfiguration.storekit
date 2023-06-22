@@ -1,0 +1,38 @@
+{
+  "identifier" : "B2E09D5F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "4E0AEB64",
+      "localizations" : [
+        {
+          "description" : "Cup of coffee",
+          "displayName" : "Coffee",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "커피 한 잔 사주세요",
+          "displayName" : "커피한잔",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.dontgomart.Coffee",
+      "referenceName" : "Coffee",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
