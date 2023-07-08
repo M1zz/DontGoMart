@@ -13,6 +13,10 @@ struct ContentView: View {
     @StateObject var storeKit = StoreKitManager()
     @AppStorage("isPremium") var isPremium: Bool = false
     @State private var isShowingSettings = false
+    //@AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = false
+    
+    @State private var isCostco: Bool = false
+    @State private var selectedLocation: Int = 0
     
     var body: some View {
         NavigationStack {
@@ -21,7 +25,9 @@ struct ContentView: View {
                 VStack(spacing: 20){
                     
                     // Custom Date Picker....
-                    CustomDatePicker(currentDate: $currentDate)
+                    CustomDatePicker(currentDate: $currentDate,
+                                     isCostco: isCostco,
+                                     selectedLocation: selectedLocation)
                 }
                 .padding(.vertical)
                 ForEach(storeKit.storeProducts) {product in
@@ -57,7 +63,10 @@ struct ContentView: View {
                 }
             }
         }
-        .sheet(isPresented: $isShowingSettings) {
+        .sheet(isPresented: $isShowingSettings ,onDismiss: {
+            isCostco = UserDefaults(suiteName: "group.com.leeo.DontGoMart")?.bool(forKey: "isNormal") ?? false
+            selectedLocation = UserDefaults(suiteName: "group.com.leeo.DontGoMart")?.integer(forKey: "selectedLocation") ?? 0
+        }) {
             SettingsView(isShowingSettings: $isShowingSettings)
         }
     }

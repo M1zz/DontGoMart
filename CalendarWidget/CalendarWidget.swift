@@ -184,7 +184,7 @@ struct CalendarWidgetEntryView : View {
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                                   datum.martType == .costcoDaegu  {
-                            Text("Don't go costco\nweekend")
+                            Text("Don't go costco\nMonday")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .minimumScaleFactor(0.6)
@@ -214,7 +214,7 @@ struct CalendarWidgetEntryView : View {
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                                   datum.martType == .costcoIlsan  {
-                            Text("Don't go costco\nweekend")
+                            Text("Don't go costco\nWednesday")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .minimumScaleFactor(0.6)
@@ -244,7 +244,7 @@ struct CalendarWidgetEntryView : View {
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                     entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                                   datum.martType == .costcoUlsan  {
-                            Text("Don't go costco\nweekend")
+                            Text("Don't go costco\nsoon")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .minimumScaleFactor(0.6)
