@@ -87,7 +87,17 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 7, day: 23, martType: .costcoNormal),
                 MartHolyday(month: 7, day: 23, martType: .costcoUlsan),
                 MartHolyday(month: 7, day: 24, martType: .costcoDaegu),
-                MartHolyday(month: 7, day: 26, martType: .costcoIlsan)
+                MartHolyday(month: 7, day: 26, martType: .costcoIlsan),
+                
+                
+                MartHolyday(month: 8, day: 13, martType: .costcoNormal),
+                MartHolyday(month: 8, day: 27, martType: .costcoNormal),
+                MartHolyday(month: 8, day: 14, martType: .costcoDaegu),
+                MartHolyday(month: 8, day: 28, martType: .costcoDaegu),
+                MartHolyday(month: 8, day: 9, martType: .costcoIlsan),
+                MartHolyday(month: 8, day: 23, martType: .costcoIlsan),
+                MartHolyday(month: 8, day: 9, martType: .costcoUlsan),
+                MartHolyday(month: 8, day: 27, martType: .costcoUlsan)
     ]
     
     init(entry: DayEntry) {
