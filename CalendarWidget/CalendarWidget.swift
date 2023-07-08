@@ -82,6 +82,24 @@ struct CalendarWidgetEntryView : View {
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1) {
+                        Text("Don't go mart\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                              entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6) {
+                        Text("Don't go mart\nweekend")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
                     }
                 }
                 
@@ -126,7 +144,7 @@ struct CalendarWidget: Widget {
 
 struct CalendarWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 6, day: 28), configuration: ConfigurationIntent()))
+        CalendarWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 7, day: 5), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
     
