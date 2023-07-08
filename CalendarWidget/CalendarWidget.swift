@@ -97,7 +97,47 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 8, day: 9, martType: .costcoIlsan),
                 MartHolyday(month: 8, day: 23, martType: .costcoIlsan),
                 MartHolyday(month: 8, day: 9, martType: .costcoUlsan),
-                MartHolyday(month: 8, day: 27, martType: .costcoUlsan)
+                MartHolyday(month: 8, day: 27, martType: .costcoUlsan),
+                
+                // CostcoNormal Holidays
+                MartHolyday(month: 9, day: 10, martType: .costcoNormal),
+                MartHolyday(month: 9, day: 24, martType: .costcoNormal),
+                MartHolyday(month: 10, day: 8, martType: .costcoNormal),
+                MartHolyday(month: 10, day: 22, martType: .costcoNormal),
+                MartHolyday(month: 11, day: 12, martType: .costcoNormal),
+                MartHolyday(month: 11, day: 26, martType: .costcoNormal),
+                MartHolyday(month: 12, day: 10, martType: .costcoNormal),
+                MartHolyday(month: 12, day: 24, martType: .costcoNormal),
+
+                // CostcoDaegu Holidays
+                MartHolyday(month: 9, day: 11, martType: .costcoDaegu),
+                MartHolyday(month: 9, day: 25, martType: .costcoDaegu),
+                MartHolyday(month: 10, day: 9, martType: .costcoDaegu),
+                MartHolyday(month: 10, day: 23, martType: .costcoDaegu),
+                MartHolyday(month: 11, day: 13, martType: .costcoDaegu),
+                MartHolyday(month: 11, day: 27, martType: .costcoDaegu),
+                MartHolyday(month: 12, day: 11, martType: .costcoDaegu),
+                MartHolyday(month: 12, day: 25, martType: .costcoDaegu),
+
+                // CostcoIlsan Holidays
+                MartHolyday(month: 9, day: 13, martType: .costcoIlsan),
+                MartHolyday(month: 9, day: 27, martType: .costcoIlsan),
+                MartHolyday(month: 10, day: 11, martType: .costcoIlsan),
+                MartHolyday(month: 10, day: 25, martType: .costcoIlsan),
+                MartHolyday(month: 11, day: 8, martType: .costcoIlsan),
+                MartHolyday(month: 11, day: 22, martType: .costcoIlsan),
+                MartHolyday(month: 12, day: 13, martType: .costcoIlsan),
+                MartHolyday(month: 12, day: 27, martType: .costcoIlsan),
+
+                // CostcoUlsan Holidays
+                MartHolyday(month: 9, day: 13, martType: .costcoUlsan),
+                MartHolyday(month: 9, day: 24, martType: .costcoUlsan),
+                MartHolyday(month: 10, day: 11, martType: .costcoUlsan),
+                MartHolyday(month: 10, day: 22, martType: .costcoUlsan),
+                MartHolyday(month: 11, day: 8, martType: .costcoUlsan),
+                MartHolyday(month: 11, day: 26, martType: .costcoUlsan),
+                MartHolyday(month: 12, day: 13, martType: .costcoUlsan),
+                MartHolyday(month: 12, day: 24, martType: .costcoUlsan)
     ]
     
     init(entry: DayEntry) {
