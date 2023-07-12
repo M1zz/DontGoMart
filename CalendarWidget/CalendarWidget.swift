@@ -13,15 +13,15 @@ struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> DayEntry {
         DayEntry(date: Date(), configuration: ConfigurationIntent())
     }
-
+    
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (DayEntry) -> ()) {
         let entry = DayEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
-
+    
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [DayEntry] = []
-
+        
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
             let entryDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: currentDate)!
@@ -29,7 +29,7 @@ struct Provider: IntentTimelineProvider {
             let entry = DayEntry(date: startOfDate, configuration: configuration)
             entries.append(entry)
         }
-
+        
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -42,65 +42,269 @@ struct DayEntry: TimelineEntry {
 }
 
 
-struct MartHolyday: Hashable {
+struct MartHolyday: Hashable, Codable {
     let month: Int
     let day: Int
+    let martType: MartType
 }
+
+enum MartType: Codable {
+    case normal
+    case costcoNormal
+    case costcoDaegu
+    case costcoIlsan
+    case costcoUlsan
+}
+
 struct CalendarWidgetEntryView : View {
+    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = false
+    @AppStorage("selectedLocation", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var selectedLocation: Int = 0
+    @State private var selectedMartType: MartType = .costcoNormal
+    
     var entry: DayEntry
     var config: MonthConfig
     
-    var data = [MartHolyday(month: 6, day: 25),
-                MartHolyday(month: 7, day: 9),
-                MartHolyday(month: 7, day: 23),
-                MartHolyday(month: 8, day: 13),
-                MartHolyday(month: 8, day: 27),
-                MartHolyday(month: 9, day: 10),
-                MartHolyday(month: 9, day: 24),
-                MartHolyday(month: 10, day: 8),
-                MartHolyday(month: 10, day: 22),
-                MartHolyday(month: 11, day: 12),
-                MartHolyday(month: 11, day: 26),
-                MartHolyday(month: 12, day: 10),
-                MartHolyday(month: 12, day: 24)
+    var data = [MartHolyday(month: 6, day: 25, martType: .normal),
+                MartHolyday(month: 7, day: 9, martType: .normal),
+                MartHolyday(month: 7, day: 23, martType: .normal),
+                MartHolyday(month: 8, day: 13, martType: .normal),
+                MartHolyday(month: 8, day: 27, martType: .normal),
+                MartHolyday(month: 9, day: 10, martType: .normal),
+                MartHolyday(month: 9, day: 24, martType: .normal),
+                MartHolyday(month: 10, day: 8, martType: .normal),
+                MartHolyday(month: 10, day: 22, martType: .normal),
+                MartHolyday(month: 11, day: 12, martType: .normal),
+                MartHolyday(month: 11, day: 26, martType: .normal),
+                MartHolyday(month: 12, day: 10, martType: .normal),
+                MartHolyday(month: 12, day: 24, martType: .normal),
+                
+                // Costco
+                
+                MartHolyday(month: 7, day: 9, martType: .costcoNormal),
+                MartHolyday(month: 7, day: 10, martType: .costcoDaegu),
+                MartHolyday(month: 7, day: 12, martType: .costcoIlsan),
+                MartHolyday(month: 7, day: 12, martType: .costcoUlsan),
+                MartHolyday(month: 7, day: 23, martType: .costcoNormal),
+                MartHolyday(month: 7, day: 23, martType: .costcoUlsan),
+                MartHolyday(month: 7, day: 24, martType: .costcoDaegu),
+                MartHolyday(month: 7, day: 26, martType: .costcoIlsan),
+                
+                
+                MartHolyday(month: 8, day: 13, martType: .costcoNormal),
+                MartHolyday(month: 8, day: 27, martType: .costcoNormal),
+                MartHolyday(month: 8, day: 14, martType: .costcoDaegu),
+                MartHolyday(month: 8, day: 28, martType: .costcoDaegu),
+                MartHolyday(month: 8, day: 9, martType: .costcoIlsan),
+                MartHolyday(month: 8, day: 23, martType: .costcoIlsan),
+                MartHolyday(month: 8, day: 9, martType: .costcoUlsan),
+                MartHolyday(month: 8, day: 27, martType: .costcoUlsan),
+                
+                // CostcoNormal Holidays
+                MartHolyday(month: 9, day: 10, martType: .costcoNormal),
+                MartHolyday(month: 9, day: 24, martType: .costcoNormal),
+                MartHolyday(month: 10, day: 8, martType: .costcoNormal),
+                MartHolyday(month: 10, day: 22, martType: .costcoNormal),
+                MartHolyday(month: 11, day: 12, martType: .costcoNormal),
+                MartHolyday(month: 11, day: 26, martType: .costcoNormal),
+                MartHolyday(month: 12, day: 10, martType: .costcoNormal),
+                MartHolyday(month: 12, day: 24, martType: .costcoNormal),
+
+                // CostcoDaegu Holidays
+                MartHolyday(month: 9, day: 11, martType: .costcoDaegu),
+                MartHolyday(month: 9, day: 25, martType: .costcoDaegu),
+                MartHolyday(month: 10, day: 9, martType: .costcoDaegu),
+                MartHolyday(month: 10, day: 23, martType: .costcoDaegu),
+                MartHolyday(month: 11, day: 13, martType: .costcoDaegu),
+                MartHolyday(month: 11, day: 27, martType: .costcoDaegu),
+                MartHolyday(month: 12, day: 11, martType: .costcoDaegu),
+                MartHolyday(month: 12, day: 25, martType: .costcoDaegu),
+
+                // CostcoIlsan Holidays
+                MartHolyday(month: 9, day: 13, martType: .costcoIlsan),
+                MartHolyday(month: 9, day: 27, martType: .costcoIlsan),
+                MartHolyday(month: 10, day: 11, martType: .costcoIlsan),
+                MartHolyday(month: 10, day: 25, martType: .costcoIlsan),
+                MartHolyday(month: 11, day: 8, martType: .costcoIlsan),
+                MartHolyday(month: 11, day: 22, martType: .costcoIlsan),
+                MartHolyday(month: 12, day: 13, martType: .costcoIlsan),
+                MartHolyday(month: 12, day: 27, martType: .costcoIlsan),
+
+                // CostcoUlsan Holidays
+                MartHolyday(month: 9, day: 13, martType: .costcoUlsan),
+                MartHolyday(month: 9, day: 24, martType: .costcoUlsan),
+                MartHolyday(month: 10, day: 11, martType: .costcoUlsan),
+                MartHolyday(month: 10, day: 22, martType: .costcoUlsan),
+                MartHolyday(month: 11, day: 8, martType: .costcoUlsan),
+                MartHolyday(month: 11, day: 26, martType: .costcoUlsan),
+                MartHolyday(month: 12, day: 13, martType: .costcoUlsan),
+                MartHolyday(month: 12, day: 24, martType: .costcoUlsan)
     ]
     
     init(entry: DayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
     }
-
+    
     var body: some View {
         ZStack {
             ContainerRelativeShape()
                 .fill(config.backgroundColor.gradient)
             VStack {
                 ForEach(data, id: \.self) { datum in
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day) {
-                        Text("Don't go mart")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1) {
-                        Text("Don't go mart\ntomorrow")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                              entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6) {
-                        Text("Don't go mart\nweekend")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
+                    if selectedMartType == .normal {
+                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                           datum.martType == .normal {
+                            Text("Don't go mart")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.red)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                                  datum.martType == .normal {
+                            Text("Don't go mart\ntomorrow")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                                  datum.martType == .normal {
+                            Text("Don't go mart\nweekend")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        }
+                    } else if selectedMartType == .costcoNormal {
+                        
+                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                           datum.martType == .costcoNormal {
+                            Text("Don't go costco")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.red)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                                  datum.martType == .costcoNormal {
+                            Text("Don't go costco\ntomorrow")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                                  datum.martType == .costcoNormal  {
+                            Text("Don't go costco\nweekend")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                            
+                        }
                     }
+                    else if selectedMartType == .costcoDaegu {
+                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                           datum.martType == .costcoDaegu {
+                            Text("Don't go costco")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.red)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                                  datum.martType == .costcoDaegu {
+                            Text("Don't go costco\ntomorrow")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                                  datum.martType == .costcoDaegu  {
+                            Text("Don't go costco\nMonday")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                    } else if selectedMartType == .costcoIlsan {
+                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                           datum.martType == .costcoIlsan {
+                            Text("Don't go costco")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.red)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                                  datum.martType == .costcoIlsan {
+                            Text("Don't go costco\ntomorrow")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                                  datum.martType == .costcoIlsan  {
+                            Text("Don't go costco\nWednesday")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                    } else if selectedMartType == .costcoUlsan {
+                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                           datum.martType == .costcoUlsan {
+                            Text("Don't go costco")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.red)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                                  datum.martType == .costcoUlsan {
+                            Text("Don't go costco\ntomorrow")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                                  datum.martType == .costcoUlsan  {
+                            Text("Don't go costco\nsoon")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.6)
+                                .foregroundColor(.palePink)
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                    }
+                    
+                    
                 }
                 
                 HStack(spacing: 0) {
@@ -120,6 +324,22 @@ struct CalendarWidgetEntryView : View {
             }
             .padding()
         }
+        .onAppear {
+            print(isCostco.description)
+            if isCostco {
+                if selectedLocation == 0 {
+                    selectedMartType = .costcoNormal
+                } else if selectedLocation == 1 {
+                    selectedMartType = .costcoDaegu
+                } else if selectedLocation == 2 {
+                    selectedMartType = .costcoIlsan
+                } else if selectedLocation == 3 {
+                    selectedMartType = .costcoUlsan
+                }
+            } else if !isCostco {
+                selectedMartType = .normal
+            }
+        }
     }
     
     func dateToDisplay(month: Int, day: Int) -> Date {
@@ -131,7 +351,7 @@ struct CalendarWidgetEntryView : View {
 
 struct CalendarWidget: Widget {
     let kind: String = "MonthlyWidget"
-
+    
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             CalendarWidgetEntryView(entry: entry)

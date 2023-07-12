@@ -12,7 +12,11 @@ struct ContentView: View {
     @State var currentDate: Date = Date()
     @StateObject var storeKit = StoreKitManager()
     @AppStorage("isPremium") var isPremium: Bool = false
-
+    @State private var isShowingSettings = false
+    //@AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = false
+    
+    @State private var isCostco: Bool = false
+    @State private var selectedLocation: Int = 0
     
     var body: some View {
         NavigationStack {
@@ -21,7 +25,9 @@ struct ContentView: View {
                 VStack(spacing: 20){
                     
                     // Custom Date Picker....
-                    CustomDatePicker(currentDate: $currentDate)
+                    CustomDatePicker(currentDate: $currentDate,
+                                     isCostco: isCostco,
+                                     selectedLocation: selectedLocation)
                 }
                 .padding(.vertical)
                 ForEach(storeKit.storeProducts) {product in
@@ -30,57 +36,39 @@ struct ContentView: View {
                         Spacer()
                         Button(action: {
                             // purchase this product
-                            Task { try await storeKit.purchase(product)
+                            Task { try await
+                                storeKit.purchase(product)
                                 isPremium = true
                             }
                         }) {
                             CourseItem(storeKit: storeKit, product: product)
                         }
                     }
-                    
                 }
                 Divider()
                 Button("Restore Purchases", action: {
                     Task {
-                        //This call displays a system prompt that asks users to authenticate with their App Store credentials.
-                        //Call this function only in response to an explicit user action, such as tapping a button.
                         try? await AppStore.sync()
                     }
                 })
             }
             .navigationTitle(isPremium ? "Don't go mart day pro" : "Don't go mart day")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isShowingSettings.toggle()
+                    }) {
+                        Image(systemName: "gear")
+                    }
+                }
+            }
         }
-        
-        // Safe Area View...
-//        .safeAreaInset(edge: .bottom) {
-//
-//            HStack{
-//
-//                Button {
-//
-//                } label: {
-//                    Text("Add Task")
-//                        .fontWeight(.bold)
-//                        .padding(.vertical)
-//                        .frame(maxWidth: .infinity)
-//                        .background(Color("Orange"),in: Capsule())
-//                }
-//
-//                Button {
-//
-//                } label: {
-//                    Text("Add Remainder")
-//                        .fontWeight(.bold)
-//                        .padding(.vertical)
-//                        .frame(maxWidth: .infinity)
-//                        .background(Color("Purple"),in: Capsule())
-//                }
-//            }
-//            .padding(.horizontal)
-//            .padding(.top,10)
-//            .foregroundColor(.white)
-//            .background(.ultraThinMaterial)
-//        }
+        .sheet(isPresented: $isShowingSettings ,onDismiss: {
+            isCostco = UserDefaults(suiteName: "group.com.leeo.DontGoMart")?.bool(forKey: "isNormal") ?? false
+            selectedLocation = UserDefaults(suiteName: "group.com.leeo.DontGoMart")?.integer(forKey: "selectedLocation") ?? 0
+        }) {
+            SettingsView(isShowingSettings: $isShowingSettings)
+        }
     }
 }
 
@@ -110,7 +98,7 @@ struct CourseItem: View {
 
 class EntitlementManager: ObservableObject {
     static let userDefaults = UserDefaults(suiteName: "group.com.leeo.DontGoMart")!
-
+    
     @AppStorage("hasPro", store: userDefaults)
     var hasPro: Bool = false
 }
