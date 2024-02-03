@@ -9,25 +9,22 @@ import SwiftUI
 
 struct CustomDatePicker: View {
     @Binding var currentDate: Date
-    
-    // Month update on arrow button clicks...
     @State var currentMonth: Int = 0
+    @State var selectedMartType: MartType = .normal
+    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = true
+    @AppStorage("selectedLocation", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var selectedLocation: Int = 0
     
     var body: some View {
-        
-        VStack(spacing: 35){
+        VStack(spacing: 35) {
             
-            // Days...
             let days: [String] = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
             
             HStack(spacing: 20){
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    
                     Text(extraDate()[0])
                         .font(.caption)
                         .fontWeight(.semibold)
-                    
                     Text(extraDate()[1])
                         .font(.title.bold())
                 }
@@ -67,13 +64,11 @@ struct CustomDatePicker: View {
                 }
             }
             
-            // Dates....
-            // Lazy Grid..
             let columns = Array(repeating: GridItem(.flexible()), count: 7)
             
             LazyVGrid(columns: columns,spacing: 10) {
                 
-                ForEach(extractDate()){value in
+                ForEach(extractDate()) { value in
                     
                     CardView(value: value)
                         .background(
@@ -96,16 +91,20 @@ struct CustomDatePicker: View {
                     .frame(maxWidth: .infinity,alignment: .leading)
                     .padding(.vertical,20)
                 
-                if let task = tasks.first(where: { task in
+                let filteredTasks = tasks.filter { item in
+                    return item.type == selectedMartType
+                }
+                
+                if let task = filteredTasks.first(where: { task in
                     return isSameDay(date1: task.taskDate, date2: currentDate)
-                }){
+                }) {
                     
-                    ForEach(task.task){task in
+                    ForEach(task.task) { task in
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
                             // For Custom Timing...
-                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)),style: .time)
+//                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)),style: .time)
                             
                             Text(task.title)
                                 .font(.title2.bold())
@@ -114,7 +113,6 @@ struct CustomDatePicker: View {
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity,alignment: .leading)
                         .background(
-                        
                             Color("Purple")
                                 .opacity(0.5)
                                 .cornerRadius(10)
@@ -122,7 +120,6 @@ struct CustomDatePicker: View {
                     }
                 }
                 else{
-                    
                     Text("No Task Found")
                 }
             }
@@ -139,13 +136,16 @@ struct CustomDatePicker: View {
     func CardView(value: DateValue)->some View{
         
         VStack{
-            
-            if value.day != -1{
+            if value.day != -1 {
+                let filteredTasks = tasks.filter { item in
+                    return item.type == selectedMartType
+                }
                 
-                if let task = tasks.first(where: { task in
-                    
-                    return isSameDay(date1: task.taskDate, date2: value.date)
+                if let task = filteredTasks.first(where: { task in
+                    return isSameDay(date1: task.taskDate,
+                                     date2: value.date)
                 }){
+                    
                     Text("\(value.day)")
                         .font(.title3.bold())
                         .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .primary)
@@ -168,14 +168,27 @@ struct CustomDatePicker: View {
                 }
             }
         }
+        .onAppear {
+            if isCostco {
+                if selectedLocation == 0 {
+                    selectedMartType = .costco(type: .normal)
+                } else if selectedLocation == 1 {
+                    selectedMartType = .costco(type: .daegu)
+                } else if selectedLocation == 2 {
+                    selectedMartType = .costco(type: .ilsan)
+                } else if selectedLocation == 3 {
+                    selectedMartType = .costco(type: .ulsan)
+                }
+            } else if !isCostco {
+                selectedMartType = .normal
+            }
+        }
         .padding(.vertical,9)
         .frame(height: 60,alignment: .top)
     }
     
-    // checking dates...
     func isSameDay(date1: Date,date2: Date)->Bool{
         let calendar = Calendar.current
-        
         return calendar.isDate(date1, inSameDayAs: date2)
     }
     
@@ -201,7 +214,7 @@ struct CustomDatePicker: View {
         return currentMonth
     }
     
-    func extractDate()->[DateValue]{
+    func extractDate()->[DateValue] {
         
         let calendar = Calendar.current
         
@@ -209,10 +222,8 @@ struct CustomDatePicker: View {
         let currentMonth = getCurrentMonth()
         
         var days = currentMonth.getAllDates().compactMap { date -> DateValue in
-            
-            // getting day...
+
             let day = calendar.component(.day, from: date)
-            
             return DateValue(day: day, date: date)
         }
         
@@ -252,3 +263,6 @@ extension Date{
         }
     }
 }
+
+//UserDefaults(suiteName: appGroupId())?.setValue(components, forKey: key)
+//UserDefaults(suiteName: appGroupId())?.synchronize()

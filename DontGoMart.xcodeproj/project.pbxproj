@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58B127DB2A3D365B004040EA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DA2A3D365B004040EA /* Task.swift */; };
+		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
+		589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589D5F462A433E8C00DB3CCF /* ProductList.plist */; };
+		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
+		58B127DB2A3D365B004040EA /* TodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DA2A3D365B004040EA /* TodoTask.swift */; };
 		58B127DD2A3D3673004040EA /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* CustomDatePicker.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ContentView.swift */; };
@@ -50,7 +53,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		58B127DA2A3D365B004040EA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		58446A272A59493C001CC9D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		58446A292A59BD5C001CC9D1 /* CalendarWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarWidgetExtension.entitlements; sourceTree = "<group>"; };
+		589D5F452A433D7000DB3CCF /* CoffeeConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoffeeConfiguration.storekit; sourceTree = "<group>"; };
+		589D5F462A433E8C00DB3CCF /* ProductList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
+		589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		589D5F4A2A43443C00DB3CCF /* DontGoMart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DontGoMart.entitlements; sourceTree = "<group>"; };
+		58B127DA2A3D365B004040EA /* TodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTask.swift; sourceTree = "<group>"; };
 		58B127DC2A3D3673004040EA /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		58B693CC2A3B56E800FF904B /* DontGoMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontGoMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontGoMartApp.swift; sourceTree = "<group>"; };
@@ -89,9 +98,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58446A242A5938F0001CC9D1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		58446A252A59390C001CC9D1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				58B693D12A3B56E800FF904B /* ContentView.swift */,
+				58446A272A59493C001CC9D1 /* SettingsView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		58446A262A593924001CC9D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58B127DC2A3D3673004040EA /* CustomDatePicker.swift */,
+				58B127DA2A3D365B004040EA /* TodoTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		58B693C32A3B56E800FF904B = {
 			isa = PBXGroup;
 			children = (
+				58446A292A59BD5C001CC9D1 /* CalendarWidgetExtension.entitlements */,
 				58B693CE2A3B56E800FF904B /* DontGoMart */,
 				58B693E72A3B59EE00FF904B /* CalendarWidget */,
 				58B693E22A3B59EE00FF904B /* Frameworks */,
@@ -111,12 +147,15 @@
 		58B693CE2A3B56E800FF904B /* DontGoMart */ = {
 			isa = PBXGroup;
 			children = (
+				58446A262A593924001CC9D1 /* Model */,
+				58446A252A59390C001CC9D1 /* Screen */,
+				58446A242A5938F0001CC9D1 /* Manager */,
+				589D5F4A2A43443C00DB3CCF /* DontGoMart.entitlements */,
+				589D5F452A433D7000DB3CCF /* CoffeeConfiguration.storekit */,
+				589D5F462A433E8C00DB3CCF /* ProductList.plist */,
 				58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */,
-				58B693D12A3B56E800FF904B /* ContentView.swift */,
 				58B693D32A3B56E900FF904B /* Assets.xcassets */,
 				58B693D52A3B56E900FF904B /* Preview Content */,
-				58B127DA2A3D365B004040EA /* Task.swift */,
-				58B127DC2A3D3673004040EA /* CustomDatePicker.swift */,
 			);
 			path = DontGoMart;
 			sourceTree = "<group>";
@@ -234,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58B693D72A3B56E900FF904B /* Preview Assets.xcassets in Resources */,
+				589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */,
 				58B693D42A3B56E900FF904B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* CustomDatePicker.swift in Sources */,
-				58B127DB2A3D365B004040EA /* Task.swift in Sources */,
+				58B127DB2A3D365B004040EA /* TodoTask.swift in Sources */,
+				58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ContentView.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
@@ -404,12 +446,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -419,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -437,12 +482,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -469,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
@@ -496,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
