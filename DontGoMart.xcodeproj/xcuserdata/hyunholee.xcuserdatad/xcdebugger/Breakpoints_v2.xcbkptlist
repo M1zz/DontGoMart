@@ -16,40 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "329"
             endingLineNumber = "329"
-            landmarkName = "previews"
+            landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "6ED8467B-BB49-406D-A24F-794D275BC7D8 - f19ddac193e4445b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in CalendarWidgetExtension.CalendarWidgetEntryView.body.getter : some"
-                  moduleName = "CalendarWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunholee/Documents/workspace/github/01.%20PersonalApp/DontGoMart/CalendarWidget/CalendarWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "279"
-                  endingLineNumber = "279"
-                  offsetFromSymbolStart = "164">
-               </Location>
-               <Location
-                  uuid = "6ED8467B-BB49-406D-A24F-794D275BC7D8 - f19ddac193e44424"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in CalendarWidgetExtension.CalendarWidgetEntryView.body.getter : some"
-                  moduleName = "CalendarWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunholee/Documents/workspace/github/01.%20PersonalApp/DontGoMart/CalendarWidget/CalendarWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "280"
-                  endingLineNumber = "280"
-                  offsetFromSymbolStart = "368">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,40 +32,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "339"
             endingLineNumber = "339"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "3F08818C-20C3-4481-BDE3-05015FFB686A - f19ddac193e4470d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in CalendarWidgetExtension.CalendarWidgetEntryView.body.getter : some"
-                  moduleName = "CalendarWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunholee/Documents/workspace/github/01.%20PersonalApp/DontGoMart/CalendarWidget/CalendarWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "289"
-                  endingLineNumber = "289"
-                  offsetFromSymbolStart = "976">
-               </Location>
-               <Location
-                  uuid = "3F08818C-20C3-4481-BDE3-05015FFB686A - f19ddac193e4470d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in CalendarWidgetExtension.CalendarWidgetEntryView.body.getter : some"
-                  moduleName = "CalendarWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunholee/Documents/workspace/github/01.%20PersonalApp/DontGoMart/CalendarWidget/CalendarWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "289"
-                  endingLineNumber = "289"
-                  offsetFromSymbolStart = "1176">
-               </Location>
-            </Locations>
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
             endingLineNumber = "157"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "findSecondAndFourthWednesdaysAsMonthDayPairs(from:to:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

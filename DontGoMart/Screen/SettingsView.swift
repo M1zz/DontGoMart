@@ -61,7 +61,7 @@ struct CostcoSettings: View {
                 }
                 Spacer()
             }
-            .onChange(of: selectedLocal, perform: { value in
+            .onChange(of: selectedLocal, { oldValue, newValue in
                 selectedLocation = selectedLocal.storeID
             })
             .frame(alignment: .leading)

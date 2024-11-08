@@ -37,7 +37,7 @@ enum CostcoMartType: Equatable, Codable, CaseIterable {
     var storeName: String {
         switch self {
         case .normal:
-            return "일반매장 - 양평점, 대전점, 양재점, \n상봉점,부산점, 광명점, \n천안점, 의정부점, 공세점, \n송도점, 세종점, 하남점, \n김해점, 고척점"
+            return "일반매장 - 양평점, 대전점, 양재점, \n상봉점, 부산점, 광명점, \n천안점, 의정부점, 공세점, \n송도점, 세종점, 하남점, \n김해점, 고척점"
         case .daegu:
             return "대구점, 대구혁신점"
         case .ilsan:
@@ -78,232 +78,60 @@ func getSampleDate(offset: Int)->Date {
     return date ?? Date()
 }
 
-func dateToDisplay(month: Int, day: Int) -> Date {
+func dateToDisplay(year: Int = 2024, month: Int, day: Int) -> Date {
     let components = DateComponents(calendar: Calendar.current,
-                                    year: 2023, month: month, day: day)
+                                    year: year, month: month, day: day)
     return Calendar.current.date(from: components)!
 }
 
-// Sample Tasks...
-var tasks: [TaskMetaData] = [
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 6, day: 11)),
+// MARK: Helper 함수
+func generateSundayTasks(forYear year: Int) -> [TaskMetaData] {
+    var sundayTasks: [TaskMetaData] = []
+    let calendar = Calendar.current
     
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 6, day: 25)),
-    
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 7, day: 9)),
-    
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 7, day: 23)),
-    
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 8, day: 13)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 8, day: 27)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 9, day: 10)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 9, day: 24)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 10, day: 8)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 10, day: 22)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 11, day: 12)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 11, day: 26)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 12, day: 10)),
-    
-    TaskMetaData(type: .normal,
-                 task: [TodoTask(title: "Don't go mart")],
-                 taskDate: dateToDisplay(month: 12, day: 24)),
-    
-    //MARK: Costco
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 9)),
-    
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 10)),
-    
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 12)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 12)),
-    
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 23)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 23)),
-    
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 24)),
-    
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 7, day: 26)),
-    
-    //MARK: Costco August
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 13)),
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 27)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 14)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 28)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 9)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 23)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 9)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 8, day: 27)),
+    for month in 1...12 {
+        // 두 번째 일요일 찾기
+        let secondSunday = findWeekday(of: 1, ordinal: 2, inMonth: month, year: year, calendar: calendar)
+        if let date = secondSunday {
+            sundayTasks.append(TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: date))
+        }
+        
+        // 네 번째 일요일 찾기
+        let fourthSunday = findWeekday(of: 1, ordinal: 4, inMonth: month, year: year, calendar: calendar)
+        if let date = fourthSunday {
+            sundayTasks.append(TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: date))
+        }
+    }
+    return sundayTasks
+}
 
-    //MARK: Costco September
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 10)),
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 24)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 11)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 25)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 13)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 27)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 13)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 9, day: 24)),
+func findWeekday(of weekday: Int, ordinal: Int, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
+    var components = DateComponents(year: year, month: month, weekday: weekday, weekdayOrdinal: ordinal)
+    return calendar.date(from: components)
+}
 
-    //MARK: Costco October
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 8)),
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 22)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 9)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 23)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 11)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 25)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 11)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 10, day: 22)),
+// MARK: Data 생성
+var tasks: [TaskMetaData] = []
 
-    //MARK: Costco November
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 12)),
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 26)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 13)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 27)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 8)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 22)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 8)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 11, day: 26)),
-
-    //MARK: Costco December
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 10)),
-    TaskMetaData(type: .costco(type: .normal),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 24)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 11)),
-    TaskMetaData(type: .costco(type: .daegu),
-                 task:[TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 25)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 13)),
-    TaskMetaData(type: .costco(type: .ilsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 27)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 13)),
-    TaskMetaData(type: .costco(type: .ulsan),
-                 task: [TodoTask(title: "Don't go costco")],
-                 taskDate: dateToDisplay(month: 12, day: 24))
-
+// MARK: Costco 관련 Tasks
+let costcoTasks: [TaskMetaData] = [
+    TaskMetaData(type: .costco(type: .normal), task: [TodoTask(title: "전점 7시 조기폐점")], taskDate: dateToDisplay(month: 2, day: 9)),
+    TaskMetaData(type: .costco(type: .normal), task: [TodoTask(title: "전점설날휴무")], taskDate: dateToDisplay(month: 2, day: 10)),
+    
+    // 2월 휴점일 (지점별로 구분)
+    TaskMetaData(type: .costco(type: .normal), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
+    TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
+    TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
+    TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
+    
+    TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 12)),
+    TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 14)),
+    
+    TaskMetaData(type: .costco(type: .normal), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
+    TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
+    TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
+    TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
+    
+    TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 26)),
+    TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 28))
 ]
