@@ -73,10 +73,10 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 9, day: 24, martType: .normal),
                 MartHolyday(month: 10, day: 8, martType: .normal),
                 MartHolyday(month: 10, day: 22, martType: .normal),
-                MartHolyday(month: 11, day: 12, martType: .normal),
-                MartHolyday(month: 11, day: 26, martType: .normal),
-                MartHolyday(month: 12, day: 10, martType: .normal),
-                MartHolyday(month: 12, day: 24, martType: .normal),
+                MartHolyday(month: 11, day: 10, martType: .normal),
+                MartHolyday(month: 11, day: 24, martType: .normal),
+                MartHolyday(month: 12, day: 8, martType: .normal),
+                MartHolyday(month: 12, day: 22, martType: .normal),
                 
                 // Costco
                 
@@ -108,7 +108,7 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 11, day: 26, martType: .costcoNormal),
                 MartHolyday(month: 12, day: 10, martType: .costcoNormal),
                 MartHolyday(month: 12, day: 24, martType: .costcoNormal),
-
+                
                 // CostcoDaegu Holidays
                 MartHolyday(month: 9, day: 11, martType: .costcoDaegu),
                 MartHolyday(month: 9, day: 25, martType: .costcoDaegu),
@@ -118,7 +118,7 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 11, day: 27, martType: .costcoDaegu),
                 MartHolyday(month: 12, day: 11, martType: .costcoDaegu),
                 MartHolyday(month: 12, day: 25, martType: .costcoDaegu),
-
+                
                 // CostcoIlsan Holidays
                 MartHolyday(month: 9, day: 13, martType: .costcoIlsan),
                 MartHolyday(month: 9, day: 27, martType: .costcoIlsan),
@@ -128,7 +128,7 @@ struct CalendarWidgetEntryView : View {
                 MartHolyday(month: 11, day: 22, martType: .costcoIlsan),
                 MartHolyday(month: 12, day: 13, martType: .costcoIlsan),
                 MartHolyday(month: 12, day: 27, martType: .costcoIlsan),
-
+                
                 // CostcoUlsan Holidays
                 MartHolyday(month: 9, day: 13, martType: .costcoUlsan),
                 MartHolyday(month: 9, day: 24, martType: .costcoUlsan),
@@ -146,183 +146,183 @@ struct CalendarWidgetEntryView : View {
     }
     
     var body: some View {
-        ZStack {
-            ContainerRelativeShape()
-                .fill(config.backgroundColor.gradient)
-            VStack {
-                ForEach(data, id: \.self) { datum in
-                    if selectedMartType == .normal {
-                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                           datum.martType == .normal {
-                            Text("Don't go mart")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.red)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                                  datum.martType == .normal {
-                            Text("Don't go mart\ntomorrow")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                                  datum.martType == .normal {
-                            Text("Don't go mart\nweekend")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        }
-                    } else if selectedMartType == .costcoNormal {
+        VStack {
+            ForEach(data, id: \.self) { datum in
+                if selectedMartType == .normal {
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                       datum.martType == .normal {
+                        Text("Don't go mart")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                              datum.martType == .normal {
+                        Text("Don't go mart\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                              datum.martType == .normal {
+                        Text("Don't go mart\nweekend")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    }
+                } else if selectedMartType == .costcoNormal {
+                    
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                       datum.martType == .costcoNormal {
+                        Text("Don't go costco")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                              datum.martType == .costcoNormal {
+                        Text("Don't go costco\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                              datum.martType == .costcoNormal  {
+                        Text("Don't go costco\nweekend")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
                         
-                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                           datum.martType == .costcoNormal {
-                            Text("Don't go costco")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.red)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                                  datum.martType == .costcoNormal {
-                            Text("Don't go costco\ntomorrow")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                                  datum.martType == .costcoNormal  {
-                            Text("Don't go costco\nweekend")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                            
-                        }
                     }
-                    else if selectedMartType == .costcoDaegu {
-                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                           datum.martType == .costcoDaegu {
-                            Text("Don't go costco")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.red)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                                  datum.martType == .costcoDaegu {
-                            Text("Don't go costco\ntomorrow")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                                  datum.martType == .costcoDaegu  {
-                            Text("Don't go costco\nMonday")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                            
-                        }
-                    } else if selectedMartType == .costcoIlsan {
-                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                           datum.martType == .costcoIlsan {
-                            Text("Don't go costco")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.red)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                                  datum.martType == .costcoIlsan {
-                            Text("Don't go costco\ntomorrow")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                                  datum.martType == .costcoIlsan  {
-                            Text("Don't go costco\nWednesday")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                            
-                        }
-                    } else if selectedMartType == .costcoUlsan {
-                        if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                           datum.martType == .costcoUlsan {
-                            Text("Don't go costco")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.red)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                                  datum.martType == .costcoUlsan {
-                            Text("Don't go costco\ntomorrow")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                        } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                    entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                                  datum.martType == .costcoUlsan  {
-                            Text("Don't go costco\nsoon")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.6)
-                                .foregroundColor(.palePink)
-                                .multilineTextAlignment(.center)
-                            
-                        }
+                }
+                else if selectedMartType == .costcoDaegu {
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                       datum.martType == .costcoDaegu {
+                        Text("Don't go costco")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                              datum.martType == .costcoDaegu {
+                        Text("Don't go costco\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                              datum.martType == .costcoDaegu  {
+                        Text("Don't go costco\nMonday")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                        
                     }
-                    
-                    
+                } else if selectedMartType == .costcoIlsan {
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                       datum.martType == .costcoIlsan {
+                        Text("Don't go costco")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                              datum.martType == .costcoIlsan {
+                        Text("Don't go costco\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                              datum.martType == .costcoIlsan  {
+                        Text("Don't go costco\nWednesday")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                        
+                    }
+                } else if selectedMartType == .costcoUlsan {
+                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
+                       datum.martType == .costcoUlsan {
+                        Text("Don't go costco")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.red)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
+                              datum.martType == .costcoUlsan {
+                        Text("Don't go costco\ntomorrow")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
+                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
+                              datum.martType == .costcoUlsan  {
+                        Text("Don't go costco\nsoon")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                            .foregroundColor(.palePink)
+                            .multilineTextAlignment(.center)
+                        
+                    }
                 }
                 
-                HStack(spacing: 0) {
-                    Text(config.emojiText)
-                        .font(.title)
-                    Text(entry.date.weekdayDisplayFormat)
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .minimumScaleFactor(0.6)
-                        .foregroundColor(config.weekdayTextColor)
-                    Spacer()
-                }
                 
-                Text(entry.date.dayDisplayFormat)
-                    .font(.system(size: 50, weight: .heavy))
-                    .foregroundColor(config.dayTextColor)
             }
-            .padding()
+            
+            HStack(spacing: 0) {
+                Text(config.emojiText)
+                    .font(.title)
+                Text(entry.date.weekdayDisplayFormat)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .minimumScaleFactor(0.6)
+                    .foregroundColor(config.weekdayTextColor)
+                Spacer()
+            }
+            
+            Text(entry.date.dayDisplayFormat)
+                .font(.system(size: 50, weight: .heavy))
+                .foregroundColor(config.dayTextColor)
+            
+        }
+        .containerBackground(for: .widget) { // 위젯 배경 모디파이어 추가
+            LinearGradient(gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]), startPoint: .top, endPoint: .bottom)
+            
         }
         .onAppear {
             print(isCostco.description)
@@ -344,7 +344,7 @@ struct CalendarWidgetEntryView : View {
     
     func dateToDisplay(month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
-                                        year: 2023, month: month, day: day)
+                                        year: 2024, month: month, day: day)
         return Calendar.current.date(from: components)!
     }
 }
@@ -370,7 +370,7 @@ struct CalendarWidget_Previews: PreviewProvider {
     
     static func dateToDisplay(month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
-                                        year: 2023, month: month, day: day)
+                                        year: 2024, month: month, day: day)
         return Calendar.current.date(from: components)!
     }
 }
