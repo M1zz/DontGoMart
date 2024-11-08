@@ -84,87 +84,54 @@ func dateToDisplay(year: Int = 2024, month: Int, day: Int) -> Date {
     return Calendar.current.date(from: components)!
 }
 
-// Sample Tasks...
-var tasks: [TaskMetaData] = [
+// MARK: Helper 함수
+func generateSundayTasks(forYear year: Int) -> [TaskMetaData] {
+    var sundayTasks: [TaskMetaData] = []
+    let calendar = Calendar.current
     
-    // 1월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 1, day: 14)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 1, day: 28)),
-    
-    // 2월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 2, day: 11)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 2, day: 25)),
-    
-    // 3월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 3, day: 10)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 3, day: 24)),
-    
-    // 4월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 4, day: 14)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 4, day: 28)),
-    
-    // 5월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 5, day: 12)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 5, day: 26)),
-    
-    // 6월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 6, day: 9)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 6, day: 23)),
-    
-    // 7월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 7, day: 14)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 7, day: 28)),
-    
-    // 8월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 8, day: 11)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 8, day: 25)),
-    
-    // 9월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 9, day: 8)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 9, day: 22)),
-    
-    // 10월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 10, day: 13)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 10, day: 27)),
-    
-    // 11월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 11, day: 10)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 11, day: 24)),
+    for month in 1...12 {
+        // 두 번째 일요일 찾기
+        let secondSunday = findWeekday(of: 1, ordinal: 2, inMonth: month, year: year, calendar: calendar)
+        if let date = secondSunday {
+            sundayTasks.append(TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: date))
+        }
         
-    // 12월
-    TaskMetaData(type: .normal, task: [TodoTask(title: "2번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 12, day: 8)),
-    TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: dateToDisplay(year: 2024, month: 12, day: 22)),
+        // 네 번째 일요일 찾기
+        let fourthSunday = findWeekday(of: 1, ordinal: 4, inMonth: month, year: year, calendar: calendar)
+        if let date = fourthSunday {
+            sundayTasks.append(TaskMetaData(type: .normal, task: [TodoTask(title: "4번째 일요일")], taskDate: date))
+        }
+    }
+    return sundayTasks
+}
 
-    
-    //MARK: Costco
-    // 2월 9일(금) - 전점 7시 조기폐점
+func findWeekday(of weekday: Int, ordinal: Int, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
+    var components = DateComponents(year: year, month: month, weekday: weekday, weekdayOrdinal: ordinal)
+    return calendar.date(from: components)
+}
+
+// MARK: Data 생성
+var tasks: [TaskMetaData] = []
+
+// MARK: Costco 관련 Tasks
+let costcoTasks: [TaskMetaData] = [
     TaskMetaData(type: .costco(type: .normal), task: [TodoTask(title: "전점 7시 조기폐점")], taskDate: dateToDisplay(month: 2, day: 9)),
-    
-    // 2월 10일(토) - 전점설날휴무
     TaskMetaData(type: .costco(type: .normal), task: [TodoTask(title: "전점설날휴무")], taskDate: dateToDisplay(month: 2, day: 10)),
     
-    // 2월 11일(일) - 양평점, 대전점, 상봉점, 부산점, 천안점, 공세점, 송도점, 세종점, 김해점, 고척점
+    // 2월 휴점일 (지점별로 구분)
     TaskMetaData(type: .costco(type: .normal), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
     TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
     TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
     TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 11)),
     
-    // 2월 12일(월) - 대구점, 대구혁신점
     TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 12)),
-    
-    // 2월 14일(수) - 울산점
     TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 14)),
     
-    // 2월 25일(일) - 양평점, 대전점, 양재점, 상봉점, 부산점, 울산점, 광명점, 천안점, 의정부점, 공세점, 송도점, 세종점, 하남점, 김해점, 고척점
     TaskMetaData(type: .costco(type: .normal), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
     TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
     TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
     TaskMetaData(type: .costco(type: .ulsan), task: [], taskDate: dateToDisplay(month: 2, day: 25)),
     
-    // 2월 26일(월) - 대구점, 대구혁신점
     TaskMetaData(type: .costco(type: .daegu), task: [], taskDate: dateToDisplay(month: 2, day: 26)),
-    
-    // 2월 28일(수) - 일산점
     TaskMetaData(type: .costco(type: .ilsan), task: [], taskDate: dateToDisplay(month: 2, day: 28))
 ]
-

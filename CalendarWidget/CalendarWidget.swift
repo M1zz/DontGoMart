@@ -64,85 +64,159 @@ struct CalendarWidgetEntryView : View {
     var entry: DayEntry
     var config: MonthConfig
     
-    var data = [MartHolyday(month: 6, day: 25, martType: .normal),
-                MartHolyday(month: 7, day: 9, martType: .normal),
-                MartHolyday(month: 7, day: 23, martType: .normal),
-                MartHolyday(month: 8, day: 13, martType: .normal),
-                MartHolyday(month: 8, day: 27, martType: .normal),
-                MartHolyday(month: 9, day: 10, martType: .normal),
-                MartHolyday(month: 9, day: 24, martType: .normal),
-                MartHolyday(month: 10, day: 8, martType: .normal),
-                MartHolyday(month: 10, day: 22, martType: .normal),
-                MartHolyday(month: 11, day: 10, martType: .normal),
-                MartHolyday(month: 11, day: 24, martType: .normal),
-                MartHolyday(month: 12, day: 8, martType: .normal),
-                MartHolyday(month: 12, day: 22, martType: .normal),
+    // MartHoliday 타입의 데이터를 초기화하는 함수 정의
+    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHolyday] {
+        return monthDayPairs.map { MartHolyday(month: $0.0, day: $0.1, martType: martType) }
+    }
+
+    // 기본 마트 휴일 목록 정의
+    var data: [MartHolyday] = []
+
+    // 격주 일요일 추출기
+    func findSecondAndFourthSundaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
+        var results: [(Int, Int)] = []
+        let calendar = Calendar.current
+
+        // 시작 날짜의 연도와 월
+        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
+        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+        
+        for year in startYear...endYear {
+            for month in (year == startYear ? startMonth : 1)...12 {
+                // 둘째 주 일요일 찾기
+                var dateComponents = DateComponents(year: year, month: month, weekday: 1, weekdayOrdinal: 2)
+                if let secondSunday = calendar.date(from: dateComponents) {
+                    let secondSundayDay = calendar.component(.day, from: secondSunday)
+                    results.append((month, secondSundayDay))
+                }
                 
-                // Costco
-                
-                MartHolyday(month: 7, day: 9, martType: .costcoNormal),
-                MartHolyday(month: 7, day: 10, martType: .costcoDaegu),
-                MartHolyday(month: 7, day: 12, martType: .costcoIlsan),
-                MartHolyday(month: 7, day: 12, martType: .costcoUlsan),
-                MartHolyday(month: 7, day: 23, martType: .costcoNormal),
-                MartHolyday(month: 7, day: 23, martType: .costcoUlsan),
-                MartHolyday(month: 7, day: 24, martType: .costcoDaegu),
-                MartHolyday(month: 7, day: 26, martType: .costcoIlsan),
-                
-                
-                MartHolyday(month: 8, day: 13, martType: .costcoNormal),
-                MartHolyday(month: 8, day: 27, martType: .costcoNormal),
-                MartHolyday(month: 8, day: 14, martType: .costcoDaegu),
-                MartHolyday(month: 8, day: 28, martType: .costcoDaegu),
-                MartHolyday(month: 8, day: 9, martType: .costcoIlsan),
-                MartHolyday(month: 8, day: 23, martType: .costcoIlsan),
-                MartHolyday(month: 8, day: 9, martType: .costcoUlsan),
-                MartHolyday(month: 8, day: 27, martType: .costcoUlsan),
-                
-                // CostcoNormal Holidays
-                MartHolyday(month: 9, day: 10, martType: .costcoNormal),
-                MartHolyday(month: 9, day: 24, martType: .costcoNormal),
-                MartHolyday(month: 10, day: 8, martType: .costcoNormal),
-                MartHolyday(month: 10, day: 22, martType: .costcoNormal),
-                MartHolyday(month: 11, day: 12, martType: .costcoNormal),
-                MartHolyday(month: 11, day: 26, martType: .costcoNormal),
-                MartHolyday(month: 12, day: 10, martType: .costcoNormal),
-                MartHolyday(month: 12, day: 24, martType: .costcoNormal),
-                
-                // CostcoDaegu Holidays
-                MartHolyday(month: 9, day: 11, martType: .costcoDaegu),
-                MartHolyday(month: 9, day: 25, martType: .costcoDaegu),
-                MartHolyday(month: 10, day: 9, martType: .costcoDaegu),
-                MartHolyday(month: 10, day: 23, martType: .costcoDaegu),
-                MartHolyday(month: 11, day: 13, martType: .costcoDaegu),
-                MartHolyday(month: 11, day: 27, martType: .costcoDaegu),
-                MartHolyday(month: 12, day: 11, martType: .costcoDaegu),
-                MartHolyday(month: 12, day: 25, martType: .costcoDaegu),
-                
-                // CostcoIlsan Holidays
-                MartHolyday(month: 9, day: 13, martType: .costcoIlsan),
-                MartHolyday(month: 9, day: 27, martType: .costcoIlsan),
-                MartHolyday(month: 10, day: 11, martType: .costcoIlsan),
-                MartHolyday(month: 10, day: 25, martType: .costcoIlsan),
-                MartHolyday(month: 11, day: 8, martType: .costcoIlsan),
-                MartHolyday(month: 11, day: 22, martType: .costcoIlsan),
-                MartHolyday(month: 12, day: 13, martType: .costcoIlsan),
-                MartHolyday(month: 12, day: 27, martType: .costcoIlsan),
-                
-                // CostcoUlsan Holidays
-                MartHolyday(month: 9, day: 13, martType: .costcoUlsan),
-                MartHolyday(month: 9, day: 24, martType: .costcoUlsan),
-                MartHolyday(month: 10, day: 11, martType: .costcoUlsan),
-                MartHolyday(month: 10, day: 22, martType: .costcoUlsan),
-                MartHolyday(month: 11, day: 8, martType: .costcoUlsan),
-                MartHolyday(month: 11, day: 26, martType: .costcoUlsan),
-                MartHolyday(month: 12, day: 13, martType: .costcoUlsan),
-                MartHolyday(month: 12, day: 24, martType: .costcoUlsan)
-    ]
+                // 넷째 주 일요일 찾기
+                dateComponents.weekdayOrdinal = 4
+                if let fourthSunday = calendar.date(from: dateComponents) {
+                    let fourthSundayDay = calendar.component(.day, from: fourthSunday)
+                    results.append((month, fourthSundayDay))
+                }
+            }
+        }
+        
+        return results
+    }
     
+    // 격주 월요일 추출기
+    func findSecondAndFourthMondaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
+        var results: [(Int, Int)] = []
+        let calendar = Calendar.current
+
+        // 시작 날짜의 연도와 월
+        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
+        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+        
+        for year in startYear...endYear {
+            for month in (year == startYear ? startMonth : 1)...12 {
+                // 둘째 주 월요일 찾기
+                var dateComponents = DateComponents(year: year, month: month, weekday: 2, weekdayOrdinal: 2)
+                if let secondMonday = calendar.date(from: dateComponents) {
+                    let secondMondayDay = calendar.component(.day, from: secondMonday)
+                    results.append((month, secondMondayDay))
+                }
+                
+                // 넷째 주 월요일 찾기
+                dateComponents.weekdayOrdinal = 4
+                if let fourthMonday = calendar.date(from: dateComponents) {
+                    let fourthMondayDay = calendar.component(.day, from: fourthMonday)
+                    results.append((month, fourthMondayDay))
+                }
+            }
+        }
+        
+        return results
+    }
+    
+    // 격주 수요일 추출기
+    func findSecondAndFourthWednesdaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
+        var results: [(Int, Int)] = []
+        let calendar = Calendar.current
+
+        // 시작 날짜의 연도와 월
+        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
+        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+        
+        for year in startYear...endYear {
+            for month in (year == startYear ? startMonth : 1)...12 {
+                // 둘째 주 수요일 찾기
+                var dateComponents = DateComponents(year: year, month: month, weekday: 4, weekdayOrdinal: 2)
+                if let secondWednesday = calendar.date(from: dateComponents) {
+                    let secondWednesdayDay = calendar.component(.day, from: secondWednesday)
+                    results.append((month, secondWednesdayDay))
+                }
+                
+                // 넷째 주 수요일 찾기
+                dateComponents.weekdayOrdinal = 4
+                if let fourthWednesday = calendar.date(from: dateComponents) {
+                    let fourthWednesdayDay = calendar.component(.day, from: fourthWednesday)
+                    results.append((month, fourthWednesdayDay))
+                }
+            }
+        }
+        
+        return results
+    }
+
+    // 2째주 수요일 4째주 일요일 추출기
+    func findSecondWednesdayAndFourthSundayAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
+        var results: [(Int, Int)] = []
+        let calendar = Calendar.current
+
+        // 시작 날짜의 연도와 월
+        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
+        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+        
+        for year in startYear...endYear {
+            for month in (year == startYear ? startMonth : 1)...12 {
+                // 둘째 주 수요일 찾기
+                var dateComponents = DateComponents(year: year, month: month, weekday: 4, weekdayOrdinal: 2) // 수요일은 weekday 4
+                if let secondWednesday = calendar.date(from: dateComponents) {
+                    let secondWednesdayDay = calendar.component(.day, from: secondWednesday)
+                    results.append((month, secondWednesdayDay))
+                }
+                
+                // 넷째 주 일요일 찾기
+                dateComponents.weekday = 1 // 일요일은 weekday 1
+                dateComponents.weekdayOrdinal = 4
+                if let fourthSunday = calendar.date(from: dateComponents) {
+                    let fourthSundayDay = calendar.component(.day, from: fourthSunday)
+                    results.append((month, fourthSundayDay))
+                }
+            }
+        }
+        
+        return results
+    }
+    
+    // 오늘 날짜로부터 2025년까지의 모든 둘째, 넷째 주 일요일 찾기
+    let startDate = Date()
+
     init(entry: DayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
+        
+        data += createMartHolidays(monthDayPairs: findSecondAndFourthSundaysAsMonthDayPairs(from: startDate, to: 2024), martType: .normal)
+
+        // 코스트코 일반 휴일 데이터 추가
+        data += createMartHolidays(monthDayPairs: findSecondAndFourthSundaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoNormal)
+
+
+        // 코스트코 대구점 휴일 데이터 추가
+        data += createMartHolidays(monthDayPairs: findSecondAndFourthMondaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoDaegu)
+
+        // 코스트코 일산점 휴일 데이터 추가
+        data += createMartHolidays(monthDayPairs: findSecondAndFourthMondaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoIlsan)
+
+        // 코스트코 울산점 휴일 데이터 추가
+        data += createMartHolidays(monthDayPairs: findSecondWednesdayAndFourthSundayAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoUlsan)
+        
+        
+        print(data)
     }
     
     var body: some View {
