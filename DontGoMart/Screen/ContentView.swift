@@ -52,7 +52,7 @@ struct ContentView: View {
                     }
                 })
             }
-            .navigationTitle(isPremium ? "Don't go mart day pro" : "Don't go mart day")
+            .navigationTitle(isPremium ? "돈꼬마트 pro" : "돈꼬마트")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {

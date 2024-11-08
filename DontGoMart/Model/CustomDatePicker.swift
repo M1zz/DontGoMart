@@ -17,7 +17,7 @@ struct CustomDatePicker: View {
     var body: some View {
         VStack(spacing: 35) {
             
-            let days: [String] = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+            let days: [String] = ["일","월","화","수","목","금","토"]
             
             HStack(spacing: 20){
                 
@@ -42,7 +42,7 @@ struct CustomDatePicker: View {
 
                 Button {
                     
-                    withAnimation{
+                    withAnimation {
                         currentMonth += 1
                     }
                     
@@ -86,7 +86,7 @@ struct CustomDatePicker: View {
             
             VStack(spacing: 15){
                 
-                Text("Tasks")
+                Text("휴무일")
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity,alignment: .leading)
                     .padding(.vertical,20)
@@ -120,16 +120,14 @@ struct CustomDatePicker: View {
                     }
                 }
                 else{
-                    Text("No Task Found")
+                    Text("휴일이 아닙니다")
                 }
             }
             .padding()
         }
-        .onChange(of: currentMonth) { newValue in
-            
-            // updating Month...
+        .onChange(of: currentMonth, {
             currentDate = getCurrentMonth()
-        }
+        })
     }
     
     @ViewBuilder
@@ -195,7 +193,8 @@ struct CustomDatePicker: View {
     // extrating Year And Month for display...
     func extraDate()->[String]{
         
-        let calendar = Calendar.current
+        var calendar = Calendar.current
+        calendar.locale = Locale(identifier: "ko_KR")
         let month = calendar.component(.month, from: currentDate) - 1
         let year = calendar.component(.year, from: currentDate)
         
