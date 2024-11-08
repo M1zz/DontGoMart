@@ -225,14 +225,14 @@ struct CalendarWidgetEntryView : View {
                 if selectedMartType == .normal {
                     if entry.date == dateToDisplay(month: datum.month, day: datum.day),
                        datum.martType == .normal {
-                        Text("Don't go mart")
+                        Text("돈꼬마트")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
                     } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
                               datum.martType == .normal {
-                        Text("Don't go mart\ntomorrow")
+                        Text("내일 돈꼬마트")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -244,7 +244,7 @@ struct CalendarWidgetEntryView : View {
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                               datum.martType == .normal {
-                        Text("Don't go mart\nweekend")
+                        Text("이번 주 돈꼬마트")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -255,14 +255,14 @@ struct CalendarWidgetEntryView : View {
                     
                     if entry.date == dateToDisplay(month: datum.month, day: datum.day),
                        datum.martType == .costcoNormal {
-                        Text("Don't go costco")
+                        Text("돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
                     } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
                               datum.martType == .costcoNormal {
-                        Text("Don't go costco\ntomorrow")
+                        Text("내일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -274,7 +274,7 @@ struct CalendarWidgetEntryView : View {
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                               datum.martType == .costcoNormal  {
-                        Text("Don't go costco\nweekend")
+                        Text("이번 주 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -286,14 +286,14 @@ struct CalendarWidgetEntryView : View {
                 else if selectedMartType == .costcoDaegu {
                     if entry.date == dateToDisplay(month: datum.month, day: datum.day),
                        datum.martType == .costcoDaegu {
-                        Text("Don't go costco")
+                        Text("돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
                     } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
                               datum.martType == .costcoDaegu {
-                        Text("Don't go costco\ntomorrow")
+                        Text("내일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -305,7 +305,7 @@ struct CalendarWidgetEntryView : View {
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                               datum.martType == .costcoDaegu  {
-                        Text("Don't go costco\nMonday")
+                        Text("월요일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -316,14 +316,14 @@ struct CalendarWidgetEntryView : View {
                 } else if selectedMartType == .costcoIlsan {
                     if entry.date == dateToDisplay(month: datum.month, day: datum.day),
                        datum.martType == .costcoIlsan {
-                        Text("Don't go costco")
+                        Text("돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
                     } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
                               datum.martType == .costcoIlsan {
-                        Text("Don't go costco\ntomorrow")
+                        Text("내일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -335,7 +335,7 @@ struct CalendarWidgetEntryView : View {
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                               datum.martType == .costcoIlsan  {
-                        Text("Don't go costco\nWednesday")
+                        Text("수요일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -346,14 +346,14 @@ struct CalendarWidgetEntryView : View {
                 } else if selectedMartType == .costcoUlsan {
                     if entry.date == dateToDisplay(month: datum.month, day: datum.day),
                        datum.martType == .costcoUlsan {
-                        Text("Don't go costco")
+                        Text("돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
                             .foregroundColor(.red)
                     } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
                               datum.martType == .costcoUlsan {
-                        Text("Don't go costco\ntomorrow")
+                        Text("내일 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
@@ -365,7 +365,7 @@ struct CalendarWidgetEntryView : View {
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
                                 entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
                               datum.martType == .costcoUlsan  {
-                        Text("Don't go costco\nsoon")
+                        Text("곧 돈꼬 코스트코")
                             .font(.title3)
                             .fontWeight(.bold)
                             .minimumScaleFactor(0.6)
