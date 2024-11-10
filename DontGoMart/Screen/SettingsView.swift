@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
-    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId))
-    var isCostco: Bool = false
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -19,6 +20,10 @@ struct SettingsView: View {
                     Toggle(isOn: $isCostco, label: {
                         Text("코스트코")
                     })
+                    .onChange(of: isCostco) {
+                        selectedBranch = isCostco ? 1 : 0
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }
                     NavigationLink {
                         CostcoSettings()
                     } label: {
@@ -42,8 +47,7 @@ struct SettingsView: View {
 
 
 struct CostcoSettings: View {
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart"))
-    var selectedBranch: Int = 0
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     @State var selectedCostcoBranch: CostcoBranch = .normal
     
     var body: some View {
@@ -57,7 +61,6 @@ struct CostcoSettings: View {
             HStack {
                 Picker("선택된 매장", selection: $selectedCostcoBranch) {
                     ForEach(CostcoBranch.allCases, id: \.self) { type in
-                        
                         Text(type.storeName)
                             .lineLimit(3)
                     }
@@ -66,6 +69,7 @@ struct CostcoSettings: View {
             }
             .onChange(of: selectedCostcoBranch, { oldValue, newValue in
                 selectedBranch = selectedCostcoBranch.branchID
+
             })
             .frame(alignment: .leading)
 
@@ -73,13 +77,13 @@ struct CostcoSettings: View {
         }
         .navigationTitle("코스트코 지점 선택하기")
         .onAppear(perform: {
-            if selectedBranch == 0 {
+            if selectedBranch == 1 {
                 selectedCostcoBranch = .normal
-            } else if selectedBranch == 1 {
-                selectedCostcoBranch = .daegu
             } else if selectedBranch == 2 {
-                selectedCostcoBranch = .ilsan
+                selectedCostcoBranch = .daegu
             } else if selectedBranch == 3 {
+                selectedCostcoBranch = .ilsan
+            } else if selectedBranch == 4 {
                 selectedCostcoBranch = .ulsan
             }
         })

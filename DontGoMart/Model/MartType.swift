@@ -37,13 +37,13 @@ enum CostcoBranch: Equatable, Codable, CaseIterable {
     var branchID: Int {
         switch self {
         case .normal:
-            return 0
-        case .daegu:
             return 1
-        case .ilsan:
+        case .daegu:
             return 2
-        case .ulsan:
+        case .ilsan:
             return 3
+        case .ulsan:
+            return 4
         }
     }
     

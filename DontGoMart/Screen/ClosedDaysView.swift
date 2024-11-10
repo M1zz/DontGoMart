@@ -7,6 +7,7 @@
 
 import SwiftUI
 import StoreKit
+import WidgetKit
 
 let primuimAppName = "돈꼬마트 pro"
 let appName = "돈꼬마트"
@@ -19,7 +20,7 @@ struct ClosedDaysView: View {
     @AppStorage("isPremium") var isPremium: Bool = false
     @State private var isShowingSettings = false
     @State private var isCostco: Bool = false
-    @State private var selectedBranch: Int = -1
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     
     var body: some View {
         NavigationStack {
@@ -50,6 +51,10 @@ struct ClosedDaysView: View {
                 }
             }
         }
+        .onChange(of: selectedBranch) {
+            print("selectedBranch: \(selectedBranch)")
+            WidgetCenter.shared.reloadAllTimelines()
+        }
         .sheet(isPresented: $isShowingSettings ,onDismiss: {
             isCostco = UserDefaults(suiteName: appGroupId)?.bool(forKey: "isNormal") ?? false
             selectedBranch = UserDefaults(suiteName: appGroupId)?.integer(forKey: "selectedBranch") ?? 0
@@ -60,15 +65,15 @@ struct ClosedDaysView: View {
     
     private func locationName(forID id: Int) -> String {
         switch id {
-        case -1:
-            return "마트"
         case 0:
-            return "일반 코스트코"
+            return "마트"
         case 1:
-            return "대구 코스트코"
+            return "일반 코스트코"
         case 2:
-            return "일산 코스트코"
+            return "대구 코스트코"
         case 3:
+            return "일산 코스트코"
+        case 4:
             return "울산 코스트코"
         default:
             return ""
@@ -120,8 +125,7 @@ struct SellItem: View {
 class EntitlementManager: ObservableObject {
     static let userDefaults = UserDefaults(suiteName: appGroupId)!
     
-    @AppStorage("hasPro", store: userDefaults)
-    var hasPro: Bool = false
+    @AppStorage("hasPro", store: userDefaults) var hasPro: Bool = false
 }
 
 #Preview {

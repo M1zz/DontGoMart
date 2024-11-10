@@ -37,32 +37,11 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
-
-struct DayEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
-
-
-struct MartHoliday: Hashable, Codable {
-    let month: Int
-    let day: Int
-    let martType: MartType
-}
-
-enum MartType: Codable {
-    case normal
-    case costcoNormal
-    case costcoDaegu
-    case costcoIlsan
-    case costcoUlsan
-}
+let appGroupId = "group.com.leeo.DontGoMart"
 
 struct CalendarWidgetEntryView : View {
-    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart"))
-    var isCostco: Bool = false
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart"))
-    var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .costcoNormal
     
     var entry: DayEntry
@@ -146,168 +125,24 @@ struct CalendarWidgetEntryView : View {
             ],
             martType: .costcoUlsan
         )
-        
-        
-        print(data)
     }
     
     var body: some View {
         VStack {
+            // ForEach 구문
             ForEach(data, id: \.self) { datum in
-                if selectedMartType == .normal {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .normal {
-                        Text("돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .normal {
-                        Text("내일 돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .normal {
-                        Text("이번 주 돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    }
-                } else if selectedMartType == .costcoNormal {
-                    
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoNormal {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoNormal {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoNormal  {
-                        Text("이번 주 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
+                if let holiday = holidayText(for: datum, selectedMartType: selectedMartType, entryDate: entry.date) {
+                    Text(holiday.text)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .minimumScaleFactor(0.6)
+                        .foregroundColor(holiday.color)
+                        .multilineTextAlignment(.center)
+                        .onChange(of: selectedBranch) {
+                            WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
+                            WidgetCenter.shared.reloadAllTimelines()
+                        }
                 }
-                else if selectedMartType == .costcoDaegu {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoDaegu {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoDaegu {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoDaegu  {
-                        Text("월요일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                } else if selectedMartType == .costcoIlsan {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoIlsan {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoIlsan {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoIlsan  {
-                        Text("수요일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                } else if selectedMartType == .costcoUlsan {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoUlsan {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoUlsan {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoUlsan  {
-                        Text("곧 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                }
-                
-                
             }
             
             HStack(spacing: 0) {
@@ -331,22 +166,51 @@ struct CalendarWidgetEntryView : View {
             
         }
         .onAppear {
-            print(isCostco.description)
             if isCostco {
-                if selectedBranch == 0 {
+                if selectedBranch == 1 {
                     selectedMartType = .costcoNormal
-                } else if selectedBranch == 1 {
-                    selectedMartType = .costcoDaegu
                 } else if selectedBranch == 2 {
-                    selectedMartType = .costcoIlsan
+                    selectedMartType = .costcoDaegu
                 } else if selectedBranch == 3 {
+                    selectedMartType = .costcoIlsan
+                } else if selectedBranch == 4 {
                     selectedMartType = .costcoUlsan
                 }
             } else if !isCostco {
                 selectedMartType = .normal
             }
+            print("?",selectedBranch)
         }
     }
+    
+    func holidayText(for datum: MartHoliday, selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
+        let displayDate = dateToDisplay(month: datum.month, day: datum.day)
+        guard datum.martType == selectedMartType else { return nil }
+        
+        // daysDifference 계산
+        if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: displayDate).day {
+            switch daysDifference {
+            case 0:
+                return ("돈꼬 \(selectedMartType.displayName)", .red)
+            case -1:
+                return ("내일 돈꼬 \(selectedMartType.displayName)", .palePink)
+            case -6...(-2):
+                let dayText: String
+                switch selectedMartType {
+                case .costcoDaegu: dayText = "월요일"
+                case .costcoIlsan: dayText = "수요일"
+                case .costcoUlsan: dayText = "곧"
+                default: dayText = "이번 주"
+                }
+                return ("\(dayText) 돈꼬 \(selectedMartType.displayName)", .palePink)
+            default:
+                return nil
+            }
+        }
+        
+        return nil
+    }
+
     
     func dateToDisplay(month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
@@ -388,5 +252,34 @@ extension Date {
     
     var dayDisplayFormat: String {
         self.formatted(.dateTime.day())
+    }
+}
+
+
+/// Model
+struct DayEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+}
+
+
+struct MartHoliday: Hashable, Codable {
+    let month: Int
+    let day: Int
+    let martType: MartType
+}
+
+enum MartType: Codable {
+    case normal
+    case costcoNormal
+    case costcoDaegu
+    case costcoIlsan
+    case costcoUlsan
+    
+    var displayName: String {
+        switch self {
+        case .normal: return "마트"
+        case .costcoNormal, .costcoDaegu, .costcoIlsan, .costcoUlsan: return "코스트코"
+        }
     }
 }

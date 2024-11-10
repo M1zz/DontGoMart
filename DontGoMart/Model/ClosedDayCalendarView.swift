@@ -11,10 +11,8 @@ struct ClosedDayCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0
     @State var selectedMartType: MartType = .normal
-    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart"))
-    var isCostco: Bool = true
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart"))
-    var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = true
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     
     var body: some View {
         VStack(spacing: 35) {
@@ -166,13 +164,13 @@ struct ClosedDayCalendarView: View {
         }
         .onAppear {
             if isCostco {
-                if selectedBranch == 0 {
+                if selectedBranch == 1 {
                     selectedMartType = .costco(type: .normal)
-                } else if selectedBranch == 1 {
-                    selectedMartType = .costco(type: .daegu)
                 } else if selectedBranch == 2 {
-                    selectedMartType = .costco(type: .ilsan)
+                    selectedMartType = .costco(type: .daegu)
                 } else if selectedBranch == 3 {
+                    selectedMartType = .costco(type: .ilsan)
+                } else if selectedBranch == 4 {
                     selectedMartType = .costco(type: .ulsan)
                 }
             } else if !isCostco {
