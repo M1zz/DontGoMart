@@ -55,22 +55,61 @@ struct CalendarWidgetEntryView : View {
     // 기본 마트 휴일 목록 정의
     var data: [MartHoliday] = []
     
-    private func generateBiweeklyTasks(forYear year: Int, weekdays: [(Calendar.Weekday, Calendar.Ordinal, String)], martType: MartType) -> [MartHoliday] {
-        var tasks: [MartHoliday] = []
+    private func nthWeekdayOfYear(forYear year: Int, weekday: Calendar.Weekday, nth: Int) -> [Date?] {
+        var dates: [Date?] = []
+        
+        for month in 1...12 {
+            if let nthWeekdayDate = nthWeekday(forYear: year, month: month, weekday: weekday, nth: nth) {
+                dates.append(nthWeekdayDate)
+            } else {
+                dates.append(nil)  // 해당 달에 nth 번째 요일이 없는 경우
+            }
+        }
+        
+        return dates
+    }
+    
+    // 한 달의 N번째 특정 요일을 찾는 함수 (참고용)
+    private func nthWeekday(forYear year: Int, month: Int, weekday: Calendar.Weekday, nth: Int) -> Date? {
+        guard nth > 0 else { return nil }  // nth가 1 이상이어야 함
+        
         let calendar = Calendar.current
-
-        // 각 요일과 주차에 대해 날짜 찾기
-        for (weekday, ordinal, title) in weekdays {
-            for month in 1...12 {
-                var dateComponents = DateComponents(year: year, month: month, weekday: weekday.rawValue, weekdayOrdinal: ordinal.rawValue)
-                if let date = calendar.date(from: dateComponents) {
-                    let day = calendar.component(.day, from: date)
-                    tasks.append(MartHoliday(month: month, day: day, martType: martType))
+        var dateComponents = DateComponents(year: year, month: month)
+        dateComponents.weekday = weekday.rawValue
+        
+        var foundWeekdays: [Date] = []
+        
+        // 1일부터 시작해서 지정한 요일을 찾아 리스트에 추가
+        for day in 1...28 {  // 최대 4번째 요일은 28일 내에 발생
+            dateComponents.day = day
+            if let date = calendar.date(from: dateComponents),
+               calendar.component(.weekday, from: date) == weekday.rawValue {
+                foundWeekdays.append(date)
+                if foundWeekdays.count == nth {  // n번째 요일까지 찾으면 중단
+                    return date
                 }
             }
         }
         
-        return tasks
+        return nil  // nth번째 요일이 없는 경우
+    }
+
+    // N번째 특정 요일에 따른 MartHoliday 배열 생성 함수
+    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: MartType) -> [MartHoliday] {
+        let dates = nthWeekdayOfYear(forYear: year, weekday: weekday, nth: nth)
+        var holidays: [MartHoliday] = []
+        let calendar = Calendar.current
+        
+        for (monthIndex, date) in dates.enumerated() {
+            if let date = date {
+                let day = calendar.component(.day, from: date)
+                let holiday = MartHoliday(month: monthIndex + 1, day: day, martType: martType)
+                holidays.append(holiday)
+                //print("holuday: \(holiday)")
+            }
+        }
+        
+        return holidays
     }
     
     // 오늘 날짜로부터 2025년까지의 모든 둘째, 넷째 주 일요일 찾기
@@ -81,69 +120,46 @@ struct CalendarWidgetEntryView : View {
         self.config = MonthConfig.determineConfig(from: entry.date)
         
         // 마트 휴일 생성 (일반 마트, 코스트코 휴일 데이터)
-        data += generateBiweeklyTasks(
-            forYear: year,
-            weekdays: [
-                (.sunday, .second, "2번째 일요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .normal
-        )
+        data = []
         
-        data += generateBiweeklyTasks(
-            forYear: year,
-            weekdays: [
-                (.sunday, .second, "2번째 일요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .costcoNormal
-        )
+        let weekday = Calendar.Weekday.sunday
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 2, martType: .normal)
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .normal)
         
-        data += generateBiweeklyTasks(
-            forYear: year,
-            weekdays: [
-                (.monday, .second, "2번째 월요일"),
-                (.monday, .fourth, "4번째 월요일")
-            ],
-            martType: .costcoDaegu
-        )
+        //print(data,"-------------------")
         
-        data += generateBiweeklyTasks(
-            forYear: year,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.wednesday, .fourth, "4번째 수요일")
-            ],
-            martType: .costcoIlsan
-        )
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costcoDaegu)
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costcoDaegu)
         
-        data += generateBiweeklyTasks(
-            forYear: year,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .costcoUlsan
-        )
+        //print(data,"2-------------------")
+        
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoIlsan)
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costcoIlsan)
+        
+        //print(data,"3-------------------")
+        
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoUlsan)
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costcoUlsan)
+        
+        //print(data,"4-------------------")
     }
     
     var body: some View {
         VStack {
             // ForEach 구문
-            ForEach(data, id: \.self) { datum in
-                if let holiday = holidayText(for: datum, selectedMartType: selectedMartType, entryDate: entry.date) {
-                    Text(holiday.text)
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .minimumScaleFactor(0.6)
-                        .foregroundColor(holiday.color)
-                        .multilineTextAlignment(.center)
-                        .onChange(of: selectedBranch) {
-                            WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
-                            WidgetCenter.shared.reloadAllTimelines()
-                        }
-                }
+            if let holiday = holidayText(selectedMartType: selectedMartType, entryDate: Date()) {
+                Text(holiday.text)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .minimumScaleFactor(0.6)
+                    .foregroundColor(holiday.color)
+                    .multilineTextAlignment(.center)
+                    .onChange(of: selectedBranch) {
+                        WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }
             }
+        
             
             HStack(spacing: 0) {
                 Text(config.emojiText)
@@ -179,43 +195,86 @@ struct CalendarWidgetEntryView : View {
             } else if !isCostco {
                 selectedMartType = .normal
             }
-            print("?",selectedBranch)
         }
     }
     
-    func holidayText(for datum: MartHoliday, selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
-        let displayDate = dateToDisplay(month: datum.month, day: datum.day)
-        guard datum.martType == selectedMartType else { return nil }
-        
-        // daysDifference 계산
-        if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: displayDate).day {
-            switch daysDifference {
-            case 0:
-                return ("돈꼬 \(selectedMartType.displayName)", .red)
-            case -1:
-                return ("내일 돈꼬 \(selectedMartType.displayName)", .palePink)
-            case -6...(-2):
-                let dayText: String
-                switch selectedMartType {
-                case .costcoDaegu: dayText = "월요일"
-                case .costcoIlsan: dayText = "수요일"
-                case .costcoUlsan: dayText = "곧"
-                default: dayText = "이번 주"
+    func holidayText(selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
+        let costcoHolidays = data.filter { $0.martType == selectedMartType }
+        print("======================")
+        for datum in costcoHolidays {
+            //print(entryDate, datum.month, datum.day, selectedMartType, selectedBranch)
+            print(costcoHolidays)
+
+            
+            let displayDate = dateToDisplay(month: datum.month, day: datum.day)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let formattedDate = dateFormatter.string(from: displayDate)
+            let finalDate = dateFormatter.date(from: formattedDate)!
+            
+            guard datum.martType == selectedMartType else { return nil }
+            
+//            print(costcoHolidays, costcoHolidays.count)
+//            print(selectedMartType, selectedBranch)
+//            
+            // daysDifference 계산
+            if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: finalDate).day {
+                print("daysDifference", daysDifference, entryDate.description, displayDate)
+                switch daysDifference {
+                case 0:
+                    print("0")
+                    return ("돈꼬 \(selectedMartType.displayName)", .red)
+                case 1:
+                    print("1")
+                    return ("내일 돈꼬 \(selectedMartType.displayName)", .palePink)
+                case 2...6:
+                    print("2")
+                    let dayText: String
+                    switch selectedMartType {
+                    case .costcoDaegu: dayText = "월요일"
+                    case .costcoIlsan: dayText = "수요일"
+                    case .costcoUlsan: dayText = "곧"
+                    default: dayText = "이번 주"
+                    }
+                    return ("\(dayText) 돈꼬 \(selectedMartType.displayName)", .palePink)
+                default:
+                    continue
                 }
-                return ("\(dayText) 돈꼬 \(selectedMartType.displayName)", .palePink)
-            default:
-                return nil
             }
         }
+        
         
         return nil
     }
 
     
     func dateToDisplay(month: Int, day: Int) -> Date {
-        let components = DateComponents(calendar: Calendar.current,
-                                        year: year, month: month, day: day)
-        return Calendar.current.date(from: components)!
+        //print(month, day)
+        let calendar = Calendar.current
+        let currentDate = Date()
+        let currentHour = calendar.component(.hour, from: currentDate)
+        let currentMinute = calendar.component(.minute, from: currentDate)
+        let currentSecond = calendar.component(.second, from: currentDate)
+        var dateComponents = DateComponents()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
+        
+        
+        
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        dateComponents.hour = currentHour + 9 + 15
+        dateComponents.minute = currentMinute
+        dateComponents.second = currentSecond
+        
+        // 날짜 생성
+        if let date = calendar.date(from: dateComponents) {
+            //print(date)
+            return date
+        }
+        return Date()
     }
 }
 
@@ -263,7 +322,8 @@ struct DayEntry: TimelineEntry {
 }
 
 
-struct MartHoliday: Hashable, Codable {
+struct MartHoliday: Hashable, Codable, Identifiable {
+    let id: UUID = UUID()
     let month: Int
     let day: Int
     let martType: MartType
