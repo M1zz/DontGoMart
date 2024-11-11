@@ -9,6 +9,8 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+let year = Calendar.current.component(.year, from: Date())
+
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> DayEntry {
         DayEntry(date: Date(), configuration: ConfigurationIntent())
@@ -35,162 +37,79 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
-
-struct DayEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
-
-
-struct MartHolyday: Hashable, Codable {
-    let month: Int
-    let day: Int
-    let martType: MartType
-}
-
-enum MartType: Codable {
-    case normal
-    case costcoNormal
-    case costcoDaegu
-    case costcoIlsan
-    case costcoUlsan
-}
+let appGroupId = "group.com.leeo.DontGoMart"
 
 struct CalendarWidgetEntryView : View {
-    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = false
-    @AppStorage("selectedLocation", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var selectedLocation: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .costcoNormal
     
     var entry: DayEntry
     var config: MonthConfig
     
     // MartHoliday 타입의 데이터를 초기화하는 함수 정의
-    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHolyday] {
-        return monthDayPairs.map { MartHolyday(month: $0.0, day: $0.1, martType: martType) }
+    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHoliday] {
+        return monthDayPairs.map { MartHoliday(month: $0.0, day: $0.1, martType: martType) }
     }
 
     // 기본 마트 휴일 목록 정의
-    var data: [MartHolyday] = []
-
-    // 격주 일요일 추출기
-    func findSecondAndFourthSundaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
-        var results: [(Int, Int)] = []
-        let calendar = Calendar.current
-
-        // 시작 날짜의 연도와 월
-        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
-        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+    var data: [MartHoliday] = []
+    
+    private func nthWeekdayOfYear(forYear year: Int, weekday: Calendar.Weekday, nth: Int) -> [Date?] {
+        var dates: [Date?] = []
         
-        for year in startYear...endYear {
-            for month in (year == startYear ? startMonth : 1)...12 {
-                // 둘째 주 일요일 찾기
-                var dateComponents = DateComponents(year: year, month: month, weekday: 1, weekdayOrdinal: 2)
-                if let secondSunday = calendar.date(from: dateComponents) {
-                    let secondSundayDay = calendar.component(.day, from: secondSunday)
-                    results.append((month, secondSundayDay))
-                }
-                
-                // 넷째 주 일요일 찾기
-                dateComponents.weekdayOrdinal = 4
-                if let fourthSunday = calendar.date(from: dateComponents) {
-                    let fourthSundayDay = calendar.component(.day, from: fourthSunday)
-                    results.append((month, fourthSundayDay))
-                }
+        for month in 1...12 {
+            if let nthWeekdayDate = nthWeekday(forYear: year, month: month, weekday: weekday, nth: nth) {
+                dates.append(nthWeekdayDate)
+            } else {
+                dates.append(nil)  // 해당 달에 nth 번째 요일이 없는 경우
             }
         }
         
-        return results
+        return dates
     }
     
-    // 격주 월요일 추출기
-    func findSecondAndFourthMondaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
-        var results: [(Int, Int)] = []
-        let calendar = Calendar.current
-
-        // 시작 날짜의 연도와 월
-        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
-        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
+    // 한 달의 N번째 특정 요일을 찾는 함수 (참고용)
+    private func nthWeekday(forYear year: Int, month: Int, weekday: Calendar.Weekday, nth: Int) -> Date? {
+        guard nth > 0 else { return nil }  // nth가 1 이상이어야 함
         
-        for year in startYear...endYear {
-            for month in (year == startYear ? startMonth : 1)...12 {
-                // 둘째 주 월요일 찾기
-                var dateComponents = DateComponents(year: year, month: month, weekday: 2, weekdayOrdinal: 2)
-                if let secondMonday = calendar.date(from: dateComponents) {
-                    let secondMondayDay = calendar.component(.day, from: secondMonday)
-                    results.append((month, secondMondayDay))
-                }
-                
-                // 넷째 주 월요일 찾기
-                dateComponents.weekdayOrdinal = 4
-                if let fourthMonday = calendar.date(from: dateComponents) {
-                    let fourthMondayDay = calendar.component(.day, from: fourthMonday)
-                    results.append((month, fourthMondayDay))
+        let calendar = Calendar.current
+        var dateComponents = DateComponents(year: year, month: month)
+        dateComponents.weekday = weekday.rawValue
+        
+        var foundWeekdays: [Date] = []
+        
+        // 1일부터 시작해서 지정한 요일을 찾아 리스트에 추가
+        for day in 1...28 {  // 최대 4번째 요일은 28일 내에 발생
+            dateComponents.day = day
+            if let date = calendar.date(from: dateComponents),
+               calendar.component(.weekday, from: date) == weekday.rawValue {
+                foundWeekdays.append(date)
+                if foundWeekdays.count == nth {  // n번째 요일까지 찾으면 중단
+                    return date
                 }
             }
         }
         
-        return results
-    }
-    
-    // 격주 수요일 추출기
-    func findSecondAndFourthWednesdaysAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
-        var results: [(Int, Int)] = []
-        let calendar = Calendar.current
-
-        // 시작 날짜의 연도와 월
-        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
-        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
-        
-        for year in startYear...endYear {
-            for month in (year == startYear ? startMonth : 1)...12 {
-                // 둘째 주 수요일 찾기
-                var dateComponents = DateComponents(year: year, month: month, weekday: 4, weekdayOrdinal: 2)
-                if let secondWednesday = calendar.date(from: dateComponents) {
-                    let secondWednesdayDay = calendar.component(.day, from: secondWednesday)
-                    results.append((month, secondWednesdayDay))
-                }
-                
-                // 넷째 주 수요일 찾기
-                dateComponents.weekdayOrdinal = 4
-                if let fourthWednesday = calendar.date(from: dateComponents) {
-                    let fourthWednesdayDay = calendar.component(.day, from: fourthWednesday)
-                    results.append((month, fourthWednesdayDay))
-                }
-            }
-        }
-        
-        return results
+        return nil  // nth번째 요일이 없는 경우
     }
 
-    // 2째주 수요일 4째주 일요일 추출기
-    func findSecondWednesdayAndFourthSundayAsMonthDayPairs(from startDate: Date, to endYear: Int) -> [(Int, Int)] {
-        var results: [(Int, Int)] = []
+    // N번째 특정 요일에 따른 MartHoliday 배열 생성 함수
+    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: MartType) -> [MartHoliday] {
+        let dates = nthWeekdayOfYear(forYear: year, weekday: weekday, nth: nth)
+        var holidays: [MartHoliday] = []
         let calendar = Calendar.current
-
-        // 시작 날짜의 연도와 월
-        let startComponents = calendar.dateComponents([.year, .month], from: startDate)
-        guard let startYear = startComponents.year, let startMonth = startComponents.month else { return results }
         
-        for year in startYear...endYear {
-            for month in (year == startYear ? startMonth : 1)...12 {
-                // 둘째 주 수요일 찾기
-                var dateComponents = DateComponents(year: year, month: month, weekday: 4, weekdayOrdinal: 2) // 수요일은 weekday 4
-                if let secondWednesday = calendar.date(from: dateComponents) {
-                    let secondWednesdayDay = calendar.component(.day, from: secondWednesday)
-                    results.append((month, secondWednesdayDay))
-                }
-                
-                // 넷째 주 일요일 찾기
-                dateComponents.weekday = 1 // 일요일은 weekday 1
-                dateComponents.weekdayOrdinal = 4
-                if let fourthSunday = calendar.date(from: dateComponents) {
-                    let fourthSundayDay = calendar.component(.day, from: fourthSunday)
-                    results.append((month, fourthSundayDay))
-                }
+        for (monthIndex, date) in dates.enumerated() {
+            if let date = date {
+                let day = calendar.component(.day, from: date)
+                let holiday = MartHoliday(month: monthIndex + 1, day: day, martType: martType)
+                holidays.append(holiday)
+                //print("holuday: \(holiday)")
             }
         }
         
-        return results
+        return holidays
     }
     
     // 오늘 날짜로부터 2025년까지의 모든 둘째, 넷째 주 일요일 찾기
@@ -200,183 +119,47 @@ struct CalendarWidgetEntryView : View {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
         
-        data += createMartHolidays(monthDayPairs: findSecondAndFourthSundaysAsMonthDayPairs(from: startDate, to: 2024), martType: .normal)
-
-        // 코스트코 일반 휴일 데이터 추가
-        data += createMartHolidays(monthDayPairs: findSecondAndFourthSundaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoNormal)
-
-
-        // 코스트코 대구점 휴일 데이터 추가
-        data += createMartHolidays(monthDayPairs: findSecondAndFourthMondaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoDaegu)
-
-        // 코스트코 일산점 휴일 데이터 추가
-        data += createMartHolidays(monthDayPairs: findSecondAndFourthMondaysAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoIlsan)
-
-        // 코스트코 울산점 휴일 데이터 추가
-        data += createMartHolidays(monthDayPairs: findSecondWednesdayAndFourthSundayAsMonthDayPairs(from: startDate, to: 2024), martType: .costcoUlsan)
+        // 마트 휴일 생성 (일반 마트, 코스트코 휴일 데이터)
+        data = []
         
+        let weekday = Calendar.Weekday.sunday
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 2, martType: .normal)
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .normal)
         
-        print(data)
+        //print(data,"-------------------")
+        
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costcoDaegu)
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costcoDaegu)
+        
+        //print(data,"2-------------------")
+        
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoIlsan)
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costcoIlsan)
+        
+        //print(data,"3-------------------")
+        
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoUlsan)
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costcoUlsan)
+        
+        //print(data,"4-------------------")
     }
     
     var body: some View {
         VStack {
-            ForEach(data, id: \.self) { datum in
-                if selectedMartType == .normal {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .normal {
-                        Text("돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .normal {
-                        Text("내일 돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .normal {
-                        Text("이번 주 돈꼬마트")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
+            // ForEach 구문
+            if let holiday = holidayText(selectedMartType: selectedMartType, entryDate: Date()) {
+                Text(holiday.text)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .minimumScaleFactor(0.6)
+                    .foregroundColor(holiday.color)
+                    .multilineTextAlignment(.center)
+                    .onChange(of: selectedBranch) {
+                        WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
+                        WidgetCenter.shared.reloadAllTimelines()
                     }
-                } else if selectedMartType == .costcoNormal {
-                    
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoNormal {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoNormal {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoNormal  {
-                        Text("이번 주 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                }
-                else if selectedMartType == .costcoDaegu {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoDaegu {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoDaegu {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoDaegu  {
-                        Text("월요일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                } else if selectedMartType == .costcoIlsan {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoIlsan {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoIlsan {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoIlsan  {
-                        Text("수요일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                } else if selectedMartType == .costcoUlsan {
-                    if entry.date == dateToDisplay(month: datum.month, day: datum.day),
-                       datum.martType == .costcoUlsan {
-                        Text("돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.red)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 1),
-                              datum.martType == .costcoUlsan {
-                        Text("내일 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                    } else if entry.date == dateToDisplay(month: datum.month, day: datum.day - 2) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 3) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 4) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 5) ||
-                                entry.date == dateToDisplay(month: datum.month, day: datum.day - 6),
-                              datum.martType == .costcoUlsan  {
-                        Text("곧 돈꼬 코스트코")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .minimumScaleFactor(0.6)
-                            .foregroundColor(.palePink)
-                            .multilineTextAlignment(.center)
-                        
-                    }
-                }
-                
-                
             }
+        
             
             HStack(spacing: 0) {
                 Text(config.emojiText)
@@ -399,15 +182,14 @@ struct CalendarWidgetEntryView : View {
             
         }
         .onAppear {
-            print(isCostco.description)
             if isCostco {
-                if selectedLocation == 0 {
+                if selectedBranch == 1 {
                     selectedMartType = .costcoNormal
-                } else if selectedLocation == 1 {
+                } else if selectedBranch == 2 {
                     selectedMartType = .costcoDaegu
-                } else if selectedLocation == 2 {
+                } else if selectedBranch == 3 {
                     selectedMartType = .costcoIlsan
-                } else if selectedLocation == 3 {
+                } else if selectedBranch == 4 {
                     selectedMartType = .costcoUlsan
                 }
             } else if !isCostco {
@@ -416,10 +198,83 @@ struct CalendarWidgetEntryView : View {
         }
     }
     
+    func holidayText(selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
+        let costcoHolidays = data.filter { $0.martType == selectedMartType }
+        print("======================")
+        for datum in costcoHolidays {
+            //print(entryDate, datum.month, datum.day, selectedMartType, selectedBranch)
+            print(costcoHolidays)
+
+            
+            let displayDate = dateToDisplay(month: datum.month, day: datum.day)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let formattedDate = dateFormatter.string(from: displayDate)
+            let finalDate = dateFormatter.date(from: formattedDate)!
+            
+            guard datum.martType == selectedMartType else { return nil }
+            
+//            print(costcoHolidays, costcoHolidays.count)
+//            print(selectedMartType, selectedBranch)
+//            
+            // daysDifference 계산
+            if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: finalDate).day {
+                print("daysDifference", daysDifference, entryDate.description, displayDate)
+                switch daysDifference {
+                case 0:
+                    print("0")
+                    return ("돈꼬 \(selectedMartType.displayName)", .red)
+                case 1:
+                    print("1")
+                    return ("내일 돈꼬 \(selectedMartType.displayName)", .palePink)
+                case 2...6:
+                    print("2")
+                    let dayText: String
+                    switch selectedMartType {
+                    case .costcoDaegu: dayText = "월요일"
+                    case .costcoIlsan: dayText = "수요일"
+                    case .costcoUlsan: dayText = "곧"
+                    default: dayText = "이번 주"
+                    }
+                    return ("\(dayText) 돈꼬 \(selectedMartType.displayName)", .palePink)
+                default:
+                    continue
+                }
+            }
+        }
+        
+        
+        return nil
+    }
+
+    
     func dateToDisplay(month: Int, day: Int) -> Date {
-        let components = DateComponents(calendar: Calendar.current,
-                                        year: 2024, month: month, day: day)
-        return Calendar.current.date(from: components)!
+        //print(month, day)
+        let calendar = Calendar.current
+        let currentDate = Date()
+        let currentHour = calendar.component(.hour, from: currentDate)
+        let currentMinute = calendar.component(.minute, from: currentDate)
+        let currentSecond = calendar.component(.second, from: currentDate)
+        var dateComponents = DateComponents()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
+        
+        
+        
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        dateComponents.hour = currentHour + 9 + 15
+        dateComponents.minute = currentMinute
+        dateComponents.second = currentSecond
+        
+        // 날짜 생성
+        if let date = calendar.date(from: dateComponents) {
+            //print(date)
+            return date
+        }
+        return Date()
     }
 }
 
@@ -444,7 +299,7 @@ struct CalendarWidget_Previews: PreviewProvider {
     
     static func dateToDisplay(month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
-                                        year: 2024, month: month, day: day)
+                                        year: year, month: month, day: day)
         return Calendar.current.date(from: components)!
     }
 }
@@ -456,5 +311,35 @@ extension Date {
     
     var dayDisplayFormat: String {
         self.formatted(.dateTime.day())
+    }
+}
+
+
+/// Model
+struct DayEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+}
+
+
+struct MartHoliday: Hashable, Codable, Identifiable {
+    let id: UUID = UUID()
+    let month: Int
+    let day: Int
+    let martType: MartType
+}
+
+enum MartType: Codable {
+    case normal
+    case costcoNormal
+    case costcoDaegu
+    case costcoIlsan
+    case costcoUlsan
+    
+    var displayName: String {
+        switch self {
+        case .normal: return "마트"
+        case .costcoNormal, .costcoDaegu, .costcoIlsan, .costcoUlsan: return "코스트코"
+        }
     }
 }

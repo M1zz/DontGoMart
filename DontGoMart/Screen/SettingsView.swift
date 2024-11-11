@@ -6,18 +6,24 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct SettingsView: View {
-    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = false
     @Binding var isShowingSettings: Bool
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("General")) {
+                Section(header: Text("대형마트")) {
                     Toggle(isOn: $isCostco, label: {
                         Text("코스트코")
                     })
+                    .onChange(of: isCostco) {
+                        selectedBranch = isCostco ? 1 : 0
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }
                     NavigationLink {
                         CostcoSettings()
                     } label: {
@@ -25,13 +31,13 @@ struct SettingsView: View {
                     }.disabled(!isCostco)
                 }
             }
-            .navigationTitle("Settings")
+            .navigationTitle("매장선택")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         isShowingSettings = false
                     }) {
-                        Text("Done")
+                        Text("완료")
                     }
                 }
             }
@@ -41,8 +47,9 @@ struct SettingsView: View {
 
 
 struct CostcoSettings: View {
-    @AppStorage("selectedLocation", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var selectedLocation: Int = 0
-    @State var selectedLocal: CostcoMartType = .normal
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @State var selectedCostcoBranch: CostcoBranch = .normal
+    
     var body: some View {
         
         VStack {
@@ -52,32 +59,32 @@ struct CostcoSettings: View {
                 Spacer()
             }
             HStack {
-                Picker("선택된 매장", selection: $selectedLocal) {
-                    ForEach(CostcoMartType.allCases, id: \.self) { type in
-                        
+                Picker("선택된 매장", selection: $selectedCostcoBranch) {
+                    ForEach(CostcoBranch.allCases, id: \.self) { type in
                         Text(type.storeName)
                             .lineLimit(3)
                     }
                 }
                 Spacer()
             }
-            .onChange(of: selectedLocal, { oldValue, newValue in
-                selectedLocation = selectedLocal.storeID
+            .onChange(of: selectedCostcoBranch, { oldValue, newValue in
+                selectedBranch = selectedCostcoBranch.branchID
+
             })
             .frame(alignment: .leading)
-            //.pickerStyle()
+
             Spacer()
         }
-        .navigationTitle("Select costco")
+        .navigationTitle("코스트코 지점 선택하기")
         .onAppear(perform: {
-            if selectedLocation == 0 {
-                selectedLocal = .normal
-            } else if selectedLocation == 1 {
-                selectedLocal = .daegu
-            } else if selectedLocation == 2 {
-                selectedLocal = .ilsan
-            } else if selectedLocation == 3 {
-                selectedLocal = .ulsan
+            if selectedBranch == 1 {
+                selectedCostcoBranch = .normal
+            } else if selectedBranch == 2 {
+                selectedCostcoBranch = .daegu
+            } else if selectedBranch == 3 {
+                selectedCostcoBranch = .ilsan
+            } else if selectedBranch == 4 {
+                selectedCostcoBranch = .ulsan
             }
         })
     }

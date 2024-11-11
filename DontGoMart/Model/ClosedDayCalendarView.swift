@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct CustomDatePicker: View {
+struct ClosedDayCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0
     @State var selectedMartType: MartType = .normal
-    @AppStorage("isNormal", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var isCostco: Bool = true
-    @AppStorage("selectedLocation", store: UserDefaults(suiteName: "group.com.leeo.DontGoMart")) var selectedLocation: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = true
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     
     var body: some View {
         VStack(spacing: 35) {
@@ -102,10 +102,6 @@ struct CustomDatePicker: View {
                     ForEach(task.task) { task in
                         
                         VStack(alignment: .leading, spacing: 10) {
-                            
-                            // For Custom Timing...
-//                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)),style: .time)
-                            
                             Text(task.title)
                                 .font(.title2.bold())
                         }
@@ -131,7 +127,7 @@ struct CustomDatePicker: View {
     }
     
     @ViewBuilder
-    func CardView(value: DateValue)->some View{
+    func CardView(value: DateValue) -> some View {
         
         VStack{
             if value.day != -1 {
@@ -168,13 +164,13 @@ struct CustomDatePicker: View {
         }
         .onAppear {
             if isCostco {
-                if selectedLocation == 0 {
+                if selectedBranch == 1 {
                     selectedMartType = .costco(type: .normal)
-                } else if selectedLocation == 1 {
+                } else if selectedBranch == 2 {
                     selectedMartType = .costco(type: .daegu)
-                } else if selectedLocation == 2 {
+                } else if selectedBranch == 3 {
                     selectedMartType = .costco(type: .ilsan)
-                } else if selectedLocation == 3 {
+                } else if selectedBranch == 4 {
                     selectedMartType = .costco(type: .ulsan)
                 }
             } else if !isCostco {
@@ -237,31 +233,6 @@ struct CustomDatePicker: View {
     }
 }
 
-struct CustomDatePicker_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ClosedDaysView()
 }
-
-// Extending Date to get Current Month Dates...
-extension Date{
-    
-    func getAllDates()->[Date]{
-        
-        let calendar = Calendar.current
-        
-        // getting start Date...
-        let startDate = calendar.date(from: Calendar.current.dateComponents([.year,.month], from: self))!
-        
-        let range = calendar.range(of: .day, in: .month, for: startDate)!
-        
-        // getting date...
-        return range.compactMap { day -> Date in
-            
-            return calendar.date(byAdding: .day, value: day - 1, to: startDate)!
-        }
-    }
-}
-
-//UserDefaults(suiteName: appGroupId())?.setValue(components, forKey: key)
-//UserDefaults(suiteName: appGroupId())?.synchronize()
