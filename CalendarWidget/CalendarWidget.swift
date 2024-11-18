@@ -42,13 +42,13 @@ let appGroupId = "group.com.leeo.DontGoMart"
 struct CalendarWidgetEntryView : View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
-    @State private var selectedMartType: MartType = .costcoNormal
+    @State private var selectedMartType: WidgetMartType = .costcoNormal
     
     var entry: DayEntry
     var config: MonthConfig
     
     // MartHoliday 타입의 데이터를 초기화하는 함수 정의
-    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHoliday] {
+    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: WidgetMartType) -> [MartHoliday] {
         return monthDayPairs.map { MartHoliday(month: $0.0, day: $0.1, martType: martType) }
     }
 
@@ -95,7 +95,7 @@ struct CalendarWidgetEntryView : View {
     }
 
     // N번째 특정 요일에 따른 MartHoliday 배열 생성 함수
-    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: MartType) -> [MartHoliday] {
+    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: WidgetMartType) -> [MartHoliday] {
         let dates = nthWeekdayOfYear(forYear: year, weekday: weekday, nth: nth)
         var holidays: [MartHoliday] = []
         let calendar = Calendar.current
@@ -198,7 +198,7 @@ struct CalendarWidgetEntryView : View {
         }
     }
     
-    func holidayText(selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
+    func holidayText(selectedMartType: WidgetMartType, entryDate: Date) -> (text: String, color: Color)? {
         let costcoHolidays = data.filter { $0.martType == selectedMartType }
         print("======================")
         for datum in costcoHolidays {
@@ -314,32 +314,3 @@ extension Date {
     }
 }
 
-
-/// Model
-struct DayEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
-
-
-struct MartHoliday: Hashable, Codable, Identifiable {
-    let id: UUID = UUID()
-    let month: Int
-    let day: Int
-    let martType: MartType
-}
-
-enum MartType: Codable {
-    case normal
-    case costcoNormal
-    case costcoDaegu
-    case costcoIlsan
-    case costcoUlsan
-    
-    var displayName: String {
-        switch self {
-        case .normal: return "마트"
-        case .costcoNormal, .costcoDaegu, .costcoIlsan, .costcoUlsan: return "코스트코"
-        }
-    }
-}
