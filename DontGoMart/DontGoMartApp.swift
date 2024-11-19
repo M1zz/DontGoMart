@@ -66,7 +66,7 @@ struct DontGoMartApp: App {
 //        return calendar.date(from: components)
 //    }
     
-    private func generateBiweeklyTasks(
+    func generateBiweeklyTasks(
             forYear year: Int,
             monthRange: Range<Int> = 1..<13,
             weekdays: [(Calendar.Weekday, Calendar.Ordinal, String)],
@@ -87,7 +87,7 @@ struct DontGoMartApp: App {
             return tasks
         }
 
-    private func findPatternDay(of weekday: Calendar.Weekday, ordinal: Calendar.Ordinal, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
+    func findPatternDay(of weekday: Calendar.Weekday, ordinal: Calendar.Ordinal, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
         // 날짜 컴포넌트 설정
         var dateComponents = DateComponents(year: year, month: month)
 
