@@ -84,18 +84,3 @@ struct MartHoliday: Hashable, Identifiable {
     let day: Int
     let martType: MartType
 }
-
-//enum WidgetMartType: Codable {
-//    case normal
-//    case costcoNormal
-//    case costcoDaegu
-//    case costcoIlsan
-//    case costcoUlsan
-//    
-//    var displayName: String {
-//        switch self {
-//        case .normal: return "마트"
-//        case .costcoNormal, .costcoDaegu, .costcoIlsan, .costcoUlsan: return "코스트코"
-//        }
-//    }
-//}

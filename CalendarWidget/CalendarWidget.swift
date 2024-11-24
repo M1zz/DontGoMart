@@ -105,7 +105,6 @@ struct CalendarWidgetEntryView : View {
                 let day = calendar.component(.day, from: date)
                 let holiday = MartHoliday(month: monthIndex + 1, day: day, martType: martType)
                 holidays.append(holiday)
-                //print("holuday: \(holiday)")
             }
         }
         
@@ -126,22 +125,18 @@ struct CalendarWidgetEntryView : View {
         data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 2, martType: .normal)
         data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .normal)
         
-        //print(data,"-------------------")
         
         data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costco(type: .daegu))
         data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costco(type: .daegu))
         
-        //print(data,"2-------------------")
         
         data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ilsan))
         data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costco(type: .ilsan))
         
-        //print(data,"3-------------------")
         
         data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ulsan))
         data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costco(type: .ulsan))
         
-        //print(data,"4-------------------")
     }
     
     var body: some View {
@@ -202,7 +197,6 @@ struct CalendarWidgetEntryView : View {
         let costcoHolidays = data.filter { $0.martType == selectedMartType }
         print("======================")
         for datum in costcoHolidays {
-            //print(entryDate, datum.month, datum.day, selectedMartType, selectedBranch)
             print(costcoHolidays)
 
             
@@ -213,10 +207,7 @@ struct CalendarWidgetEntryView : View {
             let finalDate = dateFormatter.date(from: formattedDate)!
             
             guard datum.martType == selectedMartType else { return nil }
-            
-//            print(costcoHolidays, costcoHolidays.count)
-//            print(selectedMartType, selectedBranch)
-//            
+                        
             // daysDifference 계산
             if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: finalDate).day {
                 print("daysDifference", daysDifference, entryDate.description, displayDate)
@@ -249,7 +240,6 @@ struct CalendarWidgetEntryView : View {
 
     
     func dateToDisplay(month: Int, day: Int) -> Date {
-        //print(month, day)
         let calendar = Calendar.current
         let currentDate = Date()
         let currentHour = calendar.component(.hour, from: currentDate)
@@ -271,7 +261,6 @@ struct CalendarWidgetEntryView : View {
         
         // 날짜 생성
         if let date = calendar.date(from: dateComponents) {
-            //print(date)
             return date
         }
         return Date()
