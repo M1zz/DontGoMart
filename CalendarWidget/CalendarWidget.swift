@@ -42,13 +42,13 @@ let appGroupId = "group.com.leeo.DontGoMart"
 struct CalendarWidgetEntryView : View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
-    @State private var selectedMartType: WidgetMartType = .costcoNormal
+    @State private var selectedMartType: MartType = .normal
     
     var entry: DayEntry
     var config: MonthConfig
     
     // MartHoliday 타입의 데이터를 초기화하는 함수 정의
-    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: WidgetMartType) -> [MartHoliday] {
+    func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHoliday] {
         return monthDayPairs.map { MartHoliday(month: $0.0, day: $0.1, martType: martType) }
     }
 
@@ -95,7 +95,7 @@ struct CalendarWidgetEntryView : View {
     }
 
     // N번째 특정 요일에 따른 MartHoliday 배열 생성 함수
-    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: WidgetMartType) -> [MartHoliday] {
+    func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: MartType) -> [MartHoliday] {
         let dates = nthWeekdayOfYear(forYear: year, weekday: weekday, nth: nth)
         var holidays: [MartHoliday] = []
         let calendar = Calendar.current
@@ -128,18 +128,18 @@ struct CalendarWidgetEntryView : View {
         
         //print(data,"-------------------")
         
-        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costcoDaegu)
-        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costcoDaegu)
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costco(type: .daegu))
+        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costco(type: .daegu))
         
         //print(data,"2-------------------")
         
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoIlsan)
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costcoIlsan)
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ilsan))
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costco(type: .ilsan))
         
         //print(data,"3-------------------")
         
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costcoUlsan)
-        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costcoUlsan)
+        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ulsan))
+        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costco(type: .ulsan))
         
         //print(data,"4-------------------")
     }
@@ -184,13 +184,13 @@ struct CalendarWidgetEntryView : View {
         .onAppear {
             if isCostco {
                 if selectedBranch == 1 {
-                    selectedMartType = .costcoNormal
+                    selectedMartType = .costco(type: .normal)
                 } else if selectedBranch == 2 {
-                    selectedMartType = .costcoDaegu
+                    selectedMartType = .costco(type: .daegu)
                 } else if selectedBranch == 3 {
-                    selectedMartType = .costcoIlsan
+                    selectedMartType = .costco(type: .ilsan)
                 } else if selectedBranch == 4 {
-                    selectedMartType = .costcoUlsan
+                    selectedMartType = .costco(type: .ulsan)
                 }
             } else if !isCostco {
                 selectedMartType = .normal
@@ -198,7 +198,7 @@ struct CalendarWidgetEntryView : View {
         }
     }
     
-    func holidayText(selectedMartType: WidgetMartType, entryDate: Date) -> (text: String, color: Color)? {
+    func holidayText(selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
         let costcoHolidays = data.filter { $0.martType == selectedMartType }
         print("======================")
         for datum in costcoHolidays {
@@ -223,20 +223,20 @@ struct CalendarWidgetEntryView : View {
                 switch daysDifference {
                 case 0:
                     print("0")
-                    return ("돈꼬 \(selectedMartType.displayName)", .red)
+                    return ("돈꼬 \(selectedMartType.widgetDisplayName)", .red)
                 case 1:
                     print("1")
-                    return ("내일 돈꼬 \(selectedMartType.displayName)", .palePink)
+                    return ("내일 돈꼬 \(selectedMartType.widgetDisplayName)", .palePink)
                 case 2...6:
                     print("2")
                     let dayText: String
                     switch selectedMartType {
-                    case .costcoDaegu: dayText = "월요일"
-                    case .costcoIlsan: dayText = "수요일"
-                    case .costcoUlsan: dayText = "곧"
+                    case .costco(type: .daegu): dayText = "월요일"
+                    case .costco(type: .ilsan): dayText = "수요일"
+                    case .costco(type: .ulsan): dayText = "곧"
                     default: dayText = "이번 주"
                     }
-                    return ("\(dayText) 돈꼬 \(selectedMartType.displayName)", .palePink)
+                    return ("\(dayText) 돈꼬 \(selectedMartType.widgetDisplayName)", .palePink)
                 default:
                     continue
                 }
