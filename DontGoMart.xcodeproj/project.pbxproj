@@ -10,7 +10,6 @@
 		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
 		589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589D5F462A433E8C00DB3CCF /* ProductList.plist */; };
 		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
-		58B127DB2A3D365B004040EA /* MartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DA2A3D365B004040EA /* MartType.swift */; };
 		58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ClosedDaysView.swift */; };
@@ -73,7 +72,6 @@
 		589D5F462A433E8C00DB3CCF /* ProductList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
 		589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		589D5F4A2A43443C00DB3CCF /* DontGoMart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DontGoMart.entitlements; sourceTree = "<group>"; };
-		58B127DA2A3D365B004040EA /* MartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartType.swift; sourceTree = "<group>"; };
 		58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDayCalendarView.swift; sourceTree = "<group>"; };
 		58B693CC2A3B56E800FF904B /* DontGoMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontGoMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontGoMartApp.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
-				58B127DA2A3D365B004040EA /* MartType.swift */,
 				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
@@ -378,7 +375,6 @@
 				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */,
 				58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */,
-				58B127DB2A3D365B004040EA /* MartType.swift in Sources */,
 				58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */,
 				58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */,
 				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,

@@ -8,12 +8,21 @@
 import SwiftUI
 import WidgetKit
 
-enum MartType: Equatable {
+enum MartType: Hashable {
     case normal
     case costco(type: CostcoBranch)
+    
+    var widgetDisplayName : String {
+        switch self {
+        case .normal :
+            return "마트"
+        case .costco :
+            return "코스트코"
+        }
+    }
 }
 
-enum CostcoBranch: Equatable, Codable, CaseIterable {
+enum CostcoBranch: Hashable, Codable, CaseIterable {
     case normal
     case daegu
     case ilsan
@@ -69,25 +78,9 @@ struct DayEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-
-struct MartHoliday: Hashable, Codable, Identifiable {
+struct MartHoliday: Hashable, Identifiable {
     let id: UUID = UUID()
     let month: Int
     let day: Int
-    let martType: WidgetMartType
-}
-
-enum WidgetMartType: Codable {
-    case normal
-    case costcoNormal
-    case costcoDaegu
-    case costcoIlsan
-    case costcoUlsan
-    
-    var displayName: String {
-        switch self {
-        case .normal: return "마트"
-        case .costcoNormal, .costcoDaegu, .costcoIlsan, .costcoUlsan: return "코스트코"
-        }
-    }
+    let martType: MartType
 }
