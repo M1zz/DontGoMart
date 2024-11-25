@@ -1,20 +1,28 @@
 //
-//  MartType.swift
+//  MartModel.swift
 //  DontGoMart
 //
-//  Created by hyunho lee on 2023/06/17.
+//  Created by 황석현 on 11/18/24.
 //
 
 import SwiftUI
+import WidgetKit
 
-var tasks: [MetaMartsClosedDays] = []
-
-enum MartType: Equatable {
+enum MartType: Hashable {
     case normal
     case costco(type: CostcoBranch)
+    
+    var widgetDisplayName : String {
+        switch self {
+        case .normal :
+            return "마트"
+        case .costco :
+            return "코스트코"
+        }
+    }
 }
 
-enum CostcoBranch: Equatable, Codable, CaseIterable {
+enum CostcoBranch: Hashable, Codable, CaseIterable {
     case normal
     case daegu
     case ilsan
@@ -64,9 +72,15 @@ enum CostcoBranch: Equatable, Codable, CaseIterable {
     }
 }
 
+/// Widget Model
+struct DayEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+}
 
-
-
-
-
-
+struct MartHoliday: Hashable, Identifiable {
+    let id: UUID = UUID()
+    let month: Int
+    let day: Int
+    let martType: MartType
+}

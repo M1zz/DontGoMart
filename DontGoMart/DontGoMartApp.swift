@@ -59,13 +59,7 @@ struct DontGoMartApp: App {
                 }
         }
     }
-    
-//    // 특정 주간의 요일을 찾는 함수
-//    private func findPatternDay(of weekday: Calendar.Weekday, ordinal: Calendar.Ordinal, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
-//        var components = DateComponents(year: year, month: month, weekday: weekday.rawValue, weekdayOrdinal: ordinal.rawValue)
-//        return calendar.date(from: components)
-//    }
-    
+
     private func generateBiweeklyTasks(
             forYear year: Int,
             monthRange: Range<Int> = 1..<13,
@@ -118,106 +112,4 @@ struct DontGoMartApp: App {
         
         return nil
     }
-
-    
-//    private func generateNormalBiweeklySundayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
-//        var sundayTasks: [MetaMartsClosedDays] = []
-//        let calendar = Calendar.current
-//        
-//        for month in 1...12 {
-//            let ordinals: [(Calendar.Ordinal, String)] = [
-//                (.second, "2번째 일요일"),
-//                (.fourth, "4번째 일요일")
-//            ]
-//            
-//            for (ordinal, title) in ordinals {
-//                if let date = findPatternDay(of: .sunday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
-//                    sundayTasks.append(MetaMartsClosedDays(type: .normal, task: [MartCloseData(title: title)], taskDate: date))
-//                }
-//            }
-//        }
-//        
-//        return sundayTasks
-//    }
-//    
-//    private func generateCostcoNormalBiweeklySundayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
-//        var sundayTasks: [MetaMartsClosedDays] = []
-//        let calendar = Calendar.current
-//        
-//        for month in 1...12 {
-//            let ordinals: [(Calendar.Ordinal, String)] = [
-//                (.second, "2번째 일요일"),
-//                (.fourth, "4번째 일요일")
-//            ]
-//            
-//            for (ordinal, title) in ordinals {
-//                if let date = findPatternDay(of: .sunday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
-//                    sundayTasks.append(MetaMartsClosedDays(type: .costco(type: .normal), task: [MartCloseData(title: title)], taskDate: date))
-//                }
-//            }
-//        }
-//        
-//        return sundayTasks
-//    }
-//    
-//    private func generateCostcoDaeguBiweeklyMondayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
-//        var mondayTasks: [MetaMartsClosedDays] = []
-//        let calendar = Calendar.current
-//        
-//        for month in 1...12 {
-//            let ordinals: [(Calendar.Ordinal, String)] = [
-//                (.first, "1번째 월요일"),
-//                (.third, "3번째 월요일")
-//            ]
-//            
-//            for (ordinal, title) in ordinals {
-//                if let date = findPatternDay(of: .monday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
-//                    mondayTasks.append(MetaMartsClosedDays(type: .costco(type: .daegu), task: [MartCloseData(title: title)], taskDate: date))
-//                }
-//            }
-//        }
-//        
-//        return mondayTasks
-//    }
-//    
-//    private func generateCostcoIlsanBiweeklyWednesdayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
-//        var wednesdayTasks: [MetaMartsClosedDays] = []
-//        let calendar = Calendar.current
-//        
-//        for month in 1...12 {
-//            let ordinals: [(Calendar.Ordinal, String)] = [
-//                (.first, "1번째 수요일"),
-//                (.third, "3번째 수요일")
-//            ]
-//            
-//            for (ordinal, title) in ordinals {
-//                if let date = findPatternDay(of: .wednesday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
-//                    wednesdayTasks.append(MetaMartsClosedDays(type: .costco(type: .ilsan), task: [MartCloseData(title: title)], taskDate: date))
-//                }
-//            }
-//        }
-//        
-//        return wednesdayTasks
-//    }
-//    
-//    private func generateCostcoUlsanBiweeklySecondAndFourthWednesdayAndSundayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
-//        var tasks: [MetaMartsClosedDays] = []
-//        let calendar = Calendar.current
-//        
-//        for month in 1...12 {
-//            let weekTargets: [(Calendar.Weekday, Calendar.Ordinal, String)] = [
-//                (.wednesday, .second, "2번째 수요일"),
-//                (.sunday, .fourth, "4번째 일요일")
-//            ]
-//            
-//            for (weekday, ordinal, title) in weekTargets {
-//                if let date = findPatternDay(of: weekday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
-//                    tasks.append(MetaMartsClosedDays(type: .costco(type: .ulsan), task: [MartCloseData(title: title)], taskDate: date))
-//                }
-//            }
-//        }
-//        
-//        return tasks
-//    }
-
 }

@@ -10,7 +10,6 @@
 		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
 		589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589D5F462A433E8C00DB3CCF /* ProductList.plist */; };
 		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
-		58B127DB2A3D365B004040EA /* MartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DA2A3D365B004040EA /* MartType.swift */; };
 		58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ClosedDaysView.swift */; };
@@ -31,6 +30,8 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
+		C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
+		C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +65,6 @@
 		589D5F462A433E8C00DB3CCF /* ProductList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
 		589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		589D5F4A2A43443C00DB3CCF /* DontGoMart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DontGoMart.entitlements; sourceTree = "<group>"; };
-		58B127DA2A3D365B004040EA /* MartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartType.swift; sourceTree = "<group>"; };
 		58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDayCalendarView.swift; sourceTree = "<group>"; };
 		58B693CC2A3B56E800FF904B /* DontGoMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontGoMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontGoMartApp.swift; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
+		C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
-				58B127DA2A3D365B004040EA /* MartType.swift */,
+				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
 			);
@@ -259,7 +260,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					58B693CB2A3B56E800FF904B = {
 						CreatedOnToolsVersion = 14.3;
@@ -318,9 +319,9 @@
 				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */,
 				58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */,
-				58B127DB2A3D365B004040EA /* MartType.swift in Sources */,
 				58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */,
 				58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */,
+				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
@@ -336,6 +337,7 @@
 				58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
 				58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */,
+				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693ED2A3B59EE00FF904B /* CalendarWidget.swift in Sources */,
 			);
@@ -388,6 +390,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -448,6 +451,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -469,7 +473,6 @@
 		58B693DB2A3B56E900FF904B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
@@ -506,7 +509,6 @@
 		58B693DC2A3B56E900FF904B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
