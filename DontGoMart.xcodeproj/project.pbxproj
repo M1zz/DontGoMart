@@ -33,6 +33,8 @@
 		C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
 		C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
 		C359F4F12CFD87C400F26B1D /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693FB2A3B654A00FF904B /* MonthConfig.swift */; };
+		C359F4F32CFD8AD800F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
+		C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
 		C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 		C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,7 @@
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataMapper.swift; sourceTree = "<group>"; };
+		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartModel.swift; sourceTree = "<group>"; };
 		C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontGoMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -235,6 +238,7 @@
 			children = (
 				58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */,
 				58D40AD02CDF81A2008C6458 /* Date+Ext.swift */,
+				C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -385,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */,
+				C359F4F32CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
 				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */,
 				58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */,
@@ -406,6 +411,7 @@
 			files = (
 				58B693FD2A3B66AB00FF904B /* MonthConfig.swift in Sources */,
 				58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */,
+				C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
 				58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */,
 				C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
