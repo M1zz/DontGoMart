@@ -179,7 +179,7 @@
 			children = (
 				58446A292A59BD5C001CC9D1 /* CalendarWidgetExtension.entitlements */,
 				58B693CE2A3B56E800FF904B /* DontGoMart */,
-				58B693E72A3B59EE00FF904B /* CalendarWidget */,
+				58B693E72A3B59EE00FF904B /* DontGoMartWidget */,
 				C3C2F8EF2CEB4952003ED9A5 /* DontGoMartTests */,
 				58B693E22A3B59EE00FF904B /* Frameworks */,
 				58B693CD2A3B56E800FF904B /* Products */,
@@ -230,7 +230,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58B693E72A3B59EE00FF904B /* CalendarWidget */ = {
+		58B693E72A3B59EE00FF904B /* DontGoMartWidget */ = {
 			isa = PBXGroup;
 			children = (
 				C359F4F52CFD8E8D00F26B1D /* Widget */,
@@ -241,7 +241,7 @@
 				58B693EF2A3B59EF00FF904B /* Assets.xcassets */,
 				58B693F12A3B59EF00FF904B /* Info.plist */,
 			);
-			path = CalendarWidget;
+			path = DontGoMartWidget;
 			sourceTree = "<group>";
 		};
 		58D40ACF2CDF818B008C6458 /* Utilities */ = {
