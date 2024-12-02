@@ -32,6 +32,7 @@
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
 		C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
+		C359F4F12CFD87C400F26B1D /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693FB2A3B654A00FF904B /* MonthConfig.swift */; };
 		C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 		C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 /* End PBXBuildFile section */
@@ -390,6 +391,7 @@
 				58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */,
 				58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */,
 				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,
+				C359F4F12CFD87C400F26B1D /* MonthConfig.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
 				C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,

@@ -26,10 +26,10 @@ struct MonthConfig {
     let emojiText: String
     let weekdayTextColor: Color
     let dayTextColor: Color
-
+    
     static func determineConfig(from date: Date) -> MonthConfig {
         let monthInt = Calendar.current.component(.month, from: date)
-
+        
         switch monthInt {
         case 1:
             return MonthConfig(backgroundColor: .gray,
