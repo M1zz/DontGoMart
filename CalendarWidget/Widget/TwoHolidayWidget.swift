@@ -34,7 +34,7 @@ struct TwoHolidayWidget: Widget {
     let kind = "TwoHoliday"
     
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: TwoHoliydayWidgetProvider()) { entry in
             TwoHolidayEntryView(entry: entry)
         }
         .configurationDisplayName("지점별 휴무위젯")

@@ -34,7 +34,7 @@ struct DDayWidget: Widget {
     let kind = "DDayWidget"
     
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: DDayWidgetProvider()) { entry in
             DDayWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("휴무 디데이위젯")
