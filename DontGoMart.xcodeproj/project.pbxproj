@@ -19,7 +19,7 @@
 		58B693E62A3B59EE00FF904B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B693E52A3B59EE00FF904B /* SwiftUI.framework */; };
 		58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */; };
 		58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */; };
-		58B693ED2A3B59EE00FF904B /* CalendarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */; };
+		58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */; };
 		58B693F02A3B59EF00FF904B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B693EF2A3B59EF00FF904B /* Assets.xcassets */; };
 		58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
 		58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
@@ -88,7 +88,7 @@
 		58B693E52A3B59EE00FF904B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidgetBundle.swift; sourceTree = "<group>"; };
 		58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidget.swift; sourceTree = "<group>"; };
+		58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayWidget.swift; sourceTree = "<group>"; };
 		58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CalendarWidget.intentdefinition; sourceTree = "<group>"; };
 		58B693EF2A3B59EF00FF904B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B693F12A3B59EF00FF904B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 				C359F4ED2CFD722D00F26B1D /* Utilities */,
 				58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */,
 				58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */,
-				58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */,
+				58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */,
 				58B693FB2A3B654A00FF904B /* MonthConfig.swift */,
 				58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */,
 				58B693EF2A3B59EF00FF904B /* Assets.xcassets */,
@@ -417,7 +417,7 @@
 				C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
 				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
-				58B693ED2A3B59EE00FF904B /* CalendarWidget.swift in Sources */,
+				58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

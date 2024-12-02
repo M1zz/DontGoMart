@@ -39,7 +39,7 @@ struct Provider: IntentTimelineProvider {
 
 let appGroupId = "group.com.leeo.DontGoMart"
 
-struct CalendarWidgetEntryView : View {
+struct HolidayWidgetEntryView : View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .normal
@@ -114,22 +114,22 @@ struct CalendarWidgetEntryView : View {
     }
 }
 
-struct CalendarWidget: Widget {
-    let kind: String = "MonthlyWidget"
+struct HolidayWidget: Widget {
+    let kind: String = "HolidayWidget"
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            CalendarWidgetEntryView(entry: entry)
+            HolidayWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Monthly Style Widget")
-        .description("The theme of the widget changes based on month.")
+        .configurationDisplayName("휴무알림위젯")
+        .description("휴무가 1주일 이내로 가까워지면 알려주는 위젯이에요!")
         .supportedFamilies([.systemSmall])
     }
 }
 
 struct CalendarWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 7, day: 5), configuration: ConfigurationIntent()))
+        HolidayWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 7, day: 5), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
     
