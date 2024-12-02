@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let year = Calendar.current.component(.year, from: Date())
+
 struct MonthConfig {
     let backgroundColor: Color
     let emojiText: String

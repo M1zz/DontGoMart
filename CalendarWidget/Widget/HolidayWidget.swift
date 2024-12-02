@@ -9,8 +9,6 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-let year = Calendar.current.component(.year, from: Date())
-
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> DayEntry {
         DayEntry(date: Date(), configuration: ConfigurationIntent())
@@ -21,7 +19,7 @@ struct Provider: IntentTimelineProvider {
         completion(entry)
     }
     
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<DayEntry>) -> ()) {
         var entries: [DayEntry] = []
         
         let currentDate = Date()
@@ -39,6 +37,7 @@ struct Provider: IntentTimelineProvider {
 
 let appGroupId = "group.com.leeo.DontGoMart"
 
+// TODO: 현재 날짜가 아닌 휴일까지의 날짜를 보여준다
 struct HolidayWidgetEntryView : View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
@@ -121,7 +120,7 @@ struct HolidayWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             HolidayWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("휴무알림위젯")
+        .configurationDisplayName("휴무 알림위젯")
         .description("휴무가 1주일 이내로 가까워지면 알려주는 위젯이에요!")
         .supportedFamilies([.systemSmall])
     }
