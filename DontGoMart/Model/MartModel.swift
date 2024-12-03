@@ -73,10 +73,6 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
 }
 
 /// Widget Model
-struct DayEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
 
 struct MartHoliday: Hashable, Identifiable {
     let id: UUID = UUID()

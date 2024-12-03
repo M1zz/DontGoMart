@@ -19,7 +19,7 @@
 		58B693E62A3B59EE00FF904B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B693E52A3B59EE00FF904B /* SwiftUI.framework */; };
 		58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */; };
 		58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */; };
-		58B693ED2A3B59EE00FF904B /* CalendarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */; };
+		58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */; };
 		58B693F02A3B59EF00FF904B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B693EF2A3B59EF00FF904B /* Assets.xcassets */; };
 		58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
 		58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
@@ -30,6 +30,18 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
+		C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
+		C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
+		C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
+		C359F4F72CFD8F6700F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
+		C359F4F92CFD8FA700F26B1D /* DDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */; };
+		C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */; };
+		C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */; };
+		C359F5032CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */; };
+		C359F5052CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */; };
+		C359F5062CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */; };
+		C359F5082CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */; };
+		C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */; };
 		C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 		C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +95,7 @@
 		58B693E52A3B59EE00FF904B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidgetBundle.swift; sourceTree = "<group>"; };
 		58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWidget.swift; sourceTree = "<group>"; };
+		58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayWidget.swift; sourceTree = "<group>"; };
 		58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CalendarWidget.intentdefinition; sourceTree = "<group>"; };
 		58B693EF2A3B59EF00FF904B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B693F12A3B59EF00FF904B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +104,13 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
+		C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataMapper.swift; sourceTree = "<group>"; };
+		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
+		C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoHolidayWidget.swift; sourceTree = "<group>"; };
+		C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayWidgetProvider.swift; sourceTree = "<group>"; };
+		C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidgetProvider.swift; sourceTree = "<group>"; };
+		C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoHolidayWidgetProvider.swift; sourceTree = "<group>"; };
 		C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartModel.swift; sourceTree = "<group>"; };
 		C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontGoMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,7 +179,7 @@
 			children = (
 				58446A292A59BD5C001CC9D1 /* CalendarWidgetExtension.entitlements */,
 				58B693CE2A3B56E800FF904B /* DontGoMart */,
-				58B693E72A3B59EE00FF904B /* CalendarWidget */,
+				58B693E72A3B59EE00FF904B /* DontGoMartWidget */,
 				C3C2F8EF2CEB4952003ED9A5 /* DontGoMartTests */,
 				58B693E22A3B59EE00FF904B /* Frameworks */,
 				58B693CD2A3B56E800FF904B /* Products */,
@@ -211,18 +230,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58B693E72A3B59EE00FF904B /* CalendarWidget */ = {
+		58B693E72A3B59EE00FF904B /* DontGoMartWidget */ = {
 			isa = PBXGroup;
 			children = (
+				C359F4F52CFD8E8D00F26B1D /* Widget */,
+				C359F4ED2CFD722D00F26B1D /* Utilities */,
 				58B693E82A3B59EE00FF904B /* CalendarWidgetBundle.swift */,
-				58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */,
-				58B693EC2A3B59EE00FF904B /* CalendarWidget.swift */,
 				58B693FB2A3B654A00FF904B /* MonthConfig.swift */,
 				58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */,
 				58B693EF2A3B59EF00FF904B /* Assets.xcassets */,
 				58B693F12A3B59EF00FF904B /* Info.plist */,
 			);
-			path = CalendarWidget;
+			path = DontGoMartWidget;
 			sourceTree = "<group>";
 		};
 		58D40ACF2CDF818B008C6458 /* Utilities */ = {
@@ -230,8 +249,47 @@
 			children = (
 				58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */,
 				58D40AD02CDF81A2008C6458 /* Date+Ext.swift */,
+				C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C359F4ED2CFD722D00F26B1D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C359F4F52CFD8E8D00F26B1D /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C359F5002CFDC09200F26B1D /* Provider */,
+				C359F4F62CFD8ED700F26B1D /* LiveActivity */,
+				58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */,
+				C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */,
+				C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		C359F4F62CFD8ED700F26B1D /* LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				58B693EA2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift */,
+			);
+			path = LiveActivity;
+			sourceTree = "<group>";
+		};
+		C359F5002CFDC09200F26B1D /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */,
+				C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */,
+				C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,13 +430,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */,
+				C359F4F72CFD8F6700F26B1D /* Color+Ext.swift in Sources */,
+				C359F5032CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */,
 				58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */,
 				58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */,
+				C359F5052CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */,
 				58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */,
 				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
+				C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
+				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
 				58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */,
@@ -389,13 +452,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C359F5082CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693FD2A3B66AB00FF904B /* MonthConfig.swift in Sources */,
+				C359F5062CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */,
 				58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */,
+				C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
+				C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
+				C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */,
+				C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
 				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
-				58B693ED2A3B59EE00FF904B /* CalendarWidget.swift in Sources */,
+				58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */,
+				C359F4F92CFD8FA700F26B1D /* DDayWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +692,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalendarWidget/Info.plist;
+				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
@@ -651,7 +721,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalendarWidget/Info.plist;
+				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
