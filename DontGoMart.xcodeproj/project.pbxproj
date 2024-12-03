@@ -692,7 +692,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalendarWidget/Info.plist;
+				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
@@ -721,7 +721,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalendarWidget/Info.plist;
+				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
