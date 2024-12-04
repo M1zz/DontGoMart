@@ -45,7 +45,7 @@ struct HolidayWidgetEntryView : View {
                     .foregroundColor(holiday.color)
                     .multilineTextAlignment(.center)
                     .onChange(of: selectedBranch) {
-                        WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
+                        WidgetCenter.shared.reloadTimelines(ofKind: "HolidayWidget")
                         WidgetCenter.shared.reloadAllTimelines()
                     }
             }
