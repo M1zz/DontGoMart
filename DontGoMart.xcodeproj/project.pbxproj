@@ -157,6 +157,7 @@
 		58446A252A59390C001CC9D1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
 				58B693D12A3B56E800FF904B /* ClosedDaysView.swift */,
 				58446A272A59493C001CC9D1 /* SettingsView.swift */,
 			);
@@ -166,7 +167,6 @@
 		58446A262A593924001CC9D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
 				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
