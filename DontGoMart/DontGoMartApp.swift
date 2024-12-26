@@ -8,7 +8,6 @@
 import SwiftUI
 
 let year = Calendar.current.component(.year, from: Date())
-// let date = 이번 달 기준으로 데이터를 생성하는 함수
 @main
 struct DontGoMartApp: App {
     
@@ -17,40 +16,45 @@ struct DontGoMartApp: App {
             ClosedDaysView()
                 .onAppear {
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                    weekdays: [
-                        (.sunday, .second, "2번째 일요일"),
-                        (.sunday, .fourth, "4번째 일요일")
-                    ],
-                    martType: .normal
-                ))
-                tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                    weekdays: [
-                        (.sunday, .second, "2번째 일요일"),
-                        (.sunday, .fourth, "4번째 일요일")
-                    ],
-                    martType: .costco(type: .normal)
-                ))
-                tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                    weekdays: [
-                        (.monday, .second, "2번째 월요일"),
-                        (.monday, .fourth, "4번째 월요일")
-                    ],
-                    martType: .costco(type: .daegu)
-                ))
-                tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                    weekdays: [
-                        (.wednesday, .second, "2번째 수요일"),
-                        (.wednesday, .fourth, "4번째 수요일")
-                    ],
-                    martType: .costco(type: .ilsan)
-                ))
-                tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                    weekdays: [
-                        (.wednesday, .second, "2번째 수요일"),
-                        (.sunday, .fourth, "4번째 일요일")
-                    ],
-                    martType: .costco(type: .ulsan)
-                ))
+                        forYear: year,
+                        weekdays: [
+                            (.sunday, .second, "2번째 일요일"),
+                            (.sunday, .fourth, "4번째 일요일")
+                        ],
+                        martType: .normal
+                    ))
+                    tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
+                        forYear: year,
+                        weekdays: [
+                            (.sunday, .second, "2번째 일요일"),
+                            (.sunday, .fourth, "4번째 일요일")
+                        ],
+                        martType: .costco(type: .normal)
+                    ))
+                    tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
+                        forYear: year,
+                        weekdays: [
+                            (.monday, .second, "2번째 월요일"),
+                            (.monday, .fourth, "4번째 월요일")
+                        ],
+                        martType: .costco(type: .daegu)
+                    ))
+                    tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
+                        forYear: year,
+                        weekdays: [
+                            (.wednesday, .second, "2번째 수요일"),
+                            (.wednesday, .fourth, "4번째 수요일")
+                        ],
+                        martType: .costco(type: .ilsan)
+                    ))
+                    tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
+                        forYear: year,
+                        weekdays: [
+                            (.wednesday, .second, "2번째 수요일"),
+                            (.sunday, .fourth, "4번째 일요일")
+                        ],
+                        martType: .costco(type: .ulsan)
+                    ))
                 }
         }
     }
@@ -80,26 +84,25 @@ struct DontGoMartApp: App {
         return tasks
     }
     
-    private func modifiedGenerateBiweeklyTasks(
+    func modifiedGenerateBiweeklyTasks(
+        forYear year: Int,
+        monthRange: Range<Int> = 1..<13,
         weekdays: [(Calendar.Weekday, Calendar.Ordinal, String)],
         martType: MartType
     ) -> [MetaMartsClosedDays] {
         var tasks: [MetaMartsClosedDays] = []
         let calendar = Calendar.current
         
-        let year = calendar.component(.year, from: Date())
-        let month = calendar.component(.month, from: Date())
-        let previousMonth = (month == 1) ? (12, year - 1) : ((month - 1), year)
-        let nextMonth = (month == 12) ? (1, year + 1) : ((month + 1), year)
-        let range: [(Int, Int)] = [(previousMonth), (month, year), (nextMonth)]
-        print(range)
-        
+        let yearRange = [year - 1, year, year + 1]
         // 각 달을 순회하면서 요일과 주차에 맞는 날짜를 찾음
-        for (month, year) in range {
-            for (weekday, ordinal, title) in weekdays {
+        for year in yearRange {
+            print("\(year) Task Generate")
+            for month in monthRange {
+                for (weekday, ordinal, title) in weekdays {
                     if let date = findPatternDay(of: weekday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
                         tasks.append(MetaMartsClosedDays(type: martType, task: [MartCloseData(title: title)], taskDate: date))
                     }
+                }
             }
         }
         
