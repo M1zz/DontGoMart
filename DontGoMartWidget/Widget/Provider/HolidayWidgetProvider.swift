@@ -18,6 +18,7 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<DayEntry>) -> ()) {
+        print("HolidayWidget getTimeline()")
         var entries: [DayEntry] = []
         
         let currentDate = Date()

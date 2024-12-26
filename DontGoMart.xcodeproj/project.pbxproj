@@ -30,6 +30,8 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
+		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
+		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
 		C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4EE2CFD724000F26B1D /* WidgetDataMapper.swift */; };
 		C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
@@ -457,11 +459,13 @@
 				C359F5062CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */,
 				58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */,
 				C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
+				C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */,
 				C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
 				C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */,
 				C359F4EF2CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
+				C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */,
 				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */,

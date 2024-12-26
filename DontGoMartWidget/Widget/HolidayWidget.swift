@@ -45,6 +45,7 @@ struct HolidayWidgetEntryView : View {
                     .foregroundColor(holiday.color)
                     .multilineTextAlignment(.center)
                     .onChange(of: selectedBranch) {
+                        widgetDataMapper.createMartHolidays()
                         WidgetCenter.shared.reloadTimelines(ofKind: "HolidayWidget")
                         WidgetCenter.shared.reloadAllTimelines()
                     }
@@ -104,7 +105,7 @@ struct HolidayWidget: Widget {
 
 struct CalendarWidget_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 7, day: 5), configuration: ConfigurationIntent()))
+        HolidayWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 12, day: 31), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
     

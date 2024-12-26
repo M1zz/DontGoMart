@@ -58,11 +58,7 @@ struct DontGoMartApp: App {
                 }
         }
     }
-    
-    func getTasks() {
-        
-    }
-    
+
     private func generateBiweeklyTasks(
         forYear year: Int,
         monthRange: Range<Int> = 1..<13,
@@ -96,7 +92,7 @@ struct DontGoMartApp: App {
         let yearRange = [year - 1, year, year + 1]
         // 각 달을 순회하면서 요일과 주차에 맞는 날짜를 찾음
         for year in yearRange {
-            print("\(year) Task Generate")
+            print("\(year) - \(martType) Task Generate")
             for month in monthRange {
                 for (weekday, ordinal, title) in weekdays {
                     if let date = findPatternDay(of: weekday, ordinal: ordinal, inMonth: month, year: year, calendar: calendar) {
