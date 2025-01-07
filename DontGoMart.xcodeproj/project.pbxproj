@@ -46,6 +46,9 @@
 		C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */; };
 		C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
 		C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */; };
+		C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
+		C3E71D7D2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
+		C3F7E7342D2CACF5003B7762 /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,8 @@
 		C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoHolidayWidgetProvider.swift; sourceTree = "<group>"; };
 		C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartModel.swift; sourceTree = "<group>"; };
 		C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontGoMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utillity.swift; sourceTree = "<group>"; };
+		C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
+				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 		58D40ACF2CDF818B008C6458 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */,
 				58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */,
 				58D40AD02CDF81A2008C6458 /* Date+Ext.swift */,
 				C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */,
@@ -436,6 +443,7 @@
 				C359F5032CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */,
 				58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */,
+				C3F7E7342D2CACF5003B7762 /* WidgetManager.swift in Sources */,
 				58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */,
 				58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */,
 				C359F5052CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */,
@@ -445,6 +453,7 @@
 				C359F4F02CFD724000F26B1D /* WidgetDataMapper.swift in Sources */,
 				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
+				C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
 				58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */,
 			);
@@ -468,6 +477,7 @@
 				C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */,
 				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
+				C3E71D7D2D2BFBBF00F4A24B /* Utillity.swift in Sources */,
 				58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */,
 				C359F4F92CFD8FA700F26B1D /* DDayWidget.swift in Sources */,
 			);
@@ -618,10 +628,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -640,6 +653,8 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dontGoMart;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -655,10 +670,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -677,6 +695,8 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dontGoMart;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -692,9 +712,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
@@ -708,6 +730,8 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DontGoMartWidget;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -721,9 +745,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
@@ -737,6 +763,8 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DontGoMartWidget;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

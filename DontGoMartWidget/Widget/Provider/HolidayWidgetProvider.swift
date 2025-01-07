@@ -6,26 +6,29 @@
 //
 
 import WidgetKit
+import SwiftUI
 
 struct HolidayWidgetProvider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> DayEntry {
-        DayEntry(date: Date(), configuration: ConfigurationIntent())
+    func placeholder(in context: Context) -> HolidayEntry {
+        HolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: "내일 돈꼬")
     }
     
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (DayEntry) -> ()) {
-        let entry = DayEntry(date: Date(), configuration: configuration)
+    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (HolidayEntry) -> ()) {
+        let entry = HolidayEntry(date: Date(), configuration: configuration, holidayText: "내일 돈꼬")
         completion(entry)
     }
     
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<DayEntry>) -> ()) {
+    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<HolidayEntry>) -> ()) {
         print("HolidayWidget getTimeline()")
-        var entries: [DayEntry] = []
+        var entries: [HolidayEntry] = []
+        @AppStorage(AppStorageKeys.widgetHolidayText, store: UserDefaults(suiteName: Utillity.appGroupId))
+        var holidayText: String = ""
         
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
             let entryDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: currentDate)!
             let startOfDate = Calendar.current.startOfDay(for: entryDate)
-            let entry = DayEntry(date: startOfDate, configuration: configuration)
+            let entry = HolidayEntry(date: startOfDate, configuration: configuration, holidayText: holidayText)
             entries.append(entry)
         }
         

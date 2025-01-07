@@ -10,8 +10,8 @@ import WidgetKit
 
 // TODO: 2개의 휴일을 보여준다
 struct DDayWidgetEntryView: View {
-    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .normal
     
     var entry: DayEntry

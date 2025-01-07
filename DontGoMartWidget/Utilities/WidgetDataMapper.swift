@@ -8,6 +8,12 @@
 import SwiftUI
 import WidgetKit
 
+struct HolidayEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+    let holidayText: String
+}
+
 struct DayEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
