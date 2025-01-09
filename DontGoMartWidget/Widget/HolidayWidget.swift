@@ -9,26 +9,16 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-
-
-let appGroupId = "group.com.leeo.DontGoMart"
-
-// TODO: 현재 날짜가 아닌 휴일까지의 날짜를 보여준다
 struct HolidayWidgetEntryView : View {
-    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage("isNormal", store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
+    @AppStorage("selectedBranch", store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .normal
     
-    var entry: DayEntry
+    var entry: HolidayEntry
     var config: MonthConfig
     var widgetDataMapper: WidgetDataMapper
 
-    // 기본 마트 휴일 목록 정의
-    
-    // 오늘 날짜로부터 2025년까지의 모든 둘째, 넷째 주 일요일 찾기
-    let startDate = Date()
-
-    init(entry: DayEntry) {
+    init(entry: HolidayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
         self.widgetDataMapper = WidgetDataMapper()
@@ -36,19 +26,17 @@ struct HolidayWidgetEntryView : View {
     
     var body: some View {
         VStack {
-            // ForEach 구문
-            if let holiday = widgetDataMapper.holidayText(selectedMartType: selectedMartType, entryDate: Date()) {
-                Text(holiday.text)
+            Text(entry.holidayText)
                     .font(.title3)
                     .fontWeight(.bold)
                     .minimumScaleFactor(0.6)
-                    .foregroundColor(holiday.color)
+                    .foregroundColor(.red)
                     .multilineTextAlignment(.center)
                     .onChange(of: selectedBranch) {
-                        WidgetCenter.shared.reloadTimelines(ofKind: "MonthlyWidget")
+                        widgetDataMapper.createMartHolidays()
+                        WidgetCenter.shared.reloadTimelines(ofKind: "HolidayWidget")
                         WidgetCenter.shared.reloadAllTimelines()
                     }
-            }
         
             
             HStack(spacing: 0) {
@@ -104,7 +92,7 @@ struct HolidayWidget: Widget {
 
 struct CalendarWidget_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayWidgetEntryView(entry: DayEntry(date: dateToDisplay(month: 7, day: 5), configuration: ConfigurationIntent()))
+        HolidayWidgetEntryView(entry: HolidayEntry(date: dateToDisplay(month: 12, day: 31), configuration: ConfigurationIntent(), holidayText: "Preview"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
     

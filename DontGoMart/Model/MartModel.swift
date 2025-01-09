@@ -8,6 +8,8 @@
 import SwiftUI
 import WidgetKit
 
+var tasks: [MetaMartsClosedDays] = []
+
 enum MartType: Hashable {
     case normal
     case costco(type: CostcoBranch)
@@ -76,7 +78,7 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
 
 struct MartHoliday: Hashable, Identifiable {
     let id: UUID = UUID()
+    let type: MartType
     let month: Int
     let day: Int
-    let martType: MartType
 }

@@ -8,6 +8,12 @@
 import SwiftUI
 import WidgetKit
 
+struct HolidayEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+    let holidayText: String
+}
+
 struct DayEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
@@ -19,28 +25,29 @@ class WidgetDataMapper {
     
     // 마트 휴일 생성 (일반 마트, 코스트코 휴일 데이터)
     func createMartHolidays() {
+        print("createMartHolidays")
         data = []
-        
-        let weekday = Calendar.Weekday.sunday
-        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 2, martType: .normal)
-        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .normal)
-        
-        
-        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 2, martType: .costco(type: .daegu))
-        data += generateMartHolidays(forYear: year, weekday: .monday, nth: 4, martType: .costco(type: .daegu))
-        
-        
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ilsan))
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 4, martType: .costco(type: .ilsan))
-        
-        
-        data += generateMartHolidays(forYear: year, weekday: .wednesday, nth: 2, martType: .costco(type: .ulsan))
-        data += generateMartHolidays(forYear: year, weekday: .sunday, nth: 4, martType: .costco(type: .ulsan))
+        data += modifiedGenerateMartHolidays()
     }
     
     
+    func modifiedGenerateMartHolidays() -> [MartHoliday] {
+        let calendar = Calendar.current
+        var holidays: [MartHoliday] = []
+        
+        for task in tasks {
+            let month = calendar.component(.month, from: task.taskDate)
+            let day = calendar.component(.day, from: task.taskDate)
+            let holiday = MartHoliday(type: task.type, month: month, day: day)
+            holidays.append(holiday)
+        }
+        
+        return holidays
+    }
+    
     // N번째 특정 요일에 따른 MartHoliday 배열 생성 함수
     func generateMartHolidays(forYear year: Int, weekday: Calendar.Weekday, nth: Int, martType: MartType) -> [MartHoliday] {
+        // n번째 요일을 저장
         let dates = nthWeekdayOfYear(forYear: year, weekday: weekday, nth: nth)
         var holidays: [MartHoliday] = []
         let calendar = Calendar.current
@@ -48,7 +55,7 @@ class WidgetDataMapper {
         for (monthIndex, date) in dates.enumerated() {
             if let date = date {
                 let day = calendar.component(.day, from: date)
-                let holiday = MartHoliday(month: monthIndex + 1, day: day, martType: martType)
+                let holiday = MartHoliday(type: martType, month: monthIndex + 1, day: day)
                 holidays.append(holiday)
             }
         }
@@ -85,6 +92,7 @@ class WidgetDataMapper {
         var dates: [Date?] = []
         
         for month in 1...12 {
+            // 한 달에 N번쨰 특정 요일을 찾는 함수
             if let nthWeekdayDate = nthWeekday(forYear: year, month: month, weekday: weekday, nth: nth) {
                 dates.append(nthWeekdayDate)
             } else {
@@ -97,12 +105,12 @@ class WidgetDataMapper {
     
     // MartHoliday 타입의 데이터를 초기화하는 함수 정의
     func createMartHolidays(monthDayPairs: [(Int, Int)], martType: MartType) -> [MartHoliday] {
-        return monthDayPairs.map { MartHoliday(month: $0.0, day: $0.1, martType: martType) }
+        return monthDayPairs.map { MartHoliday(type: martType, month: $0.0, day: $0.1) }
     }
     
     func holidayText(selectedMartType: MartType, entryDate: Date) -> (text: String, color: Color)? {
-        let costcoHolidays = data.filter { $0.martType == selectedMartType }
         print("======================")
+        let costcoHolidays = data.filter { $0.type == selectedMartType }
         for datum in costcoHolidays {
             print(costcoHolidays)
 
@@ -113,7 +121,7 @@ class WidgetDataMapper {
             let formattedDate = dateFormatter.string(from: displayDate)
             let finalDate = dateFormatter.date(from: formattedDate)!
             
-            guard datum.martType == selectedMartType else { return nil }
+            guard datum.type == selectedMartType else { return nil }
                         
             // daysDifference 계산
             if let daysDifference = Calendar.current.dateComponents([.day], from: entryDate, to: finalDate).day {
@@ -125,7 +133,7 @@ class WidgetDataMapper {
                 case 1:
                     print("1")
                     return ("내일 돈꼬 \(selectedMartType.widgetDisplayName)", .palePink)
-                case 2...6:
+                case 2...20:
                     print("2")
                     let dayText: String
                     switch selectedMartType {
@@ -138,7 +146,7 @@ class WidgetDataMapper {
                 default:
                     continue
                 }
-            }
+            } else { print("DaysDifference Error")}
         }
         
         

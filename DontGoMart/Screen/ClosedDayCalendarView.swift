@@ -186,7 +186,7 @@ struct ClosedDayCalendarView: View {
         return calendar.isDate(date1, inSameDayAs: date2)
     }
     
-    // extrating Year And Month for display...
+    /// extrating Year And Month for display...
     func extraDate()->[String]{
         
         var calendar = Calendar.current

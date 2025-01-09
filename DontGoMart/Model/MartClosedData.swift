@@ -18,5 +18,3 @@ struct MartCloseData: Identifiable {
     var id = UUID().uuidString
     var title: String
 }
-
-var tasks: [MetaMartsClosedDays] = []
