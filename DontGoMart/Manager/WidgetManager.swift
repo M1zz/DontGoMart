@@ -16,6 +16,71 @@ class WidgetManager {
         WidgetCenter.shared.reloadAllTimelines()
     }
     
+    func updateWidget() {
+        twoHolidayText()
+        holidayText()
+        reloadWidget()
+    }
+    
+    func twoHolidayText() {
+        var isNormal: Bool {
+            UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isNormal) ?? true
+        }
+        
+        var selectedBranch: Int {
+            UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 1
+        }
+        print("함수 내 selectedBranch: \(selectedBranch)")
+        print("함수 내 isNormal: \(isNormal)")
+        
+        var selectedMartType: MartType = .normal
+        let calendar = Calendar.current
+        let entryDate = calendar.startOfDay(for: Date())
+        
+        print("======================")
+        
+        // 마트 유형 설정
+        if selectedBranch == 0 {
+            selectedMartType = .normal
+        } else {
+            switch selectedBranch {
+            case 1: selectedMartType = .costco(type: .normal)
+            case 2: selectedMartType = .costco(type: .daegu)
+            case 3: selectedMartType = .costco(type: .ilsan)
+            case 4: selectedMartType = .costco(type: .ulsan)
+            default:
+                print("Wrong MartType")
+                return
+            }
+        }
+        
+        print("함수 내 selectedMartType: \(selectedMartType)")
+        let costcoHolidays = tasks.filter { $0.type == selectedMartType }
+        
+        let nextTwoHoliday = costcoHolidays
+            .filter { $0.taskDate >= entryDate } // 오늘 이후의 휴일만 필터링
+            .sorted { $0.taskDate < $1.taskDate } // 날짜순 정렬
+        
+        guard !nextTwoHoliday.isEmpty else {
+            print("Error: No upcoming holidays found(twoHolidayText)")
+            return
+        }
+        
+        let firstHolidayText = nextTwoHoliday[0].taskDate.getMonthDayWeekday()
+        let secondHolidayText = nextTwoHoliday[1].taskDate.getMonthDayWeekday()
+        
+        let saveData = [
+            "돈꼬 \(selectedMartType.widgetDisplayName)",
+            "\(firstHolidayText.month) \(firstHolidayText.day) (\(firstHolidayText.weekday))",
+            "\(secondHolidayText.month) \(secondHolidayText.day) (\(secondHolidayText.weekday))"
+        ]
+        let saveString = saveData.joined(separator: "|")
+        UserDefaults(suiteName: Utillity.appGroupId)?.set(saveString, forKey: AppStorageKeys.widgetTwoHolidayText)
+        print("Saved String: \(saveString)")
+        
+        print("TwoHolidayText Update Success")
+    }
+    
     func holidayText() {
         var isNormal: Bool {
             UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isNormal) ?? true
@@ -59,7 +124,7 @@ class WidgetManager {
             .first // 가장 가까운 휴일 선택
         
         guard let nextHolidayDate = nextHoliday?.taskDate else {
-            print("No upcoming holidays found")
+            print("Error: No upcoming holidays found(holidayText)")
             return
         }
         
@@ -89,8 +154,7 @@ class WidgetManager {
             print("No relevant holiday text found")
         }
         
-        self.reloadWidget()
-        print("Widget Update Success")
+        print("HolidayText Update Success")
     }
     
 }

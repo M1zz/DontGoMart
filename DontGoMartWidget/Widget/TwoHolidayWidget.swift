@@ -14,19 +14,25 @@ struct TwoHolidayEntryView: View {
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State private var selectedMartType: MartType = .normal
     
-    var entry: DayEntry
+    var entry: TwoHolidayEntry
     var config: MonthConfig
     var widgetDataMapper: WidgetDataMapper
     let startDate = Date()
 
-    init(entry: DayEntry) {
+    init(entry: TwoHolidayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
         self.widgetDataMapper = WidgetDataMapper()
     }
     
     var body: some View {
-        Text("TwoHoliday")
+        
+        VStack {
+            Text(entry.holidayText[0])
+            Text(entry.holidayText[1])
+            Text(entry.holidayText[2])
+        }
+        
     }
 }
 

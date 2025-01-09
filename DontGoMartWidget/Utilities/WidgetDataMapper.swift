@@ -19,6 +19,12 @@ struct DayEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
+struct TwoHolidayEntry: TimelineEntry {
+    var date: Date
+    let configuration: ConfigurationIntent
+    let holidayText: [String]
+}
+
 class WidgetDataMapper {
     
     var data: [MartHoliday] = []

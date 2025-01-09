@@ -22,7 +22,7 @@ struct SettingsView: View {
                     })
                     .onChange(of: isCostco) {
                         selectedBranch = isCostco ? 1 : 0
-                        WidgetManager.shared.holidayText()
+                        WidgetManager.shared.updateWidget()
                     }
                     NavigationLink {
                         CostcoSettings()
