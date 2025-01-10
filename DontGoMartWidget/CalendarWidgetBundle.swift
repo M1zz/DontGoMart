@@ -12,8 +12,6 @@ import SwiftUI
 struct CalendarWidgetBundle: WidgetBundle {
     var body: some Widget {
         HolidayWidget()
-        DDayWidget()
         TwoHolidayWidget()
-        CalendarWidgetLiveActivity()
     }
 }

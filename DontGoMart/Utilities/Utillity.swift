@@ -19,4 +19,5 @@ enum AppStorageKeys {
     static let isNormal = "isNormal"
     static let isPremium = "isPremium"
     static let widgetHolidayText = "widgetHolidayText"
+    static let widgetTwoHolidayText = "widgetTwoHolidayText"
 }

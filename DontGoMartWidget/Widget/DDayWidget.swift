@@ -16,13 +16,11 @@ struct DDayWidgetEntryView: View {
     
     var entry: DayEntry
     var config: MonthConfig
-    var widgetDataMapper: WidgetDataMapper
     let startDate = Date()
 
     init(entry: DayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
-        self.widgetDataMapper = WidgetDataMapper()
     }
     
     var body: some View {
