@@ -8,7 +8,6 @@
 import SwiftUI
 import WidgetKit
 
-// TODO: 두 지점의 휴일을 보여준다
 struct TwoHolidayEntryView: View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
@@ -29,8 +28,16 @@ struct TwoHolidayEntryView: View {
         
         VStack {
             Text(entry.holidayText[0])
+                .font(.title)
+                .fontWeight(.bold)
             Text(entry.holidayText[1])
+                .fontWeight(.bold)
+                .padding(.vertical, 10)
             Text(entry.holidayText[2])
+                .fontWeight(.bold)
+        }
+        .containerBackground(for: .widget) {
+            LinearGradient(gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]), startPoint: .top, endPoint: .bottom)
         }
         
     }
@@ -46,5 +53,12 @@ struct TwoHolidayWidget: Widget {
         .configurationDisplayName("지점별 휴무위젯")
         .description("두 개의 지점 휴무일을 확인하는 위젯이에요!")
         .supportedFamilies([.systemSmall])
+    }
+}
+
+struct TwoHolidayWidgetPreviews: PreviewProvider {
+    static var previews: some View {
+        TwoHolidayEntryView(entry: TwoHolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: ["돈꼬마트", "1월 12일 일요일", "1월 26일 일요일"]))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
