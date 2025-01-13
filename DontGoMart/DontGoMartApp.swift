@@ -55,6 +55,7 @@ struct DontGoMartApp: App {
                         ],
                         martType: .costco(type: .ulsan)
                     ))
+                    WidgetManager.shared.updateWidget()
                 }
         }
     }

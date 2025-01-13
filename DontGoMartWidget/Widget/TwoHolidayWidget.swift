@@ -25,6 +25,7 @@ struct TwoHolidayEntryView: View {
             Text(entry.holidayText[0])
                 .font(.title)
                 .fontWeight(.bold)
+                .minimumScaleFactor(0.5)
             Text(entry.holidayText[1])
                 .fontWeight(.bold)
                 .padding(.vertical, 10)
