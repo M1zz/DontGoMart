@@ -10,8 +10,8 @@ import WidgetKit
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
-    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = false
+    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
+    @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -22,7 +22,7 @@ struct SettingsView: View {
                     })
                     .onChange(of: isCostco) {
                         selectedBranch = isCostco ? 1 : 0
-                        WidgetCenter.shared.reloadAllTimelines()
+                        WidgetManager.shared.updateWidget()
                     }
                     NavigationLink {
                         CostcoSettings()
@@ -35,6 +35,7 @@ struct SettingsView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
+                        WidgetManager.shared.updateWidget()
                         isShowingSettings = false
                     }) {
                         Text("완료")
@@ -47,7 +48,7 @@ struct SettingsView: View {
 
 
 struct CostcoSettings: View {
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State var selectedCostcoBranch: CostcoBranch = .normal
     
     var body: some View {

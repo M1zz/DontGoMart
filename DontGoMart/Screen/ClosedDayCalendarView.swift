@@ -11,8 +11,8 @@ struct ClosedDayCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0
     @State var selectedMartType: MartType = .normal
-    @AppStorage("isNormal", store: UserDefaults(suiteName: appGroupId)) var isCostco: Bool = true
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = true
+    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     
     var body: some View {
         VStack(spacing: 35) {
@@ -186,7 +186,7 @@ struct ClosedDayCalendarView: View {
         return calendar.isDate(date1, inSameDayAs: date2)
     }
     
-    // extrating Year And Month for display...
+    /// extrating Year And Month for display...
     func extraDate()->[String]{
         
         var calendar = Calendar.current
