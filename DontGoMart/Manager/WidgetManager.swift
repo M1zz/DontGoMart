@@ -17,31 +17,29 @@ class WidgetManager {
     }
     
     func updateWidget() {
-        twoHolidayText()
-        holidayText()
-        reloadWidget()
+        let isNormal = UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isCostco) ?? true
+        let selectedBranch = UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 0
+        
+        print("updateWidget : isNormal(\(isNormal)), selectedBranch(\(selectedBranch))")
+        self.holidayText(isCostco: isNormal, selectedBranch: selectedBranch)
+        self.twoHolidayText(isCostco: isNormal, selectedBranch: selectedBranch)
+        self.reloadWidget()
     }
     
-    func twoHolidayText() {
-        var isNormal: Bool {
-            UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isNormal) ?? true
-        }
+    func twoHolidayText(isCostco: Bool, selectedBranch: Int) {
         
-        var selectedBranch: Int {
-            UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 1
-        }
-        print("함수 내 selectedBranch: \(selectedBranch)")
-        print("함수 내 isNormal: \(isNormal)")
+        print("==========twoHolidayText===========")
+        print("함수 내 selectedBranch: \(String(describing: selectedBranch))")
+        print("함수 내 isNormal: \(String(describing: isCostco))")
         
         var selectedMartType: MartType = .normal
         let calendar = Calendar.current
         let entryDate = calendar.startOfDay(for: Date())
         
-        print("======================")
-        
         // 마트 유형 설정
-        if selectedBranch == 0 {
+        if selectedBranch == 0 || !isCostco {
             selectedMartType = .normal
+            UserDefaults(suiteName: Utillity.appGroupId)?.set(0, forKey: AppStorageKeys.selectedBranch)
         } else {
             switch selectedBranch {
             case 1: selectedMartType = .costco(type: .normal)
@@ -81,26 +79,20 @@ class WidgetManager {
         print("TwoHolidayText Update Success")
     }
     
-    func holidayText() {
-        var isNormal: Bool {
-            UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isNormal) ?? true
-        }
+    func holidayText(isCostco: Bool, selectedBranch: Int) {
         
-        var selectedBranch: Int {
-            UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 1
-        }
-        print("함수 내 selectedBranch: \(selectedBranch)")
-        print("함수 내 isNormal: \(isNormal)")
+        print("==========holidayText============")
+        print("함수 내 selectedBranch: \(String(describing: selectedBranch))")
+        print("함수 내 isNormal: \(String(describing: isCostco))")
         
         var selectedMartType: MartType = .normal
         let calendar = Calendar.current
         let entryDate = calendar.startOfDay(for: Date())
         
-        print("======================")
-        
         // 마트 유형 설정
-        if selectedBranch == 0 {
+        if selectedBranch == 0 || !isCostco {
             selectedMartType = .normal
+            UserDefaults(suiteName: Utillity.appGroupId)?.set(0, forKey: AppStorageKeys.selectedBranch)
         } else {
             switch selectedBranch {
             case 1: selectedMartType = .costco(type: .normal)

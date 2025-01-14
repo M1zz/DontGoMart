@@ -12,7 +12,6 @@ import WidgetKit
 let primuimAppName = "돈꼬마트 pro"
 let appName = "돈꼬마트"
 let restorePurchases = "구매복원"
-let appGroupId = "group.com.leeo.DontGoMart"
 
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
@@ -20,7 +19,7 @@ struct ClosedDaysView: View {
     @AppStorage("isPremium") var isPremium: Bool = false
     @State private var isShowingSettings = false
     @State private var isCostco: Bool = false
-    @AppStorage("selectedBranch", store: UserDefaults(suiteName: appGroupId)) var selectedBranch: Int = 0
+    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     
     var body: some View {
         NavigationStack {
@@ -53,11 +52,11 @@ struct ClosedDaysView: View {
         }
         .onChange(of: selectedBranch) {
             print("selectedBranch: \(selectedBranch)")
-            WidgetCenter.shared.reloadAllTimelines()
+            WidgetManager.shared.updateWidget()
         }
         .sheet(isPresented: $isShowingSettings ,onDismiss: {
-            isCostco = UserDefaults(suiteName: appGroupId)?.bool(forKey: "isNormal") ?? false
-            selectedBranch = UserDefaults(suiteName: appGroupId)?.integer(forKey: "selectedBranch") ?? 0
+            isCostco = UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isCostco) ?? false
+            selectedBranch = UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 0
         }) {
             SettingsView(isShowingSettings: $isShowingSettings)
         }
@@ -123,7 +122,7 @@ struct SellItem: View {
 }
 
 class EntitlementManager: ObservableObject {
-    static let userDefaults = UserDefaults(suiteName: appGroupId)!
+    static let userDefaults = UserDefaults(suiteName: Utillity.appGroupId)!
     
     @AppStorage("hasPro", store: userDefaults) var hasPro: Bool = false
 }

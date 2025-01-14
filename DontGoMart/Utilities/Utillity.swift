@@ -16,7 +16,7 @@ enum Utillity {
 
 enum AppStorageKeys {
     static let selectedBranch = "selectedBranch"
-    static let isNormal = "isNormal"
+    static let isCostco = "isCostco"
     static let isPremium = "isPremium"
     static let widgetHolidayText = "widgetHolidayText"
     static let widgetTwoHolidayText = "widgetTwoHolidayText"
