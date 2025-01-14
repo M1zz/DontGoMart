@@ -14,7 +14,7 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (TwoHolidayEntry) -> ()) {
-        let entry = TwoHolidayEntry(date: Date(), configuration: configuration, holidayText: ["돈꼬 마트","",""])
+        let entry = TwoHolidayEntry(date: Date(), configuration: configuration, holidayText: ["돈꼬 마트","1월 26일 일요일","2월 9일 일요일"])
         completion(entry)
     }
     
