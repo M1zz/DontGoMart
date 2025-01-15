@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-let year = Calendar.current.component(.year, from: Date())
 @main
 struct DontGoMartApp: App {
     
@@ -16,7 +15,7 @@ struct DontGoMartApp: App {
             ClosedDaysView()
                 .onAppear {
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                        forYear: year,
+                        forYear: Calendar.current.component(.year, from: Date()),
                         weekdays: [
                             (.sunday, .second, "2번째 일요일"),
                             (.sunday, .fourth, "4번째 일요일")
@@ -24,7 +23,7 @@ struct DontGoMartApp: App {
                         martType: .normal
                     ))
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                        forYear: year,
+                        forYear: Calendar.current.component(.year, from: Date()),
                         weekdays: [
                             (.sunday, .second, "2번째 일요일"),
                             (.sunday, .fourth, "4번째 일요일")
@@ -32,7 +31,7 @@ struct DontGoMartApp: App {
                         martType: .costco(type: .normal)
                     ))
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                        forYear: year,
+                        forYear: Calendar.current.component(.year, from: Date()),
                         weekdays: [
                             (.monday, .second, "2번째 월요일"),
                             (.monday, .fourth, "4번째 월요일")
@@ -40,7 +39,7 @@ struct DontGoMartApp: App {
                         martType: .costco(type: .daegu)
                     ))
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                        forYear: year,
+                        forYear: Calendar.current.component(.year, from: Date()),
                         weekdays: [
                             (.wednesday, .second, "2번째 수요일"),
                             (.wednesday, .fourth, "4번째 수요일")
@@ -48,7 +47,7 @@ struct DontGoMartApp: App {
                         martType: .costco(type: .ilsan)
                     ))
                     tasks.append(contentsOf: modifiedGenerateBiweeklyTasks(
-                        forYear: year,
+                        forYear: Calendar.current.component(.year, from: Date()),
                         weekdays: [
                             (.wednesday, .second, "2번째 수요일"),
                             (.sunday, .fourth, "4번째 일요일")
