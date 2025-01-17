@@ -24,11 +24,9 @@ struct SettingsView: View {
                         selectedBranch = isCostco ? 1 : 0
                         WidgetManager.shared.updateWidget()
                     }
-                    NavigationLink {
+                    if isCostco {
                         CostcoSettings()
-                    } label: {
-                        Text("코스트코 지점")
-                    }.disabled(!isCostco)
+                    }
                 }
             }
             .navigationTitle("매장선택")
@@ -51,46 +49,91 @@ struct CostcoSettings: View {
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State var selectedCostcoBranch: CostcoBranch = .normal
     
+    @State private var isNormalSelected = false
+    @State private var isDaeguSelected = false
+    @State private var isIlsanSelected = false
+    @State private var isUlsanSelected = false
+    
     var body: some View {
-        
         VStack {
             HStack {
                 Text("매장을 선택해주세요")
                     .padding()
                 Spacer()
             }
-            HStack {
-                Picker("선택된 매장", selection: $selectedCostcoBranch) {
-                    ForEach(CostcoBranch.allCases, id: \.self) { type in
-                        Text(type.storeName)
-                            .lineLimit(3)
-                    }
-                }
-                Spacer()
+            VStack(spacing: 10) {
+                Toggle("일반 지점", isOn: Binding(
+                    get: { isNormalSelected },
+                    set: { newValue in updateSelection(for: .normal, isSelected: newValue) }
+                ))
+                
+                Toggle("대구 지점", isOn: Binding(
+                    get: { isDaeguSelected },
+                    set: { newValue in updateSelection(for: .daegu, isSelected: newValue) }
+                ))
+                
+                Toggle("일산 지점", isOn: Binding(
+                    get: { isIlsanSelected },
+                    set: { newValue in updateSelection(for: .ilsan, isSelected: newValue) }
+                ))
+                
+                Toggle("울산 지점", isOn: Binding(
+                    get: { isUlsanSelected },
+                    set: { newValue in updateSelection(for: .ulsan, isSelected: newValue) }
+                ))
             }
-            .onChange(of: selectedCostcoBranch, { oldValue, newValue in
-                selectedBranch = selectedCostcoBranch.branchID
-
-            })
-            .frame(alignment: .leading)
-
+            .padding()
+            
             Spacer()
         }
-        .navigationTitle("코스트코 지점 선택하기")
-        .onAppear(perform: {
-            if selectedBranch == 1 {
-                selectedCostcoBranch = .normal
-            } else if selectedBranch == 2 {
-                selectedCostcoBranch = .daegu
-            } else if selectedBranch == 3 {
-                selectedCostcoBranch = .ilsan
-            } else if selectedBranch == 4 {
-                selectedCostcoBranch = .ulsan
-            }
-        })
+        .onAppear {
+            syncSelectionState()
+        }
     }
     
+    private func updateSelection(for branch: CostcoBranch, isSelected: Bool) {
+        if isSelected {
+            // 다른 선택지를 초기화하고 현재 선택지를 저장
+            resetAllSelections()
+            selectedCostcoBranch = branch
+            selectedBranch = branch.branchID
+            
+            switch branch {
+            case .normal:
+                isNormalSelected = true
+            case .daegu:
+                isDaeguSelected = true
+            case .ilsan:
+                isIlsanSelected = true
+            case .ulsan:
+                isUlsanSelected = true
+            }
+        }
+    }
+    
+    private func resetAllSelections() {
+        isNormalSelected = false
+        isDaeguSelected = false
+        isIlsanSelected = false
+        isUlsanSelected = false
+    }
+    
+    private func syncSelectionState() {
+        switch selectedBranch {
+        case 1:
+            updateSelection(for: .normal, isSelected: true)
+        case 2:
+            updateSelection(for: .daegu, isSelected: true)
+        case 3:
+            updateSelection(for: .ilsan, isSelected: true)
+        case 4:
+            updateSelection(for: .ulsan, isSelected: true)
+        default:
+            resetAllSelections()
+        }
+    }
 }
+
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
