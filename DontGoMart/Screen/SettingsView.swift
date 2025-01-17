@@ -64,22 +64,22 @@ struct CostcoSettings: View {
             VStack(spacing: 10) {
                 Toggle("일반 지점", isOn: Binding(
                     get: { isNormalSelected },
-                    set: { newValue in updateSelection(for: .normal, isSelected: newValue) }
+                    set: { _ in updateSelection(for: .normal) }
                 ))
                 
                 Toggle("대구 지점", isOn: Binding(
                     get: { isDaeguSelected },
-                    set: { newValue in updateSelection(for: .daegu, isSelected: newValue) }
+                    set: { _ in updateSelection(for: .daegu) }
                 ))
                 
                 Toggle("일산 지점", isOn: Binding(
                     get: { isIlsanSelected },
-                    set: { newValue in updateSelection(for: .ilsan, isSelected: newValue) }
+                    set: { _ in updateSelection(for: .ilsan) }
                 ))
                 
                 Toggle("울산 지점", isOn: Binding(
                     get: { isUlsanSelected },
-                    set: { newValue in updateSelection(for: .ulsan, isSelected: newValue) }
+                    set: { _ in updateSelection(for: .ulsan) }
                 ))
             }
             .padding()
@@ -91,8 +91,7 @@ struct CostcoSettings: View {
         }
     }
     
-    private func updateSelection(for branch: CostcoBranch, isSelected: Bool) {
-        if isSelected {
+    private func updateSelection(for branch: CostcoBranch) {
             // 다른 선택지를 초기화하고 현재 선택지를 저장
             resetAllSelections()
             selectedCostcoBranch = branch
@@ -108,7 +107,6 @@ struct CostcoSettings: View {
             case .ulsan:
                 isUlsanSelected = true
             }
-        }
     }
     
     private func resetAllSelections() {
@@ -121,18 +119,19 @@ struct CostcoSettings: View {
     private func syncSelectionState() {
         switch selectedBranch {
         case 1:
-            updateSelection(for: .normal, isSelected: true)
+            updateSelection(for: .normal)
         case 2:
-            updateSelection(for: .daegu, isSelected: true)
+            updateSelection(for: .daegu)
         case 3:
-            updateSelection(for: .ilsan, isSelected: true)
+            updateSelection(for: .ilsan)
         case 4:
-            updateSelection(for: .ulsan, isSelected: true)
+            updateSelection(for: .ulsan)
         default:
             resetAllSelections()
         }
     }
 }
+
 
 
 struct SettingsView_Previews: PreviewProvider {
