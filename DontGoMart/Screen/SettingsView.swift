@@ -7,6 +7,18 @@
 
 import SwiftUI
 import WidgetKit
+import TipKit
+
+struct StoreTip: Tip {
+    var title: Text { Text("해당 지점") }
+    var message: Text? {
+        Text("양평점, 대전점, 양재점, \n상봉점, 부산점, 광명점, \n천안점, 의정부점, 공세점, \n송도점, 세종점, 하남점, \n김해점, 고척점")
+    }
+    var options: [Option] {
+        MaxDisplayCount(10)
+    }
+}
+
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
@@ -53,6 +65,9 @@ struct CostcoSettings: View {
     @State private var isDaeguSelected = false
     @State private var isIlsanSelected = false
     @State private var isUlsanSelected = false
+    @State private var isTipShowing = false
+    var storeTip = StoreTip()
+    
     
     var body: some View {
         VStack {
@@ -62,10 +77,28 @@ struct CostcoSettings: View {
                 Spacer()
             }
             VStack(spacing: 10) {
-                Toggle("일반 지점", isOn: Binding(
+                Toggle(isOn: Binding(
                     get: { isNormalSelected },
                     set: { _ in updateSelection(for: .normal) }
-                ))
+                )) {
+                    HStack {
+                        Text("일반매장")
+                        
+                        if isTipShowing {
+                            Image(systemName: "questionmark.circle")
+                                .popoverTip(storeTip)
+                                .onTapGesture {
+                                    isTipShowing.toggle()
+                                }
+                        } else {
+                            Image(systemName: "questionmark.circle")
+                                .onTapGesture {
+                                    isTipShowing.toggle()
+                                }
+                        }
+                    }
+                }
+                
                 
                 Toggle("대구 지점", isOn: Binding(
                     get: { isDaeguSelected },
@@ -88,6 +121,10 @@ struct CostcoSettings: View {
         }
         .onAppear {
             syncSelectionState()
+        }
+        .task {
+            try? Tips.resetDatastore()
+            try? Tips.configure([.displayFrequency(.immediate)])
         }
     }
     
