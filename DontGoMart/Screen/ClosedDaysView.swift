@@ -9,10 +9,6 @@ import SwiftUI
 import StoreKit
 import WidgetKit
 
-let primuimAppName = "돈꼬마트 pro"
-let appName = "돈꼬마트"
-let restorePurchases = "구매복원"
-
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
     @StateObject var storeKit = StoreKitManager()
@@ -33,7 +29,7 @@ struct ClosedDaysView: View {
                 
                 PurchaseItemView()
                 Divider()
-                Button(restorePurchases, action: {
+                Button(Utillity.restorePurchases, action: {
                     Task {
                         try? await AppStore.sync()
                     }
@@ -113,7 +109,7 @@ struct SellItem: View {
                     .padding(10)
             }
         }
-        .onChange(of: storeKit.purchasedCourses) { course in
+        .onChange(of: storeKit.purchasedCourses) {
             Task {
                 isPurchased = (try? await storeKit.isPurchased(product)) ?? false
             }

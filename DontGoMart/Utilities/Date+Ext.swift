@@ -41,7 +41,7 @@ extension Date {
         return (month, day, weekday)
     }
     
-    func dateToDisplay(year: Int = year, month: Int, day: Int) -> Date {
+    func dateToDisplay(year: Int, month: Int, day: Int) -> Date {
         let components = DateComponents(calendar: Calendar.current,
                                         year: year,
                                         month: month,
