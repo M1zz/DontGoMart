@@ -9,12 +9,16 @@ import SwiftUI
 import WidgetKit
 
 struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
+    
+    let previewText = ["돈꼬 마트","1월 26일 일요일","D-5","2월 9일 일요일","D-19"]
+    let emptyHolidayText = ["마트 정보", "데이터", "D-00", "없음", "D-00"]
+    
     func placeholder(in context: Context) -> TwoHolidayEntry {
-        TwoHolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: ["돈꼬 마트","",""])
+        TwoHolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: previewText)
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (TwoHolidayEntry) -> ()) {
-        let entry = TwoHolidayEntry(date: Date(), configuration: configuration, holidayText: ["돈꼬 마트","1월 26일 일요일","2월 9일 일요일"])
+        let entry = TwoHolidayEntry(date: Date(), configuration: configuration, holidayText: previewText)
         completion(entry)
     }
     
@@ -27,7 +31,7 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
         
         let holidayText: [String] = storedString.split(separator: "|").map { String($0) }
         print("holidayText: \(holidayText)")
-        let displayText = holidayText.isEmpty ? ["마트 정보", "데이터", "없음"] : holidayText
+        let displayText = holidayText.isEmpty ? emptyHolidayText : holidayText
         
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
