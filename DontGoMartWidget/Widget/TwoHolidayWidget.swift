@@ -13,7 +13,7 @@ struct TwoHolidayEntryView: View {
     var entry: TwoHolidayEntry
     var config: MonthConfig
     let startDate = Date()
-
+    
     init(entry: TwoHolidayEntry) {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
@@ -21,21 +21,30 @@ struct TwoHolidayEntryView: View {
     
     var body: some View {
         
-        VStack {
+        VStack(alignment: .leading) {
             Text(entry.holidayText[0])
                 .font(.title)
                 .fontWeight(.bold)
                 .minimumScaleFactor(0.5)
-            Text(entry.holidayText[1])
-                .fontWeight(.bold)
-                .padding(.vertical, 10)
-            Text(entry.holidayText[2])
-                .fontWeight(.bold)
+            
+            VStack(alignment: .leading) {
+                Text(entry.holidayText[1])
+                    .fontWeight(.bold)
+                Text(entry.holidayText[2])
+                    .fontWeight(.bold)
+                    .padding(.bottom, 5)
+            }
+            
+            VStack(alignment: .leading) {
+                Text(entry.holidayText[3])
+                    .fontWeight(.bold)
+                Text(entry.holidayText[4])
+                    .fontWeight(.bold)
+            }
         }
         .containerBackground(for: .widget) {
             LinearGradient(gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]), startPoint: .top, endPoint: .bottom)
         }
-        
     }
 }
 
@@ -54,7 +63,7 @@ struct TwoHolidayWidget: Widget {
 
 struct TwoHolidayWidgetPreviews: PreviewProvider {
     static var previews: some View {
-        TwoHolidayEntryView(entry: TwoHolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: ["돈꼬마트", "1월 12일 일요일", "1월 26일 일요일"]))
+        TwoHolidayEntryView(entry: TwoHolidayEntry(date: Date(), configuration: ConfigurationIntent(), holidayText: ["돈꼬 마트","1월 26일 일요일","D-5","2월 9일 일요일","D-19"]))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

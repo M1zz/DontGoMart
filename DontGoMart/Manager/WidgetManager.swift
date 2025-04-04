@@ -66,11 +66,15 @@ class WidgetManager {
         
         let firstHolidayText = nextTwoHoliday[0].taskDate.getMonthDayWeekday()
         let secondHolidayText = nextTwoHoliday[1].taskDate.getMonthDayWeekday()
+        guard let firstHolidayDdayText = calendar.dateComponents([.day], from: nextTwoHoliday[0].taskDate, to: Date()).day else { return }
+        guard let secondHolidayDdayText = calendar.dateComponents([.day], from: nextTwoHoliday[1].taskDate, to: Date()).day else { return }
         
         let saveData = [
             "돈꼬 \(selectedMartType.widgetDisplayName)",
-            "\(firstHolidayText.month) \(firstHolidayText.day) (\(firstHolidayText.weekday))",
-            "\(secondHolidayText.month) \(secondHolidayText.day) (\(secondHolidayText.weekday))"
+            "\(firstHolidayText.month)\(firstHolidayText.day) (\(firstHolidayText.weekday))",
+            "D\(String(describing: firstHolidayDdayText))",
+            "\(secondHolidayText.month)\(secondHolidayText.day) (\(secondHolidayText.weekday))",
+            "D\(String(describing: secondHolidayDdayText))"
         ]
         let saveString = saveData.joined(separator: "|")
         UserDefaults(suiteName: Utillity.appGroupId)?.set(saveString, forKey: AppStorageKeys.widgetTwoHolidayText)
