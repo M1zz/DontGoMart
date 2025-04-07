@@ -73,8 +73,7 @@ git push origin feature/issue-number
 3. PR 제목과 설명을 작성합니다.
    - 제목: type: 내용 요약
    - 설명: 변경사항, 구현 내용, 테스트 결과 등을 상세히 작성
-4. 'Leeo'를 리뷰어로 할당합니다.
-5. 'Create Pull Request' 버튼을 클릭하여 PR을 생성합니다.
+4. 'Create Pull Request' 버튼을 클릭하여 PR을 생성합니다.
 
 #### 7단계: 리뷰 및 머지
 1. 리뷰어의 피드백을 기다립니다.
