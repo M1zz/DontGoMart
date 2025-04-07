@@ -71,9 +71,10 @@ git push origin feature/issue-number
 ```
 2. GitHub에서 'Pull Request' 버튼을 클릭합니다.
 3. PR 제목과 설명을 작성합니다.
-   - 제목: (#이슈번호) 내용 요약
+   - 제목: type: 내용 요약
    - 설명: 변경사항, 구현 내용, 테스트 결과 등을 상세히 작성
-4. 'Create Pull Request' 버튼을 클릭하여 PR을 생성합니다.
+4. 'Leeo'를 리뷰어로 할당합니다.
+5. 'Create Pull Request' 버튼을 클릭하여 PR을 생성합니다.
 
 #### 7단계: 리뷰 및 머지
 1. 리뷰어의 피드백을 기다립니다.
@@ -117,16 +118,19 @@ Test Checklist
 - [ ] 테스트 항목 1
 - [ ] 테스트 항목 2
 ```
-### 3. 브랜치 전략
-- 모든 PR은 `develop` 브랜치로 머지됩니다
-- 새로운 브랜치 생성 시 `develop` 브랜치에서 분기합니다
+### 브랜치 전략
+- 모든 PR은 `develop` 브랜치로 머지됩니다.
+- 새로운 브랜치 생성 시 `develop` 브랜치에서 분기합니다.
 - 브랜치 이름은 다음 형식을 따릅니다:
    - 기능 개발: `feature/이슈번호` (예: feature/123)
    - 버그 수정: `fix/이슈번호` (예: fix/456)
    - 리팩토링: `refactor/설명` (예: refactor/code-cleanup)
-- `main` 브랜치로의 머지는 `develop` 브랜치에서만 가능합니다
-- `main`과 `develop` 브랜치에는 직접 커밋할 수 없습니다
-- `main` 브랜치로의 PR 생성 시, `develop`에 머지된 PR 목록을 상세히 기재합니다
+- `main` 브랜치로의 머지는 `develop` 브랜치에서만 가능합니다.
+- `main`과 `develop` 브랜치에는 직접 커밋할 수 없습니다.
+- `main` 브랜치로의 PR 생성 시, `develop`에 머지된 PR 목록을 상세히 기재합니다.
+
+### 코드 리뷰 규칙
+- 왜 개선이 필요한지 이유를 충분한 설명해주세요.
 
 # 4. Commit 가이드
 
@@ -139,9 +143,9 @@ Test Checklist
 ```
 
 - type: feat, fix, docs, style, refactor, test, chore
-- 제목과 본문은 한글로 작성
-- type은 영어로 작성
-- 커밋 로그를 보고 흐름을 이해할 수 있도록 작성
+- 제목과 본문은 한글로 작성해주세요.
+- type은 영어로 작성해주세요.
+- 커밋 로그를 보고 흐름을 이해할 수 있도록 작성해주세요.
 
 예시:
 ```
@@ -154,5 +158,5 @@ feat: 마트 방문 기록 기능 추가
 ```
 
 ### 5. 코드 스타일 가이드
-Apple Developer Academy의 스타일 가이드를 따릅니다. 자세한 사항은 아래 링크를 참고해주세요
+Apple Developer Academy의 스타일 가이드를 따릅니다. 자세한 사항은 아래 링크를 참고해주세요.
 - [Swift Style Guide](https://github.com/DeveloperAcademy-POSTECH/swift-style-guide)
