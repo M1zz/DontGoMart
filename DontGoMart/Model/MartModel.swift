@@ -82,3 +82,26 @@ struct MartHoliday: Hashable, Identifiable {
     let month: Int
     let day: Int
 }
+
+// MARK: - MartType Extensions for Notification
+
+extension MartType {
+    /// 알림용 매장명 (더 구체적인 매장명)
+    var notificationStoreName: String {
+        switch self {
+        case .normal:
+            return "대형마트"
+        case .costco(let branch):
+            switch branch {
+            case .normal:
+                return "코스트코 일반매장"
+            case .daegu:
+                return "코스트코 대구점"
+            case .ilsan:
+                return "코스트코 일산점"
+            case .ulsan:
+                return "코스트코 울산점"
+            }
+        }
+    }
+}
