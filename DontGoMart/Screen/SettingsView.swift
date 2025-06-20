@@ -8,6 +8,7 @@
 import SwiftUI
 import WidgetKit
 import TipKit
+import UserNotifications
 
 struct StoreTip: Tip {
     var title: Text { Text("해당 지점") }
@@ -24,6 +25,9 @@ struct SettingsView: View {
     @Binding var isShowingSettings: Bool
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
+    @AppStorage(AppStorageKeys.notificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isNotificationEnabled: Bool = false
+    
+    private let notificationManager = NotificationManager.shared
     
     var body: some View {
         NavigationStack {
@@ -35,9 +39,31 @@ struct SettingsView: View {
                     .onChange(of: isCostco) {
                         selectedBranch = isCostco ? 1 : 0
                         WidgetManager.shared.updateWidget()
+                        
+                        // 마트 설정 변경 시 알림도 다시 설정
+                        Task {
+                            await handleNotificationToggle()
+                        }
                     }
                     if isCostco {
                         CostcoSettings()
+                    }
+                }
+                
+                Section(header: Text("알림설정")) {
+                    Toggle(isOn: $isNotificationEnabled, label: {
+                        Text("휴무일 알림")
+                    })
+                    .onChange(of: isNotificationEnabled) {
+                        Task {
+                            await handleNotificationToggle()
+                        }
+                    }
+                    
+                    if isNotificationEnabled {
+                        Text(NotificationManager.settingsDescription)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
                     }
                 }
             }
@@ -52,7 +78,74 @@ struct SettingsView: View {
                     }
                 }
             }
+            .onAppear {
+                // 뷰가 나타날 때 알림 상태 동기화
+                Task {
+                    await checkAndSyncNotificationStatus()
+                }
+            }
         }
+    }
+    
+    // MARK: - 알림 관련 메서드
+    
+    /// 알림 토글 상태 변경 처리
+    private func handleNotificationToggle() async {
+        if isNotificationEnabled {
+            // 알림 켜기: 권한 요청 후 알림 설정
+            let status = await notificationManager.checkAuthorizationStatus()
+            
+            if status == .authorized {
+                // 이미 권한이 있으면 바로 알림 설정
+                                    await notificationManager.setupSmartNotifications(for: tasks)
+                    print("✅ [SettingsView] 알림이 활성화되었습니다.")
+            } else {
+                // 권한이 없으면 권한 요청
+                let authorized = await notificationManager.requestAuthorization()
+                if authorized {
+                    await notificationManager.setupSmartNotifications(for: tasks)
+                    print("✅ [SettingsView] 알림 권한 허용 후 알림이 활성화되었습니다.")
+                } else {
+                    // 권한이 거부되면 토글 다시 끄기
+                    DispatchQueue.main.async {
+                        self.isNotificationEnabled = false
+                    }
+                    print("❌ [SettingsView] 알림 권한이 거부되어 알림을 비활성화했습니다.")
+                    
+                    // 설정 앱으로 이동할지 물어보기
+                    await showPermissionAlert()
+                }
+            }
+        } else {
+            // 알림 끄기: 모든 알림 취소
+            notificationManager.cancelAllNotifications()
+            print("🔕 [SettingsView] 알림이 비활성화되었습니다.")
+        }
+    }
+    
+    /// 앱 시작 시 알림 상태 확인 및 동기화
+    private func checkAndSyncNotificationStatus() async {
+        let status = await notificationManager.checkAuthorizationStatus()
+        
+        // 권한이 거부되었거나 없으면 토글을 off로 설정
+        if status == .denied || status == .notDetermined {
+            if isNotificationEnabled {
+                DispatchQueue.main.async {
+                    self.isNotificationEnabled = false
+                }
+            }
+        }
+        
+        // 토글이 켜져 있고 권한이 있으면 알림 설정 확인
+        if isNotificationEnabled && status == .authorized {
+            await notificationManager.setupSmartNotifications(for: tasks)
+        }
+    }
+    
+    /// 권한 거부 시 설정 앱 이동 안내
+    private func showPermissionAlert() async {
+        // 실제 앱에서는 Alert를 보여줄 수 있지만, 여기서는 콘솔 메시지로 대체
+        print("💡 [SettingsView] 알림을 받으려면 설정 > 알림에서 권한을 허용해주세요.")
     }
 }
 
