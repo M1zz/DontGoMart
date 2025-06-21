@@ -5,14 +5,16 @@ final class NotificationManager {
     static let shared = NotificationManager()
     private init() {}
     
-    // MARK: - 상수 정의
+    // MARK: - Constants
     
     private enum Constants {
         /// iOS 알림 제한 안전 임계값 (실제 제한: 64개)
         static let maxSafeNotificationCount = 60
+        /// 알림 설정할 최대 일수 (앞으로 1년)
+        static let maxNotificationDays = 365
     }
     
-    // MARK: - 알림 설정 변수들
+    // MARK: - Configuration Properties
     
     /// 첫 번째 알림: 며칠 전에 보낼지 (기본: 3일 전)
     static var firstNotificationDaysBefore: Int = 3
@@ -22,10 +24,8 @@ final class NotificationManager {
     static var notificationHour: Int = 21
     /// 알림 분
     static var notificationMinute: Int = 0
-    /// 알림 설정할 최대 일수 (앞으로 1년)
-    static let maxNotificationDays: Int = 365
     
-    // MARK: - 알림 타입
+    // MARK: - Notification Types
     
     enum NotificationType: String, CaseIterable {
         case firstNotification = "day1_before"
@@ -33,9 +33,7 @@ final class NotificationManager {
         
         var title: String {
             switch self {
-            case .firstNotification:
-                return "마트 휴무일 안내"
-            case .secondNotification:
+            case .firstNotification, .secondNotification:
                 return "마트 휴무일 안내"
             }
         }
@@ -60,7 +58,7 @@ final class NotificationManager {
         }
     }
     
-    // MARK: - 권한 관리
+    // MARK: - Authorization Management
     
     /// 알림 권한 요청
     func requestAuthorization() async -> Bool {
@@ -88,30 +86,21 @@ final class NotificationManager {
         return settings.authorizationStatus
     }
     
-
-    
-    // MARK: - 핵심 알림 설정 로직
+    // MARK: - Smart Notification Setup
     
     /// 사용자 선택 매장의 가까운 미래 휴무일에 대해서만 알림 설정 (iOS 64개 제한 고려)
     func setupSmartNotifications(for allTasks: [MetaMartsClosedDays]) async {
-        
-        // 1. 사전 조건 확인
         guard await validateNotificationPrerequisites() else { return }
         
-        // 2. 기존 알림 정리
         clearExistingNotifications()
         
-        // 3. 알림 대상 필터링
         let targetTasks = await filterNotificationTargets(from: allTasks)
-        
-        // 4. 알림 스케줄링 실행
         let scheduledCount = await scheduleNotificationsForTasks(targetTasks)
         
-        // 5. 결과 검증 및 로깅
         await validateAndLogResults(scheduledCount: scheduledCount)
     }
     
-    // MARK: - 알림 설정 단계별 메서드
+    // MARK: - Private Methods
     
     /// 1단계: 알림 설정 사전 조건 확인
     private func validateNotificationPrerequisites() async -> Bool {
@@ -203,7 +192,7 @@ final class NotificationManager {
     /// 가까운 미래의 휴무일만 필터링 (앞으로 90일)
     private func filterNearFutureTasks(from tasks: [MetaMartsClosedDays]) -> [MetaMartsClosedDays] {
         let today = Date()
-        let futureLimit = Calendar.current.date(byAdding: .day, value: Self.maxNotificationDays, to: today)!
+        let futureLimit = Calendar.current.date(byAdding: .day, value: Constants.maxNotificationDays, to: today)!
         
         return tasks.filter { task in
             task.taskDate >= today && task.taskDate <= futureLimit
@@ -286,7 +275,7 @@ final class NotificationManager {
         }
     }
     
-    // MARK: - 유틸리티 메서드
+    // MARK: - Utility Methods
     
     /// 알림 식별자 생성
     private func generateIdentifier(
@@ -298,8 +287,6 @@ final class NotificationManager {
         let martTypeString = martType.widgetDisplayName.replacingOccurrences(of: " ", with: "_")
         return "mart_\(martTypeString)_\(dateString)_\(type.rawValue)"
     }
-    
-
     
     /// 모든 알림 취소
     func cancelAllNotifications() {
@@ -314,6 +301,4 @@ final class NotificationManager {
         
         return "휴무일 \(firstNotificationDaysBefore)일 전과 \(secondNotificationDaysBefore)일 전 \(timeString)에 알림을 받습니다."
     }
-    
-
 }

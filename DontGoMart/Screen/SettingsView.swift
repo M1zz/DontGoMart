@@ -20,7 +20,6 @@ struct StoreTip: Tip {
     }
 }
 
-
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
@@ -41,7 +40,6 @@ struct SettingsView: View {
                         selectedBranch = isCostco ? 1 : 0
                         WidgetManager.shared.updateWidget()
                         
-                        // 마트 설정 변경 시 알림도 다시 설정
                         Task {
                             await handleNotificationToggle()
                         }
@@ -80,7 +78,6 @@ struct SettingsView: View {
                 }
             }
             .onAppear {
-                // 뷰가 나타날 때 알림 상태 동기화
                 Task {
                     await checkAndSyncNotificationStatus()
                 }
@@ -91,33 +88,27 @@ struct SettingsView: View {
         }
     }
     
-    // MARK: - 알림 관련 메서드
+    // MARK: - Private Methods
     
-    /// 알림 토글 상태 변경 처리
     private func handleNotificationToggle() async {
         if isNotificationEnabled {
-            // 알림 켜기: 권한 요청 후 알림 설정
             let status = await notificationManager.checkAuthorizationStatus()
             
             if status == .authorized {
-                // 이미 권한이 있으면 바로 알림 설정
-                    await notificationManager.setupSmartNotifications(for: tasks)
-                    print("✅ [SettingsView] 알림이 활성화되었습니다.")
+                await notificationManager.setupSmartNotifications(for: tasks)
+                print("✅ [SettingsView] 알림이 활성화되었습니다.")
             } else if status == .denied {
-                // 이미 권한이 거부된 상태면 토글 다시 끄기
                 DispatchQueue.main.async {
                     self.isNotificationEnabled = false
                     self.showingPermissionAlert = true
                 }
                 print("❌ [SettingsView] 알림 권한이 거부된 상태입니다.")
             } else {
-                // 권한이 미결정 상태면 권한 요청
                 let authorized = await notificationManager.requestAuthorization()
                 if authorized {
                     await notificationManager.setupSmartNotifications(for: tasks)
                     print("✅ [SettingsView] 알림 권한 허용 후 알림이 활성화되었습니다.")
                 } else {
-                    // 권한이 거부되면 토글 다시 끄기
                     DispatchQueue.main.async {
                         self.isNotificationEnabled = false
                         self.showingPermissionAlert = true
@@ -126,17 +117,14 @@ struct SettingsView: View {
                 }
             }
         } else {
-            // 알림 끄기: 모든 알림 취소
             notificationManager.cancelAllNotifications()
             print("🔕 [SettingsView] 알림이 비활성화되었습니다.")
         }
     }
     
-    /// 앱 시작 시 알림 상태 확인 및 동기화
     private func checkAndSyncNotificationStatus() async {
         let status = await notificationManager.checkAuthorizationStatus()
         
-        // 권한이 거부되었거나 없으면 토글을 off로 설정
         if status == .denied || status == .notDetermined {
             if isNotificationEnabled {
                 DispatchQueue.main.async {
@@ -145,15 +133,11 @@ struct SettingsView: View {
             }
         }
         
-        // 토글이 켜져 있고 권한이 있으면 알림 설정 확인
         if isNotificationEnabled && status == .authorized {
             await notificationManager.setupSmartNotifications(for: tasks)
         }
     }
-    
-
 }
-
 
 struct CostcoSettings: View {
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
@@ -165,7 +149,6 @@ struct CostcoSettings: View {
     @State private var isUlsanSelected = false
     @State private var isTipShowing = false
     var storeTip = StoreTip()
-    
     
     var body: some View {
         VStack {
@@ -197,7 +180,6 @@ struct CostcoSettings: View {
                     }
                 }
                 
-                
                 Toggle("대구 지점", isOn: Binding(
                     get: { isDaeguSelected },
                     set: { _ in updateSelection(for: .daegu) }
@@ -227,21 +209,20 @@ struct CostcoSettings: View {
     }
     
     private func updateSelection(for branch: CostcoBranch) {
-            // 다른 선택지를 초기화하고 현재 선택지를 저장
-            resetAllSelections()
-            selectedCostcoBranch = branch
-            selectedBranch = branch.branchID
-            
-            switch branch {
-            case .normal:
-                isNormalSelected = true
-            case .daegu:
-                isDaeguSelected = true
-            case .ilsan:
-                isIlsanSelected = true
-            case .ulsan:
-                isUlsanSelected = true
-            }
+        resetAllSelections()
+        selectedCostcoBranch = branch
+        selectedBranch = branch.branchID
+        
+        switch branch {
+        case .normal:
+            isNormalSelected = true
+        case .daegu:
+            isDaeguSelected = true
+        case .ilsan:
+            isIlsanSelected = true
+        case .ulsan:
+            isUlsanSelected = true
+        }
     }
     
     private func resetAllSelections() {
@@ -267,9 +248,7 @@ struct CostcoSettings: View {
     }
 }
 
-
-
-// MARK: - 알림 권한 안내 서브뷰
+// MARK: - Notification Permission Alert
 
 struct NotificationPermissionAlert: View {
     @Binding var isPresented: Bool
@@ -286,7 +265,6 @@ struct NotificationPermissionAlert: View {
             }
     }
     
-    /// 설정 앱으로 이동
     private func openAppSettings() {
         if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.open(settingsUrl)
