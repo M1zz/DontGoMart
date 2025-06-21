@@ -28,6 +28,7 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.notificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isNotificationEnabled: Bool = false
     
     private let notificationManager = NotificationManager.shared
+    @State private var showingPermissionAlert = false
     
     var body: some View {
         NavigationStack {
@@ -84,6 +85,9 @@ struct SettingsView: View {
                     await checkAndSyncNotificationStatus()
                 }
             }
+            .background(
+                NotificationPermissionAlert(isPresented: $showingPermissionAlert)
+            )
         }
     }
     
@@ -97,10 +101,17 @@ struct SettingsView: View {
             
             if status == .authorized {
                 // 이미 권한이 있으면 바로 알림 설정
-                                    await notificationManager.setupSmartNotifications(for: tasks)
+                    await notificationManager.setupSmartNotifications(for: tasks)
                     print("✅ [SettingsView] 알림이 활성화되었습니다.")
+            } else if status == .denied {
+                // 이미 권한이 거부된 상태면 토글 다시 끄기
+                DispatchQueue.main.async {
+                    self.isNotificationEnabled = false
+                    self.showingPermissionAlert = true
+                }
+                print("❌ [SettingsView] 알림 권한이 거부된 상태입니다.")
             } else {
-                // 권한이 없으면 권한 요청
+                // 권한이 미결정 상태면 권한 요청
                 let authorized = await notificationManager.requestAuthorization()
                 if authorized {
                     await notificationManager.setupSmartNotifications(for: tasks)
@@ -109,11 +120,9 @@ struct SettingsView: View {
                     // 권한이 거부되면 토글 다시 끄기
                     DispatchQueue.main.async {
                         self.isNotificationEnabled = false
+                        self.showingPermissionAlert = true
                     }
                     print("❌ [SettingsView] 알림 권한이 거부되어 알림을 비활성화했습니다.")
-                    
-                    // 설정 앱으로 이동할지 물어보기
-                    await showPermissionAlert()
                 }
             }
         } else {
@@ -142,11 +151,7 @@ struct SettingsView: View {
         }
     }
     
-    /// 권한 거부 시 설정 앱 이동 안내
-    private func showPermissionAlert() async {
-        // 실제 앱에서는 Alert를 보여줄 수 있지만, 여기서는 콘솔 메시지로 대체
-        print("💡 [SettingsView] 알림을 받으려면 설정 > 알림에서 권한을 허용해주세요.")
-    }
+
 }
 
 
@@ -263,6 +268,31 @@ struct CostcoSettings: View {
 }
 
 
+
+// MARK: - 알림 권한 안내 서브뷰
+
+struct NotificationPermissionAlert: View {
+    @Binding var isPresented: Bool
+    
+    var body: some View {
+        VStack { }
+            .alert("알림 권한 필요", isPresented: $isPresented) {
+                Button("설정으로 이동") {
+                    openAppSettings()
+                }
+                Button("취소", role: .cancel) { }
+            } message: {
+                Text("휴무일 알림을 받으려면\n설정 > DontGoMart > 알림에서\n권한을 허용해주세요.")
+            }
+    }
+    
+    /// 설정 앱으로 이동
+    private func openAppSettings() {
+        if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(settingsUrl)
+        }
+    }
+}
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
