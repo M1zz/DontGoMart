@@ -22,8 +22,8 @@ final class NotificationManager {
     static var notificationHour: Int = 21
     /// 알림 분
     static var notificationMinute: Int = 0
-    /// 알림 설정할 최대 일수 (앞으로 90일)
-    static let maxNotificationDays: Int = 90
+    /// 알림 설정할 최대 일수 (앞으로 1년)
+    static let maxNotificationDays: Int = 365
     
     // MARK: - 알림 타입
     
@@ -312,7 +312,7 @@ final class NotificationManager {
         let period = notificationHour < 12 ? "오전" : "오후"
         let timeString = notificationMinute == 0 ? "\(period) \(hour)시" : "\(period) \(hour)시 \(notificationMinute)분"
         
-        return "휴무일 \(firstNotificationDaysBefore)일 전과 \(secondNotificationDaysBefore)일 전 \(timeString)에 알림 (앞으로 \(maxNotificationDays)일간)"
+        return "휴무일 \(firstNotificationDaysBefore)일 전과 \(secondNotificationDaysBefore)일 전 \(timeString)에 알림을 받습니다."
     }
     
 
