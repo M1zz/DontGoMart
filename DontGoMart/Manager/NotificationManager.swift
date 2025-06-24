@@ -17,13 +17,13 @@ final class NotificationManager {
     // MARK: - Configuration Properties
     
     /// 첫 번째 알림: 며칠 전에 보낼지 (기본: 3일 전)
-    static var firstNotificationDaysBefore: Int = 3
+    static let firstNotificationDaysBefore: Int = 3
     /// 두 번째 알림: 며칠 전에 보낼지 (기본: 1일 전)
-    static var secondNotificationDaysBefore: Int = 1
+    static let secondNotificationDaysBefore: Int = 1
     /// 알림 시간: 시 (24시간 형식)
-    static var notificationHour: Int = 21
+    static let notificationHour: Int = 21
     /// 알림 분
-    static var notificationMinute: Int = 0
+    static let notificationMinute: Int = 0
     
     // MARK: - Notification Types
     
