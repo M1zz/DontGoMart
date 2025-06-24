@@ -76,12 +76,13 @@ struct DontGoMartApp: App {
         
         let status = await notificationManager.checkAuthorizationStatus()
         
-        if status == .authorized {
+        switch status {
+        case .authorized:
             await notificationManager.setupSmartNotifications(for: tasks)
-        } else if status == .notDetermined {
-            print("⏳ 알림 권한이 결정되지 않았습니다. 설정에서 알림을 활성화해주세요.")
-        } else {
-            print("❌ 알림 권한이 거부되었습니다. 설정에서 권한을 허용해주세요.")
+        case .notDetermined:
+            break
+        default:
+            break
         }
     }
 
