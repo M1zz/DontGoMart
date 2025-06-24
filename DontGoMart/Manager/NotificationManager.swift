@@ -4,9 +4,7 @@ import UserNotifications
 final class NotificationManager {
     static let shared = NotificationManager()
     private init() {}
-    
-    // MARK: - Constants
-    
+        
     private enum Constants {
         /// iOS 알림 제한 안전 임계값 (실제 제한: 64개)
         static let maxSafeNotificationCount = 60

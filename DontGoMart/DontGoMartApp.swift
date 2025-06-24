@@ -62,9 +62,7 @@ struct DontGoMartApp: App {
                 }
         }
     }
-    
-    // MARK: - Private Methods
-    
+        
     private func setupSmartNotifications() async {
         let notificationManager = NotificationManager.shared
         
