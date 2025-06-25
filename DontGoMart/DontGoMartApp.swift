@@ -69,10 +69,7 @@ struct DontGoMartApp: App {
         let userDefaults = UserDefaults(suiteName: Utillity.appGroupId)
         let isNotificationEnabled = userDefaults?.bool(forKey: AppStorageKeys.notificationEnabled) ?? false
         
-        guard isNotificationEnabled else {
-            print("🔕 사용자가 알림을 비활성화했으므로 알림을 설정하지 않습니다.")
-            return
-        }
+        guard isNotificationEnabled else { return }
         
         let status = await notificationManager.checkAuthorizationStatus()
         
