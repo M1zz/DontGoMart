@@ -14,12 +14,30 @@ enum MartType: Hashable {
     case normal
     case costco(type: CostcoBranch)
     
-    var widgetDisplayName : String {
+    var widgetDisplayName: String {
         switch self {
-        case .normal :
+        case .normal:
             return "마트"
-        case .costco :
+        case .costco:
             return "코스트코"
+        }
+    }
+    
+    var notificationStoreName: String {
+        switch self {
+        case .normal:
+            return "대형마트"
+        case .costco(let branch):
+            switch branch {
+            case .normal:
+                return "코스트코 일반매장"
+            case .daegu:
+                return "코스트코 대구점"
+            case .ilsan:
+                return "코스트코 일산점"
+            case .ulsan:
+                return "코스트코 울산점"
+            }
         }
     }
 }
