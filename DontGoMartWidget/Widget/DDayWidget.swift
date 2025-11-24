@@ -25,6 +25,13 @@ struct DDayWidgetEntryView: View {
 
     var body: some View {
         Text("DDayWidget")
+            .containerBackground(for: .widget) {
+                LinearGradient(
+                    gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            }
     }
 }
 
