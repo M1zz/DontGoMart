@@ -10,9 +10,10 @@ import SwiftUI
 struct ClosedDayCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0
-    @State var selectedMartType: MartType = .normal
+    @State var selectedMartType: MartType = .normal(type: .sunday)
     @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = true
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
+    @StateObject private var martSelection = MartSelectionManager.shared
     
     var body: some View {
         VStack(spacing: 35) {
@@ -85,33 +86,39 @@ struct ClosedDayCalendarView: View {
             }
             
             VStack(spacing: 15){
-                
+
                 Text("휴무일")
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity,alignment: .leading)
                     .padding(.vertical,20)
-                
+
+                let selectedMartTypes = martSelection.getSelectedMartTypes()
                 let filteredTasks = tasks.filter { item in
-                    return item.type == selectedMartType
+                    return selectedMartTypes.contains(item.type)
                 }
-                
-                if let task = filteredTasks.first(where: { task in
+
+                let todayTasks = filteredTasks.filter { task in
                     return isSameDay(date1: task.taskDate, date2: currentDate)
-                }) {
-                    
-                    ForEach(task.task) { task in
-                        
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(task.title)
-                                .font(.title2.bold())
+                }
+
+                if !todayTasks.isEmpty {
+                    ForEach(todayTasks) { closedDay in
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(closedDay.type.displayName)
+                                .font(.headline)
+                                .foregroundColor(colorForMartType(closedDay.type))
+
+                            ForEach(closedDay.task) { task in
+                                Text(task.title)
+                                    .font(.subheadline)
+                            }
                         }
                         .padding(.vertical,10)
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity,alignment: .leading)
                         .background(
-                            Color("Purple")
-                                .opacity(0.5)
-                                .cornerRadius(10)
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(colorForMartType(closedDay.type).opacity(0.2))
                         )
                     }
                 }
@@ -128,57 +135,85 @@ struct ClosedDayCalendarView: View {
     
     @ViewBuilder
     func CardView(value: DateValue) -> some View {
-        
+
         VStack{
             if value.day != -1 {
+                let selectedMartTypes = martSelection.getSelectedMartTypes()
                 let filteredTasks = tasks.filter { item in
-                    return item.type == selectedMartType
+                    return selectedMartTypes.contains(item.type)
                 }
-                
-                if let task = filteredTasks.first(where: { task in
-                    return isSameDay(date1: task.taskDate,
-                                     date2: value.date)
-                }){
-                    
-                    Text("\(value.day)")
-                        .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .primary)
-                        .frame(maxWidth: .infinity)
-                    
-                    Spacer()
-                    
-                    Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color("Pink"))
-                        .frame(width: 8,height: 8)
-                }
-                else{
-                    
+
+                let hasClosedDay = filteredTasks.contains(where: { task in
+                    return isSameDay(date1: task.taskDate, date2: value.date)
+                })
+
+                if hasClosedDay {
                     Text("\(value.day)")
                         .font(.title3.bold())
                         .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? .white : .primary)
                         .frame(maxWidth: .infinity)
-                    
+
+                    Spacer()
+
+                    // 여러 마트 표시를 위한 작은 점들
+                    HStack(spacing: 2) {
+                        let closedMarts = filteredTasks.filter { task in
+                            isSameDay(date1: task.taskDate, date2: value.date)
+                        }
+
+                        ForEach(closedMarts.prefix(3)) { closedMart in
+                            Circle()
+                                .fill(isSameDay(date1: value.date, date2: currentDate) ? .white : colorForMartType(closedMart.type))
+                                .frame(width: 6, height: 6)
+                        }
+                    }
+                }
+                else{
+                    Text("\(value.day)")
+                        .font(.title3.bold())
+                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? .white : .primary)
+                        .frame(maxWidth: .infinity)
+
                     Spacer()
                 }
             }
         }
-        .onAppear {
-            if isCostco {
-                if selectedBranch == 1 {
-                    selectedMartType = .costco(type: .normal)
-                } else if selectedBranch == 2 {
-                    selectedMartType = .costco(type: .daegu)
-                } else if selectedBranch == 3 {
-                    selectedMartType = .costco(type: .ilsan)
-                } else if selectedBranch == 4 {
-                    selectedMartType = .costco(type: .ulsan)
-                }
-            } else if !isCostco {
-                selectedMartType = .normal
-            }
-        }
         .padding(.vertical,9)
         .frame(height: 60,alignment: .top)
+    }
+
+    func colorForMartType(_ martType: MartType) -> Color {
+        switch martType {
+        case .normal(let branch):
+            switch branch {
+            case .sunday:
+                return .blue
+            case .wednesday:
+                return .cyan
+            case .mixed:
+                return .teal
+            case .jeju:
+                return .mint
+            }
+        case .costco(let branch):
+            switch branch {
+            case .normal:
+                return .red
+            case .daegu:
+                return .orange
+            case .ilsan:
+                return .green
+            case .ulsan:
+                return .purple
+            }
+        case .custom(let id):
+            if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
+                return Color(hex: customMart.color) ?? .gray
+            }
+            return .gray
+        case .holiday:
+            return .pink
+        }
     }
     
     func isSameDay(date1: Date,date2: Date)->Bool{

@@ -21,4 +21,12 @@ enum AppStorageKeys {
     static let widgetHolidayText = "widgetHolidayText"
     static let widgetTwoHolidayText = "widgetTwoHolidayText"
     static let notificationEnabled = "notificationEnabled"
+    static let notificationHour = "notificationHour"
+    static let notificationMinute = "notificationMinute"
+    static let beforeDayNotificationEnabled = "beforeDayNotificationEnabled"
+    static let shoppingReminderEnabled = "shoppingReminderEnabled"
+    static let locationEnabled = "locationEnabled"
+    static let selectedMartTypes = "selectedMartTypes"
+    static let viewMode = "viewMode" // "week" or "month"
+    static let favoriteMarts = "favoriteMarts"
 }

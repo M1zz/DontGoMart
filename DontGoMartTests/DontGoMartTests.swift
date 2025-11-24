@@ -25,7 +25,7 @@ struct DontGoMartTests {
         let on2024 = main.generateBiweeklyTasks(forYear: 2024, monthRange: 1..<13, weekdays:
                                                     [(Calendar.Weekday.wednesday, Calendar.Ordinal.second, "2번째 수요일"),
                                                      (Calendar.Weekday.wednesday, Calendar.Ordinal.fourth, "4번째 수요일")],
-                                                martType: MartType.normal)
+                                                martType: MartType.normal(type: .wednesday))
         let on2023 = main.generateBiweeklyTasks(forYear: 2023, monthRange: 1..<13, weekdays:
                                                     [(Calendar.Weekday.wednesday, Calendar.Ordinal.second, "2번째 수요일"),
                                                      (Calendar.Weekday.wednesday, Calendar.Ordinal.fourth, "4번째 수요일")],

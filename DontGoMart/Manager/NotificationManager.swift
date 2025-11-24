@@ -13,45 +13,69 @@ final class NotificationManager {
     }
     
     // MARK: - Configuration Properties
-    
+
     /// 첫 번째 알림: 며칠 전에 보낼지 (기본: 3일 전)
     static let firstNotificationDaysBefore: Int = 3
     /// 두 번째 알림: 며칠 전에 보낼지 (기본: 1일 전)
     static let secondNotificationDaysBefore: Int = 1
-    /// 알림 시간: 시 (24시간 형식)
-    static let notificationHour: Int = 21
-    /// 알림 분
-    static let notificationMinute: Int = 0
+
+    /// 사용자 설정 알림 시간 가져오기
+    var notificationHour: Int {
+        UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.notificationHour) ?? 9
+    }
+
+    var notificationMinute: Int {
+        UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.notificationMinute) ?? 0
+    }
+
+    var beforeDayNotificationEnabled: Bool {
+        UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.beforeDayNotificationEnabled) ?? true
+    }
     
     // MARK: - Notification Types
-    
+
     enum NotificationType: String, CaseIterable {
         case firstNotification = "day1_before"
         case secondNotification = "day2_before"
-        
+        case beforeDayNotification = "before_day"
+        case shoppingReminder = "shopping_reminder"
+
         var title: String {
             switch self {
             case .firstNotification, .secondNotification:
                 return "마트 휴무일 안내"
+            case .beforeDayNotification:
+                return "🛒 장보기 좋은 날"
+            case .shoppingReminder:
+                return "장보기 알림"
             }
         }
-        
+
         func body(for martType: MartType) -> String {
             let storeName = martType.notificationStoreName
+            let manager = NotificationManager.shared
             switch self {
             case .firstNotification:
                 return "\(NotificationManager.firstNotificationDaysBefore)일 뒤 \(storeName) 휴점일입니다."
             case .secondNotification:
                 return "\(NotificationManager.secondNotificationDaysBefore)일 뒤 \(storeName) 휴점일입니다."
+            case .beforeDayNotification:
+                return "내일 \(storeName) 휴무일입니다. 오늘 장보기 좋은 날이에요!"
+            case .shoppingReminder:
+                return "다음 휴무일 전에 장을 보세요!"
             }
         }
-        
+
         var daysToSubtract: Int {
             switch self {
             case .firstNotification:
                 return NotificationManager.firstNotificationDaysBefore
             case .secondNotification:
                 return NotificationManager.secondNotificationDaysBefore
+            case .beforeDayNotification:
+                return 1
+            case .shoppingReminder:
+                return 2
             }
         }
     }
@@ -166,24 +190,12 @@ final class NotificationManager {
     
     /// 사용자가 선택한 매장의 휴무일만 필터링
     private func filterUserSelectedTasks(from tasks: [MetaMartsClosedDays]) -> [MetaMartsClosedDays] {
-        // UserDefaults에서 사용자 선택 정보 읽기
-        let userDefaults = UserDefaults(suiteName: Utillity.appGroupId)
-        let isCostco = userDefaults?.bool(forKey: AppStorageKeys.isCostco) ?? false
-        let selectedBranch = userDefaults?.integer(forKey: AppStorageKeys.selectedBranch) ?? 0
-        
+        // MartSelectionManager를 사용하여 선택된 마트 타입 가져오기
+        let martSelection = MartSelectionManager.shared
+        let selectedMartTypes = martSelection.getSelectedMartTypes()
+
         return tasks.filter { task in
-            switch task.type {
-            case .normal:
-                // 일반 마트는 코스트코를 선택하지 않았을 때만
-                return !isCostco
-                
-            case .costco(let branch):
-                // 코스트코를 선택했고, 해당 지점과 일치할 때만
-                guard isCostco else { return false }
-                
-                let branchID = branch.branchID
-                return branchID == selectedBranch
-            }
+            selectedMartTypes.contains(task.type)
         }
     }
     
@@ -213,10 +225,10 @@ final class NotificationManager {
             return false
         }
         
-        // 알림 시간 설정
+        // 알림 시간 설정 (사용자 설정 시간 사용)
         var dateComponents = Calendar.current.dateComponents([.year, .month, .day], from: notificationDate)
-        dateComponents.hour = Self.notificationHour
-        dateComponents.minute = Self.notificationMinute
+        dateComponents.hour = self.notificationHour
+        dateComponents.minute = self.notificationMinute
         dateComponents.second = 0
         
         guard let finalNotificationDate = Calendar.current.date(from: dateComponents) else {
@@ -293,10 +305,32 @@ final class NotificationManager {
     
     /// UI 표시용 설정 문자열
     static var settingsDescription: String {
-        let hour = notificationHour == 12 ? 12 : (notificationHour > 12 ? notificationHour - 12 : notificationHour)
-        let period = notificationHour < 12 ? "오전" : "오후"
-        let timeString = notificationMinute == 0 ? "\(period) \(hour)시" : "\(period) \(hour)시 \(notificationMinute)분"
-        
+        let manager = NotificationManager.shared
+        let notifHour = manager.notificationHour
+        let notifMinute = manager.notificationMinute
+
+        let hour = notifHour == 12 ? 12 : (notifHour > 12 ? notifHour - 12 : notifHour)
+        let period = notifHour < 12 ? "오전" : "오후"
+        let timeString = notifMinute == 0 ? "\(period) \(hour)시" : "\(period) \(hour)시 \(notifMinute)분"
+
         return "휴무일 \(firstNotificationDaysBefore)일 전과 \(secondNotificationDaysBefore)일 전 \(timeString)에 알림을 받습니다."
+    }
+
+    /// 장보기 알림 스케줄링
+    func scheduleShoppingReminder(for martType: MartType) async {
+        guard await validateNotificationPrerequisites() else { return }
+
+        let userDefaults = UserDefaults(suiteName: Utillity.appGroupId)
+        let isShoppingReminderEnabled = userDefaults?.bool(forKey: AppStorageKeys.shoppingReminderEnabled) ?? false
+
+        guard isShoppingReminderEnabled else { return }
+
+        if let nextClosedDate = OperationStatusManager.shared.nextClosedDate(for: martType) {
+            let _ = await scheduleNotification(
+                for: nextClosedDate,
+                type: .shoppingReminder,
+                martType: martType
+            )
+        }
     }
 }

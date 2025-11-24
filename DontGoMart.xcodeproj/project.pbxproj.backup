@@ -7,15 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2742500813844CEFA71A312B /* ShoppingReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */; };
-		507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */; };
-		529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */; };
-		57C2D824584E4F4E94263A6E /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50169114F32F4285B267D1E2 /* ShoppingListView.swift */; };
 		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
 		589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589D5F462A433E8C00DB3CCF /* ProductList.plist */; };
 		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
-		58AA3ECF2ECF56B0007D4BBD /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
-		58AA3ED02ECF56C0007D4BBD /* CustomMart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */; };
 		58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ClosedDaysView.swift */; };
@@ -36,9 +30,6 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
-		5EF8D5624A6C44509B77A5BA /* CustomMart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */; };
-		95F523D4E1324796939176BB /* FavoriteMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */; };
-		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		C33C54772D312D53008B625C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD02CDF81A2008C6458 /* Date+Ext.swift */; };
@@ -59,11 +50,7 @@
 		C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
 		C3E71D7D2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
 		C3F7E7342D2CACF5003B7762 /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */; };
-		C61F1636FEBB460E9981479F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB33E34F3441D88A2AF25E /* LocationManager.swift */; };
-		CDCFE239F3C8444DAB553692 /* MartStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */; };
 		D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C229952E0C2ABB00969839 /* NotificationManager.swift */; };
-		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
-		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,11 +85,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04BB33E34F3441D88A2AF25E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartEditView.swift; sourceTree = "<group>"; };
-		1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartStore.swift; sourceTree = "<group>"; };
-		40E2B177256F4A4897EC2274 /* CustomMartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartManager.swift; sourceTree = "<group>"; };
-		50169114F32F4285B267D1E2 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		58446A272A59493C001CC9D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		58446A292A59BD5C001CC9D1 /* CalendarWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarWidgetExtension.entitlements; sourceTree = "<group>"; };
 		589D5F452A433D7000DB3CCF /* CoffeeConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoffeeConfiguration.storekit; sourceTree = "<group>"; };
@@ -129,10 +111,6 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
-		626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMartManager.swift; sourceTree = "<group>"; };
-		88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatusManager.swift; sourceTree = "<group>"; };
-		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
-		AB1004BA229141238536EE02 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
@@ -144,7 +122,6 @@
 		C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontGoMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utillity.swift; sourceTree = "<group>"; };
 		C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
-		C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingReminder.swift; sourceTree = "<group>"; };
 		D1C229952E0C2ABB00969839 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,10 +159,6 @@
 		58446A242A5938F0001CC9D1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				40E2B177256F4A4897EC2274 /* CustomMartManager.swift */,
-				04BB33E34F3441D88A2AF25E /* LocationManager.swift */,
-				626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */,
-				88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */,
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
 				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
@@ -196,8 +169,6 @@
 		58446A252A59390C001CC9D1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */,
-				50169114F32F4285B267D1E2 /* ShoppingListView.swift */,
 				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
 				58B693D12A3B56E800FF904B /* ClosedDaysView.swift */,
 				58446A272A59493C001CC9D1 /* SettingsView.swift */,
@@ -208,9 +179,6 @@
 		58446A262A593924001CC9D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */,
-				1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */,
-				C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */,
 				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
@@ -295,7 +263,6 @@
 				58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */,
 				58D40AD02CDF81A2008C6458 /* Date+Ext.swift */,
 				C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */,
-				AB1004BA229141238536EE02 /* ColorExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -475,9 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */,
-				AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */,
-				5EF8D5624A6C44509B77A5BA /* CustomMart.swift in Sources */,
 				58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */,
 				C359F4F72CFD8F6700F26B1D /* Color+Ext.swift in Sources */,
 				C359F5032CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
@@ -495,15 +459,8 @@
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */,
 				C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */,
-				FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
 				58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */,
-				C61F1636FEBB460E9981479F /* LocationManager.swift in Sources */,
-				95F523D4E1324796939176BB /* FavoriteMartManager.swift in Sources */,
-				529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */,
-				CDCFE239F3C8444DAB553692 /* MartStore.swift in Sources */,
-				2742500813844CEFA71A312B /* ShoppingReminder.swift in Sources */,
-				57C2D824584E4F4E94263A6E /* ShoppingListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +470,6 @@
 			files = (
 				C359F5082CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693FD2A3B66AB00FF904B /* MonthConfig.swift in Sources */,
-				58AA3ED02ECF56C0007D4BBD /* CustomMart.swift in Sources */,
 				C359F5062CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */,
 				58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */,
 				C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
@@ -525,11 +481,9 @@
 				58B693E92A3B59EE00FF904B /* CalendarWidgetBundle.swift in Sources */,
 				C359F4EF2CFD724000F26B1D /* WidgetEntry.swift in Sources */,
 				C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */,
-				58AA3ECF2ECF56B0007D4BBD /* CustomMartManager.swift in Sources */,
 				C3C2F8E92CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
 				C3E71D7D2D2BFBBF00F4A24B /* Utillity.swift in Sources */,
-				E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */,
 				58B693ED2A3B59EE00FF904B /* HolidayWidget.swift in Sources */,
 				C359F4F92CFD8FA700F26B1D /* DDayWidget.swift in Sources */,
 			);
@@ -690,7 +644,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -701,7 +654,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -730,7 +683,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -741,7 +693,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
