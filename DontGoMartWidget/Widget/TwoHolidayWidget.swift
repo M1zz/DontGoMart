@@ -65,79 +65,61 @@ struct TwoHolidayEntryView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            // 헤더
+        VStack(alignment: .leading, spacing: 6) {
+            // 헤더: 마트 이름
             HStack(spacing: 4) {
-                Text(config.emojiText)
-                    .font(.body)
-                HStack(spacing: 4) {
-                    Circle()
-                        .fill(martColor)
-                        .frame(width: 6, height: 6)
-                    Text(entry.holidayText[0])
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
-                }
-            }
-
-            Spacer(minLength: 4)
-
-            // 첫 번째 휴무일
-            VStack(alignment: .leading, spacing: 2) {
-                Text(entry.holidayText[1])
+                Circle()
+                    .fill(martColor)
+                    .frame(width: 8, height: 8)
+                Text(entry.holidayText[0])
                     .font(.caption)
                     .fontWeight(.semibold)
                     .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-                HStack(spacing: 4) {
-                    Text(entry.holidayText[2])
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(martColor)
-                        .lineLimit(1)
-                    Spacer(minLength: 0)
-                    Image(systemName: "calendar")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                }
+                    .minimumScaleFactor(0.7)
+                    .foregroundColor(.secondary)
             }
-            .padding(.vertical, 6)
-            .padding(.horizontal, 10)
-            .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.white.opacity(0.9))
-            )
 
-            // 두 번째 휴무일
-            VStack(alignment: .leading, spacing: 2) {
+            Spacer(minLength: 2)
+
+            // 첫 번째 휴무일 (가까운 날짜) - 크게 표시
+            VStack(alignment: .leading, spacing: 4) {
+                // D-day 크게
+                Text(entry.holidayText[2])
+                    .font(.system(size: 32, weight: .heavy))
+                    .foregroundColor(martColor)
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(1)
+
+                // 날짜
+                Text(entry.holidayText[1])
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Spacer(minLength: 2)
+
+            // 구분선
+            Rectangle()
+                .fill(Color.secondary.opacity(0.3))
+                .frame(height: 1)
+
+            // 두 번째 휴무일 (먼 날짜) - 작게 표시
+            HStack(spacing: 6) {
+                Text(entry.holidayText[4])
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                    .foregroundColor(.secondary)
                 Text(entry.holidayText[3])
                     .font(.caption2)
-                    .fontWeight(.medium)
                     .foregroundColor(.secondary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
-                HStack(spacing: 4) {
-                    Text(entry.holidayText[4])
-                        .font(.caption)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.secondary)
-                        .lineLimit(1)
-                    Spacer(minLength: 0)
-                    Image(systemName: "calendar.badge.clock")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                }
             }
-            .padding(.vertical, 5)
-            .padding(.horizontal, 10)
-            .background(
-                RoundedRectangle(cornerRadius: 6)
-                    .fill(Color.white.opacity(0.7))
-            )
         }
-        .padding(12)
+        .padding(10)
         .containerBackground(for: .widget) {
             LinearGradient(
                 gradient: Gradient(colors: [
