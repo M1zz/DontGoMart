@@ -12,8 +12,8 @@ import WidgetKit
 struct DDayWidgetEntryView: View {
     @AppStorage("isNormal", store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
     @AppStorage("selectedBranch", store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
-    @State private var selectedMartType: MartType = .normal
-    
+    @State private var selectedMartType: MartType = .normal(type: .sunday)
+
     var entry: DayEntry
     var config: MonthConfig
     let startDate = Date()
@@ -22,9 +22,16 @@ struct DDayWidgetEntryView: View {
         self.entry = entry
         self.config = MonthConfig.determineConfig(from: entry.date)
     }
-    
+
     var body: some View {
         Text("DDayWidget")
+            .containerBackground(for: .widget) {
+                LinearGradient(
+                    gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            }
     }
 }
 
