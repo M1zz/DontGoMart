@@ -34,6 +34,18 @@
           }
         }
       }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Privacy - Location When In Use Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

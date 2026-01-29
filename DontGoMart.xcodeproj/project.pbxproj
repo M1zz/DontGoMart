@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
-		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
-		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
 		2742500813844CEFA71A312B /* ShoppingReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */; };
 		507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */; };
 		529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */; };
@@ -41,6 +38,9 @@
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		5EF8D5624A6C44509B77A5BA /* CustomMart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */; };
 		95F523D4E1324796939176BB /* FavoriteMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */; };
+		9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
+		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
+		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
 		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
@@ -101,10 +101,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
-		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		04BB33E34F3441D88A2AF25E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartEditView.swift; sourceTree = "<group>"; };
 		1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartStore.swift; sourceTree = "<group>"; };
@@ -138,6 +134,10 @@
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
 		626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMartManager.swift; sourceTree = "<group>"; };
 		88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatusManager.swift; sourceTree = "<group>"; };
+		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
 		AB1004BA229141238536EE02 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
@@ -239,14 +239,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		9C20357B2F2AE59000AF1279 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				9C20357A2F2AE59000AF1279 /* Version.xcconfig */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		58B693CD2A3B56E800FF904B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +309,14 @@
 				AB1004BA229141238536EE02 /* ColorExtension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9C20357B2F2AE59000AF1279 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9C20357A2F2AE59000AF1279 /* Version.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		C359F4ED2CFD722D00F26B1D /* Model */ = {
@@ -725,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -765,7 +765,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -798,7 +798,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.9;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -829,7 +829,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.9;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
