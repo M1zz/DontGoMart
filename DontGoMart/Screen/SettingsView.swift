@@ -8,6 +8,7 @@
 import SwiftUI
 import WidgetKit
 import TipKit
+import UIKit
 
 struct StoreTip: Tip {
     var title: Text { Text("해당 지점") }
@@ -489,5 +490,25 @@ struct CostcoSettings: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView(isShowingSettings: .constant(true))
+    }
+}
+
+// MARK: - NotificationPermissionAlert
+
+struct NotificationPermissionAlert: View {
+    @Binding var isPresented: Bool
+
+    var body: some View {
+        EmptyView()
+            .alert("알림 권한 필요", isPresented: $isPresented) {
+                Button("설정으로 이동") {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+                Button("취소", role: .cancel) { }
+            } message: {
+                Text("휴무일 알림을 받으려면 설정에서 알림 권한을 허용해주세요.")
+            }
     }
 }
