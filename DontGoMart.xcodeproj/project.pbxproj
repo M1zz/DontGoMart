@@ -7,13 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		9C2035792F2AE59000AF1279 /* Version.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9C20357A2F2AE59000AF1279 /* Version.xcconfig */; };
-		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
-		589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589D5F462A433E8C00DB3CCF /* ProductList.plist */; };
-		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
+		9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
+		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
 		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
-=======
 		2742500813844CEFA71A312B /* ShoppingReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */; };
 		507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */; };
 		529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */; };
@@ -23,7 +19,6 @@
 		589D5F492A433EFD00DB3CCF /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */; };
 		58AA3ECF2ECF56B0007D4BBD /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
 		58AA3ED02ECF56C0007D4BBD /* CustomMart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */; };
->>>>>>> develop
 		58B127DD2A3D3673004040EA /* ClosedDayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */; };
 		58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693CF2A3B56E800FF904B /* DontGoMartApp.swift */; };
 		58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693D12A3B56E800FF904B /* ClosedDaysView.swift */; };
@@ -44,14 +39,9 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
-<<<<<<< HEAD
-		9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
-		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
-=======
 		5EF8D5624A6C44509B77A5BA /* CustomMart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */; };
 		95F523D4E1324796939176BB /* FavoriteMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */; };
 		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
->>>>>>> develop
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		C33C54772D312D53008B625C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD02CDF81A2008C6458 /* Date+Ext.swift */; };
@@ -72,14 +62,11 @@
 		C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
 		C3E71D7D2D2BFBBF00F4A24B /* Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */; };
 		C3F7E7342D2CACF5003B7762 /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */; };
-<<<<<<< HEAD
-=======
 		C61F1636FEBB460E9981479F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB33E34F3441D88A2AF25E /* LocationManager.swift */; };
 		CDCFE239F3C8444DAB553692 /* MartStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */; };
 		D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C229952E0C2ABB00969839 /* NotificationManager.swift */; };
 		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
->>>>>>> develop
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +101,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		04BB33E34F3441D88A2AF25E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartEditView.swift; sourceTree = "<group>"; };
 		1C3BBF249CDB4AB4AD79E3AB /* MartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartStore.swift; sourceTree = "<group>"; };
@@ -124,8 +115,6 @@
 		589D5F452A433D7000DB3CCF /* CoffeeConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoffeeConfiguration.storekit; sourceTree = "<group>"; };
 		589D5F462A433E8C00DB3CCF /* ProductList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
 		589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
-		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
-		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		589D5F4A2A43443C00DB3CCF /* DontGoMart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DontGoMart.entitlements; sourceTree = "<group>"; };
 		58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDayCalendarView.swift; sourceTree = "<group>"; };
 		58B693CC2A3B56E800FF904B /* DontGoMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontGoMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,15 +136,10 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-=======
 		626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMartManager.swift; sourceTree = "<group>"; };
 		88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatusManager.swift; sourceTree = "<group>"; };
 		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
 		AB1004BA229141238536EE02 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
->>>>>>> develop
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
@@ -167,11 +151,8 @@
 		C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontGoMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E71D7B2D2BFBB000F4A24B /* Utillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utillity.swift; sourceTree = "<group>"; };
 		C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		C49AE0168F6B4A1DA67F57B9 /* ShoppingReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingReminder.swift; sourceTree = "<group>"; };
 		D1C229952E0C2ABB00969839 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
->>>>>>> develop
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -208,14 +189,11 @@
 		58446A242A5938F0001CC9D1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
 				40E2B177256F4A4897EC2274 /* CustomMartManager.swift */,
 				04BB33E34F3441D88A2AF25E /* LocationManager.swift */,
 				626EAA47E1814959B1642FA6 /* FavoriteMartManager.swift */,
 				88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */,
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
->>>>>>> develop
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
 				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
 				9C2035782F2AE58000AF1279 /* ReviewManager.swift */,
@@ -470,7 +448,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ko,
 			);
 			mainGroup = 58B693C32A3B56E800FF904B;
 			productRefGroup = 58B693CD2A3B56E800FF904B /* Products */;
@@ -538,6 +515,7 @@
 				C359F4F02CFD724000F26B1D /* WidgetEntry.swift in Sources */,
 				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
+				D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */,
 				C3E71D7C2D2BFBBF00F4A24B /* Utillity.swift in Sources */,
 				FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */,
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
@@ -660,7 +638,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -716,7 +693,6 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -730,12 +706,13 @@
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -748,11 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
-				MARKETING_VERSION = "$(MARKETING_VERSION)";
-=======
 				MARKETING_VERSION = 1.1.0;
->>>>>>> develop
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -773,12 +746,13 @@
 				CODE_SIGN_ENTITLEMENTS = DontGoMart/DontGoMart.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DontGoMart/Preview Content\"";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -791,11 +765,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
-				MARKETING_VERSION = "$(MARKETING_VERSION)";
-=======
 				MARKETING_VERSION = 1.1.0;
->>>>>>> develop
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -816,7 +786,7 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
@@ -828,7 +798,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -847,7 +817,7 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
@@ -859,7 +829,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -876,7 +846,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
@@ -898,7 +868,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
