@@ -30,6 +30,8 @@
 		58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		58D40AD72CDF9138008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
 		58D40ADA2CDF9C92008C6458 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */; };
+		9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
+		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		C33C54772D312D53008B625C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD02CDF81A2008C6458 /* Date+Ext.swift */; };
@@ -110,6 +112,8 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
+		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				589D5F462A433E8C00DB3CCF /* ProductList.plist */,
 				58B693D32A3B56E900FF904B /* Assets.xcassets */,
 				58B693D52A3B56E900FF904B /* Preview Content */,
+				9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */,
+				9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */,
 			);
 			path = DontGoMart;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 58B693C32A3B56E800FF904B;
 			productRefGroup = 58B693CD2A3B56E800FF904B /* Products */;
@@ -413,6 +420,8 @@
 			files = (
 				58B693D72A3B56E900FF904B /* Preview Assets.xcassets in Resources */,
 				589D5F472A433E8C00DB3CCF /* ProductList.plist in Resources */,
+				9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */,
+				9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */,
 				58B693D42A3B56E900FF904B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +574,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -619,6 +629,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -638,7 +649,6 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -677,7 +687,6 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
