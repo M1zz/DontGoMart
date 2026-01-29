@@ -13,14 +13,6 @@ var tasks: [MetaMartsClosedDays] = []
 enum MartType: Hashable {
     case normal(type: LargeMartBranch)  // 대형마트 (지역별)
     case costco(type: CostcoBranch)
-<<<<<<< HEAD
-    
-    var widgetDisplayName : String {
-        switch self {
-        case .normal :
-            return "마트"
-        case .costco :
-=======
     case custom(id: String)  // 커스텀 마트 (UUID string으로 식별)
     case holiday  // 설날/추석 등 공휴일
 
@@ -38,7 +30,6 @@ enum MartType: Hashable {
                 return "마트"
             }
         case .costco:
->>>>>>> develop
             return "코스트코"
         case .custom(let id):
             if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
@@ -49,8 +40,6 @@ enum MartType: Hashable {
             return "공휴일"
         }
     }
-<<<<<<< HEAD
-=======
 
     var notificationStoreName: String {
         switch self {
@@ -105,7 +94,6 @@ enum LargeMartBranch: Hashable, Codable, CaseIterable {
             return "제주"
         }
     }
->>>>>>> develop
 }
 
 enum CostcoBranch: Hashable, Codable, CaseIterable {
@@ -113,7 +101,7 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
     case daegu
     case ilsan
     case ulsan
-    
+
     var storeName: String {
         switch self {
         case .normal:
@@ -126,7 +114,7 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
             return "울산점"
         }
     }
-    
+
     // AppStorage 때문에 Int로 일단 만들어 놓음
     var branchID: Int {
         switch self {
@@ -140,7 +128,7 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
             return 4
         }
     }
-    
+
     // branchID 값을 통해 해당 지점의 이름을 반환하는 프로퍼티
     static func branchName(forID id: Int) -> String? {
         switch id {

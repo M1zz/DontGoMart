@@ -24,8 +24,6 @@ struct SettingsView: View {
     @Binding var isShowingSettings: Bool
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
-<<<<<<< HEAD
-=======
     @AppStorage(AppStorageKeys.notificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isNotificationEnabled: Bool = false
     @AppStorage(AppStorageKeys.notificationHour, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationHour: Int = 9
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
@@ -54,29 +52,13 @@ struct SettingsView: View {
         }
         favoriteMarts = favorites.joined(separator: ",")
     }
->>>>>>> develop
-    
+
     var body: some View {
         NavigationStack {
             Form {
-<<<<<<< HEAD
-                Section(header: Text("대형마트")) {
-                    Toggle(isOn: $isCostco, label: {
-                        Text("코스트코")
-                    })
-                    .onChange(of: isCostco) {
-                        selectedBranch = isCostco ? 1 : 0
-                        WidgetManager.shared.updateWidget()
-                    }
-                    if isCostco {
-                        CostcoSettings()
-                    }
-                }
-=======
                 martSelectionSection
                 customMartSection
                 notificationSection
->>>>>>> develop
             }
             .navigationTitle("매장선택")
             .toolbar {
@@ -87,8 +69,6 @@ struct SettingsView: View {
                     }
                 }
             }
-<<<<<<< HEAD
-=======
             .onAppear {
                 Task {
                     await checkAndSyncNotificationStatus()
@@ -339,13 +319,13 @@ struct SettingsView: View {
             }
         }
     }
-    
+
     // MARK: - Private Methods
-    
+
     private func handleNotificationToggle() async {
         if isNotificationEnabled {
             let status = await notificationManager.checkAuthorizationStatus()
-            
+
             if status == .authorized {
                 await notificationManager.setupSmartNotifications(for: tasks)
                 print("✅ [SettingsView] 알림이 활성화되었습니다.")
@@ -373,10 +353,10 @@ struct SettingsView: View {
             print("🔕 [SettingsView] 알림이 비활성화되었습니다.")
         }
     }
-    
+
     private func checkAndSyncNotificationStatus() async {
         let status = await notificationManager.checkAuthorizationStatus()
-        
+
         if status == .denied || status == .notDetermined {
             if isNotificationEnabled {
                 DispatchQueue.main.async {
@@ -384,10 +364,9 @@ struct SettingsView: View {
                 }
             }
         }
-        
+
         if isNotificationEnabled && status == .authorized {
             await notificationManager.setupSmartNotifications(for: tasks)
->>>>>>> develop
         }
     }
 }
@@ -396,15 +375,15 @@ struct SettingsView: View {
 struct CostcoSettings: View {
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @State var selectedCostcoBranch: CostcoBranch = .normal
-    
+
     @State private var isNormalSelected = false
     @State private var isDaeguSelected = false
     @State private var isIlsanSelected = false
     @State private var isUlsanSelected = false
     @State private var isTipShowing = false
     var storeTip = StoreTip()
-    
-    
+
+
     var body: some View {
         VStack {
             HStack {
@@ -419,7 +398,7 @@ struct CostcoSettings: View {
                 )) {
                     HStack {
                         Text("일반매장")
-                        
+
                         if isTipShowing {
                             Image(systemName: "questionmark.circle")
                                 .popoverTip(storeTip)
@@ -434,25 +413,25 @@ struct CostcoSettings: View {
                         }
                     }
                 }
-                
-                
+
+
                 Toggle("대구 지점", isOn: Binding(
                     get: { isDaeguSelected },
                     set: { _ in updateSelection(for: .daegu) }
                 ))
-                
+
                 Toggle("일산 지점", isOn: Binding(
                     get: { isIlsanSelected },
                     set: { _ in updateSelection(for: .ilsan) }
                 ))
-                
+
                 Toggle("울산 지점", isOn: Binding(
                     get: { isUlsanSelected },
                     set: { _ in updateSelection(for: .ulsan) }
                 ))
             }
             .padding()
-            
+
             Spacer()
         }
         .onAppear {
@@ -463,13 +442,13 @@ struct CostcoSettings: View {
             try? Tips.configure([.displayFrequency(.immediate)])
         }
     }
-    
+
     private func updateSelection(for branch: CostcoBranch) {
             // 다른 선택지를 초기화하고 현재 선택지를 저장
             resetAllSelections()
             selectedCostcoBranch = branch
             selectedBranch = branch.branchID
-            
+
             switch branch {
             case .normal:
                 isNormalSelected = true
@@ -481,14 +460,14 @@ struct CostcoSettings: View {
                 isUlsanSelected = true
             }
     }
-    
+
     private func resetAllSelections() {
         isNormalSelected = false
         isDaeguSelected = false
         isIlsanSelected = false
         isUlsanSelected = false
     }
-    
+
     private func syncSelectionState() {
         switch selectedBranch {
         case 1:
@@ -512,4 +491,3 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView(isShowingSettings: .constant(true))
     }
 }
-
