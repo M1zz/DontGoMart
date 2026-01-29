@@ -55,6 +55,10 @@ struct DontGoMartApp: App {
                         martType: .costco(type: .ulsan)
                     ))
                     WidgetManager.shared.updateWidget()
+
+                    // 앱 실행 횟수 증가 및 적절한 시점에 리뷰 요청
+                    ReviewManager.incrementAppOpenCount()
+                    ReviewManager.requestReviewIfAppropriate()
                 }
         }
     }
