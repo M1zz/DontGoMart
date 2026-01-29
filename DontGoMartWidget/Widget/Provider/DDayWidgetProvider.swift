@@ -21,7 +21,7 @@ struct DDayWidgetProvider: IntentTimelineProvider {
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<DayEntry>) -> ()) {
         var entries: [DayEntry] = []
-        
+
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
             let entryDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: currentDate)!
@@ -29,8 +29,11 @@ struct DDayWidgetProvider: IntentTimelineProvider {
             let entry = DayEntry(date: startOfDate, configuration: configuration)
             entries.append(entry)
         }
-        
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+
+        // 다음 날 자정에 위젯 업데이트
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
+        let nextMidnight = Calendar.current.startOfDay(for: tomorrow)
+        let timeline = Timeline(entries: entries, policy: .after(nextMidnight))
         completion(timeline)
     }
 }

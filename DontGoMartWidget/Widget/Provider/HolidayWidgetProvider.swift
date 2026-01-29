@@ -23,7 +23,7 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
         var entries: [HolidayEntry] = []
         @AppStorage(AppStorageKeys.widgetHolidayText, store: UserDefaults(suiteName: Utillity.appGroupId))
         var holidayText: String = ""
-        
+
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
             let entryDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: currentDate)!
@@ -31,8 +31,11 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
             let entry = HolidayEntry(date: startOfDate, configuration: configuration, holidayText: holidayText)
             entries.append(entry)
         }
-        
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+
+        // 다음 날 자정에 위젯 업데이트
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
+        let nextMidnight = Calendar.current.startOfDay(for: tomorrow)
+        let timeline = Timeline(entries: entries, policy: .after(nextMidnight))
         completion(timeline)
     }
 }
