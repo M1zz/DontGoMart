@@ -384,6 +384,7 @@ struct ClosedDaysView: View {
             HStack(spacing: 12) {
                 Button(action: {
                     isShowingShoppingList = true
+                    ReviewManager.trackMeaningfulAction()
                 }) {
                     VStack(spacing: 8) {
                         Image(systemName: "cart.fill")
@@ -406,6 +407,7 @@ struct ClosedDaysView: View {
 
                 Button(action: {
                     isShowingCalendar = true
+                    ReviewManager.trackMeaningfulAction()
                 }) {
                     VStack(spacing: 8) {
                         Image(systemName: "calendar")

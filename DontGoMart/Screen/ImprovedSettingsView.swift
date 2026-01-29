@@ -35,6 +35,8 @@ struct ImprovedSettingsView: View {
 
                 shoppingReminderSection
 
+                supportSection
+
                 aboutSection
             }
             .navigationTitle("설정")
@@ -165,6 +167,40 @@ struct ImprovedSettingsView: View {
                 Text("휴무일 알림을 먼저 켜주세요.")
                     .font(.caption)
                     .foregroundColor(.orange)
+            }
+        }
+    }
+
+    private var supportSection: some View {
+        Section(header: Text("응원하기")) {
+            Button(action: {
+                ReviewManager.openAppStoreForReview()
+            }) {
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Text("앱스토어에 리뷰 남기기")
+                        .foregroundColor(.primary)
+                    Spacer()
+                    Image(systemName: "arrow.up.forward")
+                        .foregroundColor(.secondary)
+                        .font(.caption)
+                }
+            }
+
+            Button(action: {
+                ReviewManager.openAppStorePage()
+            }) {
+                HStack {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(Color("Pink"))
+                    Text("앱스토어에서 보기")
+                        .foregroundColor(.primary)
+                    Spacer()
+                    Image(systemName: "arrow.up.forward")
+                        .foregroundColor(.secondary)
+                        .font(.caption)
+                }
             }
         }
     }
