@@ -1,0 +1,26 @@
+{
+  "appStoreURL" : "",
+  "colorHex" : "F472B6",
+  "desc" : "SwiftUI 기반 Xcode Project · 38개 파일",
+  "doneTasks" : 0,
+  "durationWeeks" : 4,
+  "icon" : "🛒",
+  "id" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+  "landingURL" : "",
+  "languages" : [
+
+  ],
+  "name" : "Klosed",
+  "pricing" : {
+    "downloadPrice" : "",
+    "lifetimePrice" : "",
+    "monthlyPrice" : "",
+    "yearlyPrice" : ""
+  },
+  "progress" : 0,
+  "sourcePath" : "\/Users\/hyunholee\/Documents\/workspace\/code\/Klosed",
+  "sprint" : "Sprint 1",
+  "startWeek" : 4,
+  "totalTasks" : 0,
+  "version" : "1.1.1"
+}
