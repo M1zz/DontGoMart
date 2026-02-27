@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - Klosed</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle button {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="app-icon.png" alt="Klosed">
+        <span>Klosed</span>
+      </a>
+      <div class="lang-toggle">
+        <button id="btn-ko" class="active" onclick="setLang('ko')">KO</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1><span data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</span></h1>
+    <p class="last-updated"><span data-ko="최종 업데이트: 2025년 2월" data-en="Last updated: February 2025">최종 업데이트: 2025년 2월</span></p>
+
+    <h2><span data-ko="1. 수집하는 개인정보" data-en="1. Information We Collect">1. 수집하는 개인정보</span></h2>
+    <p><span data-ko="Klosed는 사용자의 개인정보를 수집하지 않습니다. 앱은 기기 내에서만 작동하며, 서버로 어떠한 데이터도 전송하지 않습니다." data-en="Klosed does not collect any personal information. The app operates entirely on your device and does not transmit any data to external servers.">Klosed는 사용자의 개인정보를 수집하지 않습니다. 앱은 기기 내에서만 작동하며, 서버로 어떠한 데이터도 전송하지 않습니다.</span></p>
+
+    <h2><span data-ko="2. 기기 내 저장 데이터" data-en="2. On-Device Data">2. 기기 내 저장 데이터</span></h2>
+    <p><span data-ko="앱은 다음 데이터를 기기 내에만 저장합니다:" data-en="The app stores the following data only on your device:">앱은 다음 데이터를 기기 내에만 저장합니다:</span></p>
+    <ul>
+      <li><span data-ko="즐겨찾기한 매장 목록" data-en="Your favorite store list">즐겨찾기한 매장 목록</span></li>
+      <li><span data-ko="알림 설정" data-en="Notification preferences">알림 설정</span></li>
+      <li><span data-ko="앱 설정 (테마, 언어 등)" data-en="App settings (theme, language, etc.)">앱 설정 (테마, 언어 등)</span></li>
+    </ul>
+    <p><span data-ko="이 데이터는 앱을 삭제하면 함께 삭제됩니다." data-en="This data is deleted when you uninstall the app.">이 데이터는 앱을 삭제하면 함께 삭제됩니다.</span></p>
+
+    <h2><span data-ko="3. 제3자 서비스" data-en="3. Third-Party Services">3. 제3자 서비스</span></h2>
+    <p><span data-ko="Klosed는 제3자 분석 도구나 광고 SDK를 사용하지 않습니다." data-en="Klosed does not use any third-party analytics tools or advertising SDKs.">Klosed는 제3자 분석 도구나 광고 SDK를 사용하지 않습니다.</span></p>
+
+    <h2><span data-ko="4. 아동 개인정보" data-en="4. Children's Privacy">4. 아동 개인정보</span></h2>
+    <p><span data-ko="Klosed는 개인정보를 수집하지 않으므로, 아동의 개인정보도 수집하지 않습니다." data-en="Since Klosed does not collect any personal information, it does not collect information from children either.">Klosed는 개인정보를 수집하지 않으므로, 아동의 개인정보도 수집하지 않습니다.</span></p>
+
+    <h2><span data-ko="5. 개인정보처리방침 변경" data-en="5. Changes to This Policy">5. 개인정보처리방침 변경</span></h2>
+    <p><span data-ko="본 방침이 변경될 경우, 이 페이지에 업데이트됩니다." data-en="If this policy is updated, changes will be posted on this page.">본 방침이 변경될 경우, 이 페이지에 업데이트됩니다.</span></p>
+
+    <h2><span data-ko="6. 문의" data-en="6. Contact">6. 문의</span></h2>
+    <p><span data-ko="개인정보처리방침에 대한 문의사항이 있으시면 아래로 연락해 주세요." data-en="If you have any questions about this privacy policy, please contact us at:">개인정보처리방침에 대한 문의사항이 있으시면 아래로 연락해 주세요.</span></p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="/"><span data-ko="홈으로" data-en="Home">홈으로</span></a>
+    <span>&copy; 2025 Klosed</span>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+      document.querySelectorAll('[data-ko]').forEach(function(el) {
+        var text = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-ko');
+        if (text) el.textContent = text;
+      });
+
+      document.title = lang === 'en'
+        ? 'Privacy Policy - Klosed'
+        : '개인정보처리방침 - Klosed';
+
+      localStorage.setItem('klosed-lang', lang);
+    }
+
+    (function() {
+      var saved = localStorage.getItem('klosed-lang');
+      if (saved) {
+        setLang(saved);
+      } else if (!navigator.language.startsWith('ko')) {
+        setLang('en');
+      }
+    })();
+  </script>
+
+</body>
+</html>

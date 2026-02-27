@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klosed - 대형마트 휴무일 알리미</title>
+  <meta name="description" content="대형마트 휴무일을 한눈에! 위젯과 알림으로 헛걸음을 방지하세요. Check supermarket closing days at a glance!">
+  <meta name="keywords" content="대형마트, 휴무일, 이마트, 코스트코, 홈플러스, 트레이더스, supermarket, closed, holiday, Korea">
+  <meta property="og:title" content="Klosed - 대형마트 휴무일 알리미">
+  <meta property="og:description" content="대형마트 휴무일을 한눈에! 위젯과 알림으로 헛걸음을 방지하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="app-icon.png">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #FF3B30;
+      --primary-dark: #D32F2F;
+      --bg: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --card-bg: #ffffff;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      --divider: #d2d2d7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --bg-secondary: #1c1c1e;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --card-bg: #1c1c1e;
+        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        --divider: #38383a;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== Header ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--divider);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .logo span {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle button {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    .app-store-badge:hover {
+      transform: scale(1.05);
+    }
+
+    .app-store-badge img {
+      height: 54px;
+    }
+
+    /* ===== Features ===== */
+    .features {
+      background: var(--bg-secondary);
+      padding: 80px 20px;
+    }
+
+    .features-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      letter-spacing: -0.02em;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .cta p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    .footer-links {
+      margin-bottom: 12px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px 40px; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: 1rem; }
+      .features { padding: 48px 20px; }
+      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
+      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
+      .feature-card { padding: 24px 20px; }
+      .cta { padding: 48px 20px; }
+      .cta h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="app-icon.png" alt="Klosed">
+        <span>Klosed</span>
+      </a>
+      <div class="lang-toggle">
+        <button id="btn-ko" class="active" onclick="setLang('ko')">KO</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="app-icon.png" alt="Klosed App Icon" class="hero-icon">
+    <h1>
+      <span data-ko="대형마트 휴무일,">대형마트 휴무일,</span><br>
+      <span data-ko="한눈에 확인하세요" data-en="Never Visit a Closed Store Again">한눈에 확인하세요</span>
+    </h1>
+    <p>
+      <span data-ko="이마트, 코스트코, 홈플러스, 트레이더스 등 대형마트 의무 휴무일을 위젯과 알림으로 간편하게 확인하세요. 헛걸음은 이제 그만!" data-en="Check mandatory closing days for major Korean supermarkets like E-Mart, Costco, Homeplus, and Traders. With widgets and smart notifications, you'll never waste a trip again!">이마트, 코스트코, 홈플러스, 트레이더스 등 대형마트 의무 휴무일을 위젯과 알림으로 간편하게 확인하세요. 헛걸음은 이제 그만!</span>
+    </p>
+    <a href="https://apps.apple.com/us/app/klosed/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img data-ko-src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" data-en-src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="Download on the App Store">
+    </a>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-inner">
+      <h2>
+        <span data-ko="주요 기능" data-en="Key Features">주요 기능</span>
+      </h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F6D2;</span>
+          <h3><span data-ko="대형마트 휴무일 추적" data-en="Store Holiday Tracking">대형마트 휴무일 추적</span></h3>
+          <p><span data-ko="이마트, 코스트코, 홈플러스, 트레이더스 등 주요 대형마트의 의무 휴무일을 자동으로 추적합니다." data-en="Automatically tracks mandatory closing days for major supermarkets including E-Mart, Costco, Homeplus, and Traders.">이마트, 코스트코, 홈플러스, 트레이더스 등 주요 대형마트의 의무 휴무일을 자동으로 추적합니다.</span></p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F4F1;</span>
+          <h3><span data-ko="홈 화면 위젯" data-en="Home Screen Widgets">홈 화면 위젯</span></h3>
+          <p><span data-ko="홈 화면에서 바로 다음 휴무일을 확인하세요. D-Day 카운트다운으로 직관적으로 표시합니다." data-en="Check upcoming closing days right from your home screen. D-Day countdown shows you at a glance.">홈 화면에서 바로 다음 휴무일을 확인하세요. D-Day 카운트다운으로 직관적으로 표시합니다.</span></p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F514;</span>
+          <h3><span data-ko="스마트 알림" data-en="Smart Notifications">스마트 알림</span></h3>
+          <p><span data-ko="휴무일 전날 알림을 받아 장보기 계획을 미리 세우세요. 원하는 시간에 맞춤 설정 가능합니다." data-en="Get notified the day before a closing day so you can plan ahead. Customize the notification time to fit your schedule.">휴무일 전날 알림을 받아 장보기 계획을 미리 세우세요. 원하는 시간에 맞춤 설정 가능합니다.</span></p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">&#x2B50;</span>
+          <h3><span data-ko="즐겨찾기 매장" data-en="Favorite Stores">즐겨찾기 매장</span></h3>
+          <p><span data-ko="자주 가는 매장을 즐겨찾기에 등록하면 나만의 휴무일 캘린더를 만들 수 있습니다." data-en="Add your go-to stores to favorites and create your own personalized closing day calendar.">자주 가는 매장을 즐겨찾기에 등록하면 나만의 휴무일 캘린더를 만들 수 있습니다.</span></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>
+      <span data-ko="지금 바로 다운로드하세요" data-en="Download Now">지금 바로 다운로드하세요</span>
+    </h2>
+    <p>
+      <span data-ko="더 이상 닫힌 마트 앞에서 발길을 돌리지 마세요." data-en="Stop standing in front of closed stores.">더 이상 닫힌 마트 앞에서 발길을 돌리지 마세요.</span>
+    </p>
+    <a href="https://apps.apple.com/us/app/klosed/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img data-ko-src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" data-en-src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="Download on the App Store">
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html"><span data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</span></a>
+      <a href="mailto:hyunho.lee.1993@gmail.com"><span data-ko="문의하기" data-en="Contact">문의하기</span></a>
+    </div>
+    <p>&copy; 2025 Klosed. All rights reserved.</p>
+  </footer>
+
+  <!-- Language Toggle Script -->
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+      document.querySelectorAll('[data-ko]').forEach(function(el) {
+        var text = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-ko');
+        if (text) el.textContent = text;
+      });
+
+      // Update hero h1 first line (KO only line)
+      var h1Spans = document.querySelector('.hero h1').querySelectorAll('span');
+      if (lang === 'en') {
+        h1Spans[0].style.display = 'none';
+      } else {
+        h1Spans[0].style.display = '';
+      }
+
+      // Update App Store badge images
+      document.querySelectorAll('img[data-ko-src]').forEach(function(img) {
+        img.src = lang === 'en' ? img.getAttribute('data-en-src') : img.getAttribute('data-ko-src');
+      });
+
+      // Update page title
+      document.title = lang === 'en'
+        ? 'Klosed - Korean Supermarket Holiday Tracker'
+        : 'Klosed - 대형마트 휴무일 알리미';
+
+      localStorage.setItem('klosed-lang', lang);
+    }
+
+    // Restore saved language or detect browser language
+    (function() {
+      var saved = localStorage.getItem('klosed-lang');
+      if (saved) {
+        setLang(saved);
+      } else if (!navigator.language.startsWith('ko')) {
+        setLang('en');
+      }
+    })();
+  </script>
+
+</body>
+</html>

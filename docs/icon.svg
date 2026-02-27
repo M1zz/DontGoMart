@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <clipPath id="roundedSquare">
+      <rect width="180" height="180" rx="40" ry="40"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#roundedSquare)">
+    <rect width="180" height="180" fill="#ffffff"/>
+    <!-- Red circle (prohibition sign) -->
+    <circle cx="90" cy="90" r="68" fill="none" stroke="#FF3B30" stroke-width="12"/>
+    <!-- Shopping cart -->
+    <g fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="52,58 62,58 78,108 128,108"/>
+      <polyline points="68,72 132,72 122,100 74,100"/>
+      <circle cx="84" cy="122" r="6" fill="#1a1a1a" stroke="none"/>
+      <circle cx="116" cy="122" r="6" fill="#1a1a1a" stroke="none"/>
+    </g>
+    <!-- Diagonal line (prohibition) -->
+    <line x1="42" y1="138" x2="138" y2="42" stroke="#FF3B30" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
