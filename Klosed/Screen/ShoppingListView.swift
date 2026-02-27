@@ -11,6 +11,7 @@ struct ShoppingListView: View {
     @StateObject private var reminderManager = ShoppingReminderManager.shared
     @State private var newItemText = ""
     @State private var showingPremiumUpgrade = false
+    @State private var paywallContext: PaywallContext = .shoppingLimit
     @FocusState private var isTextFieldFocused: Bool
 
     var body: some View {
@@ -32,7 +33,7 @@ struct ShoppingListView: View {
         }
         .navigationTitle("장보기 목록")
         .sheet(isPresented: $showingPremiumUpgrade) {
-            PremiumUpgradeView()
+            PremiumUpgradeView(context: paywallContext)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

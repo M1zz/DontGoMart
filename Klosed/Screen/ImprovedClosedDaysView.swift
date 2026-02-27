@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
-import StoreKit
 import WidgetKit
 
 struct ImprovedClosedDaysView: View {
     @State var currentDate: Date = Date()
-    @StateObject var storeKit = StoreKitManager()
     @StateObject var locationManager = LocationManager.shared
     @StateObject var operationStatusManager = OperationStatusManager.shared
     @StateObject var shoppingManager = ShoppingReminderManager.shared
     @AppStorage("isPremium") var isPremium: Bool = false
     @State private var isShowingSettings = false
     @State private var isShowingShoppingList = false
+    @State private var isShowingPremiumUpgrade = false
     @State private var isCostco: Bool = false
     @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
     @AppStorage(AppStorageKeys.locationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isLocationEnabled: Bool = false
@@ -60,13 +59,12 @@ struct ImprovedClosedDaysView: View {
                     .padding(.vertical)
 
                     if !isPremium {
-                        PurchaseItemView()
-                        Divider()
-                        Button(Utillity.restorePurchases, action: {
-                            Task {
-                                try? await AppStore.sync()
-                            }
-                        })
+                        PremiumBanner(
+                            feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more", table: "CodeStrings")
+                        ) {
+                            isShowingPremiumUpgrade = true
+                        }
+                        .padding(.horizontal)
                     }
                 }
                 .padding(.vertical)
@@ -90,6 +88,9 @@ struct ImprovedClosedDaysView: View {
             selectedBranch = UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 0
         }) {
             ImprovedSettingsView(isShowingSettings: $isShowingSettings)
+        }
+        .sheet(isPresented: $isShowingPremiumUpgrade) {
+            PremiumUpgradeView(context: .general)
         }
         .sheet(isPresented: $isShowingShoppingList) {
             NavigationStack {
@@ -303,22 +304,6 @@ struct ImprovedClosedDaysView: View {
         }
     }
 
-    fileprivate func PurchaseItemView() -> ForEach<[Product], Product.ID, HStack<TupleView<(Text, Spacer, Button<SellItem>)>>> {
-        return ForEach(storeKit.storeProducts) {product in
-            HStack {
-                Text(product.displayName)
-                Spacer()
-                Button(action: {
-                    Task { try await
-                        storeKit.purchase(product)
-                        isPremium = true
-                    }
-                }) {
-                    SellItem(storeKit: storeKit, product: product)
-                }
-            }
-        }
-    }
 }
 
 #Preview {

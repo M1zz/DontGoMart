@@ -41,6 +41,7 @@ struct SettingsView: View {
     @State private var showingCustomMartEditor = false
     @State private var editingCustomMart: CustomMart? = nil
     @State private var showingPremiumUpgrade = false
+    @State private var paywallContext: PaywallContext = .general
 
     private func isFavorite(_ martType: MartType) -> Bool {
         return favoriteMarts.contains(martType.storageKey)
@@ -84,7 +85,7 @@ struct SettingsView: View {
                 CustomMartEditView(editingMart: editingCustomMart)
             }
             .sheet(isPresented: $showingPremiumUpgrade) {
-                PremiumUpgradeView()
+                PremiumUpgradeView(context: paywallContext)
             }
         }
     }
@@ -170,6 +171,7 @@ struct SettingsView: View {
                     if newValue && !martSelection.isSelected(martType) {
                         let currentCount = martSelection.selectedMartTypes.count
                         if !PremiumManager.canAddMoreMarts(currentCount: currentCount) {
+                            paywallContext = .martLimit
                             showingPremiumUpgrade = true
                             return
                         }
@@ -205,6 +207,7 @@ struct SettingsView: View {
                 PremiumBanner(
                     feature: String(localized: "커스텀_마트_배너", defaultValue: "Add your own mart's closed-day patterns", table: "CodeStrings")
                 ) {
+                    paywallContext = .customMart
                     showingPremiumUpgrade = true
                 }
             } else {
@@ -282,6 +285,7 @@ struct SettingsView: View {
                 PremiumBanner(
                     feature: String(localized: "알림_배너", defaultValue: "Get notified before closed days", table: "CodeStrings")
                 ) {
+                    paywallContext = .notification
                     showingPremiumUpgrade = true
                 }
             } else {

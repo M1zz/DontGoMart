@@ -75,7 +75,7 @@ struct ClosedDaysView: View {
             calendarSheet
         }
         .sheet(isPresented: $isShowingPremiumUpgrade) {
-            PremiumUpgradeView()
+            PremiumUpgradeView(context: .general)
         }
         .onAppear {
             onViewAppear()
