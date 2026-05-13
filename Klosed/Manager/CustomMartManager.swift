@@ -27,9 +27,9 @@ class CustomMartManager: ObservableObject {
 
         do {
             customMarts = try JSONDecoder().decode([CustomMart].self, from: data)
-            print("✅ 커스텀 마트 로드 성공: \(customMarts.count)개")
+            debugLog("✅ 커스텀 마트 로드 성공: \(customMarts.count)개")
         } catch {
-            print("❌ 커스텀 마트 로드 실패: \(error)")
+            debugLog("❌ 커스텀 마트 로드 실패: \(error)")
             customMarts = []
         }
     }
@@ -39,9 +39,9 @@ class CustomMartManager: ObservableObject {
         do {
             let data = try JSONEncoder().encode(customMarts)
             UserDefaults(suiteName: Utillity.appGroupId)?.set(data, forKey: customMartsKey)
-            print("✅ 커스텀 마트 저장 성공: \(customMarts.count)개")
+            debugLog("✅ 커스텀 마트 저장 성공: \(customMarts.count)개")
         } catch {
-            print("❌ 커스텀 마트 저장 실패: \(error)")
+            debugLog("❌ 커스텀 마트 저장 실패: \(error)")
         }
     }
 
@@ -104,7 +104,7 @@ class CustomMartManager: ObservableObject {
         // 날짜순 정렬
         tasks.sort { $0.taskDate < $1.taskDate }
 
-        print("✅ tasks 업데이트 완료: 총 \(tasks.count)개")
+        debugLog("✅ tasks 업데이트 완료: 총 \(tasks.count)개")
     }
 
     // ID로 커스텀 마트 찾기

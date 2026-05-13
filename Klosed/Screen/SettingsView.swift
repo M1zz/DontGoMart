@@ -99,28 +99,28 @@ struct SettingsView: View {
                 martType: .normal(type: .sunday),
                 icon: "cart.fill",
                 color: .blue,
-                label: String(localized: "대형마트 (일요일 휴무)_label", defaultValue: "Supermarket (Sunday closed)", table: "CodeStrings")
+                label: String(localized: "대형마트 (일요일 휴무)_label", defaultValue: "Supermarket (Sunday closed)")
             )
 
             martToggle(
                 martType: .normal(type: .wednesday),
                 icon: "cart.fill",
                 color: .cyan,
-                label: String(localized: "대형마트 (수요일 휴무)_label", defaultValue: "Supermarket (Wednesday closed)", table: "CodeStrings")
+                label: String(localized: "대형마트 (수요일 휴무)_label", defaultValue: "Supermarket (Wednesday closed)")
             )
 
             martToggle(
                 martType: .normal(type: .mixed),
                 icon: "cart.fill",
                 color: .teal,
-                label: String(localized: "대형마트 (울산 혼합)_label", defaultValue: "Supermarket (Ulsan mixed)", table: "CodeStrings")
+                label: String(localized: "대형마트 (울산 혼합)_label", defaultValue: "Supermarket (Ulsan mixed)")
             )
 
             martToggle(
                 martType: .normal(type: .jeju),
                 icon: "cart.fill",
                 color: .mint,
-                label: String(localized: "대형마트 (제주)_label", defaultValue: "Supermarket (Jeju)", table: "CodeStrings")
+                label: String(localized: "대형마트 (제주)_label", defaultValue: "Supermarket (Jeju)")
             )
 
             // 코스트코 지점별
@@ -128,28 +128,28 @@ struct SettingsView: View {
                 martType: .costco(type: .normal),
                 icon: "building.2.fill",
                 color: .red,
-                label: String(localized: "코스트코 일반매장_label", defaultValue: "Costco Regular", table: "CodeStrings")
+                label: String(localized: "코스트코 일반매장_label", defaultValue: "Costco Regular")
             )
 
             martToggle(
                 martType: .costco(type: .daegu),
                 icon: "building.2.fill",
                 color: .orange,
-                label: String(localized: "코스트코 대구점_label", defaultValue: "Costco Daegu", table: "CodeStrings")
+                label: String(localized: "코스트코 대구점_label", defaultValue: "Costco Daegu")
             )
 
             martToggle(
                 martType: .costco(type: .ilsan),
                 icon: "building.2.fill",
                 color: .green,
-                label: String(localized: "코스트코 일산점_label", defaultValue: "Costco Ilsan", table: "CodeStrings")
+                label: String(localized: "코스트코 일산점_label", defaultValue: "Costco Ilsan")
             )
 
             martToggle(
                 martType: .costco(type: .ulsan),
                 icon: "building.2.fill",
                 color: .purple,
-                label: String(localized: "코스트코 울산점_label", defaultValue: "Costco Ulsan", table: "CodeStrings")
+                label: String(localized: "코스트코 울산점_label", defaultValue: "Costco Ulsan")
             )
 
             // 공휴일
@@ -157,7 +157,7 @@ struct SettingsView: View {
                 martType: .holiday,
                 icon: "calendar.badge.exclamationmark",
                 color: .pink,
-                label: String(localized: "설날/추석 공휴일_label", defaultValue: "Lunar New Year/Chuseok Holidays", table: "CodeStrings")
+                label: String(localized: "설날/추석 공휴일_label", defaultValue: "Lunar New Year/Chuseok Holidays")
             )
         }
     }
@@ -205,7 +205,7 @@ struct SettingsView: View {
         Section(header: Text("나만의 마트")) {
             if !isPremium {
                 PremiumBanner(
-                    feature: String(localized: "커스텀_마트_배너", defaultValue: "Add your own mart's closed-day patterns", table: "CodeStrings")
+                    feature: String(localized: "커스텀_마트_배너", defaultValue: "Add your own mart's closed-day patterns")
                 ) {
                     paywallContext = .customMart
                     showingPremiumUpgrade = true
@@ -283,7 +283,7 @@ struct SettingsView: View {
         Section(header: Text("알림설정")) {
             if !isPremium {
                 PremiumBanner(
-                    feature: String(localized: "알림_배너", defaultValue: "Get notified before closed days", table: "CodeStrings")
+                    feature: String(localized: "알림_배너", defaultValue: "Get notified before closed days")
                 ) {
                     paywallContext = .notification
                     showingPremiumUpgrade = true
@@ -358,47 +358,41 @@ struct SettingsView: View {
 
     // MARK: - Private Methods
 
+    @MainActor
     private func handleNotificationToggle() async {
         if isNotificationEnabled {
             let status = await notificationManager.checkAuthorizationStatus()
 
             if status == .authorized {
                 await notificationManager.setupSmartNotifications(for: tasks)
-                print("✅ [SettingsView] 알림이 활성화되었습니다.")
+                debugLog("✅ [SettingsView] 알림이 활성화되었습니다.")
             } else if status == .denied {
-                DispatchQueue.main.async {
-                    self.isNotificationEnabled = false
-                    self.showingPermissionAlert = true
-                }
-                print("❌ [SettingsView] 알림 권한이 거부된 상태입니다.")
+                isNotificationEnabled = false
+                showingPermissionAlert = true
+                debugLog("❌ [SettingsView] 알림 권한이 거부된 상태입니다.")
             } else {
                 let authorized = await notificationManager.requestAuthorization()
                 if authorized {
                     await notificationManager.setupSmartNotifications(for: tasks)
-                    print("✅ [SettingsView] 알림 권한 허용 후 알림이 활성화되었습니다.")
+                    debugLog("✅ [SettingsView] 알림 권한 허용 후 알림이 활성화되었습니다.")
                 } else {
-                    DispatchQueue.main.async {
-                        self.isNotificationEnabled = false
-                        self.showingPermissionAlert = true
-                    }
-                    print("❌ [SettingsView] 알림 권한이 거부되어 알림을 비활성화했습니다.")
+                    isNotificationEnabled = false
+                    showingPermissionAlert = true
+                    debugLog("❌ [SettingsView] 알림 권한이 거부되어 알림을 비활성화했습니다.")
                 }
             }
         } else {
             notificationManager.cancelAllNotifications()
-            print("🔕 [SettingsView] 알림이 비활성화되었습니다.")
+            debugLog("🔕 [SettingsView] 알림이 비활성화되었습니다.")
         }
     }
 
+    @MainActor
     private func checkAndSyncNotificationStatus() async {
         let status = await notificationManager.checkAuthorizationStatus()
 
-        if status == .denied || status == .notDetermined {
-            if isNotificationEnabled {
-                DispatchQueue.main.async {
-                    self.isNotificationEnabled = false
-                }
-            }
+        if (status == .denied || status == .notDetermined) && isNotificationEnabled {
+            isNotificationEnabled = false
         }
 
         if isNotificationEnabled && status == .authorized {

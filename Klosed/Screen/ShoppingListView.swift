@@ -130,7 +130,7 @@ struct ShoppingListView: View {
                 .font(.caption.bold())
                 .foregroundColor(currentCount >= maxCount ? .orange : .secondary)
             PremiumBanner(
-                feature: String(localized: "무제한_장보기_배너", defaultValue: "Upgrade for unlimited shopping items", table: "CodeStrings")
+                feature: String(localized: "무제한_장보기_배너", defaultValue: "Upgrade for unlimited shopping items")
             ) {
                 showingPremiumUpgrade = true
             }

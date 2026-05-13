@@ -60,7 +60,7 @@ struct ImprovedClosedDaysView: View {
 
                     if !isPremium {
                         PremiumBanner(
-                            feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more", table: "CodeStrings")
+                            feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more")
                         ) {
                             isShowingPremiumUpgrade = true
                         }
@@ -69,7 +69,7 @@ struct ImprovedClosedDaysView: View {
                 }
                 .padding(.vertical)
             }
-            .navigationTitle(isPremium ? "Klosed " + locationName(forID: selectedBranch) + " pro" : "Klosed " + locationName(forID: selectedBranch))
+            .navigationTitle(isPremium ? "클로즈드 " + locationName(forID: selectedBranch) + " pro" : "클로즈드 " + locationName(forID: selectedBranch))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -290,15 +290,15 @@ struct ImprovedClosedDaysView: View {
     private func locationName(forID id: Int) -> String {
         switch id {
         case 0:
-            return String(localized: "마트_loc", defaultValue: "Mart", table: "CodeStrings")
+            return String(localized: "마트_loc", defaultValue: "Mart")
         case 1:
-            return String(localized: "일반 코스트코_loc", defaultValue: "Costco", table: "CodeStrings")
+            return String(localized: "일반 코스트코_loc", defaultValue: "Costco")
         case 2:
-            return String(localized: "대구 코스트코_loc", defaultValue: "Costco Daegu", table: "CodeStrings")
+            return String(localized: "대구 코스트코_loc", defaultValue: "Costco Daegu")
         case 3:
-            return String(localized: "일산 코스트코_loc", defaultValue: "Costco Ilsan", table: "CodeStrings")
+            return String(localized: "일산 코스트코_loc", defaultValue: "Costco Ilsan")
         case 4:
-            return String(localized: "울산 코스트코_loc", defaultValue: "Costco Ulsan", table: "CodeStrings")
+            return String(localized: "울산 코스트코_loc", defaultValue: "Costco Ulsan")
         default:
             return ""
         }

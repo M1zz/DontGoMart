@@ -39,7 +39,7 @@ class LocationManager: NSObject, ObservableObject {
 
     func findNearbyStores() {
         guard let location = currentLocation else {
-            print("❌ [LocationManager] 현재 위치를 알 수 없습니다.")
+            debugLog("❌ [LocationManager] 현재 위치를 알 수 없습니다.")
             return
         }
 
@@ -55,7 +55,7 @@ class LocationManager: NSObject, ObservableObject {
             .prefix(5)
             .map { $0.store }
 
-        print("✅ [LocationManager] 가까운 매장 \(nearbyStores.count)개 발견")
+        debugLog("✅ [LocationManager] 가까운 매장 \(nearbyStores.count)개 발견")
     }
 }
 
@@ -73,7 +73,7 @@ extension LocationManager: CLLocationManagerDelegate {
         case .authorizedWhenInUse, .authorizedAlways:
             startUpdatingLocation()
         case .denied, .restricted:
-            print("❌ [LocationManager] 위치 권한이 거부되었습니다.")
+            debugLog("❌ [LocationManager] 위치 권한이 거부되었습니다.")
         case .notDetermined:
             break
         @unknown default:
@@ -82,6 +82,6 @@ extension LocationManager: CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("❌ [LocationManager] 위치 업데이트 실패: \(error.localizedDescription)")
+        debugLog("❌ [LocationManager] 위치 업데이트 실패: \(error.localizedDescription)")
     }
 }

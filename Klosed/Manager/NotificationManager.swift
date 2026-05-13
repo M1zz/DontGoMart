@@ -43,11 +43,11 @@ final class NotificationManager {
         var title: String {
             switch self {
             case .firstNotification, .secondNotification:
-                return String(localized: "마트 휴무일 안내", defaultValue: "Store Closure Notice", table: "CodeStrings")
+                return String(localized: "마트 휴무일 안내", defaultValue: "Store Closure Notice")
             case .beforeDayNotification:
-                return String(localized: "🛒 장보기 좋은 날_notif", defaultValue: "🛒 Good Day to Shop", table: "CodeStrings")
+                return String(localized: "🛒 장보기 좋은 날_notif", defaultValue: "🛒 Good Day to Shop")
             case .shoppingReminder:
-                return String(localized: "장보기 알림_notif", defaultValue: "Shopping Reminder", table: "CodeStrings")
+                return String(localized: "장보기 알림_notif", defaultValue: "Shopping Reminder")
             }
         }
 
@@ -57,16 +57,16 @@ final class NotificationManager {
             let days2 = NotificationManager.secondNotificationDaysBefore
             switch self {
             case .firstNotification:
-                let format = String(localized: "notification_first_body", defaultValue: "%@ will be closed in %lld days.", table: "CodeStrings")
+                let format = String(localized: "notification_first_body", defaultValue: "%@ will be closed in %lld days.")
                 return String(format: format, storeName, days1)
             case .secondNotification:
-                let format = String(localized: "notification_second_body", defaultValue: "%@ will be closed in %lld day(s).", table: "CodeStrings")
+                let format = String(localized: "notification_second_body", defaultValue: "%@ will be closed in %lld day(s).")
                 return String(format: format, storeName, days2)
             case .beforeDayNotification:
-                let format = String(localized: "notification_before_body", defaultValue: "%@ is closed tomorrow. Today is a good day to shop!", table: "CodeStrings")
+                let format = String(localized: "notification_before_body", defaultValue: "%@ is closed tomorrow. Today is a good day to shop!")
                 return String(format: format, storeName)
             case .shoppingReminder:
-                return String(localized: "notification_shopping_body", defaultValue: "Don't forget to shop before the next closed day!", table: "CodeStrings")
+                return String(localized: "notification_shopping_body", defaultValue: "Don't forget to shop before the next closed day!")
             }
         }
 
@@ -94,14 +94,14 @@ final class NotificationManager {
             )
             
             if authorized {
-                print("✅ 알림 권한이 허용되었습니다.")
+                debugLog("✅ 알림 권한이 허용되었습니다.")
             } else {
-                print("❌ 알림 권한이 거부되었습니다.")
+                debugLog("❌ 알림 권한이 거부되었습니다.")
             }
             
             return authorized
         } catch {
-            print("❌ 알림 권한 요청 중 오류: \(error.localizedDescription)")
+            debugLog("❌ 알림 권한 요청 중 오류: \(error.localizedDescription)")
             return false
         }
     }
@@ -141,7 +141,7 @@ final class NotificationManager {
         // 권한 확인
         let status = await checkAuthorizationStatus()
         guard status == .authorized else {
-            print("❌ 알림 권한이 없어 알림을 설정할 수 없습니다.")
+            debugLog("❌ 알림 권한이 없어 알림을 설정할 수 없습니다.")
             return false
         }
         
@@ -188,7 +188,7 @@ final class NotificationManager {
     private func validateAndLogResults(scheduledCount: Int) async {
         // iOS 64개 제한 체크
         if scheduledCount > Constants.maxSafeNotificationCount {
-            print("⚠️ 알림 개수가 많습니다 (\(scheduledCount)개). iOS 제한으로 일부 알림이 누락될 수 있습니다.")
+            debugLog("⚠️ 알림 개수가 많습니다 (\(scheduledCount)개). iOS 제한으로 일부 알림이 누락될 수 있습니다.")
         }
     }
     
@@ -225,7 +225,7 @@ final class NotificationManager {
             value: -type.daysToSubtract,
             to: closedDate
         ) else {
-            print("❌ 알림 날짜 계산 실패: \(closedDate)")
+            debugLog("❌ 알림 날짜 계산 실패: \(closedDate)")
             return false
         }
         
@@ -236,7 +236,7 @@ final class NotificationManager {
         dateComponents.second = 0
         
         guard let finalNotificationDate = Calendar.current.date(from: dateComponents) else {
-            print("❌ 최종 알림 시간 계산 실패")
+            debugLog("❌ 최종 알림 시간 계산 실패")
             return false
         }
         
@@ -284,7 +284,7 @@ final class NotificationManager {
             return true
             
         } catch {
-            print("❌ 알림 설정 실패: \(error.localizedDescription)")
+            debugLog("❌ 알림 설정 실패: \(error.localizedDescription)")
             return false
         }
     }
@@ -317,7 +317,7 @@ final class NotificationManager {
         let period = notifHour < 12 ? "AM" : "PM"
         let timeString = notifMinute == 0 ? "\(period) \(hour):00" : "\(period) \(hour):\(String(format: "%02d", notifMinute))"
 
-        let format = String(localized: "settings_notification_desc", defaultValue: "You'll be notified %lld days and %lld day before closed days at %@.", table: "CodeStrings")
+        let format = String(localized: "settings_notification_desc", defaultValue: "You'll be notified %lld days and %lld day before closed days at %@.")
         return String(format: format, firstNotificationDaysBefore, secondNotificationDaysBefore, timeString)
     }
 

@@ -35,28 +35,22 @@ enum PaywallContext {
         switch self {
         case .martLimit:
             return String(localized: "paywall_martLimit_title",
-                          defaultValue: "여러 마트를 한번에 추적하세요",
-                          table: "CodeStrings")
+                          defaultValue: "여러 마트를 한번에 추적하세요")
         case .shoppingLimit:
             return String(localized: "paywall_shoppingLimit_title",
-                          defaultValue: "장보기 목록, 제한 없이 사용하세요",
-                          table: "CodeStrings")
+                          defaultValue: "장보기 목록, 제한 없이 사용하세요")
         case .notification:
             return String(localized: "paywall_notification_title",
-                          defaultValue: "휴무일 알림으로 헛걸음을 막으세요",
-                          table: "CodeStrings")
+                          defaultValue: "휴무일 알림으로 헛걸음을 막으세요")
         case .customMart:
             return String(localized: "paywall_customMart_title",
-                          defaultValue: "나만의 마트 휴무 패턴을 등록하세요",
-                          table: "CodeStrings")
+                          defaultValue: "나만의 마트 휴무 패턴을 등록하세요")
         case .favorites:
             return String(localized: "paywall_favorites_title",
-                          defaultValue: "자주 가는 매장을 즐겨찾기 하세요",
-                          table: "CodeStrings")
+                          defaultValue: "자주 가는 매장을 즐겨찾기 하세요")
         case .general:
             return String(localized: "paywall_general_title",
-                          defaultValue: "Klosed Pro로 업그레이드",
-                          table: "CodeStrings")
+                          defaultValue: "돈꼬마트 Pro로 업그레이드")
         }
     }
 
@@ -64,28 +58,22 @@ enum PaywallContext {
         switch self {
         case .martLimit:
             return String(localized: "paywall_martLimit_sub",
-                          defaultValue: "이마트, 코스트코, 홈플러스 휴무일을 동시에 확인하세요",
-                          table: "CodeStrings")
+                          defaultValue: "이마트, 코스트코, 홈플러스 휴무일을 동시에 확인하세요")
         case .shoppingLimit:
             return String(localized: "paywall_shoppingLimit_sub",
-                          defaultValue: "장볼 것이 많을 때 걱정 없이 추가하세요",
-                          table: "CodeStrings")
+                          defaultValue: "장볼 것이 많을 때 걱정 없이 추가하세요")
         case .notification:
             return String(localized: "paywall_notification_sub",
-                          defaultValue: "휴무 전날 알림을 받았다면, 지난번 헛걸음은 없었을 거예요",
-                          table: "CodeStrings")
+                          defaultValue: "휴무 전날 알림을 받았다면, 지난번 헛걸음은 없었을 거예요")
         case .customMart:
             return String(localized: "paywall_customMart_sub",
-                          defaultValue: "동네 마트도 휴무 패턴을 등록해서 관리하세요",
-                          table: "CodeStrings")
+                          defaultValue: "동네 마트도 휴무 패턴을 등록해서 관리하세요")
         case .favorites:
             return String(localized: "paywall_favorites_sub",
-                          defaultValue: "자주 가는 매장이 항상 위에 보여요",
-                          table: "CodeStrings")
+                          defaultValue: "자주 가는 매장이 항상 위에 보여요")
         case .general:
             return String(localized: "paywall_general_sub",
-                          defaultValue: "한 번 구매로 모든 기능을 영구 사용하세요",
-                          table: "CodeStrings")
+                          defaultValue: "한 번 구매로 모든 기능을 영구 사용하세요")
         }
     }
 }
@@ -155,8 +143,8 @@ struct PremiumUpgradeView: View {
             featureRow(
                 icon: "building.2.fill",
                 color: .blue,
-                title: String(localized: "다중_마트_추적_title", defaultValue: "Multi-Mart Tracking", table: "CodeStrings"),
-                subtitle: String(localized: "다중_마트_추적_desc", defaultValue: "Track multiple marts simultaneously", table: "CodeStrings"),
+                title: String(localized: "다중_마트_추적_title", defaultValue: "Multi-Mart Tracking"),
+                subtitle: String(localized: "다중_마트_추적_desc", defaultValue: "Track multiple marts simultaneously"),
                 isHighlighted: context == .martLimit
             )
 
@@ -165,8 +153,8 @@ struct PremiumUpgradeView: View {
             featureRow(
                 icon: "bell.fill",
                 color: .red,
-                title: String(localized: "알림_기능_title", defaultValue: "Notifications", table: "CodeStrings"),
-                subtitle: String(localized: "알림_기능_desc", defaultValue: "Get notified before closed days", table: "CodeStrings"),
+                title: String(localized: "알림_기능_title", defaultValue: "Notifications"),
+                subtitle: String(localized: "알림_기능_desc", defaultValue: "Get notified before closed days"),
                 isHighlighted: context == .notification
             )
 
@@ -175,8 +163,8 @@ struct PremiumUpgradeView: View {
             featureRow(
                 icon: "cart.fill",
                 color: .green,
-                title: String(localized: "무제한_장보기_title", defaultValue: "Unlimited Shopping List", table: "CodeStrings"),
-                subtitle: String(localized: "무제한_장보기_desc", defaultValue: "No item limit on your shopping list", table: "CodeStrings"),
+                title: String(localized: "무제한_장보기_title", defaultValue: "Unlimited Shopping List"),
+                subtitle: String(localized: "무제한_장보기_desc", defaultValue: "No item limit on your shopping list"),
                 isHighlighted: context == .shoppingLimit
             )
 
@@ -185,8 +173,8 @@ struct PremiumUpgradeView: View {
             featureRow(
                 icon: "storefront.fill",
                 color: .orange,
-                title: String(localized: "커스텀_마트_title", defaultValue: "Custom Mart", table: "CodeStrings"),
-                subtitle: String(localized: "커스텀_마트_desc", defaultValue: "Add your own mart's closed-day patterns", table: "CodeStrings"),
+                title: String(localized: "커스텀_마트_title", defaultValue: "Custom Mart"),
+                subtitle: String(localized: "커스텀_마트_desc", defaultValue: "Add your own mart's closed-day patterns"),
                 isHighlighted: context == .customMart
             )
 
@@ -195,8 +183,8 @@ struct PremiumUpgradeView: View {
             featureRow(
                 icon: "star.fill",
                 color: .yellow,
-                title: String(localized: "즐겨찾기_title", defaultValue: "Favorites", table: "CodeStrings"),
-                subtitle: String(localized: "즐겨찾기_desc", defaultValue: "Pin your favorite marts to the top", table: "CodeStrings"),
+                title: String(localized: "즐겨찾기_title", defaultValue: "Favorites"),
+                subtitle: String(localized: "즐겨찾기_desc", defaultValue: "Pin your favorite marts to the top"),
                 isHighlighted: context == .favorites
             )
         }
@@ -239,8 +227,7 @@ struct PremiumUpgradeView: View {
             if let product = storeKit.storeProducts.first {
                 // 가치 앵커링 메시지
                 Text(String(localized: "paywall_value_anchor",
-                            defaultValue: "☕ 커피 한 잔 가격으로, 영구적으로 사용하세요",
-                            table: "CodeStrings"))
+                            defaultValue: "☕ 커피 한 잔 가격으로, 영구적으로 사용하세요"))
                     .font(.caption)
                     .foregroundColor(.secondary)
 
@@ -253,7 +240,7 @@ struct PremiumUpgradeView: View {
                                 dismiss()
                             }
                         } catch {
-                            print("Purchase failed: \(error)")
+                            debugLog("Purchase failed: \(error)")
                         }
                         isPurchasing = false
                     }
@@ -264,11 +251,10 @@ struct PremiumUpgradeView: View {
                                 .tint(.white)
                         } else {
                             VStack(spacing: 2) {
-                                Text("Klosed Pro - \(product.displayPrice)")
+                                Text("돈꼬마트 Pro - \(product.displayPrice)")
                                     .font(.headline)
                                 Text(String(localized: "일회성_구매_안내",
-                                            defaultValue: "One-time purchase. No subscription.",
-                                            table: "CodeStrings"))
+                                            defaultValue: "One-time purchase. No subscription."))
                                     .font(.caption2)
                                     .opacity(0.9)
                             }
@@ -287,6 +273,9 @@ struct PremiumUpgradeView: View {
                     .cornerRadius(14)
                 }
                 .disabled(isPurchasing)
+                .accessibilityLabel(Text("돈꼬마트 프로 구매"))
+                .accessibilityHint(Text("\(product.displayPrice) 1회 결제로 모든 프리미엄 기능을 영구 사용합니다"))
+                .accessibilityAddTraits(.isButton)
             } else {
                 ProgressView()
                     .padding()
@@ -328,7 +317,7 @@ struct PremiumBanner: View {
                     .foregroundColor(.orange)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Pro " + String(localized: "기능_label", defaultValue: "Feature", table: "CodeStrings"))
+                    Text("Pro " + String(localized: "기능_label", defaultValue: "Feature"))
                         .font(.caption.bold())
                         .foregroundColor(.orange)
                     Text(feature)

@@ -8,10 +8,18 @@
 import Foundation
 
 enum Utillity {
-    static let primuimAppName = "Klosed pro"
-    static let appName = "Klosed"
+    static let primuimAppName = "돈꼬마트 Pro"
+    static let appName = "돈꼬마트"
     static let restorePurchases = String(localized: "구매복원")
     static let appGroupId = "group.com.leeo.DontGoMart"
+}
+
+@inlinable
+func debugLog(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+#if DEBUG
+    let message = items.map { "\($0)" }.joined(separator: separator)
+    Swift.print(message, terminator: terminator)
+#endif
 }
 
 enum AppStorageKeys {

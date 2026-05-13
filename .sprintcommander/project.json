@@ -1,26 +1,28 @@
 {
-  "appStoreURL" : "",
+  "appStoreURL" : "https:\/\/apps.apple.com\/app\/klosed\/id6450387984",
   "colorHex" : "F472B6",
   "desc" : "SwiftUI 기반 Xcode Project · 38개 파일",
   "doneTasks" : 0,
   "durationWeeks" : 4,
   "icon" : "🛒",
   "id" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
-  "landingURL" : "",
+  "landingURL" : "https:\/\/m1zz.github.io\/Klosed\/",
   "languages" : [
-
+    "한국어",
+    "English"
   ],
+  "lastModified" : "2026-03-02T15:35:58Z",
   "name" : "Klosed",
   "pricing" : {
-    "downloadPrice" : "",
-    "lifetimePrice" : "",
-    "monthlyPrice" : "",
-    "yearlyPrice" : ""
+    "downloadPrice" : "무료",
+    "lifetimePrice" : "$4.99, ₩6,600",
+    "monthlyPrice" : "0",
+    "yearlyPrice" : "0"
   },
   "progress" : 0,
   "sourcePath" : "\/Users\/hyunholee\/Documents\/workspace\/code\/Klosed",
   "sprint" : "Sprint 1",
   "startWeek" : 4,
-  "totalTasks" : 0,
-  "version" : "1.1.1"
+  "totalTasks" : 12,
+  "version" : "2.0.0"
 }

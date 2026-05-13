@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct KlosedApp: App {
 
+    @Environment(\.scenePhase) private var scenePhase
+
     init() {
         // 앱 시작 시 즉시 tasks 초기화
         initializeTasks()
@@ -18,11 +20,10 @@ struct KlosedApp: App {
     var body: some Scene {
         WindowGroup {
             ClosedDaysView()
+                // 큰 글씨 접근성 옵션도 레이아웃이 깨지지 않는 선에서 지원.
+                .dynamicTypeSize(...DynamicTypeSize.accessibility2)
                 .onAppear {
-                    // 위젯 업데이트 및 알림 설정
                     WidgetManager.shared.updateWidget()
-
-                    // 앱 실행 횟수 증가 및 적절한 시점에 리뷰 요청
                     ReviewManager.incrementAppOpenCount()
                     ReviewManager.requestReviewIfAppropriate()
 
@@ -30,6 +31,13 @@ struct KlosedApp: App {
                         await setupSmartNotifications()
                     }
                 }
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            // 앱이 foreground 로 진입할 때마다 widget 데이터를 다시 push.
+            // Provider 의 .after(nextMidnight) 정책과 함께 매일 최소 1회 갱신 보장.
+            if newPhase == .active {
+                WidgetManager.shared.updateWidget()
+            }
         }
     }
 
@@ -130,7 +138,7 @@ struct KlosedApp: App {
         CustomMartManager.shared.loadCustomMarts()
         CustomMartManager.shared.updateTasksWithCustomMarts()
 
-        print("✅ Tasks 초기화 완료: \(tasks.count)개")
+        debugLog("✅ Tasks 초기화 완료: \(tasks.count)개")
     }
 
     private func setupSmartNotifications() async {
@@ -165,7 +173,7 @@ struct KlosedApp: App {
         let yearRange = [year - 1, year, year + 1]
         // 각 달을 순회하면서 요일과 주차에 맞는 날짜를 찾음
         for targetYear in yearRange {
-            print("\(targetYear) - \(martType) Task Generate")
+            debugLog("\(targetYear) - \(martType) Task Generate")
             for month in monthRange {
                 for (weekday, ordinal, title) in weekdays {
                     if let date = findPatternDay(of: weekday, ordinal: ordinal, inMonth: month, year: targetYear, calendar: calendar) {
@@ -244,7 +252,7 @@ struct KlosedApp: App {
                             task: [MartCloseData(title: holiday.name)],
                             taskDate: date
                         ))
-                        print("\(targetYear) - \(holiday.name) (\(holiday.month)/\(holiday.day)) 추가")
+                        debugLog("\(targetYear) - \(holiday.name) (\(holiday.month)/\(holiday.day)) 추가")
                     }
                 }
             }

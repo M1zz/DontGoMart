@@ -24,14 +24,14 @@ class FavoriteMartManager: ObservableObject {
         if !favoriteStores.contains(where: { $0.id == store.id }) {
             favoriteStores.append(store)
             saveFavorites()
-            print("✅ [FavoriteMartManager] 매장 추가: \(store.displayName)")
+            debugLog("✅ [FavoriteMartManager] 매장 추가: \(store.displayName)")
         }
     }
 
     func removeFavorite(_ store: MartStore) {
         favoriteStores.removeAll { $0.id == store.id }
         saveFavorites()
-        print("✅ [FavoriteMartManager] 매장 제거: \(store.displayName)")
+        debugLog("✅ [FavoriteMartManager] 매장 제거: \(store.displayName)")
     }
 
     func isFavorite(_ store: MartStore) -> Bool {
@@ -47,16 +47,21 @@ class FavoriteMartManager: ObservableObject {
     }
 
     private func saveFavorites() {
-        if let encoded = try? JSONEncoder().encode(favoriteStores) {
+        do {
+            let encoded = try JSONEncoder().encode(favoriteStores)
             userDefaults?.set(encoded, forKey: favoritesKey)
+        } catch {
+            debugLog("⚠️ [FavoriteMartManager] save 실패: \(error)")
         }
     }
 
     private func loadFavorites() {
-        if let data = userDefaults?.data(forKey: favoritesKey),
-           let decoded = try? JSONDecoder().decode([MartStore].self, from: data) {
-            favoriteStores = decoded
-            print("✅ [FavoriteMartManager] 즐겨찾기 \(favoriteStores.count)개 로드")
+        guard let data = userDefaults?.data(forKey: favoritesKey) else { return }
+        do {
+            favoriteStores = try JSONDecoder().decode([MartStore].self, from: data)
+            debugLog("✅ [FavoriteMartManager] 즐겨찾기 \(favoriteStores.count)개 로드")
+        } catch {
+            debugLog("⚠️ [FavoriteMartManager] load 실패: \(error)")
         }
     }
 }

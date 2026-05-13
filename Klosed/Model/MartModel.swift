@@ -19,16 +19,16 @@ enum MartType: Hashable {
     var widgetDisplayName: String {
         switch self {
         case .normal:
-            return String(localized: "마트_widget", defaultValue: "Mart", table: "CodeStrings")
+            return String(localized: "마트_widget", defaultValue: "Mart")
         case .costco:
-            return String(localized: "코스트코_widget", defaultValue: "Costco", table: "CodeStrings")
+            return String(localized: "코스트코_widget", defaultValue: "Costco")
         case .custom(let id):
             if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
                 return customMart.name
             }
-            return String(localized: "커스텀 마트_widget", defaultValue: "Custom Store", table: "CodeStrings")
+            return String(localized: "커스텀 마트_widget", defaultValue: "Custom Store")
         case .holiday:
-            return String(localized: "공휴일_widget", defaultValue: "Holiday", table: "CodeStrings")
+            return String(localized: "공휴일_widget", defaultValue: "Holiday")
         }
     }
 
@@ -37,32 +37,32 @@ enum MartType: Hashable {
         case .normal(let branch):
             switch branch {
             case .sunday:
-                return String(localized: "대형마트 (일요일 휴무)_notif", defaultValue: "Supermarket (Sunday closed)", table: "CodeStrings")
+                return String(localized: "대형마트 (일요일 휴무)_notif", defaultValue: "Supermarket (Sunday closed)")
             case .wednesday:
-                return String(localized: "대형마트 (수요일 휴무)_notif", defaultValue: "Supermarket (Wednesday closed)", table: "CodeStrings")
+                return String(localized: "대형마트 (수요일 휴무)_notif", defaultValue: "Supermarket (Wednesday closed)")
             case .mixed:
-                return String(localized: "대형마트 (울산)_notif", defaultValue: "Supermarket (Ulsan)", table: "CodeStrings")
+                return String(localized: "대형마트 (울산)_notif", defaultValue: "Supermarket (Ulsan)")
             case .jeju:
-                return String(localized: "대형마트 (제주)_notif", defaultValue: "Supermarket (Jeju)", table: "CodeStrings")
+                return String(localized: "대형마트 (제주)_notif", defaultValue: "Supermarket (Jeju)")
             }
         case .costco(let branch):
             switch branch {
             case .normal:
-                return String(localized: "코스트코 일반매장_notif", defaultValue: "Costco Regular", table: "CodeStrings")
+                return String(localized: "코스트코 일반매장_notif", defaultValue: "Costco Regular")
             case .daegu:
-                return String(localized: "코스트코 대구점_notif", defaultValue: "Costco Daegu", table: "CodeStrings")
+                return String(localized: "코스트코 대구점_notif", defaultValue: "Costco Daegu")
             case .ilsan:
-                return String(localized: "코스트코 일산점_notif", defaultValue: "Costco Ilsan", table: "CodeStrings")
+                return String(localized: "코스트코 일산점_notif", defaultValue: "Costco Ilsan")
             case .ulsan:
-                return String(localized: "코스트코 울산점_notif", defaultValue: "Costco Ulsan", table: "CodeStrings")
+                return String(localized: "코스트코 울산점_notif", defaultValue: "Costco Ulsan")
             }
         case .custom(let id):
             if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
                 return customMart.name
             }
-            return String(localized: "커스텀 마트_notif", defaultValue: "Custom Store", table: "CodeStrings")
+            return String(localized: "커스텀 마트_notif", defaultValue: "Custom Store")
         case .holiday:
-            return String(localized: "전국 마트 공휴일_notif", defaultValue: "National Holiday", table: "CodeStrings")
+            return String(localized: "전국 마트 공휴일_notif", defaultValue: "National Holiday")
         }
     }
 }
@@ -76,13 +76,13 @@ enum LargeMartBranch: Hashable, Codable, CaseIterable {
     var regionName: String {
         switch self {
         case .sunday:
-            return String(localized: "전국 대부분 지역", defaultValue: "Most regions nationwide", table: "CodeStrings")
+            return String(localized: "전국 대부분 지역", defaultValue: "Most regions nationwide")
         case .wednesday:
-            return String(localized: "경기 일부/청주", defaultValue: "Parts of Gyeonggi/Cheongju", table: "CodeStrings")
+            return String(localized: "경기 일부/청주", defaultValue: "Parts of Gyeonggi/Cheongju")
         case .mixed:
-            return String(localized: "울산_region", defaultValue: "Ulsan", table: "CodeStrings")
+            return String(localized: "울산_region", defaultValue: "Ulsan")
         case .jeju:
-            return String(localized: "제주_region", defaultValue: "Jeju", table: "CodeStrings")
+            return String(localized: "제주_region", defaultValue: "Jeju")
         }
     }
 }
@@ -96,13 +96,13 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
     var storeName: String {
         switch self {
         case .normal:
-            return String(localized: "코스트코_일반매장_목록", defaultValue: "Regular - Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok", table: "CodeStrings")
+            return String(localized: "코스트코_일반매장_목록", defaultValue: "Regular - Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok")
         case .daegu:
-            return String(localized: "대구점_대구혁신점", defaultValue: "Daegu, Daegu Innovation", table: "CodeStrings")
+            return String(localized: "대구점_대구혁신점", defaultValue: "Daegu, Daegu Innovation")
         case .ilsan:
-            return String(localized: "일산점_store", defaultValue: "Ilsan", table: "CodeStrings")
+            return String(localized: "일산점_store", defaultValue: "Ilsan")
         case .ulsan:
-            return String(localized: "울산점_store", defaultValue: "Ulsan", table: "CodeStrings")
+            return String(localized: "울산점_store", defaultValue: "Ulsan")
         }
     }
 
@@ -124,13 +124,13 @@ enum CostcoBranch: Hashable, Codable, CaseIterable {
     static func branchName(forID id: Int) -> String? {
         switch id {
         case 0:
-            return String(localized: "일반_branch", defaultValue: "Regular", table: "CodeStrings")
+            return String(localized: "일반_branch", defaultValue: "Regular")
         case 1:
-            return String(localized: "대구_branch", defaultValue: "Daegu", table: "CodeStrings")
+            return String(localized: "대구_branch", defaultValue: "Daegu")
         case 2:
-            return String(localized: "일산_branch", defaultValue: "Ilsan", table: "CodeStrings")
+            return String(localized: "일산_branch", defaultValue: "Ilsan")
         case 3:
-            return String(localized: "울산_branch", defaultValue: "Ulsan", table: "CodeStrings")
+            return String(localized: "울산_branch", defaultValue: "Ulsan")
         default:
             return nil
         }
@@ -268,32 +268,32 @@ extension MartType {
         case .normal(let branch):
             switch branch {
             case .sunday:
-                return String(localized: "대형마트 (일요일)_display", defaultValue: "Supermarket (Sun)", table: "CodeStrings")
+                return String(localized: "대형마트 (일요일)_display", defaultValue: "Supermarket (Sun)")
             case .wednesday:
-                return String(localized: "대형마트 (수요일)_display", defaultValue: "Supermarket (Wed)", table: "CodeStrings")
+                return String(localized: "대형마트 (수요일)_display", defaultValue: "Supermarket (Wed)")
             case .mixed:
-                return String(localized: "대형마트 (울산)_display", defaultValue: "Supermarket (Ulsan)", table: "CodeStrings")
+                return String(localized: "대형마트 (울산)_display", defaultValue: "Supermarket (Ulsan)")
             case .jeju:
-                return String(localized: "대형마트 (제주)_display", defaultValue: "Supermarket (Jeju)", table: "CodeStrings")
+                return String(localized: "대형마트 (제주)_display", defaultValue: "Supermarket (Jeju)")
             }
         case .costco(let branch):
             switch branch {
             case .normal:
-                return String(localized: "코스트코 일반매장_display", defaultValue: "Costco Regular", table: "CodeStrings")
+                return String(localized: "코스트코 일반매장_display", defaultValue: "Costco Regular")
             case .daegu:
-                return String(localized: "코스트코 대구점_display", defaultValue: "Costco Daegu", table: "CodeStrings")
+                return String(localized: "코스트코 대구점_display", defaultValue: "Costco Daegu")
             case .ilsan:
-                return String(localized: "코스트코 일산점_display", defaultValue: "Costco Ilsan", table: "CodeStrings")
+                return String(localized: "코스트코 일산점_display", defaultValue: "Costco Ilsan")
             case .ulsan:
-                return String(localized: "코스트코 울산점_display", defaultValue: "Costco Ulsan", table: "CodeStrings")
+                return String(localized: "코스트코 울산점_display", defaultValue: "Costco Ulsan")
             }
         case .custom(let id):
             if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
                 return customMart.name
             }
-            return String(localized: "커스텀 마트_display", defaultValue: "Custom Store", table: "CodeStrings")
+            return String(localized: "커스텀 마트_display", defaultValue: "Custom Store")
         case .holiday:
-            return String(localized: "전국 마트 공휴일_display", defaultValue: "National Holiday", table: "CodeStrings")
+            return String(localized: "전국 마트 공휴일_display", defaultValue: "National Holiday")
         }
     }
 
@@ -304,9 +304,9 @@ extension MartType {
         case .costco:
             return "10:00 - 20:00"
         case .custom:
-            return String(localized: "매장별 상이", defaultValue: "Varies by store", table: "CodeStrings")
+            return String(localized: "매장별 상이", defaultValue: "Varies by store")
         case .holiday:
-            return String(localized: "전일 휴무", defaultValue: "Closed all day", table: "CodeStrings")
+            return String(localized: "전일 휴무", defaultValue: "Closed all day")
         }
     }
 }

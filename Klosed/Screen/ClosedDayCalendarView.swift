@@ -258,12 +258,13 @@ struct ClosedDayCalendarView: View {
         }
         
         // adding offset days to get exact week day...
-        let firstWeekday = calendar.component(.weekday, from: days.first!.date)
-        
+        guard let firstDate = days.first?.date else { return days }
+        let firstWeekday = calendar.component(.weekday, from: firstDate)
+
         for _ in 0..<firstWeekday - 1{
             days.insert(DateValue(day: -1, date: Date()), at: 0)
         }
-        
+
         return days
     }
 }

@@ -16,11 +16,11 @@ enum OperationStatus {
     var displayText: String {
         switch self {
         case .open:
-            return String(localized: "영업중", defaultValue: "Open", table: "CodeStrings")
+            return String(localized: "영업중", defaultValue: "Open")
         case .closed:
-            return String(localized: "휴무_status", defaultValue: "Closed", table: "CodeStrings")
+            return String(localized: "휴무_status", defaultValue: "Closed")
         case .unknown:
-            return String(localized: "알 수 없음", defaultValue: "Unknown", table: "CodeStrings")
+            return String(localized: "알 수 없음", defaultValue: "Unknown")
         }
     }
 
@@ -86,9 +86,9 @@ class OperationStatusManager: ObservableObject {
 
     func formatDDay(_ days: Int) -> String {
         if days == 0 {
-            return String(localized: "오늘", defaultValue: "Today", table: "CodeStrings")
+            return String(localized: "오늘", defaultValue: "Today")
         } else if days == 1 {
-            return String(localized: "내일", defaultValue: "Tomorrow", table: "CodeStrings")
+            return String(localized: "내일", defaultValue: "Tomorrow")
         } else {
             return "D-\(days)"
         }

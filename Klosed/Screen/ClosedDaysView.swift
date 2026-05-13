@@ -115,7 +115,10 @@ struct ClosedDaysView: View {
 
     private var navigationTitle: String {
         let baseName = locationName(forID: selectedBranch)
-        return isPremium ? "Klosed \(baseName) pro" : "Klosed \(baseName)"
+        let template = isPremium
+            ? String(localized: "%@ 휴무 Pro")
+            : String(localized: "%@ 휴무")
+        return String(format: template, baseName)
     }
 
     private var settingsButton: some View {
@@ -124,12 +127,14 @@ struct ClosedDaysView: View {
         }) {
             Image(systemName: "gear")
         }
+        .accessibilityLabel(Text("설정"))
+        .accessibilityHint(Text("매장 선택 및 알림 설정 화면을 엽니다"))
     }
 
     private var premiumSection: some View {
         VStack(spacing: 12) {
             PremiumBanner(
-                feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more", table: "CodeStrings")
+                feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more")
             ) {
                 isShowingPremiumUpgrade = true
             }
@@ -165,7 +170,7 @@ struct ClosedDaysView: View {
     // MARK: - Event Handlers
 
     private func handleBranchChange() {
-        print("selectedBranch: \(selectedBranch)")
+        debugLog("selectedBranch: \(selectedBranch)")
         WidgetManager.shared.updateWidget()
     }
 
@@ -205,6 +210,7 @@ struct ClosedDaysView: View {
             HStack {
                 Text(hasNoSelection ? "⚙️" : status.emoji)
                     .font(.system(size: 50))
+                    .accessibilityHidden(true)
 
                 operationStatusText(
                     allClosed: allClosed,
@@ -220,6 +226,32 @@ struct ClosedDaysView: View {
         .background(operationStatusBackground(allClosed: allClosed, hasClosedMart: hasClosedMart, hasNoSelection: hasNoSelection))
         .overlay(operationStatusBorder(allClosed: allClosed, hasClosedMart: hasClosedMart, hasNoSelection: hasNoSelection))
         .padding(.horizontal)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(operationStatusAccessibilityLabel(
+            allClosed: allClosed,
+            hasClosedMart: hasClosedMart,
+            todayClosedMarts: todayClosedMarts,
+            hasNoSelection: hasNoSelection
+        ))
+    }
+
+    private func operationStatusAccessibilityLabel(
+        allClosed: Bool,
+        hasClosedMart: Bool,
+        todayClosedMarts: [MetaMartsClosedDays],
+        hasNoSelection: Bool
+    ) -> Text {
+        if hasNoSelection {
+            return Text("매장이 선택되지 않았습니다. 설정에서 매장을 선택해주세요.")
+        }
+        if allClosed {
+            return Text("오늘 선택한 모든 매장이 휴무입니다.")
+        }
+        if hasClosedMart {
+            let names = todayClosedMarts.prefix(3).map { $0.type.displayName }.joined(separator: ", ")
+            return Text("일부 매장만 휴무입니다. \(names) 휴무.")
+        }
+        return Text("오늘 선택한 모든 매장이 영업 중입니다.")
     }
 
     private func operationStatusText(allClosed: Bool, hasClosedMart: Bool, todayClosedMarts: [MetaMartsClosedDays], hasNoSelection: Bool) -> some View {
@@ -543,15 +575,15 @@ struct ClosedDaysView: View {
     private func locationName(forID id: Int) -> String {
         switch id {
         case 0:
-            return String(localized: "마트_loc", defaultValue: "Mart", table: "CodeStrings")
+            return String(localized: "마트_loc", defaultValue: "Mart")
         case 1:
-            return String(localized: "일반 코스트코_loc", defaultValue: "Costco", table: "CodeStrings")
+            return String(localized: "일반 코스트코_loc", defaultValue: "Costco")
         case 2:
-            return String(localized: "대구 코스트코_loc", defaultValue: "Costco Daegu", table: "CodeStrings")
+            return String(localized: "대구 코스트코_loc", defaultValue: "Costco Daegu")
         case 3:
-            return String(localized: "일산 코스트코_loc", defaultValue: "Costco Ilsan", table: "CodeStrings")
+            return String(localized: "일산 코스트코_loc", defaultValue: "Costco Ilsan")
         case 4:
-            return String(localized: "울산 코스트코_loc", defaultValue: "Costco Ulsan", table: "CodeStrings")
+            return String(localized: "울산 코스트코_loc", defaultValue: "Costco Ulsan")
         default:
             return ""
         }

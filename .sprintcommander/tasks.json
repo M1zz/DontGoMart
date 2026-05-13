@@ -1,3 +1,179 @@
 [
-
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "5FFCF61B-C4B6-4D49-94C8-87CF36987F18",
+    "priority" : "high",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 1,
+    "tags" : [
+      "Bug",
+      "Core"
+    ],
+    "title" : "ClosedDayCalendarView에서 days.first! 강제 언래핑 크래시 수정"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "5C7DA072-7BEC-4A5D-B574-F498A13F8054",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 2,
+    "tags" : [
+      "Backend",
+      "Bug"
+    ],
+    "title" : "ShoppingReminder JSON 인코딩\/디코딩 에러 핸들링 추가"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "477A78B5-FA36-42BC-BAF0-2FED4EFD55B8",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 2,
+    "tags" : [
+      "Backend",
+      "Bug"
+    ],
+    "title" : "UserDefaults appGroupId nil 체크 안전화"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "BA90000C-EDA6-4E23-A103-DF3F82B589A3",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 3,
+    "tags" : [
+      "UI",
+      "Design"
+    ],
+    "title" : "주요 UI 요소에 VoiceOver 접근성 라벨 추가"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "B3646E83-8E61-41E4-A1D5-A382C4A55B98",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 2,
+    "tags" : [
+      "Backend",
+      "Refactor"
+    ],
+    "title" : "DispatchQueue.main.async를 async\/await으로 전환"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "ABAA099D-93DE-435A-8EAB-D7D6BDCD5108",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 1,
+    "tags" : [
+      "Backend",
+      "Bug"
+    ],
+    "title" : "StoreKit 트랜잭션 검증 실패 시 상세 로깅 추가"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "87E8438D-9A7C-42D0-8CB2-5F0363006851",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 3,
+    "tags" : [
+      "Feature",
+      "UI"
+    ],
+    "title" : "DDayWidget에 2개 휴일 표시 기능 구현 (TODO)"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "FE37A2D6-F1F5-40D2-A1D1-8D2BE827E569",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 2,
+    "tags" : [
+      "Performance",
+      "Backend"
+    ],
+    "title" : "LocationManager 위치 업데이트 빈도 제한 추가"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "7FCB6D7E-7406-4B51-8527-C348B577B6FA",
+    "priority" : "medium",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 5,
+    "tags" : [
+      "Core",
+      "Backend"
+    ],
+    "title" : "핵심 매니저 클래스 유닛 테스트 작성"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "A4F4304B-2ABC-4426-9F42-E1CE7070F682",
+    "priority" : "low",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 1,
+    "tags" : [
+      "Refactor"
+    ],
+    "title" : "프로덕션 코드에서 디버그 print문 제거"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "8AAC0051-6C7C-4405-BCDD-0CEE021A76B2",
+    "priority" : "low",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 1,
+    "tags" : [
+      "Refactor"
+    ],
+    "title" : "캘린더 뷰 매직 넘버를 상수로 추출"
+  },
+  {
+    "assignee" : "ME",
+    "assigneeColorHex" : "4FACFE",
+    "id" : "19E96216-003D-44AF-9CFD-55D7C99A2E1C",
+    "priority" : "low",
+    "projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
+    "sprint" : "",
+    "status" : "백로그",
+    "storyPoints" : 1,
+    "tags" : [
+      "Bug"
+    ],
+    "title" : "설정 화면 URL 강제 언래핑 안전화"
+  }
 ]

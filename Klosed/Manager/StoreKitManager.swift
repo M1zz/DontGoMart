@@ -55,15 +55,10 @@ class StoreKitManager: ObservableObject {
             for await result in Transaction.updates {
                 do {
                     let transaction = try self.checkVerified(result)
-                    
-                    //the transaction is verified, deliver the content to the user
                     await self.updateCustomerProductStatus()
-                    
-                    //Always finish a transaction
                     await transaction.finish()
                 } catch {
-                    //storekit has a transaction that fails verification, don't delvier content to the user
-                    print("Transaction failed verification")
+                    debugLog("⚠️ [StoreKit] Transaction.updates verification failed: \(error)")
                 }
             }
         }
@@ -75,10 +70,8 @@ class StoreKitManager: ObservableObject {
         do {
             //using the Product static method products to retrieve the list of products
             storeProducts = try await Product.products(for: productDict.values)
-            
-            // iterate the "type" if there are multiple product types.
         } catch {
-            print("Failed - error retrieving products \(error)")
+            debugLog("⚠️ [StoreKit] requestProducts failed: \(error)")
         }
     }
     
@@ -112,11 +105,9 @@ class StoreKitManager: ObservableObject {
                 }
                 
             } catch {
-                //storekit has a transaction that fails verification, don't delvier content to the user
-                print("Transaction failed verification")
+                debugLog("⚠️ [StoreKit] currentEntitlements verification failed: \(error)")
             }
-            
-            //finally assign the purchased products
+
             self.purchasedCourses = purchasedCourses
         }
     }

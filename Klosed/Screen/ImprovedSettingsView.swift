@@ -64,7 +64,7 @@ struct ImprovedSettingsView: View {
                 }
                 Button("취소", role: .cancel) { }
             } message: {
-                Text("주변 매장을 찾으려면\n설정 > Klosed > 위치에서\n권한을 허용해주세요.")
+                Text("주변 매장을 찾으려면\n설정 > 돈꼬마트 > 위치에서\n권한을 허용해주세요.")
             }
         }
     }

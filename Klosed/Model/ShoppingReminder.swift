@@ -50,7 +50,7 @@ class ShoppingReminderManager: ObservableObject {
         let newItem = ShoppingItem(title: title)
         currentReminder.items.append(newItem)
         saveReminder()
-        print("✅ [ShoppingReminderManager] 장보기 항목 추가: \(title)")
+        debugLog("✅ [ShoppingReminderManager] 장보기 항목 추가: \(title)")
     }
 
     func toggleItem(_ item: ShoppingItem) {
@@ -76,16 +76,21 @@ class ShoppingReminderManager: ObservableObject {
     }
 
     private func saveReminder() {
-        if let encoded = try? JSONEncoder().encode(currentReminder) {
+        do {
+            let encoded = try JSONEncoder().encode(currentReminder)
             userDefaults?.set(encoded, forKey: reminderKey)
+        } catch {
+            debugLog("⚠️ [ShoppingReminderManager] save 실패: \(error)")
         }
     }
 
     private func loadReminder() {
-        if let data = userDefaults?.data(forKey: reminderKey),
-           let decoded = try? JSONDecoder().decode(ShoppingReminder.self, from: data) {
-            currentReminder = decoded
-            print("✅ [ShoppingReminderManager] 장보기 리스트 로드: \(currentReminder.items.count)개")
+        guard let data = userDefaults?.data(forKey: reminderKey) else { return }
+        do {
+            currentReminder = try JSONDecoder().decode(ShoppingReminder.self, from: data)
+            debugLog("✅ [ShoppingReminderManager] 장보기 리스트 로드: \(currentReminder.items.count)개")
+        } catch {
+            debugLog("⚠️ [ShoppingReminderManager] load 실패: \(error)")
         }
     }
 }
