@@ -1,7 +1,7 @@
 {
   "_description" : "SprintCommander 프로젝트 데이터",
   "_note" : "tasks.json을 수정하면 SprintCommander 앱에 자동 반영됩니다.",
-  "_project" : "Klosed",
+  "_project" : "DontGoMart",
   "_projectId" : "0AC1421C-2D9E-4227-97A1-A2C017F998D4",
   "example" : {
     "assignee" : "JK",
