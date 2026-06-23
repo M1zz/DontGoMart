@@ -12,73 +12,28 @@ struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
     @AppStorage(AppStorageKeys.isPremium) var isPremium: Bool = false
     @State private var isShowingSettings = false
-    @State private var isShowingShoppingList = false
     @State private var isShowingCalendar = false
     @State private var isShowingPremiumUpgrade = false
-    @State private var isCostco: Bool = false
-    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
-    @AppStorage(AppStorageKeys.locationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isLocationEnabled: Bool = false
-    @AppStorage(AppStorageKeys.viewMode, store: UserDefaults(suiteName: Utillity.appGroupId)) var viewMode: String = "month"
-    @AppStorage(AppStorageKeys.favoriteMarts, store: UserDefaults(suiteName: Utillity.appGroupId)) var favoriteMarts: String = ""
 
-    @StateObject private var operationStatusManager = OperationStatusManager.shared
-    @StateObject private var shoppingManager = ShoppingReminderManager.shared
     @StateObject private var martSelection = MartSelectionManager.shared
-
-    private func isFavorite(_ martType: MartType) -> Bool {
-        return favoriteMarts.contains(martType.storageKey)
-    }
-
-    private var selectedMartType: MartType {
-        if isCostco {
-            switch selectedBranch {
-            case 1:
-                return .costco(type: .normal)
-            case 2:
-                return .costco(type: .daegu)
-            case 3:
-                return .costco(type: .ilsan)
-            case 4:
-                return .costco(type: .ulsan)
-            default:
-                return .normal(type: .sunday)
-            }
-        }
-        return .normal(type: .sunday)
-    }
-
-    private var primaryMartType: MartType {
-        let selected = martSelection.getSelectedMartTypes()
-        return selected.first ?? .normal(type: .sunday)
-    }
 
     var body: some View {
         NavigationStack {
             mainScrollView
-                .navigationTitle(navigationTitle)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        settingsButton
-                    }
+                .navigationTitle("")
+                .navigationBarTitleDisplayMode(.inline)
+                .overlay(alignment: .bottomTrailing) {
+                    settingsButton
                 }
         }
-        .onChange(of: selectedBranch) {
-            handleBranchChange()
-        }
-        .sheet(isPresented: $isShowingSettings, onDismiss: onSettingsDismiss) {
+        .sheet(isPresented: $isShowingSettings) {
             SettingsView(isShowingSettings: $isShowingSettings)
-        }
-        .sheet(isPresented: $isShowingShoppingList) {
-            shoppingListSheet
         }
         .sheet(isPresented: $isShowingCalendar) {
             calendarSheet
         }
         .sheet(isPresented: $isShowingPremiumUpgrade) {
             PremiumUpgradeView(context: .general)
-        }
-        .onAppear {
-            onViewAppear()
         }
     }
 
@@ -87,10 +42,9 @@ struct ClosedDaysView: View {
     private var mainScrollView: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
-                operationStatusCard
+                todayStatusCard
                 nextClosedDateCard
-                viewModeToggle
-                quickActionsCard
+                calendarButton
                 upcomingClosedDatesCard
 
                 if !isPremium {
@@ -101,32 +55,21 @@ struct ClosedDaysView: View {
         }
     }
 
-    private var viewModeToggle: some View {
-        HStack {
-            Picker("", selection: $viewMode) {
-                Text("주간").tag("week")
-                Text("월간").tag("month")
-            }
-            .pickerStyle(.segmented)
-            .frame(width: 150)
-        }
-        .padding(.horizontal)
-    }
-
-    private var navigationTitle: String {
-        let baseName = locationName(forID: selectedBranch)
-        let template = isPremium
-            ? String(localized: "%@ 휴무 Pro")
-            : String(localized: "%@ 휴무")
-        return String(format: template, baseName)
-    }
-
     private var settingsButton: some View {
         Button(action: {
             isShowingSettings.toggle()
         }) {
             Image(systemName: "gear")
+                .font(.title2)
+                .foregroundColor(.white)
+                .frame(width: 56, height: 56)
+                .background(
+                    Circle().fill(Color("Pink"))
+                )
+                .shadow(color: .black.opacity(0.2), radius: 6, y: 3)
         }
+        .padding(.trailing, 20)
+        .padding(.bottom, 20)
         .accessibilityLabel(Text("설정"))
         .accessibilityHint(Text("매장 선택 및 알림 설정 화면을 엽니다"))
     }
@@ -142,194 +85,129 @@ struct ClosedDaysView: View {
         .padding(.horizontal)
     }
 
-    private var shoppingListSheet: some View {
-        NavigationStack {
-            ShoppingListView()
-        }
-    }
-
     private var calendarSheet: some View {
         NavigationStack {
-            ClosedDayCalendarView(
-                currentDate: $currentDate,
-                isCostco: isCostco,
-                selectedBranch: selectedBranch
-            )
-            .navigationTitle("휴무일 캘린더")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("완료") {
-                        isShowingCalendar = false
+            ClosedDayCalendarView(currentDate: $currentDate)
+                .navigationTitle("휴무일 캘린더")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("완료") {
+                            isShowingCalendar = false
+                        }
                     }
                 }
-            }
         }
     }
 
-    // MARK: - Event Handlers
+    // MARK: - 오늘 갈 수 있나요? (가장 큰 한 가지 정보)
 
-    private func handleBranchChange() {
-        debugLog("selectedBranch: \(selectedBranch)")
-        WidgetManager.shared.updateWidget()
-    }
-
-    private func onSettingsDismiss() {
-        isCostco = UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isCostco) ?? false
-        selectedBranch = UserDefaults(suiteName: Utillity.appGroupId)?.integer(forKey: AppStorageKeys.selectedBranch) ?? 0
-    }
-
-    private func onViewAppear() {
-        isCostco = UserDefaults(suiteName: Utillity.appGroupId)?.bool(forKey: AppStorageKeys.isCostco) ?? false
-    }
-
-    // MARK: - 새로운 카드 뷰들
-
-    private var operationStatusCard: some View {
+    private var todayStatusCard: some View {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date())
 
-        // 선택된 모든 마트의 오늘 영업 상태 확인
         let selectedMartTypes = martSelection.getSelectedMartTypes()
         let todayClosedMarts = tasks.filter { task in
             selectedMartTypes.contains(task.type) && calendar.isDate(task.taskDate, inSameDayAs: today)
         }
 
-        let hasClosedMart = !todayClosedMarts.isEmpty
-        let allClosed = selectedMartTypes.count == todayClosedMarts.count && !selectedMartTypes.isEmpty
         let hasNoSelection = selectedMartTypes.isEmpty
-        let status: OperationStatus = allClosed ? .closed : .open
+        let allClosed = !selectedMartTypes.isEmpty && selectedMartTypes.count == todayClosedMarts.count
+        let hasClosedMart = !todayClosedMarts.isEmpty
 
         return VStack(spacing: 12) {
             HStack {
                 Text("오늘 갈 수 있나요?")
                     .font(.headline)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
             }
 
-            HStack {
-                Text(hasNoSelection ? "⚙️" : status.emoji)
-                    .font(.system(size: 50))
+            HStack(spacing: 16) {
+                Text(hasNoSelection ? "⚙️" : (allClosed ? "🚫" : (hasClosedMart ? "⚠️" : "✅")))
+                    .font(.system(size: 56))
                     .accessibilityHidden(true)
 
-                operationStatusText(
+                todayStatusText(
+                    hasNoSelection: hasNoSelection,
                     allClosed: allClosed,
                     hasClosedMart: hasClosedMart,
-                    todayClosedMarts: todayClosedMarts,
-                    hasNoSelection: hasNoSelection
+                    todayClosedMarts: todayClosedMarts
                 )
 
                 Spacer()
             }
         }
         .padding()
-        .background(operationStatusBackground(allClosed: allClosed, hasClosedMart: hasClosedMart, hasNoSelection: hasNoSelection))
-        .overlay(operationStatusBorder(allClosed: allClosed, hasClosedMart: hasClosedMart, hasNoSelection: hasNoSelection))
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(todayStatusColor(hasNoSelection: hasNoSelection, allClosed: allClosed, hasClosedMart: hasClosedMart).opacity(0.12))
+        )
         .padding(.horizontal)
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel(operationStatusAccessibilityLabel(
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(todayStatusAccessibilityLabel(
+            hasNoSelection: hasNoSelection,
             allClosed: allClosed,
             hasClosedMart: hasClosedMart,
-            todayClosedMarts: todayClosedMarts,
-            hasNoSelection: hasNoSelection
-        ))
+            todayClosedMarts: todayClosedMarts
+        )))
     }
 
-    private func operationStatusAccessibilityLabel(
-        allClosed: Bool,
-        hasClosedMart: Bool,
-        todayClosedMarts: [MetaMartsClosedDays],
-        hasNoSelection: Bool
-    ) -> Text {
-        if hasNoSelection {
-            return Text("매장이 선택되지 않았습니다. 설정에서 매장을 선택해주세요.")
-        }
-        if allClosed {
-            return Text("오늘 선택한 모든 매장이 휴무입니다.")
-        }
-        if hasClosedMart {
-            let names = todayClosedMarts.prefix(3).map { $0.type.displayName }.joined(separator: ", ")
-            return Text("일부 매장만 휴무입니다. \(names) 휴무.")
-        }
-        return Text("오늘 선택한 모든 매장이 영업 중입니다.")
+    private func todayStatusColor(hasNoSelection: Bool, allClosed: Bool, hasClosedMart: Bool) -> Color {
+        if hasNoSelection { return .gray }
+        if allClosed { return .red }
+        if hasClosedMart { return .orange }
+        return .green
     }
 
-    private func operationStatusText(allClosed: Bool, hasClosedMart: Bool, todayClosedMarts: [MetaMartsClosedDays], hasNoSelection: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
+    private func todayStatusText(hasNoSelection: Bool, allClosed: Bool, hasClosedMart: Bool, todayClosedMarts: [MetaMartsClosedDays]) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
             if hasNoSelection {
                 Text("매장을 선택해주세요")
-                    .font(.title.bold())
+                    .font(.title2.bold())
                     .foregroundColor(.gray)
-                Text("설정에서 추적할 매장을 선택하세요")
-                    .font(.caption)
+                Text("설정에서 추적할 매장을 고르세요")
+                    .font(.subheadline)
                     .foregroundColor(.secondary)
             } else if allClosed {
-                Text("휴무예요")
+                Text("오늘 휴무예요")
                     .font(.title.bold())
                     .foregroundColor(.red)
-                Text("선택한 모든 매장이 휴무입니다")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
             } else if hasClosedMart {
-                Text("일부 영업중")
-                    .font(.title.bold())
+                Text("일부만 휴무예요")
+                    .font(.title2.bold())
                     .foregroundColor(.orange)
-                ForEach(todayClosedMarts.prefix(2)) { closedMart in
-                    HStack(spacing: 4) {
-                        Circle()
-                            .fill(colorForMartType(closedMart.type))
-                            .frame(width: 6, height: 6)
-                        Text("\(closedMart.type.displayName) 휴무")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                }
+                Text(todayClosedMarts.map { $0.type.displayName }.joined(separator: ", "))
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
             } else {
-                Text("영업중이에요")
+                Text("오늘 영업해요")
                     .font(.title.bold())
                     .foregroundColor(.green)
-                Text("선택한 모든 매장이 영업합니다")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
             }
         }
     }
 
-    private func operationStatusBackground(allClosed: Bool, hasClosedMart: Bool, hasNoSelection: Bool) -> some View {
-        let backgroundColor: Color
+    private func todayStatusAccessibilityLabel(hasNoSelection: Bool, allClosed: Bool, hasClosedMart: Bool, todayClosedMarts: [MetaMartsClosedDays]) -> String {
         if hasNoSelection {
-            backgroundColor = Color.gray.opacity(0.1)
-        } else if allClosed {
-            backgroundColor = Color.red.opacity(0.1)
-        } else if hasClosedMart {
-            backgroundColor = Color.orange.opacity(0.1)
-        } else {
-            backgroundColor = Color.green.opacity(0.1)
+            return String(localized: "매장이 선택되지 않았습니다. 설정에서 매장을 선택해주세요.", defaultValue: "No mart selected. Please choose one in settings.")
         }
-
-        return RoundedRectangle(cornerRadius: 16).fill(backgroundColor)
+        if allClosed {
+            return String(localized: "오늘 선택한 모든 매장이 휴무입니다.", defaultValue: "All selected marts are closed today.")
+        }
+        if hasClosedMart {
+            let names = todayClosedMarts.map { $0.type.displayName }.joined(separator: ", ")
+            return String(format: String(localized: "오늘 일부 매장만 휴무입니다. %@ 휴무.", defaultValue: "Some marts closed today: %@."), names)
+        }
+        return String(localized: "오늘 선택한 모든 매장이 영업 중입니다.", defaultValue: "All selected marts are open today.")
     }
 
-    private func operationStatusBorder(allClosed: Bool, hasClosedMart: Bool, hasNoSelection: Bool) -> some View {
-        let borderColor: Color
-        if hasNoSelection {
-            borderColor = Color.gray.opacity(0.3)
-        } else if allClosed {
-            borderColor = Color.red.opacity(0.3)
-        } else if hasClosedMart {
-            borderColor = Color.orange.opacity(0.3)
-        } else {
-            borderColor = Color.green.opacity(0.3)
-        }
-
-        return RoundedRectangle(cornerRadius: 16).stroke(borderColor, lineWidth: 2)
-    }
+    // MARK: - 다음 휴무일
 
     private var nextClosedDateCard: some View {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date())
 
-        // 선택된 모든 마트의 휴무일 중 가장 가까운 날짜 찾기
         let selectedMartTypes = martSelection.getSelectedMartTypes()
         let nextClosedDate = tasks
             .filter { task in
@@ -342,56 +220,37 @@ struct ClosedDaysView: View {
             calendar.dateComponents([.day], from: today, to: calendar.startOfDay(for: closedDate.taskDate)).day
         }
 
+        let cardAccessibilityLabel: String
+        if let days = daysUntil, let closedDate = nextClosedDate {
+            let header = String(localized: "다음 휴무일", defaultValue: "Next closed day")
+            let dateText = closedDate.taskDate.formatted(date: .long, time: .omitted)
+            cardAccessibilityLabel = "\(header), \(closedDate.type.displayName), \(dateText), \(spokenDaysUntil(days))"
+        } else {
+            cardAccessibilityLabel = String(localized: "다음 휴무일 정보 없음", defaultValue: "No closed day info")
+        }
+
         return VStack(spacing: 12) {
             HStack {
                 Text("다음 휴무일")
                     .font(.headline)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
             }
 
             if let days = daysUntil, let closedDate = nextClosedDate {
-                HStack(alignment: .top) {
+                HStack(alignment: .center) {
                     VStack(alignment: .leading, spacing: 6) {
-                        HStack(spacing: 8) {
-                            Circle()
-                                .fill(colorForMartType(closedDate.type))
-                                .frame(width: 8, height: 8)
-                            Text(operationStatusManager.formatDDay(days))
-                                .font(.title2.bold())
-                                .foregroundColor(Color("Pink"))
-                        }
-
+                        Text(operationStatusManager.formatDDay(days))
+                            .font(.title.bold())
+                            .foregroundColor(Color("Pink"))
                         Text(closedDate.taskDate.formatted(date: .long, time: .omitted))
                             .font(.subheadline)
                             .foregroundColor(.secondary)
-
-                        HStack(spacing: 4) {
-                            Text(closedDate.type.displayName)
-                                .font(.caption.bold())
-                                .foregroundColor(colorForMartType(closedDate.type))
-                            Text("•")
-                                .foregroundColor(.secondary)
-                            HStack(spacing: 2) {
-                                Image(systemName: "clock")
-                                    .font(.caption2)
-                                Text(closedDate.type.operatingHours)
-                                    .font(.caption)
-                            }
-                            .foregroundColor(.secondary)
-                        }
+                        Text(closedDate.type.displayName)
+                            .font(.subheadline.bold())
+                            .foregroundColor(closedDate.type.themeColor)
                     }
-
                     Spacer()
-
-                    if days <= 3 {
-                        VStack(spacing: 4) {
-                            Image(systemName: "exclamationmark.triangle.fill")
-                                .foregroundColor(.orange)
-                            Text("곧 휴무")
-                                .font(.caption)
-                                .foregroundColor(.orange)
-                        }
-                    }
                 }
             } else {
                 Text("휴무일 정보 없음")
@@ -404,162 +263,71 @@ struct ClosedDaysView: View {
                 .fill(Color(.systemGray6))
         )
         .padding(.horizontal)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(cardAccessibilityLabel))
     }
 
-    private var quickActionsCard: some View {
-        VStack(spacing: 12) {
-            HStack {
-                Text("빠른 실행")
+    private let operationStatusManager = OperationStatusManager.shared
+
+    /// VoiceOver 가 D-Day 를 자연스럽게 읽도록 일수를 풀어서 표현한다.
+    private func spokenDaysUntil(_ days: Int) -> String {
+        if days <= 0 { return String(localized: "오늘 휴무", defaultValue: "Closed today") }
+        if days == 1 { return String(localized: "내일 휴무", defaultValue: "Closed tomorrow") }
+        return String(format: String(localized: "%lld일 남음", defaultValue: "%lld days left"), days)
+    }
+
+    // MARK: - 캘린더 버튼
+
+    private var calendarButton: some View {
+        Button(action: {
+            isShowingCalendar = true
+            ReviewManager.trackMeaningfulAction()
+        }) {
+            HStack(spacing: 12) {
+                Image(systemName: "calendar")
+                    .font(.title2)
+                Text("휴무일 캘린더 보기")
                     .font(.headline)
                 Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .accessibilityHidden(true)
             }
-
-            HStack(spacing: 12) {
-                Button(action: {
-                    isShowingShoppingList = true
-                    ReviewManager.trackMeaningfulAction()
-                }) {
-                    VStack(spacing: 8) {
-                        Image(systemName: "cart.fill")
-                            .font(.title2)
-                        Text("장보기 목록")
-                            .font(.caption)
-
-                        if shoppingManager.currentReminder.totalItemsCount > 0 {
-                            Text("\(shoppingManager.currentReminder.totalItemsCount)개")
-                                .font(.caption2)
-                                .foregroundColor(.secondary)
-                        }
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color("Pink").opacity(0.1))
-                    .cornerRadius(12)
-                }
-                .foregroundColor(.primary)
-
-                Button(action: {
-                    isShowingCalendar = true
-                    ReviewManager.trackMeaningfulAction()
-                }) {
-                    VStack(spacing: 8) {
-                        Image(systemName: "calendar")
-                            .font(.title2)
-                        Text("캘린더 보기")
-                            .font(.caption)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color("Pink").opacity(0.1))
-                    .cornerRadius(12)
-                }
-                .foregroundColor(.primary)
-            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color("Pink").opacity(0.12))
+            .cornerRadius(16)
         }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(Color(.systemGray6))
-        )
+        .foregroundColor(.primary)
         .padding(.horizontal)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("휴무일 캘린더 보기"))
+        .accessibilityHint(Text("달력에서 휴무일을 확인합니다"))
+        .accessibilityAddTraits(.isButton)
     }
 
+    // MARK: - 다가오는 휴무일
+
     private var upcomingClosedDatesCard: some View {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: Date())
+        let groups = upcomingGroups()
 
-        // 주간/월간 뷰에 따라 기간 설정
-        let endDate: Date
-        if viewMode == "week" {
-            endDate = calendar.date(byAdding: .weekOfYear, value: 1, to: today) ?? today
-        } else {
-            endDate = calendar.date(byAdding: .month, value: 3, to: today) ?? today
-        }
-
-        let selectedMartTypes = martSelection.getSelectedMartTypes()
-        let upcomingDates = tasks.filter { task in
-            selectedMartTypes.contains(task.type) &&
-            task.taskDate >= today &&
-            task.taskDate <= endDate
-        }.sorted { task1, task2 in
-            // 즐겨찾기 마트를 우선 정렬
-            let isFav1 = isFavorite(task1.type)
-            let isFav2 = isFavorite(task2.type)
-            if isFav1 != isFav2 {
-                return isFav1
-            }
-            return task1.taskDate < task2.taskDate
-        }
-        .prefix(10)
-
-        return VStack(spacing: 12) {
+        return VStack(spacing: 14) {
             HStack {
                 Text("다가오는 휴무일")
                     .font(.headline)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
-                Button(action: {
-                    isShowingCalendar = true
-                }) {
-                    HStack(spacing: 4) {
-                        Text("전체보기")
-                            .font(.caption)
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                    }
-                    .foregroundColor(Color("Pink"))
-                }
             }
 
-            if upcomingDates.isEmpty {
+            if groups.isEmpty {
                 Text("휴무일 정보가 없습니다")
                     .foregroundColor(.secondary)
                     .padding()
             } else {
-                VStack(spacing: 8) {
-                    ForEach(Array(upcomingDates.enumerated()), id: \.element.id) { index, closedDate in
-                        HStack {
-                            // 마트 타입 색상 표시
-                            Circle()
-                                .fill(colorForMartType(closedDate.type))
-                                .frame(width: 10, height: 10)
-
-                            VStack(alignment: .leading, spacing: 4) {
-                                HStack {
-                                    if isFavorite(closedDate.type) {
-                                        Image(systemName: "star.fill")
-                                            .font(.caption2)
-                                            .foregroundColor(.yellow)
-                                    }
-                                    Text(closedDate.type.displayName)
-                                        .font(.caption.bold())
-                                        .foregroundColor(colorForMartType(closedDate.type))
-                                    Text(closedDate.taskDate.formatted(date: .abbreviated, time: .omitted))
-                                        .font(.subheadline)
-                                }
-                                if let task = closedDate.task.first {
-                                    Text(task.title)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-                                }
-                            }
-
-                            Spacer()
-
-                            if let days = calendar.dateComponents([.day], from: today, to: calendar.startOfDay(for: closedDate.taskDate)).day {
-                                Text(operationStatusManager.formatDDay(days))
-                                    .font(.caption.bold())
-                                    .foregroundColor(colorForMartType(closedDate.type))
-                                    .padding(.horizontal, 12)
-                                    .padding(.vertical, 6)
-                                    .background(colorForMartType(closedDate.type).opacity(0.1))
-                                    .cornerRadius(8)
-                            }
-                        }
-                        .padding(.vertical, 8)
-
-                        if index < upcomingDates.count - 1 {
-                            Divider()
-                        }
+                VStack(spacing: 10) {
+                    ForEach(groups, id: \.date) { group in
+                        closedDayCard(date: group.date, marts: group.marts, days: group.days)
                     }
                 }
             }
@@ -571,58 +339,108 @@ struct ClosedDaysView: View {
         )
         .padding(.horizontal)
     }
-    
-    private func locationName(forID id: Int) -> String {
-        switch id {
-        case 0:
-            return String(localized: "마트_loc", defaultValue: "Mart")
-        case 1:
-            return String(localized: "일반 코스트코_loc", defaultValue: "Costco")
-        case 2:
-            return String(localized: "대구 코스트코_loc", defaultValue: "Costco Daegu")
-        case 3:
-            return String(localized: "일산 코스트코_loc", defaultValue: "Costco Ilsan")
-        case 4:
-            return String(localized: "울산 코스트코_loc", defaultValue: "Costco Ulsan")
-        default:
-            return ""
+
+    /// 휴무일을 날짜별로 묶어 한눈에 보이도록 한 카드.
+    private func closedDayCard(date: Date, marts: [MetaMartsClosedDays], days: Int) -> some View {
+        let calendar = Calendar.current
+        let dayNumber = calendar.component(.day, from: date)
+        let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
+        let weekdaySymbol = ["일", "월", "화", "수", "목", "금", "토"][weekdayIndex - 1]
+        let isSunday = weekdayIndex == 1
+        let monthText = "\(calendar.component(.month, from: date))월"
+        let isSoon = days <= 3
+
+        return HStack(spacing: 14) {
+            // 달력 한 장 블록 (月 / 일 / 요일)
+            VStack(spacing: 1) {
+                Text(monthText)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                Text("\(dayNumber)")
+                    .font(.title.bold())
+                    .foregroundColor(isSunday ? .red : .primary)
+                Text(weekdaySymbol)
+                    .font(.caption2.bold())
+                    .foregroundColor(isSunday ? .red : .secondary)
+            }
+            .frame(width: 60, height: 68)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(isSoon ? Color("Pink").opacity(0.15) : Color(.systemBackground))
+            )
+
+            // 휴무 마트 목록 (색상으로 구분)
+            VStack(alignment: .leading, spacing: 6) {
+                ForEach(marts) { mart in
+                    HStack(spacing: 8) {
+                        Circle()
+                            .fill(mart.type.themeColor)
+                            .frame(width: 8, height: 8)
+                        Text(mart.type.displayName)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundColor(.primary)
+                            .lineLimit(1)
+                    }
+                }
+            }
+
+            Spacer(minLength: 0)
+
+            // D-day 배지
+            Text(operationStatusManager.formatDDay(days))
+                .font(.subheadline.bold())
+                .foregroundColor(isSoon ? .white : Color("Pink"))
+                .padding(.horizontal, 12)
+                .padding(.vertical, 7)
+                .background(
+                    Capsule().fill(isSoon ? Color("Pink") : Color("Pink").opacity(0.12))
+                )
+        }
+        .padding(10)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color(.systemBackground))
+        )
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(groupAccessibilityLabel(date: date, marts: marts, days: days)))
+    }
+
+    /// 다가오는 휴무일을 날짜별로 묶어 정렬된 배열로 반환한다 (가까운 8일치).
+    private func upcomingGroups() -> [(date: Date, marts: [MetaMartsClosedDays], days: Int)] {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let endDate = calendar.date(byAdding: .month, value: 3, to: today) ?? today
+
+        let selectedMartTypes = martSelection.getSelectedMartTypes()
+        let upcoming = tasks.filter { task in
+            selectedMartTypes.contains(task.type) &&
+            task.taskDate >= today &&
+            task.taskDate <= endDate
+        }
+        .sorted { $0.taskDate < $1.taskDate }
+
+        var order: [Date] = []
+        var map: [Date: [MetaMartsClosedDays]] = [:]
+        for task in upcoming {
+            let day = calendar.startOfDay(for: task.taskDate)
+            if map[day] == nil { order.append(day) }
+            map[day, default: []].append(task)
+        }
+
+        return order.prefix(8).map { day in
+            let days = calendar.dateComponents([.day], from: today, to: day).day ?? 0
+            return (date: day, marts: map[day] ?? [], days: days)
         }
     }
 
-    private func colorForMartType(_ martType: MartType) -> Color {
-        switch martType {
-        case .normal(let branch):
-            switch branch {
-            case .sunday:
-                return .blue
-            case .wednesday:
-                return .cyan
-            case .mixed:
-                return .teal
-            case .jeju:
-                return .mint
-            }
-        case .costco(let branch):
-            switch branch {
-            case .normal:
-                return .red
-            case .daegu:
-                return .orange
-            case .ilsan:
-                return .green
-            case .ulsan:
-                return .purple
-            }
-        case .custom(let id):
-            if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
-                return Color(hex: customMart.color) ?? .gray
-            }
-            return .gray
-        case .holiday:
-            return .pink
-        }
+    /// 날짜별 카드를 VoiceOver 가 한 문장으로 읽도록 라벨을 구성한다.
+    private func groupAccessibilityLabel(date: Date, marts: [MetaMartsClosedDays], days: Int) -> String {
+        var parts: [String] = [date.formatted(date: .complete, time: .omitted)]
+        let names = marts.map { $0.type.displayName }.joined(separator: ", ")
+        parts.append(String(format: String(localized: "%@ 휴무", defaultValue: "%@ closed"), names))
+        parts.append(spokenDaysUntil(days))
+        return parts.joined(separator: ", ")
     }
-    
 }
 
 #Preview {

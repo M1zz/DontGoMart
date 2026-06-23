@@ -7,29 +7,14 @@
 
 import SwiftUI
 import WidgetKit
-import TipKit
 import UIKit
-
-struct StoreTip: Tip {
-    var title: Text { Text("해당 지점") }
-    var message: Text? {
-        Text("양평점, 대전점, 양재점, \n상봉점, 부산점, 광명점, \n천안점, 의정부점, 공세점, \n송도점, 세종점, 하남점, \n김해점, 고척점")
-    }
-    var options: [Option] {
-        MaxDisplayCount(10)
-    }
-}
-
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
-    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
-    @AppStorage(AppStorageKeys.isCostco, store: UserDefaults(suiteName: Utillity.appGroupId)) var isCostco: Bool = false
     @AppStorage(AppStorageKeys.notificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var isNotificationEnabled: Bool = false
     @AppStorage(AppStorageKeys.notificationHour, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationHour: Int = 9
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
-    @AppStorage(AppStorageKeys.favoriteMarts, store: UserDefaults(suiteName: Utillity.appGroupId)) var favoriteMarts: String = ""
     @AppStorage(AppStorageKeys.isPremium) var isPremium: Bool = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
@@ -43,26 +28,15 @@ struct SettingsView: View {
     @State private var showingPremiumUpgrade = false
     @State private var paywallContext: PaywallContext = .general
 
-    private func isFavorite(_ martType: MartType) -> Bool {
-        return favoriteMarts.contains(martType.storageKey)
-    }
-
-    private func toggleFavorite(_ martType: MartType) {
-        var favorites = Set(favoriteMarts.split(separator: ",").map(String.init))
-        if favorites.contains(martType.storageKey) {
-            favorites.remove(martType.storageKey)
-        } else {
-            favorites.insert(martType.storageKey)
-        }
-        favoriteMarts = favorites.joined(separator: ",")
-    }
-
     var body: some View {
         NavigationStack {
             Form {
                 martSelectionSection
                 customMartSection
                 notificationSection
+                #if DEBUG
+                developerSection
+                #endif
             }
             .navigationTitle("매장선택")
             .toolbar {
@@ -163,38 +137,26 @@ struct SettingsView: View {
     }
 
     private func martToggle(martType: MartType, icon: String, color: Color, label: String) -> some View {
-        HStack {
-            Toggle(isOn: Binding(
-                get: { martSelection.isSelected(martType) },
-                set: { newValue in
-                    // 무료 사용자: 이미 1개 선택 상태에서 추가 선택 시도 시 프리미엄 유도
-                    if newValue && !martSelection.isSelected(martType) {
-                        let currentCount = martSelection.selectedMartTypes.count
-                        if !PremiumManager.canAddMoreMarts(currentCount: currentCount) {
-                            paywallContext = .martLimit
-                            showingPremiumUpgrade = true
-                            return
-                        }
+        Toggle(isOn: Binding(
+            get: { martSelection.isSelected(martType) },
+            set: { newValue in
+                // 무료 사용자: 이미 1개 선택 상태에서 추가 선택 시도 시 프리미엄 유도
+                if newValue && !martSelection.isSelected(martType) {
+                    let currentCount = martSelection.selectedMartTypes.count
+                    if !PremiumManager.canAddMoreMarts(currentCount: currentCount) {
+                        paywallContext = .martLimit
+                        showingPremiumUpgrade = true
+                        return
                     }
-                    martSelection.toggleMart(martType)
-                    WidgetManager.shared.updateWidget()
                 }
-            )) {
-                HStack {
-                    Image(systemName: icon)
-                        .foregroundColor(color)
-                    Text(label)
-                }
+                martSelection.toggleMart(martType)
+                WidgetManager.shared.updateWidget()
             }
-
-            if isPremium {
-                Button(action: {
-                    toggleFavorite(martType)
-                }) {
-                    Image(systemName: isFavorite(martType) ? "star.fill" : "star")
-                        .foregroundColor(isFavorite(martType) ? .yellow : .gray)
-                }
-                .buttonStyle(.plain)
+        )) {
+            HStack {
+                Image(systemName: icon)
+                    .foregroundColor(color)
+                Text(label)
             }
         }
     }
@@ -254,6 +216,7 @@ struct SettingsView: View {
                                     .foregroundColor(.blue)
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel(Text("\(mart.name) 수정"))
 
                             Button(action: {
                                 customMartManager.deleteCustomMart(mart)
@@ -263,6 +226,7 @@ struct SettingsView: View {
                                     .foregroundColor(.red)
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel(Text("\(mart.name) 삭제"))
                         }
                     }
                 }
@@ -356,6 +320,28 @@ struct SettingsView: View {
         }
     }
 
+    // MARK: - Developer Section (DEBUG 전용)
+
+    #if DEBUG
+    private var developerSection: some View {
+        Section(header: Text("개발자")) {
+            Toggle(isOn: $isPremium) {
+                HStack {
+                    Image(systemName: "hammer.fill")
+                        .foregroundColor(.purple)
+                    Text("Pro 버전 잠금 해제")
+                }
+            }
+            .onChange(of: isPremium) {
+                WidgetManager.shared.updateWidget()
+            }
+            Text("DEBUG 빌드에서만 보이는 개발자용 토글입니다. 릴리스 빌드에는 표시되지 않습니다.")
+                .font(.caption)
+                .foregroundColor(.secondary)
+        }
+    }
+    #endif
+
     // MARK: - Private Methods
 
     @MainActor
@@ -400,120 +386,6 @@ struct SettingsView: View {
         }
     }
 }
-
-
-struct CostcoSettings: View {
-    @AppStorage(AppStorageKeys.selectedBranch, store: UserDefaults(suiteName: Utillity.appGroupId)) var selectedBranch: Int = 0
-    @State var selectedCostcoBranch: CostcoBranch = .normal
-
-    @State private var isNormalSelected = false
-    @State private var isDaeguSelected = false
-    @State private var isIlsanSelected = false
-    @State private var isUlsanSelected = false
-    @State private var isTipShowing = false
-    var storeTip = StoreTip()
-
-
-    var body: some View {
-        VStack {
-            HStack {
-                Text("매장을 선택해주세요")
-                    .padding()
-                Spacer()
-            }
-            VStack(spacing: 10) {
-                Toggle(isOn: Binding(
-                    get: { isNormalSelected },
-                    set: { _ in updateSelection(for: .normal) }
-                )) {
-                    HStack {
-                        Text("일반매장")
-
-                        if isTipShowing {
-                            Image(systemName: "questionmark.circle")
-                                .popoverTip(storeTip)
-                                .onTapGesture {
-                                    isTipShowing.toggle()
-                                }
-                        } else {
-                            Image(systemName: "questionmark.circle")
-                                .onTapGesture {
-                                    isTipShowing.toggle()
-                                }
-                        }
-                    }
-                }
-
-
-                Toggle("대구 지점", isOn: Binding(
-                    get: { isDaeguSelected },
-                    set: { _ in updateSelection(for: .daegu) }
-                ))
-
-                Toggle("일산 지점", isOn: Binding(
-                    get: { isIlsanSelected },
-                    set: { _ in updateSelection(for: .ilsan) }
-                ))
-
-                Toggle("울산 지점", isOn: Binding(
-                    get: { isUlsanSelected },
-                    set: { _ in updateSelection(for: .ulsan) }
-                ))
-            }
-            .padding()
-
-            Spacer()
-        }
-        .onAppear {
-            syncSelectionState()
-        }
-        .task {
-            try? Tips.resetDatastore()
-            try? Tips.configure([.displayFrequency(.immediate)])
-        }
-    }
-
-    private func updateSelection(for branch: CostcoBranch) {
-            // 다른 선택지를 초기화하고 현재 선택지를 저장
-            resetAllSelections()
-            selectedCostcoBranch = branch
-            selectedBranch = branch.branchID
-
-            switch branch {
-            case .normal:
-                isNormalSelected = true
-            case .daegu:
-                isDaeguSelected = true
-            case .ilsan:
-                isIlsanSelected = true
-            case .ulsan:
-                isUlsanSelected = true
-            }
-    }
-
-    private func resetAllSelections() {
-        isNormalSelected = false
-        isDaeguSelected = false
-        isIlsanSelected = false
-        isUlsanSelected = false
-    }
-
-    private func syncSelectionState() {
-        switch selectedBranch {
-        case 1:
-            updateSelection(for: .normal)
-        case 2:
-            updateSelection(for: .daegu)
-        case 3:
-            updateSelection(for: .ilsan)
-        case 4:
-            updateSelection(for: .ulsan)
-        default:
-            resetAllSelections()
-        }
-    }
-}
-
 
 
 struct SettingsView_Previews: PreviewProvider {

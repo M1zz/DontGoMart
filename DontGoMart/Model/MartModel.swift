@@ -309,4 +309,31 @@ extension MartType {
             return String(localized: "전일 휴무", defaultValue: "Closed all day")
         }
     }
+
+    /// 마트 타입별 대표 색상 (화면·캘린더에서 공통 사용)
+    var themeColor: Color {
+        switch self {
+        case .normal(let branch):
+            switch branch {
+            case .sunday:    return .blue
+            case .wednesday: return .cyan
+            case .mixed:     return .teal
+            case .jeju:      return .mint
+            }
+        case .costco(let branch):
+            switch branch {
+            case .normal: return .red
+            case .daegu:  return .orange
+            case .ilsan:  return .green
+            case .ulsan:  return .purple
+            }
+        case .custom(let id):
+            if let customMart = CustomMartManager.shared.getCustomMart(byId: id) {
+                return Color(hex: customMart.color) ?? .gray
+            }
+            return .gray
+        case .holiday:
+            return .pink
+        }
+    }
 }

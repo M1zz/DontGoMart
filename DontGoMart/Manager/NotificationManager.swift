@@ -38,7 +38,6 @@ final class NotificationManager {
         case firstNotification = "day1_before"
         case secondNotification = "day2_before"
         case beforeDayNotification = "before_day"
-        case shoppingReminder = "shopping_reminder"
 
         var title: String {
             switch self {
@@ -46,8 +45,6 @@ final class NotificationManager {
                 return String(localized: "마트 휴무일 안내", defaultValue: "Store Closure Notice")
             case .beforeDayNotification:
                 return String(localized: "🛒 장보기 좋은 날_notif", defaultValue: "🛒 Good Day to Shop")
-            case .shoppingReminder:
-                return String(localized: "장보기 알림_notif", defaultValue: "Shopping Reminder")
             }
         }
 
@@ -65,8 +62,6 @@ final class NotificationManager {
             case .beforeDayNotification:
                 let format = String(localized: "notification_before_body", defaultValue: "%@ is closed tomorrow. Today is a good day to shop!")
                 return String(format: format, storeName)
-            case .shoppingReminder:
-                return String(localized: "notification_shopping_body", defaultValue: "Don't forget to shop before the next closed day!")
             }
         }
 
@@ -78,8 +73,6 @@ final class NotificationManager {
                 return NotificationManager.secondNotificationDaysBefore
             case .beforeDayNotification:
                 return 1
-            case .shoppingReminder:
-                return 2
             }
         }
     }
@@ -319,23 +312,5 @@ final class NotificationManager {
 
         let format = String(localized: "settings_notification_desc", defaultValue: "You'll be notified %lld days and %lld day before closed days at %@.")
         return String(format: format, firstNotificationDaysBefore, secondNotificationDaysBefore, timeString)
-    }
-
-    /// 장보기 알림 스케줄링
-    func scheduleShoppingReminder(for martType: MartType) async {
-        guard await validateNotificationPrerequisites() else { return }
-
-        let userDefaults = UserDefaults(suiteName: Utillity.appGroupId)
-        let isShoppingReminderEnabled = userDefaults?.bool(forKey: AppStorageKeys.shoppingReminderEnabled) ?? false
-
-        guard isShoppingReminderEnabled else { return }
-
-        if let nextClosedDate = OperationStatusManager.shared.nextClosedDate(for: martType) {
-            let _ = await scheduleNotification(
-                for: nextClosedDate,
-                type: .shoppingReminder,
-                martType: martType
-            )
-        }
     }
 }

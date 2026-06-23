@@ -1,21 +1,33 @@
-# 브랜딩 되돌리기: Klosed → DontGoMart / 돈꼬마트
+# 앱 단순화 + 접근성 (시각장애인 '한 번에 인지') — 완료
 
-## 1. 사용자 노출 문자열 (완료)
-- [x] 영문 표시명 Klosed → DontGoMart (InfoPlist.xcstrings, 페이월/Pro 명칭, 위치 권한 안내)
-- [x] "휴무" 말장난 영문 Klosed → Closed (브랜드 아님)
-- [x] 한글은 전부 이미 "돈꼬마트" → 변경 불필요
+범위: 데이터 모델 단순화 + 장보기 제거 + 캘린더 리디자인 + 접근성. 검증: 메인/위젯 빌드 SUCCEEDED.
 
-## 2. 프로젝트/파일명 리네이밍 (완료)
-- [x] 폴더: Klosed/ → DontGoMart/, KlosedWidget/ → DontGoMartWidget/, KlosedTests/ → DontGoMartTests/
-- [x] 프로젝트: Klosed.xcodeproj → DontGoMart.xcodeproj (빈 껍데기 DontGoMart.xcodeproj 제거)
-- [x] 파일: KlosedApp.swift → DontGoMartApp.swift, Klosed.entitlements → DontGoMart.entitlements, KlosedTests.swift → DontGoMartTests.swift
-- [x] 스킴: Klosed.xcscheme → DontGoMart.xcscheme, Klosed-store → DontGoMart-store
-- [x] project.pbxproj / 스킴 / plist / swift 헤더·심볼 전부 Klosed → DontGoMart
-- [x] @testable import Klosed → DontGoMart, struct KlosedApp/KlosedTests 리네이밍
-- [x] 시뮬레이터 빌드 검증: BUILD SUCCEEDED (메인 + 위젯)
+## 데이터 모델 단순화
+- [x] 죽은 병렬 마트 모델 삭제: MartStore / CostcoStoreLocation / ClosingPattern
+- [x] 미사용 매니저 삭제: LocationManager, FavoriteMartManager
+- [x] 빌드에서 빠져있던 죽은 화면 삭제: ImprovedClosedDaysView, ImprovedSettingsView
+- [x] 마트 색상 로직 중복 제거 → `MartType.themeColor` 단일 소스로 통합
+- [x] 미사용 AppStorageKeys 정리 (favoriteMarts, shoppingReminderEnabled, locationEnabled, viewMode)
+- [x] 실제 동작 모델은 `MartType` enum 기반 단일 체계로 유지 (다중 선택 유지)
 
-## 보존한 것 (의도적)
-- 번들ID com.leeo.DontGoMart, App Group group.com.leeo.DontGoMart (이미 DontGoMart, 스토어 연속성)
-- 위젯 타겟명 CalendarWidgetExtension (Klosed 무관)
-- 라이브 URL: App Store(.../klosed/...), 랜딩(m1zz.github.io/Klosed) — README/docs/.sprintcommander project.json
-- DontGoMart.xcodeproj/project.pbxproj.backup (구 백업 파일, 미사용)
+## 장보기 목록 제거
+- [x] ShoppingListView / ShoppingReminder 삭제
+- [x] 메인 화면 빠른실행에서 장보기 버튼 제거 → 캘린더 단일 버튼
+- [x] NotificationManager 장보기 알림(shoppingReminder, scheduleShoppingReminder) 제거
+
+## 즐겨찾기 제거
+- [x] 설정 화면 별표 버튼/로직 제거, 메인 다가오는 휴무일 별표·우선정렬 제거
+
+## 캘린더 리디자인 (미니멀)
+- [x] 큰 날짜 + 휴무일 색점, 선택일 분홍 라운드 채움, 오늘은 외곽선
+- [x] 일요일 빨강, 넉넉한 셀(48pt)·여백, 군더더기 캡슐 배경 제거
+- [x] 레거시 isCostco/selectedBranch 파라미터 의존 제거 → MartSelectionManager 직접 사용
+
+## 메인 화면 단순화
+- [x] '오늘 갈 수 있나요?' 큰 이모지 + 한 문장 상태 (음성 단일 라벨)
+- [x] '다음 휴무일' 카드 군더더기 제거, 음성 단일 라벨
+- [x] navigationTitle 레거시 지점명 의존 제거 → 고정 타이틀
+
+## 검증
+- [x] DontGoMart 빌드 BUILD SUCCEEDED
+- [x] CalendarWidgetExtension 빌드 BUILD SUCCEEDED

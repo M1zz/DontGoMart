@@ -265,6 +265,8 @@ struct PatternGridView: View {
                         .foregroundColor(weekdayColor(weekday))
                 }
             }
+            // 각 셀이 요일을 읽으므로 요일 머리글은 VoiceOver 에서 생략.
+            .accessibilityHidden(true)
 
             // 5주차 행들
             ForEach(weeks, id: \.self) { week in
@@ -334,6 +336,11 @@ struct GridCellButton: View {
             }
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(Text("\(week.rawValue)주차 \(weekday.displayName)"))
+        .accessibilityValue(Text(isSelected
+            ? String(localized: "선택됨", defaultValue: "Selected")
+            : String(localized: "선택 안 됨", defaultValue: "Not selected")))
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
 
