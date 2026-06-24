@@ -1,3 +1,14 @@
+# 후원자 배지 (과거 Pro 구매자) — 완료
+
+- [x] AppStorageKeys.isLegacySupporter 추가
+- [x] SupporterManager: Transaction.currentEntitlements 로 com.dontgomart.Coffee 구매 확인 → 플래그(한 번 true 유지)
+- [x] 앱 시작 시 SupporterManager.refresh() 호출
+- [x] SettingsView 상단에 후원자 배지 섹션(isSupporter 일 때만, 접근성 라벨 포함)
+- [x] DontGoMart 빌드 SUCCEEDED
+- 비고: 기본 스킴은 StoreKit 설정이 없어 배지 미표시(정상). 검증은 DontGoMart-store 스킴 + StoreKit 구매 시뮬레이션 또는 실제 구매자
+
+---
+
 # 위젯 매일 자동 갱신(날짜/D-Day 롤오버) — 완료
 
 - [x] 원인: 위젯이 저장된 단일 '다음 휴무일' 만 읽어, 그 날이 지나면 다음으로 못 넘어감(앱 실행 시에만 갱신)

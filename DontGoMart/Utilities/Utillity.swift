@@ -33,6 +33,8 @@ enum AppStorageKeys {
     static let notificationMinute = "notificationMinute"
     static let beforeDayNotificationEnabled = "beforeDayNotificationEnabled"
     static let selectedMartTypes = "selectedMartTypes"
+    // 과거 유료(Pro) 구매자 여부 — 후원자 배지 표시용 (한 번 true 면 유지)
+    static let isLegacySupporter = "isLegacySupporter"
     // 위젯 날짜 기반 데이터 (자동 D-Day 계산용)
     static let widgetNextClosedDate = "widgetNextClosedDate" // TimeInterval
     static let widgetNextClosedMartName = "widgetNextClosedMartName" // String

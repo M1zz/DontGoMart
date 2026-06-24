@@ -30,6 +30,11 @@ struct DontGoMartApp: App {
                     Task {
                         await setupSmartNotifications()
                     }
+
+                    // 과거 Pro 구매자(후원자) 여부 확인 → 후원자 배지 표시
+                    Task {
+                        await SupporterManager.refresh()
+                    }
                 }
         }
         .onChange(of: scenePhase) { _, newPhase in

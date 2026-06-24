@@ -15,6 +15,7 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.notificationHour, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationHour: Int = 9
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
+    @AppStorage(AppStorageKeys.isLegacySupporter) var isSupporter: Bool = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var customMartManager = CustomMartManager.shared
@@ -28,6 +29,9 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
+                if isSupporter {
+                    supporterSection
+                }
                 martSelectionSection
                 customMartSection
                 notificationSection
@@ -52,6 +56,29 @@ struct SettingsView: View {
             .sheet(isPresented: $showingCustomMartEditor) {
                 CustomMartEditView(editingMart: editingCustomMart)
             }
+        }
+    }
+
+    // MARK: - Supporter Section (과거 Pro 구매자 감사 배지)
+
+    private var supporterSection: some View {
+        Section {
+            HStack(spacing: 12) {
+                Image(systemName: "cup.and.saucer.fill")
+                    .font(.title2)
+                    .foregroundColor(.brown)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("초기 후원자")
+                        .font(.subheadline.bold())
+                    Text("앱을 응원해주셔서 감사합니다 ☕️")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+            }
+            .padding(.vertical, 4)
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(Text("초기 후원자. 앱을 응원해주셔서 감사합니다."))
         }
     }
 
