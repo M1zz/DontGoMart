@@ -93,23 +93,49 @@ class StoreKitManager: ObservableObject {
     @MainActor
     func updateCustomerProductStatus() async {
         var purchasedCourses: [Product] = []
-        
+        var hasActiveEntitlement = false
+
         //iterate through all the user's purchased products
         for await result in Transaction.currentEntitlements {
             do {
                 //again check if transaction is verified
                 let transaction = try checkVerified(result)
+
+                // 알려진 상품 ID(ProductList.plist)에 해당하는 권한이 있으면 Pro 보유로 간주.
+                // storeProducts 로드 실패(네트워크 등) 시에도 권한이 잘못 해제되지 않도록
+                // storeProducts 매칭이 아닌 productID 기준으로 판별한다.
+                if productDict.values.contains(transaction.productID) {
+                    hasActiveEntitlement = true
+                }
+
                 // since we only have one type of producttype - .nonconsumables -- check if any storeProducts matches the transaction.productID then add to the purchasedCourses
                 if let course = storeProducts.first(where: { $0.id == transaction.productID}) {
                     purchasedCourses.append(course)
                 }
-                
+
             } catch {
                 debugLog("⚠️ [StoreKit] currentEntitlements verification failed: \(error)")
             }
-
-            self.purchasedCourses = purchasedCourses
         }
+
+        self.purchasedCourses = purchasedCourses
+        syncPremiumStatus(hasPurchase: hasActiveEntitlement)
+    }
+
+    /// 구매 권한 상태를 isPremium(UserDefaults)에 동기화한다.
+    /// 복원/재설치/기기 변경 후에도 Pro 기능이 유지되도록 한다.
+    @MainActor
+    private func syncPremiumStatus(hasPurchase: Bool) {
+        #if DEBUG
+        // DEBUG 빌드에서는 개발자용 "Pro 버전 잠금 해제" 토글을 덮어쓰지 않도록,
+        // 실제 구매가 있을 때만 켜고 임의로 끄지 않는다.
+        if hasPurchase {
+            UserDefaults.standard.set(true, forKey: AppStorageKeys.isPremium)
+        }
+        #else
+        // 릴리스: 실제 구매 권한(entitlement)에 정확히 일치시킨다. (복원 시 true, 환불 시 false)
+        UserDefaults.standard.set(hasPurchase, forKey: AppStorageKeys.isPremium)
+        #endif
     }
     
     // call the product purchase and returns an optional transaction

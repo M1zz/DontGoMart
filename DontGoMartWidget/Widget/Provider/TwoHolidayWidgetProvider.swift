@@ -34,40 +34,51 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
         var entries: [TwoHolidayEntry] = []
         let defaults = UserDefaults(suiteName: Utillity.appGroupId)
         let calendar = Calendar.current
-
-        let firstDateInterval = defaults?.double(forKey: AppStorageKeys.widgetNextClosedDate) ?? 0
-        let secondDateInterval = defaults?.double(forKey: AppStorageKeys.widgetSecondClosedDate) ?? 0
-        let martName = defaults?.string(forKey: AppStorageKeys.widgetNextClosedMartName) ?? String(localized: "마트")
-        let martStorageKey = defaults?.string(forKey: AppStorageKeys.widgetMartStorageKey) ?? ""
-
         let currentDate = Date()
-        for dayOffset in 0 ..< 7 {
+
+        // 16일치 일별 엔트리. 각 엔트리는 그 날 기준으로 '다가오는 휴무일 2건' 을
+        // 스스로 골라 D-Day 를 계산하므로, 하루가 지나면 자동으로 다음 휴무일로 넘어간다.
+        for dayOffset in 0 ..< 16 {
             guard let entryDate = calendar.date(byAdding: .day, value: dayOffset, to: currentDate) else { continue }
             let startOfDate = calendar.startOfDay(for: entryDate)
 
+            let upcoming = WidgetClosedDayStore.upcoming(onOrAfter: startOfDate)
+
             let displayText: [String]
-            if firstDateInterval > 0 && secondDateInterval > 0 {
-                let firstClosedDate = Date(timeIntervalSince1970: firstDateInterval)
-                let secondClosedDate = Date(timeIntervalSince1970: secondDateInterval)
+            if upcoming.count >= 2 {
+                let first = upcoming[0]
+                let second = upcoming[1]
 
-                let firstDday = calendar.dateComponents([.day], from: startOfDate, to: calendar.startOfDay(for: firstClosedDate)).day ?? 0
-                let secondDday = calendar.dateComponents([.day], from: startOfDate, to: calendar.startOfDay(for: secondClosedDate)).day ?? 0
+                let firstDday = calendar.dateComponents([.day], from: startOfDate, to: calendar.startOfDay(for: first.date)).day ?? 0
+                let secondDday = calendar.dateComponents([.day], from: startOfDate, to: calendar.startOfDay(for: second.date)).day ?? 0
 
-                let firstDateText = firstClosedDate.getMonthDayWeekday()
-                let secondDateText = secondClosedDate.getMonthDayWeekday()
+                let firstDateText = first.date.getMonthDayWeekday()
+                let secondDateText = second.date.getMonthDayWeekday()
 
                 displayText = [
-                    String(format: String(localized: "%@ 휴무"), martName),
+                    String(format: String(localized: "%@ 휴무"), first.martName),
                     "\(firstDateText.month)\(firstDateText.day) (\(firstDateText.weekday))",
                     firstDday >= 0 ? "D-\(firstDday)" : "D+\(abs(firstDday))",
                     "\(secondDateText.month)\(secondDateText.day) (\(secondDateText.weekday))",
                     secondDday >= 0 ? "D-\(secondDday)" : "D+\(abs(secondDday))",
-                    martStorageKey
+                    first.martKey
+                ]
+            } else if let only = upcoming.first {
+                // 다가오는 휴무일이 1건뿐일 때
+                let dday = calendar.dateComponents([.day], from: startOfDate, to: calendar.startOfDay(for: only.date)).day ?? 0
+                let dateText = only.date.getMonthDayWeekday()
+                displayText = [
+                    String(format: String(localized: "%@ 휴무"), only.martName),
+                    "\(dateText.month)\(dateText.day) (\(dateText.weekday))",
+                    dday >= 0 ? "D-\(dday)" : "D+\(abs(dday))",
+                    "-",
+                    "D-?",
+                    only.martKey
                 ]
             } else {
-                @AppStorage(AppStorageKeys.widgetTwoHolidayText, store: defaults)
-                var storedString: String = ""
-                let holidayText: [String] = storedString.split(separator: "|").map { String($0) }
+                // 저장된 목록이 없을 때 기존 텍스트로 폴백
+                let stored = defaults?.string(forKey: AppStorageKeys.widgetTwoHolidayText) ?? ""
+                let holidayText = stored.split(separator: "|").map { String($0) }
                 displayText = holidayText.isEmpty ? Self.emptyHolidayText : holidayText
             }
 
@@ -75,7 +86,7 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
             entries.append(entry)
         }
 
-        // 매일 자정에 timeline 재생성 → D-Day가 매일 자동 갱신됨
+        // 매일 자정에 timeline 재생성 → 목록 갱신 + D-Day 재계산
         let tomorrow = calendar.date(byAdding: .day, value: 1, to: currentDate) ?? currentDate.addingTimeInterval(86400)
         let nextMidnight = calendar.startOfDay(for: tomorrow)
         let timeline = Timeline(entries: entries, policy: .after(nextMidnight))

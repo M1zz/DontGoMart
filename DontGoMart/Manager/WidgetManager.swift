@@ -18,9 +18,45 @@ class WidgetManager {
     
     func updateWidget() {
         debugLog("==========updateWidget==========")
+        self.updateUpcomingClosedList()
         self.updateMultiMartHolidayText()
         self.updateMultiMartTwoHolidayText()
         self.reloadWidget()
+    }
+
+    /// 앞으로의 휴무일 목록을 앱그룹에 저장한다.
+    /// 위젯은 이 목록에서 '표시 중인 날(entry.date) 이후 가장 가까운 휴무일' 을 직접 골라
+    /// D-Day 를 매일 다시 계산한다. 덕분에 앱을 실행하지 않아도 하루가 지나면
+    /// 위젯의 날짜·D-Day 가 자동으로 다음 휴무일로 넘어간다.
+    private func updateUpcomingClosedList() {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+
+        let selectedMartTypes = MartSelectionManager.shared.getSelectedMartTypes()
+
+        guard !selectedMartTypes.isEmpty else {
+            defaults?.removeObject(forKey: AppStorageKeys.widgetUpcomingDates)
+            defaults?.removeObject(forKey: AppStorageKeys.widgetUpcomingMartNames)
+            defaults?.removeObject(forKey: AppStorageKeys.widgetUpcomingMartKeys)
+            return
+        }
+
+        // 넉넉한 지평선(다음 24개)을 저장해 앱을 한동안 안 켜도 위젯이 스스로 굴러가도록 한다.
+        let upcoming = tasks
+            .filter { selectedMartTypes.contains($0.type) && $0.taskDate >= today }
+            .sorted { $0.taskDate < $1.taskDate }
+            .prefix(24)
+
+        let dates = upcoming.map { $0.taskDate.timeIntervalSince1970 }
+        let names = upcoming.map { $0.type.widgetDisplayName }
+        let keys = upcoming.map { $0.type.storageKey }
+
+        defaults?.set(dates, forKey: AppStorageKeys.widgetUpcomingDates)
+        defaults?.set(names, forKey: AppStorageKeys.widgetUpcomingMartNames)
+        defaults?.set(keys, forKey: AppStorageKeys.widgetUpcomingMartKeys)
+
+        debugLog("Upcoming list saved: \(dates.count) dates")
     }
 
     private static let emptyMartText = String(localized: "마트 휴무")

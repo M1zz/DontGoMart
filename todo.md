@@ -1,3 +1,24 @@
+# 위젯 매일 자동 갱신(날짜/D-Day 롤오버) — 완료
+
+- [x] 원인: 위젯이 저장된 단일 '다음 휴무일' 만 읽어, 그 날이 지나면 다음으로 못 넘어감(앱 실행 시에만 갱신)
+- [x] 앱: 다가오는 휴무일 24건을 앱그룹에 평행배열로 저장(WidgetManager.updateUpcomingClosedList)
+- [x] 위젯: WidgetClosedDayStore 헬퍼로 entry.date 기준 '오늘 이후 가장 가까운 휴무일' 직접 선택
+- [x] 두 프로바이더 16일치 일별 엔트리 + 자정 reload → 앱 안 켜도 매일 날짜·D-Day 자동 롤오버
+- [x] DontGoMart / CalendarWidgetExtension 빌드 SUCCEEDED
+
+---
+
+# 유료 잠금 제거(전 기능 무료) + 다가오는 휴무일 직관화 — 완료
+
+- [x] PremiumManager 잠금 제거 (전 기능 항상 허용)
+- [x] SettingsView 페이월/배너/DEBUG 토글 제거, 나만의 마트·알림 항상 노출
+- [x] ClosedDaysView 프리미엄 배너/페이월 시트 제거
+- [x] 다가오는 휴무일 카드: 상대 표현(오늘/내일/이번주 X요일) 으로 직관화
+- [x] DontGoMart / CalendarWidgetExtension 빌드 SUCCEEDED 검증
+- 비고: PremiumUpgradeView / StoreKitManager 는 미참조 휴면 상태로 남김 (IAP 완전 삭제는 별도)
+
+---
+
 # 앱 단순화 + 접근성 (시각장애인 '한 번에 인지') — 완료
 
 범위: 데이터 모델 단순화 + 장보기 제거 + 캘린더 리디자인 + 접근성. 검증: 메인/위젯 빌드 SUCCEEDED.

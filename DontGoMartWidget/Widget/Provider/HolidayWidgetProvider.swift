@@ -25,39 +25,40 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
         var entries: [HolidayEntry] = []
         let defaults = UserDefaults(suiteName: Utillity.appGroupId)
         let calendar = Calendar.current
-
-        let closedDateInterval = defaults?.double(forKey: AppStorageKeys.widgetNextClosedDate) ?? 0
-        let martName = defaults?.string(forKey: AppStorageKeys.widgetNextClosedMartName) ?? String(localized: "마트")
-
         let currentDate = Date()
-        for dayOffset in 0 ..< 7 {
+
+        // 16일치 일별 엔트리를 만든다. 각 엔트리는 그 날(startOfDate) 기준으로
+        // '오늘 이후 가장 가까운 휴무일' 을 스스로 골라 D-Day 문구를 계산하므로,
+        // 하루가 지나면 자동으로 다음 휴무일로 넘어간다.
+        for dayOffset in 0 ..< 16 {
             guard let entryDate = calendar.date(byAdding: .day, value: dayOffset, to: currentDate) else { continue }
             let startOfDate = calendar.startOfDay(for: entryDate)
 
             let holidayText: String
-            if closedDateInterval > 0 {
-                let closedDate = calendar.startOfDay(for: Date(timeIntervalSince1970: closedDateInterval))
-                let daysDifference = calendar.dateComponents([.day], from: startOfDate, to: closedDate).day ?? -1
-
+            if let next = WidgetClosedDayStore.upcoming(onOrAfter: startOfDate).first {
+                let closedDay = calendar.startOfDay(for: next.date)
+                let daysDifference = calendar.dateComponents([.day], from: startOfDate, to: closedDay).day ?? 0
                 switch daysDifference {
+                case 0:
+                    holidayText = String(format: String(localized: "오늘 %@ 휴무"), next.martName)
                 case 1:
-                    holidayText = String(format: String(localized: "내일 %@ 휴무"), martName)
+                    holidayText = String(format: String(localized: "내일 %@ 휴무"), next.martName)
                 case 2...6:
-                    holidayText = String(format: String(localized: "이번 주 %@ 휴무"), martName)
+                    holidayText = String(format: String(localized: "이번 주 %@ 휴무"), next.martName)
                 default:
-                    holidayText = String(format: String(localized: "%@ 휴무"), martName)
+                    holidayText = String(format: String(localized: "%@ 휴무"), next.martName)
                 }
             } else {
-                @AppStorage(AppStorageKeys.widgetHolidayText, store: defaults)
-                var fallbackText: String = ""
-                holidayText = fallbackText.isEmpty ? String(localized: "마트 휴무") : fallbackText
+                // 저장된 목록이 없을 때(구버전 데이터 등) 기존 텍스트로 폴백
+                let fallback = defaults?.string(forKey: AppStorageKeys.widgetHolidayText) ?? ""
+                holidayText = fallback.isEmpty ? String(localized: "마트 휴무") : fallback
             }
 
             let entry = HolidayEntry(date: startOfDate, configuration: configuration, holidayText: holidayText)
             entries.append(entry)
         }
 
-        // 매일 자정에 위젯 timeline 재생성 → D-Day가 매일 갱신됨
+        // 매일 자정에 timeline 재생성 → 목록 갱신 + D-Day 재계산
         let tomorrow = calendar.date(byAdding: .day, value: 1, to: currentDate) ?? currentDate.addingTimeInterval(86400)
         let nextMidnight = calendar.startOfDay(for: tomorrow)
         let timeline = Timeline(entries: entries, policy: .after(nextMidnight))

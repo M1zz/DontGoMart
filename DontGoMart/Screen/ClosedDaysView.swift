@@ -10,10 +10,8 @@ import WidgetKit
 
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
-    @AppStorage(AppStorageKeys.isPremium) var isPremium: Bool = false
     @State private var isShowingSettings = false
     @State private var isShowingCalendar = false
-    @State private var isShowingPremiumUpgrade = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
 
@@ -32,9 +30,6 @@ struct ClosedDaysView: View {
         .sheet(isPresented: $isShowingCalendar) {
             calendarSheet
         }
-        .sheet(isPresented: $isShowingPremiumUpgrade) {
-            PremiumUpgradeView(context: .general)
-        }
     }
 
     // MARK: - Subviews
@@ -46,10 +41,6 @@ struct ClosedDaysView: View {
                 nextClosedDateCard
                 calendarButton
                 upcomingClosedDatesCard
-
-                if !isPremium {
-                    premiumSection
-                }
             }
             .padding(.vertical)
         }
@@ -72,17 +63,6 @@ struct ClosedDaysView: View {
         .padding(.bottom, 20)
         .accessibilityLabel(Text("설정"))
         .accessibilityHint(Text("매장 선택 및 알림 설정 화면을 엽니다"))
-    }
-
-    private var premiumSection: some View {
-        VStack(spacing: 12) {
-            PremiumBanner(
-                feature: String(localized: "프리미엄_메인_배너", defaultValue: "Unlock multi-mart tracking, notifications & more")
-            ) {
-                isShowingPremiumUpgrade = true
-            }
-        }
-        .padding(.horizontal)
     }
 
     private var calendarSheet: some View {
@@ -369,8 +349,12 @@ struct ClosedDaysView: View {
                     .fill(isSoon ? Color("Pink").opacity(0.15) : Color(.systemBackground))
             )
 
-            // 휴무 마트 목록 (색상으로 구분)
+            // 직관적 상대 표현 + 휴무 마트 목록 (색상으로 구분)
             VStack(alignment: .leading, spacing: 6) {
+                Text(relativeDayPhrase(date: date, days: days))
+                    .font(.subheadline.bold())
+                    .foregroundColor(isSoon ? Color("Pink") : .primary)
+
                 ForEach(marts) { mart in
                     HStack(spacing: 8) {
                         Circle()
@@ -378,7 +362,7 @@ struct ClosedDaysView: View {
                             .frame(width: 8, height: 8)
                         Text(mart.type.displayName)
                             .font(.subheadline.weight(.semibold))
-                            .foregroundColor(.primary)
+                            .foregroundColor(.secondary)
                             .lineLimit(1)
                     }
                 }
@@ -433,12 +417,40 @@ struct ClosedDaysView: View {
         }
     }
 
+    /// 다가오는 휴무일을 '오늘 / 내일 / 모레 / 이번 주 토요일 / 다음 주 일요일 / 토요일'
+    /// 처럼 한눈에 와닿는 표현으로 바꾼다. D-day 숫자보다 직관적이다.
+    private func relativeDayPhrase(date: Date, days: Int) -> String {
+        if days <= 0 { return String(localized: "오늘", defaultValue: "Today") }
+        if days == 1 { return String(localized: "내일", defaultValue: "Tomorrow") }
+        if days == 2 { return String(localized: "모레", defaultValue: "In 2 days") }
+
+        let calendar = Calendar.current
+        let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
+        let weekday = ["일", "월", "화", "수", "목", "금", "토"][weekdayIndex - 1]
+        let weekdayName = String(format: String(localized: "%@요일", defaultValue: "%@"), weekday)
+
+        let today = calendar.startOfDay(for: Date())
+        guard let thisWeek = calendar.dateInterval(of: .weekOfYear, for: today) else {
+            return weekdayName
+        }
+        let nextWeekStart = thisWeek.end
+        let weekAfterNextStart = calendar.date(byAdding: .weekOfYear, value: 1, to: nextWeekStart)
+
+        if date < nextWeekStart {
+            return String(format: String(localized: "이번 주 %@", defaultValue: "This %@"), weekdayName)
+        }
+        if let limit = weekAfterNextStart, date < limit {
+            return String(format: String(localized: "다음 주 %@", defaultValue: "Next %@"), weekdayName)
+        }
+        return weekdayName
+    }
+
     /// 날짜별 카드를 VoiceOver 가 한 문장으로 읽도록 라벨을 구성한다.
     private func groupAccessibilityLabel(date: Date, marts: [MetaMartsClosedDays], days: Int) -> String {
-        var parts: [String] = [date.formatted(date: .complete, time: .omitted)]
+        var parts: [String] = [relativeDayPhrase(date: date, days: days)]
+        parts.append(date.formatted(date: .complete, time: .omitted))
         let names = marts.map { $0.type.displayName }.joined(separator: ", ")
         parts.append(String(format: String(localized: "%@ 휴무", defaultValue: "%@ closed"), names))
-        parts.append(spokenDaysUntil(days))
         return parts.joined(separator: ", ")
     }
 }

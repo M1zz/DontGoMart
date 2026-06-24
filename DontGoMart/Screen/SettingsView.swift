@@ -15,7 +15,6 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.notificationHour, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationHour: Int = 9
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
-    @AppStorage(AppStorageKeys.isPremium) var isPremium: Bool = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var customMartManager = CustomMartManager.shared
@@ -25,8 +24,6 @@ struct SettingsView: View {
     @State private var showingTimePicker = false
     @State private var showingCustomMartEditor = false
     @State private var editingCustomMart: CustomMart? = nil
-    @State private var showingPremiumUpgrade = false
-    @State private var paywallContext: PaywallContext = .general
 
     var body: some View {
         NavigationStack {
@@ -34,9 +31,6 @@ struct SettingsView: View {
                 martSelectionSection
                 customMartSection
                 notificationSection
-                #if DEBUG
-                developerSection
-                #endif
             }
             .navigationTitle("매장선택")
             .toolbar {
@@ -57,9 +51,6 @@ struct SettingsView: View {
             )
             .sheet(isPresented: $showingCustomMartEditor) {
                 CustomMartEditView(editingMart: editingCustomMart)
-            }
-            .sheet(isPresented: $showingPremiumUpgrade) {
-                PremiumUpgradeView(context: paywallContext)
             }
         }
     }
@@ -139,16 +130,7 @@ struct SettingsView: View {
     private func martToggle(martType: MartType, icon: String, color: Color, label: String) -> some View {
         Toggle(isOn: Binding(
             get: { martSelection.isSelected(martType) },
-            set: { newValue in
-                // 무료 사용자: 이미 1개 선택 상태에서 추가 선택 시도 시 프리미엄 유도
-                if newValue && !martSelection.isSelected(martType) {
-                    let currentCount = martSelection.selectedMartTypes.count
-                    if !PremiumManager.canAddMoreMarts(currentCount: currentCount) {
-                        paywallContext = .martLimit
-                        showingPremiumUpgrade = true
-                        return
-                    }
-                }
+            set: { _ in
                 martSelection.toggleMart(martType)
                 WidgetManager.shared.updateWidget()
             }
@@ -165,78 +147,69 @@ struct SettingsView: View {
 
     private var customMartSection: some View {
         Section(header: Text("나만의 마트")) {
-            if !isPremium {
-                PremiumBanner(
-                    feature: String(localized: "커스텀_마트_배너", defaultValue: "Add your own mart's closed-day patterns")
-                ) {
-                    paywallContext = .customMart
-                    showingPremiumUpgrade = true
-                }
+            if customMartManager.customMarts.isEmpty {
+                Text("자주 가는 마트의 휴무 패턴을 추가하세요")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             } else {
-                if customMartManager.customMarts.isEmpty {
-                    Text("자주 가는 마트의 휴무 패턴을 추가하세요")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                } else {
-                    ForEach(customMartManager.customMarts) { mart in
-                        HStack {
-                            Toggle(isOn: Binding(
-                                get: { mart.isEnabled && martSelection.isSelected(.custom(id: mart.id.uuidString)) },
-                                set: { isOn in
-                                    var updatedMart = mart
-                                    updatedMart.isEnabled = isOn
-                                    customMartManager.updateCustomMart(updatedMart)
+                ForEach(customMartManager.customMarts) { mart in
+                    HStack {
+                        Toggle(isOn: Binding(
+                            get: { mart.isEnabled && martSelection.isSelected(.custom(id: mart.id.uuidString)) },
+                            set: { isOn in
+                                var updatedMart = mart
+                                updatedMart.isEnabled = isOn
+                                customMartManager.updateCustomMart(updatedMart)
 
-                                    if isOn {
-                                        martSelection.toggleMart(.custom(id: mart.id.uuidString))
-                                    }
-                                    WidgetManager.shared.updateWidget()
+                                if isOn {
+                                    martSelection.toggleMart(.custom(id: mart.id.uuidString))
                                 }
-                            )) {
-                                HStack(spacing: 8) {
-                                    Circle()
-                                        .fill(Color(hex: mart.color) ?? .gray)
-                                        .frame(width: 12, height: 12)
-                                    VStack(alignment: .leading, spacing: 2) {
-                                        Text(mart.name)
-                                            .font(.subheadline)
-                                        Text(mart.patterns.map { $0.displayText }.joined(separator: ", "))
-                                            .font(.caption)
-                                            .foregroundColor(.secondary)
-                                            .lineLimit(1)
-                                    }
-                                }
-                            }
-
-                            Button(action: {
-                                editingCustomMart = mart
-                                showingCustomMartEditor = true
-                            }) {
-                                Image(systemName: "pencil")
-                                    .foregroundColor(.blue)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel(Text("\(mart.name) 수정"))
-
-                            Button(action: {
-                                customMartManager.deleteCustomMart(mart)
                                 WidgetManager.shared.updateWidget()
-                            }) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
                             }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel(Text("\(mart.name) 삭제"))
+                        )) {
+                            HStack(spacing: 8) {
+                                Circle()
+                                    .fill(Color(hex: mart.color) ?? .gray)
+                                    .frame(width: 12, height: 12)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(mart.name)
+                                        .font(.subheadline)
+                                    Text(mart.patterns.map { $0.displayText }.joined(separator: ", "))
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                        .lineLimit(1)
+                                }
+                            }
                         }
+
+                        Button(action: {
+                            editingCustomMart = mart
+                            showingCustomMartEditor = true
+                        }) {
+                            Image(systemName: "pencil")
+                                .foregroundColor(.blue)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(Text("\(mart.name) 수정"))
+
+                        Button(action: {
+                            customMartManager.deleteCustomMart(mart)
+                            WidgetManager.shared.updateWidget()
+                        }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(Text("\(mart.name) 삭제"))
                     }
                 }
+            }
 
-                Button(action: {
-                    editingCustomMart = nil
-                    showingCustomMartEditor = true
-                }) {
-                    Label("마트 추가", systemImage: "plus.circle.fill")
-                }
+            Button(action: {
+                editingCustomMart = nil
+                showingCustomMartEditor = true
+            }) {
+                Label("마트 추가", systemImage: "plus.circle.fill")
             }
         }
     }
@@ -245,102 +218,71 @@ struct SettingsView: View {
 
     private var notificationSection: some View {
         Section(header: Text("알림설정")) {
-            if !isPremium {
-                PremiumBanner(
-                    feature: String(localized: "알림_배너", defaultValue: "Get notified before closed days")
-                ) {
-                    paywallContext = .notification
-                    showingPremiumUpgrade = true
+            Toggle("휴무일 알림", isOn: $isNotificationEnabled)
+                .onChange(of: isNotificationEnabled) {
+                    Task {
+                        await handleNotificationToggle()
+                    }
                 }
-            } else {
-                Toggle("휴무일 알림", isOn: $isNotificationEnabled)
-                    .onChange(of: isNotificationEnabled) {
+
+            if isNotificationEnabled {
+                Toggle("장보기 좋은 날 알림", isOn: $beforeDayNotificationEnabled)
+                    .onChange(of: beforeDayNotificationEnabled) {
                         Task {
-                            await handleNotificationToggle()
+                            await notificationManager.setupSmartNotifications(for: tasks)
                         }
                     }
 
-                if isNotificationEnabled {
-                    Toggle("장보기 좋은 날 알림", isOn: $beforeDayNotificationEnabled)
-                        .onChange(of: beforeDayNotificationEnabled) {
-                            Task {
-                                await notificationManager.setupSmartNotifications(for: tasks)
-                            }
-                        }
-
-                    HStack {
-                        Text("알림 시간")
-                            .foregroundColor(.primary)
-                        Spacer()
-                        Button(action: {
-                            showingTimePicker.toggle()
-                        }) {
-                            Text(String(format: "%02d:%02d", notificationHour, notificationMinute))
-                                .foregroundColor(.blue)
-                        }
-                    }
-
-                    if showingTimePicker {
-                        HStack {
-                            Spacer()
-                            Picker("시", selection: $notificationHour) {
-                                ForEach(0..<24) { hour in
-                                    Text("\(hour)시").tag(hour)
-                                }
-                            }
-                            .pickerStyle(.wheel)
-                            .frame(width: 100)
-
-                            Picker("분", selection: $notificationMinute) {
-                                ForEach([0, 30], id: \.self) { minute in
-                                    Text("\(minute)분").tag(minute)
-                                }
-                            }
-                            .pickerStyle(.wheel)
-                            .frame(width: 100)
-                            Spacer()
-                        }
-                        .onChange(of: notificationHour) {
-                            Task {
-                                await notificationManager.setupSmartNotifications(for: tasks)
-                            }
-                        }
-                        .onChange(of: notificationMinute) {
-                            Task {
-                                await notificationManager.setupSmartNotifications(for: tasks)
-                            }
-                        }
-                    }
-
-                    Text("휴무일 3일 전과 1일 전에 알림이 전송됩니다.")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-            }
-        }
-    }
-
-    // MARK: - Developer Section (DEBUG 전용)
-
-    #if DEBUG
-    private var developerSection: some View {
-        Section(header: Text("개발자")) {
-            Toggle(isOn: $isPremium) {
                 HStack {
-                    Image(systemName: "hammer.fill")
-                        .foregroundColor(.purple)
-                    Text("Pro 버전 잠금 해제")
+                    Text("알림 시간")
+                        .foregroundColor(.primary)
+                    Spacer()
+                    Button(action: {
+                        showingTimePicker.toggle()
+                    }) {
+                        Text(String(format: "%02d:%02d", notificationHour, notificationMinute))
+                            .foregroundColor(.blue)
+                    }
                 }
+
+                if showingTimePicker {
+                    HStack {
+                        Spacer()
+                        Picker("시", selection: $notificationHour) {
+                            ForEach(0..<24) { hour in
+                                Text("\(hour)시").tag(hour)
+                            }
+                        }
+                        .pickerStyle(.wheel)
+                        .frame(width: 100)
+
+                        Picker("분", selection: $notificationMinute) {
+                            ForEach([0, 30], id: \.self) { minute in
+                                Text("\(minute)분").tag(minute)
+                            }
+                        }
+                        .pickerStyle(.wheel)
+                        .frame(width: 100)
+                        Spacer()
+                    }
+                    .onChange(of: notificationHour) {
+                        Task {
+                            await notificationManager.setupSmartNotifications(for: tasks)
+                        }
+                    }
+                    .onChange(of: notificationMinute) {
+                        Task {
+                            await notificationManager.setupSmartNotifications(for: tasks)
+                        }
+                    }
+                }
+
+                Text("휴무일 3일 전과 1일 전에 알림이 전송됩니다.")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
-            .onChange(of: isPremium) {
-                WidgetManager.shared.updateWidget()
-            }
-            Text("DEBUG 빌드에서만 보이는 개발자용 토글입니다. 릴리스 빌드에는 표시되지 않습니다.")
-                .font(.caption)
-                .foregroundColor(.secondary)
         }
     }
-    #endif
 
     // MARK: - Private Methods
 
