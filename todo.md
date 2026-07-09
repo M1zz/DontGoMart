@@ -1,17 +1,18 @@
-# 대규모 개선 ("다 해줘") — 진행 중
+# 대규모 개선 ("다 해줘") — 대부분 완료
 
-우선순위 순서(저위험→고위험), 각 단계 빌드 검증 후 커밋.
+각 단계 빌드 검증 후 커밋 완료.
 
-- [ ] B-1 공휴일 자동화: 설날/추석 하드코딩(2027 상한) → 음력(.chinese) 자동 계산
-- [ ] QW-1 Weekday 이중 정의 통합 + 요일 심볼 배열 단일화(3곳 중복 제거)
-- [ ] QW-2 위젯 색상 중복 제거(themeColor vs colorForMartType) → 페이로드에 hex 저장
-- [ ] QW-4 휴면 IAP 삭제(PremiumManager/StoreKitManager/PremiumUpgradeView)
-- [ ] B-3 위젯 탭 → 앱 딥링크(widgetURL)
-- [ ] B-4 알림 리드타임 프리셋
-- [ ] QW-3 위젯 앱그룹 데이터 Codable 블롭으로 정리
-- [ ] B-2 위젯별 특정 매장 지정(Intent 파라미터) — intentdefinition 필요, 가능성 확인
-- [ ] A-core Store 통합(내장+커스텀 규칙 단일 타입) — 대형 리팩터
-- [ ] B-5 watchOS 컴플리케이션 — 새 타깃 필요(Xcode), 별도
+- [x] B-1 공휴일 자동화: 설날/추석 → 음력(.chinese) 자동 계산 (하드코딩 값과 일치 검증)
+- [x] QW-1 Weekday 이중 정의 통합 + 요일 심볼 배열 단일화
+- [x] QW-2 위젯 색상 중복 제거 → MartType(storageKey:) / themeColor(forStorageKey:) 단일화
+- [x] QW-4 휴면 IAP 삭제 (SupporterManager 만 유지)
+- [x] B-3 위젯 탭 → 앱 딥링크(widgetURL) + 캘린더 이동
+- [x] B-4 알림 리드타임 프리셋 + 전날 토글 실제 반영 + 중복 알림 정리
+- [x] QW-3 위젯 앱그룹 데이터 단일 Codable 블롭으로 통합 (키 10개 → 1개)
+- [x] A-core(핵심) 내장·커스텀 휴무 규칙 단일 엔진(ClosureRuleEngine)으로 통일, 날짜 패리티 검증
+- [ ] B-2 위젯별 특정 매장 지정 — intentdefinition + IntentHandler 필요(Xcode 툴링), 별도 보류
+- [ ] A-core(전체) MartType→Store 정체성 병합 + UI 재배선 — UI 대량 변경, 회귀 위험으로 별도 세션 권장
+- [ ] B-5 watchOS 컴플리케이션 — 새 watchOS 타깃 필요(pbxproj 수기 추가 위험), 별도
 
 ---
 
