@@ -3084,6 +3084,22 @@
           }
         }
       }
+    },
+    "%lld주 뒤 %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "in %lld weeks, %@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld주 뒤 %@"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"

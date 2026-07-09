@@ -506,7 +506,11 @@ struct ClosedDaysView: View {
         if let limit = weekAfterNextStart, date < limit {
             return String(format: String(localized: "다음 주 %@", defaultValue: "Next %@"), weekdayName)
         }
-        return weekdayName
+        // 2주 이상 떨어진 경우: 그냥 '일요일' 대신 몇 주 뒤인지 명시해 헷갈리지 않게 한다.
+        let targetWeekStart = calendar.dateInterval(of: .weekOfYear, for: date)?.start ?? calendar.startOfDay(for: date)
+        let dayDiff = calendar.dateComponents([.day], from: thisWeek.start, to: targetWeekStart).day ?? 14
+        let weeksOut = max(2, dayDiff / 7)
+        return String(format: String(localized: "%lld주 뒤 %@", defaultValue: "in %lld weeks, %@"), weeksOut, weekdayName)
     }
 
     /// 날짜별 카드를 VoiceOver 가 한 문장으로 읽도록 라벨을 구성한다.
