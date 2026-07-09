@@ -37,8 +37,8 @@ struct SundayStatusEntry: TimelineEntry {
     let hasMart: Bool
 }
 
-/// 앱이 앱그룹에 저장해 둔 다가오는 휴무일 한 건.
-struct UpcomingClosedDay {
+/// 앱이 앱그룹에 저장해 둔 다가오는 휴무일 한 건. (앱↔위젯 공유 저장 모델)
+struct UpcomingClosedDay: Codable {
     let date: Date
     let martName: String
     let martKey: String
@@ -47,26 +47,36 @@ struct UpcomingClosedDay {
 /// 위젯이 '기준일(entry.date) 이후 가장 가까운 휴무일들' 을 스스로 골라낸다.
 /// entry.date 가 매일 바뀌므로, 앱을 실행하지 않아도 하루가 지나면
 /// 자동으로 다음 휴무일·D-Day 로 넘어간다.
+///
+/// 앱그룹에는 다가오는 휴무일 목록을 단일 JSON(`widgetUpcomingList`)으로 저장한다.
+/// (예전엔 평행 배열 + 문자열 키가 여러 개로 흩어져 있었으나 하나로 통합)
 enum WidgetClosedDayStore {
-    static func upcoming(onOrAfter day: Date) -> [UpcomingClosedDay] {
+    /// 앱이 저장한 전체 목록.
+    static func loadAll() -> [UpcomingClosedDay] {
         let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+        guard let data = defaults?.data(forKey: AppStorageKeys.widgetUpcomingList),
+              let list = try? JSONDecoder().decode([UpcomingClosedDay].self, from: data) else {
+            return []
+        }
+        return list
+    }
+
+    /// 앱이 목록을 저장한다.
+    static func save(_ list: [UpcomingClosedDay]) {
+        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+        if list.isEmpty {
+            defaults?.removeObject(forKey: AppStorageKeys.widgetUpcomingList)
+        } else if let data = try? JSONEncoder().encode(list) {
+            defaults?.set(data, forKey: AppStorageKeys.widgetUpcomingList)
+        }
+    }
+
+    static func upcoming(onOrAfter day: Date) -> [UpcomingClosedDay] {
         let calendar = Calendar.current
         let startDay = calendar.startOfDay(for: day)
-
-        guard let dates = defaults?.array(forKey: AppStorageKeys.widgetUpcomingDates) as? [Double],
-              !dates.isEmpty else { return [] }
-        let names = (defaults?.array(forKey: AppStorageKeys.widgetUpcomingMartNames) as? [String]) ?? []
-        let keys = (defaults?.array(forKey: AppStorageKeys.widgetUpcomingMartKeys) as? [String]) ?? []
-
-        var result: [UpcomingClosedDay] = []
-        for (index, interval) in dates.enumerated() {
-            let date = Date(timeIntervalSince1970: interval)
-            guard calendar.startOfDay(for: date) >= startDay else { continue }
-            let name = index < names.count ? names[index] : String(localized: "마트")
-            let key = index < keys.count ? keys[index] : ""
-            result.append(UpcomingClosedDay(date: date, martName: name, martKey: key))
-        }
-        return result
+        return loadAll()
+            .filter { calendar.startOfDay(for: $0.date) >= startDay }
+            .sorted { $0.date < $1.date }
     }
 
     /// 선택된 마트가 하나라도 있는지 (앱그룹에 저장된 선택 목록 기준).

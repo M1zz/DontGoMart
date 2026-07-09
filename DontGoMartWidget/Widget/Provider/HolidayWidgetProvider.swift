@@ -23,7 +23,6 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<HolidayEntry>) -> ()) {
         var entries: [HolidayEntry] = []
-        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
         let calendar = Calendar.current
         let currentDate = Date()
 
@@ -49,9 +48,8 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
                     holidayText = String(format: String(localized: "%@ 휴무"), next.martName)
                 }
             } else {
-                // 저장된 목록이 없을 때(구버전 데이터 등) 기존 텍스트로 폴백
-                let fallback = defaults?.string(forKey: AppStorageKeys.widgetHolidayText) ?? ""
-                holidayText = fallback.isEmpty ? String(localized: "마트 휴무") : fallback
+                // 다가오는 휴무일 목록이 비어 있음(마트 미선택 등)
+                holidayText = String(localized: "마트 휴무")
             }
 
             let entry = HolidayEntry(date: startOfDate, configuration: configuration, holidayText: holidayText)

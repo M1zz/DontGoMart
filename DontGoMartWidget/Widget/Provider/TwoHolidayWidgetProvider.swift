@@ -32,7 +32,6 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<TwoHolidayEntry>) -> ()) {
         var entries: [TwoHolidayEntry] = []
-        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
         let calendar = Calendar.current
         let currentDate = Date()
 
@@ -76,10 +75,8 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
                     only.martKey
                 ]
             } else {
-                // 저장된 목록이 없을 때 기존 텍스트로 폴백
-                let stored = defaults?.string(forKey: AppStorageKeys.widgetTwoHolidayText) ?? ""
-                let holidayText = stored.split(separator: "|").map { String($0) }
-                displayText = holidayText.isEmpty ? Self.emptyHolidayText : holidayText
+                // 다가오는 휴무일 목록이 비어 있음(마트 미선택 등)
+                displayText = Self.emptyHolidayText
             }
 
             let entry = TwoHolidayEntry(date: startOfDate, configuration: configuration, holidayText: displayText)
