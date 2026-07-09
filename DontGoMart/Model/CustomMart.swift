@@ -157,27 +157,30 @@ struct CustomMart: Codable, Hashable, Identifiable {
         self.isEnabled = isEnabled
     }
 
-    // 특정 연도의 휴무일 계산
+    // 특정 연도의 휴무일 계산 (내장·커스텀 공통 엔진에 위임)
     func calculateClosedDates(for year: Int) -> [Date] {
-        var closedDates: [Date] = []
-        let calendar = Calendar.current
+        ClosureRuleEngine.closedDates(patterns: patterns, year: year)
+    }
+}
 
-        // 격주(biweekly) 패턴: 기준일부터 14일 간격으로 해당 연도 안의 날짜 계산
+/// 휴무 규칙(ClosurePattern) → 특정 연도의 실제 날짜 목록으로 펼치는 단일 계산 엔진.
+/// 내장 마트와 커스텀 마트가 동일하게 사용한다. (예전엔 내장 마트가 별도의
+/// Calendar.Weekday/Ordinal + findPatternDay 로직을 썼으나 이 엔진으로 통일)
+enum ClosureRuleEngine {
+    static func closedDates(patterns: [ClosurePattern], year: Int, calendar: Calendar = .current) -> [Date] {
+        var closedDates: [Date] = []
+
+        // 격주(biweekly): 기준일부터 정확히 14일 간격
         for pattern in patterns where pattern.frequency == .biweekly {
             closedDates.append(contentsOf: biweeklyDates(anchor: pattern.anchorDate, year: year, calendar: calendar))
         }
 
-        // 주차(weekOfMonth) 패턴: 매월 정해진 주차의 요일
+        // 주차(weekOfMonth): 매월 정해진 주차의 요일
         for month in 1...12 {
             for pattern in patterns where pattern.frequency == .weekOfMonth {
-                // 해당 월의 특정 요일 찾기
-                let weekdayDates = getDatesForWeekday(pattern.weekday, inMonth: month, year: year)
-
-                // 선택된 주차의 날짜만 추가
-                for week in pattern.weeks {
-                    if week.rawValue <= weekdayDates.count {
-                        closedDates.append(weekdayDates[week.rawValue - 1])
-                    }
+                let weekdayDates = getDatesForWeekday(pattern.weekday, inMonth: month, year: year, calendar: calendar)
+                for week in pattern.weeks where week.rawValue <= weekdayDates.count {
+                    closedDates.append(weekdayDates[week.rawValue - 1])
                 }
             }
         }
@@ -186,7 +189,7 @@ struct CustomMart: Codable, Hashable, Identifiable {
     }
 
     // 격주 휴무일: anchor(기준 시작일)에서 정확히 14일 간격으로, 지정 연도에 속하는 날짜들
-    private func biweeklyDates(anchor: Date?, year: Int, calendar: Calendar) -> [Date] {
+    private static func biweeklyDates(anchor: Date?, year: Int, calendar: Calendar) -> [Date] {
         guard let anchor else { return [] }
         guard let yearStart = calendar.date(from: DateComponents(year: year, month: 1, day: 1)),
               let yearEnd = calendar.date(from: DateComponents(year: year, month: 12, day: 31)) else {
@@ -196,7 +199,6 @@ struct CustomMart: Codable, Hashable, Identifiable {
         var dates: [Date] = []
         var current = calendar.startOfDay(for: anchor)
 
-        // 기준일이 연도보다 뒤라면 뒤로, 앞이라면 연도 시작 부근까지 14일씩 이동
         while current > yearStart {
             guard let prev = calendar.date(byAdding: .day, value: -14, to: current) else { break }
             current = prev
@@ -205,8 +207,6 @@ struct CustomMart: Codable, Hashable, Identifiable {
             guard let next = calendar.date(byAdding: .day, value: 14, to: current) else { break }
             current = next
         }
-
-        // 연도 안에서 14일씩 전진하며 수집
         while current <= yearEnd {
             dates.append(current)
             guard let next = calendar.date(byAdding: .day, value: 14, to: current) else { break }
@@ -216,29 +216,20 @@ struct CustomMart: Codable, Hashable, Identifiable {
         return dates
     }
 
-    // 특정 월의 특정 요일 날짜들을 가져오기
-    private func getDatesForWeekday(_ weekday: Weekday, inMonth month: Int, year: Int) -> [Date] {
+    // 특정 월의 특정 요일 날짜들
+    private static func getDatesForWeekday(_ weekday: Weekday, inMonth month: Int, year: Int, calendar: Calendar) -> [Date] {
+        guard let monthStart = calendar.date(from: DateComponents(year: year, month: month, day: 1)),
+              let monthEnd = calendar.date(byAdding: DateComponents(month: 1, day: -1), to: monthStart) else {
+            return []
+        }
+
         var dates: [Date] = []
-        let calendar = Calendar.current
-
-        guard let monthStart = calendar.date(from: DateComponents(year: year, month: month, day: 1)) else {
-            return dates
-        }
-
-        guard let monthEnd = calendar.date(byAdding: DateComponents(month: 1, day: -1), to: monthStart) else {
-            return dates
-        }
-
         var currentDate = monthStart
         while currentDate <= monthEnd {
-            let currentWeekday = calendar.component(.weekday, from: currentDate)
-            if currentWeekday == weekday.rawValue {
+            if calendar.component(.weekday, from: currentDate) == weekday.rawValue {
                 dates.append(currentDate)
             }
-
-            guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else {
-                break
-            }
+            guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else { break }
             currentDate = nextDate
         }
 

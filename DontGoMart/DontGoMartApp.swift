@@ -46,100 +46,47 @@ struct DontGoMartApp: App {
         }
     }
 
+    /// 내장 마트별 휴무 규칙. 커스텀 마트와 동일한 ClosurePattern 으로 선언한다.
+    /// (예전엔 마트마다 generateBiweeklyTasks 를 명령형으로 나열했으나 데이터로 통일)
+    private static let builtInMartRules: [(type: MartType, patterns: [ClosurePattern])] = [
+        // 대형마트
+        (.normal(type: .sunday),    [ClosurePattern(weeks: [.second, .fourth], weekday: .sunday)]),
+        (.normal(type: .wednesday), [ClosurePattern(weeks: [.second, .fourth], weekday: .wednesday)]),
+        (.normal(type: .mixed),     [ClosurePattern(weeks: [.second], weekday: .wednesday),
+                                     ClosurePattern(weeks: [.fourth], weekday: .sunday)]),
+        (.normal(type: .jeju),      [ClosurePattern(weeks: [.second], weekday: .friday),
+                                     ClosurePattern(weeks: [.fourth], weekday: .saturday)]),
+        // 코스트코
+        (.costco(type: .normal),    [ClosurePattern(weeks: [.second, .fourth], weekday: .sunday)]),
+        (.costco(type: .daegu),     [ClosurePattern(weeks: [.second, .fourth], weekday: .monday)]),
+        (.costco(type: .ilsan),     [ClosurePattern(weeks: [.second, .fourth], weekday: .wednesday)]),
+        (.costco(type: .ulsan),     [ClosurePattern(weeks: [.second], weekday: .wednesday),
+                                     ClosurePattern(weeks: [.fourth], weekday: .sunday)]),
+    ]
+
     private func initializeTasks() {
         // tasks 배열이 이미 초기화되어 있으면 스킵
         guard tasks.isEmpty else { return }
 
         let currentYear = Calendar.current.component(.year, from: Date())
 
-        // === 대형마트 패턴들 ===
+        // 내장 마트: 선언형 규칙을 공통 엔진으로 펼친다 (작년~내년 3년치)
+        for (martType, patterns) in Self.builtInMartRules {
+            for targetYear in (currentYear - 1)...(currentYear + 1) {
+                for date in ClosureRuleEngine.closedDates(patterns: patterns, year: targetYear) {
+                    tasks.append(MetaMartsClosedDays(
+                        type: martType,
+                        task: [MartCloseData(title: martType.displayName)],
+                        taskDate: date
+                    ))
+                }
+            }
+        }
 
-        // 1. 대형마트 일요일 휴무 (전국 대부분 지역)
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.sunday, .second, "2번째 일요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .normal(type: .sunday)
-        ))
-
-        // 2. 대형마트 수요일 휴무 (경기 일부, 청주)
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.wednesday, .fourth, "4번째 수요일")
-            ],
-            martType: .normal(type: .wednesday)
-        ))
-
-        // 3. 대형마트 울산 (2번째 수요일 + 4번째 일요일)
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .normal(type: .mixed)
-        ))
-
-        // 4. 대형마트 제주 (2번째 금요일 + 4번째 토요일)
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.friday, .second, "2번째 금요일"),
-                (.saturday, .fourth, "4번째 토요일")
-            ],
-            martType: .normal(type: .jeju)
-        ))
-
-        // === 코스트코 패턴들 ===
-
-        // 5. 코스트코 일반매장
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.sunday, .second, "2번째 일요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .costco(type: .normal)
-        ))
-
-        // 6. 코스트코 대구점
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.monday, .second, "2번째 월요일"),
-                (.monday, .fourth, "4번째 월요일")
-            ],
-            martType: .costco(type: .daegu)
-        ))
-
-        // 7. 코스트코 일산점
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.wednesday, .fourth, "4번째 수요일")
-            ],
-            martType: .costco(type: .ilsan)
-        ))
-
-        // 8. 코스트코 울산점
-        tasks.append(contentsOf: generateBiweeklyTasks(
-            forYear: currentYear,
-            weekdays: [
-                (.wednesday, .second, "2번째 수요일"),
-                (.sunday, .fourth, "4번째 일요일")
-            ],
-            martType: .costco(type: .ulsan)
-        ))
-
-        // === 설날/추석 공휴일 ===
+        // 설날/추석 공휴일
         tasks.append(contentsOf: generateHolidayTasks(forYear: currentYear))
 
-        // === 커스텀 마트 ===
+        // 커스텀 마트
         CustomMartManager.shared.loadCustomMarts()
         CustomMartManager.shared.updateTasksWithCustomMarts()
 
@@ -164,61 +111,6 @@ struct DontGoMartApp: App {
         default:
             break
         }
-    }
-
-    private func generateBiweeklyTasks(
-        forYear year: Int,
-        monthRange: Range<Int> = 1..<13,
-        weekdays: [(Weekday, WeekOfMonth, String)],
-        martType: MartType
-    ) -> [MetaMartsClosedDays] {
-        var tasks: [MetaMartsClosedDays] = []
-        let calendar = Calendar.current
-
-        let yearRange = [year - 1, year, year + 1]
-        // 각 달을 순회하면서 요일과 주차에 맞는 날짜를 찾음
-        for targetYear in yearRange {
-            debugLog("\(targetYear) - \(martType) Task Generate")
-            for month in monthRange {
-                for (weekday, ordinal, title) in weekdays {
-                    if let date = findPatternDay(of: weekday, ordinal: ordinal, inMonth: month, year: targetYear, calendar: calendar) {
-                        tasks.append(MetaMartsClosedDays(type: martType, task: [MartCloseData(title: title)], taskDate: date))
-                    }
-                }
-            }
-        }
-
-        return tasks
-    }
-
-    func findPatternDay(of weekday: Weekday, ordinal: WeekOfMonth, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
-        // 날짜 컴포넌트 설정
-        var dateComponents = DateComponents(year: year, month: month)
-
-        if let firstDayOfMonth = calendar.date(from: dateComponents) {
-            let firstWeekday = calendar.component(.weekday, from: firstDayOfMonth)
-            let targetDay = weekday.rawValue
-
-            let daysToAdd = (targetDay - firstWeekday + 7) % 7
-            dateComponents.day = 1 + daysToAdd
-
-            if let targetDate = calendar.date(from: dateComponents) {
-                // 두 번째, 네 번째 등 원하는 ordinal 번째 날짜 찾기
-                if ordinal == .first {
-                    return targetDate
-                } else if ordinal == .second {
-                    return calendar.date(byAdding: .weekOfMonth, value: 1, to: targetDate)  // 2번째
-                } else if ordinal == .third {
-                    return calendar.date(byAdding: .weekOfMonth, value: 2, to: targetDate)  // 3번째
-                } else if ordinal == .fourth {
-                    return calendar.date(byAdding: .weekOfMonth, value: 3, to: targetDate)  // 4번째
-                } else if ordinal == .fifth {
-                    return calendar.date(byAdding: .weekOfMonth, value: 4, to: targetDate)  // 5번째
-                }
-            }
-        }
-
-        return nil
     }
 
     // 설날/추석 휴무일 생성 (음력 자동 계산 — 연도 하드코딩 없이 매년 유효)
