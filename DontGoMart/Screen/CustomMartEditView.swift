@@ -117,117 +117,231 @@ struct CustomMartEditView: View {
     }
 }
 
-// MARK: - Pattern Editor View (7x5 Grid)
+// MARK: - Pattern Editor View (매주 / 격주 / 매월 주차)
 
 struct PatternEditorView: View {
     @Environment(\.dismiss) var dismiss
     let onSave: (ClosurePattern) -> Void
 
-    // 선택된 셀들: (주차, 요일) 조합
+    private enum PatternMode: String, CaseIterable, Identifiable {
+        case weekly = "매주"
+        case biweekly = "격주"
+        case monthly = "매월 주차"
+        var id: String { rawValue }
+
+        var guide: String {
+            switch self {
+            case .weekly:   return "쉬는 요일을 고르면 매주 그 요일에 휴무로 반복돼요."
+            case .biweekly: return "첫 휴무일을 고르면 그 날부터 2주에 한 번씩 휴무로 반복돼요. (2·4주차와 달리 월과 무관하게 14일 간격)"
+            case .monthly:  return "매월 정해진 주차·요일에 휴무일 때 사용하세요. (예: 2·4주차 화요일)"
+            }
+        }
+    }
+
+    private static let previewFormatter: DateFormatter = {
+        let f = DateFormatter()
+        f.locale = Locale(identifier: "ko_KR")
+        f.dateFormat = "M/d(E)"
+        return f
+    }()
+
+    @State private var mode: PatternMode = .weekly
+
+    // 매주 모드: 선택된 요일들
+    @State private var weeklyWeekdays: Set<Weekday> = []
+    // 격주 모드: 첫 휴무일 (이 날 + 14일마다). 요일은 이 날짜에서 자동 도출.
+    @State private var biweeklyStart: Date = Calendar.current.startOfDay(for: Date())
+    // 매월 주차 모드: (주차, 요일) 조합
     @State private var selectedCells: Set<GridCell> = []
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 16) {
-                // 안내 텍스트
-                Text("휴무일을 선택하세요")
-                    .font(.headline)
+            ScrollView {
+                VStack(spacing: 16) {
+                    Picker("휴무 방식", selection: $mode) {
+                        ForEach(PatternMode.allCases) { m in Text(m.rawValue).tag(m) }
+                    }
+                    .pickerStyle(.segmented)
+                    .padding(.horizontal)
                     .padding(.top)
 
-                // 7x5 그리드
-                PatternGridView(selectedCells: $selectedCells)
-                    .padding(.horizontal)
+                    Text(mode.guide)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
 
-                // 선택된 패턴 미리보기
-                if !selectedCells.isEmpty {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("선택된 패턴")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-
-                        Text(previewText)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .foregroundColor(.primary)
+                    switch mode {
+                    case .weekly:
+                        weekdaySelector
+                    case .biweekly:
+                        biweeklyEditor
+                    case .monthly:
+                        PatternGridView(selectedCells: $selectedCells)
+                            .padding(.horizontal)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                }
 
-                Spacer()
-
-                // 선택 초기화 버튼
-                if !selectedCells.isEmpty {
-                    Button("선택 초기화") {
-                        selectedCells.removeAll()
+                    if let preview = previewText {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("선택된 패턴")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Text(preview)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .foregroundColor(.primary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                     }
-                    .foregroundColor(.red)
                 }
             }
             .navigationTitle("패턴 추가")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") {
-                        dismiss()
-                    }
+                    Button("취소") { dismiss() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("추가") {
-                        savePatterns()
-                    }
-                    .disabled(selectedCells.isEmpty)
+                    Button("추가") { savePatterns() }
+                        .disabled(!isValid)
                 }
             }
         }
     }
 
-    private var previewText: String {
-        // 요일별로 그룹화
-        var weekdayGroups: [Weekday: Set<WeekOfMonth>] = [:]
+    // MARK: 매주 — 요일 칩 선택
 
-        for cell in selectedCells {
-            if weekdayGroups[cell.weekday] == nil {
-                weekdayGroups[cell.weekday] = []
+    private var weekdaySelector: some View {
+        HStack(spacing: 6) {
+            ForEach(Weekday.allCases, id: \.self) { weekday in
+                let selected = weeklyWeekdays.contains(weekday)
+                Button {
+                    if selected { weeklyWeekdays.remove(weekday) }
+                    else { weeklyWeekdays.insert(weekday) }
+                } label: {
+                    Text(weekday.displayName)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 44)
+                        .background(selected ? Color.pink : Color(.systemGray5))
+                        .foregroundColor(selected ? .white : weekdayColor(weekday))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(Text("매주 \(weekday.fullName)"))
+                .accessibilityValue(Text(selected ? "선택됨" : "선택 안 됨"))
+                .accessibilityAddTraits(selected ? .isSelected : [])
             }
-            weekdayGroups[cell.weekday]?.insert(cell.week)
         }
+        .padding(.horizontal)
+    }
 
-        // 정렬된 텍스트 생성
-        let sortedWeekdays = weekdayGroups.keys.sorted { $0.rawValue < $1.rawValue }
-        var texts: [String] = []
+    // MARK: 격주 — 첫 휴무일 선택
 
-        for weekday in sortedWeekdays {
-            if let weeks = weekdayGroups[weekday] {
+    private var biweeklyEditor: some View {
+        VStack(spacing: 12) {
+            DatePicker("첫 휴무일",
+                       selection: $biweeklyStart,
+                       displayedComponents: .date)
+                .datePickerStyle(.graphical)
+                .padding(.horizontal)
+        }
+    }
+
+    private func weekdayColor(_ weekday: Weekday) -> Color {
+        switch weekday {
+        case .sunday: return .red
+        case .saturday: return .blue
+        default: return .primary
+        }
+    }
+
+    // MARK: 유효성 / 미리보기 / 저장
+
+    private var isValid: Bool {
+        switch mode {
+        case .weekly:   return !weeklyWeekdays.isEmpty
+        case .biweekly: return true
+        case .monthly:  return !selectedCells.isEmpty
+        }
+    }
+
+    private var previewText: String? {
+        switch mode {
+        case .weekly:
+            guard !weeklyWeekdays.isEmpty else { return nil }
+            let names = weeklyWeekdays.sorted { $0.rawValue < $1.rawValue }
+                .map { $0.displayName }
+                .joined(separator: ", ")
+            return "매주 \(names)요일"
+
+        case .biweekly:
+            let start = Calendar.current.startOfDay(for: biweeklyStart)
+            let wd = weekday(from: start)
+            let dates = biweeklyPreviewDates(from: start, count: 3)
+                .map { Self.previewFormatter.string(from: $0) }
+                .joined(separator: ", ")
+            return "격주 \(wd.displayName)요일 · \(dates) …"
+
+        case .monthly:
+            guard !selectedCells.isEmpty else { return nil }
+            var groups: [Weekday: Set<WeekOfMonth>] = [:]
+            for cell in selectedCells { groups[cell.weekday, default: []].insert(cell.week) }
+            let texts = groups.keys.sorted { $0.rawValue < $1.rawValue }.map { weekday -> String in
+                let weeks = groups[weekday] ?? []
+                if weeks.count == WeekOfMonth.allCases.count {
+                    return "매주 \(weekday.displayName)요일"
+                }
                 let weekText = weeks.sorted { $0.rawValue < $1.rawValue }
-                    .map { "\($0.rawValue)" }
-                    .joined(separator: ",")
-                texts.append("\(weekText)주 \(weekday.displayName)요일")
+                    .map { "\($0.rawValue)" }.joined(separator: ",")
+                return "\(weekText)주 \(weekday.displayName)요일"
             }
+            return texts.joined(separator: " / ")
         }
+    }
 
-        return texts.joined(separator: " / ")
+    private func weekday(from date: Date) -> Weekday {
+        let wd = Calendar.current.component(.weekday, from: date)
+        return Weekday(rawValue: wd) ?? .sunday
+    }
+
+    private func biweeklyPreviewDates(from start: Date, count: Int) -> [Date] {
+        let calendar = Calendar.current
+        var date = calendar.startOfDay(for: start)
+        var result: [Date] = []
+        for _ in 0..<count {
+            result.append(date)
+            date = calendar.date(byAdding: .day, value: 14, to: date) ?? date
+        }
+        return result
     }
 
     private func savePatterns() {
-        // 요일별로 그룹화하여 패턴 생성
-        var weekdayGroups: [Weekday: Set<WeekOfMonth>] = [:]
-
-        for cell in selectedCells {
-            if weekdayGroups[cell.weekday] == nil {
-                weekdayGroups[cell.weekday] = []
+        switch mode {
+        case .weekly:
+            // 각 요일을 '모든 주차 선택' = 매주 패턴으로 저장
+            let everyWeek = Set(WeekOfMonth.allCases)
+            for weekday in weeklyWeekdays {
+                onSave(ClosurePattern(weeks: everyWeek, weekday: weekday, frequency: .weekOfMonth))
             }
-            weekdayGroups[cell.weekday]?.insert(cell.week)
-        }
 
-        // 첫 번째 패턴만 저장 (하나의 패턴으로 합침)
-        // 여러 요일이 선택된 경우 각각 패턴으로 저장
-        for (weekday, weeks) in weekdayGroups {
-            let pattern = ClosurePattern(weeks: weeks, weekday: weekday)
-            onSave(pattern)
+        case .biweekly:
+            let start = Calendar.current.startOfDay(for: biweeklyStart)
+            onSave(ClosurePattern(weekday: weekday(from: start),
+                                  frequency: .biweekly,
+                                  anchorDate: start))
+
+        case .monthly:
+            var groups: [Weekday: Set<WeekOfMonth>] = [:]
+            for cell in selectedCells { groups[cell.weekday, default: []].insert(cell.week) }
+            for (weekday, weeks) in groups {
+                onSave(ClosurePattern(weeks: weeks, weekday: weekday, frequency: .weekOfMonth))
+            }
         }
 
         dismiss()

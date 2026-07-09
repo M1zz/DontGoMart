@@ -1,3 +1,23 @@
+# 커스텀 마트 휴무 패턴 쉽게 (매주/격주/매월 주차) — 완료
+
+목표: 매주 화요일 휴무를 쉽게 + 격주(2주에 한 번)도 지원. 2·4주차와 격주는 다름(월 무관 14일 주기).
+
+- [x] 모델: ClosureFrequency(weekOfMonth/biweekly) + ClosurePattern 에 frequency/anchorDate 추가 (기존 저장 데이터 Codable 호환)
+- [x] calculateClosedDates: 격주(anchor+14일) 계산 로직 추가, biweeklyDates 헬퍼
+- [x] displayText: '매주 X요일' / '격주 X요일 · M/d 시작' 표시
+- [x] PatternEditorView 3모드 재구성: 매주(요일 칩)/격주(첫 휴무일 DatePicker+미리보기)/매월 주차(기존 그리드), 안내문·접근성 라벨
+- [x] 격주 날짜 알고리즘 독립 검증 (전부 해당 요일·14일 간격)
+- [x] DontGoMart 빌드 SUCCEEDED
+
+---
+
+# 일요일 위젯 문자열 한/영 병기 수정 (언어 통일) — 완료
+
+- [x] 원인: sourceLanguage=ko 카탈로그에 한국어 키+영어 defaultValue 로 추출되어 ko 슬롯에 영어값이 들어감
+- [x] 새 위젯 문자열 7개를 ko=한국어, en=영어(translated)로 정정 → 재빌드 후에도 유지 확인
+
+---
+
 # 이번 주 일요일 영업/휴무 위젯 (홈 + 잠금화면) — 완료
 
 목표: 내가 설정한 마트가 이번 주 일요일에 열면 초록색, 닫으면 빨간색으로 위젯/잠금화면에서 한눈에.
