@@ -39,8 +39,6 @@
 		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
 		9C2035782F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
 		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
-		AA1111111111111111111111 /* PremiumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2222222222222222222222 /* PremiumManager.swift */; };
-		AA3333333333333333333333 /* PremiumUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4444444444444444444444 /* PremiumUpgradeView.swift */; };
 		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
@@ -134,8 +132,6 @@
 		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
 		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
-		AA2222222222222222222222 /* PremiumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumManager.swift; sourceTree = "<group>"; };
-		AA4444444444444444444444 /* PremiumUpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumUpgradeView.swift; sourceTree = "<group>"; };
 		AB1004BA229141238536EE02 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -192,7 +188,6 @@
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
 				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
 				9C2035782F2AE58000AF1279 /* ReviewManager.swift */,
-				AA2222222222222222222222 /* PremiumManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -204,7 +199,6 @@
 				58B127DC2A3D3673004040EA /* ClosedDayCalendarView.swift */,
 				58B693D12A3B56E800FF904B /* ClosedDaysView.swift */,
 				58446A272A59493C001CC9D1 /* SettingsView.swift */,
-				AA4444444444444444444444 /* PremiumUpgradeView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -517,8 +511,6 @@
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
 				58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */,
 				529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */,
-				AA1111111111111111111111 /* PremiumManager.swift in Sources */,
-				AA3333333333333333333333 /* PremiumUpgradeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
