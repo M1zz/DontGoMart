@@ -12,7 +12,7 @@ struct ClosedDayCalendarView: View {
     @State private var currentMonth: Int = 0
     @StateObject private var martSelection = MartSelectionManager.shared
 
-    private let weekdaySymbols = ["일", "월", "화", "수", "목", "금", "토"]
+    private let weekdaySymbols = Weekday.symbols
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 4), count: 7)
 
     var body: some View {

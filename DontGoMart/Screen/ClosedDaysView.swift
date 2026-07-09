@@ -325,7 +325,7 @@ struct ClosedDaysView: View {
         let calendar = Calendar.current
         let dayNumber = calendar.component(.day, from: date)
         let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
-        let weekdaySymbol = ["일", "월", "화", "수", "목", "금", "토"][weekdayIndex - 1]
+        let weekdaySymbol = Weekday.symbol(calendarWeekday: weekdayIndex)
         let isSunday = weekdayIndex == 1
         let monthText = "\(calendar.component(.month, from: date))월"
         let isSoon = days <= 3
@@ -426,7 +426,7 @@ struct ClosedDaysView: View {
 
         let calendar = Calendar.current
         let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
-        let weekday = ["일", "월", "화", "수", "목", "금", "토"][weekdayIndex - 1]
+        let weekday = Weekday.symbol(calendarWeekday: weekdayIndex)
         let weekdayName = String(format: String(localized: "%@요일", defaultValue: "%@"), weekday)
 
         let today = calendar.startOfDay(for: Date())

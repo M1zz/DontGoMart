@@ -174,44 +174,7 @@ class MartSelectionManager: ObservableObject {
     }
 
     func getSelectedMartTypes() -> [MartType] {
-        return selectedMartTypes.compactMap { key -> MartType? in
-            if key.hasPrefix("normal_") {
-                let branchString = key.replacingOccurrences(of: "normal_", with: "")
-                switch branchString {
-                case "sunday":
-                    return .normal(type: .sunday)
-                case "wednesday":
-                    return .normal(type: .wednesday)
-                case "mixed":
-                    return .normal(type: .mixed)
-                case "jeju":
-                    return .normal(type: .jeju)
-                default:
-                    return nil
-                }
-            } else if key.hasPrefix("costco_") {
-                let branchString = key.replacingOccurrences(of: "costco_", with: "")
-                switch branchString {
-                case "normal":
-                    return .costco(type: .normal)
-                case "daegu":
-                    return .costco(type: .daegu)
-                case "ilsan":
-                    return .costco(type: .ilsan)
-                case "ulsan":
-                    return .costco(type: .ulsan)
-                default:
-                    return nil
-                }
-            } else if key.hasPrefix("custom_") {
-                // 커스텀 마트 처리
-                let id = String(key.dropFirst(7)) // "custom_" 제거
-                return .custom(id: id)
-            } else if key == "holiday" {
-                return .holiday
-            }
-            return nil
-        }
+        return selectedMartTypes.compactMap { MartType(storageKey: $0) }
     }
 
     private func saveSelection() {
@@ -232,6 +195,38 @@ class MartSelectionManager: ObservableObject {
 }
 
 extension MartType {
+    /// storageKey 문자열로부터 MartType 복원. 저장/위젯 페이로드의 단일 역직렬화 경로.
+    init?(storageKey key: String) {
+        if key.hasPrefix("normal_") {
+            switch key.replacingOccurrences(of: "normal_", with: "") {
+            case "sunday":    self = .normal(type: .sunday)
+            case "wednesday": self = .normal(type: .wednesday)
+            case "mixed":     self = .normal(type: .mixed)
+            case "jeju":      self = .normal(type: .jeju)
+            default: return nil
+            }
+        } else if key.hasPrefix("costco_") {
+            switch key.replacingOccurrences(of: "costco_", with: "") {
+            case "normal": self = .costco(type: .normal)
+            case "daegu":  self = .costco(type: .daegu)
+            case "ilsan":  self = .costco(type: .ilsan)
+            case "ulsan":  self = .costco(type: .ulsan)
+            default: return nil
+            }
+        } else if key.hasPrefix("custom_") {
+            self = .custom(id: String(key.dropFirst(7)))
+        } else if key == "holiday" {
+            self = .holiday
+        } else {
+            return nil
+        }
+    }
+
+    /// storageKey 만 아는 곳(위젯 등)에서 앱과 동일한 대표 색을 얻는다.
+    static func themeColor(forStorageKey key: String) -> Color {
+        MartType(storageKey: key)?.themeColor ?? .gray
+    }
+
     var storageKey: String {
         switch self {
         case .normal(let branch):

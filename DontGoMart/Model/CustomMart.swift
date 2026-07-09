@@ -53,6 +53,21 @@ enum Weekday: Int, Codable, CaseIterable {
         case .saturday: return "토요일"
         }
     }
+
+    /// Calendar.component(.weekday) 값(1=일 … 7=토)으로 Weekday 를 얻는다.
+    init?(calendarWeekday: Int) {
+        self.init(rawValue: calendarWeekday)
+    }
+
+    /// 요일 심볼 한 글자 목록 (일~토). 여러 화면에서 공통 사용.
+    static let symbols: [String] = allCases
+        .sorted { $0.rawValue < $1.rawValue }
+        .map { $0.displayName }
+
+    /// Calendar 의 weekday 값(1=일)에 해당하는 심볼 한 글자.
+    static func symbol(calendarWeekday: Int) -> String {
+        Weekday(rawValue: calendarWeekday)?.displayName ?? ""
+    }
 }
 
 // 휴무 반복 방식

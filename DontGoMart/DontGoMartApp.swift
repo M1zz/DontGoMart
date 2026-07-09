@@ -169,7 +169,7 @@ struct DontGoMartApp: App {
     private func generateBiweeklyTasks(
         forYear year: Int,
         monthRange: Range<Int> = 1..<13,
-        weekdays: [(Calendar.Weekday, Calendar.Ordinal, String)],
+        weekdays: [(Weekday, WeekOfMonth, String)],
         martType: MartType
     ) -> [MetaMartsClosedDays] {
         var tasks: [MetaMartsClosedDays] = []
@@ -191,7 +191,7 @@ struct DontGoMartApp: App {
         return tasks
     }
 
-    func findPatternDay(of weekday: Calendar.Weekday, ordinal: Calendar.Ordinal, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
+    func findPatternDay(of weekday: Weekday, ordinal: WeekOfMonth, inMonth month: Int, year: Int, calendar: Calendar) -> Date? {
         // 날짜 컴포넌트 설정
         var dateComponents = DateComponents(year: year, month: month)
 

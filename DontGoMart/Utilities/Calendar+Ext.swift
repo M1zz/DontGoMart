@@ -7,13 +7,5 @@
 
 import Foundation
 
-extension Calendar {
-    /// 요일
-    enum Weekday: Int {
-        case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
-    }
-    /// 주차
-    enum Ordinal: Int {
-        case first = 1, second, third, fourth, fifth
-    }
-}
+// 요일/주차는 `Weekday`, `WeekOfMonth`(Model/CustomMart.swift) 단일 정의를 사용한다.
+// 예전의 Calendar.Weekday / Calendar.Ordinal 은 중복이라 제거됨.
