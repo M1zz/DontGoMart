@@ -15,6 +15,7 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.notificationHour, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationHour: Int = 9
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
+    @AppStorage(AppStorageKeys.notificationLeadDays, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationLeadDays: Int = NotificationManager.defaultLeadDays
     @AppStorage(AppStorageKeys.isLegacySupporter) var isSupporter: Bool = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
@@ -253,7 +254,18 @@ struct SettingsView: View {
                 }
 
             if isNotificationEnabled {
-                Toggle("장보기 좋은 날 알림", isOn: $beforeDayNotificationEnabled)
+                Picker("알림 시점", selection: $notificationLeadDays) {
+                    ForEach(NotificationManager.leadDayPresets, id: \.self) { days in
+                        Text("\(days)일 전").tag(days)
+                    }
+                }
+                .onChange(of: notificationLeadDays) {
+                    Task {
+                        await notificationManager.setupSmartNotifications(for: tasks)
+                    }
+                }
+
+                Toggle("장보기 좋은 날 알림 (전날)", isOn: $beforeDayNotificationEnabled)
                     .onChange(of: beforeDayNotificationEnabled) {
                         Task {
                             await notificationManager.setupSmartNotifications(for: tasks)
@@ -304,11 +316,21 @@ struct SettingsView: View {
                     }
                 }
 
-                Text("휴무일 3일 전과 1일 전에 알림이 전송됩니다.")
+                Text(notificationDescription)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
         }
+    }
+
+    /// 현재 알림 설정을 사람이 읽기 좋은 한 줄로.
+    private var notificationDescription: String {
+        var text = "휴무일 \(notificationLeadDays)일 전"
+        if beforeDayNotificationEnabled {
+            text += ", 전날"
+        }
+        text += String(format: "에 %02d:%02d 알림이 전송됩니다.", notificationHour, notificationMinute)
+        return text
     }
 
     // MARK: - Private Methods

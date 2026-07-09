@@ -14,10 +14,20 @@ final class NotificationManager {
     
     // MARK: - Configuration Properties
 
-    /// 첫 번째 알림: 며칠 전에 보낼지 (기본: 3일 전)
-    static let firstNotificationDaysBefore: Int = 3
-    /// 두 번째 알림: 며칠 전에 보낼지 (기본: 1일 전)
-    static let secondNotificationDaysBefore: Int = 1
+    /// 선택 가능한 리드타임 프리셋(휴무 며칠 전 알림).
+    static let leadDayPresets: [Int] = [1, 2, 3, 7]
+    /// 기본 리드타임(일).
+    static let defaultLeadDays: Int = 3
+
+    /// 주 알림 리드타임(휴무 며칠 전). 사용자 설정, 미설정 시 기본값.
+    static var leadDays: Int {
+        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+        guard defaults?.object(forKey: AppStorageKeys.notificationLeadDays) != nil else {
+            return defaultLeadDays
+        }
+        let stored = defaults?.integer(forKey: AppStorageKeys.notificationLeadDays) ?? defaultLeadDays
+        return leadDayPresets.contains(stored) ? stored : defaultLeadDays
+    }
 
     /// 사용자 설정 알림 시간 가져오기
     var notificationHour: Int {
@@ -35,13 +45,14 @@ final class NotificationManager {
     // MARK: - Notification Types
 
     enum NotificationType: String, CaseIterable {
-        case firstNotification = "day1_before"
-        case secondNotification = "day2_before"
+        /// 주 알림: 설정한 리드타임(N일 전)에 발송.
+        case primary = "day1_before"
+        /// 전날 '장보기 좋은 날' 알림 (사용자 토글).
         case beforeDayNotification = "before_day"
 
         var title: String {
             switch self {
-            case .firstNotification, .secondNotification:
+            case .primary:
                 return String(localized: "마트 휴무일 안내", defaultValue: "Store Closure Notice")
             case .beforeDayNotification:
                 return String(localized: "🛒 장보기 좋은 날_notif", defaultValue: "🛒 Good Day to Shop")
@@ -50,15 +61,10 @@ final class NotificationManager {
 
         func body(for martType: MartType) -> String {
             let storeName = martType.notificationStoreName
-            let days1 = NotificationManager.firstNotificationDaysBefore
-            let days2 = NotificationManager.secondNotificationDaysBefore
             switch self {
-            case .firstNotification:
+            case .primary:
                 let format = String(localized: "notification_first_body", defaultValue: "%@ will be closed in %lld days.")
-                return String(format: format, storeName, days1)
-            case .secondNotification:
-                let format = String(localized: "notification_second_body", defaultValue: "%@ will be closed in %lld day(s).")
-                return String(format: format, storeName, days2)
+                return String(format: format, storeName, NotificationManager.leadDays)
             case .beforeDayNotification:
                 let format = String(localized: "notification_before_body", defaultValue: "%@ is closed tomorrow. Today is a good day to shop!")
                 return String(format: format, storeName)
@@ -67,10 +73,8 @@ final class NotificationManager {
 
         var daysToSubtract: Int {
             switch self {
-            case .firstNotification:
-                return NotificationManager.firstNotificationDaysBefore
-            case .secondNotification:
-                return NotificationManager.secondNotificationDaysBefore
+            case .primary:
+                return NotificationManager.leadDays
             case .beforeDayNotification:
                 return 1
             }
@@ -160,9 +164,14 @@ final class NotificationManager {
     /// 4단계: 알림 스케줄링 실행
     private func scheduleNotificationsForTasks(_ tasks: [MetaMartsClosedDays]) async -> Int {
         var scheduledCount = 0
-        
+
+        // '장보기 좋은 날'(전날) 알림은 사용자 토글에 따라 포함/제외.
+        let types: [NotificationType] = beforeDayNotificationEnabled
+            ? NotificationType.allCases
+            : [.primary]
+
         for task in tasks {
-            for notificationType in NotificationType.allCases {
+            for notificationType in types {
                 let success = await scheduleNotification(
                     for: task.taskDate,
                     type: notificationType,
@@ -298,19 +307,5 @@ final class NotificationManager {
     /// 모든 알림 취소
     func cancelAllNotifications() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-    }
-    
-    /// UI 표시용 설정 문자열
-    static var settingsDescription: String {
-        let manager = NotificationManager.shared
-        let notifHour = manager.notificationHour
-        let notifMinute = manager.notificationMinute
-
-        let hour = notifHour == 12 ? 12 : (notifHour > 12 ? notifHour - 12 : notifHour)
-        let period = notifHour < 12 ? "AM" : "PM"
-        let timeString = notifMinute == 0 ? "\(period) \(hour):00" : "\(period) \(hour):\(String(format: "%02d", notifMinute))"
-
-        let format = String(localized: "settings_notification_desc", defaultValue: "You'll be notified %lld days and %lld day before closed days at %@.")
-        return String(format: format, firstNotificationDaysBefore, secondNotificationDaysBefore, timeString)
     }
 }

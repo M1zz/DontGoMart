@@ -37,6 +37,8 @@ enum AppStorageKeys {
     static let notificationHour = "notificationHour"
     static let notificationMinute = "notificationMinute"
     static let beforeDayNotificationEnabled = "beforeDayNotificationEnabled"
+    // 주 알림 리드타임(휴무 며칠 전). 미설정 시 기본 3일 전.
+    static let notificationLeadDays = "notificationLeadDays"
     static let selectedMartTypes = "selectedMartTypes"
     // 과거 유료(Pro) 구매자 여부 — 후원자 배지 표시용 (한 번 true 면 유지)
     static let isLegacySupporter = "isLegacySupporter"
