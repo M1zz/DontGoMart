@@ -20,6 +20,15 @@ struct ClosedDaysView: View {
             mainScrollView
                 .navigationTitle("")
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        ShareLink(item: shareText) {
+                            Image(systemName: "square.and.arrow.up")
+                        }
+                        .accessibilityLabel(Text("공유"))
+                        .accessibilityHint(Text("오늘 영업 여부와 다가오는 휴무일을 공유합니다"))
+                    }
+                }
                 .overlay(alignment: .bottomTrailing) {
                     settingsButton
                 }
@@ -394,6 +403,54 @@ struct ClosedDaysView: View {
         )
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text(groupAccessibilityLabel(date: date, marts: marts, days: days)))
+    }
+
+    // MARK: - 공유
+
+    /// 오늘 영업 여부 + 다가오는 휴무일을 사람이 읽기 좋은 텍스트로 만든다 (공유용).
+    private var shareText: String {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let selected = martSelection.getSelectedMartTypes()
+
+        var lines: [String] = ["🛒 돈꼬마트"]
+
+        guard !selected.isEmpty else {
+            lines.append("")
+            lines.append("설정에서 마트를 선택하면 휴무일을 확인할 수 있어요.")
+            return lines.joined(separator: "\n")
+        }
+
+        // 오늘 상태
+        let todayClosed = tasks.filter {
+            selected.contains($0.type) && calendar.isDate($0.taskDate, inSameDayAs: today)
+        }
+        lines.append("")
+        if todayClosed.isEmpty {
+            lines.append("오늘은 영업해요 ✅")
+        } else if todayClosed.count == selected.count {
+            lines.append("오늘은 휴무예요 🚫")
+        } else {
+            let names = todayClosed.map { $0.type.displayName }.joined(separator: ", ")
+            lines.append("오늘 일부 휴무: \(names) ⚠️")
+        }
+
+        // 다가오는 휴무일 (가까운 3건)
+        let groups = upcomingGroups()
+        if !groups.isEmpty {
+            lines.append("")
+            lines.append("다가오는 휴무일")
+            for group in groups.prefix(3) {
+                let month = calendar.component(.month, from: group.date)
+                let day = calendar.component(.day, from: group.date)
+                let names = group.marts.map { $0.type.displayName }.joined(separator: ", ")
+                lines.append("· \(relativeDayPhrase(date: group.date, days: group.days)) (\(month)월 \(day)일) — \(names) 휴무")
+            }
+        }
+
+        lines.append("")
+        lines.append("마트 휴무일, 돈꼬마트로 미리 확인하세요.")
+        return lines.joined(separator: "\n")
     }
 
     /// 다가오는 휴무일을 날짜별로 묶어 정렬된 배열로 반환한다 (가까운 8일치).
