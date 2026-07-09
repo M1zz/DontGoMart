@@ -13,5 +13,6 @@ struct CalendarWidgetBundle: WidgetBundle {
     var body: some Widget {
         HolidayWidget()
         TwoHolidayWidget()
+        SundayStatusWidget()
     }
 }

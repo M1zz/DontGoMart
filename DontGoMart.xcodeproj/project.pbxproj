@@ -51,6 +51,7 @@
 		C359F4F72CFD8F6700F26B1D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */; };
 		C359F4F92CFD8FA700F26B1D /* DDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */; };
 		C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */; };
+		D0075D4200000000000000A2 /* SundayStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4100000000000000A1 /* SundayStatusWidget.swift */; };
 		C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */; };
 		C359F5032CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */; };
 		C359F5052CFDC14F00F26B1D /* DDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */; };
@@ -140,6 +141,7 @@
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
 		C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoHolidayWidget.swift; sourceTree = "<group>"; };
+		D0075D4100000000000000A1 /* SundayStatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundayStatusWidget.swift; sourceTree = "<group>"; };
 		C359F5012CFDC0A800F26B1D /* HolidayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayWidgetProvider.swift; sourceTree = "<group>"; };
 		C359F5042CFDC14F00F26B1D /* DDayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidgetProvider.swift; sourceTree = "<group>"; };
 		C359F5072CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoHolidayWidgetProvider.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				58B693EC2A3B59EE00FF904B /* HolidayWidget.swift */,
 				C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */,
 				C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */,
+				D0075D4100000000000000A1 /* SundayStatusWidget.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				C359F4F42CFD8AD800F26B1D /* Color+Ext.swift in Sources */,
 				C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */,
 				C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */,
+				D0075D4200000000000000A2 /* SundayStatusWidget.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
 				C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				C33C54772D312D53008B625C /* Date+Ext.swift in Sources */,
@@ -715,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -755,7 +759,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -788,7 +792,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -819,7 +823,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart.CalendarWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -841,7 +845,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = hamsik22.DontGoMartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -863,7 +867,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = hamsik22.DontGoMartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;

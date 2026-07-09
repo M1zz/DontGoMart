@@ -1,3 +1,16 @@
+# 이번 주 일요일 영업/휴무 위젯 (홈 + 잠금화면) — 완료
+
+목표: 내가 설정한 마트가 이번 주 일요일에 열면 초록색, 닫으면 빨간색으로 위젯/잠금화면에서 한눈에.
+
+- [x] WidgetEntry: SundayStatusEntry + WidgetClosedDayStore.sundayStatus/nextSunday/hasSelectedMart 헬퍼 (저장된 다가오는 휴무일 목록에서 계산 → 앱 안 켜도 매주 자동 롤오버)
+- [x] SundayStatusWidget.swift: 홈(systemSmall) + 잠금화면(accessoryCircular/Rectangular/Inline), 🟢/🔴 + 영업/휴무 텍스트, VoiceOver 단일 라벨
+- [x] CalendarWidgetBundle 에 등록
+- [x] pbxproj 에 새 파일 추가 (CalendarWidgetExtension 타깃)
+- [x] DontGoMart / CalendarWidgetExtension 빌드 SUCCEEDED
+- 비고: 잠금화면 액세서리는 시스템 틴트로 색이 단색화되므로 SF Symbol(체크/엑스) + "영업/휴무" 텍스트로 구분. 홈 위젯은 초록/빨강 배경 그대로.
+
+---
+
 # 후원자 배지 (과거 Pro 구매자) — 완료
 
 - [x] AppStorageKeys.isLegacySupporter 추가

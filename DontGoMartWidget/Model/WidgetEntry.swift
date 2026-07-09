@@ -25,6 +25,18 @@ struct TwoHolidayEntry: TimelineEntry {
     let holidayText: [String]
 }
 
+/// '이번 주 일요일' 영업/휴무 위젯용 엔트리.
+/// - sundayDate: entry.date 기준 다가오는(이번 주) 일요일
+/// - isClosed: 그 일요일이 선택 마트의 휴무일이면 true (빨강), 아니면 영업(초록)
+/// - hasMart: 선택된 마트가 하나라도 있는지 (없으면 안내 문구 표시)
+struct SundayStatusEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationIntent
+    let sundayDate: Date
+    let isClosed: Bool
+    let hasMart: Bool
+}
+
 /// 앱이 앱그룹에 저장해 둔 다가오는 휴무일 한 건.
 struct UpcomingClosedDay {
     let date: Date
@@ -55,6 +67,32 @@ enum WidgetClosedDayStore {
             result.append(UpcomingClosedDay(date: date, martName: name, martKey: key))
         }
         return result
+    }
+
+    /// 선택된 마트가 하나라도 있는지 (앱그룹에 저장된 선택 목록 기준).
+    static var hasSelectedMart: Bool {
+        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+        let array = defaults?.array(forKey: AppStorageKeys.selectedMartTypes) as? [String]
+        return !(array?.isEmpty ?? true)
+    }
+
+    /// 기준일(day) 이후 가장 가까운 일요일. 오늘이 일요일이면 오늘.
+    static func nextSunday(onOrAfter day: Date, calendar: Calendar = .current) -> Date {
+        let start = calendar.startOfDay(for: day)
+        let weekday = calendar.component(.weekday, from: start) // 1 = 일요일
+        let daysToAdd = (1 - weekday + 7) % 7
+        return calendar.date(byAdding: .day, value: daysToAdd, to: start) ?? start
+    }
+
+    /// 기준일(day) 기준 '이번 주 일요일' 과 그날 선택 마트의 휴무 여부.
+    /// 저장된 다가오는 휴무일 목록에 그 일요일이 있으면 휴무(빨강)로 본다.
+    static func sundayStatus(onOrAfter day: Date) -> (sunday: Date, isClosed: Bool) {
+        let calendar = Calendar.current
+        let sunday = nextSunday(onOrAfter: day, calendar: calendar)
+        let isClosed = upcoming(onOrAfter: day).contains { closed in
+            calendar.isDate(calendar.startOfDay(for: closed.date), inSameDayAs: sunday)
+        }
+        return (sunday, isClosed)
     }
 }
 
