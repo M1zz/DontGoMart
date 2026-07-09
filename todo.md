@@ -1,3 +1,20 @@
+# 대규모 개선 ("다 해줘") — 진행 중
+
+우선순위 순서(저위험→고위험), 각 단계 빌드 검증 후 커밋.
+
+- [ ] B-1 공휴일 자동화: 설날/추석 하드코딩(2027 상한) → 음력(.chinese) 자동 계산
+- [ ] QW-1 Weekday 이중 정의 통합 + 요일 심볼 배열 단일화(3곳 중복 제거)
+- [ ] QW-2 위젯 색상 중복 제거(themeColor vs colorForMartType) → 페이로드에 hex 저장
+- [ ] QW-4 휴면 IAP 삭제(PremiumManager/StoreKitManager/PremiumUpgradeView)
+- [ ] B-3 위젯 탭 → 앱 딥링크(widgetURL)
+- [ ] B-4 알림 리드타임 프리셋
+- [ ] QW-3 위젯 앱그룹 데이터 Codable 블롭으로 정리
+- [ ] B-2 위젯별 특정 매장 지정(Intent 파라미터) — intentdefinition 필요, 가능성 확인
+- [ ] A-core Store 통합(내장+커스텀 규칙 단일 타입) — 대형 리팩터
+- [ ] B-5 watchOS 컴플리케이션 — 새 타깃 필요(Xcode), 별도
+
+---
+
 # 커스텀 마트 휴무 패턴 쉽게 (매주/격주/매월 주차) — 완료
 
 목표: 매주 화요일 휴무를 쉽게 + 격주(2주에 한 번)도 지원. 2·4주차와 격주는 다름(월 무관 14일 주기).

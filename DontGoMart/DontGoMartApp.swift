@@ -221,48 +221,54 @@ struct DontGoMartApp: App {
         return nil
     }
 
-    // 설날/추석 휴무일 생성 (음력 기반)
+    // 설날/추석 휴무일 생성 (음력 자동 계산 — 연도 하드코딩 없이 매년 유효)
     private func generateHolidayTasks(forYear year: Int) -> [MetaMartsClosedDays] {
         var tasks: [MetaMartsClosedDays] = []
-        let calendar = Calendar.current
 
-        // 2024-2026년 설날/추석 날짜 (음력이므로 매년 변동)
-        let holidays: [Int: [(month: Int, day: Int, name: String)]] = [
-            2024: [
-                (2, 10, "설날"),
-                (9, 17, "추석")
-            ],
-            2025: [
-                (1, 29, "설날"),
-                (10, 6, "추석")
-            ],
-            2026: [
-                (2, 17, "설날"),
-                (9, 25, "추석")
-            ],
-            2027: [
-                (2, 6, "설날"),
-                (9, 15, "추석")
+        // 작년 ~ 내후년까지 넉넉히 (위젯 지평선 + 연말 롤오버 대비)
+        for targetYear in (year - 1)...(year + 2) {
+            // 설날: 음력 1월 1일, 추석: 음력 8월 15일
+            let lunarHolidays: [(month: Int, day: Int, name: String)] = [
+                (1, 1, "설날"),
+                (8, 15, "추석")
             ]
-        ]
-
-        // 작년, 올해, 내년 데이터 생성
-        for targetYear in [year - 1, year, year + 1] {
-            if let yearHolidays = holidays[targetYear] {
-                for holiday in yearHolidays {
-                    let dateComponents = DateComponents(year: targetYear, month: holiday.month, day: holiday.day)
-                    if let date = calendar.date(from: dateComponents) {
-                        tasks.append(MetaMartsClosedDays(
-                            type: .holiday,
-                            task: [MartCloseData(title: holiday.name)],
-                            taskDate: date
-                        ))
-                        debugLog("\(targetYear) - \(holiday.name) (\(holiday.month)/\(holiday.day)) 추가")
-                    }
+            for holiday in lunarHolidays {
+                if let date = Self.gregorianDate(lunarMonth: holiday.month, lunarDay: holiday.day, gregorianYear: targetYear) {
+                    tasks.append(MetaMartsClosedDays(
+                        type: .holiday,
+                        task: [MartCloseData(title: holiday.name)],
+                        taskDate: date
+                    ))
+                    debugLog("\(targetYear) - \(holiday.name) 추가")
                 }
             }
         }
 
         return tasks
+    }
+
+    /// 음력(月/日)을 해당 양력 연도의 그레고리력 날짜로 변환.
+    /// Foundation 의 중국식 음력(.chinese)이 한국 설날/추석과 동일한 규칙이라 이를 사용한다.
+    /// 윤달(isLeapMonth)은 제외해 평달 기준으로 찾는다.
+    static func gregorianDate(lunarMonth: Int, lunarDay: Int, gregorianYear: Int) -> Date? {
+        var gregorian = Calendar(identifier: .gregorian)
+        let seoul = TimeZone(identifier: "Asia/Seoul") ?? .current
+        gregorian.timeZone = seoul
+        var lunar = Calendar(identifier: .chinese)
+        lunar.timeZone = seoul
+
+        guard let yearStart = gregorian.date(from: DateComponents(year: gregorianYear, month: 1, day: 1)) else {
+            return nil
+        }
+        for offset in 0..<366 {
+            guard let candidate = gregorian.date(byAdding: .day, value: offset, to: yearStart) else { continue }
+            let comps = lunar.dateComponents([.month, .day, .isLeapMonth], from: candidate)
+            if comps.month == lunarMonth,
+               comps.day == lunarDay,
+               (comps.isLeapMonth ?? false) == false {
+                return gregorian.startOfDay(for: candidate)
+            }
+        }
+        return nil
     }
 }
