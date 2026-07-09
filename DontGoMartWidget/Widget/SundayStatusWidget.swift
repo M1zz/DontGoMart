@@ -197,6 +197,7 @@ struct SundayStatusEntryView: View {
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(display.accessibility)
+        .widgetURL(Utillity.calendarDeepLink)
     }
 }
 

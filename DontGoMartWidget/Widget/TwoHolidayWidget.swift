@@ -94,6 +94,7 @@ struct TwoHolidayEntryView: View {
                 endPoint: .bottomTrailing
             )
         }
+        .widgetURL(Utillity.calendarDeepLink)
     }
 }
 

@@ -12,6 +12,11 @@ enum Utillity {
     static let appName = "돈꼬마트"
     static let restorePurchases = String(localized: "구매복원")
     static let appGroupId = "group.com.leeo.DontGoMart"
+
+    /// 위젯 탭 딥링크. 위젯이 소유 앱을 열 때는 스킴 등록 없이도 onOpenURL 로 전달된다.
+    static let deepLinkScheme = "dontgomart"
+    /// 캘린더 화면으로 여는 딥링크.
+    static let calendarDeepLink = URL(string: "\(deepLinkScheme)://calendar")!
 }
 
 @inlinable

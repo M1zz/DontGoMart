@@ -46,6 +46,7 @@ struct HolidayWidgetEntryView : View {
         .containerBackground(for: .widget) { // 위젯 배경 모디파이어 추가
             LinearGradient(gradient: Gradient(colors: [config.backgroundColor, config.backgroundColor]), startPoint: .top, endPoint: .bottom)
         }
+        .widgetURL(Utillity.calendarDeepLink)
     }
 }
 

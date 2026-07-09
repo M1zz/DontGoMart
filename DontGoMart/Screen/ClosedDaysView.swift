@@ -30,6 +30,13 @@ struct ClosedDaysView: View {
         .sheet(isPresented: $isShowingCalendar) {
             calendarSheet
         }
+        .onOpenURL { url in
+            // 위젯 탭 딥링크 → 캘린더 열기
+            if url.scheme == Utillity.deepLinkScheme, url.host == "calendar" {
+                isShowingSettings = false
+                isShowingCalendar = true
+            }
+        }
     }
 
     // MARK: - Subviews
