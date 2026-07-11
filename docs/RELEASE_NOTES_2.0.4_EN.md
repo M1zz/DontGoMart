@@ -1,7 +1,8 @@
 # DontGoMart 2.0.4 Release Notes
 
 ## New Features
-- **Share**: Instantly share today's open/closed status and upcoming closures with friends and family via Messages, KakaoTalk, and more. (Share button, top-right of the main screen.)
+- **Spread the word (image card sharing)**: Tap the megaphone button at the top right to create a beautiful closure-day card, then share the image via Messages, KakaoTalk, and more — save your friends and family a wasted trip.
+- **Support the developer (tips)**: If the app helped you, you can send a coffee ☕️ / cake 🍰 / meal 🍱 from Settings. Tip as many times as you like — your supporter badge counts every coffee. All features remain free.
 - **"This Sunday" widget**: See at a glance whether your store is open (green) or closed (red) this Sunday — right on your Home Screen and Lock Screen.
 - **Easier custom store closures**: Set them up in three simple ways — Weekly, Biweekly (every 2 weeks), or by week of the month. (Note: "2nd & 4th week" and "every 2 weeks" are calculated differently.)
 - **Choose your reminder timing**: Pick how many days before a closure you want to be notified (1 / 2 / 3 / 7 days). You can also toggle the "good day to shop" (day-before) reminder.
@@ -19,7 +20,8 @@
 
 ## App Store Release Notes (English)
 ```
-· Share: send today's open/closed status and upcoming closures via Messages, KakaoTalk, and more
+· Spread the word: share a beautiful closure-day card image via Messages, KakaoTalk, and more
+· Support the developer: buy us a coffee if the app saved you a trip (all features remain free)
 · New widget: see at a glance whether your store is open (green) or closed (red) this Sunday — on Home Screen and Lock Screen
 · Set custom store closures more easily: Weekly, Biweekly (every 2 weeks), or by week of month
 · Choose your reminder lead time (1/2/3/7 days before) and toggle the day-before reminder
@@ -30,7 +32,8 @@
 
 ## App Store Release Notes (한국어)
 ```
-· 공유하기: 오늘 영업 여부와 다가오는 휴무일을 메시지·카카오톡 등으로 바로 공유
+· 휴무 소식 알려주기: 휴무 알림 이미지 카드를 만들어 메시지·카카오톡으로 바로 공유
+· 개발자 응원하기: 커피 한 잔으로 응원 (모든 기능은 계속 무료)
 · 새 위젯: 이번 주 일요일에 내 마트가 여는지(초록)/쉬는지(빨강) 홈·잠금화면에서 바로 확인
 · 커스텀 마트 휴무를 매주 / 격주(2주에 한 번) / 매월 주차로 더 쉽게 설정
 · 알림 시점(1·2·3·7일 전) 직접 선택 + 전날 알림 켜고 끄기

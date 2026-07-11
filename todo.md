@@ -1,3 +1,62 @@
+# 커피 카드가 안 보이던 문제 (DEBUG 가시성) — 완료
+
+원인: 기본 DontGoMart 스킴에 StoreKit 설정이 없어 상품 0개 → 후원 UI 자동 숨김 (게이트 문제 아님).
+
+- [x] 기본 DontGoMart 스킴 LaunchAction 에 CoffeeConfiguration.storekit 연결 (이제 ⌘R 로도 상품 로드)
+- [x] CoffeeTipPrompt: DEBUG 빌드는 신뢰 게이트(실행 5회·액션 3회) 건너뜀 → 휴무일이면 바로 카드 확인 가능
+- [x] DontGoMartTests: 사라진 generateBiweeklyTasks 참조로 깨져 있던 테스트를 ClosureRuleEngine 기준으로 교체 + SKTestSession 으로 팁 상품 3종(소모성/최저가=커피) 로드 검증 — TEST SUCCEEDED
+- [x] 테스트 타깃 배포 타깃 17.6 → 18.6 (앱과 불일치로 테스트 빌드 실패하던 것 수정)
+- 교훈: SKTestSession 은 XCTest 환경 전용 — 앱 프로세스에서 직접 생성하면 abort 크래시 (시도 후 롤백)
+- 확인 방법: Xcode 에서 DontGoMart 스킴 ⌘R → 오늘이 휴무일이면 메인의 '오늘 휴무예요' 아래 커피 카드 표시
+
+---
+
+# 공유 업그레이드: 텍스트 → 휴무 알림 이미지 카드 — 완료
+
+밋밋한 텍스트 공유 대신, 카드 미리보기 시트 + 이미지 공유로 변경.
+
+- [x] ShareCardView.swift 신규 (pbxproj 수기 등록, 앱 타깃): 브랜드 그라데이션 + 흰 카드 + 휴무 마트 칩, 다크모드 무관 고정 색, 340×380 풀블리드
+- [x] ShareCardSheet: 미리보기 + ImageRenderer(scale 3, opaque) 렌더링 + ShareLink(이미지 + 메시지 텍스트 동봉)
+- [x] ClosedDaysView: sharePayload — 오늘 휴무면 오늘, 아니면 가장 가까운 휴무일(상대 표현 재사용). 마트 미선택 시 기존 텍스트 ShareLink 폴백
+- [x] 공유 버튼 탭 = 유의미 액션(trackMeaningfulAction) — 리뷰/후원 게이트에 반영
+- [x] 툴바 아이콘 버튼 → 핑크 캡슐 라벨 버튼 "📣 주변 사람에게 휴무소식 알려주기" (lineLimit 1 + minimumScaleFactor 0.75 로 작은 화면 대응)
+- [x] 진입 3초 후 문구가 접히고 확성기 아이콘만 남는 스프링 애니메이션 (양 상태 시뮬레이터 스크린샷 검증)
+- [x] DontGoMart 빌드 SUCCEEDED + 시뮬레이터 스크린샷으로 시각 확인
+- 비고: 카드 시각 확인은 ShareCardView.swift 하단 #Preview 로 가능
+
+---
+
+# 반복 후원 (소모성 팁 티어 + 커피 카운트 배지 + iCloud 영속화) — 완료
+
+기존 비소비성 Coffee 는 1회만 결제 가능 → 소모성(Consumable) 팁 3종으로 반복 후원 지원.
+비소비성은 신규 판매 없이 '과거 구매자 배지 복원 앵커' 로만 유지 (하이브리드).
+
+- [x] CoffeeConfiguration.storekit: 소모성 3종 추가 — tip.coffee($0.99)/tip.cake($3.99)/tip.meal($7.99), ko/en 로컬라이즈
+- [x] SupporterManager: legacyProductID + tipProductIDs 분리, tipCount(누적 잔 수), recordTip() — UserDefaults + iCloud KVS 미러링(큰 값 병합)
+- [x] SupporterManager.refresh(): legacy entitlement 복원(카운트 0이면 1잔 인정) + iCloud/로컬 병합 — 소모성은 entitlement 에 안 남으므로 KVS 가 재설치 영속화 담당
+- [x] CoffeeTipStore: 다중 상품 로드(가격순), purchase(_:), Transaction.updates 리스너 + Transaction.unfinished 복구 (구매 중 앱 종료·Ask to Buy 대응)
+- [x] ClosedDaysView 카드: 최저가 팁(커피) 원탭 구매, 감사 카드에 누적 ☕️ ×N 표시
+- [x] SettingsView: 배지에 ☕️ ×N 캡슐, '응원하기' 섹션 상시 노출(후원자 재후원 가능) + 티어 3행(이모지/설명/가격)
+- [x] DontGoMart.entitlements: com.apple.developer.ubiquity-kvstore-identifier 추가 (iCloud KVS)
+- [x] DontGoMart 빌드 SUCCEEDED
+- 남은 일 (사람 작업): App Store Connect 에 소모성 3종 등록 (ID 는 위와 동일하게), Xcode Signing & Capabilities 에서 iCloud Key-Value storage 켜기, 심사 노트에 "developer tip, no features unlocked, supporter badge shown" 기재
+
+---
+
+# 커피 후원 (감사의 순간 타겟) — 완료
+
+전략: 기능이 아니라 감사에 과금. 앱이 헛걸음을 막아준 순간(오늘 휴무 확인)에만 후원을 요청한다.
+
+- [x] CoffeeTipStore: StoreKit 2 로 com.dontgomart.Coffee 상품 로드·구매, 구매 성공 시 후원자 플래그(isLegacySupporter) 설정
+- [x] CoffeeTipPrompt: 노출 판정 — 오늘 휴무 + 미후원자 + 리뷰와 동일 신뢰 게이트(앱 실행 5회·유의미 액션 3회) + '다음에' 후 30일 쿨다운
+- [x] ClosedDaysView: todayStatusCard 바로 아래 커피 카드 (커피 사주기/다음에), 구매 직후 감사 카드 전환, VoiceOver 라벨
+- [x] SettingsView: 미후원자용 '응원하기' 섹션(상시 구매 진입점, 무료 유지 안내 푸터), 구매 후 후원자 배지로 전환 ('초기 후원자' → '후원자' 문구 일반화)
+- [x] ReviewManager: appOpenCount / meaningfulActionsCount 공개 접근자 (후원 게이트 공용)
+- [x] DontGoMart 빌드 SUCCEEDED
+- 비고: 기본 스킴은 StoreKit 설정이 없어 상품 로드 실패 → 후원 UI 자동 숨김(정상). 검증은 DontGoMart-store 스킴 + CoffeeConfiguration.storekit 구매 시뮬레이션
+
+---
+
 # 대규모 개선 ("다 해줘") — 대부분 완료
 
 각 단계 빌드 검증 후 커밋 완료.
