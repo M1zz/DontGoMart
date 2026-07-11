@@ -7,13 +7,19 @@
 
 import SwiftUI
 import WidgetKit
+import StoreKit
 
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
     @State private var isShowingSettings = false
     @State private var isShowingCalendar = false
+    @State private var isShowingShareCard = false
+    @State private var isTipCardDismissed = false
+    /// 공유 버튼 축소 여부 — 진입 직후엔 문구로 어필하고, 잠시 후 확성기 아이콘만 남긴다
+    @State private var isShareButtonCollapsed = false
 
     @StateObject private var martSelection = MartSelectionManager.shared
+    @StateObject private var tipStore = CoffeeTipStore.shared
 
     var body: some View {
         NavigationStack {
@@ -22,11 +28,52 @@ struct ClosedDaysView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
-                        ShareLink(item: shareText) {
-                            Image(systemName: "square.and.arrow.up")
+                        if sharePayload != nil {
+                            Button(action: {
+                                ReviewManager.trackMeaningfulAction()
+                                isShowingShareCard = true
+                            }) {
+                                HStack(spacing: 5) {
+                                    Image(systemName: "megaphone.fill")
+                                        .font(.caption)
+                                        .accessibilityHidden(true)
+                                    if !isShareButtonCollapsed {
+                                        Text("주변 사람에게 휴무소식 알려주기")
+                                            .font(.footnote.bold())
+                                            .lineLimit(1)
+                                            .minimumScaleFactor(0.75)
+                                            .transition(.opacity.combined(with: .scale(scale: 0.6, anchor: .trailing)))
+                                    }
+                                }
+                                .padding(.horizontal, isShareButtonCollapsed ? 0 : 12)
+                                .padding(.vertical, isShareButtonCollapsed ? 0 : 7)
+                                // 접힌 상태는 고정 정사각 프레임 → Capsule 이 정원으로 렌더링되고
+                                // 네비게이션 바 높이에 위아래가 잘리지 않는다
+                                .frame(
+                                    width: isShareButtonCollapsed ? 32 : nil,
+                                    height: isShareButtonCollapsed ? 32 : nil
+                                )
+                                .background(Capsule().fill(Color("Pink")))
+                                .foregroundColor(.white)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel(Text("주변 사람에게 휴무소식 알려주기"))
+                            .accessibilityHint(Text("휴무 알림 카드를 만들어 공유합니다"))
+                            .task {
+                                // 문구를 읽을 시간을 준 뒤 확성기만 남기고 접는다
+                                try? await Task.sleep(for: .seconds(3))
+                                withAnimation(.spring(duration: 0.45, bounce: 0.25)) {
+                                    isShareButtonCollapsed = true
+                                }
+                            }
+                        } else {
+                            // 마트 미선택 등 카드를 만들 수 없을 때는 텍스트 공유로 폴백
+                            ShareLink(item: shareText) {
+                                Image(systemName: "square.and.arrow.up")
+                            }
+                            .accessibilityLabel(Text("공유"))
+                            .accessibilityHint(Text("오늘 영업 여부와 다가오는 휴무일을 공유합니다"))
                         }
-                        .accessibilityLabel(Text("공유"))
-                        .accessibilityHint(Text("오늘 영업 여부와 다가오는 휴무일을 공유합니다"))
                     }
                 }
                 .overlay(alignment: .bottomTrailing) {
@@ -38,6 +85,12 @@ struct ClosedDaysView: View {
         }
         .sheet(isPresented: $isShowingCalendar) {
             calendarSheet
+        }
+        .sheet(isPresented: $isShowingShareCard) {
+            if let payload = sharePayload {
+                ShareCardSheet(payload: payload, messageText: shareText)
+                    .presentationDetents([.large])
+            }
         }
         .onOpenURL { url in
             // 위젯 탭 딥링크 → 캘린더 열기
@@ -54,11 +107,18 @@ struct ClosedDaysView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
                 todayStatusCard
+                if shouldShowTipCard {
+                    coffeeTipCard
+                }
                 nextClosedDateCard
                 calendarButton
                 upcomingClosedDatesCard
             }
             .padding(.vertical)
+        }
+        .task {
+            // 팁 상품을 미리 로드해 둔다 (카드/설정 화면 공용, 소모성이라 후원자도 재구매 가능)
+            await tipStore.loadProductsIfNeeded()
         }
     }
 
@@ -196,6 +256,107 @@ struct ClosedDaysView: View {
             return String(format: String(localized: "오늘 일부 매장만 휴무입니다. %@ 휴무.", defaultValue: "Some marts closed today: %@."), names)
         }
         return String(localized: "오늘 선택한 모든 매장이 영업 중입니다.", defaultValue: "All selected marts are open today.")
+    }
+
+    // MARK: - 커피 후원 카드 (감사의 순간에만)
+
+    /// 오늘 선택한 매장 중 하나라도 휴무인지 — 앱이 헛걸음을 막아준 '감사의 순간' 판정.
+    private var todayHasClosedMart: Bool {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let selected = martSelection.getSelectedMartTypes()
+        return tasks.contains { task in
+            selected.contains(task.type) && calendar.isDate(task.taskDate, inSameDayAs: today)
+        }
+    }
+
+    private var shouldShowTipCard: Bool {
+        // 방금 후원한 직후에는 감사 인사를 보여준다
+        if tipStore.justThanked { return true }
+        guard !isTipCardDismissed, tipStore.coffeeTip != nil else { return false }
+        return CoffeeTipPrompt.shouldShow(todayHasClosedMart: todayHasClosedMart)
+    }
+
+    private var coffeeTipCard: some View {
+        VStack(spacing: 12) {
+            if tipStore.justThanked {
+                HStack(spacing: 16) {
+                    Text("☕️")
+                        .font(.system(size: 40))
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("감사합니다!")
+                            .font(.headline)
+                        Text("보내주신 응원이 큰 힘이 됩니다. (지금까지 ☕️ ×\(SupporterManager.tipCount))")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                    Spacer()
+                }
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel(Text("후원해주셔서 감사합니다. 지금까지 커피 \(SupporterManager.tipCount)잔을 보내주셨습니다."))
+            } else {
+                HStack(spacing: 16) {
+                    Text("☕️")
+                        .font(.system(size: 40))
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("오늘 헛걸음을 막아드렸어요")
+                            .font(.headline)
+                        Text("도움이 되셨다면 커피 한 잔으로 응원해주세요.")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                    Spacer()
+                }
+
+                HStack(spacing: 10) {
+                    Button(action: {
+                        if let coffee = tipStore.coffeeTip {
+                            Task { await tipStore.purchase(coffee) }
+                        }
+                    }) {
+                        HStack(spacing: 6) {
+                            if tipStore.isPurchasing {
+                                ProgressView()
+                                    .tint(.white)
+                            }
+                            Text("커피 사주기 \(tipStore.coffeeTip?.displayPrice ?? "")")
+                                .font(.subheadline.bold())
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(Capsule().fill(Color.brown))
+                        .foregroundColor(.white)
+                    }
+                    .disabled(tipStore.isPurchasing)
+                    .accessibilityLabel(Text("커피 사주기, \(tipStore.coffeeTip?.displayPrice ?? "")"))
+                    .accessibilityHint(Text("개발자에게 커피 한 잔 값을 후원합니다"))
+
+                    Button(action: dismissTipCard) {
+                        Text("다음에")
+                            .font(.subheadline)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 16)
+                            .foregroundColor(.secondary)
+                    }
+                    .accessibilityHint(Text("후원 카드를 닫습니다. 30일 동안 다시 표시되지 않습니다"))
+                }
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color.brown.opacity(0.1))
+        )
+        .padding(.horizontal)
+    }
+
+    private func dismissTipCard() {
+        CoffeeTipPrompt.markDismissed()
+        withAnimation {
+            isTipCardDismissed = true
+        }
     }
 
     // MARK: - 다음 휴무일
@@ -406,6 +567,40 @@ struct ClosedDaysView: View {
     }
 
     // MARK: - 공유
+
+    /// 공유 카드 데이터. 오늘 휴무면 오늘을, 아니면 가장 가까운 휴무일을 카드로 만든다.
+    /// 마트 미선택 등으로 만들 수 없으면 nil (텍스트 공유로 폴백).
+    private var sharePayload: ShareCardPayload? {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let selected = martSelection.getSelectedMartTypes()
+        guard !selected.isEmpty else { return nil }
+
+        let todayClosed = tasks.filter { task in
+            selected.contains(task.type) && calendar.isDate(task.taskDate, inSameDayAs: today)
+        }
+        if !todayClosed.isEmpty {
+            return ShareCardPayload(
+                phrase: String(localized: "오늘", defaultValue: "Today"),
+                dateText: formattedCardDate(today),
+                marts: todayClosed.map { ($0.type.displayName, $0.type.themeColor) },
+                isToday: true
+            )
+        }
+
+        guard let next = upcomingGroups().first else { return nil }
+        return ShareCardPayload(
+            phrase: relativeDayPhrase(date: next.date, days: next.days),
+            dateText: formattedCardDate(next.date),
+            marts: next.marts.map { ($0.type.displayName, $0.type.themeColor) },
+            isToday: false
+        )
+    }
+
+    /// 카드용 날짜 표기: "7월 13일 일요일" (로케일 자동 대응)
+    private func formattedCardDate(_ date: Date) -> String {
+        date.formatted(.dateTime.month().day().weekday(.wide))
+    }
 
     /// 오늘 영업 여부 + 다가오는 휴무일을 사람이 읽기 좋은 텍스트로 만든다 (공유용).
     private var shareText: String {

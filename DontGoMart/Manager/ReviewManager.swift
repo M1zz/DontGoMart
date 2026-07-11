@@ -25,6 +25,15 @@ enum ReviewManager {
 
     // MARK: - 앱 실행 횟수 관리
 
+    /// 커피 후원 카드(CoffeeTipPrompt)도 리뷰와 동일한 신뢰 게이트를 쓰도록 공개한다.
+    static var appOpenCount: Int {
+        UserDefaults.standard.integer(forKey: appOpenCountKey)
+    }
+
+    static var meaningfulActionsCount: Int {
+        UserDefaults.standard.integer(forKey: meaningfulActionsCountKey)
+    }
+
     static func incrementAppOpenCount() {
         let defaults = UserDefaults.standard
         let currentCount = defaults.integer(forKey: appOpenCountKey)

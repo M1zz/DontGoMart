@@ -4,5 +4,11 @@
 <dict>
 	<key>coffee</key>
 	<string>com.dontgomart.Coffee</string>
+	<key>tipCoffee</key>
+	<string>com.dontgomart.tip.coffee</string>
+	<key>tipCake</key>
+	<string>com.dontgomart.tip.cake</string>
+	<key>tipMeal</key>
+	<string>com.dontgomart.tip.meal</string>
 </dict>
 </plist>

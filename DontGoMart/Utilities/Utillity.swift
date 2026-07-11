@@ -38,8 +38,12 @@ enum AppStorageKeys {
     // 주 알림 리드타임(휴무 며칠 전). 미설정 시 기본 3일 전.
     static let notificationLeadDays = "notificationLeadDays"
     static let selectedMartTypes = "selectedMartTypes"
-    // 과거 유료(Pro) 구매자 여부 — 후원자 배지 표시용 (한 번 true 면 유지)
+    // 후원자(커피 IAP 구매) 여부 — 후원자 배지 표시용 (한 번 true 면 유지)
     static let isLegacySupporter = "isLegacySupporter"
+    // 누적 후원(팁) 횟수 — 배지에 ☕️ ×N 으로 표시. iCloud KVS 에도 미러링해 재설치에도 유지
+    static let tipCount = "supporterTipCount"
+    // 커피 후원 카드에서 '다음에' 를 누른 시각 (TimeInterval) — 30일 쿨다운용
+    static let tipCardDismissedAt = "tipCardDismissedAt"
     // 다가오는 휴무일 목록 (위젯이 매일 스스로 '오늘 이후 다음 휴무일' 을 골라
     // D-Day 를 다시 계산할 수 있도록 앱이 미리 저장해 둔다. [UpcomingClosedDay] JSON)
     static let widgetUpcomingList = "widgetUpcomingList" // Data (JSON)

@@ -8,6 +8,7 @@
 import SwiftUI
 import WidgetKit
 import UIKit
+import StoreKit
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
@@ -17,9 +18,11 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
     @AppStorage(AppStorageKeys.notificationLeadDays, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationLeadDays: Int = NotificationManager.defaultLeadDays
     @AppStorage(AppStorageKeys.isLegacySupporter) var isSupporter: Bool = false
+    @AppStorage(AppStorageKeys.tipCount) var tipCount: Int = 0
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var customMartManager = CustomMartManager.shared
+    @StateObject private var tipStore = CoffeeTipStore.shared
 
     private let notificationManager = NotificationManager.shared
     @State private var showingPermissionAlert = false
@@ -36,6 +39,7 @@ struct SettingsView: View {
                 martSelectionSection
                 customMartSection
                 notificationSection
+                supportSection
             }
             .navigationTitle("매장선택")
             .toolbar {
@@ -50,6 +54,9 @@ struct SettingsView: View {
                 Task {
                     await checkAndSyncNotificationStatus()
                 }
+                Task {
+                    await tipStore.loadProductsIfNeeded()
+                }
             }
             .background(
                 NotificationPermissionAlert(isPresented: $showingPermissionAlert)
@@ -60,7 +67,7 @@ struct SettingsView: View {
         }
     }
 
-    // MARK: - Supporter Section (과거 Pro 구매자 감사 배지)
+    // MARK: - Supporter Section (커피 후원자 감사 배지)
 
     private var supporterSection: some View {
         Section {
@@ -69,8 +76,17 @@ struct SettingsView: View {
                     .font(.title2)
                     .foregroundColor(.brown)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("초기 후원자")
-                        .font(.subheadline.bold())
+                    HStack(spacing: 6) {
+                        Text("후원자")
+                            .font(.subheadline.bold())
+                        if tipCount > 0 {
+                            Text("☕️ ×\(tipCount)")
+                                .font(.caption.bold())
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 2)
+                                .background(Capsule().fill(Color.brown.opacity(0.15)))
+                        }
+                    }
                     Text("앱을 응원해주셔서 감사합니다 ☕️")
                         .font(.caption)
                         .foregroundColor(.secondary)
@@ -79,7 +95,68 @@ struct SettingsView: View {
             }
             .padding(.vertical, 4)
             .accessibilityElement(children: .ignore)
-            .accessibilityLabel(Text("초기 후원자. 앱을 응원해주셔서 감사합니다."))
+            .accessibilityLabel(Text("후원자. 지금까지 커피 \(tipCount)잔. 앱을 응원해주셔서 감사합니다."))
+        }
+    }
+
+    // MARK: - Support Section (팁 후원 — 소모성이라 여러 번 가능)
+
+    private var supportSection: some View {
+        Section(
+            header: Text("응원하기"),
+            footer: Text("모든 기능은 계속 무료예요. 후원은 순수한 응원이며, 몇 번이든 보낼 수 있어요.")
+        ) {
+            if tipStore.tipProducts.isEmpty {
+                Text("후원 상품을 불러오는 중이에요")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            } else {
+                ForEach(tipStore.tipProducts, id: \.id) { product in
+                    tipRow(for: product)
+                }
+            }
+        }
+    }
+
+    private func tipRow(for product: Product) -> some View {
+        Button(action: {
+            Task { await tipStore.purchase(product) }
+        }) {
+            HStack(spacing: 12) {
+                Text(tipEmoji(for: product.id))
+                    .font(.title2)
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(product.displayName)
+                        .font(.subheadline.bold())
+                        .foregroundColor(.primary)
+                    Text(product.description)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+                if tipStore.isPurchasing {
+                    ProgressView()
+                } else {
+                    Text(product.displayPrice)
+                        .font(.subheadline.bold())
+                        .foregroundColor(.brown)
+                }
+            }
+            .padding(.vertical, 4)
+        }
+        .disabled(tipStore.isPurchasing)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("\(product.displayName), \(product.displayPrice)"))
+        .accessibilityHint(Text("개발자에게 후원합니다"))
+        .accessibilityAddTraits(.isButton)
+    }
+
+    private func tipEmoji(for productID: String) -> String {
+        switch productID {
+        case "com.dontgomart.tip.cake": return "🍰"
+        case "com.dontgomart.tip.meal": return "🍱"
+        default: return "☕️"
         }
     }
 
