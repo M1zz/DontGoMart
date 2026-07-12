@@ -63,7 +63,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../DontGoMart/CoffeeConfiguration.storekit">
+         identifier = "../../../DontGoMart/CoffeeConfiguration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

@@ -66,6 +66,8 @@ class CustomMartManager: ObservableObject {
         customMarts.removeAll { $0.id == mart.id }
         saveCustomMarts()
         updateTasksWithCustomMarts()
+        // 선택 목록에 죽은 키가 남지 않도록 함께 정리
+        MartSelectionManager.shared.setSelected(false, for: .custom(id: mart.id.uuidString))
     }
 
     // 커스텀 마트의 휴무일을 tasks에 통합

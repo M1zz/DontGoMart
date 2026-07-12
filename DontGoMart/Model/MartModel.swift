@@ -173,6 +173,18 @@ class MartSelectionManager: ObservableObject {
         return selectedMartTypes.contains(martType.storageKey)
     }
 
+    /// 토글이 아니라 목표 상태를 지정한다. on/off 스위치처럼 현재 상태와 무관하게
+    /// 원하는 값으로 맞춰야 하는 곳(커스텀 마트 토글 등)에서 사용한다.
+    func setSelected(_ isSelected: Bool, for martType: MartType) {
+        let key = martType.storageKey
+        if isSelected {
+            selectedMartTypes.insert(key)
+        } else {
+            selectedMartTypes.remove(key)
+        }
+        saveSelection()
+    }
+
     func getSelectedMartTypes() -> [MartType] {
         return selectedMartTypes.compactMap { MartType(storageKey: $0) }
     }

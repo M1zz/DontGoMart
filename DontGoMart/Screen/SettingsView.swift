@@ -266,9 +266,8 @@ struct SettingsView: View {
                                 updatedMart.isEnabled = isOn
                                 customMartManager.updateCustomMart(updatedMart)
 
-                                if isOn {
-                                    martSelection.toggleMart(.custom(id: mart.id.uuidString))
-                                }
+                                // toggleMart 를 쓰면 껐다 켤 때 선택이 어긋나므로 목표 상태로 직접 맞춘다
+                                martSelection.setSelected(isOn, for: .custom(id: mart.id.uuidString))
                                 WidgetManager.shared.updateWidget()
                             }
                         )) {

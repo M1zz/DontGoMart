@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- 나머지 Info.plist 항목은 GENERATE_INFOPLIST_FILE 로 자동 생성되고 이 파일과 병합된다.
+	     여기에는 빌드 설정(INFOPLIST_KEY_*)으로 표현할 수 없는 키만 둔다. -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<!-- 인스타 스토리 공유 가능 여부 확인(canOpenURL)용 -->
+		<string>instagram-stories</string>
+	</array>
+</dict>
+</plist>

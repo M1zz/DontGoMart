@@ -114,6 +114,14 @@ struct ShareCardSheet: View {
 
     @Environment(\.dismiss) private var dismiss
     @State private var renderedImage: UIImage?
+    @State private var showsInstagramUnavailableAlert = false
+
+    /// 인스타 스토리 공유 노출 여부. Meta 앱 ID 발급 등 준비가 끝나면 다시 켠다.
+    private static let isInstagramShareEnabled = false
+
+    /// Meta 개발자 콘솔에서 발급받은 앱 ID. 최신 인스타그램은 source_application 이
+    /// 없으면 공유를 거부할 수 있다. 비워두면 파라미터 없이 시도한다.
+    private static let metaAppID = ""
 
     var body: some View {
         NavigationStack {
@@ -129,23 +137,29 @@ struct ShareCardSheet: View {
                 Spacer(minLength: 0)
 
                 if let image = renderedImage {
-                    ShareLink(
-                        item: Image(uiImage: image),
-                        message: Text(messageText),
-                        preview: SharePreview("마트 휴무일 알림", image: Image(uiImage: image))
-                    ) {
-                        HStack(spacing: 8) {
-                            Image(systemName: "paperplane.fill")
-                            Text("휴무 소식 알리기")
-                                .font(.headline)
+                    VStack(spacing: 10) {
+                        ShareLink(
+                            item: Image(uiImage: image),
+                            message: Text(messageText),
+                            preview: SharePreview("마트 휴무일 알림", image: Image(uiImage: image))
+                        ) {
+                            HStack(spacing: 8) {
+                                Image(systemName: "paperplane.fill")
+                                Text("휴무 소식 알리기")
+                                    .font(.headline)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Capsule().fill(Color("Pink")))
+                            .foregroundColor(.white)
                         }
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 14)
-                        .background(Capsule().fill(Color("Pink")))
-                        .foregroundColor(.white)
+                        .accessibilityHint(Text("휴무 알림 카드 이미지를 공유합니다"))
+
+                        if Self.isInstagramShareEnabled {
+                            instagramShareButton(image: image)
+                        }
                     }
                     .padding(.horizontal, 24)
-                    .accessibilityHint(Text("휴무 알림 카드 이미지를 공유합니다"))
                 } else {
                     ProgressView("카드를 준비하고 있어요")
                         .padding(.vertical, 14)
@@ -160,7 +174,66 @@ struct ShareCardSheet: View {
                 }
             }
             .onAppear(perform: renderCard)
+            .alert("인스타그램이 없어요", isPresented: $showsInstagramUnavailableAlert) {
+                Button("확인", role: .cancel) {}
+            } message: {
+                Text("인스타그램 앱이 설치되어 있어야 스토리로 공유할 수 있어요.")
+            }
         }
+    }
+
+    /// 인스타 스토리 공유 버튼 (isInstagramShareEnabled 가 true 일 때만 노출).
+    private func instagramShareButton(image: UIImage) -> some View {
+        Button(action: { shareToInstagramStories(image: image) }) {
+            HStack(spacing: 8) {
+                Image(systemName: "camera.circle.fill")
+                Text("인스타 스토리에 공유")
+                    .font(.headline)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 14)
+            .background(
+                Capsule().fill(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.51, green: 0.23, blue: 0.71),
+                            Color(red: 0.91, green: 0.26, blue: 0.42),
+                            Color(red: 0.99, green: 0.55, blue: 0.24),
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+            )
+            .foregroundColor(.white)
+        }
+        .accessibilityHint(Text("휴무 알림 카드를 인스타그램 스토리로 공유합니다"))
+    }
+
+    /// 렌더링된 카드를 스티커로 얹어 인스타그램 스토리 편집기로 보낸다.
+    /// 배경은 카드와 같은 톤의 그라데이션을 지정해 스토리 전체가 브랜드 색으로 채워진다.
+    private func shareToInstagramStories(image: UIImage) {
+        var urlString = "instagram-stories://share"
+        if !Self.metaAppID.isEmpty {
+            urlString += "?source_application=\(Self.metaAppID)"
+        }
+        guard let url = URL(string: urlString),
+              UIApplication.shared.canOpenURL(url),
+              let imageData = image.pngData() else {
+            showsInstagramUnavailableAlert = true
+            return
+        }
+
+        let items: [[String: Any]] = [[
+            "com.instagram.sharedSticker.stickerImage": imageData,
+            "com.instagram.sharedSticker.backgroundTopColor": "#FF6B94",
+            "com.instagram.sharedSticker.backgroundBottomColor": "#FA4A6B",
+        ]]
+        // 인스타그램이 페이스트보드에서 읽어가는 방식이라 만료 시간을 짧게 둔다
+        UIPasteboard.general.setItems(items, options: [
+            .expirationDate: Date().addingTimeInterval(60 * 5)
+        ])
+        UIApplication.shared.open(url)
     }
 
     /// 카드를 3배 해상도 이미지로 렌더링한다 (공유 시 선명하게).
