@@ -16,11 +16,11 @@
 </p>
 
 <p align="center">
-  <a href="https://m1zz.github.io/Klosed/">Landing Page</a>
+  <a href="https://m1zz.github.io/DontGoMart/">Landing Page</a>
   ·
-  <a href="https://m1zz.github.io/Klosed/support.html">Support</a>
+  <a href="https://m1zz.github.io/DontGoMart/support.html">Support</a>
   ·
-  <a href="https://m1zz.github.io/Klosed/privacy.html">Privacy Policy</a>
+  <a href="https://m1zz.github.io/DontGoMart/privacy.html">Privacy Policy</a>
 </p>
 
 ---
@@ -48,13 +48,13 @@ Klosed는 한국 대형마트의 의무 휴무일을 추적하는 iOS 앱입니�
 
 앱 소개 랜딩 페이지가 GitHub Pages로 배포되어 있습니다.
 
-**https://m1zz.github.io/Klosed/**
+**https://m1zz.github.io/DontGoMart/**
 
 | 페이지 | URL |
 |---|---|
-| 랜딩 | https://m1zz.github.io/Klosed/ |
-| 지원 (Support) | https://m1zz.github.io/Klosed/support.html |
-| 개인정보처리방침 (Privacy Policy) | https://m1zz.github.io/Klosed/privacy.html |
+| 랜딩 | https://m1zz.github.io/DontGoMart/ |
+| 지원 (Support) | https://m1zz.github.io/DontGoMart/support.html |
+| 개인정보처리방침 (Privacy Policy) | https://m1zz.github.io/DontGoMart/privacy.html |
 
 - 한국어/영어 전환 지원
 - 다크 모드/라이트 모드 자동 대응
