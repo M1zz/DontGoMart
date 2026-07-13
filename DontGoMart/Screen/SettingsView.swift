@@ -70,6 +70,8 @@ struct SettingsView: View {
                 Text(tipStore.userMessage ?? "")
             }
         }
+        // 설정 시트에서 후원했을 때의 감사 연출 (시트가 메인 화면을 덮으므로 여기에도 부착)
+        .tipCelebrationOverlay()
     }
 
     /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
@@ -178,11 +180,7 @@ struct SettingsView: View {
     }
 
     private func tipEmoji(for productID: String) -> String {
-        switch productID {
-        case "com.dontgomart.tip.cake": return "🍰"
-        case "com.dontgomart.tip.meal": return "🍱"
-        default: return "☕️"
-        }
+        SupporterManager.emoji(for: productID)
     }
 
     /// ASC 메타데이터가 비었거나 제품 ID 그대로면 로컬 이름으로 대체한다

@@ -104,6 +104,8 @@ struct ClosedDaysView: View {
         } message: {
             Text(tipStore.userMessage ?? "")
         }
+        // 메인 화면 커피 카드에서 후원했을 때의 감사 연출 (콘페티 + 감사 카드)
+        .tipCelebrationOverlay()
     }
 
     /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)

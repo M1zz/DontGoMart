@@ -7,6 +7,7 @@
 
 import Foundation
 import StoreKit
+import UIKit
 
 /// 후원자 판별과 누적 후원 횟수를 관리한다.
 ///
@@ -32,6 +33,15 @@ enum SupporterManager {
     /// 후원으로 인정하는 전체 상품 ID
     static var allSupporterProductIDs: Set<String> {
         Set(tipProductIDs).union([legacyProductID])
+    }
+
+    /// 상품별 대표 이모지 (목록 행·구매 성공 연출 공용)
+    static func emoji(for productID: String) -> String {
+        switch productID {
+        case "com.dontgomart.tip.cake": return "🍰"
+        case "com.dontgomart.tip.meal": return "🍱"
+        default: return "☕️"
+        }
     }
 
     /// 현재 후원자 배지를 표시해야 하는지.
@@ -122,6 +132,11 @@ final class CoffeeTipStore: ObservableObject {
     @Published private(set) var isPurchasing = false
     /// 방금 구매를 마쳤을 때 잠깐 감사 메시지를 보여주기 위한 플래그.
     @Published private(set) var justThanked = false
+    /// 구매 성공 연출 트리거 — 성공할 때마다 1 증가하고, 화면은 onChange 로
+    /// 콘페티 + 감사 카드(TipCelebrationView)를 재생한다 (심사 2.1 '구매 무반응' 대응).
+    @Published private(set) var celebrationCount = 0
+    /// 방금 후원받은 상품 ID (연출 이모지 선택용)
+    @Published private(set) var lastTippedProductID: String?
     /// 상품 로드 진행 상태. 설정 화면은 실패 시 '다시 시도' 를 노출한다
     /// (심사 리젝 2.1(b) 대응 — 로드 실패로 화면이 무반응처럼 보이지 않게).
     enum ProductLoadState { case loading, loaded, failed }
@@ -178,6 +193,7 @@ final class CoffeeTipStore: ObservableObject {
                     await transaction.finish()
                     SupporterManager.recordTip()
                     justThanked = true
+                    celebrate(productID: transaction.productID)
                 } else {
                     userMessage = "구매를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
                 }
@@ -205,8 +221,24 @@ final class CoffeeTipStore: ObservableObject {
         if SupporterManager.tipProductIDs.contains(transaction.productID) {
             SupporterManager.recordTip()
             justThanked = true
+            celebrate(productID: transaction.productID)
         }
         await transaction.finish()
+    }
+
+    /// 구매 성공 순간의 즉각 피드백: 연출 트리거 + 성공 햅틱 + VoiceOver 안내.
+    /// 시각 연출(콘페티·감사 카드)은 `.tipCelebrationOverlay()` 를 붙인 화면이 재생한다.
+    private func celebrate(productID: String) {
+        lastTippedProductID = productID
+        celebrationCount += 1
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        UIAccessibility.post(
+            notification: .announcement,
+            argument: String(
+                localized: "후원해주셔서 정말 감사합니다. 보내주신 응원이 큰 힘이 됩니다.",
+                defaultValue: "Thank you so much for your support. It means a lot."
+            )
+        )
     }
 }
 

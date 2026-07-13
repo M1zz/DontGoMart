@@ -62,6 +62,7 @@
 		C3F7E7342D2CACF5003B7762 /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */; };
 		D0075D4200000000000000A2 /* SundayStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4100000000000000A1 /* SundayStatusWidget.swift */; };
 		D0075D4400000000000000A4 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4300000000000000A3 /* ShareCardView.swift */; };
+		D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4500000000000000A5 /* TipCelebrationView.swift */; };
 		D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C229952E0C2ABB00969839 /* NotificationManager.swift */; };
 		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
@@ -147,6 +148,7 @@
 		C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
 		D0075D4100000000000000A1 /* SundayStatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundayStatusWidget.swift; sourceTree = "<group>"; };
 		D0075D4300000000000000A3 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		D0075D4500000000000000A5 /* TipCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCelebrationView.swift; sourceTree = "<group>"; };
 		D1C229952E0C2ABB00969839 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,7 @@
 				58B693D12A3B56E800FF904B /* ClosedDaysView.swift */,
 				58446A272A59493C001CC9D1 /* SettingsView.swift */,
 				D0075D4300000000000000A3 /* ShareCardView.swift */,
+				D0075D4500000000000000A5 /* TipCelebrationView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
 				D0075D4400000000000000A4 /* ShareCardView.swift in Sources */,
+				D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */,
 				C359F4F02CFD724000F26B1D /* WidgetEntry.swift in Sources */,
 				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,

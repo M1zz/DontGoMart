@@ -1,3 +1,27 @@
+# App Store 리젝 2.1 대응 (3차) — 소모성 구매 시 사용 가능한 반응 추가 (2026-07-14, 진행 중)
+
+심사 지적: 소모성 3종(coffee/cake/meal) 구매 시 앱 내에서 '사용'되는 게 없어 보임.
+대응: 구매 성공 순간 즉시 보이는 감사 연출(콘페티 + 전면 감사 카드 + 성공 햅틱 + VoiceOver 안내)을 추가.
+기존의 후원자 배지(☕️ ×N)·감사 카드와 합쳐 "구매 → 즉각 반응 + 영구 배지" 구조로 소명.
+
+- [x] CoffeeTipStore: celebrationCount 트리거 + lastTippedProductID + celebrate() (성공 햅틱·VoiceOver 안내, 직접 구매/Transaction.updates 양쪽 경로)
+- [x] TipCelebrationView.swift 신규 (pbxproj 수기 등록): TimelineView+Canvas 콘페티 60조각(색종이+이모지) + 스프링 감사 카드, 탭 즉시 닫기 + 4.5초 자동 닫힘, Reduce Motion 시 콘페티 생략
+- [x] SupporterManager.emoji(for:) 공용화 (SettingsView tipEmoji 위임)
+- [x] ClosedDaysView·SettingsView 에 .tipCelebrationOverlay() 부착 (설정 시트가 메인을 덮으므로 양쪽)
+- [x] 빌드 SUCCEEDED + 테스트 SUCCEEDED (iPhone 17 Pro 시뮬레이터)
+- [ ] Resolution Center 회신 + 새 빌드 재제출 (사람 작업)
+
+---
+
+# 지원·개인정보 페이지 GitHub Pages 배포 (2026-07-14)
+
+- [x] docs/support.html 신규 — FAQ(휴무일 정확성/알림/위젯/후원/환불) + 문의 이메일, KO/EN 토글·다크모드 (privacy.html 스타일 통일)
+- [x] docs/index.html 푸터에 '지원' 링크 추가
+- [x] README: 상단 배지 링크 + Landing Page 섹션에 지원/개인정보처리방침 URL 표 추가 (ASC 지원 URL·개인정보 URL 용)
+- [ ] dev 푸시 → Pages 자동 배포 확인 (Pages 소스: dev /docs, https://m1zz.github.io/Klosed/)
+
+---
+
 # App Store 리젝 2.1(b) 대응 — 후원 IAP 무반응 (2026-07-13, 진행 중)
 
 2.0.5 (1) 리젝: "Support Us 상품 무반응". 진단(코드 확인 완료): 심사 샌드박스에서 팁 상품 로드가 실패하면 설정 '응원하기' 섹션이 "불러오는 중" 문구로 영구 대기하고, 로드돼도 구매 실패 시 debugLog 만 남겨 화면 피드백이 없음 → 심사관에게 '무반응'으로 보임. 근본 원인 후보: ASC 에 소모성 3종 미등록/메타데이터 미완성(아래 '남은 일' 참고) 또는 심사용 스크린샷 누락, 버전에 IAP 미첨부.
