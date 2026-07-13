@@ -17,6 +17,9 @@ struct ClosedDaysView: View {
     @State private var isTipCardDismissed = false
     /// 공유 버튼 축소 여부 — 진입 직후엔 문구로 어필하고, 잠시 후 확성기 아이콘만 남긴다
     @State private var isShareButtonCollapsed = false
+    /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) 표시 여부
+    @State private var isShowingSupporterThanks = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var tipStore = CoffeeTipStore.shared
@@ -104,8 +107,31 @@ struct ClosedDaysView: View {
         } message: {
             Text(tipStore.userMessage ?? "")
         }
+        // 후원자 감사 리마인더 — 휴무일에 가끔(1년에 ~3번) '기부의 감사함을 잊지 않았다' 축하
+        .overlay {
+            if isShowingSupporterThanks {
+                TipCelebrationView(
+                    mode: .supporterReminder,
+                    showsConfetti: !reduceMotion,
+                    onDismiss: dismissSupporterThanks,
+                    onTipAgain: tipStore.coffeeTip == nil ? nil : {
+                        dismissSupporterThanks()
+                        if let coffee = tipStore.coffeeTip {
+                            Task { await tipStore.purchase(coffee) }
+                        }
+                    }
+                )
+                .transition(.opacity)
+            }
+        }
         // 메인 화면 커피 카드에서 후원했을 때의 감사 연출 (콘페티 + 감사 카드)
         .tipCelebrationOverlay()
+    }
+
+    private func dismissSupporterThanks() {
+        withAnimation(.easeOut(duration: 0.35)) {
+            isShowingSupporterThanks = false
+        }
     }
 
     /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
@@ -134,6 +160,14 @@ struct ClosedDaysView: View {
         .task {
             // 팁 상품을 미리 로드해 둔다 (카드/설정 화면 공용, 소모성이라 후원자도 재구매 가능)
             await tipStore.loadProductsIfNeeded()
+
+            // 후원자에게는 휴무일에 가끔 감사 인사를 다시 전한다 (표시 즉시 주기 기록)
+            if SupporterThanksPrompt.shouldShow(todayHasClosedMart: todayHasClosedMart) {
+                SupporterThanksPrompt.markShown()
+                withAnimation(.easeIn(duration: 0.2)) {
+                    isShowingSupporterThanks = true
+                }
+            }
         }
     }
 

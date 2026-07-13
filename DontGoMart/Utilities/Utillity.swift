@@ -44,6 +44,8 @@ enum AppStorageKeys {
     static let tipCount = "supporterTipCount"
     // 커피 후원 카드에서 '다음에' 를 누른 시각 (TimeInterval) — 30일 쿨다운용
     static let tipCardDismissedAt = "tipCardDismissedAt"
+    // 후원자 감사 리마인더를 마지막으로 보여준 시각 (TimeInterval) — 1년에 ~3번(120일 간격) 주기용
+    static let supporterThanksShownAt = "supporterThanksShownAt"
     // 다가오는 휴무일 목록 (위젯이 매일 스스로 '오늘 이후 다음 휴무일' 을 골라
     // D-Day 를 다시 계산할 수 있도록 앱이 미리 저장해 둔다. [UpcomingClosedDay] JSON)
     static let widgetUpcomingList = "widgetUpcomingList" // Data (JSON)

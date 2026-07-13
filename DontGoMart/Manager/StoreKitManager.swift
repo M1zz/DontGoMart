@@ -70,6 +70,9 @@ enum SupporterManager {
         kvs.set(Int64(newCount), forKey: AppStorageKeys.tipCount)
         kvs.set(true, forKey: AppStorageKeys.isLegacySupporter)
         kvs.synchronize()
+
+        // 방금 구매 감사 연출을 봤으므로, 감사 리마인더 주기의 기준점을 오늘로 맞춘다
+        defaults.set(Date().timeIntervalSince1970, forKey: AppStorageKeys.supporterThanksShownAt)
     }
 
     /// 앱 시작 시 후원자 상태를 복원한다.
@@ -279,5 +282,34 @@ enum CoffeeTipPrompt {
 
     static func markDismissed() {
         UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: AppStorageKeys.tipCardDismissedAt)
+    }
+}
+
+// MARK: - SupporterThanksPrompt (후원자 감사 리마인더 노출 판정)
+
+/// 이미 후원한 사용자에게 '보내주신 기부의 감사함을 잊지 않았다' 는 축하를
+/// 휴무일에 가끔 다시 보여줄지 판정한다 (재응원 버튼 포함).
+///
+/// 원칙: 감사는 반복되면 소음이 된다. 1년에 3번 정도(최소 120일 간격)만,
+/// 앱이 실제로 헛걸음을 막아준 날(휴무일)에만 보여준다.
+enum SupporterThanksPrompt {
+    /// 1년에 3번 정도 = 최소 120일 간격
+    private static let minimumIntervalDays = 120
+
+    static func shouldShow(todayHasClosedMart: Bool) -> Bool {
+        // 감사의 순간(휴무일)이 아니면 보여주지 않는다
+        guard todayHasClosedMart else { return false }
+        guard SupporterManager.isSupporter, SupporterManager.tipCount > 0 else { return false }
+
+        let last = UserDefaults.standard.double(forKey: AppStorageKeys.supporterThanksShownAt)
+        // 기준점이 없는 기존 후원자는 다음 휴무일에 한 번 보여주고 주기를 시작한다
+        guard last > 0 else { return true }
+        let lastDate = Date(timeIntervalSince1970: last)
+        let days = Calendar.current.dateComponents([.day], from: lastDate, to: Date()).day ?? 0
+        return days >= minimumIntervalDays
+    }
+
+    static func markShown() {
+        UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: AppStorageKeys.supporterThanksShownAt)
     }
 }

@@ -9,6 +9,14 @@
 - [x] SupporterManager.emoji(for:) 공용화 (SettingsView tipEmoji 위임)
 - [x] ClosedDaysView·SettingsView 에 .tipCelebrationOverlay() 부착 (설정 시트가 메인을 덮으므로 양쪽)
 - [x] 빌드 SUCCEEDED + 테스트 SUCCEEDED (iPhone 17 Pro 시뮬레이터)
+
+## 후속 (2026-07-14): 후원자 감사 리마인더 + 2.0.6
+
+- [x] SupporterThanksPrompt: 후원자에게 휴무일에 '기부의 감사함을 잊지 않았다' 축하를 1년에 ~3번(최소 120일 간격) 노출. recordTip 이 주기 기준점을 기록, 기준점 없는 기존 후원자는 다음 휴무일에 1회
+- [x] TipCelebrationView 모드 분리: purchaseThanks(자동 닫힘) / supporterReminder(💛 축하 + '한 번 더 응원하기 ☕️' 재후원 버튼 + 닫기 버튼, 자동 닫힘 없음)
+- [x] ClosedDaysView: .task 에서 판정 → 콘페티 리마인더 오버레이 표시 (표시 즉시 markShown, Reduce Motion 대응, 상품 미로드 시 재후원 버튼 숨김)
+- [x] 버전 2.0.5(2) → 2.0.6(1) (pbxproj 6곳 + Config/Version.xcconfig 동기화)
+- [x] 빌드 SUCCEEDED + TEST SUCCEEDED (iPhone 17 Pro 시뮬레이터)
 - [ ] Resolution Center 회신 + 새 빌드 재제출 (사람 작업)
 
 ---

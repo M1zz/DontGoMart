@@ -25,7 +25,7 @@ struct TipCelebrationOverlay: ViewModifier {
             .overlay {
                 if isShowing {
                     TipCelebrationView(
-                        productID: tipStore.lastTippedProductID,
+                        mode: .purchaseThanks(productID: tipStore.lastTippedProductID),
                         showsConfetti: !reduceMotion,
                         onDismiss: hide
                     )
@@ -68,10 +68,20 @@ extension View {
 // MARK: - 연출 본체 (딤 배경 + 콘페티 + 감사 카드)
 
 struct TipCelebrationView: View {
-    let productID: String?
+    enum Mode {
+        /// 구매 직후의 감사 연출 — 잠시 보여주고 자동으로 닫힌다
+        case purchaseThanks(productID: String?)
+        /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) — '기부의 감사함을 잊지 않았다' 는
+        /// 축하와 함께 한 번 더 응원할 수 있는 버튼을 담는다
+        case supporterReminder
+    }
+
+    let mode: Mode
     /// Reduce Motion 이 켜져 있으면 false — 콘페티 없이 감사 카드만 보여준다.
     let showsConfetti: Bool
     let onDismiss: () -> Void
+    /// supporterReminder 모드의 '한 번 더 응원하기'. 상품 미로드 등으로 nil 이면 버튼을 숨긴다.
+    var onTipAgain: (() -> Void)? = nil
 
     @State private var cardVisible = false
 
@@ -86,9 +96,16 @@ struct TipCelebrationView: View {
                     .allowsHitTesting(false)
             }
 
-            thanksCard
-                .scaleEffect(cardVisible ? 1 : 0.6)
-                .opacity(cardVisible ? 1 : 0)
+            Group {
+                switch mode {
+                case .purchaseThanks(let productID):
+                    purchaseThanksCard(productID: productID)
+                case .supporterReminder:
+                    supporterReminderCard
+                }
+            }
+            .scaleEffect(cardVisible ? 1 : 0.6)
+            .opacity(cardVisible ? 1 : 0)
         }
         .contentShape(Rectangle())
         .onTapGesture(perform: onDismiss)
@@ -97,13 +114,9 @@ struct TipCelebrationView: View {
                 cardVisible = true
             }
         }
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text("후원해주셔서 정말 감사합니다. 지금까지 커피 \(SupporterManager.tipCount)잔을 보내주셨습니다."))
-        .accessibilityHint(Text("두 번 탭하면 닫힙니다"))
-        .accessibilityAddTraits(.isButton)
     }
 
-    private var thanksCard: some View {
+    private func purchaseThanksCard(productID: String?) -> some View {
         VStack(spacing: 14) {
             Text(SupporterManager.emoji(for: productID ?? ""))
                 .font(.system(size: 64))
@@ -118,11 +131,7 @@ struct TipCelebrationView: View {
                 .multilineTextAlignment(.center)
 
             if SupporterManager.tipCount > 0 {
-                Text("지금까지 받은 응원 ☕️ ×\(SupporterManager.tipCount)")
-                    .font(.caption.bold())
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                    .background(Capsule().fill(Color.brown.opacity(0.15)))
+                tipCountBadge
             }
         }
         .padding(28)
@@ -131,6 +140,63 @@ struct TipCelebrationView: View {
                 .fill(.regularMaterial)
         )
         .padding(.horizontal, 40)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("후원해주셔서 정말 감사합니다. 지금까지 커피 \(SupporterManager.tipCount)잔을 보내주셨습니다."))
+        .accessibilityHint(Text("두 번 탭하면 닫힙니다"))
+        .accessibilityAddTraits(.isButton)
+    }
+
+    private var supporterReminderCard: some View {
+        VStack(spacing: 14) {
+            Text("💛")
+                .font(.system(size: 64))
+                .accessibilityHidden(true)
+
+            Text("후원자님, 잊지 않고 있어요!")
+                .font(.title2.bold())
+                .multilineTextAlignment(.center)
+
+            Text("오늘도 헛걸음을 막아드렸어요.\n보내주신 기부의 감사함을 늘 기억하고 있습니다.")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+
+            tipCountBadge
+
+            if let onTipAgain {
+                Button(action: onTipAgain) {
+                    Text("한 번 더 응원하기 ☕️")
+                        .font(.subheadline.bold())
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(Capsule().fill(Color.brown))
+                        .foregroundColor(.white)
+                }
+                .padding(.top, 6)
+                .accessibilityHint(Text("개발자에게 커피 한 잔 값을 후원합니다"))
+            }
+
+            Button(action: onDismiss) {
+                Text("고마워요, 다음에 또 만나요")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            .accessibilityHint(Text("감사 인사를 닫습니다"))
+        }
+        .padding(28)
+        .background(
+            RoundedRectangle(cornerRadius: 24)
+                .fill(.regularMaterial)
+        )
+        .padding(.horizontal, 40)
+    }
+
+    private var tipCountBadge: some View {
+        Text("지금까지 받은 응원 ☕️ ×\(SupporterManager.tipCount)")
+            .font(.caption.bold())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 4)
+            .background(Capsule().fill(Color.brown.opacity(0.15)))
     }
 }
 
@@ -231,10 +297,19 @@ private struct ConfettiPiece {
     }
 }
 
-#Preview {
+#Preview("구매 감사") {
     TipCelebrationView(
-        productID: "com.dontgomart.tip.coffee",
+        mode: .purchaseThanks(productID: "com.dontgomart.tip.coffee"),
         showsConfetti: true,
         onDismiss: {}
+    )
+}
+
+#Preview("후원자 리마인더") {
+    TipCelebrationView(
+        mode: .supporterReminder,
+        showsConfetti: true,
+        onDismiss: {},
+        onTipAgain: {}
     )
 }
