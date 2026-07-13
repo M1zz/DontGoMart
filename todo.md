@@ -18,7 +18,7 @@
 - [x] docs/support.html 신규 — FAQ(휴무일 정확성/알림/위젯/후원/환불) + 문의 이메일, KO/EN 토글·다크모드 (privacy.html 스타일 통일)
 - [x] docs/index.html 푸터에 '지원' 링크 추가
 - [x] README: 상단 배지 링크 + Landing Page 섹션에 지원/개인정보처리방침 URL 표 추가 (ASC 지원 URL·개인정보 URL 용)
-- [ ] dev 푸시 → Pages 자동 배포 확인 (Pages 소스: dev /docs, https://m1zz.github.io/Klosed/)
+- [x] dev 푸시 → Pages 배포 확인 (support.html·privacy.html·랜딩 모두 200 OK)
 
 ---
 
