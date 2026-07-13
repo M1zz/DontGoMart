@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지원 - Klosed</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+      --card-bg: #f5f5f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+        --card-bg: #1c1c1e;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle button {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0 8px;
+    }
+
+    .contact-card p { margin-bottom: 8px; }
+    .contact-card .email {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="app-icon.png" alt="Klosed">
+        <span>Klosed</span>
+      </a>
+      <div class="lang-toggle">
+        <button id="btn-ko" class="active" onclick="setLang('ko')">KO</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1><span data-ko="지원" data-en="Support">지원</span></h1>
+    <p class="subtitle"><span data-ko="Klosed 사용 중 궁금한 점이나 문제가 있다면 도와드릴게요." data-en="Need help with Klosed? We're here for you.">Klosed 사용 중 궁금한 점이나 문제가 있다면 도와드릴게요.</span></p>
+
+    <div class="contact-card">
+      <p><strong><span data-ko="문의하기" data-en="Contact Us">문의하기</span></strong></p>
+      <p><span data-ko="아래 이메일로 보내주시면 보통 1~2일 안에 답변드립니다." data-en="Email us and we'll usually get back to you within 1–2 business days.">아래 이메일로 보내주시면 보통 1~2일 안에 답변드립니다.</span></p>
+      <p class="email"><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+    </div>
+
+    <h2><span data-ko="자주 묻는 질문" data-en="Frequently Asked Questions">자주 묻는 질문</span></h2>
+
+    <h3><span data-ko="Q. 휴무일 정보가 실제와 달라요." data-en="Q. The closing-day info looks wrong.">Q. 휴무일 정보가 실제와 달라요.</span></h3>
+    <p><span data-ko="대형마트 의무 휴무일은 지자체 조례에 따라 지역마다 다를 수 있습니다. 설정에서 지역에 맞는 매장 유형(일요일/수요일/혼합 등)을 선택했는지 확인해 주세요. 그래도 다르다면 마트 이름과 지역을 이메일로 알려주시면 확인 후 반영하겠습니다." data-en="Mandatory closing days vary by local regulations. Please check that you selected the right store type (Sunday/Wednesday/mixed) for your region in Settings. If it still looks wrong, email us the store name and region and we'll fix it.">대형마트 의무 휴무일은 지자체 조례에 따라 지역마다 다를 수 있습니다. 설정에서 지역에 맞는 매장 유형(일요일/수요일/혼합 등)을 선택했는지 확인해 주세요. 그래도 다르다면 마트 이름과 지역을 이메일로 알려주시면 확인 후 반영하겠습니다.</span></p>
+
+    <h3><span data-ko="Q. 알림이 오지 않아요." data-en="Q. I'm not receiving notifications.">Q. 알림이 오지 않아요.</span></h3>
+    <p><span data-ko="iOS 설정 > 알림 > Klosed 에서 알림 권한이 허용되어 있는지, 앱 설정에서 '휴무일 알림'이 켜져 있는지 확인해 주세요." data-en="Check that notifications are allowed in iOS Settings > Notifications > Klosed, and that closing-day alerts are turned on inside the app's settings.">iOS 설정 > 알림 > Klosed 에서 알림 권한이 허용되어 있는지, 앱 설정에서 '휴무일 알림'이 켜져 있는지 확인해 주세요.</span></p>
+
+    <h3><span data-ko="Q. 위젯이 업데이트되지 않아요." data-en="Q. My widget isn't updating.">Q. 위젯이 업데이트되지 않아요.</span></h3>
+    <p><span data-ko="앱을 한 번 열면 위젯 데이터가 갱신됩니다. 그래도 안 되면 위젯을 제거 후 다시 추가해 보세요." data-en="Opening the app refreshes widget data. If that doesn't help, try removing and re-adding the widget.">앱을 한 번 열면 위젯 데이터가 갱신됩니다. 그래도 안 되면 위젯을 제거 후 다시 추가해 보세요.</span></p>
+
+    <h3><span data-ko="Q. 후원(팁)은 무엇인가요?" data-en="Q. What are the tips (donations)?">Q. 후원(팁)은 무엇인가요?</span></h3>
+    <p><span data-ko="Klosed의 모든 기능은 무료입니다. 커피·케이크·식사 후원은 개발자를 응원하는 순수한 팁이며, 구매 시 감사 연출과 후원자 배지(누적 횟수)가 표시됩니다. 원하시면 몇 번이든 보낼 수 있습니다." data-en="Every feature in Klosed is free. The coffee, cake, and meal tips are purely a way to support the developer — you'll get a thank-you celebration and a supporter badge with your cumulative count. You can tip as many times as you like.">Klosed의 모든 기능은 무료입니다. 커피·케이크·식사 후원은 개발자를 응원하는 순수한 팁이며, 구매 시 감사 연출과 후원자 배지(누적 횟수)가 표시됩니다. 원하시면 몇 번이든 보낼 수 있습니다.</span></p>
+
+    <h3><span data-ko="Q. 결제 관련 문제(환불 등)는 어디에 문의하나요?" data-en="Q. How do I get help with payments or refunds?">Q. 결제 관련 문제(환불 등)는 어디에 문의하나요?</span></h3>
+    <p><span data-ko="인앱 결제는 Apple이 처리하므로 환불은 Apple의 '문제 신고' 페이지(reportaproblem.apple.com)에서 요청할 수 있습니다. 그 외 결제 관련 궁금한 점은 이메일로 문의해 주세요." data-en="In-app purchases are processed by Apple, so refunds can be requested at Apple's Report a Problem page (reportaproblem.apple.com). For anything else, feel free to email us.">인앱 결제는 Apple이 처리하므로 환불은 Apple의 '문제 신고' 페이지(reportaproblem.apple.com)에서 요청할 수 있습니다. 그 외 결제 관련 궁금한 점은 이메일로 문의해 주세요.</span></p>
+
+    <h2><span data-ko="개인정보" data-en="Privacy">개인정보</span></h2>
+    <p><span data-ko="Klosed는 개인정보를 수집하지 않습니다. 자세한 내용은 개인정보처리방침을 확인해 주세요:" data-en="Klosed does not collect any personal information. For details, see our privacy policy:">Klosed는 개인정보를 수집하지 않습니다. 자세한 내용은 개인정보처리방침을 확인해 주세요:</span> <a href="privacy.html"><span data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</span></a></p>
+  </main>
+
+  <footer>
+    <a href="/"><span data-ko="홈으로" data-en="Home">홈으로</span></a>
+    <a href="privacy.html"><span data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</span></a>
+    <span>&copy; 2025 Klosed</span>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+      document.querySelectorAll('[data-ko]').forEach(function(el) {
+        var text = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-ko');
+        if (text) el.textContent = text;
+      });
+
+      document.title = lang === 'en'
+        ? 'Support - Klosed'
+        : '지원 - Klosed';
+
+      localStorage.setItem('klosed-lang', lang);
+    }
+
+    (function() {
+      var saved = localStorage.getItem('klosed-lang');
+      if (saved) {
+        setLang(saved);
+      } else if (!navigator.language.startsWith('ko')) {
+        setLang('en');
+      }
+    })();
+  </script>
+
+</body>
+</html>

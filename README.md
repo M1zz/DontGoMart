@@ -17,6 +17,10 @@
 
 <p align="center">
   <a href="https://m1zz.github.io/Klosed/">Landing Page</a>
+  ·
+  <a href="https://m1zz.github.io/Klosed/support.html">Support</a>
+  ·
+  <a href="https://m1zz.github.io/Klosed/privacy.html">Privacy Policy</a>
 </p>
 
 ---
@@ -46,10 +50,16 @@ Klosed는 한국 대형마트의 의무 휴무일을 추적하는 iOS 앱입니�
 
 **https://m1zz.github.io/Klosed/**
 
+| 페이지 | URL |
+|---|---|
+| 랜딩 | https://m1zz.github.io/Klosed/ |
+| 지원 (Support) | https://m1zz.github.io/Klosed/support.html |
+| 개인정보처리방침 (Privacy Policy) | https://m1zz.github.io/Klosed/privacy.html |
+
 - 한국어/영어 전환 지원
 - 다크 모드/라이트 모드 자동 대응
 - 모바일 반응형 디자인
-- 개인정보처리방침 포함
+- App Store Connect 의 지원 URL·개인정보처리방침 URL 에 위 주소를 사용
 
 > 소스: [`docs/`](docs/) 폴더 (순수 HTML/CSS/JS, 빌드 도구 불필요)
 
