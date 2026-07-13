@@ -64,7 +64,20 @@ struct SettingsView: View {
             .sheet(isPresented: $showingCustomMartEditor) {
                 CustomMartEditView(editingMart: editingCustomMart)
             }
+            .alert("후원 안내", isPresented: tipMessagePresented) {
+                Button("확인", role: .cancel) {}
+            } message: {
+                Text(tipStore.userMessage ?? "")
+            }
         }
+    }
+
+    /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
+    private var tipMessagePresented: Binding<Bool> {
+        Binding(
+            get: { tipStore.userMessage != nil },
+            set: { if !$0 { tipStore.userMessage = nil } }
+        )
     }
 
     // MARK: - Supporter Section (커피 후원자 감사 배지)
@@ -106,14 +119,26 @@ struct SettingsView: View {
             header: Text("응원하기"),
             footer: Text("모든 기능은 계속 무료예요. 후원은 순수한 응원이며, 몇 번이든 보낼 수 있어요.")
         ) {
-            if tipStore.tipProducts.isEmpty {
-                Text("후원 상품을 불러오는 중이에요")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            } else {
+            switch tipStore.loadState {
+            case .loaded:
                 ForEach(tipStore.tipProducts, id: \.id) { product in
                     tipRow(for: product)
                 }
+            case .loading:
+                HStack(spacing: 8) {
+                    ProgressView()
+                    Text("후원 상품을 불러오는 중이에요")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            case .failed:
+                Button {
+                    Task { await tipStore.loadProductsIfNeeded() }
+                } label: {
+                    Label("후원 상품을 불러오지 못했어요. 다시 시도", systemImage: "arrow.clockwise")
+                        .font(.caption)
+                }
+                .accessibilityHint(Text("후원 상품 목록을 다시 불러옵니다"))
             }
         }
     }
@@ -127,10 +152,10 @@ struct SettingsView: View {
                     .font(.title2)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(product.displayName)
+                    Text(tipTitle(for: product))
                         .font(.subheadline.bold())
                         .foregroundColor(.primary)
-                    Text(product.description)
+                    Text(tipDescription(for: product))
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
@@ -147,7 +172,7 @@ struct SettingsView: View {
         }
         .disabled(tipStore.isPurchasing)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text("\(product.displayName), \(product.displayPrice)"))
+        .accessibilityLabel(Text("\(tipTitle(for: product)), \(product.displayPrice)"))
         .accessibilityHint(Text("개발자에게 후원합니다"))
         .accessibilityAddTraits(.isButton)
     }
@@ -158,6 +183,24 @@ struct SettingsView: View {
         case "com.dontgomart.tip.meal": return "🍱"
         default: return "☕️"
         }
+    }
+
+    /// ASC 메타데이터가 비었거나 제품 ID 그대로면 로컬 이름으로 대체한다
+    /// (스토어 설정 실수로 사용자에게 원시 ID 가 노출되지 않도록).
+    private func tipTitle(for product: Product) -> String {
+        let name = product.displayName
+        if !name.isEmpty, name != product.id { return name }
+        switch product.id {
+        case "com.dontgomart.tip.cake": return "케이크 한 조각"
+        case "com.dontgomart.tip.meal": return "든든한 한 끼"
+        default: return "커피 한 잔"
+        }
+    }
+
+    private func tipDescription(for product: Product) -> String {
+        let description = product.description
+        if !description.isEmpty, description != product.id { return description }
+        return "개발자에게 보내는 순수한 응원이에요"
     }
 
     // MARK: - Mart Selection Section

@@ -1,3 +1,18 @@
+# App Store 리젝 2.1(b) 대응 — 후원 IAP 무반응 (2026-07-13, 진행 중)
+
+2.0.5 (1) 리젝: "Support Us 상품 무반응". 진단(코드 확인 완료): 심사 샌드박스에서 팁 상품 로드가 실패하면 설정 '응원하기' 섹션이 "불러오는 중" 문구로 영구 대기하고, 로드돼도 구매 실패 시 debugLog 만 남겨 화면 피드백이 없음 → 심사관에게 '무반응'으로 보임. 근본 원인 후보: ASC 에 소모성 3종 미등록/메타데이터 미완성(아래 '남은 일' 참고) 또는 심사용 스크린샷 누락, 버전에 IAP 미첨부.
+
+- [x] 코드: CoffeeTipStore 로드 상태(loading/loaded/failed) + 구매 실패/승인대기 사용자 알림 메시지(userMessage)
+- [x] 코드: SettingsView 응원하기 — 로드 실패 시 '다시 시도' 버튼 (영구 로딩 제거) + 결과 알림
+- [x] 코드: ClosedDaysView 팁 카드에도 구매 결과 알림 연결
+- [x] 빌드 번호 1 → 2 (2.0.5 재제출용 새 바이너리)
+- [x] 빌드 SUCCEEDED + 테스트 SUCCEEDED (SKTestSession 팁 상품 로드 포함)
+- [ ] ASC (사람 작업): 소모성 3종(com.dontgomart.tip.coffee/cake/meal) 등록 + 메타데이터 완성(현지화 이름·설명 + **심사용 스크린샷 필수**) → 상태 'Ready to Submit' 확인
+- [ ] ASC (사람 작업): 버전 페이지 인앱 구입 섹션에 3종 첨부, Paid Apps Agreement 유효 확인
+- [ ] 샌드박스 계정으로 실기기 구매 테스트 후 Resolution Center 회신 + 새 빌드(2.0.5 (2)) 재제출
+
+---
+
 # 커피 카드가 안 보이던 문제 (DEBUG 가시성) — 완료
 
 원인: 기본 DontGoMart 스킴에 StoreKit 설정이 없어 상품 0개 → 후원 UI 자동 숨김 (게이트 문제 아님).

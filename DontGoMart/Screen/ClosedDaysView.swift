@@ -99,6 +99,19 @@ struct ClosedDaysView: View {
                 isShowingCalendar = true
             }
         }
+        .alert("후원 안내", isPresented: tipMessagePresented) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text(tipStore.userMessage ?? "")
+        }
+    }
+
+    /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
+    private var tipMessagePresented: Binding<Bool> {
+        Binding(
+            get: { tipStore.userMessage != nil },
+            set: { if !$0 { tipStore.userMessage = nil } }
+        )
     }
 
     // MARK: - Subviews

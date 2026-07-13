@@ -117,11 +117,17 @@ enum SupporterManager {
 final class CoffeeTipStore: ObservableObject {
     static let shared = CoffeeTipStore()
 
-    /// 팁 상품들(가격 오름차순). 네트워크/StoreKit 설정이 없으면 빈 배열 (이때 후원 UI 는 숨긴다).
+    /// 팁 상품들(가격 오름차순). 네트워크/StoreKit 설정이 없으면 빈 배열 (이때 메인 화면 카드는 숨긴다).
     @Published private(set) var tipProducts: [Product] = []
     @Published private(set) var isPurchasing = false
     /// 방금 구매를 마쳤을 때 잠깐 감사 메시지를 보여주기 위한 플래그.
     @Published private(set) var justThanked = false
+    /// 상품 로드 진행 상태. 설정 화면은 실패 시 '다시 시도' 를 노출한다
+    /// (심사 리젝 2.1(b) 대응 — 로드 실패로 화면이 무반응처럼 보이지 않게).
+    enum ProductLoadState { case loading, loaded, failed }
+    @Published private(set) var loadState: ProductLoadState = .loading
+    /// 구매 실패·승인 대기 등 사용자에게 알려야 하는 결과. 알림으로 표시 후 nil 로 되돌린다.
+    @Published var userMessage: String?
 
     /// 메인 화면 카드에서 쓰는 기본(최저가) 팁 = 커피 한 잔.
     var coffeeTip: Product? { tipProducts.first }
@@ -143,8 +149,15 @@ final class CoffeeTipStore: ObservableObject {
 
     func loadProductsIfNeeded() async {
         guard tipProducts.isEmpty else { return }
-        let products = (try? await Product.products(for: SupporterManager.tipProductIDs)) ?? []
-        tipProducts = products.sorted { $0.price < $1.price }
+        loadState = .loading
+        do {
+            let products = try await Product.products(for: SupporterManager.tipProductIDs)
+            tipProducts = products.sorted { $0.price < $1.price }
+        } catch {
+            debugLog("❌ 팁 상품 로드 실패: \(error)")
+        }
+        // 스토어가 상품 0개를 돌려준 경우(미등록 등)도 실패로 취급해 재시도를 열어둔다
+        loadState = tipProducts.isEmpty ? .failed : .loaded
 
         // 이전 실행에서 finish 되지 못한 트랜잭션이 있으면 마저 처리한다
         for await result in Transaction.unfinished {
@@ -165,14 +178,20 @@ final class CoffeeTipStore: ObservableObject {
                     await transaction.finish()
                     SupporterManager.recordTip()
                     justThanked = true
+                } else {
+                    userMessage = "구매를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
                 }
-            case .userCancelled, .pending:
+            case .pending:
+                // Ask to Buy 등 승인 대기 — 승인되면 Transaction.updates 리스너가 반영한다
+                userMessage = "구매 승인을 기다리고 있어요. 승인되면 자동으로 반영됩니다."
+            case .userCancelled:
                 break
             @unknown default:
                 break
             }
         } catch {
             debugLog("❌ 팁 구매 실패: \(error)")
+            userMessage = "구매 중 문제가 발생했어요. 잠시 후 다시 시도해주세요."
         }
     }
 
