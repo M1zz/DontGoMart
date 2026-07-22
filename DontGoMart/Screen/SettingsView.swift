@@ -9,6 +9,7 @@ import SwiftUI
 import WidgetKit
 import UIKit
 import StoreKit
+import LeeoKit
 
 struct SettingsView: View {
     @Binding var isShowingSettings: Bool
@@ -40,6 +41,11 @@ struct SettingsView: View {
                 customMartSection
                 notificationSection
                 supportSection
+                Section {
+                    LeeoSupportSection<DontGoMartSpec>()
+                } header: {
+                    Text("지원")
+                }
             }
             .navigationTitle("매장선택")
             .toolbar {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LeeoKit
 
 @main
 struct DontGoMartApp: App {
@@ -15,6 +16,7 @@ struct DontGoMartApp: App {
     init() {
         // 앱 시작 시 즉시 tasks 초기화
         initializeTasks()
+        LeeoEngagement.shared.registerLaunch()
     }
 
     var body: some Scene {
@@ -22,6 +24,7 @@ struct DontGoMartApp: App {
             ClosedDaysView()
                 // 큰 글씨 접근성 옵션도 레이아웃이 깨지지 않는 선에서 지원.
                 .dynamicTypeSize(...DynamicTypeSize.accessibility2)
+                .leeoSatisfactionCheck(DontGoMartSpec.self)
                 .onAppear {
                     WidgetManager.shared.updateWidget()
                     ReviewManager.incrementAppOpenCount()

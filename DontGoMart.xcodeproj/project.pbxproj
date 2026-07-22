@@ -40,6 +40,7 @@
 		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
 		9C2035782F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
 		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
+		AED7BB247263EE03E9181B58 /* DontGoMartSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18486640C96835BB82BFD493 /* DontGoMartSpec.swift */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
 		C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD42CDF8E68008C6458 /* DateValue.swift */; };
 		C33C54772D312D53008B625C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD02CDF81A2008C6458 /* Date+Ext.swift */; };
@@ -65,6 +66,7 @@
 		D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4500000000000000A5 /* TipCelebrationView.swift */; };
 		D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C229952E0C2ABB00969839 /* NotificationManager.swift */; };
 		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
+		F8CAF74282B87E515EA26B48 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6D8E1AF9898CD59B16480C /* LeeoKit */; };
 		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18486640C96835BB82BFD493 /* DontGoMartSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DontGoMartSpec.swift; sourceTree = "<group>"; };
 		194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartEditView.swift; sourceTree = "<group>"; };
 		40E2B177256F4A4897EC2274 /* CustomMartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMartManager.swift; sourceTree = "<group>"; };
 		58446A272A59493C001CC9D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -153,7 +156,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C3C2F8EF2CEB4952003ED9A5 /* DontGoMartTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DontGoMartTests; sourceTree = "<group>"; };
+		C3C2F8EF2CEB4952003ED9A5 /* DontGoMartTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = DontGoMartTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8CAF74282B87E515EA26B48 /* LeeoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +272,7 @@
 				58B693D52A3B56E900FF904B /* Preview Content */,
 				9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */,
 				9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */,
+				18486640C96835BB82BFD493 /* DontGoMartSpec.swift */,
 			);
 			path = DontGoMart;
 			sourceTree = "<group>";
@@ -370,6 +385,9 @@
 				58B693F52A3B59EF00FF904B /* PBXTargetDependency */,
 			);
 			name = DontGoMart;
+			packageProductDependencies = (
+				7F6D8E1AF9898CD59B16480C /* LeeoKit */,
+			);
 			productName = DontGoMart;
 			productReference = 58B693CC2A3B56E800FF904B /* DontGoMart.app */;
 			productType = "com.apple.product-type.application";
@@ -408,8 +426,6 @@
 				C3C2F8EF2CEB4952003ED9A5 /* DontGoMartTests */,
 			);
 			name = DontGoMartTests;
-			packageProductDependencies = (
-			);
 			productName = DontGoMartTests;
 			productReference = C3C2F8EE2CEB4952003ED9A5 /* DontGoMartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -445,6 +461,9 @@
 				Base,
 			);
 			mainGroup = 58B693C32A3B56E800FF904B;
+			packageReferences = (
+				5DB605A18797B20B08C118FA /* XCLocalSwiftPackageReference "LeeoKit" */,
+			);
 			productRefGroup = 58B693CD2A3B56E800FF904B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -519,6 +538,7 @@
 				58B693D02A3B56E800FF904B /* DontGoMartApp.swift in Sources */,
 				58D40AD52CDF8E68008C6458 /* DateValue.swift in Sources */,
 				529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */,
+				AED7BB247263EE03E9181B58 /* DontGoMartSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +939,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5DB605A18797B20B08C118FA /* XCLocalSwiftPackageReference "LeeoKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LeeoKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F6D8E1AF9898CD59B16480C /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DB605A18797B20B08C118FA /* XCLocalSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B693C42A3B56E800FF904B /* Project object */;
 }
