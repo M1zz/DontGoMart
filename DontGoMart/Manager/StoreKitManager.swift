@@ -8,6 +8,7 @@
 import Foundation
 import StoreKit
 import UIKit
+import LeeoKit
 
 /// 후원자 판별과 누적 후원 횟수를 관리한다.
 ///
@@ -34,6 +35,13 @@ enum SupporterManager {
     static var allSupporterProductIDs: Set<String> {
         Set(tipProductIDs).union([legacyProductID])
     }
+
+    /// 과거 비소비성 커피(레거시) 권한을 판정하는 공용 스토어.
+    /// StoreKit 2 의 `Transaction.currentEntitlements` 순회·서명 검증은 이제
+    /// LeeoKit 의 `LeeoStore` 가 담당한다. 여기서는 소유 여부만 읽어 쓴다.
+    /// (소모성 팁은 아래 CoffeeTipStore 가 앱 고유 로직으로 계속 직접 처리한다.)
+    @MainActor
+    static let entitlementStore = LeeoStore(config: DontGoMartSpec.paywall!)
 
     /// 상품별 대표 이모지 (목록 행·구매 성공 연출 공용)
     static func emoji(for productID: String) -> String {
@@ -80,16 +88,12 @@ enum SupporterManager {
     /// 2) 소모성 팁 → iCloud KVS 와 로컬 중 큰 값으로 병합
     /// 한 번 후원자로 인정되면 유지한다(환불·오프라인 등으로 인사가 사라지지 않도록 회수하지 않음).
     static func refresh() async {
-        var hasLegacyPurchase = false
-        for await result in Transaction.currentEntitlements {
-            if case .verified(let transaction) = result,
-               transaction.productID == legacyProductID {
-                hasLegacyPurchase = true
-            }
-        }
+        // 과거 비소비성 커피 권한 확인을 공용 스토어(LeeoStore)에 위임한다.
+        // (StoreKit 순회·검증은 LeeoKit 이 처리하고, 우리는 결과만 읽는다.)
+        await entitlementStore.refreshEntitlements()
 
-        let legacy = hasLegacyPurchase
         await MainActor.run {
+            let legacy = entitlementStore.purchasedProductIDs.contains(legacyProductID)
             let defaults = UserDefaults.standard
             let kvs = NSUbiquitousKeyValueStore.default
             kvs.synchronize()
