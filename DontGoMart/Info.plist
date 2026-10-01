@@ -9,5 +9,7 @@
 		<!-- 인스타 스토리 공유 가능 여부 확인(canOpenURL)용 -->
 		<string>instagram-stories</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
