@@ -110,25 +110,17 @@ struct ShareCardView: View {
     }
 
     var body: some View {
-        VStack(spacing: isStory ? 18 : 12) {
-            brandRow
-                .reveal(progress, from: 0, length: 0.12)
-
-            hero
-                .reveal(progress, from: 0.06, length: 0.16)
-
-            calendarPanel
-
-            if isStory && !payload.upcoming.isEmpty {
-                upcomingPanel
+        // 인스타 규격은 높이가 정해져 있다. 마트가 많거나 다가오는 휴무가 길면 넘쳐서 위아래가 잘리므로
+        // 들어갈 때까지 다가오는 휴무 → 마트 칩 순으로 덜어낸 판을 차례로 시도한다.
+        VStack(spacing: 0) {
+            ViewThatFits(in: .vertical) {
+                let chips = isStory ? 4 : 3
+                ForEach(Array(layoutSteps(maxChips: chips).enumerated()), id: \.offset) { _, step in
+                    content(upcomingLimit: step.upcoming, chipLimit: step.chips, showsTip: step.tip)
+                }
             }
 
-            if let tip = payload.tip {
-                tipPill(tip)
-                    .reveal(progress, from: isStory ? 0.78 : 0.7, length: 0.12)
-            }
-
-            Spacer(minLength: 0)
+            Spacer(minLength: 8)
 
             Text("앱스토어에서 '돈꼬마트' 검색")
                 .font(.system(size: 14, weight: .semibold))
@@ -136,11 +128,42 @@ struct ShareCardView: View {
                 .reveal(progress, from: 0.85, length: 0.1)
         }
         .padding(.horizontal, 20)
-        .padding(.top, isStory ? 34 : 18)
-        .padding(.bottom, isStory ? 28 : 14)
+        .padding(.top, isStory ? 26 : 16)
+        .padding(.bottom, isStory ? 22 : 12)
         .frame(width: format.size.width, height: format.size.height)
         .background(wallpaper)
         .environment(\.colorScheme, .light)
+    }
+
+    /// 덜어낼 순서: 다가오는 휴무 3 → 0, 장보기 팁, 마지막으로 마트 칩을 하나씩.
+    /// 오늘 쉬는 마트가 무엇인지가 카드의 핵심이라 마트 칩을 가장 늦게 줄인다.
+    private func layoutSteps(maxChips: Int) -> [(upcoming: Int, chips: Int, tip: Bool)] {
+        let upcoming = isStory ? min(3, payload.upcoming.count) : 0
+        var steps = (0...upcoming).reversed().map { (upcoming: $0, chips: maxChips, tip: true) }
+        steps.append((upcoming: 0, chips: maxChips, tip: false))
+        steps += (1..<maxChips).reversed().map { (upcoming: 0, chips: $0, tip: false) }
+        return steps
+    }
+
+    private func content(upcomingLimit: Int, chipLimit: Int, showsTip: Bool) -> some View {
+        VStack(spacing: isStory ? 12 : 10) {
+            brandRow
+                .reveal(progress, from: 0, length: 0.12)
+
+            hero(chipLimit: chipLimit)
+                .reveal(progress, from: 0.06, length: 0.16)
+
+            calendarPanel
+
+            if upcomingLimit > 0 {
+                upcomingPanel(limit: upcomingLimit)
+            }
+
+            if showsTip, let tip = payload.tip {
+                tipPill(tip)
+                    .reveal(progress, from: isStory ? 0.78 : 0.7, length: 0.12)
+            }
+        }
     }
 
     /// 홈 화면 배경화면 — 앱 색 그라데이션에 은은한 빛 번짐
@@ -174,8 +197,8 @@ struct ShareCardView: View {
     }
 
     /// 주인공 휴무일 위젯 — 날짜 배지 + 큰 D-day + 날짜, 아래에 휴무 마트
-    private var hero: some View {
-        VStack(alignment: .leading, spacing: isStory ? 12 : 9) {
+    private func hero(chipLimit: Int) -> some View {
+        VStack(alignment: .leading, spacing: isStory ? 10 : 8) {
             HStack(spacing: 12) {
                 dateBadge
                 VStack(alignment: .leading, spacing: 1) {
@@ -183,7 +206,7 @@ struct ShareCardView: View {
                         .font(.system(size: isStory ? 15 : 13, weight: .semibold))
                         .foregroundColor(.gray)
                     Text(headline)
-                        .font(.system(size: isStory ? 40 : 34, weight: .heavy))
+                        .font(.system(size: isStory ? 36 : 32, weight: .heavy))
                         .foregroundColor(Self.closedRed)
                     Text(payload.dateText)
                         .font(.system(size: isStory ? 16 : 14, weight: .semibold))
@@ -195,16 +218,24 @@ struct ShareCardView: View {
             }
 
             // 휴무 마트 칩
-            FlowChips(marts: Array(payload.marts.prefix(isStory ? 4 : 3)))
+            FlowChips(marts: visibleMarts(limit: chipLimit))
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(isStory ? 16 : 13)
+        .padding(isStory ? 14 : 12)
         .widgetTile(radius: Self.widgetRadius)
+    }
+
+    /// 칸이 모자라면 마지막 칸을 '외 N곳' 으로 바꿔, 빠진 마트가 있다는 걸 알린다
+    private func visibleMarts(limit: Int) -> [(name: String, color: Color)] {
+        guard payload.marts.count > limit, limit > 0 else { return Array(payload.marts.prefix(limit)) }
+        let shown = Array(payload.marts.prefix(limit - 1))
+        let more = String(format: String(localized: "외 %lld곳", defaultValue: "+%lld more"), payload.marts.count - shown.count)
+        return shown + [(name: more, color: Color.gray.opacity(0.6))]
     }
 
     /// 실제 휴무 날짜가 찍힌 달력 한 장 (이모지 📅 는 늘 'JUL 17' 이라 헷갈린다)
     private var dateBadge: some View {
-        let width: CGFloat = isStory ? 66 : 56
+        let width: CGFloat = isStory ? 58 : 52
         return VStack(spacing: 0) {
             Text(payload.heroDate.formatted(.dateTime.month(.abbreviated)))
                 .font(.system(size: isStory ? 15 : 13, weight: .bold))
@@ -213,7 +244,7 @@ struct ShareCardView: View {
                 .padding(.vertical, 3)
                 .background(Self.closedRed)
             Text("\(Calendar.current.component(.day, from: payload.heroDate))")
-                .font(.system(size: isStory ? 36 : 28, weight: .heavy))
+                .font(.system(size: isStory ? 30 : 26, weight: .heavy))
                 .foregroundColor(Self.ink)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
@@ -293,18 +324,21 @@ struct ShareCardView: View {
 
     // MARK: 다가오는 휴무 (스토리)
 
-    private var upcomingPanel: some View {
+    private func upcomingPanel(limit: Int) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("다가오는 휴무")
                 .font(.system(size: 15, weight: .bold))
                 .foregroundColor(Self.ink)
                 .reveal(progress, from: 0.6, length: 0.08)
-            ForEach(Array(payload.upcoming.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(payload.upcoming.prefix(limit).enumerated()), id: \.offset) { index, item in
                 HStack(spacing: 10) {
                     VStack(alignment: .leading, spacing: 1) {
                         Text(item.phrase)
                             .font(.system(size: 16, weight: .bold))
                             .foregroundColor(Self.closedRed)
+                            // 영어 'in 3 weeks, Sun' 처럼 긴 표현이 잘리지 않게
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
                         Text(item.dateText)
                             .font(.system(size: 13, weight: .medium))
                             .foregroundColor(.gray)
