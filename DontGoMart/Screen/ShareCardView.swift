@@ -4,6 +4,7 @@
 //
 //  공유용 휴무 알림 카드. 받는 사람이 한눈에 계획을 세울 수 있도록
 //  주인공 휴무일 + 2주 달력 + 다가오는 휴무 + 장보기 팁을 담는다.
+//  홈 화면에 위젯을 올려 둔 모습처럼 보이게 그린다 — 배경화면 위 흰 위젯 타일들.
 //  인스타 규격(게시물 4:5, 스토리 9:16)으로 이미지·동영상 모두 만든다.
 //
 
@@ -82,6 +83,32 @@ struct ShareCardView: View {
 
     private var isStory: Bool { format == .story }
 
+    /// iOS 홈 화면 위젯과 비슷한 모서리 곡률
+    private static let widgetRadius: CGFloat = 22
+
+    /// 주인공 휴무일까지 남은 날 (0 = 오늘)
+    private var daysUntilHero: Int {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        return max(0, calendar.dateComponents([.day], from: today, to: calendar.startOfDay(for: payload.heroDate)).day ?? 0)
+    }
+
+    /// 위젯 속 가장 큰 글씨. 오늘·내일은 'D-0' 보다 말로 쓰는 게 바로 읽힌다.
+    private var headline: String {
+        switch daysUntilHero {
+        case 0: return String(localized: "오늘 휴무", defaultValue: "Closed today")
+        case 1: return String(localized: "내일 휴무", defaultValue: "Closed tomorrow")
+        default: return "D-\(daysUntilHero)"
+        }
+    }
+
+    /// 위젯 머리글. 오늘·내일은 큰 글씨가 이미 말하므로 일반 문구로 바꿔 같은 말이 두 번 나오지 않게 한다.
+    private var caption: String {
+        daysUntilHero <= 1
+            ? String(localized: "마트 휴무 알림", defaultValue: "Store closure alert")
+            : String(format: String(localized: "%@ 휴무", defaultValue: "%@ closed"), payload.phrase)
+    }
+
     var body: some View {
         VStack(spacing: isStory ? 18 : 12) {
             brandRow
@@ -112,8 +139,25 @@ struct ShareCardView: View {
         .padding(.top, isStory ? 34 : 18)
         .padding(.bottom, isStory ? 28 : 14)
         .frame(width: format.size.width, height: format.size.height)
-        .background(Self.gradient)
+        .background(wallpaper)
         .environment(\.colorScheme, .light)
+    }
+
+    /// 홈 화면 배경화면 — 앱 색 그라데이션에 은은한 빛 번짐
+    private var wallpaper: some View {
+        ZStack {
+            Self.gradient
+            Circle()
+                .fill(.white.opacity(0.20))
+                .frame(width: 280, height: 280)
+                .blur(radius: 60)
+                .offset(x: -120, y: -format.size.height * 0.32)
+            Circle()
+                .fill(Color(red: 1.0, green: 0.85, blue: 0.55).opacity(0.28))
+                .frame(width: 240, height: 240)
+                .blur(radius: 70)
+                .offset(x: 130, y: format.size.height * 0.36)
+        }
     }
 
     private var brandRow: some View {
@@ -129,28 +173,33 @@ struct ShareCardView: View {
         .foregroundColor(.white)
     }
 
+    /// 주인공 휴무일 위젯 — 날짜 배지 + 큰 D-day + 날짜, 아래에 휴무 마트
     private var hero: some View {
-        VStack(spacing: isStory ? 10 : 6) {
+        VStack(alignment: .leading, spacing: isStory ? 12 : 9) {
             HStack(spacing: 12) {
                 dateBadge
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(payload.phrase)
-                        .font(.system(size: isStory ? 20 : 17, weight: .semibold))
-                        .opacity(0.92)
-                    Text("마트 휴무예요!")
-                        .font(.system(size: isStory ? 32 : 27, weight: .heavy))
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(caption)
+                        .font(.system(size: isStory ? 15 : 13, weight: .semibold))
+                        .foregroundColor(.gray)
+                    Text(headline)
+                        .font(.system(size: isStory ? 40 : 34, weight: .heavy))
+                        .foregroundColor(Self.closedRed)
+                    Text(payload.dateText)
+                        .font(.system(size: isStory ? 16 : 14, weight: .semibold))
+                        .foregroundColor(Self.ink)
                 }
-                .foregroundColor(.white)
                 .lineLimit(1)
-                .minimumScaleFactor(0.8)
+                .minimumScaleFactor(0.6)
+                Spacer(minLength: 0)
             }
-            Text(payload.dateText)
-                .font(.system(size: isStory ? 19 : 16, weight: .medium))
-                .foregroundColor(.white.opacity(0.95))
 
             // 휴무 마트 칩
             FlowChips(marts: Array(payload.marts.prefix(isStory ? 4 : 3)))
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding(isStory ? 16 : 13)
+        .widgetTile(radius: Self.widgetRadius)
     }
 
     /// 실제 휴무 날짜가 찍힌 달력 한 장 (이모지 📅 는 늘 'JUL 17' 이라 헷갈린다)
@@ -171,6 +220,7 @@ struct ShareCardView: View {
         .frame(width: width, height: width * 1.05)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.black.opacity(0.08), lineWidth: 1))
         .overlay(alignment: .topTrailing) {
             if payload.isToday {
                 Text("🚫").font(.system(size: 22)).offset(x: 10, y: -10)
@@ -216,7 +266,7 @@ struct ShareCardView: View {
             }
         }
         .padding(14)
-        .background(RoundedRectangle(cornerRadius: 20).fill(.white))
+        .widgetTile(radius: Self.widgetRadius)
         .reveal(progress, from: 0.12, length: 0.12)
     }
 
@@ -272,7 +322,7 @@ struct ShareCardView: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 20).fill(.white.opacity(0.94)))
+        .widgetTile(radius: Self.widgetRadius)
     }
 
     private func tipPill(_ tip: String) -> some View {
@@ -297,20 +347,22 @@ private struct FlowChips: View {
 
     var body: some View {
         let rows = marts.count > 2 ? [Array(marts.prefix(2)), Array(marts.dropFirst(2))] : [marts]
-        VStack(spacing: 6) {
+        VStack(alignment: .leading, spacing: 6) {
             ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
                 HStack(spacing: 6) {
                     ForEach(Array(row.enumerated()), id: \.offset) { _, mart in
-                        HStack(spacing: 6) {
-                            Circle().fill(mart.color).frame(width: 9, height: 9)
+                        HStack(spacing: 5) {
+                            Circle().fill(mart.color).frame(width: 8, height: 8)
                             Text(mart.name)
-                                .font(.system(size: 15, weight: .semibold))
+                                .font(.system(size: 14, weight: .semibold))
                                 .foregroundColor(Color(red: 0.25, green: 0.22, blue: 0.24))
                                 .lineLimit(1)
+                                // 위젯 타일 안이라 폭이 좁다 — 잘리기 전에 글자를 줄인다
+                                .minimumScaleFactor(0.7)
                         }
-                        .padding(.horizontal, 12)
+                        .padding(.horizontal, 10)
                         .padding(.vertical, 6)
-                        .background(Capsule().fill(.white))
+                        .background(Capsule().fill(Color(red: 0.96, green: 0.94, blue: 0.95)))
                     }
                 }
             }
@@ -326,6 +378,15 @@ private func easedReveal(_ progress: Double, from start: Double, length: Double)
 }
 
 private extension View {
+    /// 홈 화면 위젯처럼 보이는 흰 타일 (연속 곡률 모서리 + 떠 있는 그림자)
+    func widgetTile(radius: CGFloat) -> some View {
+        background(
+            RoundedRectangle(cornerRadius: radius, style: .continuous)
+                .fill(.white)
+                .shadow(color: .black.opacity(0.16), radius: 12, y: 5)
+        )
+    }
+
     func reveal(_ progress: Double, from start: Double, length: Double) -> some View {
         let r = easedReveal(progress, from: start, length: length)
         return self.opacity(r).offset(y: (1 - r) * 18)
