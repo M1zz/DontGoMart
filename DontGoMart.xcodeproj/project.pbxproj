@@ -69,6 +69,11 @@
 		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 		F8CAF74282B87E515EA26B48 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6D8E1AF9898CD59B16480C /* LeeoKit */; };
 		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
+		D0075D5100000000000000B1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5000000000000000B0 /* Restaurant.swift */; };
+		D0075D5200000000000000B2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5000000000000000B0 /* Restaurant.swift */; };
+		D0075D5400000000000000B4 /* RestaurantImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5300000000000000B3 /* RestaurantImporter.swift */; };
+		D0075D5600000000000000B6 /* RestaurantViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5500000000000000B5 /* RestaurantViews.swift */; };
+		D0075D5800000000000000B8 /* RestaurantWeekWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +160,10 @@
 		D0075D4300000000000000A3 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
 		D0075D4500000000000000A5 /* TipCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCelebrationView.swift; sourceTree = "<group>"; };
 		D1C229952E0C2ABB00969839 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D0075D5000000000000000B0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D0075D5300000000000000B3 /* RestaurantImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantImporter.swift; sourceTree = "<group>"; };
+		D0075D5500000000000000B5 /* RestaurantViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViews.swift; sourceTree = "<group>"; };
+		D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeekWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -203,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				40E2B177256F4A4897EC2274 /* CustomMartManager.swift */,
+				D0075D5300000000000000B3 /* RestaurantImporter.swift */,
 				88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */,
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
@@ -222,6 +232,7 @@
 				58446A272A59493C001CC9D1 /* SettingsView.swift */,
 				D0075D4300000000000000A3 /* ShareCardView.swift */,
 				D0075D4500000000000000A5 /* TipCelebrationView.swift */,
+				D0075D5500000000000000B5 /* RestaurantViews.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */,
+				D0075D5000000000000000B0 /* Restaurant.swift */,
 				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
@@ -348,6 +360,7 @@
 				C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */,
 				C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */,
 				D0075D4100000000000000A1 /* SundayStatusWidget.swift */,
+				D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -534,6 +547,9 @@
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
 				D0075D4400000000000000A4 /* ShareCardView.swift in Sources */,
 				D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */,
+				D0075D5100000000000000B1 /* Restaurant.swift in Sources */,
+				D0075D5400000000000000B4 /* RestaurantImporter.swift in Sources */,
+				D0075D5600000000000000B6 /* RestaurantViews.swift in Sources */,
 				C359F4F02CFD724000F26B1D /* WidgetEntry.swift in Sources */,
 				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */,
@@ -560,6 +576,8 @@
 				C304FA2B2D1D1B5A000642C3 /* DateValue.swift in Sources */,
 				C359F4FD2CFD96CA00F26B1D /* TwoHolidayWidget.swift in Sources */,
 				D0075D4200000000000000A2 /* SundayStatusWidget.swift in Sources */,
+				D0075D5200000000000000B2 /* Restaurant.swift in Sources */,
+				D0075D5800000000000000B8 /* RestaurantWeekWidget.swift in Sources */,
 				58B693EB2A3B59EE00FF904B /* CalendarWidgetLiveActivity.swift in Sources */,
 				C359F5022CFDC0A800F26B1D /* HolidayWidgetProvider.swift in Sources */,
 				C33C54772D312D53008B625C /* Date+Ext.swift in Sources */,

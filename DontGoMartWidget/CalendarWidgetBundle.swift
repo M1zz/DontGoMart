@@ -14,5 +14,6 @@ struct CalendarWidgetBundle: WidgetBundle {
         HolidayWidget()
         TwoHolidayWidget()
         SundayStatusWidget()
+        RestaurantWeekWidget()
     }
 }

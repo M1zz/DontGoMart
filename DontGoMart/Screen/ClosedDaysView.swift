@@ -153,6 +153,7 @@ struct ClosedDaysView: View {
                     coffeeTipCard
                 }
                 nextClosedDateCard
+                RestaurantWeekCard()
                 calendarButton
                 upcomingClosedDatesCard
             }

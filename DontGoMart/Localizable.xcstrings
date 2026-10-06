@@ -2473,6 +2473,12 @@
             "state" : "translated",
             "value" : "Done"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "완료"
+          }
         }
       }
     },
@@ -2991,6 +2997,12 @@
             "state" : "translated",
             "value" : "Save"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장"
+          }
         }
       }
     },
@@ -3253,6 +3265,12 @@
             "state" : "translated",
             "value" : "Add"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "추가"
+          }
         }
       }
     },
@@ -3272,6 +3290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
           }
         }
       }
@@ -4168,6 +4192,646 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not a closed day"
+          }
+        }
+      }
+    },
+    "'%@' 을 찾았어요. 맞는지 확인하고 추가하세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Found \"%@\". Check it and tap Add."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "'%@' 을 찾았어요. 맞는지 확인하고 추가하세요."
+          }
+        }
+      }
+    },
+    "7일 동안 쉬는 곳이 없어요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No closures in the next 7 days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7일 동안 쉬는 곳이 없어요"
+          }
+        }
+      }
+    },
+    "7일 동안 쉬는 단골 식당이 없어요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None of your restaurants close in the next 7 days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7일 동안 쉬는 단골 식당이 없어요"
+          }
+        }
+      }
+    },
+    "7일간 휴무 없음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No closures this week"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7일간 휴무 없음"
+          }
+        }
+      }
+    },
+    "관리" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manage"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "관리"
+          }
+        }
+      }
+    },
+    "네이버지도 공유 링크나 스크린샷으로 추가할 수 있습니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can add one from a Naver Map share link or a screenshot"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "네이버지도 공유 링크나 스크린샷으로 추가할 수 있습니다"
+          }
+        }
+      }
+    },
+    "단골 식당" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Restaurants"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단골 식당"
+          }
+        }
+      }
+    },
+    "단골 식당 7일" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurants · 7 Days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단골 식당 7일"
+          }
+        }
+      }
+    },
+    "단골 식당을 추가하거나 고칩니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add or edit your restaurants"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단골 식당을 추가하거나 고칩니다"
+          }
+        }
+      }
+    },
+    "단골 식당이 없습니다. 앱에서 추가하세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No restaurants yet. Add them in the app."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단골 식당이 없습니다. 앱에서 추가하세요."
+          }
+        }
+      }
+    },
+    "또는 공유 링크·문구를 여기에 붙여넣기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Or paste a share link or text here"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "또는 공유 링크·문구를 여기에 붙여넣기"
+          }
+        }
+      }
+    },
+    "빠르게 가져오기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick Import"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "빠르게 가져오기"
+          }
+        }
+      }
+    },
+    "사진에서 휴무 문구를 기기 안에서 읽어옵니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reads the closing info from the photo on your device"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사진에서 휴무 문구를 기기 안에서 읽어옵니다"
+          }
+        }
+      }
+    },
+    "사진을 불러오지 못했어요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't load the photo"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사진을 불러오지 못했어요"
+          }
+        }
+      }
+    },
+    "쉬는 식당 없음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No restaurant closed"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쉬는 식당 없음"
+          }
+        }
+      }
+    },
+    "스크린샷" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스크린샷"
+          }
+        }
+      }
+    },
+    "식당 삭제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Restaurant"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 삭제"
+          }
+        }
+      }
+    },
+    "식당 이름" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant name"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 이름"
+          }
+        }
+      }
+    },
+    "식당 정보" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 정보"
+          }
+        }
+      }
+    },
+    "식당 추가하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a Restaurant"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 추가하기"
+          }
+        }
+      }
+    },
+    "식당 추가" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Restaurant"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 추가"
+          }
+        }
+      }
+    },
+    "식당 편집" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Restaurant"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "식당 편집"
+          }
+        }
+      }
+    },
+    "앞으로 7일 동안 쉬는 단골 식당이 없습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None of your restaurants close in the next 7 days."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앞으로 7일 동안 쉬는 단골 식당이 없습니다."
+          }
+        }
+      }
+    },
+    "앞으로 7일 중 단골 식당이 쉬는 요일을 점으로 보여줘요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shows a dot on days your restaurants are closed in the next 7 days."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앞으로 7일 중 단골 식당이 쉬는 요일을 점으로 보여줘요."
+          }
+        }
+      }
+    },
+    "앱에서 단골 식당을 추가하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add restaurants in the app"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱에서 단골 식당을 추가하세요"
+          }
+        }
+      }
+    },
+    "연중무휴로 나와 있어요. 쉬는 날이 없는 식당이에요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listed as open every day — no regular closed day."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "연중무휴로 나와 있어요. 쉬는 날이 없는 식당이에요."
+          }
+        }
+      }
+    },
+    "위젯 '단골 식당 7일' 을 홈 화면에 추가하면 앱을 열지 않아도 보여요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add the \"Restaurants · 7 Days\" widget to your Home Screen to see this without opening the app."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "위젯 '단골 식당 7일' 을 홈 화면에 추가하면 앱을 열지 않아도 보여요."
+          }
+        }
+      }
+    },
+    "이 내용으로 가져오기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import This"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 내용으로 가져오기"
+          }
+        }
+      }
+    },
+    "이름은 가져왔지만 휴무 정보가 없어요. 영업시간 화면을 스크린샷으로 고르거나 직접 골라주세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Got the name but no closing info. Try a screenshot of the hours, or pick the days below."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이름은 가져왔지만 휴무 정보가 없어요. 영업시간 화면을 스크린샷으로 고르거나 직접 골라주세요."
+          }
+        }
+      }
+    },
+    "자주 가는 식당의 정기 휴무를 넣어 두면 앞으로 7일 중 쉬는 날을 점으로 알려드려요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add the regular closing days of restaurants you visit, and we'll mark closed days in the next 7 days with a dot."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자주 가는 식당의 정기 휴무를 넣어 두면 앞으로 7일 중 쉬는 날을 점으로 알려드려요."
+          }
+        }
+      }
+    },
+    "점 색상" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dot color"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "점 색상"
+          }
+        }
+      }
+    },
+    "정기 휴무" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regular Closing Days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정기 휴무"
+          }
+        }
+      }
+    },
+    "주소 (선택)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address (optional)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주소 (선택)"
+          }
+        }
+      }
+    },
+    "지도 앱에서 식당을 '공유 → 복사' 한 뒤 붙여넣거나, 식당 정보 화면 스크린샷을 고르세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In your map app, tap Share → Copy on the restaurant and paste it here, or pick a screenshot of its info page."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지도 앱에서 식당을 '공유 → 복사' 한 뒤 붙여넣거나, 식당 정보 화면 스크린샷을 고르세요."
+          }
+        }
+      }
+    },
+    "지도에서 열기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open in Map"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지도에서 열기"
+          }
+        }
+      }
+    },
+    "휴무 요일 직접 추가" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Closing Day Manually"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 요일 직접 추가"
+          }
+        }
+      }
+    },
+    "휴무 요일을 추가해주세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please add a closing day"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 요일을 추가해주세요"
+          }
+        }
+      }
+    },
+    "휴무 정보를 고칩니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit closing info"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 정보를 고칩니다"
+          }
+        }
+      }
+    },
+    "휴무 정보를 찾는 중…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Looking for closing info…"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 정보를 찾는 중…"
+          }
+        }
+      }
+    },
+    "휴무 정보를 찾지 못했어요. 아래에서 직접 골라주세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't find closing info. Please pick the days below."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 정보를 찾지 못했어요. 아래에서 직접 골라주세요."
           }
         }
       }
