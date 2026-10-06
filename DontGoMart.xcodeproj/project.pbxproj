@@ -75,6 +75,8 @@
 		D0075D5600000000000000B6 /* RestaurantViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5500000000000000B5 /* RestaurantViews.swift */; };
 		D0075D5800000000000000B8 /* RestaurantWeekWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */; };
 		D0075D5A00000000000000BA /* ShareVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5900000000000000B9 /* ShareVideoExporter.swift */; };
+		D0075D4800000000000000A8 /* AnnouncementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4700000000000000A7 /* AnnouncementManager.swift */; };
+		D0075D4A00000000000000AA /* AnnouncementBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D4900000000000000A9 /* AnnouncementBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,8 @@
 		D0075D5500000000000000B5 /* RestaurantViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViews.swift; sourceTree = "<group>"; };
 		D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeekWidget.swift; sourceTree = "<group>"; };
 		D0075D5900000000000000B9 /* ShareVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVideoExporter.swift; sourceTree = "<group>"; };
+		D0075D4700000000000000A7 /* AnnouncementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementManager.swift; sourceTree = "<group>"; };
+		D0075D4900000000000000A9 /* AnnouncementBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -220,6 +224,7 @@
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
 				9C40A1012F2B1A0100AF1279 /* UsageReporter.swift */,
+				D0075D4700000000000000A7 /* AnnouncementManager.swift */,
 				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
 				9C2035782F2AE58000AF1279 /* ReviewManager.swift */,
 			);
@@ -236,6 +241,7 @@
 				D0075D4300000000000000A3 /* ShareCardView.swift */,
 				D0075D4500000000000000A5 /* TipCelebrationView.swift */,
 				D0075D5500000000000000B5 /* RestaurantViews.swift */,
+				D0075D4900000000000000A9 /* AnnouncementBanner.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -549,6 +555,8 @@
 				C3C2F8E82CEB18CE003ED9A5 /* MartModel.swift in Sources */,
 				58B693D22A3B56E800FF904B /* ClosedDaysView.swift in Sources */,
 				D0075D4400000000000000A4 /* ShareCardView.swift in Sources */,
+				D0075D4A00000000000000AA /* AnnouncementBanner.swift in Sources */,
+				D0075D4800000000000000A8 /* AnnouncementManager.swift in Sources */,
 				D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */,
 				D0075D5100000000000000B1 /* Restaurant.swift in Sources */,
 				D0075D5400000000000000B4 /* RestaurantImporter.swift in Sources */,

@@ -19,10 +19,14 @@ struct ClosedDaysView: View {
     @State private var isShareButtonCollapsed = false
     /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) 표시 여부
     @State private var isShowingSupporterThanks = false
+    /// 휴무 임박 배너를 닫은 휴무일 ("yyyy-MM-dd"). 같은 휴무일엔 다시 띄우지 않는다.
+    @AppStorage("closingBanner.dismissedDay") private var dismissedClosingDay = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var tipStore = CoffeeTipStore.shared
+    @StateObject private var announcements = AnnouncementManager.shared
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationStack {
@@ -30,6 +34,9 @@ struct ClosedDaysView: View {
                 .navigationTitle("")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        settingsButton
+                    }
                     ToolbarItem(placement: .topBarTrailing) {
                         if sharePayload != nil {
                             Button(action: {
@@ -80,9 +87,33 @@ struct ClosedDaysView: View {
                         }
                     }
                 }
-                .overlay(alignment: .bottomTrailing) {
-                    settingsButton
+                .safeAreaInset(edge: .top, spacing: 0) {
+                    VStack(spacing: 0) {
+                        // 고른 마트가 곧 쉬는 날이면 앱이 먼저 알린다
+                        if let closing = closingSoonBanner {
+                            AnnouncementBanner(
+                                announcement: closing,
+                                onDismiss: { dismissClosingBanner(closing) },
+                                onTap: {
+                                    isShowingCalendar = true
+                                    AppUsage.log(.calendar)
+                                },
+                                tapHint: "달력에서 휴무일을 확인합니다"
+                            )
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                        }
+                        // 운영자 공지가 있을 때만 (CloudKit 원격 공지)
+                        if let notice = announcements.current {
+                            AnnouncementBanner(
+                                announcement: notice,
+                                onDismiss: { announcements.dismiss(notice) }
+                            )
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                        }
+                    }
                 }
+                .animation(.spring(duration: 0.4), value: closingSoonBanner)
+                .animation(.spring(duration: 0.4), value: announcements.current)
         }
         .sheet(isPresented: $isShowingSettings) {
             SettingsView(isShowingSettings: $isShowingSettings)
@@ -94,6 +125,20 @@ struct ClosedDaysView: View {
             if let payload = sharePayload {
                 ShareCardSheet(payload: payload, messageText: shareText)
                     .presentationDetents([.large])
+            }
+        }
+        .task { await announcements.refresh() }
+        #if DEBUG
+        // 스토어 스크린샷용: 탭 없이 공유 카드 화면을 바로 연다 (디버그 빌드 전용)
+        .task {
+            if ProcessInfo.processInfo.arguments.contains("-ScreenshotShareCard") {
+                isShowingShareCard = true
+            }
+        }
+        #endif
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active {
+                Task { await announcements.refresh() }
             }
         }
         .onOpenURL { url in
@@ -177,17 +222,9 @@ struct ClosedDaysView: View {
         Button(action: {
             isShowingSettings.toggle()
         }) {
-            Image(systemName: "gear")
-                .font(.title2)
-                .foregroundColor(.white)
-                .frame(width: 56, height: 56)
-                .background(
-                    Circle().fill(Color("Pink"))
-                )
-                .shadow(color: .black.opacity(0.2), radius: 6, y: 3)
+            Image(systemName: "gearshape")
+                .foregroundStyle(Color("Pink"))
         }
-        .padding(.trailing, 20)
-        .padding(.bottom, 20)
         .accessibilityLabel(Text("설정"))
         .accessibilityHint(Text("매장 선택 및 알림 설정 화면을 엽니다"))
     }
@@ -620,6 +657,41 @@ struct ClosedDaysView: View {
         )
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text(groupAccessibilityLabel(date: date, marts: marts, days: days)))
+    }
+
+    // MARK: - 휴무 임박 배너
+
+    /// 며칠 앞까지 미리 알릴지. 오늘 휴무는 맨 위 '오늘 갈 수 있나요?' 카드가 이미 크게 말한다.
+    private static let closingSoonRange = 1...3
+
+    /// 고른 마트의 가장 가까운 휴무일이 1~3일 안이면 배너로 만든다.
+    private var closingSoonBanner: Announcement? {
+        guard let next = upcomingGroups().first(where: { $0.days > 0 }),
+              Self.closingSoonRange.contains(next.days) else { return nil }
+        let dayKey = Self.dayKey(next.date)
+        guard dayKey != dismissedClosingDay else { return nil }
+
+        let names = next.marts.map { $0.type.displayName }.joined(separator: ", ")
+        return Announcement(
+            id: "closing-\(dayKey)",
+            title: String(format: String(localized: "%@ 휴무예요", defaultValue: "Closed %@"),
+                          relativeDayPhrase(date: next.date, days: next.days)),
+            message: String(format: String(localized: "%1$@ · %2$@ — 장보기는 미리 하세요",
+                                           defaultValue: "%1$@ · %2$@ — shop ahead of time"),
+                            formattedCardDate(next.date), names),
+            linkURL: nil,
+            style: .closingSoon,
+            endsAt: nil
+        )
+    }
+
+    private func dismissClosingBanner(_ banner: Announcement) {
+        dismissedClosingDay = String(banner.id.dropFirst("closing-".count))
+    }
+
+    private static func dayKey(_ date: Date) -> String {
+        let c = Calendar.current.dateComponents([.year, .month, .day], from: date)
+        return String(format: "%04d-%02d-%02d", c.year ?? 0, c.month ?? 0, c.day ?? 0)
     }
 
     // MARK: - 공유
