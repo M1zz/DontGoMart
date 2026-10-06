@@ -8,20 +8,26 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 
 ### 앱스토어 (한국어)
 
+단골 식당이 쉬는 날도 함께 챙길 수 있어요
+네이버지도 링크나 사진으로 휴무일을 가져와요
+휴무 소식을 인스타 스토리와 동영상으로 공유해요
 마트 쉬는 날이 다가오면 화면 위에 알려 드려요
-휴무 소식을 위젯 모양 카드로 공유할 수 있어요
-설정 버튼이 화면 위로 옮겨져 더 깔끔해졌어요
+설정 버튼이 화면 위로 옮겨졌어요
 
 ### App Store (English)
 
+Now tracks your go-to restaurants too
+Import days off from Naver Map or photos
+Share closures as Stories or videos
 A banner warns you before closed days
-Share closures on a card like a widget
 Settings moved to the top of the screen
 
 ### 개발 메모 (노출 안 함)
 
 - 휴무 임박 배너: 고른 마트의 다음 휴무가 1~3일 안이면 메인 상단 배너, 탭하면 캘린더, 닫으면 그 휴무일엔 다시 안 뜸
-- 공유 카드: 배경화면 위 중형 위젯 모양으로 다시 그림 (D-day 크게, 마트 3곳 + 외 N곳)
+- 단골 식당 정기휴무(43b0967): 네이버지도 링크·스크린샷 OCR 가져오기, 메인 7일 카드, 위젯(small/medium/잠금화면)
+- 공유 카드 업그레이드(a028648): 2주 달력·장보기 팁, 인스타 4:5/9:16, 7초 MP4
+- 공유 카드 위젯 느낌: 주인공 휴무일을 흰 위젯 타일로, 패널 22pt 연속 모서리 + 그림자, 배경 빛 번짐
 - 설정: 우하단 플로팅 버튼 → 네비게이션 바 왼쪽 톱니바퀴
 - 원격 공지 배너(AnnouncementManager): CloudKit 허브 `Announcement` 레코드. 스키마 미배포 상태라 지금은 아무것도 안 뜬다 — docs/ANNOUNCEMENT.md
 
