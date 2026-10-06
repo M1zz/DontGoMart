@@ -74,6 +74,7 @@
 		D0075D5400000000000000B4 /* RestaurantImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5300000000000000B3 /* RestaurantImporter.swift */; };
 		D0075D5600000000000000B6 /* RestaurantViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5500000000000000B5 /* RestaurantViews.swift */; };
 		D0075D5800000000000000B8 /* RestaurantWeekWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */; };
+		D0075D5A00000000000000BA /* ShareVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5900000000000000B9 /* ShareVideoExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		D0075D5300000000000000B3 /* RestaurantImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantImporter.swift; sourceTree = "<group>"; };
 		D0075D5500000000000000B5 /* RestaurantViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViews.swift; sourceTree = "<group>"; };
 		D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeekWidget.swift; sourceTree = "<group>"; };
+		D0075D5900000000000000B9 /* ShareVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVideoExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -213,6 +215,7 @@
 			children = (
 				40E2B177256F4A4897EC2274 /* CustomMartManager.swift */,
 				D0075D5300000000000000B3 /* RestaurantImporter.swift */,
+				D0075D5900000000000000B9 /* ShareVideoExporter.swift */,
 				88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */,
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
@@ -549,6 +552,7 @@
 				D0075D4600000000000000A6 /* TipCelebrationView.swift in Sources */,
 				D0075D5100000000000000B1 /* Restaurant.swift in Sources */,
 				D0075D5400000000000000B4 /* RestaurantImporter.swift in Sources */,
+				D0075D5A00000000000000BA /* ShareVideoExporter.swift in Sources */,
 				D0075D5600000000000000B6 /* RestaurantViews.swift in Sources */,
 				C359F4F02CFD724000F26B1D /* WidgetEntry.swift in Sources */,
 				C359F5092CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
@@ -753,6 +757,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -794,6 +799,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

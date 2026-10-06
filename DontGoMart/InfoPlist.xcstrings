@@ -51,6 +51,23 @@
           }
         }
       }
+    },
+    "NSPhotoLibraryAddUsageDescription" : {
+      "comment" : "Privacy - Photo Library Additions Usage Description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Needed to save closing-day card photos and videos to your library."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

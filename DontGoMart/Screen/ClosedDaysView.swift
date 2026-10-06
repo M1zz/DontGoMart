@@ -624,7 +624,8 @@ struct ClosedDaysView: View {
 
     // MARK: - 공유
 
-    /// 공유 카드 데이터. 오늘 휴무면 오늘을, 아니면 가장 가까운 휴무일을 카드로 만든다.
+    /// 공유 카드 데이터. 오늘 휴무면 오늘을, 아니면 가장 가까운 휴무일을 주인공으로 하고
+    /// 2주 달력·다가오는 휴무·장보기 팁을 함께 담는다 (받는 사람이 한눈에 계획을 세우도록).
     /// 마트 미선택 등으로 만들 수 없으면 nil (텍스트 공유로 폴백).
     private var sharePayload: ShareCardPayload? {
         let calendar = Calendar.current
@@ -635,22 +636,80 @@ struct ClosedDaysView: View {
         let todayClosed = tasks.filter { task in
             selected.contains(task.type) && calendar.isDate(task.taskDate, inSameDayAs: today)
         }
+        let groups = upcomingGroups()
+        let hero: (phrase: String, date: Date, marts: [MetaMartsClosedDays], isToday: Bool)
         if !todayClosed.isEmpty {
-            return ShareCardPayload(
-                phrase: String(localized: "오늘", defaultValue: "Today"),
-                dateText: formattedCardDate(today),
-                marts: todayClosed.map { ($0.type.displayName, $0.type.themeColor) },
-                isToday: true
-            )
+            hero = (String(localized: "오늘", defaultValue: "Today"), today, todayClosed, true)
+        } else if let next = groups.first {
+            hero = (relativeDayPhrase(date: next.date, days: next.days), next.date, next.marts, false)
+        } else {
+            return nil
         }
 
-        guard let next = upcomingGroups().first else { return nil }
         return ShareCardPayload(
-            phrase: relativeDayPhrase(date: next.date, days: next.days),
-            dateText: formattedCardDate(next.date),
-            marts: next.marts.map { ($0.type.displayName, $0.type.themeColor) },
-            isToday: false
+            phrase: hero.phrase,
+            dateText: formattedCardDate(hero.date),
+            marts: uniqueMarts(hero.marts),
+            isToday: hero.isToday,
+            heroDate: hero.date,
+            calendarDays: shareCalendarDays(today: today, selected: selected),
+            upcoming: groups.filter { $0.date != hero.date }.prefix(3).map { group in
+                ShareUpcoming(phrase: relativeDayPhrase(date: group.date, days: group.days),
+                              dateText: group.date.formatted(.dateTime.month().day().weekday(.abbreviated)),
+                              marts: uniqueMarts(group.marts))
+            },
+            tip: shoppingTip(heroDate: hero.date, isToday: hero.isToday, selected: selected)
         )
+    }
+
+    private func uniqueMarts(_ list: [MetaMartsClosedDays]) -> [(name: String, color: Color)] {
+        var seen = Set<String>()
+        return list.compactMap { task in
+            let name = task.type.displayName
+            guard seen.insert(name).inserted else { return nil }
+            return (name, task.type.themeColor)
+        }
+    }
+
+    /// 이번 주 첫날부터 2주(14칸) — 지난 날은 흐리게, 휴무일은 마트 색으로.
+    private func shareCalendarDays(today: Date, selected: [MartType]) -> [ShareDay] {
+        let calendar = Calendar.current
+        let weekStart = calendar.dateInterval(of: .weekOfYear, for: today)?.start ?? today
+        return (0..<14).compactMap { offset in
+            guard let date = calendar.date(byAdding: .day, value: offset, to: weekStart) else { return nil }
+            let closed = tasks.filter { selected.contains($0.type) && calendar.isDate($0.taskDate, inSameDayAs: date) }
+            return ShareDay(date: date,
+                            closedColors: closed.map { $0.type.themeColor },
+                            isToday: calendar.isDate(date, inSameDayAs: today),
+                            isPast: date < today)
+        }
+    }
+
+    /// 받는 사람이 바로 행동할 수 있는 한 줄.
+    /// 오늘 휴무 → 다시 여는 날, 다가오는 휴무 → 전날까지 장보기.
+    private func shoppingTip(heroDate: Date, isToday: Bool, selected: [MartType]) -> String? {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        func isClosed(_ date: Date) -> Bool {
+            tasks.contains { selected.contains($0.type) && calendar.isDate($0.taskDate, inSameDayAs: date) }
+        }
+        if isToday {
+            for offset in 1...7 {
+                guard let date = calendar.date(byAdding: .day, value: offset, to: today) else { break }
+                if !isClosed(date) {
+                    let days = calendar.dateComponents([.day], from: today, to: date).day ?? offset
+                    return String(format: String(localized: "%@부터 다시 문을 열어요", defaultValue: "Open again %@"),
+                                  relativeDayPhrase(date: date, days: days))
+                }
+            }
+            return nil
+        }
+        guard let dayBefore = calendar.date(byAdding: .day, value: -1, to: heroDate), dayBefore >= today else {
+            return nil
+        }
+        let days = calendar.dateComponents([.day], from: today, to: dayBefore).day ?? 0
+        return String(format: String(localized: "장보기는 %@까지 끝내세요", defaultValue: "Finish shopping by %@"),
+                      relativeDayPhrase(date: dayBefore, days: days))
     }
 
     /// 카드용 날짜 표기: "7월 13일 일요일" (로케일 자동 대응)
