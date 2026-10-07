@@ -58,6 +58,10 @@ https://m1zz.github.io/DontGoMart/support.html
 
 https://m1zz.github.io/DontGoMart/privacy.html
 
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/
+
 ## en
 
 ### 이름
@@ -106,8 +110,12 @@ Every feature is free. If the app saves you a trip, you can support development 
 
 ### 지원 URL
 
-https://m1zz.github.io/DontGoMart/support.html
+https://m1zz.github.io/DontGoMart/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/DontGoMart/privacy.html
+https://m1zz.github.io/DontGoMart/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/en/
