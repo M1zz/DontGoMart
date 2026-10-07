@@ -18,8 +18,8 @@ PROJECT="DontGoMart.xcodeproj"
 VERSION_XCCONFIG="Config/Version.xcconfig"
 
 # ── 1. 버전이 두 곳에서 어긋나지 않는지 ──────────────────────────────────
-# 이 앱은 타겟 빌드 설정(project.pbxproj)에 MARKETING_VERSION 이 직접 박혀 있고,
-# 그게 Version.xcconfig 를 이긴다. 그래서 xcconfig 만 올리면 조용히 옛 버전이
+# 타겟 빌드 설정(project.pbxproj)에 MARKETING_VERSION 이 다시 박히면
+# 그게 Version.xcconfig 를 이긴다. 그러면 xcconfig 만 올려도 조용히 옛 버전이
 # 올라가고, 업로드가 "이미 있는 버전" 으로 거절되고 나서야 드러난다.
 # 두 곳이 같은 값인지 여기서 먼저 확인한다.
 echo "🔢 [1/3] 버전 동기화 확인"
