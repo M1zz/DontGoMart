@@ -40,6 +40,7 @@
 		9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */; };
 		9C2035772F2AE58000AF1279 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2035782F2AE58000AF1279 /* ReviewManager.swift */; };
 		9C2035782F2AE56D00AF1279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */; };
+		9C2035802F2AE5A000AF1279 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2035812F2AE5A000AF1279 /* InfoPlist.xcstrings */; };
 		AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B177256F4A4897EC2274 /* CustomMartManager.swift */; };
 		AED7BB247263EE03E9181B58 /* DontGoMartSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18486640C96835BB82BFD493 /* DontGoMartSpec.swift */; };
 		C304FA2A2D1D1B53000642C3 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
@@ -144,6 +145,7 @@
 		88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatusManager.swift; sourceTree = "<group>"; };
 		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		9C2035812F2AE5A000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		9C2035782F2AE58000AF1279 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
 		9C20357A2F2AE59000AF1279 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */,
 				58B693EF2A3B59EF00FF904B /* Assets.xcassets */,
 				58B693F12A3B59EF00FF904B /* Info.plist */,
+				9C2035812F2AE5A000AF1279 /* InfoPlist.xcstrings */,
 			);
 			path = DontGoMartWidget;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			files = (
 				58B693F02A3B59EF00FF904B /* Assets.xcassets in Resources */,
 				9C2035782F2AE56D00AF1279 /* Localizable.xcstrings in Resources */,
+				9C2035802F2AE5A000AF1279 /* InfoPlist.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,7 +765,7 @@
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMart/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
+				INFOPLIST_KEY_CFBundleDisplayName = DontGoMart;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다.";
@@ -801,7 +805,7 @@
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMart/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "돈꼬마트";
+				INFOPLIST_KEY_CFBundleDisplayName = DontGoMart;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다.";
@@ -838,7 +842,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = DontGoMart;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -867,7 +871,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DontGoMartWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CalendarWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = DontGoMart;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
