@@ -2,7 +2,26 @@
 
 DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' 을 읽어 간다.
 `### 앱스토어 (언어)` 절만 스토어로 나가고, `### 개발 메모` 절은 나가지 않는다.
-확인: `DeployBar --reponotes 돈꼬마트 2.0.8`
+확인: `DeployBar --reponotes 돈꼬마트 2.0.9`
+
+## 2.0.9
+
+### 앱스토어 (한국어)
+
+위젯 목록에 돈꼬마트 이름이 제대로 보여요
+설정에서 보낸 의견과 개발자 답장을 볼 수 있어요
+의견을 보낼 때 어떤 상황이었는지 차근차근 물어봐요
+
+### App Store (English)
+
+Widgets now carry the DontGoMart name
+See replies to your feedback in Settings
+Feedback now asks what happened
+
+### 개발 메모 (노출 안 함)
+
+- 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
+- LeeoKit 3.7.1 → 3.16.2: 보낸 의견 · 답장 화면(LeeoSentFeedbackRow), 유형별 질문(LeeoFeedbackPrompt)
 
 ## 2.0.8
 
