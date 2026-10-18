@@ -16,7 +16,7 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 언어별 칸에 올린
 
 ### 키워드
 
-대형마트,휴업,쉬는날,문닫는날,영업일,영업시간,장보기,식당,맛집,정기휴무,일요일,수요일,창고형,달력,캘린더,명절,설날,추석,제주,울산,대구,일산,쇼핑,휴점
+문닫는날,정기휴무,휴점,의무휴업,휴업,마트휴무,마트쉬는날,영업일,수요일,대형마트,창고형,영업시간,쉬는날,일요일,장보기,명절,설날,추석,휴무,마트영업시간,대형마트휴무,공휴일
 
 ### 프로모션 텍스트
 
@@ -74,7 +74,7 @@ Know before you go shopping
 
 ### 키워드
 
-grocery,supermarket,restaurant,closing,closure,holiday,korea,calendar,reminder,widget,countdown
+sunday,grocery,supermarket,mart,hours,opening,holiday,korea,closure,reminder,warehouse,widget
 
 ### 프로모션 텍스트
 
