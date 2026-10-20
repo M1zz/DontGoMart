@@ -17,6 +17,8 @@ struct DontGoMartApp: App {
         // 앱 시작 시 즉시 tasks 초기화
         initializeTasks()
         LeeoEngagement.shared.registerLaunch()
+        // 크래시·멈춤 진단(MetricKit)을 피드백 허브로 보낸다. 실패해도 앱 동작에는 영향이 없다.
+        LeeoDiagnostics.shared.start(spec: DontGoMartSpec.self)
     }
 
     var body: some Scene {
