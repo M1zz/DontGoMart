@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DontGoMart - お店の休業日をお知らせ</title>
+  <meta name="description" content="DontGoMartは、韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日をまとめて確認し、休業日の前にお知らせするアプリです。">
+  <meta property="og:title" content="DontGoMart - お店の休業日をお知らせ">
+  <meta property="og:description" content="DontGoMartは、韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日をまとめて確認し、休業日の前にお知らせするアプリです。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/ja/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #FF3B30;
+      --primary-dark: #D32F2F;
+      --bg: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --card-bg: #ffffff;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      --divider: #d2d2d7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --bg-secondary: #1c1c1e;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --card-bg: #1c1c1e;
+        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        --divider: #38383a;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== Header ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--divider);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .logo span {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    .app-store-badge:hover {
+      transform: scale(1.05);
+    }
+
+    .app-store-badge img {
+      height: 54px;
+    }
+
+    /* ===== Features ===== */
+    .features {
+      background: var(--bg-secondary);
+      padding: 80px 20px;
+    }
+
+    .features-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      letter-spacing: -0.02em;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .cta p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    .footer-links {
+      margin-bottom: 12px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px 40px; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: 1rem; }
+      .features { padding: 48px 20px; }
+      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
+      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
+      .feature-card { padding: 24px 20px; }
+      .cta { padding: 48px 20px; }
+      .cta h2 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語" class="active" aria-current="true">JA</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
+    <h1>出かける前に、<br>お店が開いているか確認</h1>
+    <p>DontGoMartは、韓国の大型スーパーやコストコの義務休業日を確認し、休業日の前にお知らせするアプリです。お気に入りの飲食店の定休日も管理できます。</p>
+    <a href="https://apps.apple.com/jp/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード">
+    </a>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <h2>主な機能</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F6D2;</span>
+          <h3>今日の営業状況がひと目でわかる</h3>
+          <p>アプリを開くと、選んだお店が今日営業しているかが真っ先に表示されます。次の休業日までの日数と、今後の休業日の一覧も確認できます。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F5FA;</span>
+          <h3>地域ごとの休業日に対応</h3>
+          <p>日曜休業や水曜休業のお店のほか、蔚山や済州のように休業日が異なる地域も選べます。コストコの大邱店・一山店・蔚山店は個別に設定でき、旧正月と秋夕の休業日も表示されます。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x2795;</span>
+          <h3>近所のお店を追加</h3>
+          <p>一覧にないお店は、第2・第4日曜日のように、何週目の何曜日に休むかを選んで自分で登録できます。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F35C;</span>
+          <h3>お気に入りの飲食店も</h3>
+          <p>Naverマップの共有リンクを貼り付けるか、お店の情報画面のスクリーンショットを選ぶだけで、定休日が自動で入力されます。写真の中の文字は端末の中だけで読み取ります。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F514;</span>
+          <h3>生活に合わせた通知</h3>
+          <p>休業日の1日前・2日前・3日前・7日前から選び、好きな時刻に通知を受け取れます。前日には「今日は買い物にぴったりの日」とお知らせするオプションもあります。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F4F1;</span>
+          <h3>ホーム画面・ロック画面のウィジェット</h3>
+          <p>直近の休業日までのカウントダウン、今週の日曜日が休業かどうか、飲食店の今後7日間の休みを、アプリを開かずに確認できます。</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F4C5;</span>
+          <h3>カレンダーと共有</h3>
+          <p>1か月分の休業日をカレンダーで確認し、2週間分のカレンダー付きのカードや短い動画にして共有できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>すべての機能が無料</h2>
+    <p>閉まっているお店の前で引き返すことは、もうありません。</p>
+    <a href="https://apps.apple.com/jp/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード">
+    </a>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="support.html">サポート</a>
+      <a href="mailto:hyunho.lee.1993@gmail.com">お問い合わせ</a>
+    </div>
+    <p>&copy; 2026 DontGoMart</p>
+  </footer>
+
+</body>
+</html>

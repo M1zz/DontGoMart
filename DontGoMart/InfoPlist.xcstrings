@@ -15,6 +15,18 @@
             "state" : "translated",
             "value" : "돈꼬마트"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -31,6 +43,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "돈꼬마트"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
           }
         }
       }
@@ -49,6 +73,18 @@
             "state" : "translated",
             "value" : "주변 매장을 찾아 추천하기 위해 위치 정보가 필요합니다."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "近くのお店を探しておすすめするために、位置情報が必要です。"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Location access is needed to find and recommend nearby stores."
+          }
         }
       }
     },
@@ -65,6 +101,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "휴무 알림 카드 사진·동영상을 앨범에 저장하기 위해 필요합니다."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休業のお知らせカードの写真や動画をアルバムに保存するために必要です。"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Needed to save closing-day card photos and videos to your library."
           }
         }
       }

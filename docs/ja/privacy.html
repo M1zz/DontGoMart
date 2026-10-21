@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - DontGoMart</title>
+  <meta name="description" content="DontGoMartが端末に保存する情報、送信する情報、その送信先についてご案内します。">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語" class="active" aria-current="true">JA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p class="last-updated">最終更新日:2026年10月8日</p>
+
+    <h2>概要</h2>
+    <p>DontGoMartにはアカウントがなく、広告や追跡ツールも使用していません。選んだお店、追加したお店、飲食店、通知の設定は、すべて端末の中だけに保存されます。開発者が受け取るのは、個人を特定できない匿名の利用統計と、お客様が送信を選んだご意見のみです。</p>
+    <h2>1. 端末に保存される情報</h2>
+    <p>アプリを動かすために、次の情報が端末の中だけに保存されます。ホーム画面のウィジェットで表示できるよう、端末内のアプリの共有コンテナにも同じ内容が置かれます。</p>
+    <ul>
+      <li>選んだお店と地域</li>
+      <li>ご自身で追加したお店(名前と休業のルール)</li>
+      <li>飲食店(名前、住所、定休日、地図のリンク)</li>
+      <li>通知の設定(何日前の何時に知らせるか)とアプリの設定</li>
+    </ul>
+    <p>これらは開発者には送信されず、アプリを削除すると一緒に消えます。</p>
+    <h2>2. 通知</h2>
+    <p>休業日の通知は端末の中で予約されます。通知を届けるためにサーバーへ何かを送ることはありません。</p>
+    <h2>3. 写真</h2>
+    <p>スクリーンショットから飲食店の定休日を入力するとき、アプリが受け取るのはお客様が選んだ写真だけです。写真の中の文字はAppleのVisionフレームワークで端末の中で読み取られ、写真も文字もどこにも送信されません。</p>
+    <p>休業日のお知らせカードの画像や動画を保存するときに限り、フォトライブラリへの追加の許可をお願いします。ライブラリ内のほかの写真を読み取ることはありません。</p>
+    <h2>4. Naverマップのリンクから飲食店を読み込む場合</h2>
+    <p>Naverマップから共有されたリンクを貼り付けると、アプリはそのリンクと飲食店のNaverプレイスのページに直接接続し、名前、住所、定休日を読み取ります。一般的なウェブサイトの閲覧と同じように、NaverにはIPアドレスなどの接続情報が渡る場合があり、そのリクエストにはNaverのプライバシーポリシーが適用されます。この通信が開発者のサーバーを経由することはありません。</p>
+    <h2>5. 位置情報</h2>
+    <p>DontGoMartは位置情報を要求も収集もしません。お店は一覧からお客様が選びます。</p>
+    <h2>6. 応援(アプリ内課金)</h2>
+    <p>コーヒー、ケーキ、食事の応援はApple経由のアプリ内課金で処理され、開発者がお客様の支払い方法や決済の詳細を知ることはありません。応援の回数とサポーターバッジを表示するかどうかは、ほかの端末にも引き継げるよう、お客様自身のiCloudのキー・バリュー・ストレージに保存されます。このデータはお客様のApple Accountで保護されており、開発者は見ることができません。</p>
+    <h2>7. お知らせ</h2>
+    <p>開発者からのお知らせがあるかを確認するため、アプリはAppleのCloudKitの公開データベースからお知らせを読み取ります。その際、お客様に関する情報は送信されません。</p>
+    <h2>8. ご意見</h2>
+    <p>アプリからご意見を送信すると、次の情報が開発者のCloudKitデータベース(iCloud.com.Ysoup.FeedbackHub)に送られ、返信とアプリの改善のためだけに使われます。</p>
+    <ul>
+      <li>ご意見の内容と種類</li>
+      <li>アプリのバージョン、端末の機種、iOSのバージョン、言語と地域の設定</li>
+      <li>お名前とメールアドレス(返信のためにご自身で入力した場合のみ)</li>
+    </ul>
+    <p>ご意見は、送信ボタンをタップしたときにだけ送られます。</p>
+    <h2>9. 匿名の利用統計</h2>
+    <p>アプリが実際にどのように使われているかを把握するため、匿名の統計を開発者のCloudKitデータベース(iCloud.com.Ysoup.FeedbackHub)に送信します。</p>
+    <ul>
+      <li>アプリのインストール時に作られるランダムなインストール番号(お名前、Apple Account、端末の識別子とは結び付かず、アプリを削除すると消えます)</li>
+      <li>アプリのバージョン、iOSのバージョン、言語と地域の設定、起動回数、インストールからの日数、アプリを開いた日</li>
+      <li>確認しているお店の数、追加したお店の数、通知のオン・オフと何日前か、応援した回数</li>
+      <li>共有、カレンダーを開く、お店の変更、マイストアの保存、通知をオンにする、応援の完了など、主な操作の名前</li>
+    </ul>
+    <p>お店や飲食店の名前、住所、リンク、写真、お名前、メールアドレス、位置情報が送信されることはありません。統計は最大でも12時間に1回、操作の種類ごとには最大でも6時間に1回送信されます。</p>
+    <h2>10. 第三者</h2>
+    <p>DontGoMartは、広告、広告ネットワーク、第三者の分析ツールや追跡ツールを一切使用していません。お客様の情報は、上記のAppleのサービス(CloudKit、iCloud、アプリ内課金、端末内のフレームワーク)と、リンクを貼り付けた場合のNaverのみが扱います。個人情報を販売したり、第三者に提供したりすることはありません。</p>
+    <h2>11. 保管と削除</h2>
+    <p>端末に保存された情報は、アプリ内で削除するか、アプリを削除すると消えます。iCloudに保存された応援の記録は、「設定」のApple AccountとiCloudから管理できます。送信したご意見の削除をご希望の場合は、下記のアドレスまでメールでご連絡ください。</p>
+    <h2>12. お子様のプライバシー</h2>
+    <p>DontGoMartは、お子様の個人情報を意図的に収集することはありません。</p>
+    <h2>13. 本ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、このページと上記の日付を更新します。</p>
+    <h2>14. お問い合わせ</h2>
+    <p>情報の取り扱いについてのご質問は、次のアドレスまでご連絡ください。</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

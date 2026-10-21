@@ -18,6 +18,18 @@ Widgets now carry the DontGoMart name
 See replies to your feedback in Settings
 Feedback now asks what happened
 
+### App Store (en-GB)
+
+Widgets now carry the DontGoMart name
+See replies to your feedback in Settings
+Feedback now asks what happened
+
+### App Store (ja)
+
+ウィジェットにDontGoMartの名前が表示されます
+設定で送ったご意見と返信を見られます
+ご意見を送るとき、状況を順に尋ねます
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)

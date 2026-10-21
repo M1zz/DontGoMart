@@ -119,3 +119,119 @@ https://m1zz.github.io/DontGoMart/en/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/en/
+
+## en-GB
+
+### 이름
+
+DontGoMart: Shop Closing Days
+
+### 부제
+
+Check before you head out
+
+### 키워드
+
+supermarket,grocery,opening hours,bank holiday,sunday,korea,mart,reminder,widget,calendar,restaurant
+
+### 프로모션 텍스트
+
+Now covers your favourite restaurants too. Import their days off from a Naver Map link or a screenshot, and get a heads-up when a shop closure is near.
+
+### 설명
+
+Check whether your shop is open before you head out.
+DontGoMart tracks the mandatory closing days of large supermarkets and Costco in Korea, and reminds you before they shut.
+
+See today's status at a glance
+Open the app and the first thing you see is whether your shops are open today, followed by a countdown to the next closed day and a list of upcoming ones.
+
+Covers regional schedules
+Pick shops that close on Sundays or Wednesdays, or regions with their own rules such as Ulsan and Jeju. Costco regular warehouses and the Daegu, Ilsan and Ulsan locations each have their own setting. Lunar New Year and Chuseok closures are included too.
+
+Add your local shop
+If a shop isn't listed, add it yourself by choosing which weeks and which weekday it closes, for example the second and fourth Sunday.
+
+Your favourite restaurants, too
+Add the regular days off of restaurants you visit often and see which of them close in the next seven days. Paste a link shared from Naver Map or pick a screenshot of the restaurant's info page, and the closing days are filled in for you. Text in photos is read on your device only.
+
+Reminders that fit your routine
+Get an alert 1, 2, 3 or 7 days ahead at the time you choose, plus an optional reminder the day before that today is a good day to shop. When a closed day is three days away or less, a banner also appears at the top of the app.
+
+Home Screen and Lock Screen widgets
+Keep the nearest closed day, the next two closed days with a countdown, this Sunday's open or closed status, or your restaurants' next seven days on your Home Screen. The Sunday and restaurant widgets work on the Lock Screen as well.
+
+Calendar and sharing
+Browse a full month of closed days in the calendar, and send the news as a card with a two-week calendar and a shopping tip. Cards come in Instagram post and Story sizes, and as short videos.
+
+Every feature is free. If the app saves you a trip, you can support development with a coffee.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/en/
+
+## ja
+
+### 이름
+
+DontGoMart:お店の休業日チェック
+
+### 부제
+
+無駄足をなくす通知とウィジェット
+
+### 키워드
+
+スーパー,大型スーパー,定休日,営業時間,韓国,日曜,水曜,祝日,旧正月,秋夕,買い物,リマインダー,カレンダー,飲食店,休み,義務休業,倉庫型,ソウル
+
+### 프로모션 텍스트
+
+お気に入りの飲食店の定休日も確認できるようになりました。Naverマップのリンクやスクリーンショット1枚で休業日を読み込み、お店の休業日が近づくと画面の上でお知らせします。
+
+### 설명
+
+出かける前に、お店が開いているか確認しましょう。
+DontGoMartは、韓国の大型スーパーやコストコの義務休業日をまとめて確認でき、休業日が近づくと事前にお知らせします。
+
+今日行けるかどうか、すぐにわかります
+アプリを開くと、選んだお店が今日営業しているかが真っ先に表示されます。次の休業日までの日数と、今後の休業日の一覧も一緒に確認できます。
+
+地域ごとに違う休業日にも対応
+日曜休業のお店、水曜休業のお店はもちろん、蔚山や済州のように休業の曜日が異なる地域も選べます。コストコは、一般店舗と大邱店・一山店・蔚山店を個別に設定できます。旧正月と秋夕の当日の休業日も表示されます。
+
+近所のお店を自分で追加
+一覧にないお店は、第2・第4日曜日のように、何週目の何曜日に休むかを決めて、自分だけのお店として登録できます。
+
+お気に入りの飲食店の休みも一緒に
+よく行く飲食店の定休日を入れておくと、今後7日間のうち休みの日をドットで表示します。Naverマップで共有してコピーしたリンクを貼り付けるか、お店の情報画面のスクリーンショットを選ぶだけで、定休日が自動で入力されます。写真の中の文字は、端末の中だけで読み取ります。
+
+忘れないようにお知らせ
+休業日の1日前・2日前・3日前・7日前から選んで、好きな時刻に通知を受け取れます。休業日の前日には、今日が買い物にぴったりの日だとあらためてお知らせします。休業日が3日以内に近づくと、アプリの画面の上にもバナーで表示します。
+
+ホーム画面とロック画面のウィジェット
+直近の休業日、次の2回の休業日と残り日数、今週の日曜日の営業状況、お気に入りの飲食店の7日間の休みを、ウィジェットで確認できます。今週の日曜日のウィジェットと飲食店のウィジェットは、ロック画面にも置けます。
+
+カレンダーと共有
+カレンダーで1か月分の休業日をまとめて確認できます。休業のお知らせは、2週間分のカレンダーと買い物のヒントが入ったカードにして送れます。Instagramの投稿やストーリーズのサイズ、短い動画にも対応しています。
+
+すべての機能は無料です。お役に立てたら、コーヒー1杯で開発を応援してください。
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/ja/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/ja/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/ja/

@@ -38,6 +38,20 @@ SHOTS = {
         ("04-pattern.png",  "flat-rotate", "Add your<br>local store",     "Patterns like 2nd and 4th Tuesday"),
         ("05-share.png",    "dark",        "Share a closing<br>in one card", "Let family and neighbors know"),
     ],
+    "en-GB": [
+        ("01-main.png",     "hero-bleed",  "Check before<br>you go",      "See at a glance if the shop is open"),
+        ("02-calendar.png", "left-text",   "This month's<br>closings",    "Every closed day, right on the calendar"),
+        ("03-marts.png",    "text-bottom", "Track only your shops",       "Supermarkets, Costco, bank holiday closings"),
+        ("04-pattern.png",  "flat-rotate", "Add your<br>local shop",      "Patterns like 2nd and 4th Tuesday"),
+        ("05-share.png",    "dark",        "Share a closing<br>in one card", "Let family and neighbours know"),
+    ],
+    "ja": [
+        ("01-main.png",     "hero-bleed",  "お出かけ前に、<br>3秒チェック",   "今日営業しているか、ひと目でわかります"),
+        ("02-calendar.png", "left-text",   "今月の休業日を<br>ひと目で",       "カレンダーで休みの日だけをお知らせ"),
+        ("03-marts.png",    "text-bottom", "行くお店だけを選べる",             "大型スーパー・コストコ・祝日の休みまで"),
+        ("04-pattern.png",  "flat-rotate", "近所のお店も<br>自分で登録",       "第2・第4火曜日のパターンもそのまま"),
+        ("05-share.png",    "dark",        "休業のお知らせを<br>カード1枚で",  "家族やご近所にすぐ伝えられます"),
+    ],
 }
 
 BASE_CSS = f"""

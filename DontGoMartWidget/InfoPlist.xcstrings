@@ -16,6 +16,18 @@
             "state" : "translated",
             "value" : "돈꼬마트"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -33,6 +45,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "돈꼬마트"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
           }
         }
       }
