@@ -509,6 +509,7 @@
 				cs,
 				da,
 				el,
+				fi,
 			);
 			mainGroup = 58B693C32A3B56E800FF904B;
 			packageReferences = (

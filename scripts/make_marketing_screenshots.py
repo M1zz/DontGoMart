@@ -143,6 +143,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Προσθέστε το<br>κατάστημα της γειτονιάς", "Προγράμματα όπως η δεύτερη και τέταρτη Τρίτη"),
         ("05-share.png", "dark", "Ανακοινώστε ένα κλείσιμο<br>με μία κάρτα", "Ενημερώστε οικογένεια και γείτονες"),
     ],
+    "fi": [
+        ("01-main.png", "hero-bleed", "Tarkista<br>ennen lähtöä", "Näe yhdellä silmäyksellä, onko kauppa auki"),
+        ("02-calendar.png", "left-text", "Tämän kuun<br>sulkupäivät", "Kaikki sulkupäivät suoraan kalenterissa"),
+        ("03-marts.png", "text-bottom", "Vain omat kauppasi", "Supermarketit, Costco, pyhäpäivien sulkemiset"),
+        ("04-pattern.png", "flat-rotate", "Lisää oman<br>naapurustosi kauppa", "Kaavat kuten toinen ja neljäs tiistai"),
+        ("05-share.png", "dark", "Kerro sulkemisesta<br>yhdellä kortilla", "Kerro perheelle ja naapureille"),
+    ],
 }
 
 BASE_CSS = f"""

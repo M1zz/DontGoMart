@@ -105,6 +105,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -208,6 +214,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -319,6 +331,12 @@
             "state" : "translated",
             "value" : "Η τοποθεσία χρειάζεται για να βρίσκουμε και να προτείνουμε κοντινά καταστήματα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sijaintia tarvitaan lähikauppojen etsimiseen ja suosittelemiseen."
+          }
         }
       }
     },
@@ -425,6 +443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρειάζεται για την αποθήκευση φωτογραφιών και βίντεο των καρτών κλεισίματος στη βιβλιοθήκη σας."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarvitaan sulkemiskorttien kuvien ja videoiden tallentamiseen kirjastoosi."
           }
         }
       }

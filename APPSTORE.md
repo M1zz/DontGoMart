@@ -989,3 +989,61 @@ https://m1zz.github.io/DontGoMart/el/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/el/
+
+## fi
+
+### 이름
+
+DontGoMart: Sulkupäivät
+
+### 부제
+
+Ei turhia kauppareissuja
+
+### 키워드
+
+supermarket,Korea,Soul,aukioloajat,sunnuntai,keskiviikko,pyhäpäivät,Chuseok,ostokset,widget
+
+### 프로모션 텍스트
+
+Nyt näet myös lempiravintoloidesi vapaapäivät. Riittää Naver Maps -linkki tai yksi kuvakaappaus, ja sovellus muistuttaa ennen sulkupäivää suoraan näytöllä.
+
+### 설명
+
+Tarkista ennen lähtöä, onko kauppa auki.
+DontGoMart kokoaa Korean suurten supermarkettien ja Costcon pakolliset sulkupäivät yhteen ja muistuttaa ajoissa, kun sulkupäivä lähestyy.
+
+Näet heti, voitko mennä tänään
+Kun avaat sovelluksen, näet ensimmäisenä, onko valitsemasi kauppa auki tänään. Näet myös päivien määrän seuraavaan sulkupäivään ja luettelon tulevista sulkupäivistä.
+
+Huomioi alueelliset erot sulkupäivissä
+Valitse sunnuntaisin tai keskiviikkoisin suljetut kaupat sekä alueet, joilla on muut sulkupäivät, kuten Ulsan ja Jeju. Costcon tavalliset kaupat sekä Daegun, Ilsanin ja Ulsanin toimipisteet voi asettaa erikseen. Myös Seollalin (kuukalenterin uusivuosi) ja Chuseokin sulkupäivät näytetään.
+
+Lisää oman naapurustosi kaupat
+Jos kauppaa ei löydy luettelosta, rekisteröi se itse valitsemalla, minä viikkona ja minä viikonpäivänä se on kiinni, esimerkiksi toisena ja neljäntenä sunnuntaina.
+
+Myös lempiravintoloidesi vapaapäivät
+Lisää käymiesi ravintoloiden vakiovapaapäivät, niin seuraavien 7 päivän ajalta ne päivät, jolloin ne ovat kiinni, merkitään pisteellä. Liitä vain Naver Mapsista kopioimasi linkki tai valitse kuvakaappaus ravintolan tietosivulta, niin vapaapäivä täyttyy automaattisesti. Kuvan teksti luetaan vain laitteellasi.
+
+Muistutukset, ettet unohda
+Valitse, haluatko ilmoituksen 1, 2, 3 vai 7 päivää ennen sulkupäivää ja mihin aikaan. Sulkupäivää edeltävänä päivänä sovellus muistuttaa, että tänään on hyvä päivä tehdä ostokset. Kun sulkupäivä on 3 päivän sisällä, sovelluksen yläreunaan tulee myös banneri.
+
+Widgetit Koti- ja lukitusnäytölle
+Widgeteistä näet lähimmän sulkupäivän, kaksi seuraavaa sulkupäivää jäljellä olevine päivineen, onko kauppasi auki tänä sunnuntaina ja lempiravintoloidesi vapaapäivät 7 päivän ajalta. Tämän viikon sunnuntai -widgetin ja ravintolawidgetin voi sijoittaa myös lukitusnäytölle.
+
+Kalenteri ja jakaminen
+Kalenterista näet koko kuukauden sulkupäivät. Sulkemisilmoituksen voi jakaa korttina, jossa on kahden viikon kalenteri ja ostosvinkki, Instagram-julkaisun ja -storyn kokoisena tai lyhyenä videona.
+
+Kaikki ominaisuudet ovat ilmaisia. Jos sovellus on hyödyksi, tue kehitystä kupillisella kahvia.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/fi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/fi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/fi/

@@ -108,6 +108,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — κάντε τα ψώνια νωρίτερα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — tee ostokset ajoissa"
+          }
         }
       }
     },
@@ -206,6 +212,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -312,6 +324,12 @@
             "state" : "translated",
             "value" : "Διαγραφή: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista: %@"
+          }
         }
       }
     },
@@ -413,6 +431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επεξεργασία: %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muokkaa: %@"
           }
         }
       }
@@ -521,6 +545,12 @@
             "state" : "translated",
             "value" : "%@ κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ suljettu"
+          }
         }
       }
     },
@@ -622,6 +652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ κλειστό Pro"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ suljettu Pro"
           }
         }
       }
@@ -730,6 +766,12 @@
             "state" : "translated",
             "value" : "Κλειστό: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu: %@"
+          }
         }
       }
     },
@@ -832,6 +874,12 @@
             "state" : "translated",
             "value" : "Κλειστό %@!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu %@!"
+          }
         }
       }
     },
@@ -930,6 +978,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -1041,6 +1095,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1139,6 +1199,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1246,6 +1312,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1347,6 +1419,12 @@
             "state" : "translated",
             "value" : "%lld στοιχεία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kohteita: %lld"
+          }
         }
       }
     },
@@ -1447,6 +1525,12 @@
             "state" : "translated",
             "value" : "%lld λεπτά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -1546,6 +1630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld:00"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "klo %lld"
           }
         }
       }
@@ -1656,6 +1746,12 @@
             "state" : "translated",
             "value" : "Ημέρες που απομένουν: %lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päiviä jäljellä: %lld"
+          }
         }
       }
     },
@@ -1758,6 +1854,12 @@
             "state" : "translated",
             "value" : "%lld ημ. πριν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pv ennen"
+          }
         }
       }
     },
@@ -1857,6 +1959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εβδομάδα %lld"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikko %lld"
           }
         }
       }
@@ -1963,6 +2071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σε %lld εβδ., %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld vk päästä, %@"
           }
         }
       }
@@ -2072,6 +2186,12 @@
             "state" : "translated",
             "value" : "Εβδομάδα %lld, %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikko %lld, %@"
+          }
         }
       }
     },
@@ -2178,6 +2298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πιο εύκολα με το VoiceOver"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helpompaa VoiceOverilla"
           }
         }
       }
@@ -2286,6 +2412,12 @@
             "state" : "translated",
             "value" : "Siri και Συντομεύσεις"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ja Pikakomennot"
+          }
         }
       }
     },
@@ -2393,6 +2525,12 @@
             "state" : "translated",
             "value" : "Ρωτήστε τη Siri ή εκτελέστε μια συντόμευση για να δείτε αμέσως αν το κατάστημά σας είναι κλειστό."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kysy Sirilta tai suorita pikakomento ja näet heti, onko kauppasi suljettu."
+          }
         }
       }
     },
@@ -2491,6 +2629,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -2597,6 +2741,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -2695,6 +2845,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -2801,6 +2957,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -2893,6 +3055,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -3004,6 +3172,12 @@
             "state" : "translated",
             "value" : "Ακόμη και με το μεγαλύτερο μέγεθος κειμένου, οι οθόνες αναδιατάσσονται σωστά χωρίς να κόβεται τίποτα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suurimmallakin tekstikoolla näytöt järjestyvät siististi uudelleen, eikä mitään leikkaudu pois."
+          }
         }
       }
     },
@@ -3110,6 +3284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Διαγράψτε με μία κίνηση, μέσα στην εφαρμογή, τα επιλεγμένα και τα προστιθέμενα καταστήματα και τις ρυθμίσεις ειδοποιήσεων."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista valitut ja lisätyt kaupat sekä muistutusasetukset kerralla sovelluksesta."
           }
         }
       }
@@ -3218,6 +3398,12 @@
             "state" : "translated",
             "value" : "Ανακοίνωση"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitus"
+          }
         }
       }
     },
@@ -3318,6 +3504,12 @@
             "state" : "translated",
             "value" : "Ανοίγει ολόκληρη την ανακοίνωση"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa koko ilmoituksen"
+          }
         }
       }
     },
@@ -3417,6 +3609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλείσιμο ανακοίνωσης"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulje ilmoitus"
           }
         }
       }
@@ -3525,6 +3723,12 @@
             "state" : "translated",
             "value" : "Σκούρα λειτουργία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tumma tila"
+          }
         }
       }
     },
@@ -3631,6 +3835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Διακρίνετε τις ημέρες κλεισίματος ακόμη και με ενεργή αύξηση αντίθεσης ή όταν δυσκολεύεστε να ξεχωρίσετε χρώματα."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erota sulkupäivät, vaikka Lisää kontrastia olisi päällä tai värien erottaminen olisi vaikeaa."
           }
         }
       }
@@ -3739,6 +3949,12 @@
             "state" : "translated",
             "value" : "Περισσότερες γλώσσες"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kieliä"
+          }
         }
       }
     },
@@ -3845,6 +4061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρησιμοποιήστε την εφαρμογή σε περισσότερες γλώσσες."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä sovellusta useammalla kielellä."
           }
         }
       }
@@ -3953,6 +4175,12 @@
             "state" : "translated",
             "value" : "Αποθηκεύστε σε αρχείο τα καταστήματα που προσθέσατε και επαναφέρετέ τα όποτε θέλετε."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tallenna lisäämäsi kaupat tiedostoon ja tuo ne takaisin milloin vain."
+          }
         }
       }
     },
@@ -4060,6 +4288,12 @@
             "state" : "translated",
             "value" : "Διαγραφή όλων των δεδομένων μου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista kaikki tietoni"
+          }
         }
       }
     },
@@ -4165,6 +4399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποίηση κλεισίματος καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupan sulkemismuistutus"
           }
         }
       }
@@ -4273,6 +4513,12 @@
             "state" : "translated",
             "value" : "Το κείμενο και τα κουμπιά παραμένουν καθαρά σε σκούρη οθόνη."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teksti ja painikkeet pysyvät selkeinä tummalla näytöllä."
+          }
         }
       }
     },
@@ -4379,6 +4625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρώματα πιο εύκολα στο μάτι"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helpommin erottuvat värit"
           }
         }
       }
@@ -4487,6 +4739,12 @@
             "state" : "translated",
             "value" : "Στο iPad επιλέξτε καταστήματα και ξεφυλλίστε το ημερολόγιο μόνο με το πληκτρολόγιο."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPadilla voit valita kauppoja ja selata kalenteria pelkällä näppäimistöllä."
+          }
         }
       }
     },
@@ -4593,6 +4851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τι νέο υπάρχει μετά τις ενημερώσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitä uutta päivitysten jälkeen"
           }
         }
       }
@@ -4701,6 +4965,12 @@
             "state" : "translated",
             "value" : "Την πρώτη φορά που θα ανοίξετε την εφαρμογή μετά από μια ενημέρωση, θα δείτε τι νέο υπάρχει."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun avaat sovelluksen ensimmäisen kerran päivityksen jälkeen, näet, mitä uutta on tullut."
+          }
         }
       }
     },
@@ -4807,6 +5077,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρήσιμες συμβουλές"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käyttövinkit"
           }
         }
       }
@@ -4915,6 +5191,12 @@
             "state" : "translated",
             "value" : "Σας προτείνουμε διακριτικά χρήσιμες λειτουργίες την κατάλληλη στιγμή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vinkkaamme hyödyllisistä toiminnoista hienovaraisesti oikeaan aikaan."
+          }
         }
       }
     },
@@ -5021,6 +5303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αντίγραφο ασφαλείας και εξαγωγή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varmuuskopio ja vienti"
           }
         }
       }
@@ -5129,6 +5417,12 @@
             "state" : "translated",
             "value" : "Αν η εφαρμογή κλείσει ενώ προσθέτετε κατάστημα, όσα πληκτρολογήσατε διατηρούνται."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jos sovellus sulkeutuu kaupan lisäämisen aikana, kirjoittamasi säilyy."
+          }
         }
       }
     },
@@ -5228,6 +5522,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "και άλλα: %lld"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld muuta"
           }
         }
       }
@@ -5336,6 +5636,12 @@
             "state" : "translated",
             "value" : "Το VoiceOver διαβάζει ολόκληρες τις ημέρες κλεισίματος και τα κουμπιά, με τη σωστή σειρά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver lukee sulkupäivät ja painikkeet kokonaan ja oikeassa järjestyksessä."
+          }
         }
       }
     },
@@ -5442,6 +5748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Έτοιμη για μεγάλο κείμενο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valmis suurelle tekstille"
           }
         }
       }
@@ -5550,6 +5862,12 @@
             "state" : "translated",
             "value" : "Χειρισμός με πληκτρολόγιο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näppäimistöohjaus"
+          }
         }
       }
     },
@@ -5656,6 +5974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Οδηγός γρήγορης εκκίνησης"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pikaopas"
           }
         }
       }
@@ -5764,6 +6088,12 @@
             "state" : "translated",
             "value" : "Την πρώτη φορά που ανοίγετε την εφαρμογή, δείτε σε λίγα βήματα τι μπορεί να κάνει."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun avaat sovelluksen ensimmäisen kerran, näet muutamassa vaiheessa, mitä sillä voi tehdä."
+          }
         }
       }
     },
@@ -5870,6 +6200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Φτιαγμένη για πτυσσόμενο iPhone"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tehty taitettavalle iPhonelle"
           }
         }
       }
@@ -5978,6 +6314,12 @@
             "state" : "translated",
             "value" : "Σε πτυσσόμενο iPhone, χρησιμοποιήστε την πλατιά οθόνη ως δύο πάνελ δίπλα-δίπλα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taitettavalla iPhonella voit käyttää leveää näyttöä kahtena rinnakkaisena ruutuna."
+          }
         }
       }
     },
@@ -6085,6 +6427,12 @@
             "state" : "translated",
             "value" : "Συνεχίστε από εκεί που μείνατε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jatka siitä, mihin jäit"
+          }
         }
       }
     },
@@ -6177,6 +6525,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -6277,6 +6631,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -6373,6 +6733,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -6465,6 +6831,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -6569,6 +6941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Ειδοποίηση για καλή μέρα για ψώνια"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Muistutus hyvästä ostospäivästä"
           }
         }
       }
@@ -6675,6 +7053,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Καλή μέρα για ψώνια"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Hyvä päivä ostoksille"
           }
         }
       }
@@ -6784,6 +7168,12 @@
             "state" : "translated",
             "value" : "Σας ειδοποιεί όταν υπάρχει ημέρα κλεισίματος μέσα στην εβδομάδα!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoittaa, kun sulkupäivä on viikon sisällä!"
+          }
         }
       }
     },
@@ -6882,6 +7272,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -6994,6 +7390,12 @@
             "state" : "translated",
             "value" : "Widget ειδοποίησης κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkumuistutus-widget"
+          }
         }
       }
     },
@@ -7102,6 +7504,12 @@
             "state" : "translated",
             "value" : "Widget αντίστροφης μέτρησης κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkupäivän laskuri -widget"
+          }
         }
       }
     },
@@ -7200,6 +7608,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -7306,6 +7720,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -7404,6 +7824,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -7510,6 +7936,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -7608,6 +8040,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -7718,6 +8156,12 @@
             "state" : "translated",
             "value" : "Το %@ είναι αύριο κλειστό. Σήμερα είναι καλή μέρα για ψώνια!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ on huomenna suljettu. Tänään on hyvä päivä tehdä ostokset!"
+          }
         }
       }
     },
@@ -7823,6 +8267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Το %@ θα κλείσει σε %lld ημέρα(ες)."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sulkeutuu %lld pv päästä."
           }
         }
       }
@@ -7931,6 +8381,12 @@
             "state" : "translated",
             "value" : "Το %@ θα κλείσει σε %lld ημέρα(ες)."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sulkeutuu %lld pv päästä."
+          }
         }
       }
     },
@@ -8037,6 +8493,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μην ξεχάσετε να κάνετε τα ψώνια σας πριν από την επόμενη ημέρα κλεισίματος!"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muista tehdä ostokset ennen seuraavaa sulkupäivää!"
           }
         }
       }
@@ -8145,6 +8607,12 @@
             "state" : "translated",
             "value" : "Διαχειριστείτε και τις ημέρες κλεισίματος των τοπικών καταστημάτων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hallitse myös lähialueen kauppojen sulkupäiviä"
+          }
         }
       }
     },
@@ -8251,6 +8719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Καταχωρίστε το πρόγραμμα κλεισίματος του δικού σας καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekisteröi oman kauppasi sulkemiskaava"
           }
         }
       }
@@ -8359,6 +8833,12 @@
             "state" : "translated",
             "value" : "Τα αγαπημένα σας εμφανίζονται πάντα πρώτα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suosikkisi näkyvät aina ylimpänä"
+          }
         }
       }
     },
@@ -8465,6 +8945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αποθηκεύστε τα αγαπημένα σας καταστήματα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merkitse lempikauppasi kirjanmerkeillä"
           }
         }
       }
@@ -8573,6 +9059,12 @@
             "state" : "translated",
             "value" : "Εφάπαξ αγορά για όλες τις λειτουργίες, για πάντα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kertaosto avaa kaikki ominaisuudet ikuisesti"
+          }
         }
       }
     },
@@ -8679,6 +9171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αναβάθμιση σε DontGoMart Pro"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivitä DontGoMart Pro -versioon"
           }
         }
       }
@@ -8787,6 +9285,12 @@
             "state" : "translated",
             "value" : "Δείτε μαζί τις ημέρες κλεισίματος των E-Mart, Costco και Homeplus"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katso E-Martin, Costcon ja Homeplusin sulkupäivät kerralla"
+          }
         }
       }
     },
@@ -8893,6 +9397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Παρακολουθήστε πολλά καταστήματα ταυτόχρονα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuraa useita kauppoja kerralla"
           }
         }
       }
@@ -9001,6 +9511,12 @@
             "state" : "translated",
             "value" : "Λάβετε ειδοποιήσεις πριν από τις ημέρες κλεισίματος και μην πάτε ποτέ του κάκου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat muistutuksen ennen sulkupäiviä, eikä turhia reissuja tule enää"
+          }
         }
       }
     },
@@ -9107,6 +9623,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ποτέ ξανά μπροστά σε κλειστό κατάστημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei enää suljettuja kauppoja"
           }
         }
       }
@@ -9215,6 +9737,12 @@
             "state" : "translated",
             "value" : "Προσθέστε όσα προϊόντα χρειάζεστε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää niin monta kohdetta kuin tarvitset"
+          }
         }
       }
     },
@@ -9321,6 +9849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Απεριόριστη λίστα αγορών"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rajoittamaton ostoslista"
           }
         }
       }
@@ -9429,6 +9963,12 @@
             "state" : "translated",
             "value" : "☕ Με την τιμή ενός καφέ, ξεκλειδώστε τα πάντα για πάντα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Kahvin hinnalla avaat kaiken ikuisesti"
+          }
         }
       }
     },
@@ -9535,6 +10075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Θα ειδοποιηθείτε %1$lld ημέρες και %2$lld ημέρα πριν από τις ημέρες κλεισίματος, στις %3$@."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat ilmoituksen %1$lld päivää ja %2$lld päivä ennen sulkupäiviä kello %3$@."
           }
         }
       }
@@ -9644,6 +10190,12 @@
             "state" : "translated",
             "value" : "Δείχνει με πράσινο ή κόκκινο αν το κατάστημά σας είναι ανοιχτό αυτή την Κυριακή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näyttää vihreällä tai punaisella, onko kauppasi auki tänä sunnuntaina."
+          }
         }
       }
     },
@@ -9749,6 +10301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δείχνει τις δύο επόμενες ημέρες κλεισίματος!"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näyttää kaksi seuraavaa sulkupäivää!"
           }
         }
       }
@@ -9858,6 +10416,12 @@
             "state" : "translated",
             "value" : "Δείχνει πόσες ημέρες απομένουν μέχρι την επόμενη ημέρα κλεισίματος!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näyttää, montako päivää on seuraavaan sulkupäivään!"
+          }
         }
       }
     },
@@ -9966,6 +10530,12 @@
             "state" : "translated",
             "value" : "Κυριακή ανοιχτά/κλειστά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunnuntai auki/kiinni"
+          }
         }
       }
     },
@@ -10068,6 +10638,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -10166,6 +10742,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -10278,6 +10860,12 @@
             "state" : "translated",
             "value" : "Widget δύο ημερών κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kahden sulkupäivän widget"
+          }
         }
       }
     },
@@ -10379,6 +10967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλείνει το μήνυμα ευχαριστίας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkee kiitosviestin"
           }
         }
       }
@@ -10482,6 +11076,12 @@
             "state" : "translated",
             "value" : "Ευχαριστούμε!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiitos!"
+          }
         }
       }
     },
@@ -10584,6 +11184,12 @@
             "state" : "translated",
             "value" : "Κεράστε έναν καφέ τον προγραμματιστή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarjoaa kehittäjälle kupin kahvia"
+          }
         }
       }
     },
@@ -10685,6 +11291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Στέλνει φιλοδώρημα στον προγραμματιστή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lähettää kehittäjälle juomarahaa"
           }
         }
       }
@@ -10793,6 +11405,12 @@
             "state" : "translated",
             "value" : "Μέρος του Κιονγκί/Τσονγκτζου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osa Gyeonggia/Cheongjua"
+          }
         }
       }
     },
@@ -10895,6 +11513,12 @@
             "state" : "translated",
             "value" : "Ευχαριστούμε, τα λέμε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiitos, nähdään taas"
+          }
         }
       }
     },
@@ -10995,6 +11619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλείνει σύντομα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkeutuu pian"
           }
         }
       }
@@ -11097,6 +11727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κοινοποίηση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaa"
           }
         }
       }
@@ -11204,6 +11840,12 @@
             "state" : "translated",
             "value" : "Αργία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pyhäpäivä"
+          }
         }
       }
     },
@@ -11303,6 +11945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επαναφορά αγορών"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palauta ostokset"
           }
         }
       }
@@ -11411,6 +12059,12 @@
             "state" : "translated",
             "value" : "Λειτουργία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ominaisuus"
+          }
         }
       }
     },
@@ -11510,6 +12164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τα καταστήματά μου"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omat kauppani"
           }
         }
       }
@@ -11618,6 +12278,12 @@
             "state" : "translated",
             "value" : "Αύριο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huomenna"
+          }
         }
       }
     },
@@ -11718,6 +12384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αύριο κλειστό: %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huomenna suljettu: %@"
           }
         }
       }
@@ -11828,6 +12500,12 @@
             "state" : "translated",
             "value" : "Κλειστό αύριο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu huomenna"
+          }
         }
       }
     },
@@ -11927,6 +12605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επερχόμενες ημέρες κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulevat sulkupäivät"
           }
         }
       }
@@ -12029,6 +12713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επόμενος μήνας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensi kuu"
           }
         }
       }
@@ -12139,6 +12829,12 @@
             "state" : "translated",
             "value" : "Επόμενη εβδομάδα: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensi viikolla: %@"
+          }
         }
       }
     },
@@ -12246,6 +12942,12 @@
             "state" : "translated",
             "value" : "Επόμενη ημέρα κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuraava sulkupäivä"
+          }
         }
       }
     },
@@ -12346,6 +13048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Θα σας υπενθυμίσουμε να κάνετε ψώνια 2 ημέρες πριν από την επόμενη ημέρα κλεισίματος."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muistutamme ostoksista 2 päivää ennen seuraavaa sulkupäivää."
           }
         }
       }
@@ -12456,6 +13164,12 @@
             "state" : "translated",
             "value" : "Δεν υπάρχουν στοιχεία κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei sulkupäivätietoja"
+          }
         }
       }
     },
@@ -12557,6 +13271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αργότερα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Myöhemmin"
           }
         }
       }
@@ -12665,6 +13385,12 @@
             "state" : "translated",
             "value" : "Παρακολουθήστε πολλά καταστήματα ταυτόχρονα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuraa useita kauppoja yhtä aikaa"
+          }
         }
       }
     },
@@ -12772,6 +13498,12 @@
             "state" : "translated",
             "value" : "Παρακολούθηση πολλών καταστημάτων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usean kaupan seuranta"
+          }
         }
       }
     },
@@ -12873,6 +13605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλείσιμο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulje"
           }
         }
       }
@@ -12976,6 +13714,12 @@
             "state" : "translated",
             "value" : "Ανοίγει το ημερολόγιο για να δείτε τις ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa kalenterin sulkupäivien katsomista varten"
+          }
         }
       }
     },
@@ -13076,6 +13820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ντεγκού"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -13184,6 +13934,12 @@
             "state" : "translated",
             "value" : "Costco Ντεγκού"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -13289,6 +14045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ντεγκού"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -13396,6 +14158,12 @@
             "state" : "translated",
             "value" : "Ντεγκού, Ντεγκού Innovation"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -13496,6 +14264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket"
           }
         }
       }
@@ -13603,6 +14377,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (κλειστό τις Τετάρτες)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (suljettu keskiviikkoisin)"
+          }
         }
       }
     },
@@ -13708,6 +14488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (κλειστό τις Τετάρτες)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (suljettu keskiviikkoisin)"
           }
         }
       }
@@ -13815,6 +14601,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Τετ)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (ke)"
+          }
         }
       }
     },
@@ -13920,6 +14712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Ούλσαν, μικτό)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan, sekamuotoinen)"
           }
         }
       }
@@ -14027,6 +14825,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Ούλσαν)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
+          }
         }
       }
     },
@@ -14132,6 +14936,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Ούλσαν)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
           }
         }
       }
@@ -14239,6 +15049,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (κλειστό τις Κυριακές)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (suljettu sunnuntaisin)"
+          }
         }
       }
     },
@@ -14344,6 +15160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (κλειστό τις Κυριακές)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (suljettu sunnuntaisin)"
           }
         }
       }
@@ -14451,6 +15273,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Κυρ)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (su)"
+          }
         }
       }
     },
@@ -14556,6 +15384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Τζέζου)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
           }
         }
       }
@@ -14663,6 +15497,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Τζέζου)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
+          }
         }
       }
     },
@@ -14769,6 +15609,12 @@
             "state" : "translated",
             "value" : "Σούπερ μάρκετ (Τζέζου)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
+          }
         }
       }
     },
@@ -14871,6 +15717,12 @@
             "state" : "translated",
             "value" : "Αν η εφαρμογή σάς βοήθησε, δώστε μας κουράγιο με έναν καφέ."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jos sovellus auttoi, kannusta meitä kupillisella kahvia."
+          }
         }
       }
     },
@@ -14969,6 +15821,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -15076,6 +15934,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -15178,6 +16042,12 @@
             "state" : "translated",
             "value" : "Πατήστε δύο φορές για κλείσιμο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulje kaksoisnapauttamalla"
+          }
         }
       }
     },
@@ -15279,6 +16149,12 @@
             "state" : "translated",
             "value" : "Κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppa"
+          }
         }
       }
     },
@@ -15379,6 +16255,12 @@
             "state" : "translated",
             "value" : "Πριν πάτε για ψώνια, ελέγξτε τις ημέρες κλεισίματος στο DontGoMart ✅"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarkista sulkupäivät DontGoMartista ennen ostoksille lähtöä ✅"
+          }
         }
       }
     },
@@ -15478,6 +16360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρώμα καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupan väri"
           }
         }
       }
@@ -15585,6 +16473,12 @@
             "state" : "translated",
             "value" : "Επιλέξτε κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse kauppa"
+          }
         }
       }
     },
@@ -15684,6 +16578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όνομα καταστήματος (π.χ. Homeplus Gangnam)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupan nimi (esim. Homeplus Gangnam)"
           }
         }
       }
@@ -15785,6 +16685,12 @@
             "state" : "translated",
             "value" : "Πληροφορίες καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupan tiedot"
+          }
         }
       }
     },
@@ -15884,6 +16790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθήκη καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kauppa"
           }
         }
       }
@@ -15985,6 +16897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κατάστημα κλειστό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppa suljettu"
           }
         }
       }
@@ -16093,6 +17011,12 @@
             "state" : "translated",
             "value" : "Ειδοποίηση ημέρας κλεισίματος καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitus kaupan sulkupäivästä"
+          }
         }
       }
     },
@@ -16194,6 +17118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποίηση κλεισίματος καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupan sulkemismuistutus"
           }
         }
       }
@@ -16302,6 +17232,12 @@
             "state" : "translated",
             "value" : "Κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppa"
+          }
         }
       }
     },
@@ -16408,6 +17344,12 @@
             "state" : "translated",
             "value" : "Κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppa"
+          }
         }
       }
     },
@@ -16509,6 +17451,12 @@
             "state" : "translated",
             "value" : "Επιλογή καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse kauppa"
+          }
         }
       }
     },
@@ -16608,6 +17556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ανοίγει την επιλογή καταστήματος και τις ρυθμίσεις ειδοποιήσεων"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa kaupan valinnan ja ilmoitusasetukset"
           }
         }
       }
@@ -16716,6 +17670,12 @@
             "state" : "translated",
             "value" : "Διαφέρει ανά κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaihtelee kaupoittain"
+          }
         }
       }
     },
@@ -16816,6 +17776,12 @@
             "state" : "translated",
             "value" : "Επιλογή καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse kauppa"
+          }
         }
       }
     },
@@ -16915,6 +17881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλέξτε ένα κατάστημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse kauppa"
           }
         }
       }
@@ -17023,6 +17995,12 @@
             "state" : "translated",
             "value" : "Δεν έχει επιλεγεί κατάστημα. Επιλέξτε ένα στις Ρυθμίσεις."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppaa ei ole valittu. Valitse se Asetuksissa."
+          }
         }
       }
     },
@@ -17125,6 +18103,12 @@
             "state" : "translated",
             "value" : "Κάθε %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikoittain: %@"
+          }
         }
       }
     },
@@ -17226,6 +18210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όλες οι λειτουργίες παραμένουν δωρεάν. Το φιλοδώρημα είναι απλώς ενθάρρυνση και μπορείτε να στείλετε όποτε θέλετε."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki ominaisuudet pysyvät ilmaisina. Juomaraha on pelkkää kannustusta, ja voit lähettää sen milloin vain."
           }
         }
       }
@@ -17336,6 +18326,12 @@
             "state" : "translated",
             "value" : "Μεθαύριο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ylihuomenna"
+          }
         }
       }
     },
@@ -17442,6 +18438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χωρίς όριο προϊόντων στη λίστα αγορών σας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostoslistan kohteille ei ole rajaa"
           }
         }
       }
@@ -17550,6 +18552,12 @@
             "state" : "translated",
             "value" : "Απεριόριστη λίστα αγορών"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rajoittamaton ostoslista"
+          }
         }
       }
     },
@@ -17657,6 +18665,12 @@
             "state" : "translated",
             "value" : "Αναβαθμίστε σε Pro για απεριόριστα προϊόντα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivitä Pro-versioon lisätäksesi kohteita rajattomasti"
+          }
         }
       }
     },
@@ -17757,6 +18771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Έκδοση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versio"
           }
         }
       }
@@ -17860,6 +18880,12 @@
             "state" : "translated",
             "value" : "Χάρη στην υποστήριξή σας συνεχίζουμε να φτιάχνουμε την εφαρμογή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tukesi ansiosta voimme jatkaa sovelluksen tekemistä."
+          }
         }
       }
     },
@@ -17962,6 +18988,12 @@
             "state" : "translated",
             "value" : "Η υποστήριξή σας μετράει πολύ. (μέχρι τώρα ☕️ ×%lld)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tukesi merkitsee paljon. (tähän mennessä ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -18061,6 +19093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "λεπτά"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
           }
         }
       }
@@ -18162,6 +19200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Γρήγορες ενέργειες"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pikatoiminnot"
           }
         }
       }
@@ -18272,6 +19316,12 @@
             "state" : "translated",
             "value" : "Δεν έχει επιλεγεί"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei valittu"
+          }
         }
       }
     },
@@ -18372,6 +19422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εκκαθάριση επιλογής"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tyhjennä valinta"
           }
         }
       }
@@ -18479,6 +19535,12 @@
             "state" : "translated",
             "value" : "Δεν έχει επιλεγεί κατάστημα. Ανοίξτε την εφαρμογή για να επιλέξετε."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauppaa ei ole valittu. Avaa sovellus ja valitse kauppa."
+          }
         }
       }
     },
@@ -18578,6 +19640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλεγμένο πρόγραμμα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valittu kaava"
           }
         }
       }
@@ -18688,6 +19756,12 @@
             "state" : "translated",
             "value" : "Επιλέχθηκε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valittu"
+          }
         }
       }
     },
@@ -18789,6 +19863,12 @@
             "state" : "translated",
             "value" : "Όλα τα επιλεγμένα καταστήματα είναι ανοιχτά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki valitut kaupat ovat auki"
+          }
         }
       }
     },
@@ -18889,6 +19969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όλα τα επιλεγμένα καταστήματα είναι κλειστά"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki valitut kaupat ovat kiinni"
           }
         }
       }
@@ -18996,6 +20082,12 @@
             "state" : "translated",
             "value" : "Αργίες Σολλάλ/Τσουσόκ"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seollalin ja Chuseokin pyhäpäivät"
+          }
         }
       }
     },
@@ -19095,6 +20187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ρυθμίσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asetukset"
           }
         }
       }
@@ -19198,6 +20296,12 @@
             "state" : "translated",
             "value" : "Επιλέξτε στις Ρυθμίσεις τα καταστήματα που θέλετε να παρακολουθείτε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse Asetuksissa seurattavat kaupat"
+          }
         }
       }
     },
@@ -19299,6 +20403,12 @@
             "state" : "translated",
             "value" : "Επιλέξτε στις Ρυθμίσεις τα καταστήματα που θέλετε να παρακολουθείτε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse Asetuksissa seurattavat kaupat"
+          }
         }
       }
     },
@@ -19399,6 +20509,12 @@
             "state" : "translated",
             "value" : "Μετάβαση στις Ρυθμίσεις"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siirry Asetuksiin"
+          }
         }
       }
     },
@@ -19498,6 +20614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ώρα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunti"
           }
         }
       }
@@ -19606,6 +20728,12 @@
             "state" : "translated",
             "value" : "Άγνωστο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuntematon"
+          }
         }
       }
     },
@@ -19705,6 +20833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Απαιτείται άδεια ειδοποιήσεων"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoituslupa tarvitaan"
           }
         }
       }
@@ -19807,6 +20941,12 @@
             "state" : "translated",
             "value" : "Ρυθμίσεις ειδοποιήσεων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitusasetukset"
+          }
         }
       }
     },
@@ -19906,6 +21046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ώρα ειδοποίησης"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoituksen aika"
           }
         }
       }
@@ -20008,6 +21154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποίησέ με"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoita minulle"
           }
         }
       }
@@ -20116,6 +21268,12 @@
             "state" : "translated",
             "value" : "Λάβετε ειδοποιήσεις πριν από τις ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat ilmoituksen ennen sulkupäiviä"
+          }
         }
       }
     },
@@ -20222,6 +21380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποιήσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitukset"
           }
         }
       }
@@ -20330,6 +21494,12 @@
             "state" : "translated",
             "value" : "Λάβετε ειδοποιήσεις πριν από τις ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat ilmoituksen ennen sulkupäiviä"
+          }
         }
       }
     },
@@ -20429,6 +21599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποιήσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitukset"
           }
         }
       }
@@ -20531,6 +21707,12 @@
             "state" : "translated",
             "value" : "Γράψτε κριτική στο App Store"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoita arvostelu App Storeen"
+          }
         }
       }
     },
@@ -20631,6 +21813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προβολή στο App Store"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä App Storessa"
           }
         }
       }
@@ -20734,6 +21922,12 @@
             "state" : "translated",
             "value" : "Ευχαριστούμε που στηρίζετε την εφαρμογή ☕️"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiitos, että tuet sovellusta ☕️"
+          }
         }
       }
     },
@@ -20834,6 +22028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Γιανγκπιόνγκ, Ντεγιεόν, Γιανγκτζέ, \nΣανγκμπόνγκ, Μπουσάν, Γκουανγκμιόνγκ, \nΤσεονάν, Ουιτζονγκμπού, Γκονγκσε, \nΣονγκντο, Σετζόνγκ, Χανάμ, \nΚιμχε, Κοτσόκ"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
         }
       }
@@ -20940,6 +22140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ανοιχτό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auki"
           }
         }
       }
@@ -21048,6 +22254,12 @@
             "state" : "translated",
             "value" : "Ανοιχτό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auki"
+          }
         }
       }
     },
@@ -21148,6 +22360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ανοιχτό σήμερα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auki tänään"
           }
         }
       }
@@ -21256,6 +22474,12 @@
             "state" : "translated",
             "value" : "Σήμερα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänään"
+          }
         }
       }
     },
@@ -21356,6 +22580,12 @@
             "state" : "translated",
             "value" : "Σήμερα κλειστό: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänään suljettu: %@"
+          }
         }
       }
     },
@@ -21455,6 +22685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μπορώ να πάω σήμερα;"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voinko mennä tänään?"
           }
         }
       }
@@ -21563,6 +22799,12 @@
             "state" : "translated",
             "value" : "Σήμερα όλα τα επιλεγμένα καταστήματα είναι ανοιχτά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki valitut kaupat ovat tänään auki."
+          }
         }
       }
     },
@@ -21670,6 +22912,12 @@
             "state" : "translated",
             "value" : "Σήμερα όλα τα επιλεγμένα καταστήματα είναι κλειστά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki valitut kaupat ovat tänään kiinni."
+          }
         }
       }
     },
@@ -21772,6 +23020,12 @@
             "state" : "translated",
             "value" : "Κοινοποιεί τη σημερινή κατάσταση και τις επερχόμενες ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakaa tämän päivän tilan ja tulevat sulkupäivät"
+          }
         }
       }
     },
@@ -21873,6 +23127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ανοιχτό σήμερα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auki tänään"
           }
         }
       }
@@ -21983,6 +23243,12 @@
             "state" : "translated",
             "value" : "Σήμερα είναι κλειστά μόνο ορισμένα καταστήματα: %@."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänään vain osa kaupoista on kiinni: %@."
+          }
         }
       }
     },
@@ -22084,6 +23350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σήμερα σας γλιτώσαμε από μια άδικη διαδρομή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säästimme sinut tänään turhalta reissulta"
           }
         }
       }
@@ -22194,6 +23466,12 @@
             "state" : "translated",
             "value" : "Κλειστό σήμερα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu tänään"
+          }
         }
       }
     },
@@ -22296,6 +23574,12 @@
             "state" : "translated",
             "value" : "Κλειστό σήμερα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu tänään"
+          }
         }
       }
     },
@@ -22395,6 +23679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σήμερα σας γλιτώσαμε ξανά από μια άδικη διαδρομή.\nΘυμόμαστε πάντα τη γενναιόδωρη στήριξή σας."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säästimme sinut tänään taas turhalta reissulta.\nMuistamme edelleen anteliaan tukesi."
           }
         }
       }
@@ -22502,6 +23792,12 @@
             "state" : "translated",
             "value" : "Τέλος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valmis"
+          }
         }
       }
     },
@@ -22603,6 +23899,12 @@
             "state" : "translated",
             "value" : "Διαγραφή ολοκληρωμένων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista valmiit kohteet"
+          }
         }
       }
     },
@@ -22703,6 +24005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ούλσαν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
           }
         }
       }
@@ -22811,6 +24119,12 @@
             "state" : "translated",
             "value" : "Costco Ούλσαν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -22916,6 +24230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ούλσαν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
           }
         }
       }
@@ -23023,6 +24343,12 @@
             "state" : "translated",
             "value" : "Ούλσαν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -23129,6 +24455,12 @@
             "state" : "translated",
             "value" : "Ούλσαν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -23229,6 +24561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μηνιαία"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuukausi"
           }
         }
       }
@@ -23331,6 +24669,12 @@
             "state" : "translated",
             "value" : "Απαιτείται άδεια τοποθεσίας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sijaintilupa tarvitaan"
+          }
         }
       }
     },
@@ -23432,6 +24776,12 @@
             "state" : "translated",
             "value" : "Λειτουργίες τοποθεσίας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sijaintiominaisuudet"
+          }
         }
       }
     },
@@ -23531,6 +24881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Στηρίξτε μας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tue meitä"
           }
         }
       }
@@ -23637,6 +24993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κυρ"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su"
           }
         }
       }
@@ -23747,6 +25109,12 @@
             "state" : "translated",
             "value" : "Αυτή την εβδομάδα: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tällä viikolla: %@"
+          }
         }
       }
     },
@@ -23847,6 +25215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αυτή την εβδομάδα κλειστό: %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tällä viikolla suljettu: %@"
           }
         }
       }
@@ -23954,6 +25328,12 @@
             "state" : "translated",
             "value" : "Αυτή την Κυριακή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tämä sunnuntai"
+          }
         }
       }
     },
@@ -24059,6 +25439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αυτή την Κυριακή %@, το κατάστημα είναι ανοιχτό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänä sunnuntaina %@ kauppa on auki"
           }
         }
       }
@@ -24166,6 +25552,12 @@
             "state" : "translated",
             "value" : "Αυτή την Κυριακή %@, το κατάστημα είναι κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänä sunnuntaina %@ kauppa on kiinni"
+          }
         }
       }
     },
@@ -24267,6 +25659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προηγούμενος μήνας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edellinen kuu"
           }
         }
       }
@@ -24370,6 +25768,12 @@
             "state" : "translated",
             "value" : "Κοινοποίηση στα Stories του Instagram"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaa Instagram Storiesiin"
+          }
         }
       }
     },
@@ -24472,6 +25876,12 @@
             "state" : "translated",
             "value" : "Πρέπει να είναι εγκατεστημένο το Instagram για κοινοποίηση στα Stories."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram on oltava asennettuna, jotta voit jakaa Storiesiin."
+          }
         }
       }
     },
@@ -24573,6 +25983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Το Instagram δεν βρέθηκε"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagramia ei löytynyt"
           }
         }
       }
@@ -24677,6 +26093,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -24787,6 +26209,12 @@
             "state" : "translated",
             "value" : "Κανονικό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavallinen"
+          }
         }
       }
     },
@@ -24887,6 +26315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κανονικά καταστήματα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavalliset kaupat"
           }
         }
       }
@@ -24989,6 +26423,12 @@
             "state" : "translated",
             "value" : "Μερικά ανοιχτά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osa auki"
+          }
         }
       }
     },
@@ -25088,6 +26528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μερικά καταστήματα είναι κλειστά"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osa kaupoista on kiinni"
           }
         }
       }
@@ -25189,6 +26635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ιλσάν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
           }
         }
       }
@@ -25297,6 +26749,12 @@
             "state" : "translated",
             "value" : "Costco Ιλσάν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -25403,6 +26861,12 @@
             "state" : "translated",
             "value" : "Ιλσάν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -25508,6 +26972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ιλσάν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
           }
         }
       }
@@ -25616,6 +27086,12 @@
             "state" : "translated",
             "value" : "Εφάπαξ αγορά. Χωρίς συνδρομή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kertaosto. Ei tilausta."
+          }
         }
       }
     },
@@ -25715,6 +27191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθέστε προγράμματα κλεισίματος για τα αγαπημένα σας καταστήματα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää lempikauppojesi sulkemiskaavat"
           }
         }
       }
@@ -25817,6 +27299,12 @@
             "state" : "translated",
             "value" : "Υπενθύμιση για ψώνια"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostosmuistutus"
+          }
         }
       }
     },
@@ -25918,6 +27406,12 @@
             "state" : "translated",
             "value" : "Λίστα αγορών"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostoslista"
+          }
         }
       }
     },
@@ -26018,6 +27512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποίηση για ψώνια"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostoshälytys"
           }
         }
       }
@@ -26126,6 +27626,12 @@
             "state" : "translated",
             "value" : "Υπενθύμιση για ψώνια"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostosmuistutus"
+          }
         }
       }
     },
@@ -26228,6 +27734,12 @@
             "state" : "translated",
             "value" : "Ειδοποίηση για καλή μέρα για ψώνια (την προηγούμενη μέρα)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muistutus hyvästä ostospäivästä (edellisenä päivänä)"
+          }
         }
       }
     },
@@ -26329,6 +27841,12 @@
             "state" : "translated",
             "value" : "Προσθήκη προϊόντος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kohde"
+          }
         }
       }
     },
@@ -26429,6 +27947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθέστε προϊόντα στη λίστα αγορών σας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kohteita ostoslistaasi"
           }
         }
       }
@@ -26535,6 +28059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αποθήκευση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tallenna"
           }
         }
       }
@@ -26643,6 +28173,12 @@
             "state" : "translated",
             "value" : "Οι περισσότερες περιοχές της χώρας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suurin osa maan alueista"
+          }
         }
       }
     },
@@ -26749,6 +28285,12 @@
             "state" : "translated",
             "value" : "Εθνική αργία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valtakunnallinen pyhäpäivä"
+          }
         }
       }
     },
@@ -26854,6 +28396,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εθνική αργία"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valtakunnallinen pyhäpäivä"
           }
         }
       }
@@ -26962,6 +28510,12 @@
             "state" : "translated",
             "value" : "Κλειστό όλη μέρα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu koko päivän"
+          }
         }
       }
     },
@@ -27063,6 +28617,12 @@
             "state" : "translated",
             "value" : "Διαγραφή όλων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista kaikki"
+          }
         }
       }
     },
@@ -27163,6 +28723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προβολή όλων"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä kaikki"
           }
         }
       }
@@ -27266,6 +28832,12 @@
             "state" : "translated",
             "value" : "Ευχαριστούμε πολύ!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suuri kiitos!"
+          }
         }
       }
     },
@@ -27366,6 +28938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πληροφορίες"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietoja"
           }
         }
       }
@@ -27473,6 +29051,12 @@
             "state" : "translated",
             "value" : "Τζέζου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -27573,6 +29157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εβδομαδιαία"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikoittain"
           }
         }
       }
@@ -27675,6 +29265,12 @@
             "state" : "translated",
             "value" : "Κοντινά καταστήματα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lähikaupat"
+          }
         }
       }
     },
@@ -27775,6 +29371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αυτόματη εύρεση κοντινών καταστημάτων"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnista lähikaupat automaattisesti"
           }
         }
       }
@@ -27877,6 +29479,12 @@
             "state" : "translated",
             "value" : "Για να βρείτε κοντινά καταστήματα,\nεπιτρέψτε την πρόσβαση στην τοποθεσία από\nΡυθμίσεις > DontGoMart > Τοποθεσία."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löytääksesi lähikaupat\nsalli sijainnin käyttö kohdassa\nAsetukset > DontGoMart > Sijainti."
+          }
         }
       }
     },
@@ -27978,6 +29586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ενημερώστε όσους είναι γύρω σας για τα κλεισίματα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kerro ympärilläsi oleville sulkupäivistä"
           }
         }
       }
@@ -28086,6 +29700,12 @@
             "state" : "translated",
             "value" : "Καρφιτσώστε στην κορυφή τα αγαπημένα σας καταστήματα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiinnitä lempikauppasi ylös"
+          }
         }
       }
     },
@@ -28193,6 +29813,12 @@
             "state" : "translated",
             "value" : "Αγαπημένα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suosikit"
+          }
         }
       }
     },
@@ -28295,6 +29921,12 @@
             "state" : "translated",
             "value" : "Υποστήριξη που λάβαμε μέχρι τώρα ☕️ ×%lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tähän mennessä saatu tuki ☕️ ×%lld"
+          }
         }
       }
     },
@@ -28395,6 +30027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πρόοδος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edistyminen"
           }
         }
       }
@@ -28497,6 +30135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πρώτη ημέρα κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensimmäinen sulkupäivä"
           }
         }
       }
@@ -28604,6 +30248,12 @@
             "state" : "translated",
             "value" : "Προσθήκη"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää"
+          }
         }
       }
     },
@@ -28703,6 +30353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλέξτε καταστήματα για παρακολούθηση (πολλά)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse seurattavat kaupat (useita mahdollista)"
           }
         }
       }
@@ -28810,6 +30466,12 @@
             "state" : "translated",
             "value" : "Ακύρωση"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
+          }
         }
       }
     },
@@ -28912,6 +30574,12 @@
             "state" : "translated",
             "value" : "Προετοιμασία κάρτας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valmistellaan korttia"
+          }
         }
       }
     },
@@ -29013,6 +30681,12 @@
             "state" : "translated",
             "value" : "Προβολή ημερολογίου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä kalenteri"
+          }
         }
       }
     },
@@ -29113,6 +30787,12 @@
             "state" : "translated",
             "value" : "Προσθήκη προσαρμοσμένου καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää oma kauppa"
+          }
         }
       }
     },
@@ -29212,6 +30892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επεξεργασία προσαρμοσμένου καταστήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muokkaa omaa kauppaa"
           }
         }
       }
@@ -29319,6 +31005,12 @@
             "state" : "translated",
             "value" : "Προσαρμοσμένο κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma kauppa"
+          }
         }
       }
     },
@@ -29425,6 +31117,12 @@
             "state" : "translated",
             "value" : "Προσαρμοσμένο κατάστημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma kauppa"
+          }
         }
       }
     },
@@ -29530,6 +31228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσαρμοσμένο κατάστημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma kauppa"
           }
         }
       }
@@ -29638,6 +31342,12 @@
             "state" : "translated",
             "value" : "Προσθέστε τα προγράμματα κλεισίματος του δικού σας καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää oman kauppasi sulkemiskaavat"
+          }
         }
       }
     },
@@ -29744,6 +31454,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσαρμοσμένο κατάστημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma kauppa"
           }
         }
       }
@@ -29852,6 +31568,12 @@
             "state" : "translated",
             "value" : "Προσθέστε τα προγράμματα κλεισίματος του δικού σας καταστήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää oman kauppasi sulkemiskaavat"
+          }
         }
       }
     },
@@ -29953,6 +31675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κεράστε έναν καφέ %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarjoa kahvi %@"
           }
         }
       }
@@ -30056,6 +31784,12 @@
             "state" : "translated",
             "value" : "Κεράστε έναν καφέ, %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarjoa kahvi, %@"
+          }
         }
       }
     },
@@ -30153,6 +31887,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -30263,6 +32003,12 @@
             "state" : "translated",
             "value" : "Costco Ντεγκού"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -30368,6 +32114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ντεγκού"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
           }
         }
       }
@@ -30475,6 +32227,12 @@
             "state" : "translated",
             "value" : "Costco Ντεγκού"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -30580,6 +32338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ούλσαν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
           }
         }
       }
@@ -30687,6 +32451,12 @@
             "state" : "translated",
             "value" : "Costco Ούλσαν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -30792,6 +32562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ούλσαν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
           }
         }
       }
@@ -30899,6 +32675,12 @@
             "state" : "translated",
             "value" : "Costco κανονικό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco tavallinen"
+          }
         }
       }
     },
@@ -31004,6 +32786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco κανονικό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco tavallinen"
           }
         }
       }
@@ -31111,6 +32899,12 @@
             "state" : "translated",
             "value" : "Costco κανονικό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco tavallinen"
+          }
         }
       }
     },
@@ -31216,6 +33010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ιλσάν"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
           }
         }
       }
@@ -31323,6 +33123,12 @@
             "state" : "translated",
             "value" : "Costco Ιλσάν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -31429,6 +33235,12 @@
             "state" : "translated",
             "value" : "Costco Ιλσάν"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -31531,6 +33343,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -31641,6 +33459,12 @@
             "state" : "translated",
             "value" : "Κανονικά – Γιανγκπιόνγκ, Ντεγιεόν, Γιανγκτζέ, \nΣανγκμπόνγκ, Μπουσάν, Γκουανγκμιόνγκ, \nΤσεονάν, Ουιτζονγκμπού, Γκονγκσε, \nΣονγκντο, Σετζόνγκ, Χανάμ, \nΚιμχε, Κοτσόκ"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavalliset – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -31741,6 +33565,12 @@
             "state" : "translated",
             "value" : "Προσθήκη προγράμματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kaava"
+          }
         }
       }
     },
@@ -31840,6 +33670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθέστε ένα πρόγραμμα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kaava"
           }
         }
       }
@@ -31948,6 +33784,12 @@
             "state" : "translated",
             "value" : "Ξεκλειδώστε την παρακολούθηση πολλών καταστημάτων, τις ειδοποιήσεις και άλλα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa usean kaupan seuranta, muistutukset ja paljon muuta"
+          }
         }
       }
     },
@@ -32050,6 +33892,12 @@
             "state" : "translated",
             "value" : "Στηρίξτε μας ξανά ☕️"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tue meitä vielä kerran ☕️"
+          }
         }
       }
     },
@@ -32150,6 +33998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλεγμένο υποκατάστημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valittu toimipiste"
           }
         }
       }
@@ -32252,6 +34106,12 @@
             "state" : "translated",
             "value" : "Βρίσκει και προτείνει κοντινά καταστήματα με βάση την τρέχουσα τοποθεσία σας."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etsii ja suosittelee lähikauppoja nykyisen sijaintisi perusteella."
+          }
         }
       }
     },
@@ -32350,6 +34210,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -32456,6 +34322,12 @@
             "state" : "translated",
             "value" : "Επαναφορτώνει τη λίστα με τις επιλογές φιλοδωρήματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lataa juomarahavaihtoehdot uudelleen"
+          }
         }
       }
     },
@@ -32557,6 +34429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Φόρτωση επιλογών φιλοδωρήματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ladataan juomarahavaihtoehtoja"
           }
         }
       }
@@ -32660,6 +34538,12 @@
             "state" : "translated",
             "value" : "Δεν ήταν δυνατή η φόρτωση των επιλογών φιλοδωρήματος. Δοκιμάστε ξανά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juomarahavaihtoehtojen lataus epäonnistui. Yritä uudelleen"
+          }
         }
       }
     },
@@ -32761,6 +34645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σχετικά με το φιλοδώρημα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietoja juomarahasta"
           }
         }
       }
@@ -32864,6 +34754,12 @@
             "state" : "translated",
             "value" : "Κλείνει την κάρτα φιλοδωρήματος. Δεν θα εμφανιστεί ξανά για 30 ημέρες"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkee juomarahakortin. Se ei tule näkyviin 30 päivään"
+          }
         }
       }
     },
@@ -32965,6 +34861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Υποστηρικτής"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tukija"
           }
         }
       }
@@ -33068,6 +34970,12 @@
             "state" : "translated",
             "value" : "Υποστηρικτής. Μέχρι τώρα %lld καφέδες. Ευχαριστούμε που στηρίζετε την εφαρμογή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tukija. Tähän mennessä %lld kahvia. Kiitos, että tuet sovellusta."
+          }
         }
       }
     },
@@ -33170,6 +35078,12 @@
             "state" : "translated",
             "value" : "Δεν σας ξεχάσαμε!"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emme ole unohtaneet sinua!"
+          }
         }
       }
     },
@@ -33271,6 +35185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ευχαριστούμε για τη στήριξή σας. Μέχρι τώρα έχετε στείλει %lld καφέδες."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiitos tuestasi. Olet lähettänyt tähän mennessä %lld kahvia."
           }
         }
       }
@@ -33381,6 +35301,12 @@
             "state" : "translated",
             "value" : "Ευχαριστούμε πολύ για τη στήριξή σας. Σημαίνει πολλά για εμάς."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suuri kiitos tuestasi. Se merkitsee meille paljon."
+          }
         }
       }
     },
@@ -33482,6 +35408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ευχαριστούμε πολύ για τη στήριξή σας. Μέχρι τώρα έχετε στείλει %lld καφέδες."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suuri kiitos tuestasi. Olet lähettänyt tähän mennessä %lld kahvia."
           }
         }
       }
@@ -33591,6 +35523,12 @@
             "state" : "translated",
             "value" : "Κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu"
+          }
         }
       }
     },
@@ -33690,6 +35628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πρόγραμμα κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkemiskaava"
           }
         }
       }
@@ -33793,6 +35737,12 @@
             "state" : "translated",
             "value" : "Ανακοινώστε ένα κλείσιμο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kerro sulkemisesta"
+          }
         }
       }
     },
@@ -33894,6 +35844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κοινοποιεί την εικόνα της κάρτας κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakaa sulkemiskortin kuvan"
           }
         }
       }
@@ -34003,6 +35959,12 @@
             "state" : "translated",
             "value" : "Κάρτα κλεισίματος. %1$@ %2$@, %3$@ κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkemiskortti. %1$@ %2$@, %3$@ suljettu"
+          }
         }
       }
     },
@@ -34105,6 +36067,12 @@
             "state" : "translated",
             "value" : "Δημιουργεί και κοινοποιεί μια κάρτα κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luo ja jakaa sulkemiskortin"
+          }
         }
       }
     },
@@ -34206,6 +36174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κοινοποιεί την κάρτα κλεισίματος στα Stories του Instagram"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakaa sulkemiskortin Instagram Storiesiin"
           }
         }
       }
@@ -34316,6 +36290,12 @@
             "state" : "translated",
             "value" : "Χωρίς κλείσιμο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei sulkemista"
+          }
         }
       }
     },
@@ -34415,6 +36395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πρόγραμμα κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkemiskaava"
           }
         }
       }
@@ -34522,6 +36508,12 @@
             "state" : "translated",
             "value" : "Κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu"
+          }
         }
       }
     },
@@ -34622,6 +36614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλειστό σήμερα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suljettu tänään"
           }
         }
       }
@@ -34725,6 +36723,12 @@
             "state" : "translated",
             "value" : "Κανένα κατάστημα δεν είναι κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yksikään kauppa ei ole suljettu"
+          }
         }
       }
     },
@@ -34825,6 +36829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ημέρες κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkupäivät"
           }
         }
       }
@@ -34927,6 +36937,12 @@
             "state" : "translated",
             "value" : "Οι ειδοποιήσεις θα σταλούν 3 ημέρες και 1 ημέρα πριν από τις ημέρες κλεισίματος."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitukset lähetetään 3 päivää ja 1 päivä ennen sulkupäiviä."
+          }
         }
       }
     },
@@ -35026,6 +37042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ειδοποιήσεις ημερών κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkupäivämuistutukset"
           }
         }
       }
@@ -35128,6 +37150,12 @@
             "state" : "translated",
             "value" : "Ενεργοποιήστε πρώτα τις ειδοποιήσεις ημερών κλεισίματος."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota ensin sulkupäivämuistutukset käyttöön."
+          }
         }
       }
     },
@@ -35227,6 +37255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Για να λαμβάνετε ειδοποιήσεις ημερών κλεισίματος, επιτρέψτε τις ειδοποιήσεις στις Ρυθμίσεις."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saadaksesi sulkupäivämuistutuksia salli ilmoitukset Asetuksissa."
           }
         }
       }
@@ -35328,6 +37362,12 @@
             "state" : "translated",
             "value" : "Δεν υπάρχουν στοιχεία κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei sulkupäivätietoja"
+          }
         }
       }
     },
@@ -35428,6 +37468,12 @@
             "state" : "translated",
             "value" : "Δεν υπάρχουν πληροφορίες για ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkupäivätietoja ei ole saatavilla"
+          }
         }
       }
     },
@@ -35527,6 +37573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ημερολόγιο κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkupäiväkalenteri"
           }
         }
       }
@@ -35630,6 +37682,12 @@
             "state" : "translated",
             "value" : "Προβολή του ημερολογίου κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä sulkupäiväkalenteri"
+          }
         }
       }
     },
@@ -35731,6 +37789,12 @@
             "state" : "translated",
             "value" : "Επιλέξτε ημέρες κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse sulkupäivät"
+          }
         }
       }
     },
@@ -35831,6 +37895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν είναι ημέρα κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei ole sulkupäivä"
           }
         }
       }
@@ -35938,6 +38008,12 @@
             "state" : "translated",
             "value" : "Βρέθηκε το «%@». Ελέγξτε το και πατήστε Προσθήκη."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löytyi ”%@”. Tarkista ja napauta Lisää."
+          }
         }
       }
     },
@@ -36043,6 +38119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κανένα κλείσιμο τις επόμενες 7 ημέρες"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei sulkemisia seuraavien 7 päivän aikana"
           }
         }
       }
@@ -36150,6 +38232,12 @@
             "state" : "translated",
             "value" : "Κανένα από τα εστιατόριά σας δεν κλείνει τις επόμενες 7 ημέρες"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yksikään ravintolasi ei ole kiinni seuraavien 7 päivän aikana"
+          }
         }
       }
     },
@@ -36255,6 +38343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κανένα κλείσιμο αυτή την εβδομάδα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei sulkemisia tällä viikolla"
           }
         }
       }
@@ -36362,6 +38456,12 @@
             "state" : "translated",
             "value" : "Διαχείριση"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hallitse"
+          }
         }
       }
     },
@@ -36467,6 +38567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μπορείτε να προσθέσετε από σύνδεσμο κοινοποίησης του Naver Maps ή από στιγμιότυπο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voit lisätä Naver Mapsin jakolinkistä tai kuvakaappauksesta"
           }
         }
       }
@@ -36574,6 +38680,12 @@
             "state" : "translated",
             "value" : "Τα εστιατόριά μου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omat ravintolani"
+          }
         }
       }
     },
@@ -36679,6 +38791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εστιατόρια · 7 ημέρες"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ravintolat · 7 päivää"
           }
         }
       }
@@ -36786,6 +38904,12 @@
             "state" : "translated",
             "value" : "Προσθέστε ή επεξεργαστείτε τα εστιατόριά σας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää tai muokkaa ravintoloitasi"
+          }
         }
       }
     },
@@ -36891,6 +39015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν υπάρχουν ακόμη εστιατόρια. Προσθέστε τα στην εφαρμογή."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ravintoloita ei vielä ole. Lisää ne sovelluksessa."
           }
         }
       }
@@ -36998,6 +39128,12 @@
             "state" : "translated",
             "value" : "Ή επικολλήστε εδώ έναν κοινοποιημένο σύνδεσμο ή κείμενο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tai liitä tähän jaettu linkki tai teksti"
+          }
         }
       }
     },
@@ -37103,6 +39239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Γρήγορη εισαγωγή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pikatuonti"
           }
         }
       }
@@ -37210,6 +39352,12 @@
             "state" : "translated",
             "value" : "Διαβάζει στη συσκευή σας τα στοιχεία κλεισίματος από τη φωτογραφία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukee kuvasta sulkemistiedot laitteellasi"
+          }
         }
       }
     },
@@ -37315,6 +39463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν ήταν δυνατή η φόρτωση της φωτογραφίας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuvaa ei voitu ladata"
           }
         }
       }
@@ -37422,6 +39576,12 @@
             "state" : "translated",
             "value" : "Κανένα εστιατόριο δεν κλείνει"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yksikään ravintola ei ole kiinni"
+          }
         }
       }
     },
@@ -37527,6 +39687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Στιγμιότυπο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuvakaappaus"
           }
         }
       }
@@ -37634,6 +39800,12 @@
             "state" : "translated",
             "value" : "Διαγραφή εστιατορίου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista ravintola"
+          }
         }
       }
     },
@@ -37739,6 +39911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όνομα εστιατορίου"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ravintolan nimi"
           }
         }
       }
@@ -37846,6 +40024,12 @@
             "state" : "translated",
             "value" : "Εστιατόριο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ravintola"
+          }
         }
       }
     },
@@ -37951,6 +40135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθήκη εστιατορίου"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää ravintola"
           }
         }
       }
@@ -38058,6 +40248,12 @@
             "state" : "translated",
             "value" : "Προσθήκη εστιατορίου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää ravintola"
+          }
         }
       }
     },
@@ -38163,6 +40359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επεξεργασία εστιατορίου"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muokkaa ravintolaa"
           }
         }
       }
@@ -38270,6 +40472,12 @@
             "state" : "translated",
             "value" : "Κανένα από τα εστιατόριά σας δεν κλείνει τις επόμενες 7 ημέρες."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yksikään ravintolasi ei ole kiinni seuraavien 7 päivän aikana."
+          }
         }
       }
     },
@@ -38375,6 +40583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δείχνει μια τελεία στις ημέρες των επόμενων 7 που τα εστιατόριά σας είναι κλειστά."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näyttää pisteen niinä seuraavien 7 päivän päivinä, jolloin ravintolasi ovat kiinni."
           }
         }
       }
@@ -38482,6 +40696,12 @@
             "state" : "translated",
             "value" : "Προσθέστε εστιατόρια στην εφαρμογή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää ravintoloita sovelluksessa"
+          }
         }
       }
     },
@@ -38587,6 +40807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αναγράφεται ως ανοιχτό κάθε μέρα — χωρίς σταθερή ρεπό."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitettu olevan auki joka päivä — ei vakiovapaapäivää."
           }
         }
       }
@@ -38694,6 +40920,12 @@
             "state" : "translated",
             "value" : "Προσθέστε το widget «Εστιατόρια · 7 ημέρες» στην Αρχική οθόνη για να το βλέπετε χωρίς να ανοίγετε την εφαρμογή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää ”Ravintolat · 7 päivää” -widget Koti-valikkoon nähdäksesi tämän avaamatta sovellusta."
+          }
         }
       }
     },
@@ -38799,6 +41031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εισαγωγή αυτών"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuo tämä"
           }
         }
       }
@@ -38906,6 +41144,12 @@
             "state" : "translated",
             "value" : "Βρέθηκε το όνομα αλλά όχι στοιχεία κλεισίματος. Δοκιμάστε στιγμιότυπο του ωραρίου ή επιλέξτε τις ημέρες παρακάτω."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nimi saatiin, mutta sulkemistietoja ei. Kokeile aukioloaikojen kuvakaappausta tai valitse päivät alta."
+          }
         }
       }
     },
@@ -39011,6 +41255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθέστε τις σταθερές ρεπό των εστιατορίων που επισκέπτεστε και θα σημειώσουμε με τελεία τις ημέρες κλεισίματος των επόμενων 7 ημερών."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää käymiesi ravintoloiden vakiovapaapäivät, niin merkitsemme pisteellä sulkupäivät seuraavien 7 päivän ajalta."
           }
         }
       }
@@ -39118,6 +41368,12 @@
             "state" : "translated",
             "value" : "Χρώμα τελείας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pisteen väri"
+          }
         }
       }
     },
@@ -39223,6 +41479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σταθερές ρεπό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vakiovapaapäivät"
           }
         }
       }
@@ -39330,6 +41592,12 @@
             "state" : "translated",
             "value" : "Διεύθυνση (προαιρετικό)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osoite (valinnainen)"
+          }
         }
       }
     },
@@ -39435,6 +41703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Στην εφαρμογή χαρτών πατήστε Κοινοποίηση → Αντιγραφή στο εστιατόριο και επικολλήστε εδώ ή επιλέξτε στιγμιότυπο της σελίδας πληροφοριών του."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napauta karttasovelluksessa ravintolan kohdalla Jaa → Kopioi ja liitä tähän tai valitse kuvakaappaus sen tietosivulta."
           }
         }
       }
@@ -39542,6 +41816,12 @@
             "state" : "translated",
             "value" : "Άνοιγμα στους Χάρτες"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa Kartoissa"
+          }
         }
       }
     },
@@ -39647,6 +41927,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χειροκίνητη προσθήκη ρεπό"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää vapaapäivä käsin"
           }
         }
       }
@@ -39754,6 +42040,12 @@
             "state" : "translated",
             "value" : "Προσθέστε μια ρεπό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää vapaapäivä"
+          }
         }
       }
     },
@@ -39859,6 +42151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επεξεργασία στοιχείων κλεισίματος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muokkaa sulkemistietoja"
           }
         }
       }
@@ -39966,6 +42264,12 @@
             "state" : "translated",
             "value" : "Αναζήτηση στοιχείων κλεισίματος…"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etsitään sulkemistietoja…"
+          }
         }
       }
     },
@@ -40071,6 +42375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν βρέθηκαν στοιχεία κλεισίματος. Επιλέξτε τις ημέρες παρακάτω."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkemistietoja ei löytynyt. Valitse päivät alta."
           }
         }
       }
@@ -40178,6 +42488,12 @@
             "state" : "translated",
             "value" : "Ανάρτηση 4:5"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Julkaisu 4:5"
+          }
         }
       }
     },
@@ -40280,6 +42596,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -40390,6 +42712,12 @@
             "state" : "translated",
             "value" : "Ημερολόγιο κλεισίματος 2 εβδομάδων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 viikon sulkukalenteri"
+          }
         }
       }
     },
@@ -40495,6 +42823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Σύντομα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulossa"
           }
         }
       }
@@ -40602,6 +42936,12 @@
             "state" : "translated",
             "value" : "Αναζητήστε «DontGoMart» στο App Store"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hae App Storesta ”DontGoMart”"
+          }
         }
       }
     },
@@ -40707,6 +43047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τα καταστήματα είναι κλειστά!"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaupat suljettu!"
           }
         }
       }
@@ -40814,6 +43160,12 @@
             "state" : "translated",
             "value" : "Φωτογραφία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuva"
+          }
         }
       }
     },
@@ -40919,6 +43271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Βίντεο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
           }
         }
       }
@@ -41026,6 +43384,12 @@
             "state" : "translated",
             "value" : "Μορφή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muoto"
+          }
         }
       }
     },
@@ -41131,6 +43495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μέσο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media"
           }
         }
       }
@@ -41238,6 +43608,12 @@
             "state" : "translated",
             "value" : "Κάρτα κλεισίματος. %1$@ %2$@, %3$@ κλειστό"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulkemiskortti. %1$@ %2$@, %3$@ suljettu"
+          }
         }
       }
     },
@@ -41343,6 +43719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δημιουργία βίντεο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luodaan videota"
           }
         }
       }
@@ -41450,6 +43832,12 @@
             "state" : "translated",
             "value" : "Δημοσίευση στο Instagram"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Julkaise Instagramissa"
+          }
         }
       }
     },
@@ -41555,6 +43943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλέξτε Instagram στη λίστα κοινοποίησης για να δημοσιεύσετε ως ανάρτηση, story ή reel"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse Instagram jakolistasta ja julkaise se julkaisuna, storyna tai reelinä"
           }
         }
       }
@@ -41662,6 +44056,12 @@
             "state" : "translated",
             "value" : "Ανοίγει απευθείας τον επεξεργαστή story του Instagram"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa suoraan Instagramin story-editorin"
+          }
         }
       }
     },
@@ -41767,6 +44167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κοινοποίηση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaa"
           }
         }
       }
@@ -41874,6 +44280,12 @@
             "state" : "translated",
             "value" : "Κοινοποιεί το βίντεο κλεισίματος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakaa sulkemisvideon"
+          }
         }
       }
     },
@@ -41979,6 +44391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν ήταν δυνατή η δημιουργία του βίντεο. Κοινοποιήστε τη φωτογραφία."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Videota ei voitu luoda. Jaa kuva sen sijaan."
           }
         }
       }
@@ -42086,6 +44504,12 @@
             "state" : "translated",
             "value" : "Ανοίγει ξανά %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avautuu uudelleen %@"
+          }
         }
       }
     },
@@ -42191,6 +44615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ολοκληρώστε τα ψώνια μέχρι %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tee ostokset viimeistään %@"
           }
         }
       }

@@ -108,6 +108,12 @@ Feedback spørger nu, hvad der skete
 Δείτε απαντήσεις στα σχόλιά σας
 Τα σχόλια ρωτούν τι συνέβη
 
+### App Store (fi)
+
+Widgetit näyttävät nyt DontGoMart-nimen
+Näe vastaukset palautteeseesi
+Palaute kysyy nyt, mitä tapahtui
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
