@@ -171,6 +171,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Voeg je winkel<br>om de hoek toe", "Patronen zoals de tweede en vierde dinsdag"),
         ("05-share.png", "dark", "Deel een sluiting<br>met één kaart", "Laat familie en buren het weten"),
     ],
+    "pl": [
+        ("01-main.png", "hero-bleed", "Sprawdź<br>przed wyjściem", "Od razu zobacz, czy sklep jest dziś otwarty"),
+        ("02-calendar.png", "left-text", "Zamknięcia<br>tego miesiąca", "Wszystkie dni zamknięcia w kalendarzu"),
+        ("03-marts.png", "text-bottom", "Tylko Twoje sklepy", "Supermarkety, Costco, zamknięcia w święta"),
+        ("04-pattern.png", "flat-rotate", "Dodaj swój<br>sklep z okolicy", "Wzory jak drugi i czwarty wtorek"),
+        ("05-share.png", "dark", "Poinformuj o zamknięciu<br>jedną kartą", "Daj znać rodzinie i sąsiadom"),
+    ],
 }
 
 BASE_CSS = f"""

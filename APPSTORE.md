@@ -1221,3 +1221,61 @@ https://m1zz.github.io/DontGoMart/nl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/nl/
+
+## pl
+
+### 이름
+
+DontGoMart: dni zamknięcia
+
+### 부제
+
+Koniec jazdy na darmo
+
+### 키워드
+
+supermarket,hipermarket,Korea,Seul,godziny,niedziela,środa,święta,Chuseok,zakupy,kalendarz,widżet
+
+### 프로모션 텍스트
+
+Teraz sprawdzisz też dni wolne ulubionych restauracji. Wystarczy link z Naver Maps lub jeden zrzut ekranu, a aplikacja przypomni o zbliżającym się zamknięciu.
+
+### 설명
+
+Zanim wyjdziesz, sprawdź, czy sklep jest otwarty.
+DontGoMart zbiera obowiązkowe dni zamknięcia dużych koreańskich supermarketów i Costco i z wyprzedzeniem przypomina, gdy któryś się zbliża.
+
+Od razu wiesz, czy dziś możesz jechać
+Po otwarciu aplikacji najpierw widzisz, czy wybrany sklep jest dziś otwarty. Zobaczysz też, ile dni zostało do następnego zamknięcia, i listę nadchodzących dni zamknięcia.
+
+Uwzględnia zamknięcia w różnych regionach
+Wybieraj sklepy zamykane w niedziele lub środy oraz regiony z innymi dniami zamknięcia, jak Ulsan i Czedżu. W Costco osobno ustawisz zwykłe sklepy oraz oddziały w Taegu, Ilsan i Ulsan. Pokazywane są też zamknięcia w czasie Seollal (koreańskiego Nowego Roku) i Chuseok.
+
+Dodawaj sklepy ze swojej okolicy
+Jeśli sklepu nie ma na liście, zarejestruj go sam, wybierając, w którym tygodniu i w który dzień tygodnia jest zamknięty, na przykład w drugą i czwartą niedzielę.
+
+Dni wolne ulubionych restauracji
+Wpisz stałe dni wolne restauracji, w których bywasz, a w ciągu najbliższych 7 dni dni ich zamknięcia będą oznaczone kropkami. Wystarczy wkleić link skopiowany z Naver Maps albo wybrać zrzut ekranu strony z informacjami o restauracji, a dzień wolny wypełni się automatycznie. Tekst na zdjęciach jest odczytywany tylko na Twoim urządzeniu.
+
+Przypomnienia, żebyś nie zapomniał
+Wybierz, czy chcesz otrzymać powiadomienie 1, 2, 3 czy 7 dni przed zamknięciem i o której godzinie. W dzień przed zamknięciem aplikacja przypomni, że dziś to dobry dzień na zakupy. Gdy zamknięcie przypada w ciągu 3 dni, na górze aplikacji pojawia się też baner.
+
+Widżety na ekran początkowy i ekran blokady
+Widżety pokazują najbliższy dzień zamknięcia, dwa kolejne z liczbą pozostałych dni, czy Twój sklep jest otwarty w tę niedzielę oraz dni wolne ulubionych restauracji na 7 dni. Widżet niedzieli tego tygodnia i widżet restauracji można umieścić także na ekranie blokady.
+
+Kalendarz i udostępnianie
+W kalendarzu zobaczysz dni zamknięcia na cały miesiąc. Informację o zamknięciu możesz udostępnić jako kartę z kalendarzem na dwa tygodnie i wskazówką zakupową, w rozmiarach postów i stories na Instagramie lub jako krótkie wideo.
+
+Wszystkie funkcje są bezpłatne. Jeśli aplikacja Ci się przydaje, wesprzyj jej rozwój kawą.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/pl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/pl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/pl/

@@ -132,6 +132,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — doe op tijd boodschappen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — zrób zakupy z wyprzedzeniem"
+          }
         }
       }
     },
@@ -254,6 +260,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -384,6 +396,12 @@
             "state" : "translated",
             "value" : "%@ verwijderen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń: %@"
+          }
         }
       }
     },
@@ -509,6 +527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ bewerken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edytuj: %@"
           }
         }
       }
@@ -641,6 +665,12 @@
             "state" : "translated",
             "value" : "%@ gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zamknięte"
+          }
         }
       }
     },
@@ -766,6 +796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ gesloten Pro"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zamknięte Pro"
           }
         }
       }
@@ -898,6 +934,12 @@
             "state" : "translated",
             "value" : "Gesloten: %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknięte: %@"
+          }
         }
       }
     },
@@ -1024,6 +1066,12 @@
             "state" : "translated",
             "value" : "Gesloten op %@!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknięte: %@!"
+          }
         }
       }
     },
@@ -1146,6 +1194,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -1281,6 +1335,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1403,6 +1463,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1534,6 +1600,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1659,6 +1731,12 @@
             "state" : "translated",
             "value" : "%lld items"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pozycji: %lld"
+          }
         }
       }
     },
@@ -1783,6 +1861,12 @@
             "state" : "translated",
             "value" : "%lld min."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -1906,6 +1990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld u."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "godz. %lld"
           }
         }
       }
@@ -2040,6 +2130,12 @@
             "state" : "translated",
             "value" : "Nog %lld dag(en)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pozostało dni: %lld"
+          }
         }
       }
     },
@@ -2166,6 +2262,12 @@
             "state" : "translated",
             "value" : "%lld dag(en) van tevoren"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dni wcześniej: %lld"
+          }
         }
       }
     },
@@ -2289,6 +2391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Week %lld"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tydzień %lld"
           }
         }
       }
@@ -2419,6 +2527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Over %lld wk., %@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Za %lld tyg., %@"
           }
         }
       }
@@ -2552,6 +2666,12 @@
             "state" : "translated",
             "value" : "Week %lld, %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tydzień %lld, %@"
+          }
         }
       }
     },
@@ -2682,6 +2802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Handiger met VoiceOver"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wygodniej z VoiceOver"
           }
         }
       }
@@ -2814,6 +2940,12 @@
             "state" : "translated",
             "value" : "Siri en Opdrachten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri i Skróty"
+          }
         }
       }
     },
@@ -2945,6 +3077,12 @@
             "state" : "translated",
             "value" : "Vraag het aan Siri of voer een opdracht uit en zie meteen of je winkel dicht is."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapytaj Siri lub uruchom skrót, aby od razu sprawdzić, czy Twój sklep jest zamknięty."
+          }
         }
       }
     },
@@ -3067,6 +3205,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -3197,6 +3341,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -3319,6 +3469,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -3449,6 +3605,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -3565,6 +3727,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -3700,6 +3868,12 @@
             "state" : "translated",
             "value" : "Zelfs bij de grootste tekstgrootte worden schermen netjes opnieuw ingedeeld, zonder dat er iets wordt afgekapt."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nawet przy największym rozmiarze tekstu ekrany przestawiają się porządnie i nic się nie ucina."
+          }
         }
       }
     },
@@ -3830,6 +4004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wis in één keer de gekozen en toegevoegde winkels en de instellingen voor meldingen in de app."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń naraz wybrane i dodane sklepy oraz ustawienia powiadomień w aplikacji."
           }
         }
       }
@@ -3962,6 +4142,12 @@
             "state" : "translated",
             "value" : "Mededeling"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komunikat"
+          }
         }
       }
     },
@@ -4086,6 +4272,12 @@
             "state" : "translated",
             "value" : "Opent de volledige mededeling"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwiera pełny komunikat"
+          }
         }
       }
     },
@@ -4209,6 +4401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mededeling sluiten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknij komunikat"
           }
         }
       }
@@ -4341,6 +4539,12 @@
             "state" : "translated",
             "value" : "Donkere modus"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryb ciemny"
+          }
         }
       }
     },
@@ -4471,6 +4675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zie sluitingsdagen ook met Contrast verhogen aan of als je kleuren moeilijk kunt onderscheiden."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dni zamknięcia widać nawet przy włączonym zwiększonym kontraście lub gdy trudno odróżniać kolory."
           }
         }
       }
@@ -4603,6 +4813,12 @@
             "state" : "translated",
             "value" : "Meer talen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Więcej języków"
+          }
         }
       }
     },
@@ -4733,6 +4949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik de app in meer talen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korzystaj z aplikacji w większej liczbie języków."
           }
         }
       }
@@ -4865,6 +5087,12 @@
             "state" : "translated",
             "value" : "Bewaar de winkels die je hebt toegevoegd in een bestand en haal ze op wanneer je wilt."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisz dodane sklepy do pliku i przywróć je w dowolnej chwili."
+          }
         }
       }
     },
@@ -4996,6 +5224,12 @@
             "state" : "translated",
             "value" : "Al mijn gegevens wissen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń wszystkie moje dane"
+          }
         }
       }
     },
@@ -5125,6 +5359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Melding bij sluiting van winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alert o zamknięciu sklepu"
           }
         }
       }
@@ -5257,6 +5497,12 @@
             "state" : "translated",
             "value" : "Tekst en knoppen blijven duidelijk op een donker scherm."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst i przyciski pozostają wyraźne na ciemnym ekranie."
+          }
         }
       }
     },
@@ -5387,6 +5633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kleuren die makkelijker te zien zijn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolory łatwiejsze do rozróżnienia"
           }
         }
       }
@@ -5519,6 +5771,12 @@
             "state" : "translated",
             "value" : "Kies op de iPad winkels en blader door de kalender met alleen het toetsenbord."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na iPadzie wybieraj sklepy i przewijaj kalendarz samą klawiaturą."
+          }
         }
       }
     },
@@ -5649,6 +5907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieuw na updates"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nowości po aktualizacjach"
           }
         }
       }
@@ -5781,6 +6045,12 @@
             "state" : "translated",
             "value" : "De eerste keer dat je de app na een update opent, zie je wat er nieuw is."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przy pierwszym uruchomieniu po aktualizacji zobaczysz, co nowego."
+          }
         }
       }
     },
@@ -5911,6 +6181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Handige tips"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wskazówki"
           }
         }
       }
@@ -6043,6 +6319,12 @@
             "state" : "translated",
             "value" : "We wijzen je op het juiste moment subtiel op handige functies."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W odpowiednim momencie delikatnie podpowiemy przydatne funkcje."
+          }
         }
       }
     },
@@ -6173,6 +6455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Back-up en export"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopia zapasowa i eksport"
           }
         }
       }
@@ -6305,6 +6593,12 @@
             "state" : "translated",
             "value" : "Als de app sluit terwijl je een winkel toevoegt, blijft wat je hebt getypt bewaard."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeśli aplikacja zamknie się podczas dodawania sklepu, to, co wpisano, zostanie zachowane."
+          }
         }
       }
     },
@@ -6428,6 +6722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld meer"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "i jeszcze: %lld"
           }
         }
       }
@@ -6560,6 +6860,12 @@
             "state" : "translated",
             "value" : "VoiceOver leest sluitingsdagen en knoppen volledig en in de juiste volgorde voor."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver czyta dni zamknięcia i przyciski w całości i we właściwej kolejności."
+          }
         }
       }
     },
@@ -6690,6 +6996,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klaar voor grote tekst"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gotowe na duży tekst"
           }
         }
       }
@@ -6822,6 +7134,12 @@
             "state" : "translated",
             "value" : "Bediening met toetsenbord"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obsługa z klawiatury"
+          }
         }
       }
     },
@@ -6952,6 +7270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snelstartgids"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szybki start"
           }
         }
       }
@@ -7084,6 +7408,12 @@
             "state" : "translated",
             "value" : "De eerste keer dat je de app opent, zie je in een paar korte stappen wat hij kan."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przy pierwszym uruchomieniu w kilku krótkich krokach zobaczysz, co potrafi aplikacja."
+          }
         }
       }
     },
@@ -7214,6 +7544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gemaakt voor de opvouwbare iPhone"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stworzone dla składanego iPhone’a"
           }
         }
       }
@@ -7346,6 +7682,12 @@
             "state" : "translated",
             "value" : "Gebruik op een opvouwbare iPhone het brede scherm als twee panelen naast elkaar."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na składanym iPhonie szeroki ekran działa jak dwa panele obok siebie."
+          }
         }
       }
     },
@@ -7477,6 +7819,12 @@
             "state" : "translated",
             "value" : "Ga verder waar je gebleven was"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontynuuj tam, gdzie skończyłeś"
+          }
         }
       }
     },
@@ -7593,6 +7941,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -7717,6 +8071,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -7837,6 +8197,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -7953,6 +8319,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -8081,6 +8453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Melding voor een goede boodschappendag"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Alert „dobry dzień na zakupy”"
           }
         }
       }
@@ -8211,6 +8589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Goede dag voor boodschappen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Dobry dzień na zakupy"
           }
         }
       }
@@ -8344,6 +8728,12 @@
             "state" : "translated",
             "value" : "Waarschuwt je als er binnen een week een sluitingsdag is!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadamia, gdy w ciągu tygodnia przypada dzień zamknięcia!"
+          }
         }
       }
     },
@@ -8466,6 +8856,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -8602,6 +8998,12 @@
             "state" : "translated",
             "value" : "Widget voor sluitingsmelding"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widżet alertu o zamknięciu"
+          }
         }
       }
     },
@@ -8734,6 +9136,12 @@
             "state" : "translated",
             "value" : "Widget voor aftellen tot sluiting"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widżet odliczania do zamknięcia"
+          }
         }
       }
     },
@@ -8856,6 +9264,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -8986,6 +9400,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -9108,6 +9528,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -9238,6 +9664,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -9360,6 +9792,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -9494,6 +9932,12 @@
             "state" : "translated",
             "value" : "%@ is morgen gesloten. Vandaag is een goede dag voor boodschappen!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ jutro jest zamknięte. Dziś to dobry dzień na zakupy!"
+          }
         }
       }
     },
@@ -9623,6 +10067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ sluit over %lld dag(en)."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zostanie zamknięte za %lld dn."
           }
         }
       }
@@ -9755,6 +10205,12 @@
             "state" : "translated",
             "value" : "%@ sluit over %lld dag(en)."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zostanie zamknięte za %lld dn."
+          }
         }
       }
     },
@@ -9885,6 +10341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vergeet niet boodschappen te doen vóór de volgende sluitingsdag!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pamiętaj, żeby zrobić zakupy przed następnym dniem zamknięcia!"
           }
         }
       }
@@ -10017,6 +10479,12 @@
             "state" : "translated",
             "value" : "Beheer ook de sluitingsdagen van winkels in je buurt"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zarządzaj też dniami zamknięcia sklepów w okolicy"
+          }
         }
       }
     },
@@ -10147,6 +10615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leg het sluitingspatroon van je eigen winkel vast"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisz wzór zamknięć własnego sklepu"
           }
         }
       }
@@ -10279,6 +10753,12 @@
             "state" : "translated",
             "value" : "Je favorieten staan altijd bovenaan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulubione zawsze na górze"
+          }
         }
       }
     },
@@ -10409,6 +10889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zet je favoriete winkels in je bladwijzers"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj ulubione sklepy do zakładek"
           }
         }
       }
@@ -10541,6 +11027,12 @@
             "state" : "translated",
             "value" : "Eenmalige aankoop voor alle functies, voor altijd"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jednorazowy zakup — wszystkie funkcje na zawsze"
+          }
         }
       }
     },
@@ -10671,6 +11163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upgrade naar DontGoMart Pro"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przejdź na DontGoMart Pro"
           }
         }
       }
@@ -10803,6 +11301,12 @@
             "state" : "translated",
             "value" : "Bekijk de sluitingsdagen van E-Mart, Costco en Homeplus in één keer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprawdź naraz dni zamknięcia E-Mart, Costco i Homeplus"
+          }
         }
       }
     },
@@ -10933,6 +11437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volg meerdere winkels tegelijk"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Śledź kilka sklepów jednocześnie"
           }
         }
       }
@@ -11065,6 +11575,12 @@
             "state" : "translated",
             "value" : "Krijg meldingen vóór sluitingsdagen en rij nooit meer voor niets"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dostawaj alerty przed dniami zamknięcia i nigdy nie jedź na darmo"
+          }
         }
       }
     },
@@ -11195,6 +11711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sta nooit meer voor een gesloten winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nigdy więcej zamkniętego sklepu"
           }
         }
       }
@@ -11327,6 +11849,12 @@
             "state" : "translated",
             "value" : "Voeg zoveel items toe als je nodig hebt"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodawaj tyle pozycji, ile potrzebujesz"
+          }
         }
       }
     },
@@ -11457,6 +11985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Onbeperkt boodschappenlijstje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieograniczona lista zakupów"
           }
         }
       }
@@ -11589,6 +12123,12 @@
             "state" : "translated",
             "value" : "☕ Voor de prijs van een kop koffie ontgrendel je alles voor altijd"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Za cenę kawy odblokujesz wszystko na zawsze"
+          }
         }
       }
     },
@@ -11719,6 +12259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je krijgt een melding %1$lld dagen en %2$lld dag vóór sluitingsdagen om %3$@."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadomimy Cię %1$lld dni i %2$lld dzień przed dniami zamknięcia o %3$@."
           }
         }
       }
@@ -11852,6 +12398,12 @@
             "state" : "translated",
             "value" : "Toont groen of rood of je winkel deze zondag open is."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na zielono lub czerwono pokazuje, czy Twój sklep jest otwarty w tę niedzielę."
+          }
         }
       }
     },
@@ -11981,6 +12533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toont de eerstvolgende twee sluitingsdagen!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokazuje dwa najbliższe dni zamknięcia!"
           }
         }
       }
@@ -12114,6 +12672,12 @@
             "state" : "translated",
             "value" : "Toont het aantal dagen tot de volgende sluitingsdag!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokazuje liczbę dni do następnego dnia zamknięcia!"
+          }
         }
       }
     },
@@ -12246,6 +12810,12 @@
             "state" : "translated",
             "value" : "Zondag open/gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedziela otwarte/zamknięte"
+          }
         }
       }
     },
@@ -12372,6 +12942,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -12494,6 +13070,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -12630,6 +13212,12 @@
             "state" : "translated",
             "value" : "Widget met twee sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widżet dwóch dni zamknięcia"
+          }
         }
       }
     },
@@ -12755,6 +13343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluit het bedankbericht"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamyka podziękowanie"
           }
         }
       }
@@ -12882,6 +13476,12 @@
             "state" : "translated",
             "value" : "Bedankt!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziękujemy!"
+          }
         }
       }
     },
@@ -13008,6 +13608,12 @@
             "state" : "translated",
             "value" : "Trakteert de ontwikkelaar op een kop koffie"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funduje deweloperowi kawę"
+          }
         }
       }
     },
@@ -13133,6 +13739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stuurt de ontwikkelaar een fooi"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wysyła deweloperowi napiwek"
           }
         }
       }
@@ -13265,6 +13877,12 @@
             "state" : "translated",
             "value" : "Delen van Gyeonggi/Cheongju"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Część Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -13391,6 +14009,12 @@
             "state" : "translated",
             "value" : "Bedankt, tot de volgende keer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dzięki, do zobaczenia"
+          }
         }
       }
     },
@@ -13515,6 +14139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluit binnenkort"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wkrótce zamknięte"
           }
         }
       }
@@ -13641,6 +14271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnij"
           }
         }
       }
@@ -13772,6 +14408,12 @@
             "state" : "translated",
             "value" : "Feestdag"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Święto"
+          }
         }
       }
     },
@@ -13895,6 +14537,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aankopen herstellen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przywróć zakupy"
           }
         }
       }
@@ -14027,6 +14675,12 @@
             "state" : "translated",
             "value" : "Functie"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funkcja"
+          }
         }
       }
     },
@@ -14150,6 +14804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mijn winkels"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moje sklepy"
           }
         }
       }
@@ -14282,6 +14942,12 @@
             "state" : "translated",
             "value" : "Morgen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jutro"
+          }
         }
       }
     },
@@ -14406,6 +15072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgen gesloten: %@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jutro zamknięte: %@"
           }
         }
       }
@@ -14540,6 +15212,12 @@
             "state" : "translated",
             "value" : "Morgen gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jutro zamknięte"
+          }
         }
       }
     },
@@ -14663,6 +15341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Komende sluitingsdagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadchodzące dni zamknięcia"
           }
         }
       }
@@ -14789,6 +15473,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volgende maand"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Następny miesiąc"
           }
         }
       }
@@ -14923,6 +15613,12 @@
             "state" : "translated",
             "value" : "Volgende week: %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W przyszłym tygodniu: %@"
+          }
         }
       }
     },
@@ -15054,6 +15750,12 @@
             "state" : "translated",
             "value" : "Volgende sluitingsdag"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Następny dzień zamknięcia"
+          }
         }
       }
     },
@@ -15178,6 +15880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We herinneren je 2 dagen vóór de volgende sluitingsdag aan je boodschappen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przypomnimy o zakupach na 2 dni przed następnym dniem zamknięcia."
           }
         }
       }
@@ -15312,6 +16020,12 @@
             "state" : "translated",
             "value" : "Geen informatie over sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak danych o zamknięciu"
+          }
         }
       }
     },
@@ -15437,6 +16151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Misschien later"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie teraz"
           }
         }
       }
@@ -15569,6 +16289,12 @@
             "state" : "translated",
             "value" : "Volg meerdere winkels tegelijk"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Śledź kilka sklepów jednocześnie"
+          }
         }
       }
     },
@@ -15700,6 +16426,12 @@
             "state" : "translated",
             "value" : "Meerdere winkels volgen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Śledzenie wielu sklepów"
+          }
         }
       }
     },
@@ -15825,6 +16557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluit"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknij"
           }
         }
       }
@@ -15952,6 +16690,12 @@
             "state" : "translated",
             "value" : "Opent de kalender om sluitingsdagen te zien"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwiera kalendarz z dniami zamknięcia"
+          }
         }
       }
     },
@@ -16076,6 +16820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu"
           }
         }
       }
@@ -16208,6 +16958,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -16337,6 +17093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu"
           }
         }
       }
@@ -16468,6 +17230,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu, Taegu Innovation"
+          }
         }
       }
     },
@@ -16592,6 +17360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket"
           }
         }
       }
@@ -16723,6 +17497,12 @@
             "state" : "translated",
             "value" : "Supermarkt (woensdag gesloten)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (zamknięte w środy)"
+          }
         }
       }
     },
@@ -16852,6 +17632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (woensdag gesloten)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (zamknięte w środy)"
           }
         }
       }
@@ -16983,6 +17769,12 @@
             "state" : "translated",
             "value" : "Supermarkt (wo)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (śr.)"
+          }
         }
       }
     },
@@ -17112,6 +17904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Ulsan, gemengd)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan, mieszany)"
           }
         }
       }
@@ -17243,6 +18041,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Ulsan)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
+          }
         }
       }
     },
@@ -17372,6 +18176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Ulsan)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
           }
         }
       }
@@ -17503,6 +18313,12 @@
             "state" : "translated",
             "value" : "Supermarkt (zondag gesloten)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (zamknięte w niedziele)"
+          }
         }
       }
     },
@@ -17632,6 +18448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (zondag gesloten)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (zamknięte w niedziele)"
           }
         }
       }
@@ -17763,6 +18585,12 @@
             "state" : "translated",
             "value" : "Supermarkt (zo)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (niedz.)"
+          }
         }
       }
     },
@@ -17892,6 +18720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Czedżu)"
           }
         }
       }
@@ -18023,6 +18857,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Czedżu)"
+          }
         }
       }
     },
@@ -18153,6 +18993,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Czedżu)"
+          }
         }
       }
     },
@@ -18279,6 +19125,12 @@
             "state" : "translated",
             "value" : "Als de app je geholpen heeft, moedig ons dan aan met een kop koffie."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeśli aplikacja Ci pomogła, dodaj nam otuchy kawą."
+          }
         }
       }
     },
@@ -18401,6 +19253,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -18532,6 +19390,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -18658,6 +19522,12 @@
             "state" : "translated",
             "value" : "Tik tweemaal om te sluiten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stuknij dwukrotnie, aby zamknąć"
+          }
         }
       }
     },
@@ -18783,6 +19653,12 @@
             "state" : "translated",
             "value" : "Winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklep"
+          }
         }
       }
     },
@@ -18907,6 +19783,12 @@
             "state" : "translated",
             "value" : "Check de sluitingsdagen in DontGoMart voordat je boodschappen gaat doen ✅"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zanim ruszysz na zakupy, sprawdź dni zamknięcia w DontGoMart ✅"
+          }
         }
       }
     },
@@ -19030,6 +19912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkelkleur"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolor sklepu"
           }
         }
       }
@@ -19161,6 +20049,12 @@
             "state" : "translated",
             "value" : "Kies een winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz sklep"
+          }
         }
       }
     },
@@ -19284,6 +20178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkelnaam (bijv. Homeplus Gangnam)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nazwa sklepu (np. Homeplus Gangnam)"
           }
         }
       }
@@ -19409,6 +20309,12 @@
             "state" : "translated",
             "value" : "Winkelinfo"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informacje o sklepie"
+          }
         }
       }
     },
@@ -19532,6 +20438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkel toevoegen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj sklep"
           }
         }
       }
@@ -19657,6 +20569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkel gesloten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklep zamknięty"
           }
         }
       }
@@ -19789,6 +20707,12 @@
             "state" : "translated",
             "value" : "Bericht over sluitingsdag van winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadomienie o dniu zamknięcia sklepu"
+          }
         }
       }
     },
@@ -19914,6 +20838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Melding bij sluiting van winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alert o zamknięciu sklepu"
           }
         }
       }
@@ -20046,6 +20976,12 @@
             "state" : "translated",
             "value" : "Winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklep"
+          }
         }
       }
     },
@@ -20176,6 +21112,12 @@
             "state" : "translated",
             "value" : "Winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklep"
+          }
         }
       }
     },
@@ -20301,6 +21243,12 @@
             "state" : "translated",
             "value" : "Winkel kiezen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz sklep"
+          }
         }
       }
     },
@@ -20424,6 +21372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opent winkelselectie en instellingen voor meldingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwiera wybór sklepu i ustawienia powiadomień"
           }
         }
       }
@@ -20556,6 +21510,12 @@
             "state" : "translated",
             "value" : "Verschilt per winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Różni się zależnie od sklepu"
+          }
         }
       }
     },
@@ -20680,6 +21640,12 @@
             "state" : "translated",
             "value" : "Winkel kiezen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz sklep"
+          }
         }
       }
     },
@@ -20803,6 +21769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kies een winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz sklep"
           }
         }
       }
@@ -20935,6 +21907,12 @@
             "state" : "translated",
             "value" : "Geen winkel geselecteerd. Kies er een in Instellingen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie wybrano sklepu. Wybierz go w Ustawieniach."
+          }
         }
       }
     },
@@ -21061,6 +22039,12 @@
             "state" : "translated",
             "value" : "Elke %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co tydzień: %@"
+          }
         }
       }
     },
@@ -21186,6 +22170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle functies blijven gratis. Een fooi is puur aanmoediging en je kunt er altijd een sturen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystkie funkcje pozostają darmowe. Napiwek to czysta zachęta i możesz wysłać go, kiedy chcesz."
           }
         }
       }
@@ -21320,6 +22310,12 @@
             "state" : "translated",
             "value" : "Overmorgen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pojutrze"
+          }
         }
       }
     },
@@ -21450,6 +22446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geen limiet aan items in je boodschappenlijstje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bez limitu pozycji na liście zakupów"
           }
         }
       }
@@ -21582,6 +22584,12 @@
             "state" : "translated",
             "value" : "Onbeperkt boodschappenlijstje"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieograniczona lista zakupów"
+          }
         }
       }
     },
@@ -21713,6 +22721,12 @@
             "state" : "translated",
             "value" : "Upgrade naar Pro om onbeperkt items toe te voegen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przejdź na Pro, aby dodawać pozycje bez limitu"
+          }
         }
       }
     },
@@ -21837,6 +22851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versie"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wersja"
           }
         }
       }
@@ -21964,6 +22984,12 @@
             "state" : "translated",
             "value" : "Dankzij jouw steun kunnen we de app blijven maken."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dzięki Twojemu wsparciu możemy dalej rozwijać aplikację."
+          }
         }
       }
     },
@@ -22090,6 +23116,12 @@
             "state" : "translated",
             "value" : "Jouw steun betekent veel. (tot nu toe ☕️ ×%lld)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoje wsparcie wiele znaczy. (dotąd ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -22213,6 +23245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "min."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
           }
         }
       }
@@ -22338,6 +23376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snelle acties"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szybkie akcje"
           }
         }
       }
@@ -22472,6 +23516,12 @@
             "state" : "translated",
             "value" : "Niet geselecteerd"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie wybrano"
+          }
         }
       }
     },
@@ -22596,6 +23646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selectie wissen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyczyść wybór"
           }
         }
       }
@@ -22727,6 +23783,12 @@
             "state" : "translated",
             "value" : "Geen winkel geselecteerd. Open de app om er een te kiezen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie wybrano sklepu. Otwórz aplikację, aby go wybrać."
+          }
         }
       }
     },
@@ -22850,6 +23912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gekozen patroon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybrany wzór"
           }
         }
       }
@@ -22984,6 +24052,12 @@
             "state" : "translated",
             "value" : "Geselecteerd"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybrano"
+          }
         }
       }
     },
@@ -23109,6 +24183,12 @@
             "state" : "translated",
             "value" : "Alle gekozen winkels zijn open"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystkie wybrane sklepy są otwarte"
+          }
         }
       }
     },
@@ -23233,6 +24313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle gekozen winkels zijn gesloten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystkie wybrane sklepy są zamknięte"
           }
         }
       }
@@ -23364,6 +24450,12 @@
             "state" : "translated",
             "value" : "Feestdagen Seollal/Chuseok"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Święta Seollal i Chuseok"
+          }
         }
       }
     },
@@ -23487,6 +24579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instellingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ustawienia"
           }
         }
       }
@@ -23614,6 +24712,12 @@
             "state" : "translated",
             "value" : "Kies in Instellingen de winkels die je wilt volgen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz w Ustawieniach sklepy do śledzenia"
+          }
         }
       }
     },
@@ -23739,6 +24843,12 @@
             "state" : "translated",
             "value" : "Kies in Instellingen de winkels die je wilt volgen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz w Ustawieniach sklepy do śledzenia"
+          }
         }
       }
     },
@@ -23863,6 +24973,12 @@
             "state" : "translated",
             "value" : "Ga naar Instellingen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przejdź do Ustawień"
+          }
         }
       }
     },
@@ -23986,6 +25102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uur"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Godzina"
           }
         }
       }
@@ -24118,6 +25240,12 @@
             "state" : "translated",
             "value" : "Onbekend"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieznane"
+          }
         }
       }
     },
@@ -24241,6 +25369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toestemming voor meldingen vereist"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wymagana zgoda na powiadomienia"
           }
         }
       }
@@ -24367,6 +25501,12 @@
             "state" : "translated",
             "value" : "Instellingen voor meldingen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ustawienia powiadomień"
+          }
         }
       }
     },
@@ -24490,6 +25630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tijdstip van melding"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Godzina powiadomienia"
           }
         }
       }
@@ -24616,6 +25762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waarschuw mij"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadom mnie"
           }
         }
       }
@@ -24748,6 +25900,12 @@
             "state" : "translated",
             "value" : "Krijg meldingen vóór sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otrzymuj powiadomienia przed dniami zamknięcia"
+          }
         }
       }
     },
@@ -24878,6 +26036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meldingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadomienia"
           }
         }
       }
@@ -25010,6 +26174,12 @@
             "state" : "translated",
             "value" : "Krijg meldingen vóór sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otrzymuj powiadomienia przed dniami zamknięcia"
+          }
         }
       }
     },
@@ -25133,6 +26303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meldingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadomienia"
           }
         }
       }
@@ -25259,6 +26435,12 @@
             "state" : "translated",
             "value" : "Schrijf een recensie in de App Store"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napisz recenzję w App Store"
+          }
         }
       }
     },
@@ -25383,6 +26565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bekijk in de App Store"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobacz w App Store"
           }
         }
       }
@@ -25510,6 +26698,12 @@
             "state" : "translated",
             "value" : "Bedankt dat je de app steunt ☕️"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziękujemy za wsparcie aplikacji ☕️"
+          }
         }
       }
     },
@@ -25631,6 +26825,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -25765,6 +26965,12 @@
             "state" : "translated",
             "value" : "Open"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwarte"
+          }
         }
       }
     },
@@ -25896,6 +27102,12 @@
             "state" : "translated",
             "value" : "Open"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwarte"
+          }
         }
       }
     },
@@ -26020,6 +27232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vandaag open"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś otwarte"
           }
         }
       }
@@ -26152,6 +27370,12 @@
             "state" : "translated",
             "value" : "Vandaag"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś"
+          }
         }
       }
     },
@@ -26276,6 +27500,12 @@
             "state" : "translated",
             "value" : "%@ vandaag gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś zamknięte: %@"
+          }
         }
       }
     },
@@ -26399,6 +27629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kan ik vandaag gaan?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czy mogę dziś jechać?"
           }
         }
       }
@@ -26531,6 +27767,12 @@
             "state" : "translated",
             "value" : "Vandaag zijn alle gekozen winkels open."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś wszystkie wybrane sklepy są otwarte."
+          }
         }
       }
     },
@@ -26662,6 +27904,12 @@
             "state" : "translated",
             "value" : "Vandaag zijn alle gekozen winkels gesloten."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś wszystkie wybrane sklepy są zamknięte."
+          }
         }
       }
     },
@@ -26788,6 +28036,12 @@
             "state" : "translated",
             "value" : "Deelt de status van vandaag en de komende sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnia dzisiejszy status i nadchodzące dni zamknięcia"
+          }
         }
       }
     },
@@ -26913,6 +28167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vandaag open"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś otwarte"
           }
         }
       }
@@ -27047,6 +28307,12 @@
             "state" : "translated",
             "value" : "Vandaag zijn alleen enkele winkels gesloten: %@."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś zamknięte są tylko niektóre sklepy: %@."
+          }
         }
       }
     },
@@ -27172,6 +28438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vandaag hebben we je een vergeefse rit bespaard"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś oszczędziliśmy Ci zbędnej jazdy"
           }
         }
       }
@@ -27306,6 +28578,12 @@
             "state" : "translated",
             "value" : "Vandaag gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś zamknięte"
+          }
         }
       }
     },
@@ -27432,6 +28710,12 @@
             "state" : "translated",
             "value" : "Vandaag gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś zamknięte"
+          }
         }
       }
     },
@@ -27555,6 +28839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vandaag hebben we je weer een vergeefse rit bespaard.\nWe denken nog steeds met dank aan je gulle steun."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś znów oszczędziliśmy Ci zbędnej jazdy.\nWciąż pamiętamy o Twoim hojnym wsparciu."
           }
         }
       }
@@ -27686,6 +28976,12 @@
             "state" : "translated",
             "value" : "Klaar"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gotowe"
+          }
         }
       }
     },
@@ -27811,6 +29107,12 @@
             "state" : "translated",
             "value" : "Voltooide items verwijderen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń zakończone pozycje"
+          }
         }
       }
     },
@@ -27932,6 +29234,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -28067,6 +29375,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -28193,6 +29507,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -28327,6 +29647,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -28457,6 +29783,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -28581,6 +29913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maand"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miesiąc"
           }
         }
       }
@@ -28707,6 +30045,12 @@
             "state" : "translated",
             "value" : "Toestemming voor locatie vereist"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wymagana zgoda na lokalizację"
+          }
         }
       }
     },
@@ -28832,6 +30176,12 @@
             "state" : "translated",
             "value" : "Locatiefuncties"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funkcje lokalizacji"
+          }
         }
       }
     },
@@ -28955,6 +30305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Steun ons"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wesprzyj nas"
           }
         }
       }
@@ -29085,6 +30441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zo"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedz."
           }
         }
       }
@@ -29219,6 +30581,12 @@
             "state" : "translated",
             "value" : "Deze week: %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W tym tygodniu: %@"
+          }
         }
       }
     },
@@ -29343,6 +30711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deze week gesloten: %@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W tym tygodniu zamknięte: %@"
           }
         }
       }
@@ -29474,6 +30848,12 @@
             "state" : "translated",
             "value" : "Deze zondag"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta niedziela"
+          }
         }
       }
     },
@@ -29603,6 +30983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deze zondag %@, winkel open"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W tę niedzielę (%@) sklep jest otwarty"
           }
         }
       }
@@ -29734,6 +31120,12 @@
             "state" : "translated",
             "value" : "Deze zondag %@, winkel gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W tę niedzielę (%@) sklep jest zamknięty"
+          }
         }
       }
     },
@@ -29859,6 +31251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorige maand"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poprzedni miesiąc"
           }
         }
       }
@@ -29986,6 +31384,12 @@
             "state" : "translated",
             "value" : "Delen met Instagram Stories"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnij w Instagram Stories"
+          }
         }
       }
     },
@@ -30112,6 +31516,12 @@
             "state" : "translated",
             "value" : "Instagram moet geïnstalleerd zijn om met Stories te delen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aby udostępnić w Stories, musi być zainstalowany Instagram."
+          }
         }
       }
     },
@@ -30237,6 +31647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram niet gevonden"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie znaleziono Instagrama"
           }
         }
       }
@@ -30365,6 +31781,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -30499,6 +31921,12 @@
             "state" : "translated",
             "value" : "Gewoon"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zwykły"
+          }
         }
       }
     },
@@ -30623,6 +32051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gewone winkels"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zwykłe sklepy"
           }
         }
       }
@@ -30749,6 +32183,12 @@
             "state" : "translated",
             "value" : "Sommige open"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Część otwarta"
+          }
         }
       }
     },
@@ -30873,6 +32313,12 @@
             "state" : "translated",
             "value" : "Sommige winkels zijn gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niektóre sklepy są zamknięte"
+          }
         }
       }
     },
@@ -30994,6 +32440,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -31129,6 +32581,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -31259,6 +32717,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -31385,6 +32849,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -31520,6 +32990,12 @@
             "state" : "translated",
             "value" : "Eenmalige aankoop. Geen abonnement."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jednorazowy zakup. Bez subskrypcji."
+          }
         }
       }
     },
@@ -31643,6 +33119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voeg sluitingspatronen van je favoriete winkels toe"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj wzory zamknięć ulubionych sklepów"
           }
         }
       }
@@ -31769,6 +33251,12 @@
             "state" : "translated",
             "value" : "Boodschappenherinnering"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przypomnienie o zakupach"
+          }
         }
       }
     },
@@ -31894,6 +33382,12 @@
             "state" : "translated",
             "value" : "Boodschappenlijstje"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista zakupów"
+          }
         }
       }
     },
@@ -32018,6 +33512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boodschappenmelding"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alert o zakupach"
           }
         }
       }
@@ -32150,6 +33650,12 @@
             "state" : "translated",
             "value" : "Boodschappenherinnering"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przypomnienie o zakupach"
+          }
         }
       }
     },
@@ -32276,6 +33782,12 @@
             "state" : "translated",
             "value" : "Melding voor een goede boodschappendag (dag ervoor)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alert „dobry dzień na zakupy” (dzień wcześniej)"
+          }
         }
       }
     },
@@ -32401,6 +33913,12 @@
             "state" : "translated",
             "value" : "Item toevoegen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj pozycję"
+          }
         }
       }
     },
@@ -32525,6 +34043,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voeg items toe aan je boodschappenlijstje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj pozycje do listy zakupów"
           }
         }
       }
@@ -32655,6 +34179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bewaar"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisz"
           }
         }
       }
@@ -32787,6 +34317,12 @@
             "state" : "translated",
             "value" : "De meeste regio's in het land"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Większość regionów kraju"
+          }
         }
       }
     },
@@ -32917,6 +34453,12 @@
             "state" : "translated",
             "value" : "Nationale feestdag"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Święto państwowe"
+          }
         }
       }
     },
@@ -33046,6 +34588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nationale feestdag"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Święto państwowe"
           }
         }
       }
@@ -33178,6 +34726,12 @@
             "state" : "translated",
             "value" : "Hele dag gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknięte cały dzień"
+          }
         }
       }
     },
@@ -33303,6 +34857,12 @@
             "state" : "translated",
             "value" : "Alles verwijderen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń wszystko"
+          }
         }
       }
     },
@@ -33427,6 +34987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alles bekijken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż wszystko"
           }
         }
       }
@@ -33554,6 +35120,12 @@
             "state" : "translated",
             "value" : "Hartelijk bedankt!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardzo dziękujemy!"
+          }
         }
       }
     },
@@ -33678,6 +35250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informacje"
           }
         }
       }
@@ -33809,6 +35387,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czedżu"
+          }
         }
       }
     },
@@ -33933,6 +35517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wekelijks"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tydzień"
           }
         }
       }
@@ -34059,6 +35649,12 @@
             "state" : "translated",
             "value" : "Winkels in de buurt"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklepy w pobliżu"
+          }
         }
       }
     },
@@ -34183,6 +35779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkels in de buurt automatisch detecteren"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatycznie wykrywaj sklepy w pobliżu"
           }
         }
       }
@@ -34309,6 +35911,12 @@
             "state" : "translated",
             "value" : "Om winkels in de buurt te vinden,\nsta je locatietoegang toe via\nInstellingen > DontGoMart > Locatie."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aby znaleźć sklepy w pobliżu,\nzezwól na dostęp do lokalizacji w\nUstawienia > DontGoMart > Lokalizacja."
+          }
         }
       }
     },
@@ -34434,6 +36042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laat mensen om je heen weten wanneer winkels sluiten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiedz ludziom wokół o zamknięciach"
           }
         }
       }
@@ -34566,6 +36180,12 @@
             "state" : "translated",
             "value" : "Zet je favoriete winkels bovenaan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przypnij ulubione sklepy na górze"
+          }
         }
       }
     },
@@ -34697,6 +36317,12 @@
             "state" : "translated",
             "value" : "Favorieten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulubione"
+          }
         }
       }
     },
@@ -34823,6 +36449,12 @@
             "state" : "translated",
             "value" : "Tot nu toe ontvangen steun ☕️ ×%lld"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotychczasowe wsparcie ☕️ ×%lld"
+          }
         }
       }
     },
@@ -34947,6 +36579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voortgang"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postęp"
           }
         }
       }
@@ -35073,6 +36711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eerste sluitingsdag"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pierwszy dzień zamknięcia"
           }
         }
       }
@@ -35204,6 +36848,12 @@
             "state" : "translated",
             "value" : "Voeg toe"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj"
+          }
         }
       }
     },
@@ -35327,6 +36977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kies winkels om te volgen (meerdere mogelijk)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz sklepy do śledzenia (można kilka)"
           }
         }
       }
@@ -35458,6 +37114,12 @@
             "state" : "translated",
             "value" : "Annuleer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anuluj"
+          }
         }
       }
     },
@@ -35584,6 +37246,12 @@
             "state" : "translated",
             "value" : "Kaart wordt voorbereid"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przygotowujemy kartę"
+          }
         }
       }
     },
@@ -35709,6 +37377,12 @@
             "state" : "translated",
             "value" : "Kalender bekijken"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż kalendarz"
+          }
         }
       }
     },
@@ -35833,6 +37507,12 @@
             "state" : "translated",
             "value" : "Eigen winkel toevoegen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj własny sklep"
+          }
         }
       }
     },
@@ -35956,6 +37636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigen winkel bewerken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edytuj własny sklep"
           }
         }
       }
@@ -36087,6 +37773,12 @@
             "state" : "translated",
             "value" : "Eigen winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Własny sklep"
+          }
         }
       }
     },
@@ -36217,6 +37909,12 @@
             "state" : "translated",
             "value" : "Eigen winkel"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Własny sklep"
+          }
         }
       }
     },
@@ -36346,6 +38044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigen winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Własny sklep"
           }
         }
       }
@@ -36478,6 +38182,12 @@
             "state" : "translated",
             "value" : "Voeg de sluitingspatronen van je eigen winkel toe"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj wzory zamknięć własnego sklepu"
+          }
         }
       }
     },
@@ -36608,6 +38318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigen winkel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Własny sklep"
           }
         }
       }
@@ -36740,6 +38456,12 @@
             "state" : "translated",
             "value" : "Voeg de sluitingspatronen van je eigen winkel toe"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj wzory zamknięć własnego sklepu"
+          }
         }
       }
     },
@@ -36865,6 +38587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trakteer op koffie %@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kup kawę %@"
           }
         }
       }
@@ -36992,6 +38720,12 @@
             "state" : "translated",
             "value" : "Trakteer op koffie, %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kup kawę, %@"
+          }
         }
       }
     },
@@ -37113,6 +38847,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -37247,6 +38987,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -37376,6 +39122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
           }
         }
       }
@@ -37507,6 +39259,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -37633,6 +39391,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -37767,6 +39531,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -37893,6 +39663,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -38027,6 +39803,12 @@
             "state" : "translated",
             "value" : "Costco gewoon"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco zwykłe"
+          }
         }
       }
     },
@@ -38156,6 +39938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco gewoon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco zwykłe"
           }
         }
       }
@@ -38287,6 +40075,12 @@
             "state" : "translated",
             "value" : "Costco gewoon"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco zwykłe"
+          }
         }
       }
     },
@@ -38413,6 +40207,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -38547,6 +40347,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -38673,6 +40479,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -38807,6 +40619,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -38937,6 +40755,12 @@
             "state" : "translated",
             "value" : "Gewone – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zwykłe – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -39061,6 +40885,12 @@
             "state" : "translated",
             "value" : "Patroon toevoegen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj wzór"
+          }
         }
       }
     },
@@ -39184,6 +41014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voeg een patroon toe"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj wzór"
           }
         }
       }
@@ -39316,6 +41152,12 @@
             "state" : "translated",
             "value" : "Ontgrendel het volgen van meerdere winkels, meldingen en meer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odblokuj śledzenie wielu sklepów, powiadomienia i więcej"
+          }
         }
       }
     },
@@ -39442,6 +41284,12 @@
             "state" : "translated",
             "value" : "Steun ons nog een keer ☕️"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wesprzyj nas jeszcze raz ☕️"
+          }
         }
       }
     },
@@ -39566,6 +41414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gekozen filiaal"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybrany oddział"
           }
         }
       }
@@ -39692,6 +41546,12 @@
             "state" : "translated",
             "value" : "Zoekt en adviseert winkels in de buurt op basis van je huidige locatie."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znajduje i poleca sklepy w pobliżu na podstawie Twojej bieżącej lokalizacji."
+          }
         }
       }
     },
@@ -39814,6 +41674,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -39944,6 +41810,12 @@
             "state" : "translated",
             "value" : "Laadt de lijst met fooiopties opnieuw"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponownie wczytuje listę opcji napiwku"
+          }
         }
       }
     },
@@ -40069,6 +41941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fooiopties laden"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wczytywanie opcji napiwku"
           }
         }
       }
@@ -40196,6 +42074,12 @@
             "state" : "translated",
             "value" : "Fooiopties konden niet worden geladen. Probeer opnieuw"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie udało się wczytać opcji napiwku. Spróbuj ponownie"
+          }
         }
       }
     },
@@ -40321,6 +42205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Over fooien"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O napiwkach"
           }
         }
       }
@@ -40448,6 +42338,12 @@
             "state" : "translated",
             "value" : "Sluit de fooikaart. Hij verschijnt 30 dagen niet meer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamyka kartę napiwku. Nie pojawi się ponownie przez 30 dni"
+          }
         }
       }
     },
@@ -40573,6 +42469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supporter"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wspierający"
           }
         }
       }
@@ -40700,6 +42602,12 @@
             "state" : "translated",
             "value" : "Supporter. Tot nu toe %lld kopjes koffie. Bedankt dat je de app steunt."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wspierający. Dotąd kaw: %lld. Dziękujemy za wsparcie aplikacji."
+          }
         }
       }
     },
@@ -40826,6 +42734,12 @@
             "state" : "translated",
             "value" : "We zijn je niet vergeten!"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie zapomnieliśmy o Tobie!"
+          }
         }
       }
     },
@@ -40951,6 +42865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bedankt voor je steun. Je hebt tot nu toe %lld kopjes koffie gestuurd."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziękujemy za wsparcie. Dotąd wysłano kaw: %lld."
           }
         }
       }
@@ -41085,6 +43005,12 @@
             "state" : "translated",
             "value" : "Hartelijk bedankt voor je steun. Het betekent veel voor ons."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardzo dziękujemy za wsparcie. Wiele dla nas znaczy."
+          }
         }
       }
     },
@@ -41210,6 +43136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hartelijk bedankt voor je steun. Je hebt tot nu toe %lld kopjes koffie gestuurd."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardzo dziękujemy za wsparcie. Dotąd wysłano kaw: %lld."
           }
         }
       }
@@ -41343,6 +43275,12 @@
             "state" : "translated",
             "value" : "Gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknięte"
+          }
         }
       }
     },
@@ -41466,6 +43404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluitingspatroon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wzór zamknięcia"
           }
         }
       }
@@ -41593,6 +43537,12 @@
             "state" : "translated",
             "value" : "Sluiting melden"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poinformuj o zamknięciu"
+          }
         }
       }
     },
@@ -41718,6 +43668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deelt de afbeelding van de sluitingskaart"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnia obraz karty o zamknięciu"
           }
         }
       }
@@ -41851,6 +43807,12 @@
             "state" : "translated",
             "value" : "Sluitingskaart. %1$@ %2$@, %3$@ gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karta o zamknięciu. %1$@ %2$@, %3$@ zamknięte"
+          }
         }
       }
     },
@@ -41977,6 +43939,12 @@
             "state" : "translated",
             "value" : "Maakt en deelt een sluitingskaart"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tworzy i udostępnia kartę o zamknięciu"
+          }
         }
       }
     },
@@ -42102,6 +44070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deelt de sluitingskaart met Instagram Stories"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnia kartę o zamknięciu w Instagram Stories"
           }
         }
       }
@@ -42236,6 +44210,12 @@
             "state" : "translated",
             "value" : "Geen sluiting"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak zamknięcia"
+          }
         }
       }
     },
@@ -42359,6 +44339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluitingspatroon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wzór zamknięcia"
           }
         }
       }
@@ -42490,6 +44476,12 @@
             "state" : "translated",
             "value" : "Gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknięte"
+          }
         }
       }
     },
@@ -42614,6 +44606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vandaag gesloten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dziś zamknięte"
           }
         }
       }
@@ -42741,6 +44739,12 @@
             "state" : "translated",
             "value" : "Geen enkele winkel is gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Żaden sklep nie jest zamknięty"
+          }
         }
       }
     },
@@ -42865,6 +44869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluitingsdagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dni zamknięcia"
           }
         }
       }
@@ -42991,6 +45001,12 @@
             "state" : "translated",
             "value" : "Meldingen worden 3 dagen en 1 dag vóór sluitingsdagen verstuurd."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiadomienia zostaną wysłane 3 dni i 1 dzień przed dniami zamknięcia."
+          }
         }
       }
     },
@@ -43114,6 +45130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meldingen voor sluitingsdagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerty o dniach zamknięcia"
           }
         }
       }
@@ -43240,6 +45262,12 @@
             "state" : "translated",
             "value" : "Zet eerst meldingen voor sluitingsdagen aan."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najpierw włącz alerty o dniach zamknięcia."
+          }
         }
       }
     },
@@ -43363,6 +45391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sta meldingen toe in Instellingen om meldingen voor sluitingsdagen te ontvangen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aby otrzymywać alerty o dniach zamknięcia, zezwól na powiadomienia w Ustawieniach."
           }
         }
       }
@@ -43488,6 +45522,12 @@
             "state" : "translated",
             "value" : "Geen informatie over sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak danych o zamknięciu"
+          }
         }
       }
     },
@@ -43612,6 +45652,12 @@
             "state" : "translated",
             "value" : "Geen informatie over sluitingsdagen beschikbaar"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak informacji o dniach zamknięcia"
+          }
         }
       }
     },
@@ -43735,6 +45781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalender met sluitingsdagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalendarz zamknięć"
           }
         }
       }
@@ -43862,6 +45914,12 @@
             "state" : "translated",
             "value" : "Bekijk de kalender met sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż kalendarz zamknięć"
+          }
         }
       }
     },
@@ -43987,6 +46045,12 @@
             "state" : "translated",
             "value" : "Kies sluitingsdagen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz dni zamknięcia"
+          }
         }
       }
     },
@@ -44111,6 +46175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geen sluitingsdag"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To nie jest dzień zamknięcia"
           }
         }
       }
@@ -44242,6 +46312,12 @@
             "state" : "translated",
             "value" : "‘%@’ gevonden. Controleer het en tik op Voeg toe."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znaleziono „%@”. Sprawdź i stuknij Dodaj."
+          }
         }
       }
     },
@@ -44371,6 +46447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De komende 7 dagen sluit niets"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W ciągu najbliższych 7 dni nic nie jest zamknięte"
           }
         }
       }
@@ -44502,6 +46584,12 @@
             "state" : "translated",
             "value" : "Geen van je restaurants is de komende 7 dagen gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Żadna z Twoich restauracji nie jest zamknięta w ciągu najbliższych 7 dni"
+          }
         }
       }
     },
@@ -44631,6 +46719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deze week geen sluitingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W tym tygodniu bez zamknięć"
           }
         }
       }
@@ -44762,6 +46856,12 @@
             "state" : "translated",
             "value" : "Beheer"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zarządzaj"
+          }
         }
       }
     },
@@ -44891,6 +46991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je kunt er een toevoegen via een deellink van Naver Maps of een schermafbeelding"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Możesz dodać z linku udostępnionego z Naver Maps lub zrzutu ekranu"
           }
         }
       }
@@ -45022,6 +47128,12 @@
             "state" : "translated",
             "value" : "Mijn restaurants"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moje restauracje"
+          }
         }
       }
     },
@@ -45151,6 +47263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurants · 7 dagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauracje · 7 dni"
           }
         }
       }
@@ -45282,6 +47400,12 @@
             "state" : "translated",
             "value" : "Voeg je restaurants toe of pas ze aan"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj lub edytuj swoje restauracje"
+          }
         }
       }
     },
@@ -45411,6 +47535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nog geen restaurants. Voeg ze toe in de app."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak restauracji. Dodaj je w aplikacji."
           }
         }
       }
@@ -45542,6 +47672,12 @@
             "state" : "translated",
             "value" : "Of plak hier een gedeelde link of tekst"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lub wklej tutaj udostępniony link albo tekst"
+          }
         }
       }
     },
@@ -45671,6 +47807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snel importeren"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szybki import"
           }
         }
       }
@@ -45802,6 +47944,12 @@
             "state" : "translated",
             "value" : "Leest de sluitingsinfo uit de foto op je apparaat"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odczytuje informacje o zamknięciu ze zdjęcia na Twoim urządzeniu"
+          }
         }
       }
     },
@@ -45931,6 +48079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De foto kon niet worden geladen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie udało się wczytać zdjęcia"
           }
         }
       }
@@ -46062,6 +48216,12 @@
             "state" : "translated",
             "value" : "Geen restaurant gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Żadna restauracja nie jest zamknięta"
+          }
         }
       }
     },
@@ -46191,6 +48351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schermafbeelding"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrzut ekranu"
           }
         }
       }
@@ -46322,6 +48488,12 @@
             "state" : "translated",
             "value" : "Restaurant verwijderen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń restaurację"
+          }
         }
       }
     },
@@ -46451,6 +48623,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Naam van restaurant"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nazwa restauracji"
           }
         }
       }
@@ -46582,6 +48760,12 @@
             "state" : "translated",
             "value" : "Restaurant"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauracja"
+          }
         }
       }
     },
@@ -46711,6 +48895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurant toevoegen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj restaurację"
           }
         }
       }
@@ -46842,6 +49032,12 @@
             "state" : "translated",
             "value" : "Restaurant toevoegen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj restaurację"
+          }
         }
       }
     },
@@ -46971,6 +49167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurant bewerken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edytuj restaurację"
           }
         }
       }
@@ -47102,6 +49304,12 @@
             "state" : "translated",
             "value" : "Geen van je restaurants is de komende 7 dagen gesloten."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Żadna z Twoich restauracji nie jest zamknięta w ciągu najbliższych 7 dni."
+          }
         }
       }
     },
@@ -47231,6 +49439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toont een stip op de dagen binnen de komende 7 waarop je restaurants gesloten zijn."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokazuje kropkę w tych dniach z najbliższych 7, kiedy Twoje restauracje są zamknięte."
           }
         }
       }
@@ -47362,6 +49576,12 @@
             "state" : "translated",
             "value" : "Voeg restaurants toe in de app"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj restauracje w aplikacji"
+          }
         }
       }
     },
@@ -47491,6 +49711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Staat vermeld als elke dag open — geen vaste vrije dag."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podano jako otwarte codziennie — bez stałego dnia wolnego."
           }
         }
       }
@@ -47622,6 +49848,12 @@
             "state" : "translated",
             "value" : "Voeg de widget ‘Restaurants · 7 dagen’ toe aan je beginscherm om dit te zien zonder de app te openen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj widżet „Restauracje · 7 dni” do ekranu początkowego, aby widzieć to bez otwierania aplikacji."
+          }
         }
       }
     },
@@ -47751,6 +49983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dit importeren"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaimportuj to"
           }
         }
       }
@@ -47882,6 +50120,12 @@
             "state" : "translated",
             "value" : "De naam is opgehaald, maar er is geen sluitingsinfo. Probeer een schermafbeelding van de openingstijden of kies de dagen hieronder."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nazwa została pobrana, ale brak informacji o zamknięciu. Spróbuj zrzutu ekranu z godzinami otwarcia lub wybierz dni poniżej."
+          }
         }
       }
     },
@@ -48011,6 +50255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vul de vaste vrije dagen in van restaurants waar je komt, en we markeren de sluitingsdagen van de komende 7 dagen met een stip."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wpisz stałe dni wolne restauracji, w których bywasz, a my oznaczymy kropką dni zamknięcia w ciągu najbliższych 7 dni."
           }
         }
       }
@@ -48142,6 +50392,12 @@
             "state" : "translated",
             "value" : "Stipkleur"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolor kropki"
+          }
         }
       }
     },
@@ -48271,6 +50527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vaste vrije dagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stałe dni wolne"
           }
         }
       }
@@ -48402,6 +50664,12 @@
             "state" : "translated",
             "value" : "Adres (optioneel)"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adres (opcjonalnie)"
+          }
         }
       }
     },
@@ -48531,6 +50799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tik in je kaartenapp bij het restaurant op Deel → Kopieer en plak het hier, of kies een schermafbeelding van de infopagina."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W aplikacji map stuknij przy restauracji Udostępnij → Kopiuj i wklej tutaj albo wybierz zrzut ekranu jej strony z informacjami."
           }
         }
       }
@@ -48662,6 +50936,12 @@
             "state" : "translated",
             "value" : "Open in Kaarten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwórz w Mapach"
+          }
         }
       }
     },
@@ -48791,6 +51071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vrije dag handmatig toevoegen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj dzień wolny ręcznie"
           }
         }
       }
@@ -48922,6 +51208,12 @@
             "state" : "translated",
             "value" : "Voeg een vrije dag toe"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj dzień wolny"
+          }
         }
       }
     },
@@ -49051,6 +51343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluitingsinfo bewerken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edytuj informacje o zamknięciu"
           }
         }
       }
@@ -49182,6 +51480,12 @@
             "state" : "translated",
             "value" : "Sluitingsinfo zoeken…"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szukanie informacji o zamknięciu…"
+          }
         }
       }
     },
@@ -49311,6 +51615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluitingsinfo niet gevonden. Kies de dagen hieronder."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie znaleziono informacji o zamknięciu. Wybierz dni poniżej."
           }
         }
       }
@@ -49442,6 +51752,12 @@
             "state" : "translated",
             "value" : "Bericht 4:5"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Post 4:5"
+          }
         }
       }
     },
@@ -49568,6 +51884,12 @@
           }
         },
         "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -49702,6 +52024,12 @@
             "state" : "translated",
             "value" : "Sluitingskalender voor 2 weken"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalendarz zamknięć na 2 tygodnie"
+          }
         }
       }
     },
@@ -49831,6 +52159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Binnenkort"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wkrótce"
           }
         }
       }
@@ -49962,6 +52296,12 @@
             "state" : "translated",
             "value" : "Zoek naar ‘DontGoMart’ in de App Store"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyszukaj „DontGoMart” w App Store"
+          }
         }
       }
     },
@@ -50091,6 +52431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Winkels gesloten!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sklepy zamknięte!"
           }
         }
       }
@@ -50222,6 +52568,12 @@
             "state" : "translated",
             "value" : "Foto"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zdjęcie"
+          }
         }
       }
     },
@@ -50351,6 +52703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wideo"
           }
         }
       }
@@ -50482,6 +52840,12 @@
             "state" : "translated",
             "value" : "Indeling"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
         }
       }
     },
@@ -50611,6 +52975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nośnik"
           }
         }
       }
@@ -50742,6 +53112,12 @@
             "state" : "translated",
             "value" : "Sluitingskaart. %1$@ %2$@, %3$@ gesloten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karta o zamknięciu. %1$@ %2$@, %3$@ zamknięte"
+          }
         }
       }
     },
@@ -50871,6 +53247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video wordt gemaakt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tworzenie wideo"
           }
         }
       }
@@ -51002,6 +53384,12 @@
             "state" : "translated",
             "value" : "Plaatsen op Instagram"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opublikuj na Instagramie"
+          }
         }
       }
     },
@@ -51131,6 +53519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kies Instagram in de deellijst om het te plaatsen als bericht, story of reel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz Instagram na liście udostępniania, aby opublikować jako post, story lub rolkę"
           }
         }
       }
@@ -51262,6 +53656,12 @@
             "state" : "translated",
             "value" : "Opent direct de storyeditor van Instagram"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od razu otwiera edytor story na Instagramie"
+          }
         }
       }
     },
@@ -51391,6 +53791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnij"
           }
         }
       }
@@ -51522,6 +53928,12 @@
             "state" : "translated",
             "value" : "Deelt de sluitingsvideo"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnia wideo o zamknięciu"
+          }
         }
       }
     },
@@ -51651,6 +54063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De video kon niet worden gemaakt. Deel in plaats daarvan de foto."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie udało się utworzyć wideo. Udostępnij zamiast tego zdjęcie."
           }
         }
       }
@@ -51782,6 +54200,12 @@
             "state" : "translated",
             "value" : "Weer open %@"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponownie otwarte od %@"
+          }
         }
       }
     },
@@ -51911,6 +54335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rond je boodschappen af vóór %@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrób zakupy do %@"
           }
         }
       }
