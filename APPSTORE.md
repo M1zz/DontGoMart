@@ -1279,3 +1279,61 @@ https://m1zz.github.io/DontGoMart/pl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/pl/
+
+## sv
+
+### 이름
+
+DontGoMart: Stängningsdagar
+
+### 부제
+
+Inga onödiga resor
+
+### 키워드
+
+stormarknad,Korea,Seoul,öppettider,söndag,onsdag,helgdagar,Chuseok,inköp,kalender,widget
+
+### 프로모션 텍스트
+
+Nu ser du även lediga dagar för dina favoritrestauranger. En Naver Maps-länk eller en skärmavbild räcker, och appen påminner dig innan en stängningsdag närmar sig.
+
+### 설명
+
+Kolla om butiken har öppet innan du åker.
+DontGoMart samlar de lagstadgade stängningsdagarna för stora koreanska stormarknader och Costco och påminner dig i god tid när en stängningsdag närmar sig.
+
+Se direkt om du kan åka i dag
+När du öppnar appen ser du först om din valda butik har öppet i dag. Du ser också hur många dagar det är till nästa stängningsdag och en lista över kommande stängningsdagar.
+
+Anpassad efter stängningsdagar i olika områden
+Välj butiker som stänger på söndagar eller onsdagar, eller områden med andra stängningsdagar som Ulsan och Jeju. Hos Costco kan du ställa in vanliga butiker och filialerna i Daegu, Ilsan och Ulsan var för sig. Stängningsdagar vid Seollal (månnyår) och Chuseok visas också.
+
+Lägg till butiker i ditt närområde
+Saknas en butik i listan kan du registrera den själv genom att välja vilken vecka och vilken veckodag den är stängd, till exempel andra och fjärde söndagen.
+
+Lediga dagar för dina favoritrestauranger också
+Lägg in de fasta lediga dagarna för restaurangerna du besöker, så markeras de dagar inom de kommande 7 då de är stängda med en prick. Klistra bara in länken du delat och kopierat från Naver Maps, eller välj en skärmavbild av restaurangens infosida, så fylls den lediga dagen i automatiskt. Text i foton läses bara på din enhet.
+
+Påminnelser så du inte glömmer
+Välj att få en avisering 1, 2, 3 eller 7 dagar före stängning, vid den tid som passar dig. Dagen före en stängning påminner appen dig om att i dag är en bra dag att handla. När en stängningsdag ligger inom 3 dagar visas också en banner högst upp i appen.
+
+Widgets för hemskärm och låsskärm
+Med widgets ser du närmaste stängningsdag, de två nästa med dagar kvar, om din butik har öppet den här söndagen och favoritrestaurangernas lediga dagar för 7 dagar. Widgeten för veckans söndag och restaurangwidgeten kan även ligga på låsskärmen.
+
+Kalender och delning
+I kalendern ser du stängningsdagar för en hel månad. Du kan dela en stängning som ett kort med tvåveckorskalender och ett inköpstips, i storlekar för Instagram-inlägg och -stories eller som en kort video.
+
+Alla funktioner är gratis. Om appen kommer till nytta kan du stödja utvecklingen med en kaffe.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/sv/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/sv/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/sv/

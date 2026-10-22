@@ -178,6 +178,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Dodaj swój<br>sklep z okolicy", "Wzory jak drugi i czwarty wtorek"),
         ("05-share.png", "dark", "Poinformuj o zamknięciu<br>jedną kartą", "Daj znać rodzinie i sąsiadom"),
     ],
+    "sv": [
+        ("01-main.png", "hero-bleed", "Kolla<br>innan du åker", "Se med en blick om butiken har öppet i dag"),
+        ("02-calendar.png", "left-text", "Månadens<br>stängningsdagar", "Alla stängningsdagar direkt i kalendern"),
+        ("03-marts.png", "text-bottom", "Bara dina butiker", "Stormarknader, Costco, stängt på helgdagar"),
+        ("04-pattern.png", "flat-rotate", "Lägg till din<br>butik runt hörnet", "Mönster som andra och fjärde tisdagen"),
+        ("05-share.png", "dark", "Dela en stängning<br>med ett kort", "Berätta för familj och grannar"),
+    ],
 }
 
 BASE_CSS = f"""

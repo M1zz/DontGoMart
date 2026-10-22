@@ -135,6 +135,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -268,6 +274,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -409,6 +421,12 @@
             "state" : "translated",
             "value" : "Lokalizacja jest potrzebna, aby znajdować i polecać sklepy w pobliżu."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platsen behövs för att hitta och rekommendera butiker i närheten."
+          }
         }
       }
     },
@@ -545,6 +563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Potrzebne, aby zapisywać w bibliotece zdjęcia i wideo kart o zamknięciu."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behövs för att spara foton och videor från stängningskorten i ditt bibliotek."
           }
         }
       }

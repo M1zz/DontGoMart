@@ -136,6 +136,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -270,6 +276,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
