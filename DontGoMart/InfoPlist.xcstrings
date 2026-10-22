@@ -99,6 +99,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -196,6 +202,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -301,6 +313,12 @@
             "state" : "translated",
             "value" : "Din lokalitet bruges til at finde og anbefale butikker i nærheden."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η τοποθεσία χρειάζεται για να βρίσκουμε και να προτείνουμε κοντινά καταστήματα."
+          }
         }
       }
     },
@@ -401,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruges til at gemme billeder og videoer fra lukkekortene i dit fotobibliotek."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρειάζεται για την αποθήκευση φωτογραφιών και βίντεο των καρτών κλεισίματος στη βιβλιοθήκη σας."
           }
         }
       }
