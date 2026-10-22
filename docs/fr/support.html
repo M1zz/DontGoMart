@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistance – DontGoMart</title>
+  <meta name="description" content="Questions fréquentes sur DontGoMart et comment nous contacter.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/fr/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/support.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+      --card-bg: #f5f5f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+        --card-bg: #1c1c1e;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0 8px;
+    }
+
+    .contact-card p { margin-bottom: 8px; }
+    .contact-card .email {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../support.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/support.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/support.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/support.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/support.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/support.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/support.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/support.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/support.html" hreflang="fr" lang="fr" title="Français" class="active" aria-current="true">FR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Assistance</h1>
+    <p class="subtitle">Pour toute question ou tout problème avec DontGoMart, n’hésitez pas à nous écrire.</p>
+
+    <div class="contact-card">
+      <p><strong>Nous contacter</strong></p>
+      <p>Envoyez-nous un e-mail : nous répondons généralement sous 1 à 2 jours. Vous pouvez aussi envoyer un retour depuis les réglages de l’app.</p>
+      <p class="email"><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Q. Les jours de fermeture ne correspondent pas à la réalité.</h3>
+    <p>Les jours de fermeture obligatoires des grandes surfaces sont fixés par des arrêtés locaux et varient selon la région. Vérifiez dans Réglages que vous avez choisi le type de magasin de votre région (fermé le dimanche, fermé le mercredi, Ulsan, Jeju, etc.). Si cela ne correspond toujours pas, envoyez-nous par e-mail le nom du magasin et la région, et nous vérifierons.</p>
+
+    <h3>Q. Le magasin que je cherche n’est pas dans la liste.</h3>
+    <p>Vous pouvez l’ajouter comme magasin personnalisé en indiquant la semaine et le jour où il ferme, par exemple les deuxième et quatrième dimanches.</p>
+
+    <h3>Q. Les jours de repos d’un restaurant n’ont pas été remplis correctement.</h3>
+    <p>Pour un import depuis un lien Naver Maps, la page Naver Place du restaurant doit indiquer ses jours de repos. Pour un import depuis une capture d’écran, vérifiez qu’une mention comme « fermé tous les mardis » apparaît à l’écran. Vous pouvez tout modifier avant d’enregistrer.</p>
+
+    <h3>Q. Je ne reçois pas les notifications.</h3>
+    <p>Vérifiez sur l’iPhone, dans Réglages > Notifications > DontGoMart, que les notifications sont autorisées, et que les alertes de jours de fermeture sont activées dans l’app.</p>
+
+    <h3>Q. Le widget ne se met pas à jour.</h3>
+    <p>Le widget se met à jour quand vous ouvrez l’app. Si cela ne change rien, supprimez le widget puis ajoutez-le de nouveau.</p>
+
+    <h3>Q. Qu’est-ce que le soutien (pourboire) ?</h3>
+    <p>Toutes les fonctions de DontGoMart sont gratuites. Un soutien sous forme de café, de gâteau ou de repas est une façon d’encourager le développeur. Vous voyez alors un message de remerciement et un badge de soutien indiquant le nombre total de vos soutiens. Vous pouvez soutenir autant de fois que vous le souhaitez.</p>
+
+    <h3>Q. Qui contacter pour les paiements et les remboursements ?</h3>
+    <p>Les achats intégrés sont traités par Apple : vous pouvez demander un remboursement depuis la page « Signaler un problème » d’Apple (reportaproblem.apple.com). Pour tout le reste, n’hésitez pas à nous écrire.</p>
+
+    <h2>Confidentialité</h2>
+    <p>DontGoMart n’a pas de comptes et n’utilise ni publicité ni outils de suivi. Pour les détails, consultez la politique de confidentialité : <a href="privacy.html">Politique de confidentialité</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Accueil</a>
+    <a href="privacy.html">Politique de confidentialité</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

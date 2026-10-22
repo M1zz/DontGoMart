@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DontGoMart – Alertes de fermeture des magasins</title>
+  <meta name="description" content="DontGoMart réunit les jours de fermeture obligatoires des grandes surfaces coréennes et de Costco, ainsi que les jours de repos de vos restaurants préférés, et vous prévient à l’avance.">
+  <meta property="og:title" content="DontGoMart – Alertes de fermeture des magasins">
+  <meta property="og:description" content="DontGoMart réunit les jours de fermeture obligatoires des grandes surfaces coréennes et de Costco, ainsi que les jours de repos de vos restaurants préférés, et vous prévient à l’avance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/fr/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #FF3B30;
+      --primary-dark: #D32F2F;
+      --bg: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --card-bg: #ffffff;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      --divider: #d2d2d7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --bg-secondary: #1c1c1e;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --card-bg: #1c1c1e;
+        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        --divider: #38383a;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== Header ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--divider);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .logo span {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    .app-store-badge:hover {
+      transform: scale(1.05);
+    }
+
+    .app-store-badge img {
+      height: 54px;
+    }
+
+    /* ===== Features ===== */
+    .features {
+      background: var(--bg-secondary);
+      padding: 80px 20px;
+    }
+
+    .features-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      letter-spacing: -0.02em;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .cta p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    .footer-links {
+      margin-bottom: 12px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px 40px; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: 1rem; }
+      .features { padding: 48px 20px; }
+      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
+      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
+      .feature-card { padding: 24px 20px; }
+      .cta { padding: 48px 20px; }
+      .cta h2 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français" class="active" aria-current="true">FR</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
+    <h1>Avant de partir,<br>vérifiez que le magasin est ouvert</h1>
+    <p>DontGoMart affiche les jours de fermeture obligatoires des grandes surfaces coréennes et de Costco, et vous prévient à l’avance. Vous pouvez aussi gérer les jours de repos de vos restaurants préférés.</p>
+    <a href="https://apps.apple.com/fr/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83" alt="Télécharger dans l’App Store">
+    </a>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <h2>Fonctions principales</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F6D2;</span>
+          <h3>Ouvert aujourd’hui ou non, d’un coup d’œil</h3>
+          <p>À l’ouverture de l’app, vous voyez d’abord si le magasin choisi est ouvert aujourd’hui. Vous trouvez aussi le nombre de jours avant la prochaine fermeture et la liste des prochains jours de fermeture.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F5FA;</span>
+          <h3>Adapté aux fermetures de chaque région</h3>
+          <p>Choisissez des magasins fermés le dimanche ou le mercredi, ou des régions aux jours de fermeture différents comme Ulsan et Jeju. Les Costco de Daegu, d’Ilsan et d’Ulsan se règlent séparément, et les fermetures de Seollal et de Chuseok sont aussi affichées.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x2795;</span>
+          <h3>Ajoutez les magasins de votre quartier</h3>
+          <p>Si un magasin n’est pas dans la liste, enregistrez-le vous-même en indiquant la semaine et le jour où il ferme, par exemple les deuxième et quatrième dimanches.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F35C;</span>
+          <h3>Et vos restaurants préférés</h3>
+          <p>Collez un lien partagé depuis Naver Maps ou choisissez une capture de la page d’infos du restaurant, et les jours de repos fixes se remplissent tout seuls. Le texte des photos n’est lu que sur votre appareil.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F514;</span>
+          <h3>Des alertes qui suivent votre rythme</h3>
+          <p>Choisissez d’être prévenu 1, 2, 3 ou 7 jours avant la fermeture, à l’heure qui vous convient. Une option vous rappelle aussi la veille qu’aujourd’hui est un bon jour pour faire vos courses.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F4F1;</span>
+          <h3>Widgets pour l’écran d’accueil et l’écran verrouillé</h3>
+          <p>Sans ouvrir l’app, voyez le compte à rebours jusqu’à la prochaine fermeture, si votre magasin est ouvert ce dimanche et les jours de repos de vos restaurants sur 7 jours.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">&#x1F4C5;</span>
+          <h3>Calendrier et partage</h3>
+          <p>Consultez les fermetures d’un mois entier dans le calendrier et partagez-les sous forme de carte avec calendrier de deux semaines ou de courte vidéo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Toutes les fonctions sont gratuites</h2>
+    <p>Fini les demi-tours devant un magasin fermé.</p>
+    <a href="https://apps.apple.com/fr/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83" alt="Télécharger dans l’App Store">
+    </a>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Politique de confidentialité</a>
+      <a href="support.html">Assistance</a>
+      <a href="mailto:hyunho.lee.1993@gmail.com">Nous contacter</a>
+    </div>
+    <p>&copy; 2026 DontGoMart</p>
+  </footer>
+
+</body>
+</html>

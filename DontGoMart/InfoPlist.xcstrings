@@ -57,6 +57,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -112,6 +118,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -175,6 +187,12 @@
             "state" : "translated",
             "value" : "Der Standort wird benötigt, um Märkte in deiner Nähe zu finden und zu empfehlen."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La localisation sert à trouver et recommander les magasins à proximité."
+          }
         }
       }
     },
@@ -233,6 +251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wird benötigt, um Fotos und Videos der Schließkarten in deiner Mediathek zu sichern."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nécessaire pour enregistrer dans votre photothèque les photos et vidéos des cartes de fermeture."
           }
         }
       }

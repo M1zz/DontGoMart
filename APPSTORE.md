@@ -525,3 +525,61 @@ https://m1zz.github.io/DontGoMart/de/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/de/
+
+## fr
+
+### 이름
+
+DontGoMart : fermetures
+
+### 부제
+
+Plus de trajet pour rien
+
+### 키워드
+
+supermarché,hypermarché,Corée,Séoul,horaires,dimanche,mercredi,férié,Chuseok,courses,calendrier
+
+### 프로모션 텍스트
+
+Voyez aussi les jours de repos de vos restaurants préférés : un lien Naver Maps ou une capture d’écran suffit, et l’app vous prévient avant chaque fermeture.
+
+### 설명
+
+Avant de partir, vérifiez que le magasin est ouvert.
+DontGoMart réunit les jours de fermeture obligatoires des grandes surfaces coréennes et de Costco, et vous prévient à l’avance quand l’un d’eux approche.
+
+Savoir tout de suite si vous pouvez y aller aujourd’hui
+À l’ouverture de l’app, vous voyez d’abord si le magasin choisi est ouvert aujourd’hui. Vous trouvez aussi le nombre de jours avant la prochaine fermeture et la liste des prochains jours de fermeture.
+
+Adapté aux fermetures de chaque région
+Choisissez des magasins fermés le dimanche ou le mercredi, ou des régions aux jours de fermeture différents comme Ulsan et Jeju. Pour Costco, réglez séparément les magasins standard et ceux de Daegu, d’Ilsan et d’Ulsan. Les fermetures de Seollal (Nouvel An lunaire) et de Chuseok sont aussi affichées.
+
+Ajoutez les magasins de votre quartier
+Si un magasin n’est pas dans la liste, enregistrez-le vous-même en indiquant la semaine et le jour où il ferme, par exemple les deuxième et quatrième dimanches.
+
+Les jours de repos de vos restaurants préférés
+Indiquez les jours de repos fixes des restaurants où vous allez : parmi les 7 prochains jours, ceux où ils sont fermés sont marqués d’un point. Il suffit de coller le lien copié depuis Naver Maps ou de choisir une capture de la page d’infos du restaurant, et le jour de repos se remplit tout seul. Le texte des photos n’est lu que sur votre appareil.
+
+Des alertes pour ne rien oublier
+Choisissez d’être prévenu 1, 2, 3 ou 7 jours avant la fermeture, à l’heure qui vous convient. La veille d’une fermeture, l’app vous rappelle qu’aujourd’hui est un bon jour pour faire vos courses. Quand une fermeture approche à moins de 3 jours, une bannière s’affiche aussi en haut de l’app.
+
+Widgets pour l’écran d’accueil et l’écran verrouillé
+Les widgets affichent la prochaine fermeture, les deux suivantes avec les jours restants, si votre magasin est ouvert ce dimanche et les jours de repos de vos restaurants préférés sur 7 jours. Le widget du dimanche de la semaine et celui des restaurants peuvent aussi aller sur l’écran verrouillé.
+
+Calendrier et partage
+Consultez les jours de fermeture d’un mois entier dans le calendrier. Partagez une fermeture sous forme de carte avec le calendrier de deux semaines et un conseil de courses, aux formats post et story Instagram, ou en courte vidéo.
+
+Toutes les fonctions sont gratuites. Si l’app vous est utile, soutenez-nous avec un café.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/fr/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/fr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/fr/

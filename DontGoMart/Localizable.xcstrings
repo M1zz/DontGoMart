@@ -60,6 +60,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — rechtzeitig einkaufen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — faites vos courses à l’avance"
+          }
         }
       }
     },
@@ -110,6 +116,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -168,6 +180,12 @@
             "state" : "translated",
             "value" : "%@ löschen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer %@"
+          }
         }
       }
     },
@@ -221,6 +239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ bearbeiten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier %@"
           }
         }
       }
@@ -281,6 +305,12 @@
             "state" : "translated",
             "value" : "%@ geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fermé"
+          }
         }
       }
     },
@@ -334,6 +364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ geschlossen Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fermé Pro"
           }
         }
       }
@@ -394,6 +430,12 @@
             "state" : "translated",
             "value" : "Geschlossen: %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé : %@"
+          }
         }
       }
     },
@@ -448,6 +490,12 @@
             "state" : "translated",
             "value" : "Geschlossen am %@!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé le %@ !"
+          }
         }
       }
     },
@@ -498,6 +546,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -561,6 +615,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -611,6 +671,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -670,6 +736,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -723,6 +795,12 @@
             "state" : "translated",
             "value" : "%lld Einträge"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld éléments"
+          }
         }
       }
     },
@@ -775,6 +853,12 @@
             "state" : "translated",
             "value" : "%lld Min."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -826,6 +910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld Uhr"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
           }
         }
       }
@@ -888,6 +978,12 @@
             "state" : "translated",
             "value" : "Noch %lld Tag(e)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours restants : %lld"
+          }
         }
       }
     },
@@ -942,6 +1038,12 @@
             "state" : "translated",
             "value" : "%lld Tag(e) vorher"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld j avant"
+          }
         }
       }
     },
@@ -993,6 +1095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Woche %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine %lld"
           }
         }
       }
@@ -1051,6 +1159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In %lld Woche(n), %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dans %lld sem., %@"
           }
         }
       }
@@ -1112,6 +1226,12 @@
             "state" : "translated",
             "value" : "Woche %lld, %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine %lld, %@"
+          }
         }
       }
     },
@@ -1170,6 +1290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Besser mit VoiceOver"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus pratique avec VoiceOver"
           }
         }
       }
@@ -1230,6 +1356,12 @@
             "state" : "translated",
             "value" : "Siri und Kurzbefehle"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri et Raccourcis"
+          }
         }
       }
     },
@@ -1289,6 +1421,12 @@
             "state" : "translated",
             "value" : "Frag Siri oder starte einen Kurzbefehl und sieh sofort, ob dein Markt geschlossen hat."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demandez à Siri ou lancez un raccourci pour savoir tout de suite si votre magasin est fermé."
+          }
         }
       }
     },
@@ -1339,6 +1477,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -1397,6 +1541,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -1447,6 +1597,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -1505,6 +1661,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -1549,6 +1711,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -1612,6 +1780,12 @@
             "state" : "translated",
             "value" : "Auch bei der größten Schriftgröße ordnen sich die Bildschirme sauber neu an, ohne dass etwas abgeschnitten wird."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Même avec la plus grande taille de texte, les écrans se réorganisent proprement, sans rien tronquer."
+          }
         }
       }
     },
@@ -1670,6 +1844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lösche ausgewählte und hinzugefügte Märkte sowie Hinweiseinstellungen direkt in der App auf einmal."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacez en une fois, dans l’app, vos magasins choisis et ajoutés ainsi que vos réglages d’alertes."
           }
         }
       }
@@ -1730,6 +1910,12 @@
             "state" : "translated",
             "value" : "Mitteilung"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonce"
+          }
         }
       }
     },
@@ -1782,6 +1968,12 @@
             "state" : "translated",
             "value" : "Öffnet die vollständige Mitteilung"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre l’annonce complète"
+          }
         }
       }
     },
@@ -1833,6 +2025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitteilung schließen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer l’annonce"
           }
         }
       }
@@ -1893,6 +2091,12 @@
             "state" : "translated",
             "value" : "Dunkelmodus"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode sombre"
+          }
         }
       }
     },
@@ -1951,6 +2155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erkenne Schließtage auch mit „Kontrast erhöhen“ oder wenn dir Farben schwerfallen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repérez les jours de fermeture même avec « Contraste accru » ou si vous distinguez mal les couleurs."
           }
         }
       }
@@ -2011,6 +2221,12 @@
             "state" : "translated",
             "value" : "Mehr Sprachen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus de langues"
+          }
         }
       }
     },
@@ -2069,6 +2285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nutze die App in mehr Sprachen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisez l’app dans davantage de langues."
           }
         }
       }
@@ -2129,6 +2351,12 @@
             "state" : "translated",
             "value" : "Speichere deine hinzugefügten Märkte in einer Datei und hol sie jederzeit zurück."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrez dans un fichier les magasins que vous avez ajoutés et retrouvez-les à tout moment."
+          }
         }
       }
     },
@@ -2188,6 +2416,12 @@
             "state" : "translated",
             "value" : "Alle meine Daten löschen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer toutes mes données"
+          }
         }
       }
     },
@@ -2245,6 +2479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hinweis auf Marktschließung"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte de fermeture de magasin"
           }
         }
       }
@@ -2305,6 +2545,12 @@
             "state" : "translated",
             "value" : "Text und Tasten bleiben auf dunklem Bildschirm gut lesbar."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le texte et les boutons restent nets sur un écran sombre."
+          }
         }
       }
     },
@@ -2363,6 +2609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Besser erkennbare Farben"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des couleurs plus lisibles"
           }
         }
       }
@@ -2423,6 +2675,12 @@
             "state" : "translated",
             "value" : "Wähle auf dem iPad Märkte aus und blättere im Kalender – nur mit der Tastatur."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur iPad, choisissez des magasins et feuilletez le calendrier avec le seul clavier."
+          }
         }
       }
     },
@@ -2481,6 +2739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Neues nach Updates"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveautés après les mises à jour"
           }
         }
       }
@@ -2541,6 +2805,12 @@
             "state" : "translated",
             "value" : "Beim ersten Öffnen nach einem Update siehst du, was neu ist."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À la première ouverture après une mise à jour, découvrez les nouveautés."
+          }
         }
       }
     },
@@ -2599,6 +2869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Praktische Tipps"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Astuces d’utilisation"
           }
         }
       }
@@ -2659,6 +2935,12 @@
             "state" : "translated",
             "value" : "Wir weisen dich im passenden Moment dezent auf nützliche Funktionen hin."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recevez au bon moment un petit conseil sur les fonctions utiles."
+          }
         }
       }
     },
@@ -2717,6 +2999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sicherung und Export"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarde et export"
           }
         }
       }
@@ -2777,6 +3065,12 @@
             "state" : "translated",
             "value" : "Schließt sich die App beim Hinzufügen eines Marktes, bleibt deine Eingabe erhalten."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si l’app se ferme pendant l’ajout d’un magasin, ce que vous avez saisi est conservé."
+          }
         }
       }
     },
@@ -2828,6 +3122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld weitere"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld autres"
           }
         }
       }
@@ -2888,6 +3188,12 @@
             "state" : "translated",
             "value" : "VoiceOver liest Schließtage und Tasten vollständig und in der richtigen Reihenfolge vor."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver lit les jours de fermeture et les boutons en entier et dans le bon ordre."
+          }
         }
       }
     },
@@ -2946,6 +3252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bereit für große Schrift"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prêt pour les grands textes"
           }
         }
       }
@@ -3006,6 +3318,12 @@
             "state" : "translated",
             "value" : "Bedienung per Tastatur"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commandes au clavier"
+          }
         }
       }
     },
@@ -3064,6 +3382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kurze Einführung"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guide de démarrage"
           }
         }
       }
@@ -3124,6 +3448,12 @@
             "state" : "translated",
             "value" : "Beim ersten Öffnen siehst du in wenigen Schritten, was die App kann."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À la première ouverture, découvrez en quelques étapes ce que l’app peut faire."
+          }
         }
       }
     },
@@ -3182,6 +3512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Für das faltbare iPhone gemacht"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conçue pour l’iPhone pliable"
           }
         }
       }
@@ -3242,6 +3578,12 @@
             "state" : "translated",
             "value" : "Auf einem faltbaren iPhone nutzt du den breiten Bildschirm als zwei Bereiche nebeneinander."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur un iPhone pliable, utilisez le grand écran en deux volets côte à côte."
+          }
         }
       }
     },
@@ -3301,6 +3643,12 @@
             "state" : "translated",
             "value" : "Dort weitermachen, wo du aufgehört hast"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reprenez où vous en étiez"
+          }
         }
       }
     },
@@ -3345,6 +3693,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -3397,6 +3751,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -3445,6 +3805,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -3489,6 +3855,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -3545,6 +3917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Hinweis auf einen guten Einkaufstag"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Alerte « bon jour pour les courses »"
           }
         }
       }
@@ -3603,6 +3981,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Guter Tag zum Einkaufen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Bon jour pour les courses"
           }
         }
       }
@@ -3664,6 +4048,12 @@
             "state" : "translated",
             "value" : "Warnt dich, wenn innerhalb einer Woche ein Schließtag ansteht!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous prévient quand un jour de fermeture approche dans la semaine !"
+          }
         }
       }
     },
@@ -3714,6 +4104,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -3778,6 +4174,12 @@
             "state" : "translated",
             "value" : "Widget „Schließhinweis“"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget d’alerte de fermeture"
+          }
         }
       }
     },
@@ -3838,6 +4240,12 @@
             "state" : "translated",
             "value" : "Widget „Countdown zum Schließtag“"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget de compte à rebours de fermeture"
+          }
         }
       }
     },
@@ -3888,6 +4296,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -3946,6 +4360,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -3996,6 +4416,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -4054,6 +4480,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -4104,6 +4536,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -4166,6 +4604,12 @@
             "state" : "translated",
             "value" : "%@ hat morgen geschlossen. Heute ist ein guter Tag zum Einkaufen!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ est fermé demain. Aujourd’hui, c’est le bon jour pour faire vos courses !"
+          }
         }
       }
     },
@@ -4223,6 +4667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ schließt in %lld Tag(en)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fermera dans %lld jour(s)."
           }
         }
       }
@@ -4283,6 +4733,12 @@
             "state" : "translated",
             "value" : "%@ schließt in %lld Tag(en)."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fermera dans %lld jour(s)."
+          }
         }
       }
     },
@@ -4341,6 +4797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denk daran, vor dem nächsten Schließtag einzukaufen!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N’oubliez pas de faire vos courses avant le prochain jour de fermeture !"
           }
         }
       }
@@ -4401,6 +4863,12 @@
             "state" : "translated",
             "value" : "Verwalte auch die Schließtage von Märkten vor Ort"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gérez aussi les fermetures des magasins de votre quartier"
+          }
         }
       }
     },
@@ -4459,6 +4927,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lege das Schließmuster deines eigenen Marktes an"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrez le rythme de fermeture de votre propre magasin"
           }
         }
       }
@@ -4519,6 +4993,12 @@
             "state" : "translated",
             "value" : "Deine Favoriten stehen immer oben"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos favoris restent toujours en haut"
+          }
         }
       }
     },
@@ -4577,6 +5057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markiere deine Lieblingsmärkte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez vos magasins préférés aux favoris"
           }
         }
       }
@@ -4637,6 +5123,12 @@
             "state" : "translated",
             "value" : "Einmal kaufen, alle Funktionen für immer"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un seul achat pour toutes les fonctions, à vie"
+          }
         }
       }
     },
@@ -4695,6 +5187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auf DontGoMart Pro upgraden"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à DontGoMart Pro"
           }
         }
       }
@@ -4755,6 +5253,12 @@
             "state" : "translated",
             "value" : "Schließtage von E-Mart, Costco und Homeplus auf einen Blick"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consultez d’un coup les fermetures de E-Mart, Costco et Homeplus"
+          }
         }
       }
     },
@@ -4813,6 +5317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mehrere Märkte gleichzeitig verfolgen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivez plusieurs magasins à la fois"
           }
         }
       }
@@ -4873,6 +5383,12 @@
             "state" : "translated",
             "value" : "Hinweise vor Schließtagen – nie wieder umsonst fahren"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soyez alerté avant les jours de fermeture et ne faites plus de trajet pour rien"
+          }
         }
       }
     },
@@ -4931,6 +5447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie wieder vor verschlossener Tür stehen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne tombez plus jamais sur un magasin fermé"
           }
         }
       }
@@ -4991,6 +5513,12 @@
             "state" : "translated",
             "value" : "Füge so viele Artikel hinzu, wie du brauchst"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez autant d’articles que nécessaire"
+          }
         }
       }
     },
@@ -5049,6 +5577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unbegrenzte Einkaufsliste"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste de courses illimitée"
           }
         }
       }
@@ -5109,6 +5643,12 @@
             "state" : "translated",
             "value" : "☕ Zum Preis eines Kaffees alles für immer freischalten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Pour le prix d’un café, débloquez tout à vie"
+          }
         }
       }
     },
@@ -5167,6 +5707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du wirst %1$lld Tage und %2$lld Tag vor Schließtagen um %3$@ benachrichtigt."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous serez prévenu %1$lld jours et %2$lld jour avant les jours de fermeture, à %3$@."
           }
         }
       }
@@ -5228,6 +5774,12 @@
             "state" : "translated",
             "value" : "Zeigt in Grün oder Rot, ob dein Markt diesen Sonntag geöffnet hat."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indique en vert ou en rouge si votre magasin est ouvert ce dimanche."
+          }
         }
       }
     },
@@ -5285,6 +5837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zeigt die nächsten zwei Schließtage!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche les deux prochains jours de fermeture !"
           }
         }
       }
@@ -5346,6 +5904,12 @@
             "state" : "translated",
             "value" : "Zeigt die Tage bis zum nächsten Schließtag!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche le nombre de jours avant le prochain jour de fermeture !"
+          }
         }
       }
     },
@@ -5406,6 +5970,12 @@
             "state" : "translated",
             "value" : "Sonntag geöffnet/geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimanche : ouvert/fermé"
+          }
         }
       }
     },
@@ -5460,6 +6030,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -5510,6 +6086,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -5574,6 +6156,12 @@
             "state" : "translated",
             "value" : "Widget „Zwei Schließtage“"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget des deux jours de fermeture"
+          }
         }
       }
     },
@@ -5627,6 +6215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließt die Dankesnachricht"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferme le message de remerciement"
           }
         }
       }
@@ -5682,6 +6276,12 @@
             "state" : "translated",
             "value" : "Danke!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci !"
+          }
         }
       }
     },
@@ -5736,6 +6336,12 @@
             "state" : "translated",
             "value" : "Spendiert dem Entwickler einen Kaffee"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offre un café au développeur"
+          }
         }
       }
     },
@@ -5789,6 +6395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schickt dem Entwickler ein Trinkgeld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoie un pourboire au développeur"
           }
         }
       }
@@ -5849,6 +6461,12 @@
             "state" : "translated",
             "value" : "Teile von Gyeonggi/Cheongju"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une partie de Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -5903,6 +6521,12 @@
             "state" : "translated",
             "value" : "Danke, bis zum nächsten Mal"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci, à bientôt"
+          }
         }
       }
     },
@@ -5955,6 +6579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließt bald"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bientôt fermé"
           }
         }
       }
@@ -6009,6 +6639,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teilen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager"
           }
         }
       }
@@ -6068,6 +6704,12 @@
             "state" : "translated",
             "value" : "Feiertag"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour férié"
+          }
         }
       }
     },
@@ -6119,6 +6761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käufe wiederherstellen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurer les achats"
           }
         }
       }
@@ -6179,6 +6827,12 @@
             "state" : "translated",
             "value" : "Funktion"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonction"
+          }
         }
       }
     },
@@ -6230,6 +6884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meine Märkte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes magasins"
           }
         }
       }
@@ -6290,6 +6950,12 @@
             "state" : "translated",
             "value" : "Morgen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demain"
+          }
         }
       }
     },
@@ -6342,6 +7008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgen %@ geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demain, %@ fermé"
           }
         }
       }
@@ -6404,6 +7076,12 @@
             "state" : "translated",
             "value" : "Morgen geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé demain"
+          }
         }
       }
     },
@@ -6455,6 +7133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kommende Schließtage"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prochains jours de fermeture"
           }
         }
       }
@@ -6509,6 +7193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nächster Monat"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois suivant"
           }
         }
       }
@@ -6571,6 +7261,12 @@
             "state" : "translated",
             "value" : "Nächste Woche %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine prochaine : %@"
+          }
         }
       }
     },
@@ -6630,6 +7326,12 @@
             "state" : "translated",
             "value" : "Nächster Schließtag"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prochain jour de fermeture"
+          }
         }
       }
     },
@@ -6682,6 +7384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wir erinnern dich 2 Tage vor dem nächsten Schließtag ans Einkaufen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous vous rappellerons de faire vos courses 2 jours avant le prochain jour de fermeture."
           }
         }
       }
@@ -6744,6 +7452,12 @@
             "state" : "translated",
             "value" : "Keine Schließtag-Infos"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune info de fermeture"
+          }
         }
       }
     },
@@ -6797,6 +7511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Später"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus tard"
           }
         }
       }
@@ -6857,6 +7577,12 @@
             "state" : "translated",
             "value" : "Mehrere Märkte gleichzeitig verfolgen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivez plusieurs magasins en même temps"
+          }
         }
       }
     },
@@ -6916,6 +7642,12 @@
             "state" : "translated",
             "value" : "Mehrere Märkte verfolgen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi de plusieurs magasins"
+          }
         }
       }
     },
@@ -6969,6 +7701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
           }
         }
       }
@@ -7024,6 +7762,12 @@
             "state" : "translated",
             "value" : "Öffnet den Kalender, um Schließtage zu sehen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre le calendrier pour voir les jours de fermeture"
+          }
         }
       }
     },
@@ -7073,6 +7817,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -7136,6 +7886,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -7190,6 +7946,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -7252,6 +8014,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -7304,6 +8072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché"
           }
         }
       }
@@ -7363,6 +8137,12 @@
             "state" : "translated",
             "value" : "Supermarkt (mittwochs geschlossen)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (fermé le mercredi)"
+          }
         }
       }
     },
@@ -7420,6 +8200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (mittwochs geschlossen)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (fermé le mercredi)"
           }
         }
       }
@@ -7479,6 +8265,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Mi)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (mer.)"
+          }
         }
       }
     },
@@ -7536,6 +8328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Ulsan, gemischt)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Ulsan, mixte)"
           }
         }
       }
@@ -7595,6 +8393,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Ulsan)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Ulsan)"
+          }
         }
       }
     },
@@ -7652,6 +8456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Ulsan)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Ulsan)"
           }
         }
       }
@@ -7711,6 +8521,12 @@
             "state" : "translated",
             "value" : "Supermarkt (sonntags geschlossen)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (fermé le dimanche)"
+          }
         }
       }
     },
@@ -7768,6 +8584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (sonntags geschlossen)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (fermé le dimanche)"
           }
         }
       }
@@ -7827,6 +8649,12 @@
             "state" : "translated",
             "value" : "Supermarkt (So)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (dim.)"
+          }
         }
       }
     },
@@ -7884,6 +8712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Jeju)"
           }
         }
       }
@@ -7943,6 +8777,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Jeju)"
+          }
         }
       }
     },
@@ -8001,6 +8841,12 @@
             "state" : "translated",
             "value" : "Supermarkt (Jeju)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarché (Jeju)"
+          }
         }
       }
     },
@@ -8055,6 +8901,12 @@
             "state" : "translated",
             "value" : "Wenn dir die App geholfen hat, motiviere uns mit einem Kaffee."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si l’app vous a aidé, encouragez-nous avec un café."
+          }
         }
       }
     },
@@ -8105,6 +8957,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -8164,6 +9022,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -8218,6 +9082,12 @@
             "state" : "translated",
             "value" : "Zum Schließen doppeltippen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez deux fois pour fermer"
+          }
         }
       }
     },
@@ -8271,6 +9141,12 @@
             "state" : "translated",
             "value" : "Markt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin"
+          }
         }
       }
     },
@@ -8323,6 +9199,12 @@
             "state" : "translated",
             "value" : "Prüfe vor dem Einkauf die Schließtage in DontGoMart ✅"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avant d’aller faire vos courses, consultez les fermetures sur DontGoMart ✅"
+          }
         }
       }
     },
@@ -8374,6 +9256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Marktfarbe"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur du magasin"
           }
         }
       }
@@ -8433,6 +9321,12 @@
             "state" : "translated",
             "value" : "Markt auswählen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir un magasin"
+          }
         }
       }
     },
@@ -8484,6 +9378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Name des Marktes (z. B. Homeplus Gangnam)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom du magasin (p. ex. Homeplus Gangnam)"
           }
         }
       }
@@ -8537,6 +9437,12 @@
             "state" : "translated",
             "value" : "Marktinfo"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Infos du magasin"
+          }
         }
       }
     },
@@ -8588,6 +9494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markt hinzufügen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un magasin"
           }
         }
       }
@@ -8641,6 +9553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markt geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin fermé"
           }
         }
       }
@@ -8701,6 +9619,12 @@
             "state" : "translated",
             "value" : "Hinweis auf Schließtag des Marktes"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avis de jour de fermeture du magasin"
+          }
         }
       }
     },
@@ -8754,6 +9678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hinweis auf Marktschließung"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte de fermeture de magasin"
           }
         }
       }
@@ -8814,6 +9744,12 @@
             "state" : "translated",
             "value" : "Markt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin"
+          }
         }
       }
     },
@@ -8872,6 +9808,12 @@
             "state" : "translated",
             "value" : "Markt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin"
+          }
         }
       }
     },
@@ -8925,6 +9867,12 @@
             "state" : "translated",
             "value" : "Markt auswählen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir un magasin"
+          }
         }
       }
     },
@@ -8976,6 +9924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öffnet Marktauswahl und Hinweiseinstellungen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre le choix du magasin et les réglages des alertes"
           }
         }
       }
@@ -9036,6 +9990,12 @@
             "state" : "translated",
             "value" : "Je nach Markt unterschiedlich"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varie selon le magasin"
+          }
         }
       }
     },
@@ -9088,6 +10048,12 @@
             "state" : "translated",
             "value" : "Markt auswählen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir un magasin"
+          }
         }
       }
     },
@@ -9139,6 +10105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitte wähle einen Markt aus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez choisir un magasin"
           }
         }
       }
@@ -9199,6 +10171,12 @@
             "state" : "translated",
             "value" : "Kein Markt ausgewählt. Wähle einen in den Einstellungen."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun magasin sélectionné. Choisissez-en un dans Réglages."
+          }
         }
       }
     },
@@ -9253,6 +10231,12 @@
             "state" : "translated",
             "value" : "Jeden %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque %@"
+          }
         }
       }
     },
@@ -9306,6 +10290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle Funktionen bleiben kostenlos. Ein Trinkgeld ist reine Ermutigung, und du kannst jederzeit eines schicken."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les fonctions restent gratuites. Un pourboire est un simple encouragement, et vous pouvez en envoyer quand vous voulez."
           }
         }
       }
@@ -9368,6 +10358,12 @@
             "state" : "translated",
             "value" : "Übermorgen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Après-demain"
+          }
         }
       }
     },
@@ -9426,6 +10422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Keine Begrenzung für deine Einkaufsliste"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune limite d’articles dans votre liste de courses"
           }
         }
       }
@@ -9486,6 +10488,12 @@
             "state" : "translated",
             "value" : "Unbegrenzte Einkaufsliste"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste de courses illimitée"
+          }
         }
       }
     },
@@ -9545,6 +10553,12 @@
             "state" : "translated",
             "value" : "Mit Pro unbegrenzt Artikel hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passez à Pro pour ajouter des articles sans limite"
+          }
         }
       }
     },
@@ -9594,6 +10608,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version"
@@ -9652,6 +10672,12 @@
             "state" : "translated",
             "value" : "Dank deiner Unterstützung können wir die App weiterentwickeln."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grâce à votre soutien, nous pouvons continuer à faire vivre l’app."
+          }
         }
       }
     },
@@ -9706,6 +10732,12 @@
             "state" : "translated",
             "value" : "Deine Unterstützung bedeutet uns viel. (bisher ☕️ ×%lld)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre soutien compte beaucoup. (☕️ ×%lld jusqu’ici)"
+          }
         }
       }
     },
@@ -9757,6 +10789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
           }
         }
       }
@@ -9810,6 +10848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schnellaktionen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actions rapides"
           }
         }
       }
@@ -9872,6 +10916,12 @@
             "state" : "translated",
             "value" : "Nicht ausgewählt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non sélectionné"
+          }
         }
       }
     },
@@ -9924,6 +10974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auswahl zurücksetzen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer la sélection"
           }
         }
       }
@@ -9983,6 +11039,12 @@
             "state" : "translated",
             "value" : "Kein Markt ausgewählt. Öffne die App, um einen auszuwählen."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun magasin sélectionné. Ouvrez l’app pour en choisir un."
+          }
         }
       }
     },
@@ -10034,6 +11096,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ausgewähltes Muster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rythme sélectionné"
           }
         }
       }
@@ -10096,6 +11164,12 @@
             "state" : "translated",
             "value" : "Ausgewählt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionné"
+          }
         }
       }
     },
@@ -10149,6 +11223,12 @@
             "state" : "translated",
             "value" : "Alle ausgewählten Märkte haben geöffnet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous les magasins sélectionnés sont ouverts"
+          }
         }
       }
     },
@@ -10201,6 +11281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle ausgewählten Märkte haben geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous les magasins sélectionnés sont fermés"
           }
         }
       }
@@ -10260,6 +11346,12 @@
             "state" : "translated",
             "value" : "Feiertage Seollal/Chuseok"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours fériés de Seollal et Chuseok"
+          }
         }
       }
     },
@@ -10311,6 +11403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Einstellungen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages"
           }
         }
       }
@@ -10366,6 +11464,12 @@
             "state" : "translated",
             "value" : "Wähle in den Einstellungen die Märkte aus, die du verfolgen willst"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez dans Réglages les magasins à suivre"
+          }
         }
       }
     },
@@ -10419,6 +11523,12 @@
             "state" : "translated",
             "value" : "Wähle in den Einstellungen die Märkte aus, die du verfolgen willst"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez dans Réglages les magasins à suivre"
+          }
         }
       }
     },
@@ -10471,6 +11581,12 @@
             "state" : "translated",
             "value" : "Zu den Einstellungen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aller aux Réglages"
+          }
         }
       }
     },
@@ -10522,6 +11638,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uhr"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure"
           }
         }
       }
@@ -10582,6 +11704,12 @@
             "state" : "translated",
             "value" : "Unbekannt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inconnu"
+          }
         }
       }
     },
@@ -10633,6 +11761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitteilungsberechtigung erforderlich"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorisation de notifications requise"
           }
         }
       }
@@ -10687,6 +11821,12 @@
             "state" : "translated",
             "value" : "Mitteilungseinstellungen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages des notifications"
+          }
         }
       }
     },
@@ -10738,6 +11878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uhrzeit der Mitteilung"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure de la notification"
           }
         }
       }
@@ -10792,6 +11938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Benachrichtigen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Me prévenir"
           }
         }
       }
@@ -10852,6 +12004,12 @@
             "state" : "translated",
             "value" : "Vor Schließtagen benachrichtigt werden"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soyez prévenu avant les jours de fermeture"
+          }
         }
       }
     },
@@ -10910,6 +12068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitteilungen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
           }
         }
       }
@@ -10970,6 +12134,12 @@
             "state" : "translated",
             "value" : "Vor Schließtagen benachrichtigt werden"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soyez prévenu avant les jours de fermeture"
+          }
         }
       }
     },
@@ -11021,6 +12191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitteilungen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
           }
         }
       }
@@ -11075,6 +12251,12 @@
             "state" : "translated",
             "value" : "Im App Store bewerten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laisser un avis sur l’App Store"
+          }
         }
       }
     },
@@ -11127,6 +12309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Im App Store ansehen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir sur l’App Store"
           }
         }
       }
@@ -11182,6 +12370,12 @@
             "state" : "translated",
             "value" : "Danke, dass du die App unterstützt ☕️"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci de soutenir l’app ☕️"
+          }
         }
       }
     },
@@ -11231,6 +12425,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -11293,6 +12493,12 @@
             "state" : "translated",
             "value" : "Geöffnet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvert"
+          }
         }
       }
     },
@@ -11352,6 +12558,12 @@
             "state" : "translated",
             "value" : "Geöffnet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvert"
+          }
         }
       }
     },
@@ -11404,6 +12616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heute geöffnet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvert aujourd’hui"
           }
         }
       }
@@ -11464,6 +12682,12 @@
             "state" : "translated",
             "value" : "Heute"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aujourd’hui"
+          }
         }
       }
     },
@@ -11516,6 +12740,12 @@
             "state" : "translated",
             "value" : "%@ heute geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fermé aujourd’hui"
+          }
         }
       }
     },
@@ -11567,6 +12797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kann ich heute hin?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puis-je y aller aujourd’hui ?"
           }
         }
       }
@@ -11627,6 +12863,12 @@
             "state" : "translated",
             "value" : "Alle ausgewählten Märkte haben heute geöffnet."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous les magasins sélectionnés sont ouverts aujourd’hui."
+          }
         }
       }
     },
@@ -11686,6 +12928,12 @@
             "state" : "translated",
             "value" : "Alle ausgewählten Märkte haben heute geschlossen."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous les magasins sélectionnés sont fermés aujourd’hui."
+          }
         }
       }
     },
@@ -11740,6 +12988,12 @@
             "state" : "translated",
             "value" : "Teilt den heutigen Status und die kommenden Schließtage"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partage l’état du jour et les prochains jours de fermeture"
+          }
         }
       }
     },
@@ -11793,6 +13047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heute geöffnet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvert aujourd’hui"
           }
         }
       }
@@ -11855,6 +13115,12 @@
             "state" : "translated",
             "value" : "Heute haben nur einige Märkte geschlossen: %@."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aujourd’hui, seuls certains magasins sont fermés : %@."
+          }
         }
       }
     },
@@ -11908,6 +13174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wir haben dir heute eine vergebliche Fahrt erspart"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous vous avons évité un trajet pour rien aujourd’hui"
           }
         }
       }
@@ -11970,6 +13242,12 @@
             "state" : "translated",
             "value" : "Heute geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé aujourd’hui"
+          }
         }
       }
     },
@@ -12024,6 +13302,12 @@
             "state" : "translated",
             "value" : "Heute geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé aujourd’hui"
+          }
         }
       }
     },
@@ -12075,6 +13359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wir haben dir heute wieder eine vergebliche Fahrt erspart.\nWir denken weiter dankbar an deine großzügige Unterstützung."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous vous avons encore évité un trajet pour rien aujourd’hui.\nNous n’oublions pas votre généreux soutien."
           }
         }
       }
@@ -12134,6 +13424,12 @@
             "state" : "translated",
             "value" : "Fertig"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé"
+          }
         }
       }
     },
@@ -12187,6 +13483,12 @@
             "state" : "translated",
             "value" : "Erledigte Einträge löschen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer les éléments terminés"
+          }
         }
       }
     },
@@ -12236,6 +13538,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -12299,6 +13607,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -12353,6 +13667,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -12415,6 +13735,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -12473,6 +13799,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -12525,6 +13857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monat"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois"
           }
         }
       }
@@ -12579,6 +13917,12 @@
             "state" : "translated",
             "value" : "Standortberechtigung erforderlich"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorisation de localisation requise"
+          }
         }
       }
     },
@@ -12632,6 +13976,12 @@
             "state" : "translated",
             "value" : "Standortfunktionen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctions de localisation"
+          }
         }
       }
     },
@@ -12683,6 +14033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unterstützen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous soutenir"
           }
         }
       }
@@ -12741,6 +14097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "So"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dim."
           }
         }
       }
@@ -12803,6 +14165,12 @@
             "state" : "translated",
             "value" : "Diese Woche %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette semaine : %@"
+          }
         }
       }
     },
@@ -12855,6 +14223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diese Woche %@ geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette semaine, %@ fermé"
           }
         }
       }
@@ -12914,6 +14288,12 @@
             "state" : "translated",
             "value" : "Diesen Sonntag"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce dimanche"
+          }
         }
       }
     },
@@ -12971,6 +14351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diesen Sonntag %@, Markt geöffnet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce dimanche %@, magasin ouvert"
           }
         }
       }
@@ -13030,6 +14416,12 @@
             "state" : "translated",
             "value" : "Diesen Sonntag %@, Markt geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce dimanche %@, magasin fermé"
+          }
         }
       }
     },
@@ -13083,6 +14475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorheriger Monat"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois précédent"
           }
         }
       }
@@ -13138,6 +14536,12 @@
             "state" : "translated",
             "value" : "In Instagram Stories teilen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager dans les stories Instagram"
+          }
         }
       }
     },
@@ -13192,6 +14596,12 @@
             "state" : "translated",
             "value" : "Instagram muss installiert sein, um in Stories zu teilen."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram doit être installé pour partager dans les stories."
+          }
         }
       }
     },
@@ -13245,6 +14655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram nicht gefunden"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram introuvable"
           }
         }
       }
@@ -13301,6 +14717,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -13363,6 +14785,12 @@
             "state" : "translated",
             "value" : "Normal"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standard"
+          }
         }
       }
     },
@@ -13415,6 +14843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Normale Märkte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasins standard"
           }
         }
       }
@@ -13469,6 +14903,12 @@
             "state" : "translated",
             "value" : "Teils geöffnet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certains ouverts"
+          }
         }
       }
     },
@@ -13521,6 +14961,12 @@
             "state" : "translated",
             "value" : "Einige Märkte haben geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certains magasins sont fermés"
+          }
         }
       }
     },
@@ -13570,6 +15016,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -13633,6 +15085,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -13691,6 +15149,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -13745,6 +15209,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -13808,6 +15278,12 @@
             "state" : "translated",
             "value" : "Einmalkauf. Kein Abo."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achat unique. Sans abonnement."
+          }
         }
       }
     },
@@ -13859,6 +15335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lege Schließmuster für deine Lieblingsmärkte an"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez les rythmes de fermeture de vos magasins préférés"
           }
         }
       }
@@ -13913,6 +15395,12 @@
             "state" : "translated",
             "value" : "Einkaufserinnerung"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappel de courses"
+          }
         }
       }
     },
@@ -13966,6 +15454,12 @@
             "state" : "translated",
             "value" : "Einkaufsliste"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste de courses"
+          }
         }
       }
     },
@@ -14018,6 +15512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Einkaufshinweis"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte de courses"
           }
         }
       }
@@ -14078,6 +15578,12 @@
             "state" : "translated",
             "value" : "Einkaufserinnerung"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappel de courses"
+          }
         }
       }
     },
@@ -14132,6 +15638,12 @@
             "state" : "translated",
             "value" : "Hinweis auf guten Einkaufstag (am Vortag)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte « bon jour pour les courses » (la veille)"
+          }
         }
       }
     },
@@ -14185,6 +15697,12 @@
             "state" : "translated",
             "value" : "Artikel hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un article"
+          }
         }
       }
     },
@@ -14237,6 +15755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Füge deiner Einkaufsliste Artikel hinzu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez des articles à votre liste de courses"
           }
         }
       }
@@ -14295,6 +15819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sichern"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
           }
         }
       }
@@ -14355,6 +15885,12 @@
             "state" : "translated",
             "value" : "Die meisten Regionen im ganzen Land"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La plupart des régions du pays"
+          }
         }
       }
     },
@@ -14413,6 +15949,12 @@
             "state" : "translated",
             "value" : "Landesweiter Feiertag"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour férié national"
+          }
         }
       }
     },
@@ -14470,6 +16012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Landesweiter Feiertag"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour férié national"
           }
         }
       }
@@ -14530,6 +16078,12 @@
             "state" : "translated",
             "value" : "Ganztägig geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé toute la journée"
+          }
         }
       }
     },
@@ -14583,6 +16137,12 @@
             "state" : "translated",
             "value" : "Alle löschen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout supprimer"
+          }
         }
       }
     },
@@ -14635,6 +16195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle anzeigen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout afficher"
           }
         }
       }
@@ -14690,6 +16256,12 @@
             "state" : "translated",
             "value" : "Vielen, vielen Dank!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un immense merci !"
+          }
         }
       }
     },
@@ -14742,6 +16314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos"
           }
         }
       }
@@ -14801,6 +16379,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -14853,6 +16437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Woche"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine"
           }
         }
       }
@@ -14907,6 +16497,12 @@
             "state" : "translated",
             "value" : "Märkte in der Nähe"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasins à proximité"
+          }
         }
       }
     },
@@ -14959,6 +16555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Märkte in der Nähe automatisch erkennen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Détecter automatiquement les magasins à proximité"
           }
         }
       }
@@ -15013,6 +16615,12 @@
             "state" : "translated",
             "value" : "Um Märkte in der Nähe zu finden,\nerlaube den Standortzugriff unter\nEinstellungen > DontGoMart > Standort."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour trouver les magasins à proximité,\nautorisez l’accès à la localisation dans\nRéglages > DontGoMart > Localisation."
+          }
         }
       }
     },
@@ -15066,6 +16674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sag Leuten in deiner Nähe Bescheid, wenn ein Markt schließt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prévenez votre entourage des fermetures"
           }
         }
       }
@@ -15126,6 +16740,12 @@
             "state" : "translated",
             "value" : "Hefte deine Lieblingsmärkte oben an"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Épinglez vos magasins préférés en haut"
+          }
         }
       }
     },
@@ -15185,6 +16805,12 @@
             "state" : "translated",
             "value" : "Favoriten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoris"
+          }
         }
       }
     },
@@ -15239,6 +16865,12 @@
             "state" : "translated",
             "value" : "Bisher erhaltene Unterstützung ☕️ ×%lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soutien reçu jusqu’ici ☕️ ×%lld"
+          }
         }
       }
     },
@@ -15291,6 +16923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortschritt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progression"
           }
         }
       }
@@ -15345,6 +16983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erster Schließtag"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premier jour de fermeture"
           }
         }
       }
@@ -15404,6 +17048,12 @@
             "state" : "translated",
             "value" : "Hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
+          }
         }
       }
     },
@@ -15455,6 +17105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Märkte zum Verfolgen auswählen (mehrere möglich)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez les magasins à suivre (plusieurs possibles)"
           }
         }
       }
@@ -15514,6 +17170,12 @@
             "state" : "translated",
             "value" : "Abbrechen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
         }
       }
     },
@@ -15568,6 +17230,12 @@
             "state" : "translated",
             "value" : "Karte wird vorbereitet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Préparation de la carte"
+          }
         }
       }
     },
@@ -15621,6 +17289,12 @@
             "state" : "translated",
             "value" : "Kalender ansehen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir le calendrier"
+          }
         }
       }
     },
@@ -15673,6 +17347,12 @@
             "state" : "translated",
             "value" : "Eigenen Markt hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un magasin personnalisé"
+          }
         }
       }
     },
@@ -15724,6 +17404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigenen Markt bearbeiten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier le magasin personnalisé"
           }
         }
       }
@@ -15783,6 +17469,12 @@
             "state" : "translated",
             "value" : "Eigener Markt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin personnalisé"
+          }
         }
       }
     },
@@ -15841,6 +17533,12 @@
             "state" : "translated",
             "value" : "Eigener Markt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin personnalisé"
+          }
         }
       }
     },
@@ -15898,6 +17596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigener Markt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin personnalisé"
           }
         }
       }
@@ -15958,6 +17662,12 @@
             "state" : "translated",
             "value" : "Lege die Schließmuster deines eigenen Marktes an"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez les rythmes de fermeture de votre propre magasin"
+          }
         }
       }
     },
@@ -16016,6 +17726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eigener Markt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin personnalisé"
           }
         }
       }
@@ -16076,6 +17792,12 @@
             "state" : "translated",
             "value" : "Lege die Schließmuster deines eigenen Marktes an"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez les rythmes de fermeture de votre propre magasin"
+          }
         }
       }
     },
@@ -16129,6 +17851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaffee spendieren %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offrir un café %@"
           }
         }
       }
@@ -16184,6 +17912,12 @@
             "state" : "translated",
             "value" : "Kaffee spendieren, %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offrir un café, %@"
+          }
         }
       }
     },
@@ -16233,6 +17967,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -16295,6 +18035,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -16349,6 +18095,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
@@ -16411,6 +18163,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -16465,6 +18223,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -16527,6 +18291,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -16581,6 +18351,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -16643,6 +18419,12 @@
             "state" : "translated",
             "value" : "Costco normal"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco standard"
+          }
         }
       }
     },
@@ -16700,6 +18482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco normal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco standard"
           }
         }
       }
@@ -16759,6 +18547,12 @@
             "state" : "translated",
             "value" : "Costco normal"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco standard"
+          }
         }
       }
     },
@@ -16813,6 +18607,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -16875,6 +18675,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -16929,6 +18735,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -16991,6 +18803,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -17049,6 +18867,12 @@
             "state" : "translated",
             "value" : "Normal – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standard – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -17101,6 +18925,12 @@
             "state" : "translated",
             "value" : "Muster hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un rythme"
+          }
         }
       }
     },
@@ -17152,6 +18982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitte füge ein Muster hinzu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez ajouter un rythme"
           }
         }
       }
@@ -17212,6 +19048,12 @@
             "state" : "translated",
             "value" : "Schalte das Verfolgen mehrerer Märkte, Hinweise und mehr frei"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débloquez le suivi de plusieurs magasins, les alertes et plus encore"
+          }
         }
       }
     },
@@ -17266,6 +19108,12 @@
             "state" : "translated",
             "value" : "Noch einmal unterstützen ☕️"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous soutenir encore une fois ☕️"
+          }
         }
       }
     },
@@ -17318,6 +19166,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gewählte Filiale"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasin sélectionné"
           }
         }
       }
@@ -17372,6 +19226,12 @@
             "state" : "translated",
             "value" : "Findet und empfiehlt Märkte in deiner Nähe anhand deines aktuellen Standorts."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouve et recommande les magasins proches de votre position actuelle."
+          }
         }
       }
     },
@@ -17422,6 +19282,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -17480,6 +19346,12 @@
             "state" : "translated",
             "value" : "Lädt die Liste der Trinkgeld-Optionen neu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recharge la liste des pourboires"
+          }
         }
       }
     },
@@ -17533,6 +19405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trinkgeld-Optionen werden geladen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement des pourboires"
           }
         }
       }
@@ -17588,6 +19466,12 @@
             "state" : "translated",
             "value" : "Trinkgeld-Optionen konnten nicht geladen werden. Erneut versuchen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger les pourboires. Réessayer"
+          }
         }
       }
     },
@@ -17641,6 +19525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Über Trinkgeld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos des pourboires"
           }
         }
       }
@@ -17696,6 +19586,12 @@
             "state" : "translated",
             "value" : "Schließt die Trinkgeld-Karte. Sie erscheint 30 Tage lang nicht wieder"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferme la carte de pourboire. Elle ne réapparaîtra pas avant 30 jours"
+          }
         }
       }
     },
@@ -17749,6 +19645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unterstützer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soutien"
           }
         }
       }
@@ -17804,6 +19706,12 @@
             "state" : "translated",
             "value" : "Unterstützer. Bisher %lld Kaffee(s). Danke, dass du die App unterstützt."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soutien. %lld cafés jusqu’ici. Merci de soutenir l’app."
+          }
         }
       }
     },
@@ -17858,6 +19766,12 @@
             "state" : "translated",
             "value" : "Wir haben dich nicht vergessen!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous ne vous avons pas oublié !"
+          }
         }
       }
     },
@@ -17911,6 +19825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Danke für deine Unterstützung. Du hast bisher %lld Kaffee(s) geschickt."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci de votre soutien. Vous avez envoyé %lld cafés jusqu’ici."
           }
         }
       }
@@ -17973,6 +19893,12 @@
             "state" : "translated",
             "value" : "Vielen Dank für deine Unterstützung. Sie bedeutet uns viel."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci infiniment pour votre soutien. Il compte beaucoup pour nous."
+          }
         }
       }
     },
@@ -18026,6 +19952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vielen Dank für deine Unterstützung. Du hast bisher %lld Kaffee(s) geschickt."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci infiniment pour votre soutien. Vous avez envoyé %lld cafés jusqu’ici."
           }
         }
       }
@@ -18087,6 +20019,12 @@
             "state" : "translated",
             "value" : "Geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé"
+          }
         }
       }
     },
@@ -18138,6 +20076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließmuster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rythme de fermeture"
           }
         }
       }
@@ -18193,6 +20137,12 @@
             "state" : "translated",
             "value" : "Schließung mitteilen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annoncer une fermeture"
+          }
         }
       }
     },
@@ -18246,6 +20196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teilt das Bild der Schließkarte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partage l’image de la carte de fermeture"
           }
         }
       }
@@ -18307,6 +20263,12 @@
             "state" : "translated",
             "value" : "Schließkarte. %1$@ %2$@, %3$@ geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carte de fermeture. %1$@ %2$@, %3$@ fermé"
+          }
         }
       }
     },
@@ -18361,6 +20323,12 @@
             "state" : "translated",
             "value" : "Erstellt und teilt eine Schließkarte"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crée et partage une carte de fermeture"
+          }
         }
       }
     },
@@ -18414,6 +20382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teilt die Schließkarte in Instagram Stories"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partage la carte de fermeture dans les stories Instagram"
           }
         }
       }
@@ -18476,6 +20450,12 @@
             "state" : "translated",
             "value" : "Keine Schließung"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune fermeture"
+          }
         }
       }
     },
@@ -18527,6 +20507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließmuster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rythme de fermeture"
           }
         }
       }
@@ -18586,6 +20572,12 @@
             "state" : "translated",
             "value" : "Geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé"
+          }
         }
       }
     },
@@ -18638,6 +20630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heute geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermé aujourd’hui"
           }
         }
       }
@@ -18693,6 +20691,12 @@
             "state" : "translated",
             "value" : "Kein Markt hat geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun magasin fermé"
+          }
         }
       }
     },
@@ -18745,6 +20749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließtage"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours de fermeture"
           }
         }
       }
@@ -18799,6 +20809,12 @@
             "state" : "translated",
             "value" : "Mitteilungen werden 3 Tage und 1 Tag vor Schließtagen gesendet."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des notifications seront envoyées 3 jours et 1 jour avant les jours de fermeture."
+          }
         }
       }
     },
@@ -18850,6 +20866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließtag-Hinweise"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alertes de jours de fermeture"
           }
         }
       }
@@ -18904,6 +20926,12 @@
             "state" : "translated",
             "value" : "Bitte aktiviere zuerst die Schließtag-Hinweise."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez d’abord activer les alertes de jours de fermeture."
+          }
         }
       }
     },
@@ -18955,6 +20983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erlaube Mitteilungen in den Einstellungen, um Schließtag-Hinweise zu erhalten."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour recevoir les alertes de jours de fermeture, autorisez les notifications dans Réglages."
           }
         }
       }
@@ -19008,6 +21042,12 @@
             "state" : "translated",
             "value" : "Keine Schließtag-Infos"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune info de fermeture"
+          }
         }
       }
     },
@@ -19060,6 +21100,12 @@
             "state" : "translated",
             "value" : "Keine Informationen zu Schließtagen vorhanden"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune information sur les jours de fermeture"
+          }
         }
       }
     },
@@ -19111,6 +21157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließtag-Kalender"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendrier des fermetures"
           }
         }
       }
@@ -19166,6 +21218,12 @@
             "state" : "translated",
             "value" : "Schließtag-Kalender ansehen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir le calendrier des fermetures"
+          }
         }
       }
     },
@@ -19219,6 +21277,12 @@
             "state" : "translated",
             "value" : "Schließtage auswählen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez les jours de fermeture"
+          }
         }
       }
     },
@@ -19271,6 +21335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kein Schließtag"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas un jour de fermeture"
           }
         }
       }
@@ -19330,6 +21400,12 @@
             "state" : "translated",
             "value" : "„%@“ gefunden. Prüfe es und tippe auf „Hinzufügen“."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "« %@ » trouvé. Vérifiez et touchez Ajouter."
+          }
         }
       }
     },
@@ -19387,6 +21463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Keine Schließungen in den nächsten 7 Tagen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune fermeture dans les 7 prochains jours"
           }
         }
       }
@@ -19446,6 +21528,12 @@
             "state" : "translated",
             "value" : "Keines deiner Restaurants hat in den nächsten 7 Tagen zu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun de vos restaurants ne ferme dans les 7 prochains jours"
+          }
         }
       }
     },
@@ -19503,6 +21591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diese Woche keine Schließungen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune fermeture cette semaine"
           }
         }
       }
@@ -19562,6 +21656,12 @@
             "state" : "translated",
             "value" : "Verwalten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gérer"
+          }
         }
       }
     },
@@ -19619,6 +21719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kannst eines über einen Naver-Maps-Link oder einen Screenshot hinzufügen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pouvez en ajouter un depuis un lien de partage Naver Maps ou une capture d’écran"
           }
         }
       }
@@ -19678,6 +21784,12 @@
             "state" : "translated",
             "value" : "Meine Restaurants"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes restaurants"
+          }
         }
       }
     },
@@ -19735,6 +21847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurants · 7 Tage"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurants · 7 jours"
           }
         }
       }
@@ -19794,6 +21912,12 @@
             "state" : "translated",
             "value" : "Restaurants hinzufügen oder bearbeiten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez ou modifiez vos restaurants"
+          }
         }
       }
     },
@@ -19851,6 +21975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noch keine Restaurants. Füge sie in der App hinzu."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun restaurant pour l’instant. Ajoutez-en dans l’app."
           }
         }
       }
@@ -19910,6 +22040,12 @@
             "state" : "translated",
             "value" : "Oder füge hier einen geteilten Link oder Text ein"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ou collez ici un lien ou un texte partagé"
+          }
         }
       }
     },
@@ -19967,6 +22103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schnellimport"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import rapide"
           }
         }
       }
@@ -20026,6 +22168,12 @@
             "state" : "translated",
             "value" : "Liest die Ruhetag-Info aus dem Foto direkt auf deinem Gerät"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lit sur votre appareil les infos de fermeture de la photo"
+          }
         }
       }
     },
@@ -20083,6 +22231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Foto konnte nicht geladen werden"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger la photo"
           }
         }
       }
@@ -20142,6 +22296,12 @@
             "state" : "translated",
             "value" : "Kein Restaurant geschlossen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun restaurant fermé"
+          }
         }
       }
     },
@@ -20199,6 +22359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screenshot"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capture d’écran"
           }
         }
       }
@@ -20258,6 +22424,12 @@
             "state" : "translated",
             "value" : "Restaurant löschen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer le restaurant"
+          }
         }
       }
     },
@@ -20316,6 +22488,12 @@
             "state" : "translated",
             "value" : "Name des Restaurants"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom du restaurant"
+          }
         }
       }
     },
@@ -20370,6 +22548,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurant"
@@ -20432,6 +22616,12 @@
             "state" : "translated",
             "value" : "Restaurant hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un restaurant"
+          }
         }
       }
     },
@@ -20489,6 +22679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurant hinzufügen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un restaurant"
           }
         }
       }
@@ -20548,6 +22744,12 @@
             "state" : "translated",
             "value" : "Restaurant bearbeiten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier le restaurant"
+          }
         }
       }
     },
@@ -20605,6 +22807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Keines deiner Restaurants hat in den nächsten 7 Tagen zu."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun de vos restaurants ne ferme dans les 7 prochains jours."
           }
         }
       }
@@ -20664,6 +22872,12 @@
             "state" : "translated",
             "value" : "Zeigt einen Punkt an den Tagen der nächsten 7, an denen deine Restaurants geschlossen sind."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche un point les jours, parmi les 7 prochains, où vos restaurants sont fermés."
+          }
         }
       }
     },
@@ -20721,6 +22935,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Füge Restaurants in der App hinzu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez des restaurants dans l’app"
           }
         }
       }
@@ -20780,6 +23000,12 @@
             "state" : "translated",
             "value" : "Als täglich geöffnet eingetragen – kein fester Ruhetag."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indiqué ouvert tous les jours : pas de jour de repos fixe."
+          }
         }
       }
     },
@@ -20837,6 +23063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Füge das Widget „Restaurants · 7 Tage“ zum Home-Bildschirm hinzu, um dies ohne Öffnen der App zu sehen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez le widget « Restaurants · 7 jours » à l’écran d’accueil pour le voir sans ouvrir l’app."
           }
         }
       }
@@ -20896,6 +23128,12 @@
             "state" : "translated",
             "value" : "So importieren"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer ceci"
+          }
         }
       }
     },
@@ -20953,6 +23191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Name wurde übernommen, aber es gibt keine Ruhetag-Info. Probiere einen Screenshot der Öffnungszeiten oder wähle die Tage unten aus."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nom a été récupéré, mais pas les infos de fermeture. Essayez une capture d’écran des horaires ou choisissez les jours ci-dessous."
           }
         }
       }
@@ -21012,6 +23256,12 @@
             "state" : "translated",
             "value" : "Trage die festen Ruhetage der Restaurants ein, die du besuchst, und wir markieren die Schließtage der nächsten 7 Tage mit einem Punkt."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indiquez les jours de repos fixes des restaurants où vous allez et nous marquerons d’un point les jours de fermeture des 7 prochains jours."
+          }
         }
       }
     },
@@ -21069,6 +23319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Punktfarbe"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur du point"
           }
         }
       }
@@ -21128,6 +23384,12 @@
             "state" : "translated",
             "value" : "Feste Ruhetage"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours de repos fixes"
+          }
         }
       }
     },
@@ -21185,6 +23447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adresse (optional)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse (facultatif)"
           }
         }
       }
@@ -21244,6 +23512,12 @@
             "state" : "translated",
             "value" : "Tippe in deiner Karten-App beim Restaurant auf „Teilen → Kopieren“ und füge es hier ein, oder wähle einen Screenshot der Infoseite."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dans votre app de cartes, touchez Partager → Copier sur le restaurant puis collez-le ici, ou choisissez une capture de sa page d’infos."
+          }
         }
       }
     },
@@ -21301,6 +23575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In Karten öffnen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir dans Plans"
           }
         }
       }
@@ -21360,6 +23640,12 @@
             "state" : "translated",
             "value" : "Ruhetag manuell hinzufügen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un jour de repos manuellement"
+          }
         }
       }
     },
@@ -21417,6 +23703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitte füge einen Ruhetag hinzu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez ajouter un jour de repos"
           }
         }
       }
@@ -21476,6 +23768,12 @@
             "state" : "translated",
             "value" : "Ruhetag-Info bearbeiten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier les infos de fermeture"
+          }
         }
       }
     },
@@ -21533,6 +23831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ruhetag-Info wird gesucht …"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherche des infos de fermeture…"
           }
         }
       }
@@ -21592,6 +23896,12 @@
             "state" : "translated",
             "value" : "Keine Ruhetag-Info gefunden. Wähle die Tage unten aus."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Infos de fermeture introuvables. Choisissez les jours ci-dessous."
+          }
         }
       }
     },
@@ -21650,6 +23960,12 @@
             "state" : "translated",
             "value" : "Beitrag 4:5"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Publication 4:5"
+          }
         }
       }
     },
@@ -21704,6 +24020,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -21766,6 +24088,12 @@
             "state" : "translated",
             "value" : "Schließkalender für 2 Wochen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendrier de fermetures sur 2 semaines"
+          }
         }
       }
     },
@@ -21823,6 +24151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Demnächst"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À venir"
           }
         }
       }
@@ -21882,6 +24216,12 @@
             "state" : "translated",
             "value" : "Suche im App Store nach „DontGoMart“"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherchez « DontGoMart » sur l’App Store"
+          }
         }
       }
     },
@@ -21939,6 +24279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Märkte geschlossen!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magasins fermés !"
           }
         }
       }
@@ -21998,6 +24344,12 @@
             "state" : "translated",
             "value" : "Foto"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo"
+          }
         }
       }
     },
@@ -22056,6 +24408,12 @@
             "state" : "translated",
             "value" : "Video"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vidéo"
+          }
         }
       }
     },
@@ -22110,6 +24468,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Format"
@@ -22172,6 +24536,12 @@
             "state" : "translated",
             "value" : "Medium"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Média"
+          }
         }
       }
     },
@@ -22229,6 +24599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließkarte. %1$@ %2$@, %3$@ geschlossen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carte de fermeture. %1$@ %2$@, %3$@ fermé"
           }
         }
       }
@@ -22288,6 +24664,12 @@
             "state" : "translated",
             "value" : "Video wird erstellt"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Création de la vidéo"
+          }
         }
       }
     },
@@ -22345,6 +24727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auf Instagram posten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Publier sur Instagram"
           }
         }
       }
@@ -22404,6 +24792,12 @@
             "state" : "translated",
             "value" : "Wähle in der Teilen-Liste Instagram, um es als Beitrag, Story oder Reel zu posten"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez Instagram dans la liste de partage pour publier en post, story ou reel"
+          }
         }
       }
     },
@@ -22461,6 +24855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öffnet direkt den Instagram-Story-Editor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre directement l’éditeur de stories Instagram"
           }
         }
       }
@@ -22520,6 +24920,12 @@
             "state" : "translated",
             "value" : "Teilen"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager"
+          }
         }
       }
     },
@@ -22577,6 +24983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teilt das Schließtag-Video"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partage la vidéo de fermeture"
           }
         }
       }
@@ -22636,6 +25048,12 @@
             "state" : "translated",
             "value" : "Das Video konnte nicht erstellt werden. Teile stattdessen das Foto."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de créer la vidéo. Partagez plutôt la photo."
+          }
         }
       }
     },
@@ -22694,6 +25112,12 @@
             "state" : "translated",
             "value" : "Ab %@ wieder geöffnet"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rouvre %@"
+          }
         }
       }
     },
@@ -22751,6 +25175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erledige den Einkauf bis %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminez vos courses avant %@"
           }
         }
       }

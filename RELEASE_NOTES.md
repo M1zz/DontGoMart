@@ -60,6 +60,12 @@ Widgets zeigen jetzt DontGoMart an
 Antworten auf dein Feedback ansehen
 Feedback fragt nach dem Hergang
 
+### App Store (fr)
+
+Les widgets affichent DontGoMart
+Réponses à vos avis dans Réglages
+L’avis demande ce qui s’est passé
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
