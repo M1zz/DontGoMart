@@ -51,6 +51,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -100,6 +106,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -157,6 +169,12 @@
             "state" : "translated",
             "value" : "Se necesita la ubicación para buscar y recomendar tiendas cercanas."
           }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Standort wird benötigt, um Märkte in deiner Nähe zu finden und zu empfehlen."
+          }
         }
       }
     },
@@ -209,6 +227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se necesita para guardar en tu fototeca las fotos y los vídeos de las tarjetas de cierre."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird benötigt, um Fotos und Videos der Schließkarten in deiner Mediathek zu sichern."
           }
         }
       }

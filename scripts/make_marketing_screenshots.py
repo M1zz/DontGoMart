@@ -80,6 +80,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Añade tu tienda<br>de barrio", "Patrones como el segundo y el cuarto martes"),
         ("05-share.png", "dark", "Comparte un cierre<br>en una tarjeta", "Avisa a tu familia y a tus vecinos"),
     ],
+    "de": [
+        ("01-main.png", "hero-bleed", "Vorher prüfen,<br>dann losgehen", "Sieh auf einen Blick, ob der Markt offen ist"),
+        ("02-calendar.png", "left-text", "Die Schließtage<br>dieses Monats", "Jeder Schließtag direkt im Kalender"),
+        ("03-marts.png", "text-bottom", "Nur deine Märkte", "Supermärkte, Costco, Feiertagsschließungen"),
+        ("04-pattern.png", "flat-rotate", "Füge deinen<br>Markt um die Ecke hinzu", "Muster wie zweiter und vierter Dienstag"),
+        ("05-share.png", "dark", "Schließung teilen<br>mit einer Karte", "Sag Familie und Nachbarn Bescheid"),
+    ],
 }
 
 BASE_CSS = f"""

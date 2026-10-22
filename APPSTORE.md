@@ -467,3 +467,61 @@ https://m1zz.github.io/DontGoMart/es/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/es/
+
+## de
+
+### 이름
+
+DontGoMart: Schließtage
+
+### 부제
+
+Nie wieder umsonst fahren
+
+### 키워드
+
+Supermarkt,Großmarkt,Korea,Seoul,Öffnungszeiten,Sonntag,Feiertage,Chuseok,Einkauf,Kalender,Widget
+
+### 프로모션 텍스트
+
+Jetzt auch mit den Ruhetagen deiner Lieblingsrestaurants: Ein Naver-Maps-Link oder ein Screenshot genügt, und die App meldet sich, bevor ein Schließtag naht.
+
+### 설명
+
+Prüfe vor dem Losgehen, ob dein Markt geöffnet hat.
+DontGoMart zeigt dir die gesetzlichen Schließtage koreanischer Supermärkte und von Costco gesammelt an und erinnert dich rechtzeitig, bevor einer ansteht.
+
+Sofort sehen, ob du heute hinkannst
+Beim Öffnen der App siehst du als Erstes, ob dein gewählter Markt heute geöffnet hat. Dazu die Tage bis zum nächsten Schließtag und eine Liste der kommenden Schließtage.
+
+Auch für regional unterschiedliche Schließtage
+Wähle Märkte, die sonntags oder mittwochs schließen, oder Regionen mit anderen Schließtagen wie Ulsan und Jeju. Bei Costco lassen sich normale Märkte und die Filialen in Daegu, Ilsan und Ulsan einzeln einstellen. Auch die Schließtage an Seollal (Mondneujahr) und Chuseok werden angezeigt.
+
+Märkte aus deiner Nachbarschaft selbst hinzufügen
+Fehlt ein Markt in der Liste, lege ihn selbst an: Bestimme, in welcher Woche und an welchem Wochentag er schließt, etwa am zweiten und vierten Sonntag.
+
+Ruhetage deiner Lieblingsrestaurants gleich mit
+Trage die festen Ruhetage der Restaurants ein, die du gern besuchst, und die Tage der nächsten 7, an denen sie zu haben, werden mit Punkten markiert. Füge einfach den in Naver Maps geteilten und kopierten Link ein oder wähle einen Screenshot der Restaurant-Infoseite, und der Ruhetag wird automatisch ausgefüllt. Text im Foto wird nur auf deinem Gerät gelesen.
+
+Hinweise, damit du nichts vergisst
+Wähle 1, 2, 3 oder 7 Tage vor dem Schließtag und eine Uhrzeit, zu der du benachrichtigt werden möchtest. Am Tag vor einem Schließtag erinnern wir dich noch einmal daran, dass heute ein guter Tag zum Einkaufen ist. Steht ein Schließtag innerhalb von 3 Tagen an, erscheint auch oben in der App ein Banner.
+
+Widgets für Home- und Sperrbildschirm
+Mit den Widgets siehst du den nächsten Schließtag, die kommenden zwei Schließtage mit den verbleibenden Tagen, ob dein Markt diesen Sonntag geöffnet hat und die Ruhetage deiner Lieblingsrestaurants für 7 Tage. Das Widget für diesen Sonntag und das Restaurant-Widget lassen sich auch auf dem Sperrbildschirm platzieren.
+
+Kalender und Teilen
+Im Kalender siehst du die Schließtage eines ganzen Monats. Eine Schließung kannst du als Karte mit Zwei-Wochen-Kalender und Einkaufstipp teilen – im Format für Instagram-Beiträge und -Stories oder als kurzes Video.
+
+Alle Funktionen sind kostenlos. Wenn dir die App gefällt, unterstütze die Entwicklung gern mit einem Kaffee.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/de/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/de/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/de/
