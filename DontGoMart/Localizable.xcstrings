@@ -36,6 +36,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — закупитесь заранее"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — 购物请趁早"
+          }
         }
       }
     },
@@ -62,6 +68,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -96,6 +108,12 @@
             "state" : "translated",
             "value" : "Удалить: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除%@"
+          }
         }
       }
     },
@@ -125,6 +143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑%@"
           }
         }
       }
@@ -161,6 +185,12 @@
             "state" : "translated",
             "value" : "%@ — выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@休业"
+          }
         }
       }
     },
@@ -190,6 +220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ — выходной Pro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@休业 Pro"
           }
         }
       }
@@ -226,6 +262,12 @@
             "state" : "translated",
             "value" : "Закрыто: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@休业"
+          }
         }
       }
     },
@@ -256,6 +298,12 @@
             "state" : "translated",
             "value" : "Выходной: %@!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@休业！"
+          }
         }
       }
     },
@@ -282,6 +330,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -321,6 +375,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -347,6 +407,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -382,6 +448,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -411,6 +483,12 @@
             "state" : "translated",
             "value" : "%lld шт."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 项"
+          }
         }
       }
     },
@@ -439,6 +517,12 @@
             "state" : "translated",
             "value" : "%lld мин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 分钟"
+          }
         }
       }
     },
@@ -466,6 +550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld ч"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 点"
           }
         }
       }
@@ -504,6 +594,12 @@
             "state" : "translated",
             "value" : "Осталось дней: %lld"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还剩 %lld 天"
+          }
         }
       }
     },
@@ -534,6 +630,12 @@
             "state" : "translated",
             "value" : "За %lld дн."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提前 %lld 天"
+          }
         }
       }
     },
@@ -561,6 +663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Неделя %lld"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第 %lld 周"
           }
         }
       }
@@ -595,6 +703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Через %lld нед.: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 周后 %@"
           }
         }
       }
@@ -632,6 +746,12 @@
             "state" : "translated",
             "value" : "Неделя %lld: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第 %lld 周 %@"
+          }
         }
       }
     },
@@ -666,6 +786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удобнее с VoiceOver"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver 更好用"
           }
         }
       }
@@ -702,6 +828,12 @@
             "state" : "translated",
             "value" : "Siri и «Команды»"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 与快捷指令"
+          }
         }
       }
     },
@@ -737,6 +869,12 @@
             "state" : "translated",
             "value" : "Спросите Siri или запустите команду, чтобы сразу узнать, закрыт ли ваш магазин."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "问问 Siri，或运行快捷指令，马上知道你的店今天是否休业。"
+          }
         }
       }
     },
@@ -763,6 +901,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -797,6 +941,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -823,6 +973,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -857,6 +1013,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -877,6 +1039,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -916,6 +1084,12 @@
             "state" : "translated",
             "value" : "Даже при самом крупном тексте экраны аккуратно перестраиваются, и ничего не обрезается."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使使用最大字号，页面也会重新排版，内容不会被截断。"
+          }
         }
       }
     },
@@ -950,6 +1124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сотрите выбранные и добавленные магазины и настройки уведомлений прямо в приложении."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App 内一次清除已选店铺、添加的店铺和通知设置。"
           }
         }
       }
@@ -986,6 +1166,12 @@
             "state" : "translated",
             "value" : "Объявление"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公告"
+          }
         }
       }
     },
@@ -1014,6 +1200,12 @@
             "state" : "translated",
             "value" : "Открывает объявление целиком"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看公告全文"
+          }
         }
       }
     },
@@ -1041,6 +1233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть объявление"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭公告"
           }
         }
       }
@@ -1077,6 +1275,12 @@
             "state" : "translated",
             "value" : "Тёмная тема"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
         }
       }
     },
@@ -1111,6 +1315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выходные видны, даже если включена повышенная контрастность или трудно различать цвета."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使开启“增强对比度”或不易分辨颜色，也能看清休业日。"
           }
         }
       }
@@ -1147,6 +1357,12 @@
             "state" : "translated",
             "value" : "Больше языков"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多语言"
+          }
         }
       }
     },
@@ -1181,6 +1397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пользуйтесь приложением на большем числе языков."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用更多语言使用 App。"
           }
         }
       }
@@ -1217,6 +1439,12 @@
             "state" : "translated",
             "value" : "Сохраняйте добавленные магазины в файл и возвращайте их в любой момент."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把你添加的店铺保存为文件，随时可以再导入。"
+          }
         }
       }
     },
@@ -1252,6 +1480,12 @@
             "state" : "translated",
             "value" : "Удалить все мои данные"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一键清除我的数据"
+          }
         }
       }
     },
@@ -1285,6 +1519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оповещение о выходном дне магазина"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺休业提醒"
           }
         }
       }
@@ -1321,6 +1561,12 @@
             "state" : "translated",
             "value" : "Текст и кнопки чётко видны на тёмном экране."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在深色屏幕上，文字和按钮依然清晰。"
+          }
         }
       }
     },
@@ -1355,6 +1601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Цвета, которые проще различать"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更易辨认的颜色"
           }
         }
       }
@@ -1391,6 +1643,12 @@
             "state" : "translated",
             "value" : "На iPad выбирайте магазины и листайте календарь только с клавиатуры."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 iPad 上，只用键盘就能选择店铺、翻看日历。"
+          }
         }
       }
     },
@@ -1425,6 +1683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что нового после обновлений"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新后的新内容"
           }
         }
       }
@@ -1461,6 +1725,12 @@
             "state" : "translated",
             "value" : "При первом запуске после обновления вы увидите, что появилось нового."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新后首次打开时，告诉你有哪些新功能。"
+          }
         }
       }
     },
@@ -1495,6 +1765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полезные советы"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用小技巧"
           }
         }
       }
@@ -1531,6 +1807,12 @@
             "state" : "translated",
             "value" : "В подходящий момент ненавязчиво подскажем полезные функции."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在合适的时候，轻轻提示实用功能。"
+          }
         }
       }
     },
@@ -1565,6 +1847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Резервная копия и экспорт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "备份与导出"
           }
         }
       }
@@ -1601,6 +1889,12 @@
             "state" : "translated",
             "value" : "Если приложение закроется во время добавления магазина, введённое сохранится."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加店铺时即使 App 被关闭，已输入的内容也会保留。"
+          }
         }
       }
     },
@@ -1628,6 +1922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "и ещё: %lld"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "另有 %lld 家"
           }
         }
       }
@@ -1664,6 +1964,12 @@
             "state" : "translated",
             "value" : "VoiceOver полностью и в правильном порядке читает выходные дни и кнопки."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver 会按正确的顺序完整朗读休业日和按钮。"
+          }
         }
       }
     },
@@ -1698,6 +2004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Крупный текст"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "适配大字号"
           }
         }
       }
@@ -1734,6 +2046,12 @@
             "state" : "translated",
             "value" : "Управление с клавиатуры"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "键盘操作"
+          }
         }
       }
     },
@@ -1768,6 +2086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Краткое руководство"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新手指南"
           }
         }
       }
@@ -1804,6 +2128,12 @@
             "state" : "translated",
             "value" : "При первом запуске в нескольких шагах покажем, что умеет приложение."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首次打开时，用几个简短步骤介绍 App 能做什么。"
+          }
         }
       }
     },
@@ -1838,6 +2168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Для складного iPhone"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为折叠屏 iPhone 而设计"
           }
         }
       }
@@ -1874,6 +2210,12 @@
             "state" : "translated",
             "value" : "На складном iPhone широкий экран делится на две панели."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在折叠屏 iPhone 上，宽屏会分成左右两栏。"
+          }
         }
       }
     },
@@ -1909,6 +2251,12 @@
             "state" : "translated",
             "value" : "Продолжайте с того же места"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从上次的地方继续"
+          }
         }
       }
     },
@@ -1929,6 +2277,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -1957,6 +2311,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -1981,6 +2341,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -2001,6 +2367,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -2033,6 +2405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Напоминание: пора за покупками"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 适合购物的日子提醒"
           }
         }
       }
@@ -2067,6 +2445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Хороший день для покупок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 今天适合购物"
           }
         }
       }
@@ -2104,6 +2488,12 @@
             "state" : "translated",
             "value" : "Предупредит, если выходной день наступит в течение недели!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一周内有休业日时提醒你！"
+          }
         }
       }
     },
@@ -2130,6 +2520,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -2170,6 +2566,12 @@
             "state" : "translated",
             "value" : "Виджет оповещения о выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业提醒小组件"
+          }
         }
       }
     },
@@ -2206,6 +2608,12 @@
             "state" : "translated",
             "value" : "Виджет обратного отсчёта до выходного"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业倒计时小组件"
+          }
         }
       }
     },
@@ -2232,6 +2640,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -2266,6 +2680,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -2292,6 +2712,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -2326,6 +2752,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -2352,6 +2784,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -2390,6 +2828,12 @@
             "state" : "translated",
             "value" : "Завтра «%@» закрыт. Сегодня самое время сходить за покупками!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@明天休业。今天正适合去购物！"
+          }
         }
       }
     },
@@ -2423,6 +2867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "«%@» закроется через %lld дн."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@将在 %lld 天后休业。"
           }
         }
       }
@@ -2459,6 +2909,12 @@
             "state" : "translated",
             "value" : "«%@» закроется через %lld дн."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@将在 %lld 天后休业。"
+          }
         }
       }
     },
@@ -2493,6 +2949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не забудьте закупиться до следующего выходного!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "别忘了在下一个休业日之前去购物！"
           }
         }
       }
@@ -2529,6 +2991,12 @@
             "state" : "translated",
             "value" : "Следите и за выходными местных магазинов"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当地店铺的休业日也能管理"
+          }
         }
       }
     },
@@ -2563,6 +3031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте график выходных своего магазина"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登记你自己店铺的休业规律"
           }
         }
       }
@@ -2599,6 +3073,12 @@
             "state" : "translated",
             "value" : "Избранное всегда сверху"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏的店铺始终显示在最前面"
+          }
         }
       }
     },
@@ -2633,6 +3113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавляйте любимые магазины в закладки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏你常去的店铺"
           }
         }
       }
@@ -2669,6 +3155,12 @@
             "state" : "translated",
             "value" : "Разовая покупка открывает все функции навсегда"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次性购买，永久解锁全部功能"
+          }
         }
       }
     },
@@ -2703,6 +3195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перейдите на DontGoMart Pro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升级到 DontGoMart Pro"
           }
         }
       }
@@ -2739,6 +3237,12 @@
             "state" : "translated",
             "value" : "Проверяйте выходные E-Mart, Costco и Homeplus сразу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次查看 E-Mart、Costco、Homeplus 的休业日"
+          }
         }
       }
     },
@@ -2773,6 +3277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Следите сразу за несколькими магазинами"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同时关注多家店铺"
           }
         }
       }
@@ -2809,6 +3319,12 @@
             "state" : "translated",
             "value" : "Напоминания перед выходными — и никаких напрасных поездок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日前收到提醒，不再白跑一趟"
+          }
         }
       }
     },
@@ -2843,6 +3359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Больше никаких поездок к закрытым магазинам"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不再扑空闭门的店铺"
           }
         }
       }
@@ -2879,6 +3401,12 @@
             "state" : "translated",
             "value" : "Добавляйте сколько угодно товаров"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "想加多少就加多少"
+          }
         }
       }
     },
@@ -2913,6 +3441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Список покупок без ограничений"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限数量的购物清单"
           }
         }
       }
@@ -2949,6 +3483,12 @@
             "state" : "translated",
             "value" : "☕ По цене чашки кофе — все функции навсегда"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ 一杯咖啡的价钱，永久解锁全部功能"
+          }
         }
       }
     },
@@ -2983,6 +3523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уведомления придут за %1$lld и за %2$lld дн. до выходного в %3$@."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将在休业日前 %1$lld 天和 %2$lld 天的 %3$@ 通知你。"
           }
         }
       }
@@ -3020,6 +3566,12 @@
             "state" : "translated",
             "value" : "Зелёным или красным показывает, работает ли ваш магазин в это воскресенье."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用绿色或红色显示你的店铺本周日是否营业。"
+          }
         }
       }
     },
@@ -3053,6 +3605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показывает два ближайших выходных дня!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示接下来的两个休业日！"
           }
         }
       }
@@ -3090,6 +3648,12 @@
             "state" : "translated",
             "value" : "Показывает, сколько дней осталось до следующего выходного!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示距离下一个休业日还有几天！"
+          }
         }
       }
     },
@@ -3126,6 +3690,12 @@
             "state" : "translated",
             "value" : "Воскресенье: открыто или закрыто"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "周日营业情况"
+          }
         }
       }
     },
@@ -3156,6 +3726,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -3182,6 +3758,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -3222,6 +3804,12 @@
             "state" : "translated",
             "value" : "Виджет двух выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "两个休业日小组件"
+          }
         }
       }
     },
@@ -3251,6 +3839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрывает слова благодарности"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭感谢消息"
           }
         }
       }
@@ -3282,6 +3876,12 @@
             "state" : "translated",
             "value" : "Спасибо!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "谢谢你！"
+          }
         }
       }
     },
@@ -3312,6 +3912,12 @@
             "state" : "translated",
             "value" : "Отправляет разработчику на чашку кофе"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请开发者喝一杯咖啡"
+          }
         }
       }
     },
@@ -3341,6 +3947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поддержать разработчика"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "给开发者打赏"
           }
         }
       }
@@ -3377,6 +3989,12 @@
             "state" : "translated",
             "value" : "Часть Кёнгидо / Чхонджу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "京畿部分地区/清州"
+          }
         }
       }
     },
@@ -3407,6 +4025,12 @@
             "state" : "translated",
             "value" : "Спасибо, до новых встреч"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "谢谢，下次再见"
+          }
         }
       }
     },
@@ -3435,6 +4059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скоро выходной"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即将休业"
           }
         }
       }
@@ -3465,6 +4095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поделиться"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
           }
         }
       }
@@ -3500,6 +4136,12 @@
             "state" : "translated",
             "value" : "Праздник"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "节假日"
+          }
         }
       }
     },
@@ -3527,6 +4169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Восстановить покупки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复购买"
           }
         }
       }
@@ -3563,6 +4211,12 @@
             "state" : "translated",
             "value" : "Функция"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "功能"
+          }
         }
       }
     },
@@ -3590,6 +4244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мои магазины"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的店铺"
           }
         }
       }
@@ -3626,6 +4286,12 @@
             "state" : "translated",
             "value" : "Завтра"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天"
+          }
         }
       }
     },
@@ -3654,6 +4320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Завтра закрыт: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天%@休业"
           }
         }
       }
@@ -3692,6 +4364,12 @@
             "state" : "translated",
             "value" : "Завтра выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天休业"
+          }
         }
       }
     },
@@ -3719,6 +4397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ближайшие выходные"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即将到来的休业日"
           }
         }
       }
@@ -3749,6 +4433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Следующий месяц"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下个月"
           }
         }
       }
@@ -3787,6 +4477,12 @@
             "state" : "translated",
             "value" : "На следующей неделе: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下%@"
+          }
         }
       }
     },
@@ -3822,6 +4518,12 @@
             "state" : "translated",
             "value" : "Следующий выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一个休业日"
+          }
         }
       }
     },
@@ -3850,6 +4552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напомним о покупках за 2 дня до следующего выходного."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会在下一个休业日的 2 天前提醒你去购物。"
           }
         }
       }
@@ -3888,6 +4596,12 @@
             "state" : "translated",
             "value" : "Нет данных о выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有休业日信息"
+          }
         }
       }
     },
@@ -3917,6 +4631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не сейчас"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以后再说"
           }
         }
       }
@@ -3953,6 +4673,12 @@
             "state" : "translated",
             "value" : "Следите за несколькими магазинами одновременно"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同时关注多家店铺"
+          }
         }
       }
     },
@@ -3988,6 +4714,12 @@
             "state" : "translated",
             "value" : "Несколько магазинов"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "多店铺关注"
+          }
         }
       }
     },
@@ -4017,6 +4749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
           }
         }
       }
@@ -4048,6 +4786,12 @@
             "state" : "translated",
             "value" : "Открывает календарь с выходными днями"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开日历查看休业日"
+          }
         }
       }
     },
@@ -4076,6 +4820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тэгу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱"
           }
         }
       }
@@ -4112,6 +4862,12 @@
             "state" : "translated",
             "value" : "Costco Тэгу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -4145,6 +4901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тэгу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱"
           }
         }
       }
@@ -4180,6 +4942,12 @@
             "state" : "translated",
             "value" : "Тэгу, Тэгу Хёксин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱店、大邱革新店"
+          }
         }
       }
     },
@@ -4208,6 +4976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市"
           }
         }
       }
@@ -4243,6 +5017,12 @@
             "state" : "translated",
             "value" : "Супермаркет (выходной в среду)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周三休业）"
+          }
         }
       }
     },
@@ -4276,6 +5056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет (выходной в среду)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周三休业）"
           }
         }
       }
@@ -4311,6 +5097,12 @@
             "state" : "translated",
             "value" : "Супермаркет (ср)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周三）"
+          }
         }
       }
     },
@@ -4344,6 +5136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет (Ульсан, смешанный)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山混合）"
           }
         }
       }
@@ -4379,6 +5177,12 @@
             "state" : "translated",
             "value" : "Супермаркет (Ульсан)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山）"
+          }
         }
       }
     },
@@ -4412,6 +5216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет (Ульсан)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山）"
           }
         }
       }
@@ -4447,6 +5257,12 @@
             "state" : "translated",
             "value" : "Супермаркет (выходной в воскресенье)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周日休业）"
+          }
         }
       }
     },
@@ -4480,6 +5296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет (выходной в воскресенье)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周日休业）"
           }
         }
       }
@@ -4515,6 +5337,12 @@
             "state" : "translated",
             "value" : "Супермаркет (вс)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（周日）"
+          }
         }
       }
     },
@@ -4548,6 +5376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супермаркет (Чеджу)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（济州）"
           }
         }
       }
@@ -4583,6 +5417,12 @@
             "state" : "translated",
             "value" : "Супермаркет (Чеджу)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（济州）"
+          }
         }
       }
     },
@@ -4617,6 +5457,12 @@
             "state" : "translated",
             "value" : "Супермаркет (Чеджу)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（济州）"
+          }
         }
       }
     },
@@ -4647,6 +5493,12 @@
             "state" : "translated",
             "value" : "Если приложение помогло, поддержите нас чашкой кофе."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果这个 App 帮到了你，请用一杯咖啡给我们打打气。"
+          }
         }
       }
     },
@@ -4673,6 +5525,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -4708,6 +5566,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -4738,6 +5602,12 @@
             "state" : "translated",
             "value" : "Дважды коснитесь, чтобы закрыть"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "轻点两下即可关闭"
+          }
         }
       }
     },
@@ -4767,6 +5637,12 @@
             "state" : "translated",
             "value" : "Магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺"
+          }
         }
       }
     },
@@ -4795,6 +5671,12 @@
             "state" : "translated",
             "value" : "Перед походом в магазин проверьте выходные в DontGoMart ✅"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "去店铺之前，先用 DontGoMart 查看休业日 ✅"
+          }
         }
       }
     },
@@ -4822,6 +5704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Цвет магазина"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺颜色"
           }
         }
       }
@@ -4857,6 +5745,12 @@
             "state" : "translated",
             "value" : "Выберите магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择店铺"
+          }
         }
       }
     },
@@ -4884,6 +5778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Название магазина (напр., Homeplus Gangnam)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺名称（例：Homeplus 江南店）"
           }
         }
       }
@@ -4913,6 +5813,12 @@
             "state" : "translated",
             "value" : "О магазине"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺信息"
+          }
         }
       }
     },
@@ -4940,6 +5846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить магазин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加店铺"
           }
         }
       }
@@ -4969,6 +5881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Магазин закрыт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺休业"
           }
         }
       }
@@ -5005,6 +5923,12 @@
             "state" : "translated",
             "value" : "Уведомление о выходном дне магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺休业日提醒"
+          }
         }
       }
     },
@@ -5034,6 +5958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оповещение о выходном дне магазина"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺休业日提醒"
           }
         }
       }
@@ -5070,6 +6000,12 @@
             "state" : "translated",
             "value" : "Магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺"
+          }
         }
       }
     },
@@ -5104,6 +6040,12 @@
             "state" : "translated",
             "value" : "Магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺"
+          }
         }
       }
     },
@@ -5133,6 +6075,12 @@
             "state" : "translated",
             "value" : "Выбор магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择店铺"
+          }
         }
       }
     },
@@ -5160,6 +6108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Открывает выбор магазина и настройки уведомлений"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开店铺选择和通知设置"
           }
         }
       }
@@ -5196,6 +6150,12 @@
             "state" : "translated",
             "value" : "Зависит от магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各店不同"
+          }
         }
       }
     },
@@ -5224,6 +6184,12 @@
             "state" : "translated",
             "value" : "Выбор магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择店铺"
+          }
         }
       }
     },
@@ -5251,6 +6217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите магазин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择店铺"
           }
         }
       }
@@ -5287,6 +6259,12 @@
             "state" : "translated",
             "value" : "Магазин не выбран. Выберите его в настройках."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未选择店铺。请在设置中选择。"
+          }
         }
       }
     },
@@ -5317,6 +6295,12 @@
             "state" : "translated",
             "value" : "Еженедельно: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每%@"
+          }
         }
       }
     },
@@ -5346,6 +6330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все функции остаются бесплатными. Поддержка — это просто знак внимания, и отправить её можно сколько угодно раз."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有功能依然免费。打赏纯属心意，想打赏几次都可以。"
           }
         }
       }
@@ -5384,6 +6374,12 @@
             "state" : "translated",
             "value" : "Послезавтра"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "后天"
+          }
         }
       }
     },
@@ -5418,6 +6414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Список покупок без ограничения по количеству"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购物清单不限数量"
           }
         }
       }
@@ -5454,6 +6456,12 @@
             "state" : "translated",
             "value" : "Список покупок без ограничений"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限数量的购物清单"
+          }
         }
       }
     },
@@ -5489,6 +6497,12 @@
             "state" : "translated",
             "value" : "Перейдите на Pro — без ограничения по количеству покупок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升级后可添加不限数量的购物项目"
+          }
         }
       }
     },
@@ -5517,6 +6531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Версия"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
           }
         }
       }
@@ -5548,6 +6568,12 @@
             "state" : "translated",
             "value" : "Благодаря вашей поддержке мы продолжаем развивать приложение."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有你的支持，我们才能继续把 App 做下去。"
+          }
         }
       }
     },
@@ -5578,6 +6604,12 @@
             "state" : "translated",
             "value" : "Ваша поддержка очень важна. (☕️ ×%lld на данный момент)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的支持对我们意义重大。（目前共 ☕️ ×%lld）"
+          }
         }
       }
     },
@@ -5605,6 +6637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "мин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分钟"
           }
         }
       }
@@ -5634,6 +6672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Быстрые действия"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快捷操作"
           }
         }
       }
@@ -5672,6 +6716,12 @@
             "state" : "translated",
             "value" : "Не выбрано"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未选择"
+          }
         }
       }
     },
@@ -5700,6 +6750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сбросить выбор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清除选择"
           }
         }
       }
@@ -5735,6 +6791,12 @@
             "state" : "translated",
             "value" : "Магазины не выбраны. Откройте приложение и выберите магазин."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未选择店铺。请打开 App 选择店铺。"
+          }
         }
       }
     },
@@ -5762,6 +6824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выбранный шаблон"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已选规律"
           }
         }
       }
@@ -5800,6 +6868,12 @@
             "state" : "translated",
             "value" : "Выбрано"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已选择"
+          }
         }
       }
     },
@@ -5829,6 +6903,12 @@
             "state" : "translated",
             "value" : "Все выбранные магазины работают"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有已选店铺都营业"
+          }
         }
       }
     },
@@ -5857,6 +6937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все выбранные магазины закрыты"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有已选店铺都休业"
           }
         }
       }
@@ -5892,6 +6978,12 @@
             "state" : "translated",
             "value" : "Праздники: лунный Новый год и Чхусок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "春节/中秋节假日"
+          }
         }
       }
     },
@@ -5919,6 +7011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
           }
         }
       }
@@ -5950,6 +7048,12 @@
             "state" : "translated",
             "value" : "Выберите в настройках магазины для отслеживания"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在设置中选择要关注的店铺"
+          }
         }
       }
     },
@@ -5979,6 +7083,12 @@
             "state" : "translated",
             "value" : "Выберите в настройках магазины для отслеживания"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在设置中选择要关注的店铺"
+          }
         }
       }
     },
@@ -6007,6 +7117,12 @@
             "state" : "translated",
             "value" : "Перейти в настройки"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往设置"
+          }
         }
       }
     },
@@ -6034,6 +7150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Час"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时"
           }
         }
       }
@@ -6070,6 +7192,12 @@
             "state" : "translated",
             "value" : "Неизвестно"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知"
+          }
         }
       }
     },
@@ -6097,6 +7225,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нужно разрешение на уведомления"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要通知权限"
           }
         }
       }
@@ -6127,6 +7261,12 @@
             "state" : "translated",
             "value" : "Настройки уведомлений"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知设置"
+          }
         }
       }
     },
@@ -6154,6 +7294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время уведомления"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知时间"
           }
         }
       }
@@ -6184,6 +7330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Когда уведомлять"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒时间"
           }
         }
       }
@@ -6220,6 +7372,12 @@
             "state" : "translated",
             "value" : "Уведомления перед выходными"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日前收到通知"
+          }
         }
       }
     },
@@ -6254,6 +7412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уведомления"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
           }
         }
       }
@@ -6290,6 +7454,12 @@
             "state" : "translated",
             "value" : "Уведомления перед выходными"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日前收到通知"
+          }
         }
       }
     },
@@ -6317,6 +7487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уведомления"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
           }
         }
       }
@@ -6347,6 +7523,12 @@
             "state" : "translated",
             "value" : "Оставить отзыв в App Store"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 留下评价"
+          }
         }
       }
     },
@@ -6375,6 +7557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Открыть в App Store"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 中查看"
           }
         }
       }
@@ -6406,6 +7594,12 @@
             "state" : "translated",
             "value" : "Спасибо, что поддерживаете приложение ☕️"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感谢你支持这个 App ☕️"
+          }
         }
       }
     },
@@ -6434,6 +7628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Янпхён, Тэджон, Янчжэ, \nСанбон, Пусан, Кванмён, \nЧхонан, Ыйджонбу, Консе, \nСондо, Седжон, Ханам, \nКимхэ, Кочхок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "杨平店、大田店、良才店、\n上凤店、釜山店、光明店、\n天安店、议政府店、公世店、\n松岛店、世宗店、河南店、\n金海店、高尺店"
           }
         }
       }
@@ -6468,6 +7668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Открыто"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "营业"
           }
         }
       }
@@ -6504,6 +7710,12 @@
             "state" : "translated",
             "value" : "Открыто"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "营业中"
+          }
         }
       }
     },
@@ -6532,6 +7744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сегодня открыто"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天营业"
           }
         }
       }
@@ -6568,6 +7786,12 @@
             "state" : "translated",
             "value" : "Сегодня"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天"
+          }
         }
       }
     },
@@ -6596,6 +7820,12 @@
             "state" : "translated",
             "value" : "Сегодня закрыт: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天%@休业"
+          }
         }
       }
     },
@@ -6623,6 +7853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Можно сегодня идти?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天能去吗？"
           }
         }
       }
@@ -6659,6 +7895,12 @@
             "state" : "translated",
             "value" : "Сегодня все выбранные магазины открыты."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天所有已选店铺都营业。"
+          }
         }
       }
     },
@@ -6694,6 +7936,12 @@
             "state" : "translated",
             "value" : "Сегодня все выбранные магазины закрыты."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天所有已选店铺都休业。"
+          }
         }
       }
     },
@@ -6724,6 +7972,12 @@
             "state" : "translated",
             "value" : "Делится сегодняшним статусом и ближайшими выходными"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享今天的营业情况和即将到来的休业日"
+          }
         }
       }
     },
@@ -6753,6 +8007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сегодня открыто"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天营业"
           }
         }
       }
@@ -6791,6 +8051,12 @@
             "state" : "translated",
             "value" : "Сегодня закрыты только некоторые магазины: %@."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天只有部分店铺休业：%@。"
+          }
         }
       }
     },
@@ -6820,6 +8086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сегодня мы уберегли вас от напрасной поездки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天帮你避免了一次白跑"
           }
         }
       }
@@ -6858,6 +8130,12 @@
             "state" : "translated",
             "value" : "Сегодня выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天休业"
+          }
         }
       }
     },
@@ -6888,6 +8166,12 @@
             "state" : "translated",
             "value" : "Сегодня выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天休业"
+          }
         }
       }
     },
@@ -6915,6 +8199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мы снова уберегли вас от напрасной поездки.\nМы помним вашу щедрую поддержку."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天又帮你避免了一次白跑。\n我们一直记得你慷慨的支持。"
           }
         }
       }
@@ -6950,6 +8240,12 @@
             "state" : "translated",
             "value" : "Готово"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
         }
       }
     },
@@ -6979,6 +8275,12 @@
             "state" : "translated",
             "value" : "Удалить выполненные"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除已完成项目"
+          }
         }
       }
     },
@@ -7007,6 +8309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ульсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
           }
         }
       }
@@ -7043,6 +8351,12 @@
             "state" : "translated",
             "value" : "Costco Ульсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
         }
       }
     },
@@ -7076,6 +8390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ульсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
           }
         }
       }
@@ -7111,6 +8431,12 @@
             "state" : "translated",
             "value" : "Ульсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
         }
       }
     },
@@ -7145,6 +8471,12 @@
             "state" : "translated",
             "value" : "Ульсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
         }
       }
     },
@@ -7173,6 +8505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Месяц"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月"
           }
         }
       }
@@ -7203,6 +8541,12 @@
             "state" : "translated",
             "value" : "Нужен доступ к геопозиции"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要位置权限"
+          }
         }
       }
     },
@@ -7232,6 +8576,12 @@
             "state" : "translated",
             "value" : "Функции геопозиции"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置相关功能"
+          }
         }
       }
     },
@@ -7259,6 +8609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поддержать"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持我们"
           }
         }
       }
@@ -7293,6 +8649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вс"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "周日"
           }
         }
       }
@@ -7331,6 +8693,12 @@
             "state" : "translated",
             "value" : "На этой неделе: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本%@"
+          }
         }
       }
     },
@@ -7359,6 +8727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "На этой неделе закрыт: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本周%@休业"
           }
         }
       }
@@ -7394,6 +8768,12 @@
             "state" : "translated",
             "value" : "Это воскресенье"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本周日"
+          }
         }
       }
     },
@@ -7427,6 +8807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Это воскресенье, %@: магазин открыт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本周日%@，店铺营业"
           }
         }
       }
@@ -7462,6 +8848,12 @@
             "state" : "translated",
             "value" : "Это воскресенье, %@: магазин закрыт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本周日%@，店铺休业"
+          }
         }
       }
     },
@@ -7491,6 +8883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Предыдущий месяц"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上个月"
           }
         }
       }
@@ -7522,6 +8920,12 @@
             "state" : "translated",
             "value" : "Поделиться в Instagram Stories"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享到 Instagram 快拍"
+          }
         }
       }
     },
@@ -7552,6 +8956,12 @@
             "state" : "translated",
             "value" : "Чтобы поделиться в Stories, на устройстве должен быть установлен Instagram."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要安装 Instagram，才能分享到快拍。"
+          }
         }
       }
     },
@@ -7581,6 +8991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram не найден"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到 Instagram"
           }
         }
       }
@@ -7613,6 +9029,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -7651,6 +9073,12 @@
             "state" : "translated",
             "value" : "Обычный"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "普通店"
+          }
         }
       }
     },
@@ -7679,6 +9107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обычные магазины"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "普通店铺"
           }
         }
       }
@@ -7709,6 +9143,12 @@
             "state" : "translated",
             "value" : "Часть открыта"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部分营业"
+          }
         }
       }
     },
@@ -7736,6 +9176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыты только некоторые магазины"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部分店铺休业"
           }
         }
       }
@@ -7765,6 +9211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ильсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
           }
         }
       }
@@ -7801,6 +9253,12 @@
             "state" : "translated",
             "value" : "Costco Ильсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
         }
       }
     },
@@ -7835,6 +9293,12 @@
             "state" : "translated",
             "value" : "Ильсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
+          }
         }
       }
     },
@@ -7868,6 +9332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ильсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
           }
         }
       }
@@ -7904,6 +9374,12 @@
             "state" : "translated",
             "value" : "Разовая покупка. Без подписки."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次性购买，无需订阅。"
+          }
         }
       }
     },
@@ -7931,6 +9407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте график выходных любимых магазинов"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加你常去店铺的休业规律"
           }
         }
       }
@@ -7961,6 +9443,12 @@
             "state" : "translated",
             "value" : "Напоминание о покупках"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购物提醒"
+          }
         }
       }
     },
@@ -7990,6 +9478,12 @@
             "state" : "translated",
             "value" : "Список покупок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购物清单"
+          }
         }
       }
     },
@@ -8018,6 +9512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напоминание о покупках"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购物提醒"
           }
         }
       }
@@ -8054,6 +9554,12 @@
             "state" : "translated",
             "value" : "Напоминание о покупках"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购物提醒"
+          }
         }
       }
     },
@@ -8084,6 +9590,12 @@
             "state" : "translated",
             "value" : "Напоминание о хорошем дне для покупок (накануне)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "适合购物的日子提醒（前一天）"
+          }
         }
       }
     },
@@ -8113,6 +9625,12 @@
             "state" : "translated",
             "value" : "Добавить товар"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加项目"
+          }
         }
       }
     },
@@ -8141,6 +9659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте товары в список покупок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加要买的东西"
           }
         }
       }
@@ -8175,6 +9699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранить"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
           }
         }
       }
@@ -8211,6 +9741,12 @@
             "state" : "translated",
             "value" : "Большинство регионов страны"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全国大部分地区"
+          }
         }
       }
     },
@@ -8245,6 +9781,12 @@
             "state" : "translated",
             "value" : "Государственный праздник"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "法定节假日"
+          }
         }
       }
     },
@@ -8278,6 +9820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Государственный праздник"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "法定节假日"
           }
         }
       }
@@ -8314,6 +9862,12 @@
             "state" : "translated",
             "value" : "Выходной весь день"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全天休业"
+          }
         }
       }
     },
@@ -8343,6 +9897,12 @@
             "state" : "translated",
             "value" : "Удалить все"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部删除"
+          }
         }
       }
     },
@@ -8371,6 +9931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показать все"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看全部"
           }
         }
       }
@@ -8402,6 +9968,12 @@
             "state" : "translated",
             "value" : "Огромное спасибо!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感谢！"
+          }
         }
       }
     },
@@ -8430,6 +10002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "О приложении"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
           }
         }
       }
@@ -8465,6 +10043,12 @@
             "state" : "translated",
             "value" : "Чеджу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "济州"
+          }
         }
       }
     },
@@ -8493,6 +10077,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Неделя"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "周"
           }
         }
       }
@@ -8523,6 +10113,12 @@
             "state" : "translated",
             "value" : "Магазины рядом"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "附近的店铺"
+          }
         }
       }
     },
@@ -8551,6 +10147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автоопределение магазинов рядом"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动识别附近店铺"
           }
         }
       }
@@ -8581,6 +10183,12 @@
             "state" : "translated",
             "value" : "Чтобы найти магазины рядом,\nразрешите доступ к геопозиции в\nНастройки > DontGoMart > Геопозиция."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要查找附近的店铺，\n请在“设置 > DontGoMart > 位置”\n中允许访问位置。"
+          }
         }
       }
     },
@@ -8610,6 +10218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Расскажите окружающим о выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把休业消息告诉身边的人"
           }
         }
       }
@@ -8646,6 +10260,12 @@
             "state" : "translated",
             "value" : "Закрепите любимые магазины сверху"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把常去的店铺固定在最前面"
+          }
         }
       }
     },
@@ -8681,6 +10301,12 @@
             "state" : "translated",
             "value" : "Избранное"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏"
+          }
         }
       }
     },
@@ -8711,6 +10337,12 @@
             "state" : "translated",
             "value" : "Поддержка на данный момент ☕️ ×%lld"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目前收到的支持 ☕️ ×%lld"
+          }
         }
       }
     },
@@ -8739,6 +10371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Прогресс"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "进度"
           }
         }
       }
@@ -8769,6 +10407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Первый выходной"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首个休业日"
           }
         }
       }
@@ -8804,6 +10448,12 @@
             "state" : "translated",
             "value" : "Добавить"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
+          }
         }
       }
     },
@@ -8831,6 +10481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите магазины для отслеживания (можно несколько)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择要关注的店铺（可多选）"
           }
         }
       }
@@ -8866,6 +10522,12 @@
             "state" : "translated",
             "value" : "Отмена"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
         }
       }
     },
@@ -8896,6 +10558,12 @@
             "state" : "translated",
             "value" : "Готовим карточку"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在准备卡片"
+          }
         }
       }
     },
@@ -8925,6 +10593,12 @@
             "state" : "translated",
             "value" : "Открыть календарь"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看日历"
+          }
         }
       }
     },
@@ -8953,6 +10627,12 @@
             "state" : "translated",
             "value" : "Добавить свой магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加自定义店铺"
+          }
         }
       }
     },
@@ -8980,6 +10660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить свой магазин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑自定义店铺"
           }
         }
       }
@@ -9015,6 +10701,12 @@
             "state" : "translated",
             "value" : "Свой магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义店铺"
+          }
         }
       }
     },
@@ -9049,6 +10741,12 @@
             "state" : "translated",
             "value" : "Свой магазин"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义店铺"
+          }
         }
       }
     },
@@ -9082,6 +10780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свой магазин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义店铺"
           }
         }
       }
@@ -9118,6 +10822,12 @@
             "state" : "translated",
             "value" : "Добавьте график выходных своего магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加你自己店铺的休业规律"
+          }
         }
       }
     },
@@ -9152,6 +10862,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свой магазин"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义店铺"
           }
         }
       }
@@ -9188,6 +10904,12 @@
             "state" : "translated",
             "value" : "Добавьте график выходных своего магазина"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加你自己店铺的休业规律"
+          }
         }
       }
     },
@@ -9217,6 +10939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Угостить кофе %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请喝咖啡 %@"
           }
         }
       }
@@ -9248,6 +10976,12 @@
             "state" : "translated",
             "value" : "Угостить кофе, %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请喝咖啡，%@"
+          }
         }
       }
     },
@@ -9273,6 +11007,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -9311,6 +11051,12 @@
             "state" : "translated",
             "value" : "Costco Тэгу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -9344,6 +11090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Тэгу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
           }
         }
       }
@@ -9379,6 +11131,12 @@
             "state" : "translated",
             "value" : "Costco Тэгу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -9412,6 +11170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ульсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
           }
         }
       }
@@ -9447,6 +11211,12 @@
             "state" : "translated",
             "value" : "Costco Ульсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
         }
       }
     },
@@ -9480,6 +11250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ульсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
           }
         }
       }
@@ -9515,6 +11291,12 @@
             "state" : "translated",
             "value" : "Costco, обычные"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 普通店"
+          }
         }
       }
     },
@@ -9548,6 +11330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco, обычные"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 普通店"
           }
         }
       }
@@ -9583,6 +11371,12 @@
             "state" : "translated",
             "value" : "Costco, обычные"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 普通店"
+          }
         }
       }
     },
@@ -9616,6 +11410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ильсан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
           }
         }
       }
@@ -9651,6 +11451,12 @@
             "state" : "translated",
             "value" : "Costco Ильсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
         }
       }
     },
@@ -9685,6 +11491,12 @@
             "state" : "translated",
             "value" : "Costco Ильсан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
         }
       }
     },
@@ -9715,6 +11527,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -9753,6 +11571,12 @@
             "state" : "translated",
             "value" : "Обычные — Янпхён, Тэджон, Янчжэ, \nСанбон, Пусан, Кванмён, \nЧхонан, Ыйджонбу, Консе, \nСондо, Седжон, Ханам, \nКимхэ, Кочхок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "普通店 - 杨平店、大田店、良才店、\n上凤店、釜山店、光明店、\n天安店、议政府店、公世店、\n松岛店、世宗店、河南店、\n金海店、高尺店"
+          }
         }
       }
     },
@@ -9781,6 +11605,12 @@
             "state" : "translated",
             "value" : "Добавить шаблон"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加规律"
+          }
         }
       }
     },
@@ -9808,6 +11638,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте шаблон"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请添加规律"
           }
         }
       }
@@ -9844,6 +11680,12 @@
             "state" : "translated",
             "value" : "Откройте отслеживание нескольких магазинов, уведомления и многое другое"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解锁多店铺关注、通知等更多功能"
+          }
         }
       }
     },
@@ -9874,6 +11716,12 @@
             "state" : "translated",
             "value" : "Поддержать ещё раз ☕️"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再支持一次 ☕️"
+          }
         }
       }
     },
@@ -9903,6 +11751,12 @@
             "state" : "translated",
             "value" : "Выбранный филиал"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所选分店"
+          }
         }
       }
     },
@@ -9931,6 +11785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Находит и рекомендует ближайшие магазины по вашей геопозиции."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "根据你当前的位置，查找并推荐附近的店铺。"
           }
         }
       }
@@ -9962,6 +11822,12 @@
             "state" : "translated",
             "value" : "ОК"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
         }
       }
     },
@@ -9991,6 +11857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перезагружает список вариантов поддержки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新加载打赏选项列表"
           }
         }
       }
@@ -10022,6 +11894,12 @@
             "state" : "translated",
             "value" : "Загружаем варианты поддержки"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在加载打赏选项"
+          }
         }
       }
     },
@@ -10051,6 +11929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось загрузить варианты поддержки. Повторить"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法加载打赏选项。请重试"
           }
         }
       }
@@ -10082,6 +11966,12 @@
             "state" : "translated",
             "value" : "О поддержке"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于打赏"
+          }
         }
       }
     },
@@ -10111,6 +12001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрывает карточку поддержки. Она не появится снова в течение 30 дней"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭打赏卡片。30 天内不会再次显示"
           }
         }
       }
@@ -10142,6 +12038,12 @@
             "state" : "translated",
             "value" : "Сторонник"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持者"
+          }
         }
       }
     },
@@ -10171,6 +12073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сторонник. Чашек кофе на данный момент: %lld. Спасибо, что поддерживаете приложение."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持者。目前已请开发者喝了 %lld 杯咖啡。感谢你支持这个 App。"
           }
         }
       }
@@ -10202,6 +12110,12 @@
             "state" : "translated",
             "value" : "Мы вас не забыли!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们没有忘记你！"
+          }
         }
       }
     },
@@ -10231,6 +12145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Спасибо за поддержку. Чашек кофе на данный момент: %lld."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感谢你的支持。你目前已送出 %lld 杯咖啡。"
           }
         }
       }
@@ -10269,6 +12189,12 @@
             "state" : "translated",
             "value" : "Огромное спасибо за поддержку. Для нас это очень важно."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感谢你的支持，这对我们意义重大。"
+          }
         }
       }
     },
@@ -10298,6 +12224,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Огромное спасибо за поддержку. Чашек кофе на данный момент: %lld."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感谢你的支持。你目前已送出 %lld 杯咖啡。"
           }
         }
       }
@@ -10335,6 +12267,12 @@
             "state" : "translated",
             "value" : "Выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业"
+          }
         }
       }
     },
@@ -10362,6 +12300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Схема выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业方式"
           }
         }
       }
@@ -10393,6 +12337,12 @@
             "state" : "translated",
             "value" : "Рассказать о выходном"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享休业消息"
+          }
         }
       }
     },
@@ -10422,6 +12372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Делится изображением карточки о выходном"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享休业提醒卡片图片"
           }
         }
       }
@@ -10459,6 +12415,12 @@
             "state" : "translated",
             "value" : "Карточка о выходном. %1$@ %2$@, %3$@ закрыт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业提醒卡片。%1$@ %2$@，%3$@休业"
+          }
         }
       }
     },
@@ -10489,6 +12451,12 @@
             "state" : "translated",
             "value" : "Создаёт карточку о выходном и делится ею"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "制作并分享休业提醒卡片"
+          }
         }
       }
     },
@@ -10518,6 +12486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Делится карточкой о выходном в Instagram Stories"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把休业提醒卡片分享到 Instagram 快拍"
           }
         }
       }
@@ -10556,6 +12530,12 @@
             "state" : "translated",
             "value" : "Без выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无休业"
+          }
         }
       }
     },
@@ -10583,6 +12563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Схема выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业规律"
           }
         }
       }
@@ -10618,6 +12604,12 @@
             "state" : "translated",
             "value" : "Выходной"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业"
+          }
         }
       }
     },
@@ -10646,6 +12638,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сегодня выходной"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天休业"
           }
         }
       }
@@ -10677,6 +12675,12 @@
             "state" : "translated",
             "value" : "Закрытых магазинов нет"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有休业的店铺"
+          }
         }
       }
     },
@@ -10705,6 +12709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выходные дни"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日"
           }
         }
       }
@@ -10735,6 +12745,12 @@
             "state" : "translated",
             "value" : "Уведомления придут за 3 дня и за 1 день до выходных."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将在休业日前 3 天和 1 天发送通知。"
+          }
         }
       }
     },
@@ -10762,6 +12778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оповещения о выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日提醒"
           }
         }
       }
@@ -10792,6 +12814,12 @@
             "state" : "translated",
             "value" : "Сначала включите оповещения о выходных."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先开启休业日提醒。"
+          }
         }
       }
     },
@@ -10819,6 +12847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чтобы получать оповещения о выходных, разрешите уведомления в настройках."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要接收休业日提醒，请在“设置”中允许通知权限。"
           }
         }
       }
@@ -10848,6 +12882,12 @@
             "state" : "translated",
             "value" : "Нет данных о выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有休业日信息"
+          }
         }
       }
     },
@@ -10876,6 +12916,12 @@
             "state" : "translated",
             "value" : "Данных о выходных днях нет"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有休业日信息"
+          }
         }
       }
     },
@@ -10903,6 +12949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Календарь выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业日日历"
           }
         }
       }
@@ -10934,6 +12986,12 @@
             "state" : "translated",
             "value" : "Открыть календарь выходных"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看休业日日历"
+          }
         }
       }
     },
@@ -10963,6 +13021,12 @@
             "state" : "translated",
             "value" : "Выберите выходные дни"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择休业日"
+          }
         }
       }
     },
@@ -10991,6 +13055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Это не выходной"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不是休业日"
           }
         }
       }
@@ -11026,6 +13096,12 @@
             "state" : "translated",
             "value" : "Нашли «%@». Проверьте и нажмите «Добавить»."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找到了“%@”。请确认无误后点按“添加”。"
+          }
         }
       }
     },
@@ -11059,6 +13135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В ближайшие 7 дней закрытых нет"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未来 7 天没有休业"
           }
         }
       }
@@ -11094,6 +13176,12 @@
             "state" : "translated",
             "value" : "Ваши рестораны не закрываются в ближайшие 7 дней"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你常去的餐厅未来 7 天都不休息"
+          }
         }
       }
     },
@@ -11127,6 +13215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "На этой неделе выходных нет"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本周没有休业"
           }
         }
       }
@@ -11162,6 +13256,12 @@
             "state" : "translated",
             "value" : "Управление"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理"
+          }
         }
       }
     },
@@ -11195,6 +13295,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Можно добавить по ссылке из Naver Maps или по скриншоту"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可以通过 Naver 地图分享链接或截图添加"
           }
         }
       }
@@ -11230,6 +13336,12 @@
             "state" : "translated",
             "value" : "Мои рестораны"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的餐厅"
+          }
         }
       }
     },
@@ -11263,6 +13375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рестораны · 7 дней"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐厅 · 7 天"
           }
         }
       }
@@ -11298,6 +13416,12 @@
             "state" : "translated",
             "value" : "Добавьте или измените свои рестораны"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加或修改你常去的餐厅"
+          }
         }
       }
     },
@@ -11331,6 +13455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ресторанов пока нет. Добавьте их в приложении."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有餐厅。请在 App 中添加。"
           }
         }
       }
@@ -11366,6 +13496,12 @@
             "state" : "translated",
             "value" : "Или вставьте сюда ссылку или текст"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "或在此粘贴分享链接或文字"
+          }
         }
       }
     },
@@ -11399,6 +13535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Быстрый импорт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速导入"
           }
         }
       }
@@ -11434,6 +13576,12 @@
             "state" : "translated",
             "value" : "Считывает данные о выходных с фото прямо на устройстве"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在设备上识别照片中的休息信息"
+          }
         }
       }
     },
@@ -11467,6 +13615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось загрузить фото"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法加载照片"
           }
         }
       }
@@ -11502,6 +13656,12 @@
             "state" : "translated",
             "value" : "Все рестораны открыты"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有休息的餐厅"
+          }
         }
       }
     },
@@ -11535,6 +13695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скриншот"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "截图"
           }
         }
       }
@@ -11570,6 +13736,12 @@
             "state" : "translated",
             "value" : "Удалить ресторан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除餐厅"
+          }
         }
       }
     },
@@ -11603,6 +13775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Название ресторана"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐厅名称"
           }
         }
       }
@@ -11638,6 +13816,12 @@
             "state" : "translated",
             "value" : "Ресторан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐厅"
+          }
         }
       }
     },
@@ -11671,6 +13855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить ресторан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加餐厅"
           }
         }
       }
@@ -11706,6 +13896,12 @@
             "state" : "translated",
             "value" : "Добавить ресторан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加餐厅"
+          }
         }
       }
     },
@@ -11739,6 +13935,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить ресторан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑餐厅"
           }
         }
       }
@@ -11774,6 +13976,12 @@
             "state" : "translated",
             "value" : "В ближайшие 7 дней ваши рестораны не закрываются."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未来 7 天，你常去的餐厅都不休息。"
+          }
         }
       }
     },
@@ -11807,6 +14015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Точками отмечены дни ближайшей недели, когда ваши рестораны закрыты."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用圆点显示未来 7 天里你常去的餐厅休息的日子。"
           }
         }
       }
@@ -11842,6 +14056,12 @@
             "state" : "translated",
             "value" : "Добавьте рестораны в приложении"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在 App 中添加常去的餐厅"
+          }
         }
       }
     },
@@ -11875,6 +14095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Указано «без выходных» — у ресторана нет постоянного выходного дня."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示为全年无休，这家餐厅没有固定休息日。"
           }
         }
       }
@@ -11910,6 +14136,12 @@
             "state" : "translated",
             "value" : "Добавьте виджет «Рестораны · 7 дней» на экран «Домой», чтобы видеть это, не открывая приложение."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把“餐厅 · 7 天”小组件添加到主屏幕，不用打开 App 也能看到。"
+          }
         }
       }
     },
@@ -11943,6 +14175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Импортировать"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按此内容导入"
           }
         }
       }
@@ -11978,6 +14216,12 @@
             "state" : "translated",
             "value" : "Название получено, но данных о выходных нет. Попробуйте скриншот с часами работы или выберите дни ниже."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已获取名称，但没有休息信息。请选择营业时间页面的截图，或在下方手动选择。"
+          }
         }
       }
     },
@@ -12011,6 +14255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте постоянные выходные дни ресторанов, в которые вы ходите, и мы отметим точкой закрытые дни ближайшей недели."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "填入你常去餐厅的固定休息日，我们会用圆点标出未来 7 天里休息的日子。"
           }
         }
       }
@@ -12046,6 +14296,12 @@
             "state" : "translated",
             "value" : "Цвет точки"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圆点颜色"
+          }
         }
       }
     },
@@ -12079,6 +14335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Постоянные выходные"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "固定休息日"
           }
         }
       }
@@ -12114,6 +14376,12 @@
             "state" : "translated",
             "value" : "Адрес (необязательно)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址（选填）"
+          }
         }
       }
     },
@@ -12147,6 +14415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В картографическом приложении нажмите «Поделиться → Копировать» для ресторана и вставьте сюда или выберите скриншот страницы с информацией."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地图 App 中点按餐厅的“分享 → 拷贝”后粘贴到这里，或选择餐厅信息页面的截图。"
           }
         }
       }
@@ -12182,6 +14456,12 @@
             "state" : "translated",
             "value" : "Открыть на карте"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地图中打开"
+          }
         }
       }
     },
@@ -12215,6 +14495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить выходной день вручную"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手动添加休息日"
           }
         }
       }
@@ -12250,6 +14536,12 @@
             "state" : "translated",
             "value" : "Добавьте выходной день"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请添加休息日"
+          }
         }
       }
     },
@@ -12283,6 +14575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить данные о выходных"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改休息信息"
           }
         }
       }
@@ -12318,6 +14616,12 @@
             "state" : "translated",
             "value" : "Ищем данные о выходных…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在查找休息信息…"
+          }
         }
       }
     },
@@ -12351,6 +14655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось найти данные о выходных. Выберите дни ниже."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有找到休息信息。请在下方手动选择。"
           }
         }
       }
@@ -12386,6 +14696,12 @@
             "state" : "translated",
             "value" : "Пост 4:5"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "帖子 4:5"
+          }
         }
       }
     },
@@ -12419,6 +14735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stories 9:16"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快拍 9:16"
           }
         }
       }
@@ -12454,6 +14776,12 @@
             "state" : "translated",
             "value" : "Календарь выходных на 2 недели"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "两周休业日历"
+          }
         }
       }
     },
@@ -12487,6 +14815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скоро"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即将到来"
           }
         }
       }
@@ -12522,6 +14856,12 @@
             "state" : "translated",
             "value" : "Найдите «DontGoMart» в App Store"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 搜索“DontGoMart”"
+          }
         }
       }
     },
@@ -12555,6 +14895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Магазины закрыты!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店铺休业啦！"
           }
         }
       }
@@ -12590,6 +14936,12 @@
             "state" : "translated",
             "value" : "Фото"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "照片"
+          }
         }
       }
     },
@@ -12623,6 +14975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Видео"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "视频"
           }
         }
       }
@@ -12658,6 +15016,12 @@
             "state" : "translated",
             "value" : "Формат"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "格式"
+          }
         }
       }
     },
@@ -12691,6 +15055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тип"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "媒体"
           }
         }
       }
@@ -12726,6 +15096,12 @@
             "state" : "translated",
             "value" : "Карточка о выходном. %1$@ %2$@, %3$@ закрыт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休业提醒卡片。%1$@ %2$@，%3$@休业"
+          }
         }
       }
     },
@@ -12759,6 +15135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Создаём видео"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在制作视频"
           }
         }
       }
@@ -12794,6 +15176,12 @@
             "state" : "translated",
             "value" : "Опубликовать в Instagram"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发布到 Instagram"
+          }
         }
       }
     },
@@ -12827,6 +15215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите Instagram в списке «Поделиться», чтобы опубликовать пост, Stories или Reels"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在分享列表中选择 Instagram，即可发布为帖子、快拍或 Reels"
           }
         }
       }
@@ -12862,6 +15256,12 @@
             "state" : "translated",
             "value" : "Сразу открывает редактор Stories в Instagram"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直接打开 Instagram 快拍编辑器"
+          }
         }
       }
     },
@@ -12895,6 +15295,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поделиться"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
           }
         }
       }
@@ -12930,6 +15336,12 @@
             "state" : "translated",
             "value" : "Делится видео о выходном"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享休业提醒视频"
+          }
         }
       }
     },
@@ -12963,6 +15375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось создать видео. Поделитесь фото."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法制作视频。请改为分享照片。"
           }
         }
       }
@@ -12998,6 +15416,12 @@
             "state" : "translated",
             "value" : "Откроется снова %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@起恢复营业"
+          }
         }
       }
     },
@@ -13031,6 +15455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закупитесь до %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在%@之前买好东西"
           }
         }
       }

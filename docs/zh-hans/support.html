@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>支持 - DontGoMart</title>
+  <meta name="description" content="DontGoMart 的常见问题与联系方式。">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/zh-hans/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+      --card-bg: #f5f5f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+        --card-bg: #1c1c1e;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0 8px;
+    }
+
+    .contact-card p { margin-bottom: 8px; }
+    .contact-card .email {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../support.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/support.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/support.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/support.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/support.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文" class="active" aria-current="true">简</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>支持</h1>
+    <p class="subtitle">如对 DontGoMart 有任何疑问或遇到问题，欢迎随时联系我们。</p>
+
+    <div class="contact-card">
+      <p><strong>联系我们</strong></p>
+      <p>发邮件给我们，通常会在 1～2 天内回复。你也可以在 App 的设置页面发送反馈。</p>
+      <p class="email"><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+    </div>
+
+    <h2>常见问题</h2>
+
+    <h3>问：休业日和实际情况不符。</h3>
+    <p>大型超市的义务休业日由地方条例规定，各地区不同。请在设置中确认是否选择了适合你所在地区的店铺类型（周日休业、周三休业、蔚山、济州等）。如果仍然不符，请通过邮件告诉我们店铺名称和地区，我们会去核实。</p>
+
+    <h3>问：我要找的店铺不在列表里。</h3>
+    <p>你可以选择“每月第几周的星期几”休息，比如第二、第四个周日，把它添加为自己的店铺。</p>
+
+    <h3>问：餐厅的固定休息日没有填对。</h3>
+    <p>通过 Naver 地图链接导入时，该餐厅的 Naver Place 页面需要标有固定休息日。通过截图导入时，请确认屏幕上拍到了“每周二休息”之类的说明。保存之前，所有内容都可以修改。</p>
+
+    <h3>问：收不到通知。</h3>
+    <p>请在 iPhone 的“设置 > 通知 > DontGoMart”中确认已允许通知，并确认 App 内已开启休业日通知。</p>
+
+    <h3>问：小组件没有更新。</h3>
+    <p>打开 App 后小组件会更新。如果仍然没有改善，请先删除小组件，再重新添加。</p>
+
+    <h3>问：打赏是什么？</h3>
+    <p>DontGoMart 的所有功能都是免费的。咖啡、蛋糕和餐食的打赏，是用来支持开发者的。打赏后会显示感谢消息，以及带有累计打赏次数的支持者徽章。想打赏几次都可以。</p>
+
+    <h3>问：付款和退款应该联系谁？</h3>
+    <p>App 内购买由 Apple 处理，所以可以在 Apple 的“报告问题”页面（reportaproblem.apple.com）申请退款。其他事项，欢迎随时给我们发邮件。</p>
+
+    <h2>隐私</h2>
+    <p>DontGoMart 没有账户，也不使用广告或追踪工具。详情请查看隐私政策： <a href="privacy.html">隐私政策</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">首页</a>
+    <a href="privacy.html">隐私政策</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

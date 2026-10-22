@@ -36,6 +36,12 @@ Feedback now asks what happened
 Ответы на отзывы — в настройках
 Отзыв теперь уточняет, что случилось
 
+### App Store (zh-Hans)
+
+小组件现在会显示 DontGoMart 名称
+可在设置中查看反馈和开发者回复
+发送反馈时会逐步询问当时的情况
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
