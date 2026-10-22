@@ -24,7 +24,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 PROFILE = tempfile.mkdtemp(prefix="dontgomart-creative-chrome-")
 
 # 앱 언어 코드(raw · marketing 폴더 이름) → App Store Connect 로케일 (--storetext 로 확인한 것)
-STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no"}
+STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -55,6 +55,7 @@ HEADER = {
     "fi": ("Kauppojen sulkupäivät", "Tiedä etukäteen,<br>onko auki"),
     "id": ("Hari tutup toko", "Tahu lebih dulu<br>tokonya buka atau tidak"),
     "nb": ("Butikkers stengedager", "Vit på forhånd<br>om det er åpent"),
+    "nl": ("Sluitingsdagen van winkels", "Weet vooraf<br>of het open is"),
 }
 
 # 검색 결과: 스크린샷 1장("마트 가기 전, 딱 3초")과 **같은 이야기**. 눈썹글은 그 나라 사람이 검색창에 치는 말.
@@ -79,6 +80,7 @@ SEARCH = {
     "fi": ("supermarket sulkupäivät", "Tarkista<br>ennen lähtöä", "Näe yhdellä silmäyksellä, onko kauppa tänään auki"),
     "id": ("supermarket hari tutup", "Cek dulu<br>sebelum pergi", "Lihat sekilas apakah tokomu buka hari ini"),
     "nb": ("supermarked stengedager", "Sjekk<br>før du drar", "Se med et blikk om butikken har åpent i dag"),
+    "nl": ("supermarkt sluitingsdagen", "Check het<br>voordat je gaat", "Zie in één oogopslag of je winkel vandaag open is"),
 }
 
 ACCENT = "#F0566A"   # 앱의 분홍(D-Day · 휴무 표시)

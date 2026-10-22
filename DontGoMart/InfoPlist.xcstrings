@@ -123,6 +123,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -244,6 +250,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -373,6 +385,12 @@
             "state" : "translated",
             "value" : "Posisjonen trengs for å finne og anbefale butikker i nærheten."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locatie is nodig om winkels in de buurt te vinden en aan te bevelen."
+          }
         }
       }
     },
@@ -497,6 +515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trengs for å lagre bilder og videoer fra stengekortene i bildebiblioteket ditt."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nodig om foto's en video's van sluitingskaarten in je bibliotheek te bewaren."
           }
         }
       }

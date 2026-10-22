@@ -124,6 +124,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -246,6 +252,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"

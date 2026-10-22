@@ -1163,3 +1163,61 @@ https://m1zz.github.io/DontGoMart/nb/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/nb/
+
+## nl
+
+### 이름
+
+DontGoMart: Sluitingsdagen
+
+### 부제
+
+Nooit meer voor niets
+
+### 키워드
+
+supermarkt,Korea,Seoul,openingstijden,zondag,woensdag,feestdagen,Chuseok,boodschappen,widget
+
+### 프로모션 텍스트
+
+Je ziet nu ook de vrije dagen van je favoriete restaurants. Eén Naver Maps-link of één schermafbeelding is genoeg, en de app waarschuwt je vóór een sluitingsdag.
+
+### 설명
+
+Check voordat je gaat of de winkel open is.
+DontGoMart verzamelt de verplichte sluitingsdagen van grote Koreaanse supermarkten en Costco en waarschuwt je op tijd als er een nadert.
+
+Zie meteen of je vandaag kunt gaan
+Als je de app opent, zie je als eerste of je gekozen winkel vandaag open is. Je ziet ook hoeveel dagen het nog is tot de volgende sluitingsdag en een lijst met komende sluitingsdagen.
+
+Houdt rekening met sluitingsdagen per regio
+Kies winkels die op zondag of woensdag sluiten, of regio's met andere sluitingsdagen zoals Ulsan en Jeju. Bij Costco stel je gewone winkels en de vestigingen in Daegu, Ilsan en Ulsan apart in. Ook de sluitingsdagen rond Seollal (Koreaans nieuwjaar) en Chuseok worden getoond.
+
+Voeg winkels uit je buurt toe
+Staat een winkel niet in de lijst, registreer hem dan zelf door te kiezen in welke week en op welke weekdag hij sluit, bijvoorbeeld de tweede en vierde zondag.
+
+Ook de vrije dagen van je favoriete restaurants
+Vul de vaste vrije dagen in van restaurants waar je komt, en van de komende 7 dagen worden de dagen waarop ze gesloten zijn met een stip gemarkeerd. Plak gewoon de link die je via Naver Maps hebt gedeeld en gekopieerd, of kies een schermafbeelding van de infopagina van het restaurant, en de vrije dag wordt automatisch ingevuld. Tekst in foto's wordt alleen op je apparaat gelezen.
+
+Meldingen zodat je het niet vergeet
+Kies of je 1, 2, 3 of 7 dagen vóór de sluiting een melding wilt, op het tijdstip dat jou uitkomt. De dag voor een sluiting herinnert de app je eraan dat vandaag een goede dag is voor boodschappen. Als een sluitingsdag binnen 3 dagen valt, verschijnt er ook een banner bovenin de app.
+
+Widgets voor beginscherm en toegangsscherm
+Met widgets zie je de eerstvolgende sluitingsdag, de twee daarna met de resterende dagen, of je winkel deze zondag open is en de vrije dagen van je favoriete restaurants voor 7 dagen. De widget voor de zondag van deze week en de restaurantwidget passen ook op het toegangsscherm.
+
+Kalender en delen
+In de kalender zie je de sluitingsdagen van een hele maand. Je kunt een sluiting delen als kaart met een kalender van twee weken en een boodschappentip, in formaten voor Instagram-berichten en -stories of als korte video.
+
+Alle functies zijn gratis. Als de app van pas komt, steun je de ontwikkeling met een kop koffie.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/nl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/nl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/nl/
