@@ -90,6 +90,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — hãy đi mua sắm sớm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — nakupte s předstihem"
+          }
         }
       }
     },
@@ -170,6 +176,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -258,6 +270,12 @@
             "state" : "translated",
             "value" : "Xóa %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat: %@"
+          }
         }
       }
     },
@@ -341,6 +359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sửa %@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upravit: %@"
           }
         }
       }
@@ -431,6 +455,12 @@
             "state" : "translated",
             "value" : "%@ đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zavřeno"
+          }
         }
       }
     },
@@ -514,6 +544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ đóng cửa Pro"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zavřeno Pro"
           }
         }
       }
@@ -604,6 +640,12 @@
             "state" : "translated",
             "value" : "Đóng cửa: %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřeno: %@"
+          }
         }
       }
     },
@@ -688,6 +730,12 @@
             "state" : "translated",
             "value" : "Đóng cửa %@!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřeno: %@!"
+          }
         }
       }
     },
@@ -768,6 +816,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -861,6 +915,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -941,6 +1001,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1030,6 +1096,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1113,6 +1185,12 @@
             "state" : "translated",
             "value" : "%lld mục"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Položek: %lld"
+          }
         }
       }
     },
@@ -1195,6 +1273,12 @@
             "state" : "translated",
             "value" : "%lld phút"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -1276,6 +1360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld giờ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
           }
         }
       }
@@ -1368,6 +1458,12 @@
             "state" : "translated",
             "value" : "Còn %lld ngày"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývá dní: %lld"
+          }
         }
       }
     },
@@ -1452,6 +1548,12 @@
             "state" : "translated",
             "value" : "Trước %lld ngày"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnů předem: %lld"
+          }
         }
       }
     },
@@ -1533,6 +1635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuần %lld"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld. týden"
           }
         }
       }
@@ -1621,6 +1729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld tuần nữa, %@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Za %lld týd.: %@"
           }
         }
       }
@@ -1712,6 +1826,12 @@
             "state" : "translated",
             "value" : "Tuần %lld, %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld. týden: %@"
+          }
         }
       }
     },
@@ -1800,6 +1920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng VoiceOver thuận tiện hơn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohodlnější s VoiceOver"
           }
         }
       }
@@ -1890,6 +2016,12 @@
             "state" : "translated",
             "value" : "Siri và Phím tắt"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri a Zkratky"
+          }
         }
       }
     },
@@ -1979,6 +2111,12 @@
             "state" : "translated",
             "value" : "Hỏi Siri hoặc chạy phím tắt để biết ngay cửa hàng của bạn có đóng cửa không."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeptejte se Siri nebo spusťte zkratku a hned zjistíte, jestli má váš obchod zavřeno."
+          }
         }
       }
     },
@@ -2059,6 +2197,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -2147,6 +2291,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -2227,6 +2377,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -2315,6 +2471,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -2389,6 +2551,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -2482,6 +2650,12 @@
             "state" : "translated",
             "value" : "Ngay cả với cỡ chữ lớn nhất, màn hình vẫn sắp xếp lại gọn gàng mà không bị cắt chữ."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ani při největší velikosti textu se obrazovky nerozbijí a nic se neořízne."
+          }
         }
       }
     },
@@ -2570,6 +2744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xóa cùng lúc các cửa hàng đã chọn, đã thêm và cài đặt thông báo ngay trong ứng dụng."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smažte přímo v aplikaci najednou vybrané a přidané obchody i nastavení upozornění."
           }
         }
       }
@@ -2660,6 +2840,12 @@
             "state" : "translated",
             "value" : "Thông báo"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámení"
+          }
         }
       }
     },
@@ -2742,6 +2928,12 @@
             "state" : "translated",
             "value" : "Mở toàn bộ nội dung thông báo"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevře celé oznámení"
+          }
         }
       }
     },
@@ -2823,6 +3015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đóng thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřít oznámení"
           }
         }
       }
@@ -2913,6 +3111,12 @@
             "state" : "translated",
             "value" : "Chế độ tối"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tmavý režim"
+          }
         }
       }
     },
@@ -3001,6 +3205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vẫn nhận ra ngày đóng cửa khi bật Tăng độ tương phản hoặc khi khó phân biệt màu."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dny zavření poznáte i se zapnutým zvýšeným kontrastem nebo když hůř rozlišujete barvy."
           }
         }
       }
@@ -3091,6 +3301,12 @@
             "state" : "translated",
             "value" : "Thêm ngôn ngữ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Další jazyky"
+          }
         }
       }
     },
@@ -3179,6 +3395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng ứng dụng bằng nhiều ngôn ngữ hơn."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Používejte aplikaci ve více jazycích."
           }
         }
       }
@@ -3269,6 +3491,12 @@
             "state" : "translated",
             "value" : "Lưu các cửa hàng bạn đã thêm vào tệp và nhập lại bất cứ lúc nào."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložte přidané obchody do souboru a kdykoli je znovu načtěte."
+          }
         }
       }
     },
@@ -3358,6 +3586,12 @@
             "state" : "translated",
             "value" : "Xóa tất cả dữ liệu của tôi"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat všechna moje data"
+          }
         }
       }
     },
@@ -3445,6 +3679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo cửa hàng đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění na zavření obchodu"
           }
         }
       }
@@ -3535,6 +3775,12 @@
             "state" : "translated",
             "value" : "Chữ và nút vẫn rõ nét trên màn hình tối."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text a tlačítka zůstávají čitelné i na tmavé obrazovce."
+          }
         }
       }
     },
@@ -3623,6 +3869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Màu sắc dễ nhìn hơn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barvy, které se lépe rozlišují"
           }
         }
       }
@@ -3713,6 +3965,12 @@
             "state" : "translated",
             "value" : "Trên iPad, chọn cửa hàng và lật lịch chỉ bằng bàn phím."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na iPadu vybírejte obchody a listujte kalendářem jen pomocí klávesnice."
+          }
         }
       }
     },
@@ -3801,6 +4059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Có gì mới sau khi cập nhật"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novinky po aktualizaci"
           }
         }
       }
@@ -3891,6 +4155,12 @@
             "state" : "translated",
             "value" : "Lần đầu mở ứng dụng sau khi cập nhật, bạn sẽ thấy có gì mới."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Při prvním otevření po aktualizaci uvidíte, co je nového."
+          }
         }
       }
     },
@@ -3979,6 +4249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mẹo sử dụng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipy k používání"
           }
         }
       }
@@ -4069,6 +4345,12 @@
             "state" : "translated",
             "value" : "Nhẹ nhàng gợi ý các tính năng hữu ích vào đúng lúc."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V pravou chvíli vám nenápadně poradíme užitečné funkce."
+          }
         }
       }
     },
@@ -4157,6 +4439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sao lưu và xuất"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Záloha a export"
           }
         }
       }
@@ -4247,6 +4535,12 @@
             "state" : "translated",
             "value" : "Nếu ứng dụng đóng khi bạn đang thêm cửa hàng, nội dung đã nhập vẫn được giữ lại."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Když se aplikace při přidávání obchodu zavře, vaše zadání zůstane zachováno."
+          }
         }
       }
     },
@@ -4328,6 +4622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "và %lld nơi khác"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "a dalších: %lld"
           }
         }
       }
@@ -4418,6 +4718,12 @@
             "state" : "translated",
             "value" : "VoiceOver đọc đầy đủ ngày đóng cửa và các nút theo đúng thứ tự."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver čte dny zavření i tlačítka celé a ve správném pořadí."
+          }
         }
       }
     },
@@ -4506,6 +4812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sẵn sàng cho chữ lớn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připraveno na velký text"
           }
         }
       }
@@ -4596,6 +4908,12 @@
             "state" : "translated",
             "value" : "Điều khiển bằng bàn phím"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ovládání klávesnicí"
+          }
         }
       }
     },
@@ -4684,6 +5002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hướng dẫn nhanh cho người mới"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rychlý úvod"
           }
         }
       }
@@ -4774,6 +5098,12 @@
             "state" : "translated",
             "value" : "Lần đầu mở ứng dụng, xem nhanh qua vài bước ứng dụng làm được gì."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Při prvním otevření uvidíte v několika krocích, co aplikace umí."
+          }
         }
       }
     },
@@ -4862,6 +5192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dành cho iPhone gập"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro skládací iPhone"
           }
         }
       }
@@ -4952,6 +5288,12 @@
             "state" : "translated",
             "value" : "Trên iPhone gập, dùng màn hình rộng như hai ngăn cạnh nhau."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na skládacím iPhonu využijete širokou obrazovku jako dva panely vedle sebe."
+          }
         }
       }
     },
@@ -5041,6 +5383,12 @@
             "state" : "translated",
             "value" : "Tiếp tục từ chỗ bạn dừng lại"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokračujte, kde jste skončili"
+          }
         }
       }
     },
@@ -5115,6 +5463,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -5197,6 +5551,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -5275,6 +5635,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -5349,6 +5715,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -5435,6 +5807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Nhắc ngày thích hợp đi chợ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Upozornění na dobrý den pro nákup"
           }
         }
       }
@@ -5523,6 +5901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Hôm nay là ngày đi chợ tốt"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Dobrý den pro nákup"
           }
         }
       }
@@ -5614,6 +5998,12 @@
             "state" : "translated",
             "value" : "Báo cho bạn khi có ngày đóng cửa trong vòng một tuần!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozorní vás, když se do týdne blíží den zavření!"
+          }
         }
       }
     },
@@ -5694,6 +6084,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -5788,6 +6184,12 @@
             "state" : "translated",
             "value" : "Widget nhắc ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget upozornění na zavření"
+          }
         }
       }
     },
@@ -5878,6 +6280,12 @@
             "state" : "translated",
             "value" : "Widget đếm ngược ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget odpočtu do zavření"
+          }
         }
       }
     },
@@ -5958,6 +6366,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -6046,6 +6460,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -6126,6 +6546,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -6214,6 +6640,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -6294,6 +6726,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -6386,6 +6824,12 @@
             "state" : "translated",
             "value" : "%@ mai đóng cửa. Hôm nay là ngày thích hợp để đi mua sắm!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ má zítra zavřeno. Dnes je ideální den na nákup!"
+          }
         }
       }
     },
@@ -6473,6 +6917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ sẽ đóng cửa sau %lld ngày."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zavře za %lld d."
           }
         }
       }
@@ -6563,6 +7013,12 @@
             "state" : "translated",
             "value" : "%@ sẽ đóng cửa sau %lld ngày."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ zavře za %lld d."
+          }
         }
       }
     },
@@ -6651,6 +7107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đừng quên mua sắm trước ngày đóng cửa tiếp theo!"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nezapomeňte nakoupit před dalším dnem zavření!"
           }
         }
       }
@@ -6741,6 +7203,12 @@
             "state" : "translated",
             "value" : "Quản lý cả ngày đóng cửa của các cửa hàng quanh bạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spravujte i zavírací dny obchodů ve svém okolí"
+          }
         }
       }
     },
@@ -6829,6 +7297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đăng ký lịch đóng cửa của cửa hàng riêng của bạn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zadejte vlastní vzorec zavření svého obchodu"
           }
         }
       }
@@ -6919,6 +7393,12 @@
             "state" : "translated",
             "value" : "Mục yêu thích luôn hiện ở trên cùng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oblíbené jsou vždy nahoře"
+          }
         }
       }
     },
@@ -7007,6 +7487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đánh dấu các cửa hàng yêu thích"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte si oblíbené obchody do záložek"
           }
         }
       }
@@ -7097,6 +7583,12 @@
             "state" : "translated",
             "value" : "Mua một lần, dùng mọi tính năng mãi mãi"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jednorázový nákup, všechny funkce navždy"
+          }
         }
       }
     },
@@ -7185,6 +7677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nâng cấp lên DontGoMart Pro"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejděte na DontGoMart Pro"
           }
         }
       }
@@ -7275,6 +7773,12 @@
             "state" : "translated",
             "value" : "Xem cùng lúc ngày đóng cửa của E-Mart, Costco, Homeplus"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zjistěte zavírací dny E-Mart, Costco a Homeplus najednou"
+          }
         }
       }
     },
@@ -7363,6 +7867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Theo dõi nhiều cửa hàng cùng lúc"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte více obchodů najednou"
           }
         }
       }
@@ -7453,6 +7963,12 @@
             "state" : "translated",
             "value" : "Nhận thông báo trước ngày đóng cửa để không phải đi uổng công"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění před dny zavření, ať nejezdíte zbytečně"
+          }
         }
       }
     },
@@ -7541,6 +8057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không còn đến nơi gặp cửa hàng đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Už nikdy nestůjte před zavřeným obchodem"
           }
         }
       }
@@ -7631,6 +8153,12 @@
             "state" : "translated",
             "value" : "Thêm bao nhiêu mục tùy ý"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte tolik položek, kolik potřebujete"
+          }
         }
       }
     },
@@ -7719,6 +8247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Danh sách mua sắm không giới hạn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nákupní seznam bez omezení"
           }
         }
       }
@@ -7809,6 +8343,12 @@
             "state" : "translated",
             "value" : "☕ Với giá một ly cà phê, mở khóa mọi thứ mãi mãi"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Za cenu jedné kávy odemknete vše navždy"
+          }
         }
       }
     },
@@ -7897,6 +8437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn sẽ được thông báo trước ngày đóng cửa %1$lld ngày và %2$lld ngày vào lúc %3$@."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění přijde %1$lld dnů a %2$lld den před dny zavření v %3$@."
           }
         }
       }
@@ -7988,6 +8534,12 @@
             "state" : "translated",
             "value" : "Hiển thị màu xanh hoặc đỏ cho biết cửa hàng của bạn có mở cửa vào Chủ nhật này không."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeleně nebo červeně ukáže, jestli je váš obchod tuto neděli otevřený."
+          }
         }
       }
     },
@@ -8075,6 +8627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hiển thị hai ngày đóng cửa sắp tới!"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukáže dva nejbližší dny zavření!"
           }
         }
       }
@@ -8166,6 +8724,12 @@
             "state" : "translated",
             "value" : "Hiển thị số ngày còn lại đến ngày đóng cửa tiếp theo!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukáže počet dnů do dalšího dne zavření!"
+          }
         }
       }
     },
@@ -8256,6 +8820,12 @@
             "state" : "translated",
             "value" : "Chủ nhật mở/đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neděle otevřeno/zavřeno"
+          }
         }
       }
     },
@@ -8340,6 +8910,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -8420,6 +8996,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -8514,6 +9096,12 @@
             "state" : "translated",
             "value" : "Widget hai ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget dvou dnů zavření"
+          }
         }
       }
     },
@@ -8597,6 +9185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đóng lời cảm ơn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavře poděkování"
           }
         }
       }
@@ -8682,6 +9276,12 @@
             "state" : "translated",
             "value" : "Cảm ơn bạn!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Děkujeme!"
+          }
         }
       }
     },
@@ -8766,6 +9366,12 @@
             "state" : "translated",
             "value" : "Mời nhà phát triển một ly cà phê"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pošle vývojáři na kávu"
+          }
         }
       }
     },
@@ -8849,6 +9455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gửi tiền ủng hộ cho nhà phát triển"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pošle vývojáři spropitné"
           }
         }
       }
@@ -8939,6 +9551,12 @@
             "state" : "translated",
             "value" : "Một phần Gyeonggi/Cheongju"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Část Kjonggi/Čchongdžu"
+          }
         }
       }
     },
@@ -9023,6 +9641,12 @@
             "state" : "translated",
             "value" : "Cảm ơn bạn, hẹn gặp lại"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Díky, na viděnou příště"
+          }
         }
       }
     },
@@ -9105,6 +9729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sắp đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brzy zavírá"
           }
         }
       }
@@ -9189,6 +9819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chia sẻ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílet"
           }
         }
       }
@@ -9278,6 +9914,12 @@
             "state" : "translated",
             "value" : "Ngày lễ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svátek"
+          }
         }
       }
     },
@@ -9359,6 +10001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Khôi phục giao dịch mua"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnovit nákupy"
           }
         }
       }
@@ -9449,6 +10097,12 @@
             "state" : "translated",
             "value" : "Tính năng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funkce"
+          }
         }
       }
     },
@@ -9530,6 +10184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng của tôi"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moje obchody"
           }
         }
       }
@@ -9620,6 +10280,12 @@
             "state" : "translated",
             "value" : "Ngày mai"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zítra"
+          }
         }
       }
     },
@@ -9702,6 +10368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mai %@ đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zítra zavřeno: %@"
           }
         }
       }
@@ -9794,6 +10466,12 @@
             "state" : "translated",
             "value" : "Mai đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zítra zavřeno"
+          }
         }
       }
     },
@@ -9875,6 +10553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngày đóng cửa sắp tới"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadcházející dny zavření"
           }
         }
       }
@@ -9959,6 +10643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tháng sau"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příští měsíc"
           }
         }
       }
@@ -10051,6 +10741,12 @@
             "state" : "translated",
             "value" : "Tuần sau: %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příští týden: %@"
+          }
         }
       }
     },
@@ -10140,6 +10836,12 @@
             "state" : "translated",
             "value" : "Ngày đóng cửa tiếp theo"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Další den zavření"
+          }
         }
       }
     },
@@ -10222,6 +10924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chúng tôi sẽ nhắc bạn đi mua sắm trước ngày đóng cửa tiếp theo 2 ngày."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připomeneme vám nákup 2 dny před dalším dnem zavření."
           }
         }
       }
@@ -10314,6 +11022,12 @@
             "state" : "translated",
             "value" : "Không có thông tin ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné údaje o zavření"
+          }
         }
       }
     },
@@ -10397,6 +11111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Để sau"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teď ne"
           }
         }
       }
@@ -10487,6 +11207,12 @@
             "state" : "translated",
             "value" : "Theo dõi nhiều cửa hàng cùng lúc"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte více obchodů najednou"
+          }
         }
       }
     },
@@ -10576,6 +11302,12 @@
             "state" : "translated",
             "value" : "Theo dõi nhiều cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledování více obchodů"
+          }
         }
       }
     },
@@ -10659,6 +11391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đóng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřít"
           }
         }
       }
@@ -10744,6 +11482,12 @@
             "state" : "translated",
             "value" : "Mở lịch để xem ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevře kalendář se dny zavření"
+          }
         }
       }
     },
@@ -10826,6 +11570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tegu"
           }
         }
       }
@@ -10916,6 +11666,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Tegu"
+          }
         }
       }
     },
@@ -11003,6 +11759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tegu"
           }
         }
       }
@@ -11092,6 +11854,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tegu, Tegu Innovation"
+          }
         }
       }
     },
@@ -11174,6 +11942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket"
           }
         }
       }
@@ -11263,6 +12037,12 @@
             "state" : "translated",
             "value" : "Siêu thị (đóng cửa thứ Tư)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (ve středu zavřeno)"
+          }
         }
       }
     },
@@ -11350,6 +12130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị (đóng cửa thứ Tư)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (ve středu zavřeno)"
           }
         }
       }
@@ -11439,6 +12225,12 @@
             "state" : "translated",
             "value" : "Siêu thị (T4)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (st)"
+          }
         }
       }
     },
@@ -11526,6 +12318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị (Ulsan, hỗn hợp)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan, smíšený)"
           }
         }
       }
@@ -11615,6 +12413,12 @@
             "state" : "translated",
             "value" : "Siêu thị (Ulsan)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
+          }
         }
       }
     },
@@ -11702,6 +12506,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị (Ulsan)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
           }
         }
       }
@@ -11791,6 +12601,12 @@
             "state" : "translated",
             "value" : "Siêu thị (đóng cửa Chủ nhật)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (v neděli zavřeno)"
+          }
         }
       }
     },
@@ -11878,6 +12694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị (đóng cửa Chủ nhật)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (v neděli zavřeno)"
           }
         }
       }
@@ -11967,6 +12789,12 @@
             "state" : "translated",
             "value" : "Siêu thị (CN)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (ne)"
+          }
         }
       }
     },
@@ -12054,6 +12882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siêu thị (Jeju)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Čedžu)"
           }
         }
       }
@@ -12143,6 +12977,12 @@
             "state" : "translated",
             "value" : "Siêu thị (Jeju)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Čedžu)"
+          }
         }
       }
     },
@@ -12231,6 +13071,12 @@
             "state" : "translated",
             "value" : "Siêu thị (Jeju)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Čedžu)"
+          }
         }
       }
     },
@@ -12315,6 +13161,12 @@
             "state" : "translated",
             "value" : "Nếu ứng dụng hữu ích, hãy tiếp sức cho chúng tôi bằng một ly cà phê."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokud vám aplikace pomohla, povzbuďte nás kávou."
+          }
         }
       }
     },
@@ -12395,6 +13247,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -12484,6 +13342,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -12568,6 +13432,12 @@
             "state" : "translated",
             "value" : "Chạm hai lần để đóng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřete dvojitým klepnutím"
+          }
         }
       }
     },
@@ -12651,6 +13521,12 @@
             "state" : "translated",
             "value" : "Cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchod"
+          }
         }
       }
     },
@@ -12733,6 +13609,12 @@
             "state" : "translated",
             "value" : "Trước khi đi mua sắm, hãy kiểm tra ngày đóng cửa trên DontGoMart ✅"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Než půjdete nakupovat, zkontrolujte dny zavření v DontGoMart ✅"
+          }
         }
       }
     },
@@ -12814,6 +13696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Màu cửa hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barva obchodu"
           }
         }
       }
@@ -12903,6 +13791,12 @@
             "state" : "translated",
             "value" : "Chọn cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyberte obchod"
+          }
         }
       }
     },
@@ -12984,6 +13878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tên cửa hàng (vd: Homeplus Gangnam)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Název obchodu (např. Homeplus Gangnam)"
           }
         }
       }
@@ -13067,6 +13967,12 @@
             "state" : "translated",
             "value" : "Thông tin cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Údaje o obchodu"
+          }
         }
       }
     },
@@ -13148,6 +14054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm cửa hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat obchod"
           }
         }
       }
@@ -13231,6 +14143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchod zavřený"
           }
         }
       }
@@ -13321,6 +14239,12 @@
             "state" : "translated",
             "value" : "Thông báo ngày đóng cửa của cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámení o dni zavření obchodu"
+          }
         }
       }
     },
@@ -13404,6 +14328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo cửa hàng đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění na zavření obchodu"
           }
         }
       }
@@ -13494,6 +14424,12 @@
             "state" : "translated",
             "value" : "Cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchod"
+          }
         }
       }
     },
@@ -13582,6 +14518,12 @@
             "state" : "translated",
             "value" : "Cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchod"
+          }
         }
       }
     },
@@ -13665,6 +14607,12 @@
             "state" : "translated",
             "value" : "Chọn cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Výběr obchodu"
+          }
         }
       }
     },
@@ -13746,6 +14694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mở trang chọn cửa hàng và cài đặt thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevře výběr obchodu a nastavení upozornění"
           }
         }
       }
@@ -13836,6 +14790,12 @@
             "state" : "translated",
             "value" : "Khác nhau tùy cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liší se podle obchodu"
+          }
         }
       }
     },
@@ -13918,6 +14878,12 @@
             "state" : "translated",
             "value" : "Chọn cửa hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Výběr obchodu"
+          }
         }
       }
     },
@@ -13999,6 +14965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vui lòng chọn cửa hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyberte obchod"
           }
         }
       }
@@ -14089,6 +15061,12 @@
             "state" : "translated",
             "value" : "Chưa chọn cửa hàng. Hãy chọn trong Cài đặt."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Není vybrán žádný obchod. Vyberte ho v Nastavení."
+          }
         }
       }
     },
@@ -14173,6 +15151,12 @@
             "state" : "translated",
             "value" : "Hằng tuần: %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Týdně: %@"
+          }
         }
       }
     },
@@ -14256,6 +15240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mọi tính năng vẫn miễn phí. Tiền ủng hộ chỉ là lời động viên và bạn có thể gửi bất cứ lúc nào."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny funkce zůstávají zdarma. Spropitné je jen povzbuzení a můžete ho poslat, kdykoli chcete."
           }
         }
       }
@@ -14348,6 +15338,12 @@
             "state" : "translated",
             "value" : "Ngày kia"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pozítří"
+          }
         }
       }
     },
@@ -14436,6 +15432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Danh sách mua sắm không giới hạn số mục"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné omezení počtu položek v nákupním seznamu"
           }
         }
       }
@@ -14526,6 +15528,12 @@
             "state" : "translated",
             "value" : "Danh sách mua sắm không giới hạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nákupní seznam bez omezení"
+          }
         }
       }
     },
@@ -14615,6 +15623,12 @@
             "state" : "translated",
             "value" : "Nâng cấp lên Pro để thêm mục không giới hạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "S Pro přidáte položky bez omezení"
+          }
         }
       }
     },
@@ -14697,6 +15711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phiên bản"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verze"
           }
         }
       }
@@ -14782,6 +15802,12 @@
             "state" : "translated",
             "value" : "Nhờ sự ủng hộ của bạn, chúng tôi mới có thể tiếp tục làm ứng dụng này."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Díky vaší podpoře můžeme v aplikaci pokračovat."
+          }
         }
       }
     },
@@ -14866,6 +15892,12 @@
             "state" : "translated",
             "value" : "Sự ủng hộ của bạn rất có ý nghĩa. (đến nay ☕️ ×%lld)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaše podpora hodně znamená. (zatím ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -14947,6 +15979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "phút"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
           }
         }
       }
@@ -15030,6 +16068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tác vụ nhanh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rychlé akce"
           }
         }
       }
@@ -15122,6 +16166,12 @@
             "state" : "translated",
             "value" : "Chưa chọn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nevybráno"
+          }
         }
       }
     },
@@ -15204,6 +16254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xóa lựa chọn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrušit výběr"
           }
         }
       }
@@ -15293,6 +16349,12 @@
             "state" : "translated",
             "value" : "Chưa chọn cửa hàng. Hãy mở ứng dụng để chọn."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Není vybrán žádný obchod. Otevřete aplikaci a vyberte ho."
+          }
         }
       }
     },
@@ -15374,6 +16436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lịch đã chọn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vybraný vzorec"
           }
         }
       }
@@ -15466,6 +16534,12 @@
             "state" : "translated",
             "value" : "Đã chọn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vybráno"
+          }
         }
       }
     },
@@ -15549,6 +16623,12 @@
             "state" : "translated",
             "value" : "Tất cả cửa hàng đã chọn đều mở cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny vybrané obchody mají otevřeno"
+          }
         }
       }
     },
@@ -15631,6 +16711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tất cả cửa hàng đã chọn đều đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny vybrané obchody mají zavřeno"
           }
         }
       }
@@ -15720,6 +16806,12 @@
             "state" : "translated",
             "value" : "Ngày lễ Seollal/Chuseok"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svátky Sollal a Čchusok"
+          }
         }
       }
     },
@@ -15801,6 +16893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavení"
           }
         }
       }
@@ -15886,6 +16984,12 @@
             "state" : "translated",
             "value" : "Chọn các cửa hàng cần theo dõi trong Cài đặt"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V Nastavení vyberte obchody, které chcete sledovat"
+          }
         }
       }
     },
@@ -15969,6 +17073,12 @@
             "state" : "translated",
             "value" : "Chọn các cửa hàng cần theo dõi trong Cài đặt"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V Nastavení vyberte obchody, které chcete sledovat"
+          }
         }
       }
     },
@@ -16051,6 +17161,12 @@
             "state" : "translated",
             "value" : "Đi tới Cài đặt"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejít do Nastavení"
+          }
         }
       }
     },
@@ -16132,6 +17248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giờ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hodina"
           }
         }
       }
@@ -16222,6 +17344,12 @@
             "state" : "translated",
             "value" : "Không rõ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neznámé"
+          }
         }
       }
     },
@@ -16303,6 +17431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cần quyền thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je nutné povolit oznámení"
           }
         }
       }
@@ -16387,6 +17521,12 @@
             "state" : "translated",
             "value" : "Cài đặt thông báo"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavení oznámení"
+          }
         }
       }
     },
@@ -16468,6 +17608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giờ thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čas oznámení"
           }
         }
       }
@@ -16552,6 +17698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo cho tôi"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornit mě"
           }
         }
       }
@@ -16642,6 +17794,12 @@
             "state" : "translated",
             "value" : "Nhận thông báo trước ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění před dny zavření"
+          }
         }
       }
     },
@@ -16730,6 +17888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámení"
           }
         }
       }
@@ -16820,6 +17984,12 @@
             "state" : "translated",
             "value" : "Nhận thông báo trước ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění před dny zavření"
+          }
         }
       }
     },
@@ -16901,6 +18071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámení"
           }
         }
       }
@@ -16985,6 +18161,12 @@
             "state" : "translated",
             "value" : "Viết đánh giá trên App Store"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napsat recenzi do App Storu"
+          }
         }
       }
     },
@@ -17067,6 +18249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xem trên App Store"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit v App Storu"
           }
         }
       }
@@ -17152,6 +18340,12 @@
             "state" : "translated",
             "value" : "Cảm ơn bạn đã ủng hộ ứng dụng ☕️"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Děkujeme, že podporujete aplikaci ☕️"
+          }
         }
       }
     },
@@ -17234,6 +18428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jangpjong, Tedžon, Jangdže, \nSangbong, Pusan, Kwangmjong, \nČchonan, Ujdžongbu, Kongse, \nSongdo, Sedžong, Hanam, \nKimhe, Kočchok"
           }
         }
       }
@@ -17322,6 +18522,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mở cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřeno"
           }
         }
       }
@@ -17412,6 +18618,12 @@
             "state" : "translated",
             "value" : "Đang mở cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřeno"
+          }
         }
       }
     },
@@ -17494,6 +18706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay mở cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes otevřeno"
           }
         }
       }
@@ -17584,6 +18802,12 @@
             "state" : "translated",
             "value" : "Hôm nay"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes"
+          }
         }
       }
     },
@@ -17666,6 +18890,12 @@
             "state" : "translated",
             "value" : "Hôm nay %@ đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes zavřeno: %@"
+          }
         }
       }
     },
@@ -17747,6 +18977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay đi được không?"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Můžu dnes jít?"
           }
         }
       }
@@ -17837,6 +19073,12 @@
             "state" : "translated",
             "value" : "Hôm nay tất cả cửa hàng đã chọn đều mở cửa."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny vybrané obchody mají dnes otevřeno."
+          }
         }
       }
     },
@@ -17926,6 +19168,12 @@
             "state" : "translated",
             "value" : "Hôm nay tất cả cửa hàng đã chọn đều đóng cửa."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny vybrané obchody mají dnes zavřeno."
+          }
         }
       }
     },
@@ -18010,6 +19258,12 @@
             "state" : "translated",
             "value" : "Chia sẻ tình trạng hôm nay và các ngày đóng cửa sắp tới"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílí dnešní stav a nadcházející dny zavření"
+          }
         }
       }
     },
@@ -18093,6 +19347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay mở cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes otevřeno"
           }
         }
       }
@@ -18185,6 +19445,12 @@
             "state" : "translated",
             "value" : "Hôm nay chỉ một số cửa hàng đóng cửa: %@."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes mají zavřeno jen některé obchody: %@."
+          }
         }
       }
     },
@@ -18268,6 +19534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay chúng tôi đã giúp bạn khỏi đi uổng công"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes jsme vám ušetřili zbytečnou cestu"
           }
         }
       }
@@ -18360,6 +19632,12 @@
             "state" : "translated",
             "value" : "Hôm nay đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes zavřeno"
+          }
         }
       }
     },
@@ -18444,6 +19722,12 @@
             "state" : "translated",
             "value" : "Hôm nay đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes zavřeno"
+          }
         }
       }
     },
@@ -18525,6 +19809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay chúng tôi lại giúp bạn khỏi đi uổng công.\nChúng tôi luôn ghi nhớ sự ủng hộ hào phóng của bạn."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes jsme vám zase ušetřili zbytečnou cestu.\nVaši štědrou podporu si stále pamatujeme."
           }
         }
       }
@@ -18614,6 +19904,12 @@
             "state" : "translated",
             "value" : "Xong"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotovo"
+          }
         }
       }
     },
@@ -18697,6 +19993,12 @@
             "state" : "translated",
             "value" : "Xóa các mục đã hoàn thành"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat dokončené položky"
+          }
         }
       }
     },
@@ -18776,6 +20078,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -18869,6 +20177,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -18953,6 +20267,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -19045,6 +20365,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -19133,6 +20459,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -19215,6 +20547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hằng tháng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Měsíc"
           }
         }
       }
@@ -19299,6 +20637,12 @@
             "state" : "translated",
             "value" : "Cần quyền vị trí"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je nutné povolit polohu"
+          }
         }
       }
     },
@@ -19382,6 +20726,12 @@
             "state" : "translated",
             "value" : "Tính năng dùng vị trí"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funkce s polohou"
+          }
         }
       }
     },
@@ -19463,6 +20813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ủng hộ chúng tôi"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podpořte nás"
           }
         }
       }
@@ -19551,6 +20907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "CN"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne"
           }
         }
       }
@@ -19643,6 +21005,12 @@
             "state" : "translated",
             "value" : "Tuần này: %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tento týden: %@"
+          }
         }
       }
     },
@@ -19725,6 +21093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuần này %@ đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tento týden zavřeno: %@"
           }
         }
       }
@@ -19814,6 +21188,12 @@
             "state" : "translated",
             "value" : "Chủ nhật này"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuto neděli"
+          }
         }
       }
     },
@@ -19901,6 +21281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chủ nhật này %@, cửa hàng mở cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuto neděli %@: obchod otevřen"
           }
         }
       }
@@ -19990,6 +21376,12 @@
             "state" : "translated",
             "value" : "Chủ nhật này %@, cửa hàng đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuto neděli %@: obchod zavřen"
+          }
         }
       }
     },
@@ -20073,6 +21465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tháng trước"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Předchozí měsíc"
           }
         }
       }
@@ -20158,6 +21556,12 @@
             "state" : "translated",
             "value" : "Chia sẻ lên Story Instagram"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílet do Instagram Stories"
+          }
         }
       }
     },
@@ -20242,6 +21646,12 @@
             "state" : "translated",
             "value" : "Cần cài Instagram để chia sẻ lên Story."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro sdílení do Stories musí být nainstalovaný Instagram."
+          }
         }
       }
     },
@@ -20325,6 +21735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không tìm thấy Instagram"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram nenalezen"
           }
         }
       }
@@ -20411,6 +21827,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -20503,6 +21925,12 @@
             "state" : "translated",
             "value" : "Thông thường"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Běžný"
+          }
         }
       }
     },
@@ -20585,6 +22013,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng thông thường"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Běžné obchody"
           }
         }
       }
@@ -20669,6 +22103,12 @@
             "state" : "translated",
             "value" : "Một số mở cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Některé otevřeny"
+          }
         }
       }
     },
@@ -20751,6 +22191,12 @@
             "state" : "translated",
             "value" : "Một số cửa hàng đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Některé obchody mají zavřeno"
+          }
         }
       }
     },
@@ -20830,6 +22276,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -20923,6 +22375,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -21011,6 +22469,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -21095,6 +22559,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -21188,6 +22658,12 @@
             "state" : "translated",
             "value" : "Mua một lần. Không đăng ký định kỳ."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jednorázový nákup. Bez předplatného."
+          }
         }
       }
     },
@@ -21269,6 +22745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm lịch đóng cửa của các cửa hàng yêu thích"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte vzorce zavření svých oblíbených obchodů"
           }
         }
       }
@@ -21353,6 +22835,12 @@
             "state" : "translated",
             "value" : "Nhắc đi mua sắm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připomínka nákupu"
+          }
         }
       }
     },
@@ -21436,6 +22924,12 @@
             "state" : "translated",
             "value" : "Danh sách mua sắm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nákupní seznam"
+          }
         }
       }
     },
@@ -21518,6 +23012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo mua sắm"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění na nákup"
           }
         }
       }
@@ -21608,6 +23108,12 @@
             "state" : "translated",
             "value" : "Nhắc đi mua sắm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připomínka nákupu"
+          }
         }
       }
     },
@@ -21692,6 +23198,12 @@
             "state" : "translated",
             "value" : "Nhắc ngày thích hợp đi chợ (hôm trước)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění na dobrý den pro nákup (den předem)"
+          }
         }
       }
     },
@@ -21775,6 +23287,12 @@
             "state" : "translated",
             "value" : "Thêm mục"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat položku"
+          }
         }
       }
     },
@@ -21857,6 +23375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm mục vào danh sách mua sắm"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte položky do nákupního seznamu"
           }
         }
       }
@@ -21945,6 +23469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lưu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložit"
           }
         }
       }
@@ -22035,6 +23565,12 @@
             "state" : "translated",
             "value" : "Hầu hết các vùng trên cả nước"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Většina regionů v zemi"
+          }
         }
       }
     },
@@ -22123,6 +23659,12 @@
             "state" : "translated",
             "value" : "Ngày lễ quốc gia"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Státní svátek"
+          }
         }
       }
     },
@@ -22210,6 +23752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngày lễ quốc gia"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Státní svátek"
           }
         }
       }
@@ -22300,6 +23848,12 @@
             "state" : "translated",
             "value" : "Đóng cửa cả ngày"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celý den zavřeno"
+          }
         }
       }
     },
@@ -22383,6 +23937,12 @@
             "state" : "translated",
             "value" : "Xóa tất cả"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat vše"
+          }
         }
       }
     },
@@ -22465,6 +24025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xem tất cả"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit vše"
           }
         }
       }
@@ -22550,6 +24116,12 @@
             "state" : "translated",
             "value" : "Cảm ơn bạn rất nhiều!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moc děkujeme!"
+          }
         }
       }
     },
@@ -22632,6 +24204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giới thiệu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informace"
           }
         }
       }
@@ -22721,6 +24299,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čedžu"
+          }
         }
       }
     },
@@ -22803,6 +24387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Theo tuần"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Týdně"
           }
         }
       }
@@ -22887,6 +24477,12 @@
             "state" : "translated",
             "value" : "Cửa hàng gần đây"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchody poblíž"
+          }
         }
       }
     },
@@ -22969,6 +24565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tự động phát hiện cửa hàng gần đây"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky najít obchody poblíž"
           }
         }
       }
@@ -23053,6 +24655,12 @@
             "state" : "translated",
             "value" : "Để tìm cửa hàng gần đây,\nhãy cho phép truy cập vị trí tại\nCài đặt > DontGoMart > Vị trí."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chcete-li najít obchody poblíž,\npovolte přístup k poloze v\nNastavení > DontGoMart > Poloha."
+          }
         }
       }
     },
@@ -23136,6 +24744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Báo cho những người quanh bạn biết về ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dejte lidem kolem sebe vědět o zavření"
           }
         }
       }
@@ -23226,6 +24840,12 @@
             "state" : "translated",
             "value" : "Ghim các cửa hàng yêu thích lên trên cùng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připněte oblíbené obchody nahoru"
+          }
         }
       }
     },
@@ -23315,6 +24935,12 @@
             "state" : "translated",
             "value" : "Yêu thích"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oblíbené"
+          }
         }
       }
     },
@@ -23399,6 +25025,12 @@
             "state" : "translated",
             "value" : "Sự ủng hộ nhận được đến nay ☕️ ×%lld"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dosud přijatá podpora ☕️ ×%lld"
+          }
         }
       }
     },
@@ -23481,6 +25113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tiến độ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Průběh"
           }
         }
       }
@@ -23565,6 +25203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngày đóng cửa đầu tiên"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "První den zavření"
           }
         }
       }
@@ -23654,6 +25298,12 @@
             "state" : "translated",
             "value" : "Thêm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat"
+          }
         }
       }
     },
@@ -23735,6 +25385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chọn các cửa hàng cần theo dõi (chọn nhiều)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyberte obchody ke sledování (lze více)"
           }
         }
       }
@@ -23824,6 +25480,12 @@
             "state" : "translated",
             "value" : "Hủy"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrušit"
+          }
         }
       }
     },
@@ -23908,6 +25570,12 @@
             "state" : "translated",
             "value" : "Đang chuẩn bị thẻ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připravujeme kartu"
+          }
         }
       }
     },
@@ -23991,6 +25659,12 @@
             "state" : "translated",
             "value" : "Xem lịch"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit kalendář"
+          }
         }
       }
     },
@@ -24073,6 +25747,12 @@
             "state" : "translated",
             "value" : "Thêm cửa hàng tùy chỉnh"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat vlastní obchod"
+          }
         }
       }
     },
@@ -24154,6 +25834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sửa cửa hàng tùy chỉnh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upravit vlastní obchod"
           }
         }
       }
@@ -24243,6 +25929,12 @@
             "state" : "translated",
             "value" : "Cửa hàng tùy chỉnh"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní obchod"
+          }
         }
       }
     },
@@ -24331,6 +26023,12 @@
             "state" : "translated",
             "value" : "Cửa hàng tùy chỉnh"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní obchod"
+          }
         }
       }
     },
@@ -24418,6 +26116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng tùy chỉnh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní obchod"
           }
         }
       }
@@ -24508,6 +26212,12 @@
             "state" : "translated",
             "value" : "Thêm lịch đóng cửa của cửa hàng riêng của bạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte vzorce zavření svého vlastního obchodu"
+          }
         }
       }
     },
@@ -24596,6 +26306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng tùy chỉnh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní obchod"
           }
         }
       }
@@ -24686,6 +26402,12 @@
             "state" : "translated",
             "value" : "Thêm lịch đóng cửa của cửa hàng riêng của bạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte vzorce zavření svého vlastního obchodu"
+          }
         }
       }
     },
@@ -24769,6 +26491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mời cà phê %@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koupit kávu %@"
           }
         }
       }
@@ -24854,6 +26582,12 @@
             "state" : "translated",
             "value" : "Mời cà phê, %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koupit kávu, %@"
+          }
         }
       }
     },
@@ -24933,6 +26667,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -25025,6 +26765,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Tegu"
+          }
         }
       }
     },
@@ -25112,6 +26858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Tegu"
           }
         }
       }
@@ -25201,6 +26953,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Tegu"
+          }
         }
       }
     },
@@ -25285,6 +27043,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -25377,6 +27141,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -25461,6 +27231,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -25553,6 +27329,12 @@
             "state" : "translated",
             "value" : "Costco thông thường"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco běžné"
+          }
         }
       }
     },
@@ -25640,6 +27422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco thông thường"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco běžné"
           }
         }
       }
@@ -25729,6 +27517,12 @@
             "state" : "translated",
             "value" : "Costco thông thường"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco běžné"
+          }
         }
       }
     },
@@ -25813,6 +27607,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -25905,6 +27705,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -25989,6 +27795,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -26081,6 +27893,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -26169,6 +27987,12 @@
             "state" : "translated",
             "value" : "Thông thường – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Běžné – Jangpjong, Tedžon, Jangdže, \nSangbong, Pusan, Kwangmjong, \nČchonan, Ujdžongbu, Kongse, \nSongdo, Sedžong, Hanam, \nKimhe, Kočchok"
+          }
         }
       }
     },
@@ -26251,6 +28075,12 @@
             "state" : "translated",
             "value" : "Thêm lịch"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat vzorec"
+          }
         }
       }
     },
@@ -26332,6 +28162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vui lòng thêm lịch"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte vzorec"
           }
         }
       }
@@ -26422,6 +28258,12 @@
             "state" : "translated",
             "value" : "Mở khóa theo dõi nhiều cửa hàng, thông báo và nhiều hơn nữa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odemkněte sledování více obchodů, upozornění a další"
+          }
         }
       }
     },
@@ -26506,6 +28348,12 @@
             "state" : "translated",
             "value" : "Ủng hộ thêm một lần nữa ☕️"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podpořit ještě jednou ☕️"
+          }
         }
       }
     },
@@ -26588,6 +28436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chi nhánh đã chọn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vybraná pobočka"
           }
         }
       }
@@ -26672,6 +28526,12 @@
             "state" : "translated",
             "value" : "Tìm và gợi ý các cửa hàng gần bạn dựa trên vị trí hiện tại."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najde a doporučí obchody poblíž podle vaší aktuální polohy."
+          }
         }
       }
     },
@@ -26752,6 +28612,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -26840,6 +28706,12 @@
             "state" : "translated",
             "value" : "Tải lại danh sách các mức ủng hộ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znovu načte nabídku spropitného"
+          }
         }
       }
     },
@@ -26923,6 +28795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang tải các mức ủng hộ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Načítá se nabídka spropitného"
           }
         }
       }
@@ -27008,6 +28886,12 @@
             "state" : "translated",
             "value" : "Không tải được các mức ủng hộ. Thử lại"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nabídku spropitného se nepodařilo načíst. Zkusit znovu"
+          }
         }
       }
     },
@@ -27091,6 +28975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Về tiền ủng hộ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O spropitném"
           }
         }
       }
@@ -27176,6 +29066,12 @@
             "state" : "translated",
             "value" : "Đóng thẻ ủng hộ. Thẻ sẽ không hiện lại trong 30 ngày"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavře kartu spropitného. 30 dní se znovu nezobrazí"
+          }
         }
       }
     },
@@ -27259,6 +29155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Người ủng hộ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podporovatel"
           }
         }
       }
@@ -27344,6 +29246,12 @@
             "state" : "translated",
             "value" : "Người ủng hộ. Đến nay đã mời %lld ly cà phê. Cảm ơn bạn đã ủng hộ ứng dụng."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podporovatel. Zatím %lld káv. Děkujeme, že podporujete aplikaci."
+          }
         }
       }
     },
@@ -27428,6 +29336,12 @@
             "state" : "translated",
             "value" : "Chúng tôi chưa quên bạn!"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nezapomněli jsme na vás!"
+          }
         }
       }
     },
@@ -27511,6 +29425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cảm ơn bạn đã ủng hộ. Đến nay bạn đã gửi %lld ly cà phê."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Děkujeme za podporu. Zatím jste poslali %lld káv."
           }
         }
       }
@@ -27603,6 +29523,12 @@
             "state" : "translated",
             "value" : "Cảm ơn bạn rất nhiều vì đã ủng hộ. Điều đó rất có ý nghĩa với chúng tôi."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moc děkujeme za podporu. Hodně nám znamená."
+          }
         }
       }
     },
@@ -27686,6 +29612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cảm ơn bạn rất nhiều vì đã ủng hộ. Đến nay bạn đã gửi %lld ly cà phê."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moc děkujeme za podporu. Zatím jste poslali %lld káv."
           }
         }
       }
@@ -27777,6 +29709,12 @@
             "state" : "translated",
             "value" : "Đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřeno"
+          }
         }
       }
     },
@@ -27858,6 +29796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kiểu đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vzorec zavření"
           }
         }
       }
@@ -27943,6 +29887,12 @@
             "state" : "translated",
             "value" : "Báo tin đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámit zavření"
+          }
         }
       }
     },
@@ -28026,6 +29976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chia sẻ hình thẻ thông báo đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílí obrázek karty o zavření"
           }
         }
       }
@@ -28117,6 +30073,12 @@
             "state" : "translated",
             "value" : "Thẻ thông báo đóng cửa. %1$@ %2$@, %3$@ đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karta o zavření. %1$@ %2$@, %3$@ zavřeno"
+          }
         }
       }
     },
@@ -28201,6 +30163,12 @@
             "state" : "translated",
             "value" : "Tạo và chia sẻ thẻ thông báo đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvoří a sdílí kartu o zavření"
+          }
         }
       }
     },
@@ -28284,6 +30252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chia sẻ thẻ thông báo đóng cửa lên Story Instagram"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílí kartu o zavření do Instagram Stories"
           }
         }
       }
@@ -28376,6 +30350,12 @@
             "state" : "translated",
             "value" : "Không đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bez zavření"
+          }
         }
       }
     },
@@ -28457,6 +30437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lịch đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vzorec zavření"
           }
         }
       }
@@ -28546,6 +30532,12 @@
             "state" : "translated",
             "value" : "Đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřeno"
+          }
         }
       }
     },
@@ -28628,6 +30620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hôm nay đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnes zavřeno"
           }
         }
       }
@@ -28713,6 +30711,12 @@
             "state" : "translated",
             "value" : "Không có cửa hàng nào đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádný obchod nemá zavřeno"
+          }
         }
       }
     },
@@ -28795,6 +30799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dny zavření"
           }
         }
       }
@@ -28879,6 +30889,12 @@
             "state" : "translated",
             "value" : "Thông báo sẽ được gửi trước ngày đóng cửa 3 ngày và 1 ngày."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznámení přijdou 3 dny a 1 den před dny zavření."
+          }
         }
       }
     },
@@ -28960,6 +30976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông báo ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornění na dny zavření"
           }
         }
       }
@@ -29044,6 +31066,12 @@
             "state" : "translated",
             "value" : "Vui lòng bật thông báo ngày đóng cửa trước."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nejdřív zapněte upozornění na dny zavření."
+          }
         }
       }
     },
@@ -29125,6 +31153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Để nhận thông báo ngày đóng cửa, hãy cho phép thông báo trong Cài đặt."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abyste dostávali upozornění na dny zavření, povolte oznámení v Nastavení."
           }
         }
       }
@@ -29208,6 +31242,12 @@
             "state" : "translated",
             "value" : "Không có thông tin ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné údaje o zavření"
+          }
         }
       }
     },
@@ -29290,6 +31330,12 @@
             "state" : "translated",
             "value" : "Không có thông tin về ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné údaje o dnech zavření"
+          }
         }
       }
     },
@@ -29371,6 +31417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lịch ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalendář zavření"
           }
         }
       }
@@ -29456,6 +31508,12 @@
             "state" : "translated",
             "value" : "Xem lịch ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit kalendář zavření"
+          }
         }
       }
     },
@@ -29539,6 +31597,12 @@
             "state" : "translated",
             "value" : "Chọn ngày đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyberte dny zavření"
+          }
         }
       }
     },
@@ -29621,6 +31685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không phải ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Není den zavření"
           }
         }
       }
@@ -29710,6 +31780,12 @@
             "state" : "translated",
             "value" : "Đã tìm thấy “%@”. Kiểm tra rồi chạm Thêm."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nalezeno „%@“. Zkontrolujte a klepněte na Přidat."
+          }
         }
       }
     },
@@ -29797,6 +31873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không có nơi nào đóng cửa trong 7 ngày tới"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V příštích 7 dnech nikde nezavírají"
           }
         }
       }
@@ -29886,6 +31968,12 @@
             "state" : "translated",
             "value" : "Không có nhà hàng quen nào nghỉ trong 7 ngày tới"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádná z vašich restaurací v příštích 7 dnech nezavírá"
+          }
         }
       }
     },
@@ -29973,6 +32061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuần này không có ngày đóng cửa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tento týden bez zavření"
           }
         }
       }
@@ -30062,6 +32156,12 @@
             "state" : "translated",
             "value" : "Quản lý"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spravovat"
+          }
         }
       }
     },
@@ -30149,6 +32249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn có thể thêm từ liên kết chia sẻ của Naver Maps hoặc ảnh chụp màn hình"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat můžete z odkazu ke sdílení z Naver Maps nebo ze snímku obrazovky"
           }
         }
       }
@@ -30238,6 +32344,12 @@
             "state" : "translated",
             "value" : "Nhà hàng của tôi"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moje restaurace"
+          }
         }
       }
     },
@@ -30325,6 +32437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhà hàng · 7 ngày"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurace · 7 dní"
           }
         }
       }
@@ -30414,6 +32532,12 @@
             "state" : "translated",
             "value" : "Thêm hoặc sửa nhà hàng của bạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte nebo upravte své restaurace"
+          }
         }
       }
     },
@@ -30501,6 +32625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chưa có nhà hàng nào. Hãy thêm trong ứng dụng."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zatím žádné restaurace. Přidejte je v aplikaci."
           }
         }
       }
@@ -30590,6 +32720,12 @@
             "state" : "translated",
             "value" : "Hoặc dán liên kết hay đoạn văn bản đã chia sẻ vào đây"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nebo sem vložte sdílený odkaz či text"
+          }
         }
       }
     },
@@ -30677,6 +32813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhập nhanh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rychlý import"
           }
         }
       }
@@ -30766,6 +32908,12 @@
             "state" : "translated",
             "value" : "Đọc thông tin ngày nghỉ từ ảnh ngay trên thiết bị của bạn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přečte údaje o zavření z fotky přímo ve vašem zařízení"
+          }
         }
       }
     },
@@ -30853,6 +33001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không tải được ảnh"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotku se nepodařilo načíst"
           }
         }
       }
@@ -30942,6 +33096,12 @@
             "state" : "translated",
             "value" : "Không có nhà hàng nào nghỉ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádná restaurace nezavírá"
+          }
         }
       }
     },
@@ -31029,6 +33189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ảnh chụp màn hình"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snímek obrazovky"
           }
         }
       }
@@ -31118,6 +33284,12 @@
             "state" : "translated",
             "value" : "Xóa nhà hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat restauraci"
+          }
         }
       }
     },
@@ -31205,6 +33377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tên nhà hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Název restaurace"
           }
         }
       }
@@ -31294,6 +33472,12 @@
             "state" : "translated",
             "value" : "Nhà hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurace"
+          }
         }
       }
     },
@@ -31381,6 +33565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm nhà hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat restauraci"
           }
         }
       }
@@ -31470,6 +33660,12 @@
             "state" : "translated",
             "value" : "Thêm nhà hàng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat restauraci"
+          }
         }
       }
     },
@@ -31557,6 +33753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sửa nhà hàng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upravit restauraci"
           }
         }
       }
@@ -31646,6 +33848,12 @@
             "state" : "translated",
             "value" : "Không có nhà hàng quen nào nghỉ trong 7 ngày tới."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádná z vašich restaurací v příštích 7 dnech nezavírá."
+          }
         }
       }
     },
@@ -31733,6 +33941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hiển thị chấm vào những ngày nhà hàng của bạn nghỉ trong 7 ngày tới."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tečkou označí dny z příštích 7, kdy mají vaše restaurace zavřeno."
           }
         }
       }
@@ -31822,6 +34036,12 @@
             "state" : "translated",
             "value" : "Hãy thêm nhà hàng trong ứng dụng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte restaurace v aplikaci"
+          }
         }
       }
     },
@@ -31909,6 +34129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Được ghi là mở cửa mỗi ngày — không có ngày nghỉ cố định."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uvedeno jako otevřeno každý den — bez pravidelného volna."
           }
         }
       }
@@ -31998,6 +34224,12 @@
             "state" : "translated",
             "value" : "Thêm widget “Nhà hàng · 7 ngày” vào Màn hình chính để xem mà không cần mở ứng dụng."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte widget „Restaurace · 7 dní“ na plochu, abyste to viděli bez otevření aplikace."
+          }
         }
       }
     },
@@ -32085,6 +34317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhập nội dung này"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importovat toto"
           }
         }
       }
@@ -32174,6 +34412,12 @@
             "state" : "translated",
             "value" : "Đã lấy được tên nhưng không có thông tin ngày nghỉ. Hãy thử ảnh chụp màn hình giờ mở cửa hoặc chọn ngày bên dưới."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Název se načetl, ale chybí údaje o zavření. Zkuste snímek otevírací doby nebo vyberte dny níže."
+          }
         }
       }
     },
@@ -32261,6 +34505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhập ngày nghỉ cố định của các nhà hàng bạn hay đến, chúng tôi sẽ đánh dấu chấm những ngày nghỉ trong 7 ngày tới."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zadejte pravidelné dny volna restaurací, kam chodíte, a dny zavření v příštích 7 dnech označíme tečkou."
           }
         }
       }
@@ -32350,6 +34600,12 @@
             "state" : "translated",
             "value" : "Màu chấm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barva tečky"
+          }
         }
       }
     },
@@ -32437,6 +34693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngày nghỉ cố định"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pravidelné dny volna"
           }
         }
       }
@@ -32526,6 +34788,12 @@
             "state" : "translated",
             "value" : "Địa chỉ (không bắt buộc)"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresa (volitelné)"
+          }
         }
       }
     },
@@ -32613,6 +34881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trong ứng dụng bản đồ, chạm Chia sẻ → Sao chép ở nhà hàng rồi dán vào đây, hoặc chọn ảnh chụp màn hình trang thông tin của nhà hàng."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V mapové aplikaci klepněte u restaurace na Sdílet → Kopírovat a vložte sem, nebo vyberte snímek její informační stránky."
           }
         }
       }
@@ -32702,6 +34976,12 @@
             "state" : "translated",
             "value" : "Mở trong Bản đồ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít v Mapách"
+          }
         }
       }
     },
@@ -32789,6 +35069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tự thêm ngày nghỉ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat den volna ručně"
           }
         }
       }
@@ -32878,6 +35164,12 @@
             "state" : "translated",
             "value" : "Vui lòng thêm ngày nghỉ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidejte den volna"
+          }
         }
       }
     },
@@ -32965,6 +35257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sửa thông tin ngày nghỉ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upravit údaje o zavření"
           }
         }
       }
@@ -33054,6 +35352,12 @@
             "state" : "translated",
             "value" : "Đang tìm thông tin ngày nghỉ…"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledáme údaje o zavření…"
+          }
         }
       }
     },
@@ -33141,6 +35445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không tìm thấy thông tin ngày nghỉ. Hãy chọn ngày bên dưới."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Údaje o zavření se nenašly. Vyberte dny níže."
           }
         }
       }
@@ -33230,6 +35540,12 @@
             "state" : "translated",
             "value" : "Bài đăng 4:5"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příspěvek 4:5"
+          }
         }
       }
     },
@@ -33314,6 +35630,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -33406,6 +35728,12 @@
             "state" : "translated",
             "value" : "Lịch đóng cửa 2 tuần"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalendář zavření na 2 týdny"
+          }
         }
       }
     },
@@ -33493,6 +35821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sắp tới"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Již brzy"
           }
         }
       }
@@ -33582,6 +35916,12 @@
             "state" : "translated",
             "value" : "Tìm “DontGoMart” trên App Store"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyhledejte v App Storu „DontGoMart“"
+          }
         }
       }
     },
@@ -33669,6 +36009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cửa hàng đóng cửa rồi!"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obchody zavřeny!"
           }
         }
       }
@@ -33758,6 +36104,12 @@
             "state" : "translated",
             "value" : "Ảnh"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotka"
+          }
         }
       }
     },
@@ -33842,6 +36194,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
@@ -33934,6 +36292,12 @@
             "state" : "translated",
             "value" : "Định dạng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát"
+          }
         }
       }
     },
@@ -34021,6 +36385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phương tiện"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Médium"
           }
         }
       }
@@ -34110,6 +36480,12 @@
             "state" : "translated",
             "value" : "Thẻ thông báo đóng cửa. %1$@ %2$@, %3$@ đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karta o zavření. %1$@ %2$@, %3$@ zavřeno"
+          }
         }
       }
     },
@@ -34197,6 +36573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang tạo video"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytváříme video"
           }
         }
       }
@@ -34286,6 +36668,12 @@
             "state" : "translated",
             "value" : "Đăng lên Instagram"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zveřejnit na Instagramu"
+          }
         }
       }
     },
@@ -34373,6 +36761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chọn Instagram trong danh sách chia sẻ để đăng dưới dạng bài đăng, story hoặc reel"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V seznamu sdílení vyberte Instagram a zveřejněte to jako příspěvek, story nebo reel"
           }
         }
       }
@@ -34462,6 +36856,12 @@
             "state" : "translated",
             "value" : "Mở thẳng trình soạn Story của Instagram"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rovnou otevře editor stories na Instagramu"
+          }
         }
       }
     },
@@ -34549,6 +36949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chia sẻ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílet"
           }
         }
       }
@@ -34638,6 +37044,12 @@
             "state" : "translated",
             "value" : "Chia sẻ video thông báo đóng cửa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sdílí video o zavření"
+          }
         }
       }
     },
@@ -34725,6 +37137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không tạo được video. Hãy chia sẻ ảnh thay thế."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video se nepodařilo vytvořit. Sdílejte místo něj fotku."
           }
         }
       }
@@ -34814,6 +37232,12 @@
             "state" : "translated",
             "value" : "Mở cửa lại %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znovu otevře %@"
+          }
         }
       }
     },
@@ -34901,6 +37325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hãy mua sắm xong trước %@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nakupte nejpozději do %@"
           }
         }
       }

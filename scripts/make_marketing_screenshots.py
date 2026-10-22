@@ -122,6 +122,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Tự thêm cửa hàng<br>gần nhà", "Cả lịch như thứ Ba thứ hai và thứ tư"),
         ("05-share.png", "dark", "Báo tin đóng cửa<br>bằng một tấm thẻ", "Cho gia đình và hàng xóm biết ngay"),
     ],
+    "cs": [
+        ("01-main.png", "hero-bleed", "Zkontrolujte<br>před cestou", "Jedním pohledem uvidíte, jestli je obchod otevřený"),
+        ("02-calendar.png", "left-text", "Dny zavření<br>tohoto měsíce", "Každý den zavření přímo v kalendáři"),
+        ("03-marts.png", "text-bottom", "Jen vaše obchody", "Supermarkety, Costco, zavření o svátcích"),
+        ("04-pattern.png", "flat-rotate", "Přidejte svůj<br>obchod z okolí", "Vzorce jako druhé a čtvrté úterý"),
+        ("05-share.png", "dark", "Oznamte zavření<br>jednou kartou", "Dejte vědět rodině i sousedům"),
+    ],
 }
 
 BASE_CSS = f"""

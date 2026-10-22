@@ -90,6 +90,12 @@ Widget giờ hiển thị tên DontGoMart
 Xem phản hồi cho góp ý trong Cài đặt
 Gửi góp ý sẽ hỏi chuyện gì đã xảy ra
 
+### App Store (cs)
+
+Widgety nově nesou jméno DontGoMart
+Odpovědi na vaše podněty v Nastavení
+Podnět se ptá, co se stalo
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)

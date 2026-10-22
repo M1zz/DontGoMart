@@ -815,3 +815,61 @@ https://m1zz.github.io/DontGoMart/vi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/vi/
+
+## cs
+
+### 이름
+
+DontGoMart: dny zavření
+
+### 부제
+
+Žádná zbytečná cesta
+
+### 키워드
+
+supermarket,hypermarket,Korea,Soul,otevírací,neděle,středa,svátky,Čchusok,nákup,widget,restaurace
+
+### 프로모션 텍스트
+
+Nově zjistíte i dny volna oblíbených restaurací: stačí odkaz z Naver Maps nebo snímek obrazovky a aplikace vás před zavřením upozorní přímo na obrazovce.
+
+### 설명
+
+Než vyrazíte, zkontrolujte, jestli je obchod otevřený.
+DontGoMart shromažďuje povinné dny zavření velkých korejských supermarketů a Costca a včas vás upozorní, když se nějaký blíží.
+
+Hned víte, jestli můžete dnes jít
+Po otevření aplikace uvidíte nejdřív, jestli je vybraný obchod dnes otevřený. Vedle toho počet dnů do dalšího zavření a seznam nadcházejících dnů zavření.
+
+Zvládá různé dny zavření podle regionu
+Vybírejte obchody zavřené v neděli nebo ve středu i regiony s jinými dny zavření, například Ulsan a Čedžu. U Costca nastavíte zvlášť běžné obchody a pobočky v Tegu, Ilsanu a Ulsanu. Zobrazují se i dny zavření o svátcích Sollal (lunární Nový rok) a Čchusok.
+
+Přidejte obchody ze svého okolí
+Pokud obchod v seznamu chybí, zadejte ho sami: stačí vybrat, který týden a který den v týdnu zavírá, například druhou a čtvrtou neděli.
+
+Dny volna oblíbených restaurací
+Zadejte pravidelné dny volna restaurací, kam chodíte, a ze 7 nejbližších dnů označíme tečkou ty, kdy mají zavřeno. Stačí vložit odkaz zkopírovaný z Naver Maps nebo vybrat snímek informační stránky restaurace a den volna se vyplní sám. Text na fotce se čte jen ve vašem zařízení.
+
+Upozornění, ať nezapomenete
+Vyberte, zda vás upozornit 1, 2, 3 nebo 7 dnů před zavřením a v jaký čas. Den před zavřením vám aplikace připomene, že dnes je dobrý den na nákup. Když je zavření do 3 dnů, zobrazí se i banner nahoře v aplikaci.
+
+Widgety na plochu a zamykací obrazovku
+Widgety ukazují nejbližší den zavření, dva další dny zavření s počtem zbývajících dnů, jestli je váš obchod tuto neděli otevřený, a dny volna oblíbených restaurací na 7 dní. Widget nedělí tohoto týdne a widget restaurací lze umístit i na zamykací obrazovku.
+
+Kalendář a sdílení
+V kalendáři vidíte dny zavření na celý měsíc. Zavření můžete sdílet jako kartu s kalendářem na dva týdny a tipem k nákupu ve formátu příspěvku nebo story na Instagramu, případně jako krátké video.
+
+Všechny funkce jsou zdarma. Pokud se vám aplikace hodí, podpořte vývoj kávou.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/cs/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/cs/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/cs/

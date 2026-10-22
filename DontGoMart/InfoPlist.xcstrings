@@ -87,6 +87,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -172,6 +178,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -265,6 +277,12 @@
             "state" : "translated",
             "value" : "Cần vị trí để tìm và gợi ý các cửa hàng gần bạn."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poloha je potřeba k nalezení a doporučení obchodů poblíž."
+          }
         }
       }
     },
@@ -353,6 +371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cần để lưu ảnh và video của thẻ thông báo đóng cửa vào thư viện ảnh."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potřebné k uložení fotek a videí karet o zavření do vaší knihovny."
           }
         }
       }
