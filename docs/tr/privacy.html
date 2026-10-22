@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası - DontGoMart</title>
+  <meta name="description" content="DontGoMart’ın cihazında neleri sakladığı, neleri gönderdiği ve nereye gönderdiği.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/tr/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/DontGoMart/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/DontGoMart/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/DontGoMart/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/DontGoMart/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/DontGoMart/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/DontGoMart/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/DontGoMart/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/DontGoMart/fi/privacy.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/DontGoMart/id/privacy.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/DontGoMart/nb/privacy.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/DontGoMart/nl/privacy.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/DontGoMart/pl/privacy.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/privacy.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/privacy.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/privacy.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/privacy.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a>
+        <a href="../it/privacy.html" hreflang="it" lang="it" title="Italiano">IT</a>
+        <a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
+        <a href="../th/privacy.html" hreflang="th" lang="th" title="ไทย">TH</a>
+        <a href="../vi/privacy.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
+        <a href="../cs/privacy.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
+        <a href="../da/privacy.html" hreflang="da" lang="da" title="Dansk">DA</a>
+        <a href="../el/privacy.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
+        <a href="../fi/privacy.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
+        <a href="../id/privacy.html" hreflang="id" lang="id" title="Indonesia">ID</a>
+        <a href="../nb/privacy.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
+        <a href="../nl/privacy.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
+        <a href="../pl/privacy.html" hreflang="pl" lang="pl" title="Polski">PL</a>
+        <a href="../sv/privacy.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
+        <a href="../tr/privacy.html" hreflang="tr" lang="tr" title="Türkçe" class="active" aria-current="true">TR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Gizlilik Politikası</h1>
+    <p class="last-updated">Son güncelleme: 8 Ekim 2026</p>
+
+    <h2>Genel bakış</h2>
+    <p>DontGoMart’ta hesap yoktur; reklam veya izleme araçları kullanılmaz. Seçtiğin veya eklediğin mağazalar, restoranlar ve bildirim ayarları yalnızca cihazında saklanır. Geliştirici yalnızca seni tanımlayamayan anonim kullanım istatistiklerini ve gönderilmesini kendin seçtiğin geri bildirimleri alır.</p>
+    <h2>1. Cihazda saklanan bilgiler</h2>
+    <p>Uygulamanın çalışması için aşağıdaki bilgiler yalnızca cihazında saklanır. Ana Ekran widget’larının bunları gösterebilmesi için aynı içerik cihazdaki uygulamanın paylaşılan kapsayıcısında da bulunur.</p>
+    <ul>
+      <li>Seçtiğin mağazalar ve bölge</li>
+      <li>Eklediğin mağazalar (ad ve kapanış kuralı)</li>
+      <li>Restoranlar (ad, adres, sabit tatil günleri, harita bağlantısı)</li>
+      <li>Bildirim ayarları (kaç gün önce ve saat kaçta) ve uygulama ayarları</li>
+    </ul>
+    <p>Bunların hiçbiri geliştiriciye gönderilmez ve uygulamayla birlikte silinir.</p>
+    <h2>2. Bildirimler</h2>
+    <p>Kapalı gün bildirimleri cihazında planlanır. Bildirimleri iletmek için bir sunucuya hiçbir şey gönderilmez.</p>
+    <h2>3. Fotoğraflar</h2>
+    <p>Bir restoranın tatil günlerini ekran görüntüsünden doldurduğunda uygulama yalnızca seçtiğin fotoğrafı alır. Fotoğraftaki yazı, Apple’ın Vision çerçevesiyle cihazında okunur; ne fotoğraf ne de yazı hiçbir yere gönderilir.</p>
+    <p>Fotoğraf kitaplığına ekleme izni yalnızca kapanış kartlarının görsellerini veya videolarını kaydetmek için istenir. Uygulama kitaplığındaki başka hiçbir fotoğrafı okumaz.</p>
+    <h2>4. Naver Maps bağlantısıyla restoran içe aktarma</h2>
+    <p>Naver Maps’ten paylaşılan bir bağlantıyı yapıştırdığında uygulama, adı, adresi ve tatil günlerini okumak için doğrudan o bağlantıya ve restoranın Naver Place sayfasına bağlanır. Her web sitesi ziyaretinde olduğu gibi Naver’a IP adresi gibi bağlantı bilgileri ulaşabilir ve bu isteğe Naver’ın gizlilik politikası uygulanır. Bu iletişim geliştiricinin sunucularından geçmez.</p>
+    <h2>5. Konum</h2>
+    <p>DontGoMart konum verisi istemez ve toplamaz. Mağazaları listeden kendin seçersin.</p>
+    <h2>6. Destek (uygulama içi satın alma)</h2>
+    <p>Kahve, pasta veya yemek desteği Apple üzerinden uygulama içi satın alma olarak işlenir; bu yüzden geliştirici ödeme yöntemini veya ödeme ayrıntılarını bilmez. Destek sayın ve destekçi rozetinin gösterilip gösterilmeyeceği, diğer cihazlarına geçebilmesi için kendi iCloud anahtar-değer depolama alanında saklanır. Bu veriler Apple Hesabın tarafından korunur ve geliştirici göremez.</p>
+    <h2>7. Duyurular</h2>
+    <p>Geliştiricinin bir duyurusu olup olmadığını öğrenmek için uygulama duyuruyu Apple CloudKit’in herkese açık veri tabanından okur. Bu sırada senin hakkında hiçbir bilgi gönderilmez.</p>
+    <h2>8. Geri bildirim</h2>
+    <p>Uygulamadan geri bildirim gönderdiğinde aşağıdaki bilgiler geliştiricinin CloudKit veri tabanına (iCloud.com.Ysoup.FeedbackHub) gönderilir ve yalnızca sana yanıt vermek ve uygulamayı geliştirmek için kullanılır.</p>
+    <ul>
+      <li>Geri bildirimin içeriği ve türü</li>
+      <li>Uygulama sürümü, cihaz modeli, iOS sürümü ile dil ve bölge ayarları</li>
+      <li>Ad ve e-posta adresi (yalnızca yanıt almak için kendin girersen)</li>
+    </ul>
+    <p>Geri bildirim yalnızca gönder düğmesine dokunduğunda gönderilir.</p>
+    <h2>9. Anonim kullanım istatistikleri</h2>
+    <p>Uygulamanın gerçekte nasıl kullanıldığını anlamak için uygulama, geliştiricinin CloudKit veri tabanına (iCloud.com.Ysoup.FeedbackHub) anonim istatistikler gönderir.</p>
+    <ul>
+      <li>Uygulama kurulurken oluşturulan rastgele bir kurulum numarası (adınla, Apple Hesabınla veya cihaz tanımlayıcılarınla ilişkili değildir ve uygulamayı sildiğinde kaybolur)</li>
+      <li>Uygulama sürümü, iOS sürümü, dil ve bölge ayarları, açılış sayısı, kurulumdan bu yana geçen gün sayısı ve uygulamayı açtığın günler</li>
+      <li>Takip edilen mağaza sayısı, eklenen mağaza sayısı, bildirimlerin açık olup olmadığı ve kaç gün önce olduğu ile destek sayısı</li>
+      <li>Paylaşma, takvimi açma, mağaza değiştirme, özel mağaza kaydetme, bildirimleri açma veya destek tamamlama gibi ana işlemlerin adları</li>
+    </ul>
+    <p>Mağaza ve restoran adları, adresleri ve bağlantıları, fotoğraflar, adın, e-posta adresin ve konumun asla gönderilmez. İstatistikler en fazla 12 saatte bir, işlem türü başına ise en fazla 6 saatte bir gönderilir.</p>
+    <h2>10. Üçüncü taraflar</h2>
+    <p>DontGoMart hiçbir reklam, reklam ağı veya üçüncü taraf analiz ya da izleme aracı kullanmaz. Bilgilerini yalnızca yukarıda sayılan Apple hizmetleri (CloudKit, iCloud, uygulama içi satın alma ve cihazdaki çerçeveler) ve bağlantı yapıştırırsan Naver işler. Kişisel bilgilerini satmayız ve üçüncü taraflara vermeyiz.</p>
+    <h2>11. Saklama ve silme</h2>
+    <p>Cihazda saklanan bilgiler uygulama içinden veya uygulamayı silerek silinir. iCloud’da saklanan destek kayıtlarını Ayarlar’daki Apple Hesabı ve iCloud bölümünden yönetebilirsin. Gönderdiğin bir geri bildirimin silinmesini istersen aşağıdaki adrese e-posta gönder.</p>
+    <h2>12. Çocukların gizliliği</h2>
+    <p>DontGoMart, çocuklara ait kişisel bilgileri bilerek toplamaz.</p>
+    <h2>13. Bu politikadaki değişiklikler</h2>
+    <p>Bu politikayı değiştirirsek bu sayfayı ve yukarıdaki tarihi güncelleriz.</p>
+    <h2>14. Bize ulaş</h2>
+    <p>Bilgilerin işlenmesiyle ilgili sorular için aşağıdaki adrese ulaşabilirsin.</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Ana sayfa</a>
+    <a href="support.html">Destek</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

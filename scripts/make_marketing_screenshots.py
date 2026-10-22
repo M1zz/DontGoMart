@@ -185,6 +185,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Lägg till din<br>butik runt hörnet", "Mönster som andra och fjärde tisdagen"),
         ("05-share.png", "dark", "Dela en stängning<br>med ett kort", "Berätta för familj och grannar"),
     ],
+    "tr": [
+        ("01-main.png", "hero-bleed", "Gitmeden önce<br>kontrol et", "Mağazanın bugün açık olup olmadığını bir bakışta gör"),
+        ("02-calendar.png", "left-text", "Bu ayın<br>kapalı günleri", "Tüm kapalı günler doğrudan takvimde"),
+        ("03-marts.png", "text-bottom", "Yalnızca senin mağazaların", "Süpermarketler, Costco, tatil kapanışları"),
+        ("04-pattern.png", "flat-rotate", "Mahalle mağazanı<br>kendin ekle", "İkinci ve dördüncü salı gibi düzenler"),
+        ("05-share.png", "dark", "Kapanışı tek kartla<br>duyur", "Aileni ve komşularını hemen haberdar et"),
+    ],
 }
 
 BASE_CSS = f"""

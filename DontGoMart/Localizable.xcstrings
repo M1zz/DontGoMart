@@ -144,6 +144,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — handla i god tid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — alışverişi önceden yap"
+          }
         }
       }
     },
@@ -278,6 +284,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -420,6 +432,12 @@
             "state" : "translated",
             "value" : "Radera %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ öğesini sil"
+          }
         }
       }
     },
@@ -557,6 +575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redigera %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ öğesini düzenle"
           }
         }
       }
@@ -701,6 +725,12 @@
             "state" : "translated",
             "value" : "%@ stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kapalı"
+          }
         }
       }
     },
@@ -838,6 +868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ stängt Pro"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kapalı Pro"
           }
         }
       }
@@ -982,6 +1018,12 @@
             "state" : "translated",
             "value" : "Stängt: %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı: %@"
+          }
         }
       }
     },
@@ -1120,6 +1162,12 @@
             "state" : "translated",
             "value" : "Stängt %@!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kapalı!"
+          }
         }
       }
     },
@@ -1254,6 +1302,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -1401,6 +1455,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1535,6 +1595,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1678,6 +1744,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1815,6 +1887,12 @@
             "state" : "translated",
             "value" : "%lld objekt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld öğe"
+          }
         }
       }
     },
@@ -1951,6 +2029,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dk"
+          }
         }
       }
     },
@@ -2086,6 +2170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "kl. %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat %lld"
           }
         }
       }
@@ -2232,6 +2322,12 @@
             "state" : "translated",
             "value" : "Dagar kvar: %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalan gün: %lld"
+          }
         }
       }
     },
@@ -2370,6 +2466,12 @@
             "state" : "translated",
             "value" : "%lld d. före"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld gün önce"
+          }
         }
       }
     },
@@ -2505,6 +2607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vecka %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld. hafta"
           }
         }
       }
@@ -2647,6 +2755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om %lld v., %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld hafta sonra, %@"
           }
         }
       }
@@ -2792,6 +2906,12 @@
             "state" : "translated",
             "value" : "Vecka %lld, %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld. hafta, %@"
+          }
         }
       }
     },
@@ -2934,6 +3054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enklare med VoiceOver"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver ile daha rahat"
           }
         }
       }
@@ -3078,6 +3204,12 @@
             "state" : "translated",
             "value" : "Siri och Genvägar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ve Kestirmeler"
+          }
         }
       }
     },
@@ -3221,6 +3353,12 @@
             "state" : "translated",
             "value" : "Fråga Siri eller kör en genväg så ser du direkt om din butik är stängd."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri’ye sor veya bir kestirme çalıştır; mağazanın kapalı olup olmadığını hemen öğren."
+          }
         }
       }
     },
@@ -3355,6 +3493,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -3497,6 +3641,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -3631,6 +3781,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -3773,6 +3929,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -3901,6 +4063,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -4048,6 +4216,12 @@
             "state" : "translated",
             "value" : "Även med största textstorleken ordnas skärmarna snyggt om utan att något skärs av."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En büyük yazı boyutunda bile ekranlar düzgünce yeniden yerleşir, hiçbir şey kesilmez."
+          }
         }
       }
     },
@@ -4190,6 +4364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera valda och tillagda butiker samt påminnelseinställningar i appen på en gång."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçtiğin ve eklediğin mağazaları ve bildirim ayarlarını uygulama içinde tek seferde sil."
           }
         }
       }
@@ -4334,6 +4514,12 @@
             "state" : "translated",
             "value" : "Meddelande"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duyuru"
+          }
         }
       }
     },
@@ -4470,6 +4656,12 @@
             "state" : "translated",
             "value" : "Öppnar hela meddelandet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duyurunun tamamını açar"
+          }
         }
       }
     },
@@ -4605,6 +4797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stäng meddelande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duyuruyu kapat"
           }
         }
       }
@@ -4749,6 +4947,12 @@
             "state" : "translated",
             "value" : "Mörkt läge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu Mod"
+          }
         }
       }
     },
@@ -4891,6 +5095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se stängningsdagar även med Öka kontrast aktiverat eller om du har svårt att skilja på färger."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrastı Artır açıkken veya renkleri ayırt etmekte zorlansan bile kapalı günleri fark et."
           }
         }
       }
@@ -5035,6 +5245,12 @@
             "state" : "translated",
             "value" : "Fler språk"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla dil"
+          }
         }
       }
     },
@@ -5177,6 +5393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd appen på fler språk."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı daha fazla dilde kullan."
           }
         }
       }
@@ -5321,6 +5543,12 @@
             "state" : "translated",
             "value" : "Spara butikerna du har lagt till i en fil och hämta tillbaka dem när du vill."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eklediğin mağazaları bir dosyaya kaydet ve istediğin zaman geri yükle."
+          }
         }
       }
     },
@@ -5464,6 +5692,12 @@
             "state" : "translated",
             "value" : "Radera alla mina data"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm verilerimi sil"
+          }
         }
       }
     },
@@ -5605,6 +5839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påminnelse om butiksstängning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza kapanış uyarısı"
           }
         }
       }
@@ -5749,6 +5989,12 @@
             "state" : "translated",
             "value" : "Text och knappar förblir tydliga på en mörk skärm."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yazılar ve düğmeler koyu ekranda da net görünür."
+          }
         }
       }
     },
@@ -5891,6 +6137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Färger som är lättare att se"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha kolay görülen renkler"
           }
         }
       }
@@ -6035,6 +6287,12 @@
             "state" : "translated",
             "value" : "På iPad kan du välja butiker och bläddra i kalendern med bara tangentbordet."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPad’de yalnızca klavyeyle mağaza seç ve takvimde gezin."
+          }
         }
       }
     },
@@ -6177,6 +6435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nytt efter uppdateringar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güncellemelerden sonra yenilikler"
           }
         }
       }
@@ -6321,6 +6585,12 @@
             "state" : "translated",
             "value" : "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güncellemeden sonra uygulamayı ilk açtığında nelerin yeni olduğunu görürsün."
+          }
         }
       }
     },
@@ -6463,6 +6733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smarta tips"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanım ipuçları"
           }
         }
       }
@@ -6607,6 +6883,12 @@
             "state" : "translated",
             "value" : "Vi tipsar diskret om användbara funktioner i rätt ögonblick."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yararlı özellikleri uygun anda nazikçe hatırlatırız."
+          }
         }
       }
     },
@@ -6749,6 +7031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Säkerhetskopia och export"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yedekleme ve dışa aktarma"
           }
         }
       }
@@ -6893,6 +7181,12 @@
             "state" : "translated",
             "value" : "Om appen stängs medan du lägger till en butik finns det du skrev kvar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza eklerken uygulama kapanırsa yazdıkların kaybolmaz."
+          }
         }
       }
     },
@@ -7028,6 +7322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld till"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld mağaza daha"
           }
         }
       }
@@ -7172,6 +7472,12 @@
             "state" : "translated",
             "value" : "VoiceOver läser upp stängningsdagar och knappar fullständigt och i rätt ordning."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver kapalı günleri ve düğmeleri eksiksiz ve doğru sırayla okur."
+          }
         }
       }
     },
@@ -7314,6 +7620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redo för stor text"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük yazıya hazır"
           }
         }
       }
@@ -7458,6 +7770,12 @@
             "state" : "translated",
             "value" : "Styrning med tangentbord"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klavye ile kontrol"
+          }
         }
       }
     },
@@ -7600,6 +7918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snabbguide"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hızlı başlangıç rehberi"
           }
         }
       }
@@ -7744,6 +8068,12 @@
             "state" : "translated",
             "value" : "Första gången du öppnar appen ser du i några korta steg vad den kan göra."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı ilk açtığında neler yapabildiğini birkaç kısa adımda gör."
+          }
         }
       }
     },
@@ -7886,6 +8216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjord för vikbar iPhone"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone için tasarlandı"
           }
         }
       }
@@ -8030,6 +8366,12 @@
             "state" : "translated",
             "value" : "På en vikbar iPhone kan du använda den breda skärmen som två rutor sida vid sida."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone’da geniş ekranı yan yana iki bölme olarak kullan."
+          }
         }
       }
     },
@@ -8173,6 +8515,12 @@
             "state" : "translated",
             "value" : "Fortsätt där du slutade"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaldığın yerden devam et"
+          }
         }
       }
     },
@@ -8301,6 +8649,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -8437,6 +8791,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -8569,6 +8929,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -8697,6 +9063,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -8837,6 +9209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Påminnelse om en bra handlardag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Alışveriş için uygun gün uyarısı"
           }
         }
       }
@@ -8979,6 +9357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Bra dag att handla"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Alışveriş için güzel bir gün"
           }
         }
       }
@@ -9124,6 +9508,12 @@
             "state" : "translated",
             "value" : "Varnar dig när en stängningsdag ligger inom en vecka!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir hafta içinde kapalı gün varsa seni uyarır!"
+          }
         }
       }
     },
@@ -9258,6 +9648,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -9406,6 +9802,12 @@
             "state" : "translated",
             "value" : "Widget för stängningspåminnelse"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış uyarısı widget’ı"
+          }
         }
       }
     },
@@ -9550,6 +9952,12 @@
             "state" : "translated",
             "value" : "Widget för nedräkning till stängning"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanışa geri sayım widget’ı"
+          }
         }
       }
     },
@@ -9684,6 +10092,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -9826,6 +10240,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -9960,6 +10380,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -10102,6 +10528,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -10236,6 +10668,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -10382,6 +10820,12 @@
             "state" : "translated",
             "value" : "%@ är stängt i morgon. I dag är det en bra dag att handla!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ yarın kapalı. Bugün alışveriş için güzel bir gün!"
+          }
         }
       }
     },
@@ -10523,6 +10967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ stänger om %lld dag(ar)."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %lld gün sonra kapanacak."
           }
         }
       }
@@ -10667,6 +11117,12 @@
             "state" : "translated",
             "value" : "%@ stänger om %lld dag(ar)."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %lld gün sonra kapanacak."
+          }
         }
       }
     },
@@ -10809,6 +11265,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Glöm inte att handla före nästa stängningsdag!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sonraki kapalı günden önce alışverişini yapmayı unutma!"
           }
         }
       }
@@ -10953,6 +11415,12 @@
             "state" : "translated",
             "value" : "Hantera även stängningsdagar för butiker i närheten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çevrendeki mağazaların kapalı günlerini de yönet"
+          }
         }
       }
     },
@@ -11095,6 +11563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Registrera stängningsmönstret för din egen butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendi mağazanın kapanış düzenini kaydet"
           }
         }
       }
@@ -11239,6 +11713,12 @@
             "state" : "translated",
             "value" : "Dina favoriter visas alltid överst"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorilerin her zaman en üstte"
+          }
         }
       }
     },
@@ -11381,6 +11861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bokmärk dina favoritbutiker"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sevdiğin mağazaları yer imlerine ekle"
           }
         }
       }
@@ -11525,6 +12011,12 @@
             "state" : "translated",
             "value" : "Ett köp ger alla funktioner för alltid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tek seferlik satın alma, tüm özellikler sonsuza dek"
+          }
         }
       }
     },
@@ -11667,6 +12159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uppgradera till DontGoMart Pro"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro’ya yükselt"
           }
         }
       }
@@ -11811,6 +12309,12 @@
             "state" : "translated",
             "value" : "Se stängningsdagar för E-Mart, Costco och Homeplus på en gång"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mart, Costco ve Homeplus kapalı günlerini bir arada gör"
+          }
         }
       }
     },
@@ -11953,6 +12457,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Följ flera butiker samtidigt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birden fazla mağazayı aynı anda takip et"
           }
         }
       }
@@ -12097,6 +12607,12 @@
             "state" : "translated",
             "value" : "Få påminnelser före stängningsdagar så du slipper åka i onödan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günlerden önce uyarı al, boşuna yola çıkma"
+          }
         }
       }
     },
@@ -12239,6 +12755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aldrig mer en stängd butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir daha kapalı mağaza kapısında kalma"
           }
         }
       }
@@ -12383,6 +12905,12 @@
             "state" : "translated",
             "value" : "Lägg till så många varor du behöver"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İhtiyacın kadar öğe ekle"
+          }
         }
       }
     },
@@ -12525,6 +13053,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obegränsad inköpslista"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız alışveriş listesi"
           }
         }
       }
@@ -12669,6 +13203,12 @@
             "state" : "translated",
             "value" : "☕ För priset av en kaffe låser du upp allt för alltid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Bir kahve parasına her şeyin kilidini sonsuza dek aç"
+          }
         }
       }
     },
@@ -12811,6 +13351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du får en påminnelse %1$lld dagar och %2$lld dag före stängningsdagar kl. %3$@."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günlerden %1$lld gün ve %2$lld gün önce saat %3$@ itibarıyla bildirim alırsın."
           }
         }
       }
@@ -12956,6 +13502,12 @@
             "state" : "translated",
             "value" : "Visar med grönt eller rött om din butik har öppet den här söndagen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağazanın bu pazar açık olup olmadığını yeşil veya kırmızıyla gösterir."
+          }
         }
       }
     },
@@ -13097,6 +13649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visar de nästa två stängningsdagarna!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıradaki iki kapalı günü gösterir!"
           }
         }
       }
@@ -13242,6 +13800,12 @@
             "state" : "translated",
             "value" : "Visar antal dagar till nästa stängningsdag!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sonraki kapalı güne kaç gün kaldığını gösterir!"
+          }
         }
       }
     },
@@ -13386,6 +13950,12 @@
             "state" : "translated",
             "value" : "Söndag öppet/stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pazar açık/kapalı"
+          }
         }
       }
     },
@@ -13524,6 +14094,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -13658,6 +14234,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -13806,6 +14388,12 @@
             "state" : "translated",
             "value" : "Widget för två stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki kapalı gün widget’ı"
+          }
         }
       }
     },
@@ -13943,6 +14531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stänger tackmeddelandet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teşekkür mesajını kapatır"
           }
         }
       }
@@ -14082,6 +14676,12 @@
             "state" : "translated",
             "value" : "Tack!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teşekkürler!"
+          }
         }
       }
     },
@@ -14220,6 +14820,12 @@
             "state" : "translated",
             "value" : "Bjuder utvecklaren på en kaffe"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştiriciye bir kahve ısmarlar"
+          }
         }
       }
     },
@@ -14357,6 +14963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skickar dricks till utvecklaren"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştiriciye bahşiş gönderir"
           }
         }
       }
@@ -14501,6 +15113,12 @@
             "state" : "translated",
             "value" : "Delar av Gyeonggi/Cheongju"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gyeonggi/Cheongju’nun bir kısmı"
+          }
         }
       }
     },
@@ -14639,6 +15257,12 @@
             "state" : "translated",
             "value" : "Tack, vi ses nästa gång"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teşekkürler, görüşmek üzere"
+          }
         }
       }
     },
@@ -14775,6 +15399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stänger snart"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakında kapanıyor"
           }
         }
       }
@@ -14913,6 +15543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dela"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paylaş"
           }
         }
       }
@@ -15056,6 +15692,12 @@
             "state" : "translated",
             "value" : "Helgdag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatil"
+          }
         }
       }
     },
@@ -15191,6 +15833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Återställ köp"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satın Alımları Geri Yükle"
           }
         }
       }
@@ -15335,6 +15983,12 @@
             "state" : "translated",
             "value" : "Funktion"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özellik"
+          }
         }
       }
     },
@@ -15470,6 +16124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mina butiker"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağazalarım"
           }
         }
       }
@@ -15614,6 +16274,12 @@
             "state" : "translated",
             "value" : "I morgon"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın"
+          }
         }
       }
     },
@@ -15750,6 +16416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I morgon stängt: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın kapalı: %@"
           }
         }
       }
@@ -15896,6 +16568,12 @@
             "state" : "translated",
             "value" : "Stängt i morgon"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın kapalı"
+          }
         }
       }
     },
@@ -16031,6 +16709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kommande stängningsdagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaklaşan kapalı günler"
           }
         }
       }
@@ -16169,6 +16853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nästa månad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelecek ay"
           }
         }
       }
@@ -16315,6 +17005,12 @@
             "state" : "translated",
             "value" : "%@ nästa vecka"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelecek hafta: %@"
+          }
         }
       }
     },
@@ -16458,6 +17154,12 @@
             "state" : "translated",
             "value" : "Nästa stängningsdag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonraki kapalı gün"
+          }
         }
       }
     },
@@ -16594,6 +17296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vi påminner dig om att handla 2 dagar före nästa stängningsdag."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sonraki kapalı günden 2 gün önce sana alışverişi hatırlatırız."
           }
         }
       }
@@ -16740,6 +17448,12 @@
             "state" : "translated",
             "value" : "Ingen information om stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün bilgisi yok"
+          }
         }
       }
     },
@@ -16877,6 +17591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inte nu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha sonra"
           }
         }
       }
@@ -17021,6 +17741,12 @@
             "state" : "translated",
             "value" : "Följ flera butiker samtidigt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birden fazla mağazayı aynı anda takip et"
+          }
         }
       }
     },
@@ -17164,6 +17890,12 @@
             "state" : "translated",
             "value" : "Följ flera butiker"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çoklu mağaza takibi"
+          }
         }
       }
     },
@@ -17301,6 +18033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stäng"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
           }
         }
       }
@@ -17440,6 +18178,12 @@
             "state" : "translated",
             "value" : "Öppnar kalendern för att se stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günleri görmek için takvimi açar"
+          }
         }
       }
     },
@@ -17576,6 +18320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu"
           }
         }
       }
@@ -17720,6 +18470,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -17861,6 +18617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu"
           }
         }
       }
@@ -18004,6 +18766,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taegu, Taegu Innovation"
+          }
         }
       }
     },
@@ -18140,6 +18908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket"
           }
         }
       }
@@ -18283,6 +19057,12 @@
             "state" : "translated",
             "value" : "Stormarknad (stängt på onsdagar)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (çarşamba kapalı)"
+          }
         }
       }
     },
@@ -18424,6 +19204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad (stängt på onsdagar)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (çarşamba kapalı)"
           }
         }
       }
@@ -18567,6 +19353,12 @@
             "state" : "translated",
             "value" : "Stormarknad (ons)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Çar)"
+          }
         }
       }
     },
@@ -18708,6 +19500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad (Ulsan, blandat)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Ulsan, karma)"
           }
         }
       }
@@ -18851,6 +19649,12 @@
             "state" : "translated",
             "value" : "Stormarknad (Ulsan)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Ulsan)"
+          }
         }
       }
     },
@@ -18992,6 +19796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad (Ulsan)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Ulsan)"
           }
         }
       }
@@ -19135,6 +19945,12 @@
             "state" : "translated",
             "value" : "Stormarknad (stängt på söndagar)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (pazar kapalı)"
+          }
         }
       }
     },
@@ -19276,6 +20092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad (stängt på söndagar)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (pazar kapalı)"
           }
         }
       }
@@ -19419,6 +20241,12 @@
             "state" : "translated",
             "value" : "Stormarknad (sön)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Paz)"
+          }
         }
       }
     },
@@ -19560,6 +20388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stormarknad (Jeju)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Jeju)"
           }
         }
       }
@@ -19703,6 +20537,12 @@
             "state" : "translated",
             "value" : "Stormarknad (Jeju)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Jeju)"
+          }
         }
       }
     },
@@ -19845,6 +20685,12 @@
             "state" : "translated",
             "value" : "Stormarknad (Jeju)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Süpermarket (Jeju)"
+          }
         }
       }
     },
@@ -19983,6 +20829,12 @@
             "state" : "translated",
             "value" : "Om appen har hjälpt dig, peppa oss med en kaffe."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama işine yaradıysa bir kahveyle bize moral ver."
+          }
         }
       }
     },
@@ -20117,6 +20969,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -20260,6 +21118,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -20398,6 +21262,12 @@
             "state" : "translated",
             "value" : "Tryck två gånger för att stänga"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapatmak için iki kez dokun"
+          }
         }
       }
     },
@@ -20535,6 +21405,12 @@
             "state" : "translated",
             "value" : "Butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza"
+          }
         }
       }
     },
@@ -20671,6 +21547,12 @@
             "state" : "translated",
             "value" : "Kolla stängningsdagarna i DontGoMart innan du handlar ✅"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışverişe çıkmadan önce kapalı günleri DontGoMart’ta kontrol et ✅"
+          }
         }
       }
     },
@@ -20806,6 +21688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Butikens färg"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza rengi"
           }
         }
       }
@@ -20949,6 +21837,12 @@
             "state" : "translated",
             "value" : "Välj en butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seç"
+          }
         }
       }
     },
@@ -21084,6 +21978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Butikens namn (t.ex. Homeplus Gangnam)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza adı (örn. Homeplus Gangnam)"
           }
         }
       }
@@ -21221,6 +22121,12 @@
             "state" : "translated",
             "value" : "Butiksinfo"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza bilgisi"
+          }
         }
       }
     },
@@ -21356,6 +22262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza ekle"
           }
         }
       }
@@ -21493,6 +22405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Butik stängd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza kapalı"
           }
         }
       }
@@ -21637,6 +22555,12 @@
             "state" : "translated",
             "value" : "Meddelande om butikens stängningsdag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza kapalı gün bildirimi"
+          }
         }
       }
     },
@@ -21774,6 +22698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påminnelse om butiksstängning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza kapanış uyarısı"
           }
         }
       }
@@ -21918,6 +22848,12 @@
             "state" : "translated",
             "value" : "Butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza"
+          }
         }
       }
     },
@@ -22060,6 +22996,12 @@
             "state" : "translated",
             "value" : "Butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza"
+          }
         }
       }
     },
@@ -22197,6 +23139,12 @@
             "state" : "translated",
             "value" : "Välj butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seç"
+          }
         }
       }
     },
@@ -22332,6 +23280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öppnar butiksval och påminnelseinställningar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seçimini ve bildirim ayarlarını açar"
           }
         }
       }
@@ -22476,6 +23430,12 @@
             "state" : "translated",
             "value" : "Varierar mellan butiker"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağazaya göre değişir"
+          }
         }
       }
     },
@@ -22612,6 +23572,12 @@
             "state" : "translated",
             "value" : "Välj butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seç"
+          }
         }
       }
     },
@@ -22747,6 +23713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj en butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen bir mağaza seç"
           }
         }
       }
@@ -22891,6 +23863,12 @@
             "state" : "translated",
             "value" : "Ingen butik vald. Välj en i Inställningar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seçilmedi. Lütfen Ayarlar’dan seç."
+          }
         }
       }
     },
@@ -23029,6 +24007,12 @@
             "state" : "translated",
             "value" : "Varje %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her hafta: %@"
+          }
         }
       }
     },
@@ -23166,6 +24150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alla funktioner är fortfarande gratis. Dricks är ren uppmuntran och du kan skicka när du vill."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm özellikler ücretsiz kalmaya devam ediyor. Bahşiş tamamen bir destek jesti; istediğin zaman gönderebilirsin."
           }
         }
       }
@@ -23312,6 +24302,12 @@
             "state" : "translated",
             "value" : "I övermorgon"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öbür gün"
+          }
         }
       }
     },
@@ -23454,6 +24450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen gräns för varor i din inköpslista"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş listende öğe sınırı yok"
           }
         }
       }
@@ -23598,6 +24600,12 @@
             "state" : "translated",
             "value" : "Obegränsad inköpslista"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız alışveriş listesi"
+          }
         }
       }
     },
@@ -23741,6 +24749,12 @@
             "state" : "translated",
             "value" : "Uppgradera till Pro för att lägga till varor utan gräns"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız öğe eklemek için Pro’ya yükselt"
+          }
         }
       }
     },
@@ -23877,6 +24891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sürüm"
           }
         }
       }
@@ -24016,6 +25036,12 @@
             "state" : "translated",
             "value" : "Tack vare ditt stöd kan vi fortsätta göra appen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteğin sayesinde uygulamayı geliştirmeye devam edebiliyoruz."
+          }
         }
       }
     },
@@ -24154,6 +25180,12 @@
             "state" : "translated",
             "value" : "Ditt stöd betyder mycket. (hittills ☕️ ×%lld)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteğin çok değerli. (şu ana kadar ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -24289,6 +25321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dk"
           }
         }
       }
@@ -24426,6 +25464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snabbåtgärder"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hızlı İşlemler"
           }
         }
       }
@@ -24572,6 +25616,12 @@
             "state" : "translated",
             "value" : "Inte vald"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilmedi"
+          }
         }
       }
     },
@@ -24708,6 +25758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rensa val"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçimi temizle"
           }
         }
       }
@@ -24851,6 +25907,12 @@
             "state" : "translated",
             "value" : "Ingen butik vald. Öppna appen för att välja en."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza seçilmedi. Seçmek için uygulamayı aç."
+          }
         }
       }
     },
@@ -24986,6 +26048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valt mönster"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen düzen"
           }
         }
       }
@@ -25132,6 +26200,12 @@
             "state" : "translated",
             "value" : "Vald"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçildi"
+          }
         }
       }
     },
@@ -25269,6 +26343,12 @@
             "state" : "translated",
             "value" : "Alla valda butiker har öppet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen tüm mağazalar açık"
+          }
         }
       }
     },
@@ -25405,6 +26485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alla valda butiker är stängda"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen tüm mağazalar kapalı"
           }
         }
       }
@@ -25548,6 +26634,12 @@
             "state" : "translated",
             "value" : "Helgdagar vid Seollal/Chuseok"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seollal/Chuseok tatilleri"
+          }
         }
       }
     },
@@ -25683,6 +26775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
           }
         }
       }
@@ -25822,6 +26920,12 @@
             "state" : "translated",
             "value" : "Välj i Inställningar vilka butiker du vill följa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takip edeceğin mağazaları Ayarlar’dan seç"
+          }
         }
       }
     },
@@ -25959,6 +27063,12 @@
             "state" : "translated",
             "value" : "Välj i Inställningar vilka butiker du vill följa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takip edeceğin mağazaları Ayarlar’dan seç"
+          }
         }
       }
     },
@@ -26095,6 +27205,12 @@
             "state" : "translated",
             "value" : "Gå till Inställningar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar’a git"
+          }
         }
       }
     },
@@ -26230,6 +27346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Timme"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat"
           }
         }
       }
@@ -26374,6 +27496,12 @@
             "state" : "translated",
             "value" : "Okänt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilinmiyor"
+          }
         }
       }
     },
@@ -26509,6 +27637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tillstånd för aviseringar krävs"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirim izni gerekli"
           }
         }
       }
@@ -26647,6 +27781,12 @@
             "state" : "translated",
             "value" : "Aviseringsinställningar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirim ayarları"
+          }
         }
       }
     },
@@ -26782,6 +27922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid för avisering"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirim saati"
           }
         }
       }
@@ -26920,6 +28066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påminn mig"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beni uyar"
           }
         }
       }
@@ -27064,6 +28216,12 @@
             "state" : "translated",
             "value" : "Få aviseringar före stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günlerden önce bildirim al"
+          }
         }
       }
     },
@@ -27206,6 +28364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aviseringar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimler"
           }
         }
       }
@@ -27350,6 +28514,12 @@
             "state" : "translated",
             "value" : "Få aviseringar före stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günlerden önce bildirim al"
+          }
         }
       }
     },
@@ -27485,6 +28655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aviseringar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimler"
           }
         }
       }
@@ -27623,6 +28799,12 @@
             "state" : "translated",
             "value" : "Skriv ett omdöme i App Store"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store’da yorum yaz"
+          }
         }
       }
     },
@@ -27759,6 +28941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa i App Store"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store’da görüntüle"
           }
         }
       }
@@ -27898,6 +29086,12 @@
             "state" : "translated",
             "value" : "Tack för att du stöttar appen ☕️"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı desteklediğin için teşekkürler ☕️"
+          }
         }
       }
     },
@@ -28031,6 +29225,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -28177,6 +29377,12 @@
             "state" : "translated",
             "value" : "Öppet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık"
+          }
         }
       }
     },
@@ -28320,6 +29526,12 @@
             "state" : "translated",
             "value" : "Öppet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık"
+          }
         }
       }
     },
@@ -28456,6 +29668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öppet i dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün açık"
           }
         }
       }
@@ -28600,6 +29818,12 @@
             "state" : "translated",
             "value" : "I dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün"
+          }
         }
       }
     },
@@ -28736,6 +29960,12 @@
             "state" : "translated",
             "value" : "%@ stängt i dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün kapalı: %@"
+          }
         }
       }
     },
@@ -28871,6 +30101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kan jag åka i dag?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün gidebilir miyim?"
           }
         }
       }
@@ -29015,6 +30251,12 @@
             "state" : "translated",
             "value" : "Alla valda butiker har öppet i dag."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen tüm mağazalar bugün açık."
+          }
         }
       }
     },
@@ -29158,6 +30400,12 @@
             "state" : "translated",
             "value" : "Alla valda butiker är stängda i dag."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen tüm mağazalar bugün kapalı."
+          }
         }
       }
     },
@@ -29296,6 +30544,12 @@
             "state" : "translated",
             "value" : "Delar dagens status och kommande stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünkü durumu ve yaklaşan kapalı günleri paylaşır"
+          }
         }
       }
     },
@@ -29433,6 +30687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öppet i dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün açık"
           }
         }
       }
@@ -29579,6 +30839,12 @@
             "state" : "translated",
             "value" : "I dag är bara vissa butiker stängda: %@."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün yalnızca bazı mağazalar kapalı: %@."
+          }
         }
       }
     },
@@ -29716,6 +30982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I dag räddade vi dig från en onödig resa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün seni boşuna yoldan kurtardık"
           }
         }
       }
@@ -29862,6 +31134,12 @@
             "state" : "translated",
             "value" : "Stängt i dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün kapalı"
+          }
         }
       }
     },
@@ -30000,6 +31278,12 @@
             "state" : "translated",
             "value" : "Stängt i dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün kapalı"
+          }
         }
       }
     },
@@ -30135,6 +31419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I dag räddade vi dig från ännu en onödig resa.\nVi minns fortfarande ditt generösa stöd."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün seni bir kez daha boşuna yoldan kurtardık.\nCömert desteğini hep hatırlıyoruz."
           }
         }
       }
@@ -30278,6 +31568,12 @@
             "state" : "translated",
             "value" : "Klar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitti"
+          }
         }
       }
     },
@@ -30415,6 +31711,12 @@
             "state" : "translated",
             "value" : "Radera slutförda objekt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamamlanan öğeleri sil"
+          }
         }
       }
     },
@@ -30548,6 +31850,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -30695,6 +32003,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -30833,6 +32147,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -30979,6 +32299,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -31121,6 +32447,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -31257,6 +32589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Månad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aylık"
           }
         }
       }
@@ -31395,6 +32733,12 @@
             "state" : "translated",
             "value" : "Tillstånd för plats krävs"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konum izni gerekli"
+          }
         }
       }
     },
@@ -31532,6 +32876,12 @@
             "state" : "translated",
             "value" : "Platsfunktioner"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konum özellikleri"
+          }
         }
       }
     },
@@ -31667,6 +33017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stöd oss"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bize destek ol"
           }
         }
       }
@@ -31809,6 +33165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sön"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paz"
           }
         }
       }
@@ -31955,6 +33317,12 @@
             "state" : "translated",
             "value" : "%@ denna vecka"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta: %@"
+          }
         }
       }
     },
@@ -32091,6 +33459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stängt %@ denna vecka"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta kapalı: %@"
           }
         }
       }
@@ -32234,6 +33608,12 @@
             "state" : "translated",
             "value" : "Denna söndag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu pazar"
+          }
         }
       }
     },
@@ -32375,6 +33755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denna söndag %@, butiken har öppet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu pazar %@, mağaza açık"
           }
         }
       }
@@ -32518,6 +33904,12 @@
             "state" : "translated",
             "value" : "Denna söndag %@, butiken är stängd"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu pazar %@, mağaza kapalı"
+          }
         }
       }
     },
@@ -32655,6 +34047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Föregående månad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önceki ay"
           }
         }
       }
@@ -32794,6 +34192,12 @@
             "state" : "translated",
             "value" : "Dela till Instagram Stories"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram Hikâyeleri’nde paylaş"
+          }
         }
       }
     },
@@ -32932,6 +34336,12 @@
             "state" : "translated",
             "value" : "Instagram måste vara installerat för att dela till Stories."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hikâyelerde paylaşmak için Instagram’ın yüklü olması gerekir."
+          }
         }
       }
     },
@@ -33069,6 +34479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hittar inte Instagram"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram bulunamadı"
           }
         }
       }
@@ -33209,6 +34625,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -33355,6 +34777,12 @@
             "state" : "translated",
             "value" : "Vanlig"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal"
+          }
         }
       }
     },
@@ -33491,6 +34919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vanliga butiker"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal mağazalar"
           }
         }
       }
@@ -33629,6 +35063,12 @@
             "state" : "translated",
             "value" : "Vissa öppna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazıları açık"
+          }
         }
       }
     },
@@ -33765,6 +35205,12 @@
             "state" : "translated",
             "value" : "Vissa butiker är stängda"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazı mağazalar kapalı"
+          }
         }
       }
     },
@@ -33898,6 +35344,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -34045,6 +35497,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -34187,6 +35645,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -34325,6 +35789,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -34472,6 +35942,12 @@
             "state" : "translated",
             "value" : "Engångsköp. Ingen prenumeration."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tek seferlik satın alma. Abonelik yok."
+          }
         }
       }
     },
@@ -34607,6 +36083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till stängningsmönster för dina favoritbutiker"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sevdiğin mağazaların kapanış düzenlerini ekle"
           }
         }
       }
@@ -34745,6 +36227,12 @@
             "state" : "translated",
             "value" : "Inköpspåminnelse"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş hatırlatıcısı"
+          }
         }
       }
     },
@@ -34882,6 +36370,12 @@
             "state" : "translated",
             "value" : "Inköpslista"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş listesi"
+          }
         }
       }
     },
@@ -35018,6 +36512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inköpsavisering"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş uyarısı"
           }
         }
       }
@@ -35162,6 +36662,12 @@
             "state" : "translated",
             "value" : "Inköpspåminnelse"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş hatırlatıcısı"
+          }
         }
       }
     },
@@ -35300,6 +36806,12 @@
             "state" : "translated",
             "value" : "Påminnelse om bra handlardag (dagen före)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş için uygun gün uyarısı (bir gün önce)"
+          }
         }
       }
     },
@@ -35437,6 +36949,12 @@
             "state" : "translated",
             "value" : "Lägg till vara"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğe ekle"
+          }
         }
       }
     },
@@ -35573,6 +37091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till varor i din inköpslista"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışveriş listene öğe ekle"
           }
         }
       }
@@ -35715,6 +37239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spara"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
           }
         }
       }
@@ -35859,6 +37389,12 @@
             "state" : "translated",
             "value" : "De flesta regioner i landet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ülke genelinde çoğu bölge"
+          }
         }
       }
     },
@@ -36001,6 +37537,12 @@
             "state" : "translated",
             "value" : "Nationell helgdag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resmî tatil"
+          }
         }
       }
     },
@@ -36142,6 +37684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nationell helgdag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resmî tatil"
           }
         }
       }
@@ -36286,6 +37834,12 @@
             "state" : "translated",
             "value" : "Stängt hela dagen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gün boyu kapalı"
+          }
         }
       }
     },
@@ -36423,6 +37977,12 @@
             "state" : "translated",
             "value" : "Radera alla"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü sil"
+          }
         }
       }
     },
@@ -36559,6 +38119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa alla"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü gör"
           }
         }
       }
@@ -36698,6 +38264,12 @@
             "state" : "translated",
             "value" : "Tack så mycket!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok teşekkürler!"
+          }
         }
       }
     },
@@ -36834,6 +38406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hakkında"
           }
         }
       }
@@ -36977,6 +38555,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -37113,6 +38697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veckovis"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftalık"
           }
         }
       }
@@ -37251,6 +38841,12 @@
             "state" : "translated",
             "value" : "Butiker i närheten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakındaki mağazalar"
+          }
         }
       }
     },
@@ -37387,6 +38983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hitta butiker i närheten automatiskt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakındaki mağazaları otomatik bul"
           }
         }
       }
@@ -37525,6 +39127,12 @@
             "state" : "translated",
             "value" : "För att hitta butiker i närheten,\ntillåt åtkomst till plats i\nInställningar > DontGoMart > Plats."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakındaki mağazaları bulmak için\nAyarlar > DontGoMart > Konum yolundan\nkonum erişimine izin ver."
+          }
         }
       }
     },
@@ -37662,6 +39270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Berätta för folk i din närhet om stängningar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çevrendekilere kapanışları haber ver"
           }
         }
       }
@@ -37806,6 +39420,12 @@
             "state" : "translated",
             "value" : "Fäst dina favoritbutiker överst"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sevdiğin mağazaları en üste sabitle"
+          }
         }
       }
     },
@@ -37949,6 +39569,12 @@
             "state" : "translated",
             "value" : "Favoriter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoriler"
+          }
         }
       }
     },
@@ -38087,6 +39713,12 @@
             "state" : "translated",
             "value" : "Stöd som mottagits hittills ☕️ ×%lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu ana kadar alınan destek ☕️ ×%lld"
+          }
         }
       }
     },
@@ -38223,6 +39855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Framsteg"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlerleme"
           }
         }
       }
@@ -38361,6 +39999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Första stängningsdagen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk kapalı gün"
           }
         }
       }
@@ -38504,6 +40148,12 @@
             "state" : "translated",
             "value" : "Lägg till"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekle"
+          }
         }
       }
     },
@@ -38639,6 +40289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj butiker att följa (flera möjliga)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takip edilecek mağazaları seç (birden fazla seçilebilir)"
           }
         }
       }
@@ -38782,6 +40438,12 @@
             "state" : "translated",
             "value" : "Avbryt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vazgeç"
+          }
         }
       }
     },
@@ -38920,6 +40582,12 @@
             "state" : "translated",
             "value" : "Förbereder kortet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kart hazırlanıyor"
+          }
         }
       }
     },
@@ -39057,6 +40725,12 @@
             "state" : "translated",
             "value" : "Visa kalender"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takvimi gör"
+          }
         }
       }
     },
@@ -39193,6 +40867,12 @@
             "state" : "translated",
             "value" : "Lägg till egen butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağaza ekle"
+          }
         }
       }
     },
@@ -39328,6 +41008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redigera egen butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağazayı düzenle"
           }
         }
       }
@@ -39471,6 +41157,12 @@
             "state" : "translated",
             "value" : "Egen butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağaza"
+          }
         }
       }
     },
@@ -39613,6 +41305,12 @@
             "state" : "translated",
             "value" : "Egen butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağaza"
+          }
         }
       }
     },
@@ -39754,6 +41452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Egen butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağaza"
           }
         }
       }
@@ -39898,6 +41602,12 @@
             "state" : "translated",
             "value" : "Lägg till stängningsmönster för din egen butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendi mağazanın kapanış düzenlerini ekle"
+          }
         }
       }
     },
@@ -40040,6 +41750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Egen butik"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel mağaza"
           }
         }
       }
@@ -40184,6 +41900,12 @@
             "state" : "translated",
             "value" : "Lägg till stängningsmönster för din egen butik"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendi mağazanın kapanış düzenlerini ekle"
+          }
         }
       }
     },
@@ -40321,6 +42043,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bjud på kaffe %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kahve ısmarla %@"
           }
         }
       }
@@ -40460,6 +42188,12 @@
             "state" : "translated",
             "value" : "Bjud på kaffe, %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kahve ısmarla, %@"
+          }
         }
       }
     },
@@ -40593,6 +42327,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -40739,6 +42479,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -40880,6 +42626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
           }
         }
       }
@@ -41023,6 +42775,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Taegu"
+          }
         }
       }
     },
@@ -41161,6 +42919,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -41307,6 +43071,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -41445,6 +43215,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -41591,6 +43367,12 @@
             "state" : "translated",
             "value" : "Costco vanlig"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normal"
+          }
         }
       }
     },
@@ -41732,6 +43514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco vanlig"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normal"
           }
         }
       }
@@ -41875,6 +43663,12 @@
             "state" : "translated",
             "value" : "Costco vanlig"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normal"
+          }
         }
       }
     },
@@ -42013,6 +43807,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -42159,6 +43959,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -42297,6 +44103,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -42443,6 +44255,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -42585,6 +44403,12 @@
             "state" : "translated",
             "value" : "Vanliga – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -42721,6 +44545,12 @@
             "state" : "translated",
             "value" : "Lägg till mönster"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzen ekle"
+          }
         }
       }
     },
@@ -42856,6 +44686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till ett mönster"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen bir düzen ekle"
           }
         }
       }
@@ -43000,6 +44836,12 @@
             "state" : "translated",
             "value" : "Lås upp uppföljning av flera butiker, aviseringar och mer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çoklu mağaza takibinin, bildirimlerin ve daha fazlasının kilidini aç"
+          }
         }
       }
     },
@@ -43138,6 +44980,12 @@
             "state" : "translated",
             "value" : "Stöd oss en gång till ☕️"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir kez daha destek ol ☕️"
+          }
         }
       }
     },
@@ -43275,6 +45123,12 @@
             "state" : "translated",
             "value" : "Vald filial"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen şube"
+          }
         }
       }
     },
@@ -43411,6 +45265,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hittar och rekommenderar butiker i närheten utifrån din nuvarande plats."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mevcut konumuna göre yakındaki mağazaları bulur ve önerir."
           }
         }
       }
@@ -43550,6 +45410,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
+          }
         }
       }
     },
@@ -43687,6 +45553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laddar om listan med dricksalternativ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahşiş seçenekleri listesini yeniden yükler"
           }
         }
       }
@@ -43826,6 +45698,12 @@
             "state" : "translated",
             "value" : "Laddar dricksalternativ"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahşiş seçenekleri yükleniyor"
+          }
         }
       }
     },
@@ -43963,6 +45841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att ladda dricksalternativen. Försök igen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahşiş seçenekleri yüklenemedi. Tekrar dene"
           }
         }
       }
@@ -44102,6 +45986,12 @@
             "state" : "translated",
             "value" : "Om dricks"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahşiş hakkında"
+          }
         }
       }
     },
@@ -44239,6 +46129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stänger dricksrutan. Den visas inte igen på 30 dagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahşiş kartını kapatır. 30 gün boyunca tekrar görünmez"
           }
         }
       }
@@ -44378,6 +46274,12 @@
             "state" : "translated",
             "value" : "Supporter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destekçi"
+          }
         }
       }
     },
@@ -44515,6 +46417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supporter. %lld koppar kaffe hittills. Tack för att du stöttar appen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destekçi. Şu ana kadar %lld kahve. Uygulamayı desteklediğin için teşekkürler."
           }
         }
       }
@@ -44654,6 +46562,12 @@
             "state" : "translated",
             "value" : "Vi har inte glömt dig!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seni unutmadık!"
+          }
         }
       }
     },
@@ -44791,6 +46705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tack för ditt stöd. Du har skickat %lld koppar kaffe hittills."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteğin için teşekkürler. Şu ana kadar %lld kahve gönderdin."
           }
         }
       }
@@ -44937,6 +46857,12 @@
             "state" : "translated",
             "value" : "Tack så mycket för ditt stöd. Det betyder mycket för oss."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteğin için çok teşekkürler. Bizim için çok değerli."
+          }
         }
       }
     },
@@ -45074,6 +47000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tack så mycket för ditt stöd. Du har skickat %lld koppar kaffe hittills."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteğin için çok teşekkürler. Şu ana kadar %lld kahve gönderdin."
           }
         }
       }
@@ -45219,6 +47151,12 @@
             "state" : "translated",
             "value" : "Stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı"
+          }
         }
       }
     },
@@ -45354,6 +47292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stängningsmönster"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış düzeni"
           }
         }
       }
@@ -45493,6 +47437,12 @@
             "state" : "translated",
             "value" : "Meddela en stängning"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanışı duyur"
+          }
         }
       }
     },
@@ -45630,6 +47580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delar bilden av stängningskortet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış kartı görselini paylaşır"
           }
         }
       }
@@ -45775,6 +47731,12 @@
             "state" : "translated",
             "value" : "Stängningskort. %1$@ %2$@, %3$@ stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış kartı. %1$@ %2$@, %3$@ kapalı"
+          }
         }
       }
     },
@@ -45913,6 +47875,12 @@
             "state" : "translated",
             "value" : "Skapar och delar ett stängningskort"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir kapanış kartı oluşturur ve paylaşır"
+          }
         }
       }
     },
@@ -46050,6 +48018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delar stängningskortet till Instagram Stories"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış kartını Instagram Hikâyeleri’nde paylaşır"
           }
         }
       }
@@ -46196,6 +48170,12 @@
             "state" : "translated",
             "value" : "Ingen stängning"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış yok"
+          }
         }
       }
     },
@@ -46331,6 +48311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stängningsmönster"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış düzeni"
           }
         }
       }
@@ -46474,6 +48460,12 @@
             "state" : "translated",
             "value" : "Stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı"
+          }
         }
       }
     },
@@ -46610,6 +48602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stängt i dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün kapalı"
           }
         }
       }
@@ -46749,6 +48747,12 @@
             "state" : "translated",
             "value" : "Inga butiker är stängda"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı mağaza yok"
+          }
         }
       }
     },
@@ -46885,6 +48889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stängningsdagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günler"
           }
         }
       }
@@ -47023,6 +49033,12 @@
             "state" : "translated",
             "value" : "Aviseringar skickas 3 dagar och 1 dag före stängningsdagar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günlerden 3 gün ve 1 gün önce bildirim gönderilir."
+          }
         }
       }
     },
@@ -47158,6 +49174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påminnelser om stängningsdagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün uyarıları"
           }
         }
       }
@@ -47296,6 +49318,12 @@
             "state" : "translated",
             "value" : "Aktivera först påminnelser om stängningsdagar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen önce kapalı gün uyarılarını aç."
+          }
         }
       }
     },
@@ -47431,6 +49459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "För att få påminnelser om stängningsdagar, tillåt aviseringar i Inställningar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün uyarıları almak için Ayarlar’da bildirimlere izin ver."
           }
         }
       }
@@ -47568,6 +49602,12 @@
             "state" : "translated",
             "value" : "Ingen information om stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün bilgisi yok"
+          }
         }
       }
     },
@@ -47704,6 +49744,12 @@
             "state" : "translated",
             "value" : "Ingen information om stängningsdagar tillgänglig"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün bilgisi mevcut değil"
+          }
         }
       }
     },
@@ -47839,6 +49885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalender med stängningsdagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün takvimi"
           }
         }
       }
@@ -47978,6 +50030,12 @@
             "state" : "translated",
             "value" : "Visa kalendern med stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün takvimini gör"
+          }
         }
       }
     },
@@ -48115,6 +50173,12 @@
             "state" : "translated",
             "value" : "Välj stängningsdagar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı günleri seç"
+          }
         }
       }
     },
@@ -48251,6 +50315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inte en stängningsdag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı gün değil"
           }
         }
       }
@@ -48394,6 +50464,12 @@
             "state" : "translated",
             "value" : "Hittade ”%@”. Kontrollera och tryck på Lägg till."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” bulundu. Kontrol et ve Ekle’ye dokun."
+          }
         }
       }
     },
@@ -48535,6 +50611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inget stänger de kommande 7 dagarna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önümüzdeki 7 gün içinde kapanan yer yok"
           }
         }
       }
@@ -48678,6 +50760,12 @@
             "state" : "translated",
             "value" : "Ingen av dina restauranger stänger de kommande 7 dagarna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranlarından hiçbiri önümüzdeki 7 gün içinde kapalı değil"
+          }
         }
       }
     },
@@ -48819,6 +50907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inga stängningar den här veckan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta kapalı gün yok"
           }
         }
       }
@@ -48962,6 +51056,12 @@
             "state" : "translated",
             "value" : "Hantera"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yönet"
+          }
         }
       }
     },
@@ -49103,6 +51203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kan lägga till från en delningslänk från Naver Maps eller en skärmavbild"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naver Maps paylaşım bağlantısı veya ekran görüntüsüyle ekleyebilirsin"
           }
         }
       }
@@ -49246,6 +51352,12 @@
             "state" : "translated",
             "value" : "Mina restauranger"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranlarım"
+          }
         }
       }
     },
@@ -49387,6 +51499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restauranger · 7 dagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranlar · 7 gün"
           }
         }
       }
@@ -49530,6 +51648,12 @@
             "state" : "translated",
             "value" : "Lägg till eller redigera dina restauranger"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranlarını ekle veya düzenle"
+          }
         }
       }
     },
@@ -49671,6 +51795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inga restauranger än. Lägg till dem i appen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz restoran yok. Uygulamadan ekle."
           }
         }
       }
@@ -49814,6 +51944,12 @@
             "state" : "translated",
             "value" : "Eller klistra in en delad länk eller text här"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veya paylaşılan bağlantıyı ya da metni buraya yapıştır"
+          }
         }
       }
     },
@@ -49955,6 +52091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snabbimport"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hızlı içe aktarma"
           }
         }
       }
@@ -50098,6 +52240,12 @@
             "state" : "translated",
             "value" : "Läser stängningsinformationen från bilden på din enhet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotoğraftaki kapanış bilgisini cihazında okur"
+          }
         }
       }
     },
@@ -50239,6 +52387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att ladda bilden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotoğraf yüklenemedi"
           }
         }
       }
@@ -50382,6 +52536,12 @@
             "state" : "translated",
             "value" : "Ingen restaurang stängd"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı restoran yok"
+          }
         }
       }
     },
@@ -50523,6 +52683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skärmavbild"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran görüntüsü"
           }
         }
       }
@@ -50666,6 +52832,12 @@
             "state" : "translated",
             "value" : "Radera restaurang"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranı sil"
+          }
         }
       }
     },
@@ -50807,6 +52979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurangens namn"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran adı"
           }
         }
       }
@@ -50950,6 +53128,12 @@
             "state" : "translated",
             "value" : "Restaurang"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran"
+          }
         }
       }
     },
@@ -51091,6 +53275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till en restaurang"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran ekle"
           }
         }
       }
@@ -51234,6 +53424,12 @@
             "state" : "translated",
             "value" : "Lägg till restaurang"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran ekle"
+          }
         }
       }
     },
@@ -51375,6 +53571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redigera restaurang"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranı düzenle"
           }
         }
       }
@@ -51518,6 +53720,12 @@
             "state" : "translated",
             "value" : "Ingen av dina restauranger stänger de kommande 7 dagarna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranlarından hiçbiri önümüzdeki 7 gün içinde kapalı değil."
+          }
         }
       }
     },
@@ -51659,6 +53867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visar en prick de dagar inom de kommande 7 då dina restauranger är stängda."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önümüzdeki 7 gün içinde restoranlarının kapalı olduğu günleri nokta ile gösterir."
           }
         }
       }
@@ -51802,6 +54016,12 @@
             "state" : "translated",
             "value" : "Lägg till restauranger i appen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoranları uygulamada ekle"
+          }
         }
       }
     },
@@ -51943,6 +54163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anges som öppen alla dagar — ingen fast ledig dag."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her gün açık olarak görünüyor — sabit tatil günü yok."
           }
         }
       }
@@ -52086,6 +54312,12 @@
             "state" : "translated",
             "value" : "Lägg till widgeten ”Restauranger · 7 dagar” på hemskärmen för att se detta utan att öppna appen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı açmadan görmek için “Restoranlar · 7 gün” widget’ını Ana Ekran’a ekle."
+          }
         }
       }
     },
@@ -52227,6 +54459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importera detta"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bunu içe aktar"
           }
         }
       }
@@ -52370,6 +54608,12 @@
             "state" : "translated",
             "value" : "Namnet hämtades men det saknas stängningsinformation. Prova en skärmavbild av öppettiderna eller välj dagarna nedan."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad alındı ancak kapanış bilgisi yok. Çalışma saatlerinin ekran görüntüsünü dene veya günleri aşağıdan seç."
+          }
         }
       }
     },
@@ -52511,6 +54755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg in de fasta lediga dagarna för restaurangerna du besöker, så markerar vi stängningsdagarna de kommande 7 dagarna med en prick."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sık gittiğin restoranların sabit tatil günlerini gir; önümüzdeki 7 gün içindeki kapalı günleri nokta ile işaretleyelim."
           }
         }
       }
@@ -52654,6 +54904,12 @@
             "state" : "translated",
             "value" : "Prickens färg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nokta rengi"
+          }
         }
       }
     },
@@ -52795,6 +55051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fasta lediga dagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sabit tatil günleri"
           }
         }
       }
@@ -52938,6 +55200,12 @@
             "state" : "translated",
             "value" : "Adress (valfritt)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adres (isteğe bağlı)"
+          }
         }
       }
     },
@@ -53079,6 +55347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I din kartapp trycker du på Dela → Kopiera vid restaurangen och klistrar in här, eller väljer en skärmavbild av dess infosida."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harita uygulamasında restoranda Paylaş → Kopyala’ya dokunup buraya yapıştır veya bilgi sayfasının ekran görüntüsünü seç."
           }
         }
       }
@@ -53222,6 +55496,12 @@
             "state" : "translated",
             "value" : "Öppna i Kartor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haritalar’da aç"
+          }
         }
       }
     },
@@ -53363,6 +55643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till ledig dag manuellt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatil gününü elle ekle"
           }
         }
       }
@@ -53506,6 +55792,12 @@
             "state" : "translated",
             "value" : "Lägg till en ledig dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen bir tatil günü ekle"
+          }
         }
       }
     },
@@ -53647,6 +55939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redigera stängningsinformation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış bilgisini düzenle"
           }
         }
       }
@@ -53790,6 +56088,12 @@
             "state" : "translated",
             "value" : "Söker efter stängningsinformation…"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış bilgisi aranıyor…"
+          }
         }
       }
     },
@@ -53931,6 +56235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hittade ingen stängningsinformation. Välj dagarna nedan."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış bilgisi bulunamadı. Günleri aşağıdan seç."
           }
         }
       }
@@ -54074,6 +56384,12 @@
             "state" : "translated",
             "value" : "Inlägg 4:5"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gönderi 4:5"
+          }
         }
       }
     },
@@ -54215,6 +56531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hikâye 9:16"
           }
         }
       }
@@ -54358,6 +56680,12 @@
             "state" : "translated",
             "value" : "Stängningskalender för 2 veckor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 haftalık kapanış takvimi"
+          }
         }
       }
     },
@@ -54499,6 +56827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "På väg"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakında"
           }
         }
       }
@@ -54642,6 +56976,12 @@
             "state" : "translated",
             "value" : "Sök efter ”DontGoMart” i App Store"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store’da “DontGoMart” ara"
+          }
         }
       }
     },
@@ -54783,6 +57123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Butiker stängda!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağazalar kapalı!"
           }
         }
       }
@@ -54926,6 +57272,12 @@
             "state" : "translated",
             "value" : "Foto"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotoğraf"
+          }
         }
       }
     },
@@ -55064,6 +57416,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
@@ -55210,6 +57568,12 @@
             "state" : "translated",
             "value" : "Format"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biçim"
+          }
         }
       }
     },
@@ -55351,6 +57715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ortam"
           }
         }
       }
@@ -55494,6 +57864,12 @@
             "state" : "translated",
             "value" : "Stängningskort. %1$@ %2$@, %3$@ stängt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış kartı. %1$@ %2$@, %3$@ kapalı"
+          }
         }
       }
     },
@@ -55635,6 +58011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skapar videon"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video hazırlanıyor"
           }
         }
       }
@@ -55778,6 +58160,12 @@
             "state" : "translated",
             "value" : "Lägg upp på Instagram"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram’da paylaş"
+          }
         }
       }
     },
@@ -55919,6 +58307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj Instagram i delningslistan för att lägga upp det som inlägg, story eller reel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gönderi, hikâye veya reel olarak paylaşmak için paylaşım listesinden Instagram’ı seç"
           }
         }
       }
@@ -56062,6 +58456,12 @@
             "state" : "translated",
             "value" : "Öppnar direkt Instagrams story-redigerare"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram hikâye düzenleyicisini doğrudan açar"
+          }
         }
       }
     },
@@ -56203,6 +58603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dela"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paylaş"
           }
         }
       }
@@ -56346,6 +58752,12 @@
             "state" : "translated",
             "value" : "Delar videon om stängningen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış videosunu paylaşır"
+          }
         }
       }
     },
@@ -56487,6 +58899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att skapa videon. Dela fotot i stället."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video oluşturulamadı. Bunun yerine fotoğrafı paylaş."
           }
         }
       }
@@ -56630,6 +59048,12 @@
             "state" : "translated",
             "value" : "Öppnar igen %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tarihinde yeniden açılıyor"
+          }
         }
       }
     },
@@ -56771,6 +59195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Handla klart före %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışverişi %@ tarihine kadar bitir"
           }
         }
       }

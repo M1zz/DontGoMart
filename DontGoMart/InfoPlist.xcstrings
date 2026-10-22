@@ -141,6 +141,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -280,6 +286,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -427,6 +439,12 @@
             "state" : "translated",
             "value" : "Platsen behövs för att hitta och rekommendera butiker i närheten."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakındaki mağazaları bulmak ve önermek için konum gerekir."
+          }
         }
       }
     },
@@ -569,6 +587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Behövs för att spara foton och videor från stängningskorten i ditt bibliotek."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapanış kartlarının fotoğraf ve videolarını kitaplığına kaydetmek için gerekir."
           }
         }
       }

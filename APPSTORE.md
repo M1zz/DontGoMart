@@ -1337,3 +1337,61 @@ https://m1zz.github.io/DontGoMart/sv/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/sv/
+
+## tr
+
+### 이름
+
+DontGoMart: Kapalı Günler
+
+### 부제
+
+Boşuna yola çıkma
+
+### 키워드
+
+süpermarket,hipermarket,Kore,Seul,pazar,çarşamba,tatil,Chuseok,alışveriş,takvim,widget
+
+### 프로모션 텍스트
+
+Artık sevdiğin restoranların tatil günlerini de görebilirsin. Bir Naver Maps bağlantısı veya tek bir ekran görüntüsü yeter; kapalı gün yaklaşınca uygulama seni uyarır.
+
+### 설명
+
+Evden çıkmadan önce mağazanın açık olup olmadığına bak.
+DontGoMart, Kore’deki büyük süpermarketlerin ve Costco’nun zorunlu kapalı günlerini bir arada gösterir ve kapalı gün yaklaştığında seni önceden uyarır.
+
+Bugün gidip gidemeyeceğini hemen gör
+Uygulamayı açtığında ilk olarak seçtiğin mağazanın bugün açık olup olmadığını görürsün. Sonraki kapalı güne kaç gün kaldığı ve yaklaşan kapalı günlerin listesi de burada.
+
+Bölgeye göre değişen kapalı günlere uyumlu
+Pazar veya çarşamba kapalı mağazaları, ayrıca Ulsan ve Jeju gibi farklı kapalı günleri olan bölgeleri seçebilirsin. Costco’da normal mağazaları ve Taegu, Ilsan, Ulsan şubelerini ayrı ayrı ayarlayabilirsin. Seollal (Ay Yeni Yılı) ve Chuseok günlerindeki kapanışlar da gösterilir.
+
+Mahallendeki mağazaları kendin ekle
+Listede olmayan bir mağazayı, hangi hafta ve haftanın hangi günü kapalı olduğunu seçerek kendin kaydedebilirsin; örneğin ikinci ve dördüncü pazar.
+
+Sevdiğin restoranların tatil günleri de
+Sık gittiğin restoranların sabit tatil günlerini gir; önümüzdeki 7 gün içinde kapalı oldukları günler nokta ile işaretlenir. Naver Maps’ten paylaşıp kopyaladığın bağlantıyı yapıştırman veya restoran bilgi sayfasının ekran görüntüsünü seçmen yeterli; tatil günü otomatik dolar. Fotoğraftaki yazı yalnızca cihazında okunur.
+
+Unutmaman için bildirimler
+Kapanıştan 1, 2, 3 veya 7 gün önce, istediğin saatte bildirim almayı seç. Kapalı günden bir gün önce uygulama bugünün alışveriş için güzel bir gün olduğunu hatırlatır. Kapalı gün 3 gün içindeyse uygulamanın üstünde bir şerit de görünür.
+
+Ana Ekran ve Kilit Ekranı widget’ları
+Widget’larla en yakın kapalı günü, sonraki iki kapalı günü ve kalan günleri, mağazanın bu pazar açık olup olmadığını ve sevdiğin restoranların 7 günlük tatillerini görebilirsin. Bu haftanın pazarı widget’ı ve restoran widget’ı Kilit Ekranı’na da konabilir.
+
+Takvim ve paylaşım
+Takvimde bir ayın tüm kapalı günlerini gör. Kapanış haberini, 2 haftalık takvim ve alışveriş ipucu içeren bir kart olarak Instagram gönderi ve hikâye boyutlarında ya da kısa bir video olarak paylaşabilirsin.
+
+Tüm özellikler ücretsiz. İşine yaradıysa geliştirmeyi bir kahveyle destekleyebilirsin.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/tr/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/tr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/tr/

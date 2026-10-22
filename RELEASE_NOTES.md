@@ -144,6 +144,12 @@ Widgets visar nu namnet DontGoMart
 Se svar på din feedback i Inställningar
 Feedback frågar nu vad som hände
 
+### App Store (tr)
+
+Widget’lar artık DontGoMart adını taşır
+Geri bildirim yanıtlarını Ayarlar’da gör
+Geri bildirim artık ne olduğunu soruyor
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
