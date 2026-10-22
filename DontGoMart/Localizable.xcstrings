@@ -114,6 +114,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — tee ostokset ajoissa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — belanja lebih awal"
+          }
         }
       }
     },
@@ -218,6 +224,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -330,6 +342,12 @@
             "state" : "translated",
             "value" : "Poista: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus %@"
+          }
         }
       }
     },
@@ -437,6 +455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muokkaa: %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit %@"
           }
         }
       }
@@ -551,6 +575,12 @@
             "state" : "translated",
             "value" : "%@ suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tutup"
+          }
         }
       }
     },
@@ -658,6 +688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ suljettu Pro"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tutup Pro"
           }
         }
       }
@@ -772,6 +808,12 @@
             "state" : "translated",
             "value" : "Suljettu: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup: %@"
+          }
         }
       }
     },
@@ -880,6 +922,12 @@
             "state" : "translated",
             "value" : "Suljettu %@!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup %@!"
+          }
         }
       }
     },
@@ -984,6 +1032,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -1101,6 +1155,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1205,6 +1265,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1318,6 +1384,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1425,6 +1497,12 @@
             "state" : "translated",
             "value" : "Kohteita: %lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld item"
+          }
         }
       }
     },
@@ -1531,6 +1609,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld mnt"
+          }
         }
       }
     },
@@ -1636,6 +1720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "klo %lld"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pukul %lld"
           }
         }
       }
@@ -1752,6 +1842,12 @@
             "state" : "translated",
             "value" : "Päiviä jäljellä: %lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa %lld hari"
+          }
         }
       }
     },
@@ -1860,6 +1956,12 @@
             "state" : "translated",
             "value" : "%lld pv ennen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld hari sebelumnya"
+          }
         }
       }
     },
@@ -1965,6 +2067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Viikko %lld"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu ke-%lld"
           }
         }
       }
@@ -2077,6 +2185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld vk päästä, %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld minggu lagi, %@"
           }
         }
       }
@@ -2192,6 +2306,12 @@
             "state" : "translated",
             "value" : "Viikko %lld, %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu ke-%lld, %@"
+          }
         }
       }
     },
@@ -2304,6 +2424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Helpompaa VoiceOverilla"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebih mudah dengan VoiceOver"
           }
         }
       }
@@ -2418,6 +2544,12 @@
             "state" : "translated",
             "value" : "Siri ja Pikakomennot"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri dan Pintasan"
+          }
         }
       }
     },
@@ -2531,6 +2663,12 @@
             "state" : "translated",
             "value" : "Kysy Sirilta tai suorita pikakomento ja näet heti, onko kauppasi suljettu."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanya Siri atau jalankan pintasan untuk langsung tahu apakah tokomu tutup."
+          }
         }
       }
     },
@@ -2635,6 +2773,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -2747,6 +2891,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -2851,6 +3001,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -2963,6 +3119,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -3061,6 +3223,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -3178,6 +3346,12 @@
             "state" : "translated",
             "value" : "Suurimmallakin tekstikoolla näytöt järjestyvät siististi uudelleen, eikä mitään leikkaudu pois."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahkan dengan ukuran teks terbesar, tampilan tertata ulang dengan rapi tanpa ada yang terpotong."
+          }
         }
       }
     },
@@ -3290,6 +3464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poista valitut ja lisätyt kaupat sekä muistutusasetukset kerralla sovelluksesta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus toko yang dipilih, toko yang ditambahkan, dan pengaturan pengingat sekaligus di dalam aplikasi."
           }
         }
       }
@@ -3404,6 +3584,12 @@
             "state" : "translated",
             "value" : "Ilmoitus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengumuman"
+          }
         }
       }
     },
@@ -3510,6 +3696,12 @@
             "state" : "translated",
             "value" : "Avaa koko ilmoituksen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuka pengumuman lengkap"
+          }
         }
       }
     },
@@ -3615,6 +3807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulje ilmoitus"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup pengumuman"
           }
         }
       }
@@ -3729,6 +3927,12 @@
             "state" : "translated",
             "value" : "Tumma tila"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode Gelap"
+          }
         }
       }
     },
@@ -3841,6 +4045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erota sulkupäivät, vaikka Lisää kontrastia olisi päällä tai värien erottaminen olisi vaikeaa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari tutup tetap terlihat jelas meski Tingkatkan Kontras aktif atau kamu sulit membedakan warna."
           }
         }
       }
@@ -3955,6 +4165,12 @@
             "state" : "translated",
             "value" : "Lisää kieliä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebih banyak bahasa"
+          }
         }
       }
     },
@@ -4067,6 +4283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä sovellusta useammalla kielellä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan aplikasi dalam lebih banyak bahasa."
           }
         }
       }
@@ -4181,6 +4403,12 @@
             "state" : "translated",
             "value" : "Tallenna lisäämäsi kaupat tiedostoon ja tuo ne takaisin milloin vain."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan toko yang kamu tambahkan ke file dan pulihkan kapan saja."
+          }
         }
       }
     },
@@ -4294,6 +4522,12 @@
             "state" : "translated",
             "value" : "Poista kaikki tietoni"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus semua datamu sekaligus"
+          }
         }
       }
     },
@@ -4405,6 +4639,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaupan sulkemismuistutus"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat toko tutup"
           }
         }
       }
@@ -4519,6 +4759,12 @@
             "state" : "translated",
             "value" : "Teksti ja painikkeet pysyvät selkeinä tummalla näytöllä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks dan tombol tetap jelas di layar gelap."
+          }
         }
       }
     },
@@ -4631,6 +4877,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Helpommin erottuvat värit"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna yang lebih mudah dilihat"
           }
         }
       }
@@ -4745,6 +4997,12 @@
             "state" : "translated",
             "value" : "iPadilla voit valita kauppoja ja selata kalenteria pelkällä näppäimistöllä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di iPad, pilih toko dan geser kalender hanya dengan keyboard."
+          }
         }
       }
     },
@@ -4857,6 +5115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitä uutta päivitysten jälkeen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang baru setelah pembaruan"
           }
         }
       }
@@ -4971,6 +5235,12 @@
             "state" : "translated",
             "value" : "Kun avaat sovelluksen ensimmäisen kerran päivityksen jälkeen, näet, mitä uutta on tullut."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat pertama kali membuka aplikasi setelah pembaruan, kamu akan melihat apa yang baru."
+          }
         }
       }
     },
@@ -5083,6 +5353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käyttövinkit"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips penggunaan"
           }
         }
       }
@@ -5197,6 +5473,12 @@
             "state" : "translated",
             "value" : "Vinkkaamme hyödyllisistä toiminnoista hienovaraisesti oikeaan aikaan."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kami memberi tahu fitur berguna dengan halus pada waktu yang tepat."
+          }
         }
       }
     },
@@ -5309,6 +5591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Varmuuskopio ja vienti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pencadangan dan ekspor"
           }
         }
       }
@@ -5423,6 +5711,12 @@
             "state" : "translated",
             "value" : "Jos sovellus sulkeutuu kaupan lisäämisen aikana, kirjoittamasi säilyy."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jika aplikasi tertutup saat kamu menambah toko, yang sudah kamu ketik tetap ada."
+          }
         }
       }
     },
@@ -5528,6 +5822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld muuta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld lainnya"
           }
         }
       }
@@ -5642,6 +5942,12 @@
             "state" : "translated",
             "value" : "VoiceOver lukee sulkupäivät ja painikkeet kokonaan ja oikeassa järjestyksessä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver membacakan hari tutup dan tombol secara lengkap dan berurutan."
+          }
         }
       }
     },
@@ -5754,6 +6060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valmis suurelle tekstille"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siap untuk teks besar"
           }
         }
       }
@@ -5868,6 +6180,12 @@
             "state" : "translated",
             "value" : "Näppäimistöohjaus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrol dengan keyboard"
+          }
         }
       }
     },
@@ -5980,6 +6298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pikaopas"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panduan memulai"
           }
         }
       }
@@ -6094,6 +6418,12 @@
             "state" : "translated",
             "value" : "Kun avaat sovelluksen ensimmäisen kerran, näet muutamassa vaiheessa, mitä sillä voi tehdä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat pertama kali membuka aplikasi, lihat dalam beberapa langkah singkat apa yang bisa dilakukan."
+          }
         }
       }
     },
@@ -6206,6 +6536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tehty taitettavalle iPhonelle"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibuat untuk iPhone lipat"
           }
         }
       }
@@ -6320,6 +6656,12 @@
             "state" : "translated",
             "value" : "Taitettavalla iPhonella voit käyttää leveää näyttöä kahtena rinnakkaisena ruutuna."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di iPhone lipat, gunakan layar lebar sebagai dua panel berdampingan."
+          }
         }
       }
     },
@@ -6433,6 +6775,12 @@
             "state" : "translated",
             "value" : "Jatka siitä, mihin jäit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan dari yang terakhir"
+          }
         }
       }
     },
@@ -6531,6 +6879,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -6637,6 +6991,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -6739,6 +7099,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -6837,6 +7203,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -6947,6 +7319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Muistutus hyvästä ostospäivästä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Pengingat hari baik untuk belanja"
           }
         }
       }
@@ -7059,6 +7437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Hyvä päivä ostoksille"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Hari yang baik untuk belanja"
           }
         }
       }
@@ -7174,6 +7558,12 @@
             "state" : "translated",
             "value" : "Ilmoittaa, kun sulkupäivä on viikon sisällä!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memberi tahu jika ada hari tutup dalam seminggu!"
+          }
         }
       }
     },
@@ -7278,6 +7668,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -7396,6 +7792,12 @@
             "state" : "translated",
             "value" : "Sulkumuistutus-widget"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget pengingat hari tutup"
+          }
         }
       }
     },
@@ -7510,6 +7912,12 @@
             "state" : "translated",
             "value" : "Sulkupäivän laskuri -widget"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget hitung mundur hari tutup"
+          }
         }
       }
     },
@@ -7614,6 +8022,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -7726,6 +8140,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -7830,6 +8250,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -7942,6 +8368,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -8046,6 +8478,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -8162,6 +8600,12 @@
             "state" : "translated",
             "value" : "%@ on huomenna suljettu. Tänään on hyvä päivä tehdä ostokset!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tutup besok. Hari ini waktu yang tepat untuk belanja!"
+          }
         }
       }
     },
@@ -8273,6 +8717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ sulkeutuu %lld pv päästä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ akan tutup dalam %lld hari."
           }
         }
       }
@@ -8387,6 +8837,12 @@
             "state" : "translated",
             "value" : "%@ sulkeutuu %lld pv päästä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ akan tutup dalam %lld hari."
+          }
         }
       }
     },
@@ -8499,6 +8955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muista tehdä ostokset ennen seuraavaa sulkupäivää!"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jangan lupa belanja sebelum hari tutup berikutnya!"
           }
         }
       }
@@ -8613,6 +9075,12 @@
             "state" : "translated",
             "value" : "Hallitse myös lähialueen kauppojen sulkupäiviä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kelola juga hari tutup toko di sekitarmu"
+          }
         }
       }
     },
@@ -8725,6 +9193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rekisteröi oman kauppasi sulkemiskaava"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daftarkan pola tutup tokomu sendiri"
           }
         }
       }
@@ -8839,6 +9313,12 @@
             "state" : "translated",
             "value" : "Suosikkisi näkyvät aina ylimpänä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritmu selalu tampil di atas"
+          }
         }
       }
     },
@@ -8951,6 +9431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Merkitse lempikauppasi kirjanmerkeillä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tandai toko favoritmu"
           }
         }
       }
@@ -9065,6 +9551,12 @@
             "state" : "translated",
             "value" : "Kertaosto avaa kaikki ominaisuudet ikuisesti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekali bayar untuk semua fitur selamanya"
+          }
         }
       }
     },
@@ -9177,6 +9669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Päivitä DontGoMart Pro -versioon"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tingkatkan ke DontGoMart Pro"
           }
         }
       }
@@ -9291,6 +9789,12 @@
             "state" : "translated",
             "value" : "Katso E-Martin, Costcon ja Homeplusin sulkupäivät kerralla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cek hari tutup E-Mart, Costco, dan Homeplus sekaligus"
+          }
         }
       }
     },
@@ -9403,6 +9907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seuraa useita kauppoja kerralla"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantau beberapa toko sekaligus"
           }
         }
       }
@@ -9517,6 +10027,12 @@
             "state" : "translated",
             "value" : "Saat muistutuksen ennen sulkupäiviä, eikä turhia reissuja tule enää"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan pengingat sebelum hari tutup supaya tak perlu bolak-balik sia-sia"
+          }
         }
       }
     },
@@ -9629,6 +10145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ei enää suljettuja kauppoja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tak perlu lagi mendapati toko yang tutup"
           }
         }
       }
@@ -9743,6 +10265,12 @@
             "state" : "translated",
             "value" : "Lisää niin monta kohdetta kuin tarvitset"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan item sebanyak yang kamu perlukan"
+          }
         }
       }
     },
@@ -9855,6 +10383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rajoittamaton ostoslista"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daftar belanja tanpa batas"
           }
         }
       }
@@ -9969,6 +10503,12 @@
             "state" : "translated",
             "value" : "☕ Kahvin hinnalla avaat kaiken ikuisesti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Dengan harga secangkir kopi, buka semuanya selamanya"
+          }
         }
       }
     },
@@ -10081,6 +10621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat ilmoituksen %1$lld päivää ja %2$lld päivä ennen sulkupäiviä kello %3$@."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu akan diberi tahu %1$lld hari dan %2$lld hari sebelum hari tutup pukul %3$@."
           }
         }
       }
@@ -10196,6 +10742,12 @@
             "state" : "translated",
             "value" : "Näyttää vihreällä tai punaisella, onko kauppasi auki tänä sunnuntaina."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan hijau atau merah untuk menunjukkan apakah tokomu buka Minggu ini."
+          }
         }
       }
     },
@@ -10307,6 +10859,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näyttää kaksi seuraavaa sulkupäivää!"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan dua hari tutup berikutnya!"
           }
         }
       }
@@ -10422,6 +10980,12 @@
             "state" : "translated",
             "value" : "Näyttää, montako päivää on seuraavaan sulkupäivään!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan jumlah hari menuju hari tutup berikutnya!"
+          }
         }
       }
     },
@@ -10536,6 +11100,12 @@
             "state" : "translated",
             "value" : "Sunnuntai auki/kiinni"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu buka/tutup"
+          }
         }
       }
     },
@@ -10644,6 +11214,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -10748,6 +11324,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -10866,6 +11448,12 @@
             "state" : "translated",
             "value" : "Kahden sulkupäivän widget"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget dua hari tutup"
+          }
         }
       }
     },
@@ -10973,6 +11561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkee kiitosviestin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menutup pesan terima kasih"
           }
         }
       }
@@ -11082,6 +11676,12 @@
             "state" : "translated",
             "value" : "Kiitos!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih!"
+          }
         }
       }
     },
@@ -11190,6 +11790,12 @@
             "state" : "translated",
             "value" : "Tarjoaa kehittäjälle kupin kahvia"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traktir pengembang secangkir kopi"
+          }
         }
       }
     },
@@ -11297,6 +11903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lähettää kehittäjälle juomarahaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengirim tip kepada pengembang"
           }
         }
       }
@@ -11411,6 +12023,12 @@
             "state" : "translated",
             "value" : "Osa Gyeonggia/Cheongjua"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagian Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -11519,6 +12137,12 @@
             "state" : "translated",
             "value" : "Kiitos, nähdään taas"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih, sampai jumpa lagi"
+          }
         }
       }
     },
@@ -11625,6 +12249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkeutuu pian"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segera tutup"
           }
         }
       }
@@ -11733,6 +12363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagikan"
           }
         }
       }
@@ -11846,6 +12482,12 @@
             "state" : "translated",
             "value" : "Pyhäpäivä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari libur"
+          }
         }
       }
     },
@@ -11951,6 +12593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Palauta ostokset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulihkan Pembelian"
           }
         }
       }
@@ -12065,6 +12713,12 @@
             "state" : "translated",
             "value" : "Ominaisuus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitur"
+          }
         }
       }
     },
@@ -12170,6 +12824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omat kauppani"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko saya"
           }
         }
       }
@@ -12284,6 +12944,12 @@
             "state" : "translated",
             "value" : "Huomenna"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Besok"
+          }
         }
       }
     },
@@ -12390,6 +13056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Huomenna suljettu: %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Besok %@ tutup"
           }
         }
       }
@@ -12506,6 +13178,12 @@
             "state" : "translated",
             "value" : "Suljettu huomenna"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup besok"
+          }
         }
       }
     },
@@ -12611,6 +13289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tulevat sulkupäivät"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari tutup mendatang"
           }
         }
       }
@@ -12719,6 +13403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ensi kuu"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bulan depan"
           }
         }
       }
@@ -12835,6 +13525,12 @@
             "state" : "translated",
             "value" : "Ensi viikolla: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ minggu depan"
+          }
         }
       }
     },
@@ -12948,6 +13644,12 @@
             "state" : "translated",
             "value" : "Seuraava sulkupäivä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari tutup berikutnya"
+          }
         }
       }
     },
@@ -13054,6 +13756,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muistutamme ostoksista 2 päivää ennen seuraavaa sulkupäivää."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kami akan mengingatkanmu belanja 2 hari sebelum hari tutup berikutnya."
           }
         }
       }
@@ -13170,6 +13878,12 @@
             "state" : "translated",
             "value" : "Ei sulkupäivätietoja"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada info hari tutup"
+          }
         }
       }
     },
@@ -13277,6 +13991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Myöhemmin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nanti saja"
           }
         }
       }
@@ -13391,6 +14111,12 @@
             "state" : "translated",
             "value" : "Seuraa useita kauppoja yhtä aikaa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantau beberapa toko sekaligus"
+          }
         }
       }
     },
@@ -13504,6 +14230,12 @@
             "state" : "translated",
             "value" : "Usean kaupan seuranta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pemantauan multi-toko"
+          }
         }
       }
     },
@@ -13611,6 +14343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulje"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup"
           }
         }
       }
@@ -13720,6 +14458,12 @@
             "state" : "translated",
             "value" : "Avaa kalenterin sulkupäivien katsomista varten"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuka kalender untuk melihat hari tutup"
+          }
         }
       }
     },
@@ -13823,6 +14567,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -13940,6 +14690,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -14048,6 +14804,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -14164,6 +14926,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -14267,6 +15035,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket"
@@ -14383,6 +15157,12 @@
             "state" : "translated",
             "value" : "Supermarket (suljettu keskiviikkoisin)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (tutup hari Rabu)"
+          }
         }
       }
     },
@@ -14494,6 +15274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (suljettu keskiviikkoisin)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (tutup hari Rabu)"
           }
         }
       }
@@ -14607,6 +15393,12 @@
             "state" : "translated",
             "value" : "Supermarket (ke)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Rab)"
+          }
         }
       }
     },
@@ -14719,6 +15511,12 @@
             "state" : "translated",
             "value" : "Supermarket (Ulsan, sekamuotoinen)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan, campuran)"
+          }
         }
       }
     },
@@ -14827,6 +15625,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
@@ -14943,6 +15747,12 @@
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Ulsan)"
+          }
         }
       }
     },
@@ -15054,6 +15864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (suljettu sunnuntaisin)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (tutup hari Minggu)"
           }
         }
       }
@@ -15167,6 +15983,12 @@
             "state" : "translated",
             "value" : "Supermarket (suljettu sunnuntaisin)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (tutup hari Minggu)"
+          }
         }
       }
     },
@@ -15279,6 +16101,12 @@
             "state" : "translated",
             "value" : "Supermarket (su)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Min)"
+          }
         }
       }
     },
@@ -15387,6 +16215,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
@@ -15503,6 +16337,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
+          }
         }
       }
     },
@@ -15615,6 +16455,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarket (Jeju)"
+          }
         }
       }
     },
@@ -15723,6 +16569,12 @@
             "state" : "translated",
             "value" : "Jos sovellus auttoi, kannusta meitä kupillisella kahvia."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalau aplikasi ini membantu, beri kami semangat lewat secangkir kopi."
+          }
         }
       }
     },
@@ -15827,6 +16679,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -15940,6 +16798,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -16048,6 +16912,12 @@
             "state" : "translated",
             "value" : "Sulje kaksoisnapauttamalla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketuk dua kali untuk menutup"
+          }
         }
       }
     },
@@ -16155,6 +17025,12 @@
             "state" : "translated",
             "value" : "Kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko"
+          }
         }
       }
     },
@@ -16261,6 +17137,12 @@
             "state" : "translated",
             "value" : "Tarkista sulkupäivät DontGoMartista ennen ostoksille lähtöä ✅"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebelum belanja, cek hari tutup di DontGoMart ✅"
+          }
         }
       }
     },
@@ -16366,6 +17248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaupan väri"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna toko"
           }
         }
       }
@@ -16479,6 +17367,12 @@
             "state" : "translated",
             "value" : "Valitse kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko"
+          }
         }
       }
     },
@@ -16584,6 +17478,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaupan nimi (esim. Homeplus Gangnam)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama toko (mis. Homeplus Gangnam)"
           }
         }
       }
@@ -16691,6 +17591,12 @@
             "state" : "translated",
             "value" : "Kaupan tiedot"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info toko"
+          }
         }
       }
     },
@@ -16796,6 +17702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää kauppa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah toko"
           }
         }
       }
@@ -16903,6 +17815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kauppa suljettu"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko tutup"
           }
         }
       }
@@ -17017,6 +17935,12 @@
             "state" : "translated",
             "value" : "Ilmoitus kaupan sulkupäivästä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pemberitahuan hari tutup toko"
+          }
         }
       }
     },
@@ -17124,6 +18048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaupan sulkemismuistutus"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat toko tutup"
           }
         }
       }
@@ -17238,6 +18168,12 @@
             "state" : "translated",
             "value" : "Kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko"
+          }
         }
       }
     },
@@ -17350,6 +18286,12 @@
             "state" : "translated",
             "value" : "Kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko"
+          }
         }
       }
     },
@@ -17457,6 +18399,12 @@
             "state" : "translated",
             "value" : "Valitse kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko"
+          }
         }
       }
     },
@@ -17562,6 +18510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avaa kaupan valinnan ja ilmoitusasetukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuka pilihan toko dan pengaturan pengingat"
           }
         }
       }
@@ -17676,6 +18630,12 @@
             "state" : "translated",
             "value" : "Vaihtelee kaupoittain"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berbeda di tiap toko"
+          }
         }
       }
     },
@@ -17782,6 +18742,12 @@
             "state" : "translated",
             "value" : "Valitse kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko"
+          }
         }
       }
     },
@@ -17887,6 +18853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valitse kauppa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silakan pilih toko"
           }
         }
       }
@@ -18001,6 +18973,12 @@
             "state" : "translated",
             "value" : "Kauppaa ei ole valittu. Valitse se Asetuksissa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum ada toko yang dipilih. Pilih di Pengaturan."
+          }
         }
       }
     },
@@ -18109,6 +19087,12 @@
             "state" : "translated",
             "value" : "Viikoittain: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setiap %@"
+          }
         }
       }
     },
@@ -18216,6 +19200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaikki ominaisuudet pysyvät ilmaisina. Juomaraha on pelkkää kannustusta, ja voit lähettää sen milloin vain."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua fitur tetap gratis. Tip hanyalah dukungan semangat, dan bisa kamu kirim kapan saja."
           }
         }
       }
@@ -18332,6 +19322,12 @@
             "state" : "translated",
             "value" : "Ylihuomenna"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lusa"
+          }
         }
       }
     },
@@ -18444,6 +19440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ostoslistan kohteille ei ole rajaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanpa batas item di daftar belanjamu"
           }
         }
       }
@@ -18558,6 +19560,12 @@
             "state" : "translated",
             "value" : "Rajoittamaton ostoslista"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daftar belanja tanpa batas"
+          }
         }
       }
     },
@@ -18671,6 +19679,12 @@
             "state" : "translated",
             "value" : "Päivitä Pro-versioon lisätäksesi kohteita rajattomasti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tingkatkan ke Pro untuk menambah item tanpa batas"
+          }
         }
       }
     },
@@ -18777,6 +19791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versio"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versi"
           }
         }
       }
@@ -18886,6 +19906,12 @@
             "state" : "translated",
             "value" : "Tukesi ansiosta voimme jatkaa sovelluksen tekemistä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berkat dukunganmu, kami bisa terus membuat aplikasi ini."
+          }
         }
       }
     },
@@ -18994,6 +20020,12 @@
             "state" : "translated",
             "value" : "Tukesi merkitsee paljon. (tähän mennessä ☕️ ×%lld)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukunganmu sangat berarti. (sejauh ini ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -19099,6 +20131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mnt"
           }
         }
       }
@@ -19206,6 +20244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pikatoiminnot"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aksi cepat"
           }
         }
       }
@@ -19322,6 +20366,12 @@
             "state" : "translated",
             "value" : "Ei valittu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum dipilih"
+          }
         }
       }
     },
@@ -19428,6 +20478,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tyhjennä valinta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus pilihan"
           }
         }
       }
@@ -19541,6 +20597,12 @@
             "state" : "translated",
             "value" : "Kauppaa ei ole valittu. Avaa sovellus ja valitse kauppa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum ada toko yang dipilih. Buka aplikasi untuk memilih."
+          }
         }
       }
     },
@@ -19646,6 +20708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valittu kaava"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pola terpilih"
           }
         }
       }
@@ -19762,6 +20830,12 @@
             "state" : "translated",
             "value" : "Valittu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dipilih"
+          }
         }
       }
     },
@@ -19869,6 +20943,12 @@
             "state" : "translated",
             "value" : "Kaikki valitut kaupat ovat auki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua toko yang dipilih buka"
+          }
         }
       }
     },
@@ -19975,6 +21055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaikki valitut kaupat ovat kiinni"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua toko yang dipilih tutup"
           }
         }
       }
@@ -20088,6 +21174,12 @@
             "state" : "translated",
             "value" : "Seollalin ja Chuseokin pyhäpäivät"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libur Seollal/Chuseok"
+          }
         }
       }
     },
@@ -20193,6 +21285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asetukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan"
           }
         }
       }
@@ -20302,6 +21400,12 @@
             "state" : "translated",
             "value" : "Valitse Asetuksissa seurattavat kaupat"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko yang ingin dipantau di Pengaturan"
+          }
         }
       }
     },
@@ -20409,6 +21513,12 @@
             "state" : "translated",
             "value" : "Valitse Asetuksissa seurattavat kaupat"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko yang ingin dipantau di Pengaturan"
+          }
         }
       }
     },
@@ -20515,6 +21625,12 @@
             "state" : "translated",
             "value" : "Siirry Asetuksiin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Pengaturan"
+          }
         }
       }
     },
@@ -20620,6 +21736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tunti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jam"
           }
         }
       }
@@ -20734,6 +21856,12 @@
             "state" : "translated",
             "value" : "Tuntematon"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak diketahui"
+          }
         }
       }
     },
@@ -20839,6 +21967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoituslupa tarvitaan"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izin notifikasi diperlukan"
           }
         }
       }
@@ -20947,6 +22081,12 @@
             "state" : "translated",
             "value" : "Ilmoitusasetukset"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan notifikasi"
+          }
         }
       }
     },
@@ -21052,6 +22192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoituksen aika"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu notifikasi"
           }
         }
       }
@@ -21160,6 +22306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoita minulle"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingatkan saya"
           }
         }
       }
@@ -21274,6 +22426,12 @@
             "state" : "translated",
             "value" : "Saat ilmoituksen ennen sulkupäiviä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan notifikasi sebelum hari tutup"
+          }
         }
       }
     },
@@ -21386,6 +22544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoitukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifikasi"
           }
         }
       }
@@ -21500,6 +22664,12 @@
             "state" : "translated",
             "value" : "Saat ilmoituksen ennen sulkupäiviä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan notifikasi sebelum hari tutup"
+          }
         }
       }
     },
@@ -21605,6 +22775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoitukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifikasi"
           }
         }
       }
@@ -21713,6 +22889,12 @@
             "state" : "translated",
             "value" : "Kirjoita arvostelu App Storeen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulis ulasan di App Store"
+          }
         }
       }
     },
@@ -21819,6 +23001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näytä App Storessa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat di App Store"
           }
         }
       }
@@ -21928,6 +23116,12 @@
             "state" : "translated",
             "value" : "Kiitos, että tuet sovellusta ☕️"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih sudah mendukung aplikasi ☕️"
+          }
         }
       }
     },
@@ -22031,6 +23225,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -22147,6 +23347,12 @@
             "state" : "translated",
             "value" : "Auki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka"
+          }
         }
       }
     },
@@ -22260,6 +23466,12 @@
             "state" : "translated",
             "value" : "Auki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka"
+          }
         }
       }
     },
@@ -22366,6 +23578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auki tänään"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka hari ini"
           }
         }
       }
@@ -22480,6 +23698,12 @@
             "state" : "translated",
             "value" : "Tänään"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini"
+          }
         }
       }
     },
@@ -22586,6 +23810,12 @@
             "state" : "translated",
             "value" : "Tänään suljettu: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tutup hari ini"
+          }
         }
       }
     },
@@ -22691,6 +23921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voinko mennä tänään?"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bisa pergi hari ini?"
           }
         }
       }
@@ -22805,6 +24041,12 @@
             "state" : "translated",
             "value" : "Kaikki valitut kaupat ovat tänään auki."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini semua toko yang dipilih buka."
+          }
         }
       }
     },
@@ -22918,6 +24160,12 @@
             "state" : "translated",
             "value" : "Kaikki valitut kaupat ovat tänään kiinni."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini semua toko yang dipilih tutup."
+          }
         }
       }
     },
@@ -23026,6 +24274,12 @@
             "state" : "translated",
             "value" : "Jakaa tämän päivän tilan ja tulevat sulkupäivät"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membagikan status hari ini dan hari tutup mendatang"
+          }
         }
       }
     },
@@ -23133,6 +24387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auki tänään"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka hari ini"
           }
         }
       }
@@ -23249,6 +24509,12 @@
             "state" : "translated",
             "value" : "Tänään vain osa kaupoista on kiinni: %@."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini hanya sebagian toko yang tutup: %@."
+          }
         }
       }
     },
@@ -23356,6 +24622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Säästimme sinut tänään turhalta reissulta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini kami menyelamatkanmu dari perjalanan sia-sia"
           }
         }
       }
@@ -23472,6 +24744,12 @@
             "state" : "translated",
             "value" : "Suljettu tänään"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup hari ini"
+          }
         }
       }
     },
@@ -23580,6 +24858,12 @@
             "state" : "translated",
             "value" : "Suljettu tänään"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup hari ini"
+          }
         }
       }
     },
@@ -23685,6 +24969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Säästimme sinut tänään taas turhalta reissulta.\nMuistamme edelleen anteliaan tukesi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini kami kembali menyelamatkanmu dari perjalanan sia-sia.\nKami selalu mengingat dukunganmu yang murah hati."
           }
         }
       }
@@ -23798,6 +25088,12 @@
             "state" : "translated",
             "value" : "Valmis"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
         }
       }
     },
@@ -23905,6 +25201,12 @@
             "state" : "translated",
             "value" : "Poista valmiit kohteet"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus item yang selesai"
+          }
         }
       }
     },
@@ -24008,6 +25310,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -24125,6 +25433,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -24233,6 +25547,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -24349,6 +25669,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -24461,6 +25787,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -24567,6 +25899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kuukausi"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bulanan"
           }
         }
       }
@@ -24675,6 +26013,12 @@
             "state" : "translated",
             "value" : "Sijaintilupa tarvitaan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izin lokasi diperlukan"
+          }
         }
       }
     },
@@ -24782,6 +26126,12 @@
             "state" : "translated",
             "value" : "Sijaintiominaisuudet"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitur berbasis lokasi"
+          }
         }
       }
     },
@@ -24887,6 +26237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tue meitä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukung kami"
           }
         }
       }
@@ -24999,6 +26355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Su"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
           }
         }
       }
@@ -25115,6 +26477,12 @@
             "state" : "translated",
             "value" : "Tällä viikolla: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ minggu ini"
+          }
         }
       }
     },
@@ -25221,6 +26589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tällä viikolla suljettu: %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ minggu ini tutup"
           }
         }
       }
@@ -25334,6 +26708,12 @@
             "state" : "translated",
             "value" : "Tämä sunnuntai"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu ini"
+          }
         }
       }
     },
@@ -25445,6 +26825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tänä sunnuntaina %@ kauppa on auki"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu ini %@, toko buka"
           }
         }
       }
@@ -25558,6 +26944,12 @@
             "state" : "translated",
             "value" : "Tänä sunnuntaina %@ kauppa on kiinni"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu ini %@, toko tutup"
+          }
         }
       }
     },
@@ -25665,6 +27057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edellinen kuu"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bulan sebelumnya"
           }
         }
       }
@@ -25774,6 +27172,12 @@
             "state" : "translated",
             "value" : "Jaa Instagram Storiesiin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagikan ke Instagram Stories"
+          }
         }
       }
     },
@@ -25882,6 +27286,12 @@
             "state" : "translated",
             "value" : "Instagram on oltava asennettuna, jotta voit jakaa Storiesiin."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram harus terpasang untuk membagikan ke Stories."
+          }
         }
       }
     },
@@ -25989,6 +27399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagramia ei löytynyt"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram tidak ditemukan"
           }
         }
       }
@@ -26099,6 +27515,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -26215,6 +27637,12 @@
             "state" : "translated",
             "value" : "Tavallinen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biasa"
+          }
         }
       }
     },
@@ -26321,6 +27749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tavalliset kaupat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko biasa"
           }
         }
       }
@@ -26429,6 +27863,12 @@
             "state" : "translated",
             "value" : "Osa auki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagian buka"
+          }
         }
       }
     },
@@ -26535,6 +27975,12 @@
             "state" : "translated",
             "value" : "Osa kaupoista on kiinni"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagian toko tutup"
+          }
         }
       }
     },
@@ -26638,6 +28084,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -26755,6 +28207,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -26867,6 +28325,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -26975,6 +28439,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -27092,6 +28562,12 @@
             "state" : "translated",
             "value" : "Kertaosto. Ei tilausta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pembelian sekali bayar. Tanpa langganan."
+          }
         }
       }
     },
@@ -27197,6 +28673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää lempikauppojesi sulkemiskaavat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan pola tutup toko favoritmu"
           }
         }
       }
@@ -27305,6 +28787,12 @@
             "state" : "translated",
             "value" : "Ostosmuistutus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat belanja"
+          }
         }
       }
     },
@@ -27412,6 +28900,12 @@
             "state" : "translated",
             "value" : "Ostoslista"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daftar belanja"
+          }
         }
       }
     },
@@ -27518,6 +29012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ostoshälytys"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peringatan belanja"
           }
         }
       }
@@ -27632,6 +29132,12 @@
             "state" : "translated",
             "value" : "Ostosmuistutus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat belanja"
+          }
         }
       }
     },
@@ -27740,6 +29246,12 @@
             "state" : "translated",
             "value" : "Muistutus hyvästä ostospäivästä (edellisenä päivänä)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat hari baik untuk belanja (sehari sebelumnya)"
+          }
         }
       }
     },
@@ -27847,6 +29359,12 @@
             "state" : "translated",
             "value" : "Lisää kohde"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah item"
+          }
         }
       }
     },
@@ -27953,6 +29471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää kohteita ostoslistaasi"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan item ke daftar belanjamu"
           }
         }
       }
@@ -28065,6 +29589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tallenna"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
           }
         }
       }
@@ -28179,6 +29709,12 @@
             "state" : "translated",
             "value" : "Suurin osa maan alueista"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagian besar wilayah di seluruh negeri"
+          }
         }
       }
     },
@@ -28291,6 +29827,12 @@
             "state" : "translated",
             "value" : "Valtakunnallinen pyhäpäivä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari libur nasional"
+          }
         }
       }
     },
@@ -28402,6 +29944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valtakunnallinen pyhäpäivä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari libur nasional"
           }
         }
       }
@@ -28516,6 +30064,12 @@
             "state" : "translated",
             "value" : "Suljettu koko päivän"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup seharian"
+          }
         }
       }
     },
@@ -28623,6 +30177,12 @@
             "state" : "translated",
             "value" : "Poista kaikki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus semua"
+          }
         }
       }
     },
@@ -28729,6 +30289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näytä kaikki"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat semua"
           }
         }
       }
@@ -28838,6 +30404,12 @@
             "state" : "translated",
             "value" : "Suuri kiitos!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih banyak!"
+          }
         }
       }
     },
@@ -28944,6 +30516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tietoja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentang"
           }
         }
       }
@@ -29057,6 +30635,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -29163,6 +30747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Viikoittain"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mingguan"
           }
         }
       }
@@ -29271,6 +30861,12 @@
             "state" : "translated",
             "value" : "Lähikaupat"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko terdekat"
+          }
         }
       }
     },
@@ -29377,6 +30973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tunnista lähikaupat automaattisesti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deteksi otomatis toko terdekat"
           }
         }
       }
@@ -29485,6 +31087,12 @@
             "state" : "translated",
             "value" : "Löytääksesi lähikaupat\nsalli sijainnin käyttö kohdassa\nAsetukset > DontGoMart > Sijainti."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk menemukan toko terdekat,\nizinkan akses lokasi di\nPengaturan > DontGoMart > Lokasi."
+          }
         }
       }
     },
@@ -29592,6 +31200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kerro ympärilläsi oleville sulkupäivistä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kabari orang di sekitarmu soal hari tutup"
           }
         }
       }
@@ -29706,6 +31320,12 @@
             "state" : "translated",
             "value" : "Kiinnitä lempikauppasi ylös"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sematkan toko favoritmu di atas"
+          }
         }
       }
     },
@@ -29819,6 +31439,12 @@
             "state" : "translated",
             "value" : "Suosikit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorit"
+          }
         }
       }
     },
@@ -29927,6 +31553,12 @@
             "state" : "translated",
             "value" : "Tähän mennessä saatu tuki ☕️ ×%lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukungan yang diterima sejauh ini ☕️ ×%lld"
+          }
         }
       }
     },
@@ -30033,6 +31665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edistyminen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kemajuan"
           }
         }
       }
@@ -30141,6 +31779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ensimmäinen sulkupäivä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari tutup pertama"
           }
         }
       }
@@ -30254,6 +31898,12 @@
             "state" : "translated",
             "value" : "Lisää"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah"
+          }
         }
       }
     },
@@ -30359,6 +32009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valitse seurattavat kaupat (useita mahdollista)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih toko yang ingin dipantau (bisa lebih dari satu)"
           }
         }
       }
@@ -30472,6 +32128,12 @@
             "state" : "translated",
             "value" : "Peruuta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
         }
       }
     },
@@ -30580,6 +32242,12 @@
             "state" : "translated",
             "value" : "Valmistellaan korttia"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyiapkan kartu"
+          }
         }
       }
     },
@@ -30687,6 +32355,12 @@
             "state" : "translated",
             "value" : "Näytä kalenteri"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat kalender"
+          }
         }
       }
     },
@@ -30793,6 +32467,12 @@
             "state" : "translated",
             "value" : "Lisää oma kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah toko kustom"
+          }
         }
       }
     },
@@ -30898,6 +32578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muokkaa omaa kauppaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit toko kustom"
           }
         }
       }
@@ -31011,6 +32697,12 @@
             "state" : "translated",
             "value" : "Oma kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko kustom"
+          }
         }
       }
     },
@@ -31123,6 +32815,12 @@
             "state" : "translated",
             "value" : "Oma kauppa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko kustom"
+          }
         }
       }
     },
@@ -31234,6 +32932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oma kauppa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko kustom"
           }
         }
       }
@@ -31348,6 +33052,12 @@
             "state" : "translated",
             "value" : "Lisää oman kauppasi sulkemiskaavat"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan pola tutup tokomu sendiri"
+          }
         }
       }
     },
@@ -31460,6 +33170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oma kauppa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko kustom"
           }
         }
       }
@@ -31574,6 +33290,12 @@
             "state" : "translated",
             "value" : "Lisää oman kauppasi sulkemiskaavat"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan pola tutup tokomu sendiri"
+          }
         }
       }
     },
@@ -31681,6 +33403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tarjoa kahvi %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traktir kopi %@"
           }
         }
       }
@@ -31790,6 +33518,12 @@
             "state" : "translated",
             "value" : "Tarjoa kahvi, %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traktir kopi, %@"
+          }
         }
       }
     },
@@ -31893,6 +33627,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -32009,6 +33749,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -32117,6 +33863,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
@@ -32233,6 +33985,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -32341,6 +34099,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -32457,6 +34221,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -32565,6 +34335,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -32681,6 +34457,12 @@
             "state" : "translated",
             "value" : "Costco tavallinen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco biasa"
+          }
         }
       }
     },
@@ -32792,6 +34574,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco tavallinen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco biasa"
           }
         }
       }
@@ -32905,6 +34693,12 @@
             "state" : "translated",
             "value" : "Costco tavallinen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco biasa"
+          }
         }
       }
     },
@@ -33013,6 +34807,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -33129,6 +34929,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -33237,6 +35043,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -33353,6 +35165,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -33465,6 +35283,12 @@
             "state" : "translated",
             "value" : "Tavalliset – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biasa – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -33571,6 +35395,12 @@
             "state" : "translated",
             "value" : "Lisää kaava"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah pola"
+          }
         }
       }
     },
@@ -33676,6 +35506,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää kaava"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silakan tambahkan pola"
           }
         }
       }
@@ -33790,6 +35626,12 @@
             "state" : "translated",
             "value" : "Avaa usean kaupan seuranta, muistutukset ja paljon muuta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka pemantauan multi-toko, notifikasi, dan lainnya"
+          }
         }
       }
     },
@@ -33898,6 +35740,12 @@
             "state" : "translated",
             "value" : "Tue meitä vielä kerran ☕️"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukung sekali lagi ☕️"
+          }
         }
       }
     },
@@ -34004,6 +35852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valittu toimipiste"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cabang terpilih"
           }
         }
       }
@@ -34112,6 +35966,12 @@
             "state" : "translated",
             "value" : "Etsii ja suosittelee lähikauppoja nykyisen sijaintisi perusteella."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menemukan dan merekomendasikan toko terdekat berdasarkan lokasimu saat ini."
+          }
         }
       }
     },
@@ -34216,6 +36076,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -34328,6 +36194,12 @@
             "state" : "translated",
             "value" : "Lataa juomarahavaihtoehdot uudelleen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memuat ulang daftar pilihan tip"
+          }
         }
       }
     },
@@ -34435,6 +36307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ladataan juomarahavaihtoehtoja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memuat pilihan tip"
           }
         }
       }
@@ -34544,6 +36422,12 @@
             "state" : "translated",
             "value" : "Juomarahavaihtoehtojen lataus epäonnistui. Yritä uudelleen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal memuat pilihan tip. Coba lagi"
+          }
         }
       }
     },
@@ -34651,6 +36535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tietoja juomarahasta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentang tip"
           }
         }
       }
@@ -34760,6 +36650,12 @@
             "state" : "translated",
             "value" : "Sulkee juomarahakortin. Se ei tule näkyviin 30 päivään"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menutup kartu tip. Tidak akan muncul lagi selama 30 hari"
+          }
         }
       }
     },
@@ -34867,6 +36763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tukija"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pendukung"
           }
         }
       }
@@ -34976,6 +36878,12 @@
             "state" : "translated",
             "value" : "Tukija. Tähän mennessä %lld kahvia. Kiitos, että tuet sovellusta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pendukung. Sejauh ini %lld kopi. Terima kasih sudah mendukung aplikasi."
+          }
         }
       }
     },
@@ -35084,6 +36992,12 @@
             "state" : "translated",
             "value" : "Emme ole unohtaneet sinua!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kami tidak melupakanmu!"
+          }
         }
       }
     },
@@ -35191,6 +37105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kiitos tuestasi. Olet lähettänyt tähän mennessä %lld kahvia."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih atas dukunganmu. Sejauh ini kamu sudah mengirim %lld kopi."
           }
         }
       }
@@ -35307,6 +37227,12 @@
             "state" : "translated",
             "value" : "Suuri kiitos tuestasi. Se merkitsee meille paljon."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih banyak atas dukunganmu. Ini sangat berarti bagi kami."
+          }
         }
       }
     },
@@ -35414,6 +37340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suuri kiitos tuestasi. Olet lähettänyt tähän mennessä %lld kahvia."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terima kasih banyak atas dukunganmu. Sejauh ini kamu sudah mengirim %lld kopi."
           }
         }
       }
@@ -35529,6 +37461,12 @@
             "state" : "translated",
             "value" : "Suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup"
+          }
         }
       }
     },
@@ -35634,6 +37572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkemiskaava"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pola tutup"
           }
         }
       }
@@ -35743,6 +37687,12 @@
             "state" : "translated",
             "value" : "Kerro sulkemisesta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kabari soal hari tutup"
+          }
         }
       }
     },
@@ -35850,6 +37800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jakaa sulkemiskortin kuvan"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membagikan gambar kartu hari tutup"
           }
         }
       }
@@ -35965,6 +37921,12 @@
             "state" : "translated",
             "value" : "Sulkemiskortti. %1$@ %2$@, %3$@ suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartu hari tutup. %1$@ %2$@, %3$@ tutup"
+          }
         }
       }
     },
@@ -36073,6 +38035,12 @@
             "state" : "translated",
             "value" : "Luo ja jakaa sulkemiskortin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuat dan membagikan kartu hari tutup"
+          }
         }
       }
     },
@@ -36180,6 +38148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jakaa sulkemiskortin Instagram Storiesiin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membagikan kartu hari tutup ke Instagram Stories"
           }
         }
       }
@@ -36296,6 +38270,12 @@
             "state" : "translated",
             "value" : "Ei sulkemista"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada hari tutup"
+          }
         }
       }
     },
@@ -36401,6 +38381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkemiskaava"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pola tutup"
           }
         }
       }
@@ -36514,6 +38500,12 @@
             "state" : "translated",
             "value" : "Suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup"
+          }
         }
       }
     },
@@ -36620,6 +38612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suljettu tänään"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup hari ini"
           }
         }
       }
@@ -36729,6 +38727,12 @@
             "state" : "translated",
             "value" : "Yksikään kauppa ei ole suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada toko yang tutup"
+          }
         }
       }
     },
@@ -36835,6 +38839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkupäivät"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari tutup"
           }
         }
       }
@@ -36943,6 +38953,12 @@
             "state" : "translated",
             "value" : "Ilmoitukset lähetetään 3 päivää ja 1 päivä ennen sulkupäiviä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifikasi akan dikirim 3 hari dan 1 hari sebelum hari tutup."
+          }
         }
       }
     },
@@ -37048,6 +39064,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkupäivämuistutukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat hari tutup"
           }
         }
       }
@@ -37156,6 +39178,12 @@
             "state" : "translated",
             "value" : "Ota ensin sulkupäivämuistutukset käyttöön."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktifkan dulu pengingat hari tutup."
+          }
         }
       }
     },
@@ -37261,6 +39289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saadaksesi sulkupäivämuistutuksia salli ilmoitukset Asetuksissa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk menerima pengingat hari tutup, izinkan notifikasi di Pengaturan."
           }
         }
       }
@@ -37368,6 +39402,12 @@
             "state" : "translated",
             "value" : "Ei sulkupäivätietoja"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada info hari tutup"
+          }
         }
       }
     },
@@ -37474,6 +39514,12 @@
             "state" : "translated",
             "value" : "Sulkupäivätietoja ei ole saatavilla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada informasi hari tutup"
+          }
         }
       }
     },
@@ -37579,6 +39625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkupäiväkalenteri"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender hari tutup"
           }
         }
       }
@@ -37688,6 +39740,12 @@
             "state" : "translated",
             "value" : "Näytä sulkupäiväkalenteri"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat kalender hari tutup"
+          }
         }
       }
     },
@@ -37795,6 +39853,12 @@
             "state" : "translated",
             "value" : "Valitse sulkupäivät"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih hari tutup"
+          }
         }
       }
     },
@@ -37901,6 +39965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ei ole sulkupäivä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bukan hari tutup"
           }
         }
       }
@@ -38014,6 +40084,12 @@
             "state" : "translated",
             "value" : "Löytyi ”%@”. Tarkista ja napauta Lisää."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menemukan “%@”. Periksa lalu ketuk Tambah."
+          }
         }
       }
     },
@@ -38125,6 +40201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ei sulkemisia seuraavien 7 päivän aikana"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada yang tutup dalam 7 hari ke depan"
           }
         }
       }
@@ -38238,6 +40320,12 @@
             "state" : "translated",
             "value" : "Yksikään ravintolasi ei ole kiinni seuraavien 7 päivän aikana"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada restoranmu yang tutup dalam 7 hari ke depan"
+          }
         }
       }
     },
@@ -38349,6 +40437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ei sulkemisia tällä viikolla"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada hari tutup minggu ini"
           }
         }
       }
@@ -38462,6 +40556,12 @@
             "state" : "translated",
             "value" : "Hallitse"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kelola"
+          }
         }
       }
     },
@@ -38573,6 +40673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voit lisätä Naver Mapsin jakolinkistä tai kuvakaappauksesta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu bisa menambahkan dari tautan bagikan Naver Maps atau tangkapan layar"
           }
         }
       }
@@ -38686,6 +40792,12 @@
             "state" : "translated",
             "value" : "Omat ravintolani"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran saya"
+          }
         }
       }
     },
@@ -38797,6 +40909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ravintolat · 7 päivää"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran · 7 hari"
           }
         }
       }
@@ -38910,6 +41028,12 @@
             "state" : "translated",
             "value" : "Lisää tai muokkaa ravintoloitasi"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah atau ubah restoranmu"
+          }
         }
       }
     },
@@ -39021,6 +41145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ravintoloita ei vielä ole. Lisää ne sovelluksessa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum ada restoran. Tambahkan di aplikasi."
           }
         }
       }
@@ -39134,6 +41264,12 @@
             "state" : "translated",
             "value" : "Tai liitä tähän jaettu linkki tai teksti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atau tempel tautan atau teks yang dibagikan di sini"
+          }
         }
       }
     },
@@ -39245,6 +41381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pikatuonti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impor cepat"
           }
         }
       }
@@ -39358,6 +41500,12 @@
             "state" : "translated",
             "value" : "Lukee kuvasta sulkemistiedot laitteellasi"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membaca info libur dari foto di perangkatmu"
+          }
         }
       }
     },
@@ -39469,6 +41617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kuvaa ei voitu ladata"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak dapat memuat foto"
           }
         }
       }
@@ -39582,6 +41736,12 @@
             "state" : "translated",
             "value" : "Yksikään ravintola ei ole kiinni"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada restoran yang tutup"
+          }
         }
       }
     },
@@ -39693,6 +41853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kuvakaappaus"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tangkapan layar"
           }
         }
       }
@@ -39806,6 +41972,12 @@
             "state" : "translated",
             "value" : "Poista ravintola"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus restoran"
+          }
         }
       }
     },
@@ -39917,6 +42089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ravintolan nimi"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama restoran"
           }
         }
       }
@@ -40030,6 +42208,12 @@
             "state" : "translated",
             "value" : "Ravintola"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoran"
+          }
         }
       }
     },
@@ -40141,6 +42325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää ravintola"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah restoran"
           }
         }
       }
@@ -40254,6 +42444,12 @@
             "state" : "translated",
             "value" : "Lisää ravintola"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah restoran"
+          }
         }
       }
     },
@@ -40365,6 +42561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muokkaa ravintolaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit restoran"
           }
         }
       }
@@ -40478,6 +42680,12 @@
             "state" : "translated",
             "value" : "Yksikään ravintolasi ei ole kiinni seuraavien 7 päivän aikana."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada restoranmu yang tutup dalam 7 hari ke depan."
+          }
         }
       }
     },
@@ -40589,6 +42797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näyttää pisteen niinä seuraavien 7 päivän päivinä, jolloin ravintolasi ovat kiinni."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan titik pada hari dalam 7 hari ke depan saat restoranmu tutup."
           }
         }
       }
@@ -40702,6 +42916,12 @@
             "state" : "translated",
             "value" : "Lisää ravintoloita sovelluksessa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan restoran di aplikasi"
+          }
         }
       }
     },
@@ -40813,6 +43033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilmoitettu olevan auki joka päivä — ei vakiovapaapäivää."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tercantum buka setiap hari — tidak ada hari libur tetap."
           }
         }
       }
@@ -40926,6 +43152,12 @@
             "state" : "translated",
             "value" : "Lisää ”Ravintolat · 7 päivää” -widget Koti-valikkoon nähdäksesi tämän avaamatta sovellusta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan widget “Restoran · 7 hari” ke Layar Utama agar bisa melihatnya tanpa membuka aplikasi."
+          }
         }
       }
     },
@@ -41037,6 +43269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuo tämä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impor ini"
           }
         }
       }
@@ -41150,6 +43388,12 @@
             "state" : "translated",
             "value" : "Nimi saatiin, mutta sulkemistietoja ei. Kokeile aukioloaikojen kuvakaappausta tai valitse päivät alta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama berhasil didapat, tetapi tidak ada info libur. Coba tangkapan layar jam buka atau pilih hari di bawah."
+          }
         }
       }
     },
@@ -41261,6 +43505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää käymiesi ravintoloiden vakiovapaapäivät, niin merkitsemme pisteellä sulkupäivät seuraavien 7 päivän ajalta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan hari libur tetap restoran yang sering kamu kunjungi, dan kami tandai hari tutup dalam 7 hari ke depan dengan titik."
           }
         }
       }
@@ -41374,6 +43624,12 @@
             "state" : "translated",
             "value" : "Pisteen väri"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna titik"
+          }
         }
       }
     },
@@ -41485,6 +43741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vakiovapaapäivät"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari libur tetap"
           }
         }
       }
@@ -41598,6 +43860,12 @@
             "state" : "translated",
             "value" : "Osoite (valinnainen)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alamat (opsional)"
+          }
         }
       }
     },
@@ -41709,6 +43977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napauta karttasovelluksessa ravintolan kohdalla Jaa → Kopioi ja liitä tähän tai valitse kuvakaappaus sen tietosivulta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di aplikasi peta, ketuk Bagikan → Salin pada restoran lalu tempel di sini, atau pilih tangkapan layar halaman infonya."
           }
         }
       }
@@ -41822,6 +44096,12 @@
             "state" : "translated",
             "value" : "Avaa Kartoissa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka di Peta"
+          }
         }
       }
     },
@@ -41933,6 +44213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää vapaapäivä käsin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah hari libur secara manual"
           }
         }
       }
@@ -42046,6 +44332,12 @@
             "state" : "translated",
             "value" : "Lisää vapaapäivä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silakan tambahkan hari libur"
+          }
         }
       }
     },
@@ -42157,6 +44449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muokkaa sulkemistietoja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit info libur"
           }
         }
       }
@@ -42270,6 +44568,12 @@
             "state" : "translated",
             "value" : "Etsitään sulkemistietoja…"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mencari info libur…"
+          }
         }
       }
     },
@@ -42381,6 +44685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulkemistietoja ei löytynyt. Valitse päivät alta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info libur tidak ditemukan. Pilih hari di bawah."
           }
         }
       }
@@ -42494,6 +44804,12 @@
             "state" : "translated",
             "value" : "Julkaisu 4:5"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postingan 4:5"
+          }
         }
       }
     },
@@ -42602,6 +44918,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -42718,6 +45040,12 @@
             "state" : "translated",
             "value" : "2 viikon sulkukalenteri"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender hari tutup 2 minggu"
+          }
         }
       }
     },
@@ -42829,6 +45157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tulossa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segera hadir"
           }
         }
       }
@@ -42942,6 +45276,12 @@
             "state" : "translated",
             "value" : "Hae App Storesta ”DontGoMart”"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari “DontGoMart” di App Store"
+          }
         }
       }
     },
@@ -43053,6 +45393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaupat suljettu!"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toko tutup!"
           }
         }
       }
@@ -43166,6 +45512,12 @@
             "state" : "translated",
             "value" : "Kuva"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
         }
       }
     },
@@ -43274,6 +45626,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
@@ -43390,6 +45748,12 @@
             "state" : "translated",
             "value" : "Muoto"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
         }
       }
     },
@@ -43498,6 +45862,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media"
@@ -43614,6 +45984,12 @@
             "state" : "translated",
             "value" : "Sulkemiskortti. %1$@ %2$@, %3$@ suljettu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartu hari tutup. %1$@ %2$@, %3$@ tutup"
+          }
         }
       }
     },
@@ -43725,6 +46101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luodaan videota"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuat video"
           }
         }
       }
@@ -43838,6 +46220,12 @@
             "state" : "translated",
             "value" : "Julkaise Instagramissa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posting ke Instagram"
+          }
         }
       }
     },
@@ -43949,6 +46337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valitse Instagram jakolistasta ja julkaise se julkaisuna, storyna tai reelinä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Instagram di daftar bagikan untuk memposting sebagai postingan, story, atau reel"
           }
         }
       }
@@ -44062,6 +46456,12 @@
             "state" : "translated",
             "value" : "Avaa suoraan Instagramin story-editorin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langsung membuka editor story Instagram"
+          }
         }
       }
     },
@@ -44173,6 +46573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagikan"
           }
         }
       }
@@ -44286,6 +46692,12 @@
             "state" : "translated",
             "value" : "Jakaa sulkemisvideon"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membagikan video hari tutup"
+          }
         }
       }
     },
@@ -44397,6 +46809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Videota ei voitu luoda. Jaa kuva sen sijaan."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal membuat video. Bagikan fotonya saja."
           }
         }
       }
@@ -44510,6 +46928,12 @@
             "state" : "translated",
             "value" : "Avautuu uudelleen %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka lagi %@"
+          }
         }
       }
     },
@@ -44621,6 +47045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tee ostokset viimeistään %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesaikan belanja sebelum %@"
           }
         }
       }

@@ -111,6 +111,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -220,6 +226,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -337,6 +349,12 @@
             "state" : "translated",
             "value" : "Sijaintia tarvitaan lähikauppojen etsimiseen ja suosittelemiseen."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokasi diperlukan untuk menemukan dan merekomendasikan toko terdekat."
+          }
         }
       }
     },
@@ -449,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tarvitaan sulkemiskorttien kuvien ja videoiden tallentamiseen kirjastoosi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diperlukan untuk menyimpan foto dan video kartu hari tutup ke pustaka foto."
           }
         }
       }

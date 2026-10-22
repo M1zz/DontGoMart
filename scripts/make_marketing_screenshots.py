@@ -150,6 +150,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Lisää oman<br>naapurustosi kauppa", "Kaavat kuten toinen ja neljäs tiistai"),
         ("05-share.png", "dark", "Kerro sulkemisesta<br>yhdellä kortilla", "Kerro perheelle ja naapureille"),
     ],
+    "id": [
+        ("01-main.png", "hero-bleed", "Cek dulu<br>sebelum pergi", "Lihat sekilas apakah tokonya buka hari ini"),
+        ("02-calendar.png", "left-text", "Hari tutup<br>bulan ini", "Semua hari tutup langsung di kalender"),
+        ("03-marts.png", "text-bottom", "Hanya toko yang kamu tuju", "Supermarket, Costco, tutup di hari libur"),
+        ("04-pattern.png", "flat-rotate", "Tambahkan toko<br>di sekitarmu", "Pola seperti Selasa kedua dan keempat"),
+        ("05-share.png", "dark", "Kabari hari tutup<br>dengan satu kartu", "Beri tahu keluarga dan tetangga"),
+    ],
 }
 
 BASE_CSS = f"""

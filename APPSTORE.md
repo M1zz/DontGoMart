@@ -1047,3 +1047,61 @@ https://m1zz.github.io/DontGoMart/fi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/fi/
+
+## id
+
+### 이름
+
+DontGoMart: Hari Tutup Toko
+
+### 부제
+
+Anti bolak-balik sia-sia
+
+### 키워드
+
+supermarket,Korea,Seoul,jam buka,Minggu,Rabu,libur,Chuseok,belanja,kalender,widget,restoran
+
+### 프로모션 텍스트
+
+Kini hari libur restoran favoritmu juga bisa dicek. Cukup satu tautan Naver Maps atau satu tangkapan layar, dan aplikasi mengingatkanmu sebelum hari tutup tiba.
+
+### 설명
+
+Sebelum pergi, cek dulu apakah tokonya buka.
+DontGoMart merangkum hari tutup wajib supermarket besar di Korea dan Costco, lalu memberi tahu lebih dulu saat hari tutup mendekat.
+
+Langsung tahu bisa pergi hari ini atau tidak
+Begitu aplikasi dibuka, hal pertama yang muncul adalah apakah toko pilihanmu buka hari ini. Kamu juga melihat sisa hari menuju hari tutup berikutnya dan daftar hari tutup mendatang.
+
+Mendukung hari tutup yang berbeda tiap daerah
+Pilih toko yang tutup hari Minggu atau Rabu, juga daerah dengan hari tutup lain seperti Ulsan dan Jeju. Untuk Costco, toko biasa serta cabang Daegu, Ilsan, dan Ulsan bisa diatur terpisah. Hari tutup saat Seollal (Tahun Baru Imlek Korea) dan Chuseok juga ditampilkan.
+
+Tambahkan toko di sekitarmu sendiri
+Kalau toko tidak ada di daftar, daftarkan sendiri dengan memilih minggu ke berapa dan hari apa tokonya tutup, misalnya Minggu kedua dan keempat.
+
+Hari libur restoran favorit juga
+Isi hari libur tetap restoran yang sering kamu kunjungi, dan hari tutupnya dalam 7 hari ke depan ditandai dengan titik. Cukup tempel tautan yang dibagikan dan disalin dari Naver Maps, atau pilih tangkapan layar halaman info restoran, dan hari libur tetap terisi otomatis. Teks di dalam foto hanya dibaca di perangkatmu.
+
+Pengingat agar tidak lupa
+Pilih diingatkan 1, 2, 3, atau 7 hari sebelum hari tutup, pada jam yang kamu suka. Sehari sebelum hari tutup, aplikasi mengingatkan bahwa hari ini cocok untuk belanja. Saat hari tutup tinggal 3 hari lagi, banner juga muncul di bagian atas aplikasi.
+
+Widget Layar Utama dan Layar Kunci
+Lewat widget, kamu bisa melihat hari tutup terdekat, dua hari tutup berikutnya beserta sisa harinya, apakah tokomu buka Minggu ini, dan hari libur restoran favorit selama 7 hari. Widget Minggu pekan ini dan widget restoran juga bisa dipasang di Layar Kunci.
+
+Kalender dan berbagi
+Lihat hari tutup satu bulan penuh di kalender. Kabar hari tutup bisa dibagikan sebagai kartu berisi kalender dua minggu dan tips belanja, dalam ukuran postingan dan story Instagram, atau sebagai video pendek.
+
+Semua fitur gratis. Kalau aplikasi ini berguna, dukung pengembangannya dengan secangkir kopi.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/id/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/id/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/id/
