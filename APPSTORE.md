@@ -641,3 +641,61 @@ https://m1zz.github.io/DontGoMart/it/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/it/
+
+## pt-BR
+
+### 이름
+
+DontGoMart: dias de fechamento
+
+### 부제
+
+Chega de viagem perdida
+
+### 키워드
+
+supermercado,hipermercado,Coreia,Seul,horários,domingo,quarta,feriados,Chuseok,compras,widget
+
+### 프로모션 텍스트
+
+Agora você também vê os dias de folga dos seus restaurantes favoritos: basta um link do Naver Maps ou uma captura de tela, e o app avisa antes de cada fechamento.
+
+### 설명
+
+Antes de sair, veja se a loja está aberta.
+O DontGoMart reúne os dias de fechamento obrigatório dos grandes supermercados da Coreia e da Costco e avisa com antecedência quando um deles se aproxima.
+
+Saiba na hora se dá para ir hoje
+Ao abrir o app, a primeira coisa que aparece é se a loja escolhida abre hoje. Você também vê quantos dias faltam para o próximo fechamento e a lista dos próximos dias de fechamento.
+
+Se adapta aos fechamentos de cada região
+Escolha lojas que fecham aos domingos ou às quartas, ou regiões com outros dias de fechamento, como Ulsan e Jeju. Na Costco, você configura separadamente as lojas comuns e as de Daegu, Ilsan e Ulsan. Os fechamentos de Seollal (Ano-Novo lunar) e Chuseok também são exibidos.
+
+Adicione as lojas do seu bairro
+Se uma loja não estiver na lista, cadastre você mesmo informando em que semana e em que dia da semana ela fecha, por exemplo no segundo e no quarto domingo.
+
+Os dias de folga dos seus restaurantes favoritos
+Informe os dias de folga fixos dos restaurantes que você frequenta e, entre os próximos 7 dias, os que eles fecham aparecem marcados com um ponto. Basta colar o link copiado do Naver Maps ou escolher uma captura da página de informações do restaurante, e o dia de folga é preenchido sozinho. O texto das fotos é lido apenas no seu dispositivo.
+
+Alertas para você não esquecer
+Escolha ser avisado 1, 2, 3 ou 7 dias antes do fechamento, no horário que preferir. Na véspera de um fechamento, o app lembra que hoje é um bom dia para fazer compras. Quando um fechamento está a 3 dias ou menos, um banner também aparece no topo do app.
+
+Widgets para a Tela de Início e a Tela Bloqueada
+Com os widgets você vê o próximo dia de fechamento, os dois seguintes com os dias restantes, se a sua loja abre neste domingo e os dias de folga dos restaurantes favoritos nos próximos 7 dias. O widget do domingo desta semana e o de restaurantes também podem ficar na Tela Bloqueada.
+
+Calendário e compartilhamento
+No calendário, veja os dias de fechamento de um mês inteiro. Você pode compartilhar um aviso de fechamento como um cartão com o calendário de duas semanas e uma dica de compras, nos formatos de post e story do Instagram ou em um vídeo curto.
+
+Todos os recursos são gratuitos. Se o app foi útil, apoie o desenvolvimento com um café.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/pt-br/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/pt-br/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/pt-br/

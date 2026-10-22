@@ -72,6 +72,12 @@ I widget mostrano il nome DontGoMart
 Vedi nelle Impostazioni le risposte
 Il feedback chiede cosa è successo
 
+### App Store (pt-BR)
+
+Widgets agora mostram o nome DontGoMart
+Veja respostas aos feedbacks em Ajustes
+O feedback agora pergunta o que houve
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)

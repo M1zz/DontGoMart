@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte – DontGoMart</title>
+  <meta name="description" content="Perguntas frequentes sobre o DontGoMart e como falar conosco.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/pt-br/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/support.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/support.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/DontGoMart/it/support.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/DontGoMart/pt-br/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/support.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+      --card-bg: #f5f5f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+        --card-bg: #1c1c1e;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0 8px;
+    }
+
+    .contact-card p { margin-bottom: 8px; }
+    .contact-card .email {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../support.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/support.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/support.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/support.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/support.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/support.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/support.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/support.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/support.html" hreflang="fr" lang="fr" title="Français">FR</a>
+        <a href="../it/support.html" hreflang="it" lang="it" title="Italiano">IT</a>
+        <a href="../pt-br/support.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)" class="active" aria-current="true">PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Suporte</h1>
+    <p class="subtitle">Se tiver dúvidas ou problemas com o DontGoMart, fale conosco a qualquer momento.</p>
+
+    <div class="contact-card">
+      <p><strong>Fale conosco</strong></p>
+      <p>Envie um e-mail e normalmente respondemos em 1 a 2 dias. Você também pode enviar um feedback pelos ajustes do app.</p>
+      <p class="email"><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+    </div>
+
+    <h2>Perguntas frequentes</h2>
+
+    <h3>P. Os dias de fechamento não batem com a realidade.</h3>
+    <p>Os dias de fechamento obrigatório dos grandes supermercados são definidos por normas locais e variam por região. Confira em Ajustes se você escolheu o tipo de loja da sua região (fecha no domingo, fecha na quarta, Ulsan, Jeju etc.). Se ainda assim não bater, envie por e-mail o nome da loja e a região e vamos verificar.</p>
+
+    <h3>P. A loja que procuro não está na lista.</h3>
+    <p>Você pode adicioná-la como loja personalizada informando em que semana e em que dia da semana ela fecha, por exemplo no segundo e no quarto domingo.</p>
+
+    <h3>P. Os dias de folga de um restaurante não foram preenchidos corretamente.</h3>
+    <p>Na importação por link do Naver Maps, a página do restaurante no Naver Place precisa indicar os dias de folga. Na importação por captura de tela, confira se aparece na tela um aviso como “fechado toda terça”. Você pode editar tudo antes de salvar.</p>
+
+    <h3>P. Não recebo as notificações.</h3>
+    <p>Confira no iPhone, em Ajustes > Notificações > DontGoMart, se as notificações estão permitidas e se os alertas de dias de fechamento estão ativados no app.</p>
+
+    <h3>P. O widget não atualiza.</h3>
+    <p>O widget é atualizado quando você abre o app. Se não resolver, remova o widget e adicione-o de novo.</p>
+
+    <h3>P. O que é apoiar (gorjeta)?</h3>
+    <p>Todos os recursos do DontGoMart são gratuitos. O apoio em forma de café, bolo ou refeição é uma maneira de incentivar o desenvolvedor. Depois de apoiar, você vê uma mensagem de agradecimento e um selo de apoiador com o total de apoios. Dá para apoiar quantas vezes quiser.</p>
+
+    <h3>P. Com quem falo sobre pagamentos e reembolsos?</h3>
+    <p>As compras no app são processadas pela Apple, então você pode pedir reembolso na página “Informar um problema” da Apple (reportaproblem.apple.com). Para o resto, é só nos escrever por e-mail.</p>
+
+    <h2>Privacidade</h2>
+    <p>O DontGoMart não tem contas e não usa publicidade nem ferramentas de rastreamento. Veja os detalhes na Política de Privacidade: <a href="privacy.html">Política de Privacidade</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Início</a>
+    <a href="privacy.html">Política de Privacidade</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

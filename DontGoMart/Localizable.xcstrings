@@ -72,6 +72,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — fai la spesa per tempo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — faça as compras com antecedência"
+          }
         }
       }
     },
@@ -134,6 +140,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -204,6 +216,12 @@
             "state" : "translated",
             "value" : "Elimina %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir %@"
+          }
         }
       }
     },
@@ -269,6 +287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar %@"
           }
         }
       }
@@ -341,6 +365,12 @@
             "state" : "translated",
             "value" : "%@ chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fechado"
+          }
         }
       }
     },
@@ -406,6 +436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ chiuso Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fechado Pro"
           }
         }
       }
@@ -478,6 +514,12 @@
             "state" : "translated",
             "value" : "Chiuso: %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado: %@"
+          }
         }
       }
     },
@@ -544,6 +586,12 @@
             "state" : "translated",
             "value" : "Chiuso il %@!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado em %@!"
+          }
         }
       }
     },
@@ -606,6 +654,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -681,6 +735,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -743,6 +803,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -814,6 +880,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -879,6 +951,12 @@
             "state" : "translated",
             "value" : "%lld elementi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld itens"
+          }
         }
       }
     },
@@ -939,6 +1017,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -1006,6 +1090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld:00"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
           }
         }
       }
@@ -1080,6 +1170,12 @@
             "state" : "translated",
             "value" : "Giorni rimasti: %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias restantes: %lld"
+          }
         }
       }
     },
@@ -1146,6 +1242,12 @@
             "state" : "translated",
             "value" : "%lld g prima"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d antes"
+          }
         }
       }
     },
@@ -1209,6 +1311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settimana %lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semana %lld"
           }
         }
       }
@@ -1279,6 +1387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tra %lld sett., %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em %lld sem., %@"
           }
         }
       }
@@ -1352,6 +1466,12 @@
             "state" : "translated",
             "value" : "Settimana %lld, %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semana %lld, %@"
+          }
         }
       }
     },
@@ -1422,6 +1542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Più comodo con VoiceOver"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais prático com o VoiceOver"
           }
         }
       }
@@ -1494,6 +1620,12 @@
             "state" : "translated",
             "value" : "Siri e Comandi rapidi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri e Atalhos"
+          }
         }
       }
     },
@@ -1565,6 +1697,12 @@
             "state" : "translated",
             "value" : "Chiedi a Siri o usa un comando rapido per sapere subito se il tuo negozio è chiuso."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergunte à Siri ou use um atalho para saber na hora se a sua loja está fechada."
+          }
         }
       }
     },
@@ -1627,6 +1765,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -1697,6 +1841,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -1759,6 +1909,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -1829,6 +1985,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -1885,6 +2047,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -1960,6 +2128,12 @@
             "state" : "translated",
             "value" : "Anche con la dimensione del testo più grande, le schermate si riorganizzano bene senza tagliare nulla."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesmo com o maior tamanho de texto, as telas se reorganizam bem, sem cortar nada."
+          }
         }
       }
     },
@@ -2030,6 +2204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancella in un colpo solo, dall’app, i negozi scelti e aggiunti e le impostazioni degli avvisi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apague de uma vez, dentro do app, as lojas escolhidas e adicionadas e os ajustes de alertas."
           }
         }
       }
@@ -2102,6 +2282,12 @@
             "state" : "translated",
             "value" : "Avviso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso"
+          }
         }
       }
     },
@@ -2166,6 +2352,12 @@
             "state" : "translated",
             "value" : "Apre l’avviso completo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre o aviso completo"
+          }
         }
       }
     },
@@ -2229,6 +2421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiudi avviso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispensar aviso"
           }
         }
       }
@@ -2301,6 +2499,12 @@
             "state" : "translated",
             "value" : "Modalità scura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo escuro"
+          }
         }
       }
     },
@@ -2371,6 +2575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riconosci i giorni di chiusura anche con «Aumenta contrasto» attivo o se fai fatica a distinguere i colori."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja os dias de fechamento mesmo com Aumentar Contraste ativado ou se for difícil distinguir cores."
           }
         }
       }
@@ -2443,6 +2653,12 @@
             "state" : "translated",
             "value" : "Più lingue"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais idiomas"
+          }
         }
       }
     },
@@ -2513,6 +2729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usa l’app in più lingue."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use o app em mais idiomas."
           }
         }
       }
@@ -2585,6 +2807,12 @@
             "state" : "translated",
             "value" : "Salva in un file i negozi che hai aggiunto e recuperali quando vuoi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salve em um arquivo as lojas que você adicionou e traga-as de volta quando quiser."
+          }
         }
       }
     },
@@ -2656,6 +2884,12 @@
             "state" : "translated",
             "value" : "Elimina tutti i miei dati"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar todos os meus dados"
+          }
         }
       }
     },
@@ -2725,6 +2959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avviso di chiusura del negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerta de fechamento de loja"
           }
         }
       }
@@ -2797,6 +3037,12 @@
             "state" : "translated",
             "value" : "Testo e pulsanti restano nitidi anche su schermo scuro."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texto e botões continuam nítidos em tela escura."
+          }
         }
       }
     },
@@ -2867,6 +3113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colori più facili da vedere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cores mais fáceis de ver"
           }
         }
       }
@@ -2939,6 +3191,12 @@
             "state" : "translated",
             "value" : "Su iPad scegli i negozi e sfoglia il calendario usando solo la tastiera."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No iPad, escolha lojas e passe as páginas do calendário só com o teclado."
+          }
         }
       }
     },
@@ -3009,6 +3267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novità dopo gli aggiornamenti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novidades após atualizações"
           }
         }
       }
@@ -3081,6 +3345,12 @@
             "state" : "translated",
             "value" : "La prima volta che apri l’app dopo un aggiornamento, scopri le novità."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na primeira vez que abrir o app depois de uma atualização, veja o que há de novo."
+          }
         }
       }
     },
@@ -3151,6 +3421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Consigli utili"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas de uso"
           }
         }
       }
@@ -3223,6 +3499,12 @@
             "state" : "translated",
             "value" : "Ti segnaliamo con discrezione le funzioni utili al momento giusto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avisamos com discrição sobre recursos úteis na hora certa."
+          }
         }
       }
     },
@@ -3293,6 +3575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backup ed esportazione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup e exportação"
           }
         }
       }
@@ -3365,6 +3653,12 @@
             "state" : "translated",
             "value" : "Se l’app si chiude mentre aggiungi un negozio, quello che avevi scritto resta."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se o app fechar enquanto você adiciona uma loja, o que você digitou continua lá."
+          }
         }
       }
     },
@@ -3428,6 +3722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "e altri %lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld"
           }
         }
       }
@@ -3500,6 +3800,12 @@
             "state" : "translated",
             "value" : "VoiceOver legge giorni di chiusura e pulsanti per intero e nell’ordine giusto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O VoiceOver lê os dias de fechamento e os botões por completo e na ordem certa."
+          }
         }
       }
     },
@@ -3570,6 +3876,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pronta per il testo grande"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto para texto grande"
           }
         }
       }
@@ -3642,6 +3954,12 @@
             "state" : "translated",
             "value" : "Controllo da tastiera"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controle pelo teclado"
+          }
         }
       }
     },
@@ -3712,6 +4030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guida rapida"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guia de início rápido"
           }
         }
       }
@@ -3784,6 +4108,12 @@
             "state" : "translated",
             "value" : "La prima volta che apri l’app, scopri in pochi passaggi cosa puoi fare."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na primeira vez que abrir o app, veja em poucos passos o que ele faz."
+          }
         }
       }
     },
@@ -3854,6 +4184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pensata per iPhone pieghevole"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feito para o iPhone dobrável"
           }
         }
       }
@@ -3926,6 +4262,12 @@
             "state" : "translated",
             "value" : "Su un iPhone pieghevole, usa lo schermo largo come due pannelli affiancati."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em um iPhone dobrável, use a tela larga como dois painéis lado a lado."
+          }
         }
       }
     },
@@ -3997,6 +4339,12 @@
             "state" : "translated",
             "value" : "Riprendi da dove avevi lasciato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue de onde parou"
+          }
         }
       }
     },
@@ -4053,6 +4401,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -4117,6 +4471,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -4177,6 +4537,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -4233,6 +4599,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -4301,6 +4673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Avviso «buon giorno per la spesa»"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Alerta de bom dia para compras"
           }
         }
       }
@@ -4371,6 +4749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Buon giorno per la spesa"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Bom dia para compras"
           }
         }
       }
@@ -4444,6 +4828,12 @@
             "state" : "translated",
             "value" : "Ti avvisa quando c’è un giorno di chiusura entro una settimana!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avisa quando há um dia de fechamento em até uma semana!"
+          }
         }
       }
     },
@@ -4506,6 +4896,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -4582,6 +4978,12 @@
             "state" : "translated",
             "value" : "Widget avviso di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget de alerta de fechamento"
+          }
         }
       }
     },
@@ -4654,6 +5056,12 @@
             "state" : "translated",
             "value" : "Widget conto alla rovescia chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget de contagem regressiva do fechamento"
+          }
         }
       }
     },
@@ -4716,6 +5124,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -4786,6 +5200,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -4848,6 +5268,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -4918,6 +5344,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -4980,6 +5412,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -5054,6 +5492,12 @@
             "state" : "translated",
             "value" : "%@ domani è chiuso. Oggi è un buon giorno per fare la spesa!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fecha amanhã. Hoje é um bom dia para fazer compras!"
+          }
         }
       }
     },
@@ -5123,6 +5567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ chiuderà tra %lld giorno/i."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ vai fechar em %lld dia(s)."
           }
         }
       }
@@ -5195,6 +5645,12 @@
             "state" : "translated",
             "value" : "%@ chiuderà tra %lld giorno/i."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ vai fechar em %lld dia(s)."
+          }
         }
       }
     },
@@ -5265,6 +5721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non dimenticare di fare la spesa prima del prossimo giorno di chiusura!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não se esqueça de fazer as compras antes do próximo dia de fechamento!"
           }
         }
       }
@@ -5337,6 +5799,12 @@
             "state" : "translated",
             "value" : "Gestisci anche le chiusure dei negozi della tua zona"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerencie também o fechamento das lojas da sua região"
+          }
         }
       }
     },
@@ -5407,6 +5875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Registra lo schema di chiusura del tuo negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cadastre o padrão de fechamento da sua própria loja"
           }
         }
       }
@@ -5479,6 +5953,12 @@
             "state" : "translated",
             "value" : "I tuoi preferiti sono sempre in alto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seus favoritos sempre aparecem no topo"
+          }
         }
       }
     },
@@ -5549,6 +6029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metti tra i preferiti i tuoi negozi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite suas lojas preferidas"
           }
         }
       }
@@ -5621,6 +6107,12 @@
             "state" : "translated",
             "value" : "Un solo acquisto per tutte le funzioni, per sempre"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagamento único para ter todos os recursos para sempre"
+          }
         }
       }
     },
@@ -5691,6 +6183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passa a DontGoMart Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assine o DontGoMart Pro"
           }
         }
       }
@@ -5763,6 +6261,12 @@
             "state" : "translated",
             "value" : "Controlla insieme le chiusure di E-Mart, Costco e Homeplus"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja de uma vez o fechamento de E-Mart, Costco e Homeplus"
+          }
         }
       }
     },
@@ -5833,6 +6337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segui più negozi insieme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acompanhe várias lojas ao mesmo tempo"
           }
         }
       }
@@ -5905,6 +6415,12 @@
             "state" : "translated",
             "value" : "Ricevi avvisi prima dei giorni di chiusura e non fare più viaggi a vuoto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receba alertas antes dos dias de fechamento e não perca mais viagem"
+          }
         }
       }
     },
@@ -5975,6 +6491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non trovare mai più un negozio chiuso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nunca mais encontre uma loja fechada"
           }
         }
       }
@@ -6047,6 +6569,12 @@
             "state" : "translated",
             "value" : "Aggiungi tutti gli articoli che ti servono"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione quantos itens precisar"
+          }
         }
       }
     },
@@ -6117,6 +6645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lista della spesa illimitata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista de compras ilimitada"
           }
         }
       }
@@ -6189,6 +6723,12 @@
             "state" : "translated",
             "value" : "☕ Al prezzo di un caffè, sblocchi tutto per sempre"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Pelo preço de um café, desbloqueie tudo para sempre"
+          }
         }
       }
     },
@@ -6259,6 +6799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riceverai un avviso %1$lld giorni e %2$lld giorno prima dei giorni di chiusura, alle %3$@."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você será avisado %1$lld dias e %2$lld dia antes dos dias de fechamento, às %3$@."
           }
         }
       }
@@ -6332,6 +6878,12 @@
             "state" : "translated",
             "value" : "Mostra in verde o rosso se il tuo negozio è aperto questa domenica."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra em verde ou vermelho se a sua loja abre neste domingo."
+          }
         }
       }
     },
@@ -6401,6 +6953,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostra i prossimi due giorni di chiusura!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra os próximos dois dias de fechamento!"
           }
         }
       }
@@ -6474,6 +7032,12 @@
             "state" : "translated",
             "value" : "Mostra i giorni che mancano al prossimo giorno di chiusura!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra quantos dias faltam para o próximo dia de fechamento!"
+          }
         }
       }
     },
@@ -6546,6 +7110,12 @@
             "state" : "translated",
             "value" : "Domenica aperto/chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domingo aberto/fechado"
+          }
         }
       }
     },
@@ -6612,6 +7182,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -6674,6 +7250,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -6750,6 +7332,12 @@
             "state" : "translated",
             "value" : "Widget due giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget de dois dias de fechamento"
+          }
         }
       }
     },
@@ -6815,6 +7403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiude il messaggio di ringraziamento"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispensa a mensagem de agradecimento"
           }
         }
       }
@@ -6882,6 +7476,12 @@
             "state" : "translated",
             "value" : "Grazie!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrigado!"
+          }
         }
       }
     },
@@ -6948,6 +7548,12 @@
             "state" : "translated",
             "value" : "Offre un caffè allo sviluppatore"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paga um café para o desenvolvedor"
+          }
         }
       }
     },
@@ -7013,6 +7619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Invia una mancia allo sviluppatore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envia uma gorjeta ao desenvolvedor"
           }
         }
       }
@@ -7085,6 +7697,12 @@
             "state" : "translated",
             "value" : "Parte di Gyeonggi/Cheongju"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parte de Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -7151,6 +7769,12 @@
             "state" : "translated",
             "value" : "Grazie, alla prossima"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrigado, até a próxima"
+          }
         }
       }
     },
@@ -7215,6 +7839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiude presto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha em breve"
           }
         }
       }
@@ -7281,6 +7911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condividi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar"
           }
         }
       }
@@ -7352,6 +7988,12 @@
             "state" : "translated",
             "value" : "Festività"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feriado"
+          }
         }
       }
     },
@@ -7415,6 +8057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ripristina acquisti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
           }
         }
       }
@@ -7487,6 +8135,12 @@
             "state" : "translated",
             "value" : "Funzione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recurso"
+          }
         }
       }
     },
@@ -7550,6 +8204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I miei negozi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minhas lojas"
           }
         }
       }
@@ -7622,6 +8282,12 @@
             "state" : "translated",
             "value" : "Domani"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amanhã"
+          }
         }
       }
     },
@@ -7686,6 +8352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Domani %@ chiuso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amanhã %@ fechado"
           }
         }
       }
@@ -7760,6 +8432,12 @@
             "state" : "translated",
             "value" : "Chiuso domani"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado amanhã"
+          }
         }
       }
     },
@@ -7823,6 +8501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prossimi giorni di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximos dias de fechamento"
           }
         }
       }
@@ -7889,6 +8573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mese successivo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo mês"
           }
         }
       }
@@ -7963,6 +8653,12 @@
             "state" : "translated",
             "value" : "Prossima settimana: %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próxima semana: %@"
+          }
         }
       }
     },
@@ -8034,6 +8730,12 @@
             "state" : "translated",
             "value" : "Prossimo giorno di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo dia de fechamento"
+          }
         }
       }
     },
@@ -8098,6 +8800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ti ricorderemo di fare la spesa 2 giorni prima del prossimo giorno di chiusura."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vamos lembrar você de fazer compras 2 dias antes do próximo dia de fechamento."
           }
         }
       }
@@ -8172,6 +8880,12 @@
             "state" : "translated",
             "value" : "Nessuna info sulle chiusure"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem informações de fechamento"
+          }
         }
       }
     },
@@ -8237,6 +8951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Più tardi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agora não"
           }
         }
       }
@@ -8309,6 +9029,12 @@
             "state" : "translated",
             "value" : "Segui più negozi contemporaneamente"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acompanhe várias lojas ao mesmo tempo"
+          }
         }
       }
     },
@@ -8380,6 +9106,12 @@
             "state" : "translated",
             "value" : "Monitoraggio di più negozi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acompanhamento de várias lojas"
+          }
         }
       }
     },
@@ -8445,6 +9177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiudi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar"
           }
         }
       }
@@ -8512,6 +9250,12 @@
             "state" : "translated",
             "value" : "Apre il calendario per vedere i giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre o calendário para ver os dias de fechamento"
+          }
         }
       }
     },
@@ -8573,6 +9317,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -8648,6 +9398,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -8714,6 +9470,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -8788,6 +9550,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -8852,6 +9620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado"
           }
         }
       }
@@ -8923,6 +9697,12 @@
             "state" : "translated",
             "value" : "Supermercato (chiuso il mercoledì)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (fecha na quarta)"
+          }
         }
       }
     },
@@ -8992,6 +9772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato (chiuso il mercoledì)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (fecha na quarta)"
           }
         }
       }
@@ -9063,6 +9849,12 @@
             "state" : "translated",
             "value" : "Supermercato (mer)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (qua)"
+          }
         }
       }
     },
@@ -9132,6 +9924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato (Ulsan, misto)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Ulsan, misto)"
           }
         }
       }
@@ -9203,6 +10001,12 @@
             "state" : "translated",
             "value" : "Supermercato (Ulsan)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Ulsan)"
+          }
         }
       }
     },
@@ -9272,6 +10076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato (Ulsan)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Ulsan)"
           }
         }
       }
@@ -9343,6 +10153,12 @@
             "state" : "translated",
             "value" : "Supermercato (chiuso la domenica)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (fecha no domingo)"
+          }
         }
       }
     },
@@ -9412,6 +10228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato (chiuso la domenica)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (fecha no domingo)"
           }
         }
       }
@@ -9483,6 +10305,12 @@
             "state" : "translated",
             "value" : "Supermercato (dom)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (dom)"
+          }
         }
       }
     },
@@ -9552,6 +10380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermercato (Jeju)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Jeju)"
           }
         }
       }
@@ -9623,6 +10457,12 @@
             "state" : "translated",
             "value" : "Supermercato (Jeju)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Jeju)"
+          }
         }
       }
     },
@@ -9693,6 +10533,12 @@
             "state" : "translated",
             "value" : "Supermercato (Jeju)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercado (Jeju)"
+          }
         }
       }
     },
@@ -9759,6 +10605,12 @@
             "state" : "translated",
             "value" : "Se l’app ti è stata utile, incoraggiaci con un caffè."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se o app ajudou, nos anime com um café."
+          }
         }
       }
     },
@@ -9821,6 +10673,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -9892,6 +10750,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -9958,6 +10822,12 @@
             "state" : "translated",
             "value" : "Tocca due volte per chiudere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque duas vezes para fechar"
+          }
         }
       }
     },
@@ -10023,6 +10893,12 @@
             "state" : "translated",
             "value" : "Negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja"
+          }
         }
       }
     },
@@ -10087,6 +10963,12 @@
             "state" : "translated",
             "value" : "Prima di fare la spesa, controlla le chiusure su DontGoMart ✅"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de ir às compras, veja os dias de fechamento no DontGoMart ✅"
+          }
         }
       }
     },
@@ -10150,6 +11032,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colore del negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cor da loja"
           }
         }
       }
@@ -10221,6 +11109,12 @@
             "state" : "translated",
             "value" : "Scegli un negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha uma loja"
+          }
         }
       }
     },
@@ -10284,6 +11178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nome del negozio (es. Homeplus Gangnam)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome da loja (ex.: Homeplus Gangnam)"
           }
         }
       }
@@ -10349,6 +11249,12 @@
             "state" : "translated",
             "value" : "Info sul negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações da loja"
+          }
         }
       }
     },
@@ -10412,6 +11318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar loja"
           }
         }
       }
@@ -10477,6 +11389,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Negozio chiuso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja fechada"
           }
         }
       }
@@ -10549,6 +11467,12 @@
             "state" : "translated",
             "value" : "Avviso di giorno di chiusura del negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso de dia de fechamento da loja"
+          }
         }
       }
     },
@@ -10614,6 +11538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avviso di chiusura del negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerta de fechamento de loja"
           }
         }
       }
@@ -10686,6 +11616,12 @@
             "state" : "translated",
             "value" : "Negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja"
+          }
         }
       }
     },
@@ -10756,6 +11692,12 @@
             "state" : "translated",
             "value" : "Negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja"
+          }
         }
       }
     },
@@ -10821,6 +11763,12 @@
             "state" : "translated",
             "value" : "Scegli negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher loja"
+          }
         }
       }
     },
@@ -10884,6 +11832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apre la scelta del negozio e le impostazioni degli avvisi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre a escolha de loja e os ajustes de alertas"
           }
         }
       }
@@ -10956,6 +11910,12 @@
             "state" : "translated",
             "value" : "Varia da negozio a negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varia conforme a loja"
+          }
         }
       }
     },
@@ -11020,6 +11980,12 @@
             "state" : "translated",
             "value" : "Scegli negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher loja"
+          }
         }
       }
     },
@@ -11083,6 +12049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scegli un negozio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha uma loja"
           }
         }
       }
@@ -11155,6 +12127,12 @@
             "state" : "translated",
             "value" : "Nessun negozio selezionato. Sceglilo nelle Impostazioni."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma loja selecionada. Escolha uma em Ajustes."
+          }
         }
       }
     },
@@ -11221,6 +12199,12 @@
             "state" : "translated",
             "value" : "Ogni %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semanal: %@"
+          }
         }
       }
     },
@@ -11286,6 +12270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutte le funzioni restano gratuite. La mancia è solo un incoraggiamento e puoi mandarne quante vuoi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos os recursos continuam gratuitos. A gorjeta é só um incentivo e você pode enviar quando quiser."
           }
         }
       }
@@ -11360,6 +12350,12 @@
             "state" : "translated",
             "value" : "Dopodomani"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de amanhã"
+          }
         }
       }
     },
@@ -11430,6 +12426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessun limite di articoli nella tua lista della spesa"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem limite de itens na sua lista de compras"
           }
         }
       }
@@ -11502,6 +12504,12 @@
             "state" : "translated",
             "value" : "Lista della spesa illimitata"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista de compras ilimitada"
+          }
         }
       }
     },
@@ -11573,6 +12581,12 @@
             "state" : "translated",
             "value" : "Passa a Pro per aggiungere articoli senza limiti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assine o Pro para adicionar itens sem limite"
+          }
         }
       }
     },
@@ -11637,6 +12651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão"
           }
         }
       }
@@ -11704,6 +12724,12 @@
             "state" : "translated",
             "value" : "Grazie al tuo sostegno possiamo continuare a far crescere l’app."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graças ao seu apoio, podemos continuar fazendo o app."
+          }
         }
       }
     },
@@ -11770,6 +12796,12 @@
             "state" : "translated",
             "value" : "Il tuo sostegno conta molto. (finora ☕️ ×%lld)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu apoio significa muito. (☕️ ×%lld até agora)"
+          }
         }
       }
     },
@@ -11830,6 +12862,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -11898,6 +12936,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Azioni rapide"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ações rápidas"
           }
         }
       }
@@ -11972,6 +13016,12 @@
             "state" : "translated",
             "value" : "Non selezionato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não selecionado"
+          }
         }
       }
     },
@@ -12036,6 +13086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancella selezione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limpar seleção"
           }
         }
       }
@@ -12107,6 +13163,12 @@
             "state" : "translated",
             "value" : "Nessun negozio selezionato. Apri l’app per sceglierne uno."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma loja selecionada. Abra o app para escolher uma."
+          }
         }
       }
     },
@@ -12170,6 +13232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schema selezionato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão selecionado"
           }
         }
       }
@@ -12244,6 +13312,12 @@
             "state" : "translated",
             "value" : "Selezionato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionado"
+          }
         }
       }
     },
@@ -12309,6 +13383,12 @@
             "state" : "translated",
             "value" : "Tutti i negozi selezionati sono aperti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as lojas selecionadas estão abertas"
+          }
         }
       }
     },
@@ -12373,6 +13453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutti i negozi selezionati sono chiusi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as lojas selecionadas estão fechadas"
           }
         }
       }
@@ -12444,6 +13530,12 @@
             "state" : "translated",
             "value" : "Festività di Seollal e Chuseok"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feriados de Seollal e Chuseok"
+          }
         }
       }
     },
@@ -12507,6 +13599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
           }
         }
       }
@@ -12574,6 +13672,12 @@
             "state" : "translated",
             "value" : "Scegli nelle Impostazioni i negozi da seguire"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha em Ajustes as lojas que deseja acompanhar"
+          }
         }
       }
     },
@@ -12639,6 +13743,12 @@
             "state" : "translated",
             "value" : "Scegli nelle Impostazioni i negozi da seguire"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha em Ajustes as lojas que deseja acompanhar"
+          }
         }
       }
     },
@@ -12703,6 +13813,12 @@
             "state" : "translated",
             "value" : "Vai alle Impostazioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ir para Ajustes"
+          }
         }
       }
     },
@@ -12766,6 +13882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ora"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora"
           }
         }
       }
@@ -12838,6 +13960,12 @@
             "state" : "translated",
             "value" : "Sconosciuto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desconhecido"
+          }
         }
       }
     },
@@ -12901,6 +14029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serve l’autorizzazione per le notifiche"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permissão de notificações necessária"
           }
         }
       }
@@ -12967,6 +14101,12 @@
             "state" : "translated",
             "value" : "Impostazioni notifiche"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes de notificações"
+          }
         }
       }
     },
@@ -13030,6 +14170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Orario della notifica"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horário da notificação"
           }
         }
       }
@@ -13096,6 +14242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avvisami"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avisar-me"
           }
         }
       }
@@ -13168,6 +14320,12 @@
             "state" : "translated",
             "value" : "Ricevi avvisi prima dei giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seja avisado antes dos dias de fechamento"
+          }
         }
       }
     },
@@ -13238,6 +14396,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifiche"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificações"
           }
         }
       }
@@ -13310,6 +14474,12 @@
             "state" : "translated",
             "value" : "Ricevi avvisi prima dei giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seja avisado antes dos dias de fechamento"
+          }
         }
       }
     },
@@ -13373,6 +14543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifiche"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificações"
           }
         }
       }
@@ -13439,6 +14615,12 @@
             "state" : "translated",
             "value" : "Lascia una recensione sull’App Store"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixar uma avaliação na App Store"
+          }
         }
       }
     },
@@ -13503,6 +14685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedi su App Store"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver na App Store"
           }
         }
       }
@@ -13570,6 +14758,12 @@
             "state" : "translated",
             "value" : "Grazie per il tuo sostegno all’app ☕️"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrigado por apoiar o app ☕️"
+          }
         }
       }
     },
@@ -13631,6 +14825,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -13705,6 +14905,12 @@
             "state" : "translated",
             "value" : "Aperto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aberto"
+          }
         }
       }
     },
@@ -13776,6 +14982,12 @@
             "state" : "translated",
             "value" : "Aperto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aberto"
+          }
         }
       }
     },
@@ -13840,6 +15052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aperto oggi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aberto hoje"
           }
         }
       }
@@ -13912,6 +15130,12 @@
             "state" : "translated",
             "value" : "Oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje"
+          }
         }
       }
     },
@@ -13976,6 +15200,12 @@
             "state" : "translated",
             "value" : "%@ chiuso oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fechado hoje"
+          }
         }
       }
     },
@@ -14039,6 +15269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Posso andare oggi?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posso ir hoje?"
           }
         }
       }
@@ -14111,6 +15347,12 @@
             "state" : "translated",
             "value" : "Oggi tutti i negozi selezionati sono aperti."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as lojas selecionadas estão abertas hoje."
+          }
         }
       }
     },
@@ -14182,6 +15424,12 @@
             "state" : "translated",
             "value" : "Oggi tutti i negozi selezionati sono chiusi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as lojas selecionadas estão fechadas hoje."
+          }
         }
       }
     },
@@ -14248,6 +15496,12 @@
             "state" : "translated",
             "value" : "Condivide lo stato di oggi e i prossimi giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilha a situação de hoje e os próximos dias de fechamento"
+          }
         }
       }
     },
@@ -14313,6 +15567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aperto oggi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aberto hoje"
           }
         }
       }
@@ -14387,6 +15647,12 @@
             "state" : "translated",
             "value" : "Oggi sono chiusi solo alcuni negozi: %@."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje só algumas lojas estão fechadas: %@."
+          }
         }
       }
     },
@@ -14452,6 +15718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oggi ti abbiamo evitato un viaggio a vuoto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje evitamos uma viagem perdida para você"
           }
         }
       }
@@ -14526,6 +15798,12 @@
             "state" : "translated",
             "value" : "Chiuso oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado hoje"
+          }
         }
       }
     },
@@ -14592,6 +15870,12 @@
             "state" : "translated",
             "value" : "Chiuso oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado hoje"
+          }
         }
       }
     },
@@ -14655,6 +15939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oggi ti abbiamo evitato un altro viaggio a vuoto.\nRicordiamo sempre il tuo generoso sostegno."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje evitamos mais uma viagem perdida para você.\nContinuamos lembrando do seu generoso apoio."
           }
         }
       }
@@ -14726,6 +16016,12 @@
             "state" : "translated",
             "value" : "Fine"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concluir"
+          }
         }
       }
     },
@@ -14791,6 +16087,12 @@
             "state" : "translated",
             "value" : "Elimina elementi completati"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir itens concluídos"
+          }
         }
       }
     },
@@ -14852,6 +16154,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -14927,6 +16235,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -14993,6 +16307,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -15067,6 +16387,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -15137,6 +16463,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -15201,6 +16533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mensile"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensal"
           }
         }
       }
@@ -15267,6 +16605,12 @@
             "state" : "translated",
             "value" : "Serve l’autorizzazione alla posizione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permissão de localização necessária"
+          }
         }
       }
     },
@@ -15332,6 +16676,12 @@
             "state" : "translated",
             "value" : "Funzioni di posizione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recursos de localização"
+          }
         }
       }
     },
@@ -15395,6 +16745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sostienici"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apoie"
           }
         }
       }
@@ -15462,6 +16818,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dom"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dom"
@@ -15539,6 +16901,12 @@
             "state" : "translated",
             "value" : "Questa settimana: %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nesta semana: %@"
+          }
         }
       }
     },
@@ -15603,6 +16971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa settimana %@ chiuso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nesta semana, %@ fechado"
           }
         }
       }
@@ -15674,6 +17048,12 @@
             "state" : "translated",
             "value" : "Questa domenica"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este domingo"
+          }
         }
       }
     },
@@ -15743,6 +17123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa domenica %@, negozio aperto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este domingo %@, loja aberta"
           }
         }
       }
@@ -15814,6 +17200,12 @@
             "state" : "translated",
             "value" : "Questa domenica %@, negozio chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este domingo %@, loja fechada"
+          }
         }
       }
     },
@@ -15879,6 +17271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mese precedente"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mês anterior"
           }
         }
       }
@@ -15946,6 +17344,12 @@
             "state" : "translated",
             "value" : "Condividi nelle storie di Instagram"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar nos Stories do Instagram"
+          }
         }
       }
     },
@@ -16012,6 +17416,12 @@
             "state" : "translated",
             "value" : "Per condividere nelle storie serve avere Instagram installato."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Instagram precisa estar instalado para compartilhar nos Stories."
+          }
         }
       }
     },
@@ -16077,6 +17487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram non trovato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram não encontrado"
           }
         }
       }
@@ -16145,6 +17561,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -16219,6 +17641,12 @@
             "state" : "translated",
             "value" : "Normale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comum"
+          }
         }
       }
     },
@@ -16283,6 +17711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Negozi normali"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lojas comuns"
           }
         }
       }
@@ -16349,6 +17783,12 @@
             "state" : "translated",
             "value" : "Alcuni aperti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algumas abertas"
+          }
         }
       }
     },
@@ -16413,6 +17853,12 @@
             "state" : "translated",
             "value" : "Alcuni negozi sono chiusi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algumas lojas estão fechadas"
+          }
         }
       }
     },
@@ -16474,6 +17920,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -16549,6 +18001,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -16619,6 +18077,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -16685,6 +18149,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -16760,6 +18230,12 @@
             "state" : "translated",
             "value" : "Acquisto una tantum. Nessun abbonamento."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compra única. Sem assinatura."
+          }
         }
       }
     },
@@ -16823,6 +18299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi gli schemi di chiusura dei tuoi negozi preferiti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione padrões de fechamento das suas lojas favoritas"
           }
         }
       }
@@ -16889,6 +18371,12 @@
             "state" : "translated",
             "value" : "Promemoria spesa"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lembrete de compras"
+          }
         }
       }
     },
@@ -16954,6 +18442,12 @@
             "state" : "translated",
             "value" : "Lista della spesa"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista de compras"
+          }
         }
       }
     },
@@ -17018,6 +18512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avviso spesa"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerta de compras"
           }
         }
       }
@@ -17090,6 +18590,12 @@
             "state" : "translated",
             "value" : "Promemoria spesa"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lembrete de compras"
+          }
         }
       }
     },
@@ -17156,6 +18662,12 @@
             "state" : "translated",
             "value" : "Avviso «buon giorno per la spesa» (il giorno prima)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerta de bom dia para compras (na véspera)"
+          }
         }
       }
     },
@@ -17221,6 +18733,12 @@
             "state" : "translated",
             "value" : "Aggiungi articolo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar item"
+          }
         }
       }
     },
@@ -17285,6 +18803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi articoli alla lista della spesa"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione itens à sua lista de compras"
           }
         }
       }
@@ -17355,6 +18879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salva"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
           }
         }
       }
@@ -17427,6 +18957,12 @@
             "state" : "translated",
             "value" : "Quasi tutte le regioni del Paese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A maioria das regiões do país"
+          }
         }
       }
     },
@@ -17497,6 +19033,12 @@
             "state" : "translated",
             "value" : "Festività nazionale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feriado nacional"
+          }
         }
       }
     },
@@ -17566,6 +19108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Festività nazionale"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feriado nacional"
           }
         }
       }
@@ -17638,6 +19186,12 @@
             "state" : "translated",
             "value" : "Chiuso tutto il giorno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado o dia todo"
+          }
         }
       }
     },
@@ -17703,6 +19257,12 @@
             "state" : "translated",
             "value" : "Elimina tutto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir tudo"
+          }
         }
       }
     },
@@ -17767,6 +19327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostra tutto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver tudo"
           }
         }
       }
@@ -17834,6 +19400,12 @@
             "state" : "translated",
             "value" : "Grazie mille!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muito obrigado!"
+          }
         }
       }
     },
@@ -17898,6 +19470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre"
           }
         }
       }
@@ -17969,6 +19547,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -18033,6 +19617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settimanale"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semanal"
           }
         }
       }
@@ -18099,6 +19689,12 @@
             "state" : "translated",
             "value" : "Negozi vicini"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lojas próximas"
+          }
         }
       }
     },
@@ -18163,6 +19759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rileva automaticamente i negozi vicini"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detectar lojas próximas automaticamente"
           }
         }
       }
@@ -18229,6 +19831,12 @@
             "state" : "translated",
             "value" : "Per trovare i negozi vicini,\nconsenti l’accesso alla posizione in\nImpostazioni > DontGoMart > Posizione."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para encontrar lojas próximas,\npermita o acesso à localização em\nAjustes > DontGoMart > Localização."
+          }
         }
       }
     },
@@ -18294,6 +19902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avvisa chi ti sta intorno delle chiusure"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avise as pessoas ao seu redor sobre os fechamentos"
           }
         }
       }
@@ -18366,6 +19980,12 @@
             "state" : "translated",
             "value" : "Fissa in alto i tuoi negozi preferiti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fixe suas lojas favoritas no topo"
+          }
         }
       }
     },
@@ -18437,6 +20057,12 @@
             "state" : "translated",
             "value" : "Preferiti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritos"
+          }
         }
       }
     },
@@ -18503,6 +20129,12 @@
             "state" : "translated",
             "value" : "Sostegno ricevuto finora ☕️ ×%lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apoio recebido até agora ☕️ ×%lld"
+          }
         }
       }
     },
@@ -18567,6 +20199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avanzamento"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progresso"
           }
         }
       }
@@ -18633,6 +20271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Primo giorno di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primeiro dia de fechamento"
           }
         }
       }
@@ -18704,6 +20348,12 @@
             "state" : "translated",
             "value" : "Aggiungi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar"
+          }
         }
       }
     },
@@ -18767,6 +20417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scegli i negozi da seguire (anche più di uno)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha as lojas a acompanhar (várias)"
           }
         }
       }
@@ -18838,6 +20494,12 @@
             "state" : "translated",
             "value" : "Annulla"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
         }
       }
     },
@@ -18904,6 +20566,12 @@
             "state" : "translated",
             "value" : "Preparazione della scheda"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparando seu cartão"
+          }
         }
       }
     },
@@ -18969,6 +20637,12 @@
             "state" : "translated",
             "value" : "Vedi calendario"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver calendário"
+          }
         }
       }
     },
@@ -19033,6 +20707,12 @@
             "state" : "translated",
             "value" : "Aggiungi negozio personalizzato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar loja personalizada"
+          }
         }
       }
     },
@@ -19096,6 +20776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica negozio personalizzato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar loja personalizada"
           }
         }
       }
@@ -19167,6 +20853,12 @@
             "state" : "translated",
             "value" : "Negozio personalizzato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja personalizada"
+          }
         }
       }
     },
@@ -19237,6 +20929,12 @@
             "state" : "translated",
             "value" : "Negozio personalizzato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja personalizada"
+          }
         }
       }
     },
@@ -19306,6 +21004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Negozio personalizzato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja personalizada"
           }
         }
       }
@@ -19378,6 +21082,12 @@
             "state" : "translated",
             "value" : "Aggiungi gli schemi di chiusura del tuo negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione os padrões de fechamento da sua própria loja"
+          }
         }
       }
     },
@@ -19448,6 +21158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Negozio personalizzato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loja personalizada"
           }
         }
       }
@@ -19520,6 +21236,12 @@
             "state" : "translated",
             "value" : "Aggiungi gli schemi di chiusura del tuo negozio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione os padrões de fechamento da sua própria loja"
+          }
         }
       }
     },
@@ -19585,6 +21307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Offri un caffè %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pague um café %@"
           }
         }
       }
@@ -19652,6 +21380,12 @@
             "state" : "translated",
             "value" : "Offri un caffè, %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pague um café, %@"
+          }
         }
       }
     },
@@ -19713,6 +21447,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -19787,6 +21527,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -19853,6 +21599,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
@@ -19927,6 +21679,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -19993,6 +21751,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -20067,6 +21831,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -20133,6 +21903,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -20207,6 +21983,12 @@
             "state" : "translated",
             "value" : "Costco normale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco comum"
+          }
         }
       }
     },
@@ -20276,6 +22058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco normale"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco comum"
           }
         }
       }
@@ -20347,6 +22135,12 @@
             "state" : "translated",
             "value" : "Costco normale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco comum"
+          }
         }
       }
     },
@@ -20413,6 +22207,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -20487,6 +22287,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -20553,6 +22359,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -20627,6 +22439,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -20697,6 +22515,12 @@
             "state" : "translated",
             "value" : "Normali – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comuns – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -20761,6 +22585,12 @@
             "state" : "translated",
             "value" : "Aggiungi schema"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar padrão"
+          }
         }
       }
     },
@@ -20824,6 +22654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi uno schema"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione um padrão"
           }
         }
       }
@@ -20896,6 +22732,12 @@
             "state" : "translated",
             "value" : "Sblocca il monitoraggio di più negozi, gli avvisi e altro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueie o acompanhamento de várias lojas, alertas e mais"
+          }
         }
       }
     },
@@ -20962,6 +22804,12 @@
             "state" : "translated",
             "value" : "Sostienici ancora una volta ☕️"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apoie mais uma vez ☕️"
+          }
         }
       }
     },
@@ -21026,6 +22874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Filiale selezionata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filial selecionada"
           }
         }
       }
@@ -21092,6 +22946,12 @@
             "state" : "translated",
             "value" : "Trova e consiglia i negozi vicini in base alla tua posizione attuale."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontra e recomenda lojas próximas com base na sua localização atual."
+          }
         }
       }
     },
@@ -21154,6 +23014,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -21224,6 +23090,12 @@
             "state" : "translated",
             "value" : "Ricarica l’elenco delle opzioni di mancia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recarrega a lista de opções de gorjeta"
+          }
         }
       }
     },
@@ -21289,6 +23161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caricamento delle opzioni di mancia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregando opções de gorjeta"
           }
         }
       }
@@ -21356,6 +23234,12 @@
             "state" : "translated",
             "value" : "Impossibile caricare le opzioni di mancia. Riprova"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar as opções de gorjeta. Tentar de novo"
+          }
         }
       }
     },
@@ -21421,6 +23305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informazioni sulle mance"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre gorjetas"
           }
         }
       }
@@ -21488,6 +23378,12 @@
             "state" : "translated",
             "value" : "Chiude la scheda della mancia. Non comparirà per 30 giorni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispensa o cartão de gorjeta. Ele não aparecerá de novo por 30 dias"
+          }
         }
       }
     },
@@ -21553,6 +23449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sostenitore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apoiador"
           }
         }
       }
@@ -21620,6 +23522,12 @@
             "state" : "translated",
             "value" : "Sostenitore. Finora %lld caffè. Grazie per il sostegno all’app."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apoiador. %lld cafés até agora. Obrigado por apoiar o app."
+          }
         }
       }
     },
@@ -21686,6 +23594,12 @@
             "state" : "translated",
             "value" : "Non ti abbiamo dimenticato!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não nos esquecemos de você!"
+          }
         }
       }
     },
@@ -21751,6 +23665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grazie per il tuo sostegno. Finora hai offerto %lld caffè."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrigado pelo apoio. Você já enviou %lld cafés."
           }
         }
       }
@@ -21825,6 +23745,12 @@
             "state" : "translated",
             "value" : "Grazie mille per il tuo sostegno. Per noi significa molto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muito obrigado pelo apoio. Isso significa muito para nós."
+          }
         }
       }
     },
@@ -21890,6 +23816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grazie mille per il tuo sostegno. Finora hai offerto %lld caffè."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muito obrigado pelo apoio. Você já enviou %lld cafés."
           }
         }
       }
@@ -21963,6 +23895,12 @@
             "state" : "translated",
             "value" : "Chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado"
+          }
         }
       }
     },
@@ -22026,6 +23964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schema di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão de fechamento"
           }
         }
       }
@@ -22093,6 +24037,12 @@
             "state" : "translated",
             "value" : "Condividi una chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avisar sobre fechamento"
+          }
         }
       }
     },
@@ -22158,6 +24108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condivide l’immagine della scheda di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilha a imagem do cartão de fechamento"
           }
         }
       }
@@ -22231,6 +24187,12 @@
             "state" : "translated",
             "value" : "Scheda di chiusura. %1$@ %2$@, %3$@ chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartão de fechamento. %1$@ %2$@, %3$@ fechado"
+          }
         }
       }
     },
@@ -22297,6 +24259,12 @@
             "state" : "translated",
             "value" : "Crea e condivide una scheda di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cria e compartilha um cartão de fechamento"
+          }
         }
       }
     },
@@ -22362,6 +24330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condivide la scheda di chiusura nelle storie di Instagram"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilha o cartão de fechamento nos Stories do Instagram"
           }
         }
       }
@@ -22436,6 +24410,12 @@
             "state" : "translated",
             "value" : "Nessuna chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem fechamento"
+          }
         }
       }
     },
@@ -22499,6 +24479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schema di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão de fechamento"
           }
         }
       }
@@ -22570,6 +24556,12 @@
             "state" : "translated",
             "value" : "Chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado"
+          }
         }
       }
     },
@@ -22634,6 +24626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiuso oggi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechado hoje"
           }
         }
       }
@@ -22701,6 +24699,12 @@
             "state" : "translated",
             "value" : "Nessun negozio chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma loja fechada"
+          }
         }
       }
     },
@@ -22765,6 +24769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giorni di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias de fechamento"
           }
         }
       }
@@ -22831,6 +24841,12 @@
             "state" : "translated",
             "value" : "Le notifiche verranno inviate 3 giorni e 1 giorno prima dei giorni di chiusura."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As notificações serão enviadas 3 dias e 1 dia antes dos dias de fechamento."
+          }
         }
       }
     },
@@ -22894,6 +24910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avvisi di giorni di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alertas de dias de fechamento"
           }
         }
       }
@@ -22960,6 +24982,12 @@
             "state" : "translated",
             "value" : "Attiva prima gli avvisi di giorni di chiusura."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative primeiro os alertas de dias de fechamento."
+          }
         }
       }
     },
@@ -23023,6 +25051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Per ricevere gli avvisi di giorni di chiusura, consenti le notifiche nelle Impostazioni."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para receber alertas de dias de fechamento, permita notificações em Ajustes."
           }
         }
       }
@@ -23088,6 +25122,12 @@
             "state" : "translated",
             "value" : "Nessuna info sulle chiusure"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem informações de fechamento"
+          }
         }
       }
     },
@@ -23152,6 +25192,12 @@
             "state" : "translated",
             "value" : "Nessuna informazione sui giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não há informações de dias de fechamento"
+          }
         }
       }
     },
@@ -23215,6 +25261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Calendario delle chiusure"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendário de fechamentos"
           }
         }
       }
@@ -23282,6 +25334,12 @@
             "state" : "translated",
             "value" : "Vedi il calendario delle chiusure"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver o calendário de fechamentos"
+          }
         }
       }
     },
@@ -23347,6 +25405,12 @@
             "state" : "translated",
             "value" : "Scegli i giorni di chiusura"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha os dias de fechamento"
+          }
         }
       }
     },
@@ -23411,6 +25475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non è un giorno di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não é dia de fechamento"
           }
         }
       }
@@ -23482,6 +25552,12 @@
             "state" : "translated",
             "value" : "Trovato «%@». Controlla e tocca Aggiungi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontramos “%@”. Confira e toque em Adicionar."
+          }
         }
       }
     },
@@ -23551,6 +25627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessuna chiusura nei prossimi 7 giorni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem fechamentos nos próximos 7 dias"
           }
         }
       }
@@ -23622,6 +25704,12 @@
             "state" : "translated",
             "value" : "Nessuno dei tuoi ristoranti chiude nei prossimi 7 giorni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum dos seus restaurantes fecha nos próximos 7 dias"
+          }
         }
       }
     },
@@ -23691,6 +25779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessuna chiusura questa settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem fechamentos esta semana"
           }
         }
       }
@@ -23762,6 +25856,12 @@
             "state" : "translated",
             "value" : "Gestisci"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerenciar"
+          }
         }
       }
     },
@@ -23831,6 +25931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puoi aggiungerne uno da un link di condivisione di Naver Maps o da uno screenshot"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você pode adicionar um por um link de compartilhamento do Naver Maps ou por captura de tela"
           }
         }
       }
@@ -23902,6 +26008,12 @@
             "state" : "translated",
             "value" : "I miei ristoranti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meus restaurantes"
+          }
         }
       }
     },
@@ -23971,6 +26083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ristoranti · 7 giorni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurantes · 7 dias"
           }
         }
       }
@@ -24042,6 +26160,12 @@
             "state" : "translated",
             "value" : "Aggiungi o modifica i tuoi ristoranti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione ou edite seus restaurantes"
+          }
         }
       }
     },
@@ -24111,6 +26235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ancora nessun ristorante. Aggiungili nell’app."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda não há restaurantes. Adicione no app."
           }
         }
       }
@@ -24182,6 +26312,12 @@
             "state" : "translated",
             "value" : "Oppure incolla qui un link o un testo condiviso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ou cole aqui um link ou texto compartilhado"
+          }
         }
       }
     },
@@ -24251,6 +26387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importazione rapida"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importação rápida"
           }
         }
       }
@@ -24322,6 +26464,12 @@
             "state" : "translated",
             "value" : "Legge sul dispositivo le info di chiusura dalla foto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lê no seu dispositivo as informações de fechamento da foto"
+          }
         }
       }
     },
@@ -24391,6 +26539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossibile caricare la foto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar a foto"
           }
         }
       }
@@ -24462,6 +26616,12 @@
             "state" : "translated",
             "value" : "Nessun ristorante chiuso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum restaurante fechado"
+          }
         }
       }
     },
@@ -24531,6 +26691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screenshot"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captura de tela"
           }
         }
       }
@@ -24602,6 +26768,12 @@
             "state" : "translated",
             "value" : "Elimina ristorante"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir restaurante"
+          }
         }
       }
     },
@@ -24671,6 +26843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nome del ristorante"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome do restaurante"
           }
         }
       }
@@ -24742,6 +26920,12 @@
             "state" : "translated",
             "value" : "Ristorante"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurante"
+          }
         }
       }
     },
@@ -24811,6 +26995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi un ristorante"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar um restaurante"
           }
         }
       }
@@ -24882,6 +27072,12 @@
             "state" : "translated",
             "value" : "Aggiungi ristorante"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar restaurante"
+          }
         }
       }
     },
@@ -24951,6 +27147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica ristorante"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar restaurante"
           }
         }
       }
@@ -25022,6 +27224,12 @@
             "state" : "translated",
             "value" : "Nessuno dei tuoi ristoranti chiude nei prossimi 7 giorni."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum dos seus restaurantes fecha nos próximos 7 dias."
+          }
         }
       }
     },
@@ -25091,6 +27299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostra un punto nei giorni, tra i prossimi 7, in cui i tuoi ristoranti sono chiusi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra um ponto nos dias, entre os próximos 7, em que seus restaurantes fecham."
           }
         }
       }
@@ -25162,6 +27376,12 @@
             "state" : "translated",
             "value" : "Aggiungi i ristoranti nell’app"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione restaurantes no app"
+          }
         }
       }
     },
@@ -25231,6 +27451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Risulta aperto tutti i giorni: nessun giorno di riposo fisso."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consta como aberto todos os dias — sem dia de folga fixo."
           }
         }
       }
@@ -25302,6 +27528,12 @@
             "state" : "translated",
             "value" : "Aggiungi il widget «Ristoranti · 7 giorni» alla schermata Home per vederlo senza aprire l’app."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione o widget “Restaurantes · 7 dias” à Tela de Início para ver isso sem abrir o app."
+          }
         }
       }
     },
@@ -25371,6 +27603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importa questo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importar isto"
           }
         }
       }
@@ -25442,6 +27680,12 @@
             "state" : "translated",
             "value" : "Il nome è stato recuperato ma mancano le info di chiusura. Prova con uno screenshot degli orari o scegli i giorni qui sotto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O nome foi obtido, mas não há informações de fechamento. Tente uma captura de tela do horário ou escolha os dias abaixo."
+          }
         }
       }
     },
@@ -25511,6 +27755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inserisci i giorni di riposo fissi dei ristoranti che frequenti e segneremo con un punto i giorni di chiusura dei prossimi 7."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informe os dias de folga fixos dos restaurantes que você frequenta e marcaremos com um ponto os dias de fechamento dos próximos 7."
           }
         }
       }
@@ -25582,6 +27832,12 @@
             "state" : "translated",
             "value" : "Colore del punto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cor do ponto"
+          }
         }
       }
     },
@@ -25651,6 +27907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giorni di riposo fissi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias de folga fixos"
           }
         }
       }
@@ -25722,6 +27984,12 @@
             "state" : "translated",
             "value" : "Indirizzo (facoltativo)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço (opcional)"
+          }
         }
       }
     },
@@ -25791,6 +28059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nella tua app di mappe tocca Condividi → Copia sul ristorante e incollalo qui, oppure scegli uno screenshot della sua pagina di info."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No seu app de mapas, toque em Compartilhar → Copiar no restaurante e cole aqui, ou escolha uma captura da página de informações dele."
           }
         }
       }
@@ -25862,6 +28136,12 @@
             "state" : "translated",
             "value" : "Apri in Mappe"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir em Mapas"
+          }
         }
       }
     },
@@ -25931,6 +28211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi un giorno di riposo a mano"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar dia de folga manualmente"
           }
         }
       }
@@ -26002,6 +28288,12 @@
             "state" : "translated",
             "value" : "Aggiungi un giorno di riposo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione um dia de folga"
+          }
         }
       }
     },
@@ -26071,6 +28363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica info di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar informações de fechamento"
           }
         }
       }
@@ -26142,6 +28440,12 @@
             "state" : "translated",
             "value" : "Ricerca delle info di chiusura…"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Procurando informações de fechamento…"
+          }
         }
       }
     },
@@ -26211,6 +28515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info di chiusura non trovate. Scegli i giorni qui sotto."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não encontramos informações de fechamento. Escolha os dias abaixo."
           }
         }
       }
@@ -26282,6 +28592,12 @@
             "state" : "translated",
             "value" : "Post 4:5"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Publicação 4:5"
+          }
         }
       }
     },
@@ -26351,6 +28667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Storia 9:16"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
           }
         }
       }
@@ -26422,6 +28744,12 @@
             "state" : "translated",
             "value" : "Calendario chiusure di 2 settimane"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendário de fechamentos de 2 semanas"
+          }
         }
       }
     },
@@ -26491,6 +28819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In arrivo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em breve"
           }
         }
       }
@@ -26562,6 +28896,12 @@
             "state" : "translated",
             "value" : "Cerca «DontGoMart» sull’App Store"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busque “DontGoMart” na App Store"
+          }
         }
       }
     },
@@ -26632,6 +28972,12 @@
             "state" : "translated",
             "value" : "Negozi chiusi!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lojas fechadas!"
+          }
         }
       }
     },
@@ -26698,6 +29044,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Foto"
@@ -26772,6 +29124,12 @@
             "state" : "translated",
             "value" : "Video"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vídeo"
+          }
         }
       }
     },
@@ -26838,6 +29196,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formato"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Formato"
@@ -26912,6 +29276,12 @@
             "state" : "translated",
             "value" : "Contenuto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mídia"
+          }
         }
       }
     },
@@ -26981,6 +29351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scheda di chiusura. %1$@ %2$@, %3$@ chiuso"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartão de fechamento. %1$@ %2$@, %3$@ fechado"
           }
         }
       }
@@ -27052,6 +29428,12 @@
             "state" : "translated",
             "value" : "Creazione del video"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criando o vídeo"
+          }
         }
       }
     },
@@ -27121,6 +29503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pubblica su Instagram"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Publicar no Instagram"
           }
         }
       }
@@ -27192,6 +29580,12 @@
             "state" : "translated",
             "value" : "Scegli Instagram nell’elenco di condivisione per pubblicarlo come post, storia o reel"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha o Instagram na lista de compartilhamento para publicar como post, story ou reel"
+          }
         }
       }
     },
@@ -27261,6 +29655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apre direttamente l’editor delle storie di Instagram"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre direto o editor de stories do Instagram"
           }
         }
       }
@@ -27332,6 +29732,12 @@
             "state" : "translated",
             "value" : "Condividi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar"
+          }
         }
       }
     },
@@ -27401,6 +29807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condivide il video di chiusura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilha o vídeo de fechamento"
           }
         }
       }
@@ -27472,6 +29884,12 @@
             "state" : "translated",
             "value" : "Impossibile creare il video. Condividi la foto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível criar o vídeo. Compartilhe a foto."
+          }
         }
       }
     },
@@ -27542,6 +29960,12 @@
             "state" : "translated",
             "value" : "Riapre %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reabre %@"
+          }
         }
       }
     },
@@ -27611,6 +30035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Finisci la spesa entro %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termine as compras até %@"
           }
         }
       }

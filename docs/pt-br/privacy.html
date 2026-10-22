@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade – DontGoMart</title>
+  <meta name="description" content="O que o DontGoMart guarda no seu dispositivo, o que envia e para onde.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/pt-br/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/DontGoMart/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/DontGoMart/pt-br/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/privacy.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/privacy.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/privacy.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a>
+        <a href="../it/privacy.html" hreflang="it" lang="it" title="Italiano">IT</a>
+        <a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)" class="active" aria-current="true">PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Política de Privacidade</h1>
+    <p class="last-updated">Última atualização: 8 de outubro de 2026</p>
+
+    <h2>Resumo</h2>
+    <p>O DontGoMart não tem contas e não usa publicidade nem ferramentas de rastreamento. As lojas que você escolhe ou adiciona, os restaurantes e os ajustes de alertas ficam apenas no seu dispositivo. O desenvolvedor recebe somente estatísticas de uso anônimas, que não identificam você, e os feedbacks que você decidir enviar.</p>
+    <h2>1. Informações guardadas no dispositivo</h2>
+    <p>Para o app funcionar, as informações a seguir ficam apenas no seu dispositivo. Para que os widgets da Tela de Início possam mostrá-las, o mesmo conteúdo também fica no contêiner compartilhado do app dentro do dispositivo.</p>
+    <ul>
+      <li>As lojas e a região que você escolhe</li>
+      <li>As lojas que você adiciona (nome e regra de fechamento)</li>
+      <li>Os restaurantes (nome, endereço, dias de folga fixos, link do mapa)</li>
+      <li>Os ajustes de alertas (quantos dias antes e a que horas) e os ajustes do app</li>
+    </ul>
+    <p>Nada disso é enviado ao desenvolvedor, e tudo é apagado junto com o app.</p>
+    <h2>2. Notificações</h2>
+    <p>As notificações de dias de fechamento são agendadas no seu dispositivo. Nada é enviado a um servidor para entregá-las.</p>
+    <h2>3. Fotos</h2>
+    <p>Quando você preenche os dias de folga de um restaurante a partir de uma captura de tela, o app recebe apenas a foto que você escolher. O texto da foto é lido no dispositivo pelo framework Vision da Apple, e nem a foto nem o texto são enviados a lugar nenhum.</p>
+    <p>A permissão para adicionar à fototeca é pedida somente para salvar imagens ou vídeos dos cartões de fechamento. O app não lê nenhuma outra foto da sua fototeca.</p>
+    <h2>4. Importar um restaurante por link do Naver Maps</h2>
+    <p>Quando você cola um link compartilhado do Naver Maps, o app se conecta diretamente a esse link e à página do restaurante no Naver Place para ler o nome, o endereço e os dias de folga. Como em qualquer visita a um site, a Naver pode receber informações de conexão, como o endereço IP, e a essa solicitação se aplica a política de privacidade da Naver. Essa comunicação não passa pelos servidores do desenvolvedor.</p>
+    <h2>5. Localização</h2>
+    <p>O DontGoMart não solicita nem coleta dados de localização. Você escolhe as lojas na lista.</p>
+    <h2>6. Apoio (compras no app)</h2>
+    <p>Os apoios em forma de café, bolo ou refeição são processados como compras no app pela Apple, portanto o desenvolvedor não conhece sua forma de pagamento nem os detalhes da cobrança. O número de apoios e a exibição do selo de apoiador ficam no seu próprio armazenamento chave-valor do iCloud para passar para seus outros dispositivos. Esses dados são protegidos pela sua conta Apple e o desenvolvedor não pode vê-los.</p>
+    <h2>7. Avisos</h2>
+    <p>Para saber se o desenvolvedor publicou algum aviso, o app o lê no banco de dados público do Apple CloudKit. Nenhuma informação sobre você é enviada nesse processo.</p>
+    <h2>8. Feedback</h2>
+    <p>Quando você envia um feedback pelo app, as informações a seguir são enviadas ao banco de dados CloudKit do desenvolvedor (iCloud.com.Ysoup.FeedbackHub) e usadas apenas para responder a você e melhorar o app.</p>
+    <ul>
+      <li>O conteúdo e o tipo do feedback</li>
+      <li>A versão do app, o modelo do dispositivo, a versão do iOS e os ajustes de idioma e região</li>
+      <li>Nome e e-mail (somente se você os informar para receber uma resposta)</li>
+    </ul>
+    <p>O feedback só é enviado quando você toca no botão de enviar.</p>
+    <h2>9. Estatísticas de uso anônimas</h2>
+    <p>Para entender como o app é realmente usado, ele envia estatísticas anônimas ao banco de dados CloudKit do desenvolvedor (iCloud.com.Ysoup.FeedbackHub).</p>
+    <ul>
+      <li>Um número de instalação aleatório criado quando o app é instalado (não está ligado ao seu nome, à sua conta Apple nem a identificadores do dispositivo, e some quando você apaga o app)</li>
+      <li>A versão do app, a versão do iOS, os ajustes de idioma e região, o número de aberturas, os dias desde a instalação e os dias em que você abriu o app</li>
+      <li>O número de lojas acompanhadas, o número de lojas adicionadas, se os alertas estão ativos e quantos dias antes, e o número de apoios</li>
+      <li>O nome das ações principais: compartilhar, abrir o calendário, trocar de loja, salvar uma loja personalizada, ativar os alertas ou concluir um apoio</li>
+    </ul>
+    <p>Nomes, endereços e links de lojas e restaurantes, fotos, seu nome, seu e-mail e sua localização nunca são enviados. As estatísticas são enviadas no máximo a cada 12 horas e, por tipo de ação, no máximo a cada 6 horas.</p>
+    <h2>10. Terceiros</h2>
+    <p>O DontGoMart não usa nenhuma publicidade, rede de anúncios nem ferramenta de análise ou rastreamento de terceiros. Suas informações são tratadas apenas pelos serviços da Apple citados acima (CloudKit, iCloud, compras no app e frameworks do dispositivo) e, se você colar um link, pela Naver. Não vendemos suas informações pessoais nem as fornecemos a terceiros.</p>
+    <h2>11. Retenção e exclusão</h2>
+    <p>As informações guardadas no dispositivo são apagadas no app ou ao apagar o app. Os registros de apoio salvos no iCloud podem ser gerenciados em Ajustes, na conta Apple e no iCloud. Se quiser que um feedback enviado seja excluído, escreva para o e-mail abaixo.</p>
+    <h2>12. Privacidade de crianças</h2>
+    <p>O DontGoMart não coleta intencionalmente informações pessoais de crianças.</p>
+    <h2>13. Alterações desta política</h2>
+    <p>Se alterarmos esta política, atualizaremos esta página e a data acima.</p>
+    <h2>14. Contato</h2>
+    <p>Em caso de dúvidas sobre o tratamento das informações, escreva para este endereço.</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Início</a>
+    <a href="support.html">Suporte</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

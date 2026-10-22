@@ -69,6 +69,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -136,6 +142,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -211,6 +223,12 @@
             "state" : "translated",
             "value" : "La posizione serve per trovare e consigliare i negozi vicini."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A localização é necessária para encontrar e recomendar lojas próximas."
+          }
         }
       }
     },
@@ -281,6 +299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serve per salvare nella libreria le foto e i video delle schede di chiusura."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Necessário para salvar na sua fototeca as fotos e os vídeos dos cartões de fechamento."
           }
         }
       }
