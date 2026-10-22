@@ -115,6 +115,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "เพิ่มร้านในละแวกบ้าน<br>ด้วยตัวเอง", "รูปแบบอย่างวันอังคารที่สองและสี่ก็ทำได้"),
         ("05-share.png", "dark", "แจ้งร้านปิด<br>ด้วยการ์ดใบเดียว", "บอกครอบครัวและเพื่อนบ้านได้ทันที"),
     ],
+    "vi": [
+        ("01-main.png", "hero-bleed", "Kiểm tra<br>trước khi đi", "Xem ngay cửa hàng hôm nay có mở không"),
+        ("02-calendar.png", "left-text", "Ngày đóng cửa<br>của tháng này", "Mọi ngày đóng cửa ngay trên lịch"),
+        ("03-marts.png", "text-bottom", "Chỉ chọn cửa hàng bạn đi", "Siêu thị, Costco, ngày nghỉ lễ"),
+        ("04-pattern.png", "flat-rotate", "Tự thêm cửa hàng<br>gần nhà", "Cả lịch như thứ Ba thứ hai và thứ tư"),
+        ("05-share.png", "dark", "Báo tin đóng cửa<br>bằng một tấm thẻ", "Cho gia đình và hàng xóm biết ngay"),
+    ],
 }
 
 BASE_CSS = f"""

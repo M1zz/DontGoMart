@@ -81,6 +81,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -160,6 +166,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -247,6 +259,12 @@
             "state" : "translated",
             "value" : "ต้องใช้ตำแหน่งเพื่อค้นหาและแนะนำร้านใกล้เคียง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần vị trí để tìm và gợi ý các cửa hàng gần bạn."
+          }
         }
       }
     },
@@ -329,6 +347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ต้องใช้เพื่อบันทึกรูปและวิดีโอของการ์ดแจ้งวันปิดลงในคลังรูปภาพ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần để lưu ảnh và video của thẻ thông báo đóng cửa vào thư viện ảnh."
           }
         }
       }

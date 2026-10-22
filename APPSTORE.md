@@ -757,3 +757,61 @@ https://m1zz.github.io/DontGoMart/th/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/th/
+
+## vi
+
+### 이름
+
+DontGoMart: Ngày đóng cửa
+
+### 부제
+
+Không lo đi uổng công
+
+### 키워드
+
+siêu thị,Hàn Quốc,Seoul,giờ mở cửa,chủ nhật,ngày lễ,Chuseok,mua sắm,nhắc nhở,lịch,nhà hàng
+
+### 프로모션 텍스트
+
+Giờ đây bạn cũng xem được ngày nghỉ của nhà hàng yêu thích. Chỉ cần một liên kết Naver Maps hoặc một ảnh chụp màn hình, ứng dụng sẽ nhắc bạn trước ngày đóng cửa.
+
+### 설명
+
+Trước khi ra khỏi nhà, hãy kiểm tra xem cửa hàng có mở cửa không.
+DontGoMart tổng hợp ngày đóng cửa bắt buộc của các siêu thị lớn ở Hàn Quốc và Costco, đồng thời nhắc bạn trước khi ngày đóng cửa đến gần.
+
+Biết ngay hôm nay đi được không
+Khi mở ứng dụng, điều đầu tiên bạn thấy là cửa hàng đã chọn hôm nay có mở cửa không. Bạn cũng thấy số ngày còn lại đến ngày đóng cửa tiếp theo và danh sách các ngày đóng cửa sắp tới.
+
+Hỗ trợ ngày đóng cửa khác nhau theo từng khu vực
+Chọn cửa hàng đóng cửa Chủ nhật hoặc thứ Tư, hay những khu vực có ngày đóng cửa khác như Ulsan và Jeju. Với Costco, bạn có thể cài riêng cửa hàng thông thường và các chi nhánh Daegu, Ilsan, Ulsan. Ngày đóng cửa dịp Seollal (Tết âm lịch) và Chuseok cũng được hiển thị.
+
+Tự thêm cửa hàng gần nhà
+Cửa hàng không có trong danh sách thì bạn tự đăng ký bằng cách chọn tuần thứ mấy và thứ mấy trong tuần cửa hàng nghỉ, ví dụ Chủ nhật thứ hai và thứ tư.
+
+Cả ngày nghỉ của nhà hàng yêu thích
+Nhập ngày nghỉ cố định của các nhà hàng bạn hay đến, những ngày nhà hàng nghỉ trong 7 ngày tới sẽ được đánh dấu bằng chấm. Chỉ cần dán liên kết đã chia sẻ và sao chép từ Naver Maps, hoặc chọn ảnh chụp màn hình trang thông tin nhà hàng, ngày nghỉ cố định sẽ được điền tự động. Chữ trong ảnh chỉ được đọc ngay trên thiết bị của bạn.
+
+Thông báo để không quên
+Chọn nhận thông báo trước ngày đóng cửa 1, 2, 3 hoặc 7 ngày, vào giờ bạn muốn. Một ngày trước ngày đóng cửa, ứng dụng nhắc lại rằng hôm nay là ngày thích hợp để đi mua sắm. Khi ngày đóng cửa còn trong vòng 3 ngày, một biểu ngữ cũng hiện ở đầu màn hình ứng dụng.
+
+Widget cho Màn hình chính và Màn hình khóa
+Với widget, bạn xem được ngày đóng cửa gần nhất, hai ngày đóng cửa tiếp theo cùng số ngày còn lại, cửa hàng có mở cửa Chủ nhật này không và ngày nghỉ của nhà hàng yêu thích trong 7 ngày. Widget Chủ nhật tuần này và widget nhà hàng cũng đặt được trên Màn hình khóa.
+
+Lịch và chia sẻ
+Xem ngày đóng cửa của cả tháng trên lịch. Bạn có thể chia sẻ thông báo đóng cửa dưới dạng thẻ kèm lịch hai tuần và mẹo mua sắm, theo kích thước bài đăng và story Instagram, hoặc dưới dạng video ngắn.
+
+Mọi tính năng đều miễn phí. Nếu thấy hữu ích, hãy ủng hộ nhà phát triển bằng một ly cà phê.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/vi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/vi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/vi/

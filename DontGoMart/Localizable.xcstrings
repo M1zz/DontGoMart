@@ -84,6 +84,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — ซื้อของล่วงหน้าไว้นะ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — hãy đi mua sắm sớm"
+          }
         }
       }
     },
@@ -158,6 +164,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -240,6 +252,12 @@
             "state" : "translated",
             "value" : "ลบ %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa %@"
+          }
         }
       }
     },
@@ -317,6 +335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แก้ไข %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sửa %@"
           }
         }
       }
@@ -401,6 +425,12 @@
             "state" : "translated",
             "value" : "%@ ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ đóng cửa"
+          }
         }
       }
     },
@@ -478,6 +508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ ปิด Pro"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ đóng cửa Pro"
           }
         }
       }
@@ -562,6 +598,12 @@
             "state" : "translated",
             "value" : "ปิด: %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng cửa: %@"
+          }
         }
       }
     },
@@ -640,6 +682,12 @@
             "state" : "translated",
             "value" : "ปิดวัน%@!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng cửa %@!"
+          }
         }
       }
     },
@@ -714,6 +762,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -801,6 +855,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -875,6 +935,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -958,6 +1024,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1035,6 +1107,12 @@
             "state" : "translated",
             "value" : "%lld รายการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld mục"
+          }
         }
       }
     },
@@ -1111,6 +1189,12 @@
             "state" : "translated",
             "value" : "%lld นาที"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld phút"
+          }
         }
       }
     },
@@ -1186,6 +1270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld น."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giờ"
           }
         }
       }
@@ -1272,6 +1362,12 @@
             "state" : "translated",
             "value" : "เหลืออีก %lld วัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Còn %lld ngày"
+          }
         }
       }
     },
@@ -1350,6 +1446,12 @@
             "state" : "translated",
             "value" : "ก่อน %lld วัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trước %lld ngày"
+          }
         }
       }
     },
@@ -1425,6 +1527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สัปดาห์ที่ %lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần %lld"
           }
         }
       }
@@ -1507,6 +1615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อีก %lld สัปดาห์ %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld tuần nữa, %@"
           }
         }
       }
@@ -1592,6 +1706,12 @@
             "state" : "translated",
             "value" : "สัปดาห์ที่ %lld %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần %lld, %@"
+          }
         }
       }
     },
@@ -1674,6 +1794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้ VoiceOver ได้สะดวกขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng VoiceOver thuận tiện hơn"
           }
         }
       }
@@ -1758,6 +1884,12 @@
             "state" : "translated",
             "value" : "Siri และคำสั่งลัด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri và Phím tắt"
+          }
         }
       }
     },
@@ -1841,6 +1973,12 @@
             "state" : "translated",
             "value" : "ถาม Siri หรือเรียกใช้คำสั่งลัด เพื่อรู้ทันทีว่าร้านของคุณปิดหรือไม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hỏi Siri hoặc chạy phím tắt để biết ngay cửa hàng của bạn có đóng cửa không."
+          }
         }
       }
     },
@@ -1915,6 +2053,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -1997,6 +2141,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -2071,6 +2221,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -2153,6 +2309,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -2221,6 +2383,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -2308,6 +2476,12 @@
             "state" : "translated",
             "value" : "แม้ตั้งขนาดตัวอักษรใหญ่สุด หน้าจอก็จัดเรียงใหม่อย่างเรียบร้อยโดยไม่มีส่วนใดถูกตัด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngay cả với cỡ chữ lớn nhất, màn hình vẫn sắp xếp lại gọn gàng mà không bị cắt chữ."
+          }
         }
       }
     },
@@ -2390,6 +2564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ลบร้านที่เลือก ร้านที่เพิ่ม และการตั้งค่าการแจ้งเตือนได้ในคราวเดียวภายในแอป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa cùng lúc các cửa hàng đã chọn, đã thêm và cài đặt thông báo ngay trong ứng dụng."
           }
         }
       }
@@ -2474,6 +2654,12 @@
             "state" : "translated",
             "value" : "ประกาศ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo"
+          }
         }
       }
     },
@@ -2550,6 +2736,12 @@
             "state" : "translated",
             "value" : "เปิดดูประกาศฉบับเต็ม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở toàn bộ nội dung thông báo"
+          }
         }
       }
     },
@@ -2625,6 +2817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปิดประกาศ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng thông báo"
           }
         }
       }
@@ -2709,6 +2907,12 @@
             "state" : "translated",
             "value" : "โหมดมืด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ tối"
+          }
         }
       }
     },
@@ -2791,6 +2995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ดูวันปิดได้ชัดเจน แม้เปิดการเพิ่มคอนทราสต์หรือแยกสีได้ยาก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vẫn nhận ra ngày đóng cửa khi bật Tăng độ tương phản hoặc khi khó phân biệt màu."
           }
         }
       }
@@ -2875,6 +3085,12 @@
             "state" : "translated",
             "value" : "ภาษาเพิ่มเติม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm ngôn ngữ"
+          }
         }
       }
     },
@@ -2957,6 +3173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้แอปได้หลายภาษายิ่งขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng ứng dụng bằng nhiều ngôn ngữ hơn."
           }
         }
       }
@@ -3041,6 +3263,12 @@
             "state" : "translated",
             "value" : "บันทึกร้านที่คุณเพิ่มไว้เป็นไฟล์ และนำกลับมาใช้ได้ทุกเมื่อ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu các cửa hàng bạn đã thêm vào tệp và nhập lại bất cứ lúc nào."
+          }
         }
       }
     },
@@ -3124,6 +3352,12 @@
             "state" : "translated",
             "value" : "ลบข้อมูลของฉันทั้งหมดในครั้งเดียว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tất cả dữ liệu của tôi"
+          }
         }
       }
     },
@@ -3205,6 +3439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แจ้งเตือนร้านปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo cửa hàng đóng cửa"
           }
         }
       }
@@ -3289,6 +3529,12 @@
             "state" : "translated",
             "value" : "ตัวอักษรและปุ่มยังคงคมชัดบนหน้าจอมืด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chữ và nút vẫn rõ nét trên màn hình tối."
+          }
         }
       }
     },
@@ -3371,6 +3617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สีที่มองเห็นง่ายขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu sắc dễ nhìn hơn"
           }
         }
       }
@@ -3455,6 +3707,12 @@
             "state" : "translated",
             "value" : "บน iPad เลือกร้านและพลิกปฏิทินได้ด้วยแป้นพิมพ์อย่างเดียว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trên iPad, chọn cửa hàng và lật lịch chỉ bằng bàn phím."
+          }
         }
       }
     },
@@ -3537,6 +3795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "มีอะไรใหม่หลังอัปเดต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có gì mới sau khi cập nhật"
           }
         }
       }
@@ -3621,6 +3885,12 @@
             "state" : "translated",
             "value" : "เมื่อเปิดแอปครั้งแรกหลังอัปเดต คุณจะเห็นว่ามีอะไรใหม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lần đầu mở ứng dụng sau khi cập nhật, bạn sẽ thấy có gì mới."
+          }
         }
       }
     },
@@ -3703,6 +3973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เคล็ดลับการใช้งาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo sử dụng"
           }
         }
       }
@@ -3787,6 +4063,12 @@
             "state" : "translated",
             "value" : "แนะนำฟีเจอร์ที่เป็นประโยชน์เบา ๆ ในจังหวะที่เหมาะสม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhẹ nhàng gợi ý các tính năng hữu ích vào đúng lúc."
+          }
         }
       }
     },
@@ -3869,6 +4151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สำรองข้อมูลและส่งออก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sao lưu và xuất"
           }
         }
       }
@@ -3953,6 +4241,12 @@
             "state" : "translated",
             "value" : "ถ้าแอปปิดตัวขณะเพิ่มร้าน สิ่งที่คุณพิมพ์ไว้ก็ยังอยู่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu ứng dụng đóng khi bạn đang thêm cửa hàng, nội dung đã nhập vẫn được giữ lại."
+          }
         }
       }
     },
@@ -4028,6 +4322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "และอีก %lld ร้าน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "và %lld nơi khác"
           }
         }
       }
@@ -4112,6 +4412,12 @@
             "state" : "translated",
             "value" : "VoiceOver อ่านวันปิดและปุ่มต่าง ๆ ครบถ้วนและตามลำดับที่ถูกต้อง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver đọc đầy đủ ngày đóng cửa và các nút theo đúng thứ tự."
+          }
         }
       }
     },
@@ -4194,6 +4500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รองรับตัวอักษรขนาดใหญ่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng cho chữ lớn"
           }
         }
       }
@@ -4278,6 +4590,12 @@
             "state" : "translated",
             "value" : "ควบคุมด้วยแป้นพิมพ์"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Điều khiển bằng bàn phím"
+          }
         }
       }
     },
@@ -4360,6 +4678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "คู่มือเริ่มต้นใช้งาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hướng dẫn nhanh cho người mới"
           }
         }
       }
@@ -4444,6 +4768,12 @@
             "state" : "translated",
             "value" : "เมื่อเปิดแอปครั้งแรก จะแสดงสั้น ๆ ว่าทำอะไรได้บ้าง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lần đầu mở ứng dụng, xem nhanh qua vài bước ứng dụng làm được gì."
+          }
         }
       }
     },
@@ -4526,6 +4856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ออกแบบมาสำหรับ iPhone แบบพับได้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dành cho iPhone gập"
           }
         }
       }
@@ -4610,6 +4946,12 @@
             "state" : "translated",
             "value" : "บน iPhone แบบพับได้ ใช้หน้าจอกว้างเป็นสองส่วนวางเคียงกัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trên iPhone gập, dùng màn hình rộng như hai ngăn cạnh nhau."
+          }
         }
       }
     },
@@ -4693,6 +5035,12 @@
             "state" : "translated",
             "value" : "ทำต่อจากที่ค้างไว้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục từ chỗ bạn dừng lại"
+          }
         }
       }
     },
@@ -4761,6 +5109,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -4837,6 +5191,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -4909,6 +5269,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -4977,6 +5343,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -5057,6 +5429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 แจ้งเตือนวันเหมาะซื้อของ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Nhắc ngày thích hợp đi chợ"
           }
         }
       }
@@ -5139,6 +5517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 วันนี้เหมาะซื้อของ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Hôm nay là ngày đi chợ tốt"
           }
         }
       }
@@ -5224,6 +5608,12 @@
             "state" : "translated",
             "value" : "แจ้งเตือนเมื่อมีวันปิดภายในหนึ่งสัปดาห์!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cho bạn khi có ngày đóng cửa trong vòng một tuần!"
+          }
         }
       }
     },
@@ -5298,6 +5688,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -5386,6 +5782,12 @@
             "state" : "translated",
             "value" : "วิดเจ็ตแจ้งเตือนวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget nhắc ngày đóng cửa"
+          }
         }
       }
     },
@@ -5470,6 +5872,12 @@
             "state" : "translated",
             "value" : "วิดเจ็ตนับถอยหลังวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget đếm ngược ngày đóng cửa"
+          }
         }
       }
     },
@@ -5544,6 +5952,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -5626,6 +6040,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -5700,6 +6120,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -5782,6 +6208,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -5856,6 +6288,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -5942,6 +6380,12 @@
             "state" : "translated",
             "value" : "%@ ปิดพรุ่งนี้ วันนี้เหมาะกับการไปซื้อของ!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mai đóng cửa. Hôm nay là ngày thích hợp để đi mua sắm!"
+          }
         }
       }
     },
@@ -6023,6 +6467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ จะปิดในอีก %lld วัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sẽ đóng cửa sau %lld ngày."
           }
         }
       }
@@ -6107,6 +6557,12 @@
             "state" : "translated",
             "value" : "%@ จะปิดในอีก %lld วัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sẽ đóng cửa sau %lld ngày."
+          }
         }
       }
     },
@@ -6189,6 +6645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อย่าลืมไปซื้อของก่อนถึงวันปิดครั้งต่อไป!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đừng quên mua sắm trước ngày đóng cửa tiếp theo!"
           }
         }
       }
@@ -6273,6 +6735,12 @@
             "state" : "translated",
             "value" : "จัดการวันปิดของร้านในละแวกบ้านได้ด้วย"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quản lý cả ngày đóng cửa của các cửa hàng quanh bạn"
+          }
         }
       }
     },
@@ -6355,6 +6823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ลงทะเบียนรูปแบบวันปิดของร้านคุณเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng ký lịch đóng cửa của cửa hàng riêng của bạn"
           }
         }
       }
@@ -6439,6 +6913,12 @@
             "state" : "translated",
             "value" : "รายการโปรดอยู่บนสุดเสมอ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mục yêu thích luôn hiện ở trên cùng"
+          }
         }
       }
     },
@@ -6521,6 +7001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บุ๊กมาร์กร้านโปรดของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đánh dấu các cửa hàng yêu thích"
           }
         }
       }
@@ -6605,6 +7091,12 @@
             "state" : "translated",
             "value" : "จ่ายครั้งเดียว ใช้ได้ทุกฟีเจอร์ตลอดไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mua một lần, dùng mọi tính năng mãi mãi"
+          }
         }
       }
     },
@@ -6687,6 +7179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อัปเกรดเป็น DontGoMart Pro"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nâng cấp lên DontGoMart Pro"
           }
         }
       }
@@ -6771,6 +7269,12 @@
             "state" : "translated",
             "value" : "ดูวันปิดของ E-Mart, Costco และ Homeplus พร้อมกัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem cùng lúc ngày đóng cửa của E-Mart, Costco, Homeplus"
+          }
         }
       }
     },
@@ -6853,6 +7357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ติดตามหลายร้านพร้อมกัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo dõi nhiều cửa hàng cùng lúc"
           }
         }
       }
@@ -6937,6 +7447,12 @@
             "state" : "translated",
             "value" : "รับการแจ้งเตือนก่อนวันปิด ไม่ต้องเสียเที่ยวอีก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận thông báo trước ngày đóng cửa để không phải đi uổng công"
+          }
         }
       }
     },
@@ -7019,6 +7535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่ต้องเจอร้านปิดอีกต่อไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không còn đến nơi gặp cửa hàng đóng cửa"
           }
         }
       }
@@ -7103,6 +7625,12 @@
             "state" : "translated",
             "value" : "เพิ่มรายการได้ตามต้องการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm bao nhiêu mục tùy ý"
+          }
         }
       }
     },
@@ -7185,6 +7713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รายการซื้อของไม่จำกัด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách mua sắm không giới hạn"
           }
         }
       }
@@ -7269,6 +7803,12 @@
             "state" : "translated",
             "value" : "☕ ในราคากาแฟหนึ่งแก้ว ปลดล็อกทุกอย่างตลอดไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Với giá một ly cà phê, mở khóa mọi thứ mãi mãi"
+          }
         }
       }
     },
@@ -7351,6 +7891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "จะแจ้งเตือนก่อนวันปิด %1$lld วันและ %2$lld วัน เวลา %3$@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn sẽ được thông báo trước ngày đóng cửa %1$lld ngày và %2$lld ngày vào lúc %3$@."
           }
         }
       }
@@ -7436,6 +7982,12 @@
             "state" : "translated",
             "value" : "แสดงเป็นสีเขียวหรือแดงว่าร้านของคุณเปิดวันอาทิตย์นี้หรือไม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị màu xanh hoặc đỏ cho biết cửa hàng của bạn có mở cửa vào Chủ nhật này không."
+          }
         }
       }
     },
@@ -7517,6 +8069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แสดงวันปิดสองครั้งถัดไป!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị hai ngày đóng cửa sắp tới!"
           }
         }
       }
@@ -7602,6 +8160,12 @@
             "state" : "translated",
             "value" : "แสดงจำนวนวันที่เหลือก่อนวันปิดครั้งถัดไป!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị số ngày còn lại đến ngày đóng cửa tiếp theo!"
+          }
         }
       }
     },
@@ -7686,6 +8250,12 @@
             "state" : "translated",
             "value" : "วันอาทิตย์ เปิด/ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chủ nhật mở/đóng cửa"
+          }
         }
       }
     },
@@ -7764,6 +8334,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -7838,6 +8414,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -7926,6 +8508,12 @@
             "state" : "translated",
             "value" : "วิดเจ็ตวันปิดสองครั้ง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget hai ngày đóng cửa"
+          }
         }
       }
     },
@@ -8003,6 +8591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปิดข้อความขอบคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng lời cảm ơn"
           }
         }
       }
@@ -8082,6 +8676,12 @@
             "state" : "translated",
             "value" : "ขอบคุณ!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn!"
+          }
         }
       }
     },
@@ -8160,6 +8760,12 @@
             "state" : "translated",
             "value" : "เลี้ยงกาแฟนักพัฒนาสักแก้ว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mời nhà phát triển một ly cà phê"
+          }
         }
       }
     },
@@ -8237,6 +8843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ส่งทิปให้นักพัฒนา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gửi tiền ủng hộ cho nhà phát triển"
           }
         }
       }
@@ -8321,6 +8933,12 @@
             "state" : "translated",
             "value" : "บางส่วนของคย็องกี/ช็องจู"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Một phần Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -8399,6 +9017,12 @@
             "state" : "translated",
             "value" : "ขอบคุณ แล้วพบกันใหม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn, hẹn gặp lại"
+          }
         }
       }
     },
@@ -8475,6 +9099,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใกล้ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sắp đóng cửa"
           }
         }
       }
@@ -8553,6 +9183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แชร์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ"
           }
         }
       }
@@ -8636,6 +9272,12 @@
             "state" : "translated",
             "value" : "วันหยุด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày lễ"
+          }
         }
       }
     },
@@ -8711,6 +9353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กู้คืนการซื้อ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khôi phục giao dịch mua"
           }
         }
       }
@@ -8795,6 +9443,12 @@
             "state" : "translated",
             "value" : "ฟีเจอร์"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính năng"
+          }
         }
       }
     },
@@ -8870,6 +9524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านของฉัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng của tôi"
           }
         }
       }
@@ -8954,6 +9614,12 @@
             "state" : "translated",
             "value" : "พรุ่งนี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày mai"
+          }
         }
       }
     },
@@ -9030,6 +9696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "พรุ่งนี้ %@ ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mai %@ đóng cửa"
           }
         }
       }
@@ -9116,6 +9788,12 @@
             "state" : "translated",
             "value" : "ปิดพรุ่งนี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mai đóng cửa"
+          }
         }
       }
     },
@@ -9191,6 +9869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันปิดที่กำลังจะมาถึง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày đóng cửa sắp tới"
           }
         }
       }
@@ -9269,6 +9953,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เดือนหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tháng sau"
           }
         }
       }
@@ -9355,6 +10045,12 @@
             "state" : "translated",
             "value" : "สัปดาห์หน้า %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần sau: %@"
+          }
         }
       }
     },
@@ -9438,6 +10134,12 @@
             "state" : "translated",
             "value" : "วันปิดครั้งถัดไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày đóng cửa tiếp theo"
+          }
         }
       }
     },
@@ -9514,6 +10216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เราจะเตือนให้ไปซื้อของ 2 วันก่อนวันปิดครั้งถัดไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi sẽ nhắc bạn đi mua sắm trước ngày đóng cửa tiếp theo 2 ngày."
           }
         }
       }
@@ -9600,6 +10308,12 @@
             "state" : "translated",
             "value" : "ไม่มีข้อมูลวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có thông tin ngày đóng cửa"
+          }
         }
       }
     },
@@ -9677,6 +10391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไว้ทีหลัง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để sau"
           }
         }
       }
@@ -9761,6 +10481,12 @@
             "state" : "translated",
             "value" : "ติดตามหลายร้านพร้อมกัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo dõi nhiều cửa hàng cùng lúc"
+          }
         }
       }
     },
@@ -9844,6 +10570,12 @@
             "state" : "translated",
             "value" : "ติดตามหลายร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo dõi nhiều cửa hàng"
+          }
         }
       }
     },
@@ -9921,6 +10653,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng"
           }
         }
       }
@@ -10000,6 +10738,12 @@
             "state" : "translated",
             "value" : "เปิดปฏิทินเพื่อดูวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở lịch để xem ngày đóng cửa"
+          }
         }
       }
     },
@@ -10076,6 +10820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แทกู"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -10160,6 +10910,12 @@
             "state" : "translated",
             "value" : "Costco แทกู"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -10241,6 +10997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แทกู"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -10324,6 +11086,12 @@
             "state" : "translated",
             "value" : "แทกู, แทกูฮย็อกชิน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -10400,6 +11168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị"
           }
         }
       }
@@ -10483,6 +11257,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (ปิดวันพุธ)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (đóng cửa thứ Tư)"
+          }
         }
       }
     },
@@ -10564,6 +11344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (ปิดวันพุธ)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (đóng cửa thứ Tư)"
           }
         }
       }
@@ -10647,6 +11433,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (พุธ)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (T4)"
+          }
         }
       }
     },
@@ -10728,6 +11520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (อุลซาน แบบผสม)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Ulsan, hỗn hợp)"
           }
         }
       }
@@ -10811,6 +11609,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (อุลซาน)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Ulsan)"
+          }
         }
       }
     },
@@ -10892,6 +11696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (อุลซาน)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Ulsan)"
           }
         }
       }
@@ -10975,6 +11785,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (ปิดวันอาทิตย์)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (đóng cửa Chủ nhật)"
+          }
         }
       }
     },
@@ -11056,6 +11872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (ปิดวันอาทิตย์)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (đóng cửa Chủ nhật)"
           }
         }
       }
@@ -11139,6 +11961,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (อาทิตย์)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (CN)"
+          }
         }
       }
     },
@@ -11220,6 +12048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (เชจู)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Jeju)"
           }
         }
       }
@@ -11303,6 +12137,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (เชจู)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Jeju)"
+          }
         }
       }
     },
@@ -11385,6 +12225,12 @@
             "state" : "translated",
             "value" : "ซูเปอร์มาร์เก็ต (เชจู)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siêu thị (Jeju)"
+          }
         }
       }
     },
@@ -11463,6 +12309,12 @@
             "state" : "translated",
             "value" : "ถ้าแอปนี้ช่วยคุณได้ ช่วยให้กำลังใจเราด้วยกาแฟสักแก้วนะ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu ứng dụng hữu ích, hãy tiếp sức cho chúng tôi bằng một ly cà phê."
+          }
         }
       }
     },
@@ -11537,6 +12389,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -11620,6 +12478,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -11698,6 +12562,12 @@
             "state" : "translated",
             "value" : "แตะสองครั้งเพื่อปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chạm hai lần để đóng"
+          }
         }
       }
     },
@@ -11775,6 +12645,12 @@
             "state" : "translated",
             "value" : "ร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng"
+          }
         }
       }
     },
@@ -11851,6 +12727,12 @@
             "state" : "translated",
             "value" : "ก่อนไปซื้อของ เช็กวันปิดใน DontGoMart ก่อนนะ ✅"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trước khi đi mua sắm, hãy kiểm tra ngày đóng cửa trên DontGoMart ✅"
+          }
         }
       }
     },
@@ -11926,6 +12808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สีของร้าน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu cửa hàng"
           }
         }
       }
@@ -12009,6 +12897,12 @@
             "state" : "translated",
             "value" : "เลือกร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn cửa hàng"
+          }
         }
       }
     },
@@ -12084,6 +12978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ชื่อร้าน (เช่น Homeplus กังนัม)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tên cửa hàng (vd: Homeplus Gangnam)"
           }
         }
       }
@@ -12161,6 +13061,12 @@
             "state" : "translated",
             "value" : "ข้อมูลร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông tin cửa hàng"
+          }
         }
       }
     },
@@ -12236,6 +13142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มร้าน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm cửa hàng"
           }
         }
       }
@@ -12313,6 +13225,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng đóng cửa"
           }
         }
       }
@@ -12397,6 +13315,12 @@
             "state" : "translated",
             "value" : "แจ้งวันปิดของร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo ngày đóng cửa của cửa hàng"
+          }
         }
       }
     },
@@ -12474,6 +13398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แจ้งเตือนร้านปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo cửa hàng đóng cửa"
           }
         }
       }
@@ -12558,6 +13488,12 @@
             "state" : "translated",
             "value" : "ร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng"
+          }
         }
       }
     },
@@ -12640,6 +13576,12 @@
             "state" : "translated",
             "value" : "ร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng"
+          }
         }
       }
     },
@@ -12717,6 +13659,12 @@
             "state" : "translated",
             "value" : "เลือกร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn cửa hàng"
+          }
         }
       }
     },
@@ -12792,6 +13740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เปิดหน้าเลือกร้านและตั้งค่าการแจ้งเตือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở trang chọn cửa hàng và cài đặt thông báo"
           }
         }
       }
@@ -12876,6 +13830,12 @@
             "state" : "translated",
             "value" : "แตกต่างกันตามร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khác nhau tùy cửa hàng"
+          }
         }
       }
     },
@@ -12952,6 +13912,12 @@
             "state" : "translated",
             "value" : "เลือกร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn cửa hàng"
+          }
         }
       }
     },
@@ -13027,6 +13993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โปรดเลือกร้าน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng chọn cửa hàng"
           }
         }
       }
@@ -13111,6 +14083,12 @@
             "state" : "translated",
             "value" : "ยังไม่ได้เลือกร้าน โปรดเลือกในการตั้งค่า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chưa chọn cửa hàng. Hãy chọn trong Cài đặt."
+          }
         }
       }
     },
@@ -13189,6 +14167,12 @@
             "state" : "translated",
             "value" : "ทุก%@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hằng tuần: %@"
+          }
         }
       }
     },
@@ -13266,6 +14250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ทุกฟีเจอร์ยังคงใช้ฟรี ทิปเป็นเพียงกำลังใจ และส่งได้กี่ครั้งก็ได้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mọi tính năng vẫn miễn phí. Tiền ủng hộ chỉ là lời động viên và bạn có thể gửi bất cứ lúc nào."
           }
         }
       }
@@ -13352,6 +14342,12 @@
             "state" : "translated",
             "value" : "มะรืนนี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày kia"
+          }
         }
       }
     },
@@ -13434,6 +14430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รายการซื้อของไม่จำกัดจำนวน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách mua sắm không giới hạn số mục"
           }
         }
       }
@@ -13518,6 +14520,12 @@
             "state" : "translated",
             "value" : "รายการซื้อของไม่จำกัด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách mua sắm không giới hạn"
+          }
         }
       }
     },
@@ -13601,6 +14609,12 @@
             "state" : "translated",
             "value" : "อัปเกรดเพื่อเพิ่มรายการซื้อของได้ไม่จำกัด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nâng cấp lên Pro để thêm mục không giới hạn"
+          }
         }
       }
     },
@@ -13677,6 +14691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เวอร์ชัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên bản"
           }
         }
       }
@@ -13756,6 +14776,12 @@
             "state" : "translated",
             "value" : "ด้วยกำลังใจจากคุณ เราจึงพัฒนาแอปนี้ต่อไปได้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhờ sự ủng hộ của bạn, chúng tôi mới có thể tiếp tục làm ứng dụng này."
+          }
         }
       }
     },
@@ -13834,6 +14860,12 @@
             "state" : "translated",
             "value" : "กำลังใจจากคุณมีความหมายมาก (ตอนนี้ ☕️ ×%lld)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự ủng hộ của bạn rất có ý nghĩa. (đến nay ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -13909,6 +14941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "นาที"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "phút"
           }
         }
       }
@@ -13986,6 +15024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "การทำงานด่วน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tác vụ nhanh"
           }
         }
       }
@@ -14072,6 +15116,12 @@
             "state" : "translated",
             "value" : "ไม่ได้เลือก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chưa chọn"
+          }
         }
       }
     },
@@ -14148,6 +15198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ล้างการเลือก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa lựa chọn"
           }
         }
       }
@@ -14231,6 +15287,12 @@
             "state" : "translated",
             "value" : "ยังไม่ได้เลือกร้าน เปิดแอปเพื่อเลือกร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chưa chọn cửa hàng. Hãy mở ứng dụng để chọn."
+          }
         }
       }
     },
@@ -14306,6 +15368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รูปแบบที่เลือก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lịch đã chọn"
           }
         }
       }
@@ -14392,6 +15460,12 @@
             "state" : "translated",
             "value" : "เลือกแล้ว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã chọn"
+          }
         }
       }
     },
@@ -14469,6 +15543,12 @@
             "state" : "translated",
             "value" : "ทุกร้านที่เลือกเปิดทำการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả cửa hàng đã chọn đều mở cửa"
+          }
         }
       }
     },
@@ -14545,6 +15625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ทุกร้านที่เลือกปิดทำการ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả cửa hàng đã chọn đều đóng cửa"
           }
         }
       }
@@ -14628,6 +15714,12 @@
             "state" : "translated",
             "value" : "วันหยุดซอลลัล/ชูซ็อก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày lễ Seollal/Chuseok"
+          }
         }
       }
     },
@@ -14703,6 +15795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "การตั้งค่า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
           }
         }
       }
@@ -14782,6 +15880,12 @@
             "state" : "translated",
             "value" : "เลือกร้านที่จะติดตามในการตั้งค่า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn các cửa hàng cần theo dõi trong Cài đặt"
+          }
         }
       }
     },
@@ -14859,6 +15963,12 @@
             "state" : "translated",
             "value" : "เลือกร้านที่จะติดตามในการตั้งค่า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn các cửa hàng cần theo dõi trong Cài đặt"
+          }
         }
       }
     },
@@ -14935,6 +16045,12 @@
             "state" : "translated",
             "value" : "ไปที่การตั้งค่า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đi tới Cài đặt"
+          }
         }
       }
     },
@@ -15010,6 +16126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ชั่วโมง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giờ"
           }
         }
       }
@@ -15094,6 +16216,12 @@
             "state" : "translated",
             "value" : "ไม่ทราบ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không rõ"
+          }
         }
       }
     },
@@ -15169,6 +16297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ต้องได้รับอนุญาตการแจ้งเตือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần quyền thông báo"
           }
         }
       }
@@ -15247,6 +16381,12 @@
             "state" : "translated",
             "value" : "การตั้งค่าการแจ้งเตือน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt thông báo"
+          }
         }
       }
     },
@@ -15322,6 +16462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เวลาแจ้งเตือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giờ thông báo"
           }
         }
       }
@@ -15400,6 +16546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ให้แจ้งฉัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo cho tôi"
           }
         }
       }
@@ -15484,6 +16636,12 @@
             "state" : "translated",
             "value" : "รับการแจ้งเตือนก่อนวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận thông báo trước ngày đóng cửa"
+          }
         }
       }
     },
@@ -15566,6 +16724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "การแจ้งเตือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo"
           }
         }
       }
@@ -15650,6 +16814,12 @@
             "state" : "translated",
             "value" : "รับการแจ้งเตือนก่อนวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận thông báo trước ngày đóng cửa"
+          }
         }
       }
     },
@@ -15725,6 +16895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "การแจ้งเตือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo"
           }
         }
       }
@@ -15803,6 +16979,12 @@
             "state" : "translated",
             "value" : "เขียนรีวิวใน App Store"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viết đánh giá trên App Store"
+          }
         }
       }
     },
@@ -15879,6 +17061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ดูใน App Store"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem trên App Store"
           }
         }
       }
@@ -15958,6 +17146,12 @@
             "state" : "translated",
             "value" : "ขอบคุณที่สนับสนุนแอปนี้ ☕️"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn đã ủng hộ ứng dụng ☕️"
+          }
         }
       }
     },
@@ -16034,6 +17228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ยางพย็อง, แทจอน, ยังแจ, \nซังบง, ปูซาน, กวังมย็อง, \nช็อนัน, อุยจองบู, คงเซ, \nซงโด, เซจง, ฮานัม, \nคิมแฮ, โคช็อก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
         }
       }
@@ -16116,6 +17316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở cửa"
           }
         }
       }
@@ -16200,6 +17406,12 @@
             "state" : "translated",
             "value" : "เปิดอยู่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang mở cửa"
+          }
         }
       }
     },
@@ -16276,6 +17488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้เปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay mở cửa"
           }
         }
       }
@@ -16360,6 +17578,12 @@
             "state" : "translated",
             "value" : "วันนี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay"
+          }
         }
       }
     },
@@ -16436,6 +17660,12 @@
             "state" : "translated",
             "value" : "วันนี้ %@ ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay %@ đóng cửa"
+          }
         }
       }
     },
@@ -16511,6 +17741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้ไปได้ไหม?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay đi được không?"
           }
         }
       }
@@ -16595,6 +17831,12 @@
             "state" : "translated",
             "value" : "วันนี้ทุกร้านที่เลือกเปิดทำการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay tất cả cửa hàng đã chọn đều mở cửa."
+          }
         }
       }
     },
@@ -16678,6 +17920,12 @@
             "state" : "translated",
             "value" : "วันนี้ทุกร้านที่เลือกปิดทำการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay tất cả cửa hàng đã chọn đều đóng cửa."
+          }
         }
       }
     },
@@ -16756,6 +18004,12 @@
             "state" : "translated",
             "value" : "แชร์สถานะของวันนี้และวันปิดที่กำลังจะมาถึง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ tình trạng hôm nay và các ngày đóng cửa sắp tới"
+          }
         }
       }
     },
@@ -16833,6 +18087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้เปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay mở cửa"
           }
         }
       }
@@ -16919,6 +18179,12 @@
             "state" : "translated",
             "value" : "วันนี้ปิดเฉพาะบางร้าน: %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay chỉ một số cửa hàng đóng cửa: %@."
+          }
         }
       }
     },
@@ -16996,6 +18262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้เราช่วยให้คุณไม่ต้องเสียเที่ยว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay chúng tôi đã giúp bạn khỏi đi uổng công"
           }
         }
       }
@@ -17082,6 +18354,12 @@
             "state" : "translated",
             "value" : "วันนี้ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay đóng cửa"
+          }
         }
       }
     },
@@ -17160,6 +18438,12 @@
             "state" : "translated",
             "value" : "วันนี้ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay đóng cửa"
+          }
         }
       }
     },
@@ -17235,6 +18519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้เราช่วยให้คุณไม่ต้องเสียเที่ยวอีกแล้ว\nเรายังจำกำลังใจอันแสนใจดีของคุณได้เสมอ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay chúng tôi lại giúp bạn khỏi đi uổng công.\nChúng tôi luôn ghi nhớ sự ủng hộ hào phóng của bạn."
           }
         }
       }
@@ -17318,6 +18608,12 @@
             "state" : "translated",
             "value" : "เสร็จสิ้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xong"
+          }
         }
       }
     },
@@ -17395,6 +18691,12 @@
             "state" : "translated",
             "value" : "ลบรายการที่เสร็จแล้ว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa các mục đã hoàn thành"
+          }
         }
       }
     },
@@ -17471,6 +18773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อุลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
           }
         }
       }
@@ -17555,6 +18863,12 @@
             "state" : "translated",
             "value" : "Costco อุลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -17636,6 +18950,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อุลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
           }
         }
       }
@@ -17719,6 +19039,12 @@
             "state" : "translated",
             "value" : "อุลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -17801,6 +19127,12 @@
             "state" : "translated",
             "value" : "อุลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -17877,6 +19209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รายเดือน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hằng tháng"
           }
         }
       }
@@ -17955,6 +19293,12 @@
             "state" : "translated",
             "value" : "ต้องได้รับอนุญาตการเข้าถึงตำแหน่ง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần quyền vị trí"
+          }
         }
       }
     },
@@ -18032,6 +19376,12 @@
             "state" : "translated",
             "value" : "ฟีเจอร์ที่ใช้ตำแหน่ง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính năng dùng vị trí"
+          }
         }
       }
     },
@@ -18107,6 +19457,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สนับสนุนเรา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ủng hộ chúng tôi"
           }
         }
       }
@@ -18189,6 +19545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อา."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CN"
           }
         }
       }
@@ -18275,6 +19637,12 @@
             "state" : "translated",
             "value" : "สัปดาห์นี้ %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần này: %@"
+          }
         }
       }
     },
@@ -18351,6 +19719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สัปดาห์นี้ %@ ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần này %@ đóng cửa"
           }
         }
       }
@@ -18434,6 +19808,12 @@
             "state" : "translated",
             "value" : "วันอาทิตย์นี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chủ nhật này"
+          }
         }
       }
     },
@@ -18515,6 +19895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันอาทิตย์นี้ %@ ร้านเปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chủ nhật này %@, cửa hàng mở cửa"
           }
         }
       }
@@ -18598,6 +19984,12 @@
             "state" : "translated",
             "value" : "วันอาทิตย์นี้ %@ ร้านปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chủ nhật này %@, cửa hàng đóng cửa"
+          }
         }
       }
     },
@@ -18675,6 +20067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เดือนก่อนหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tháng trước"
           }
         }
       }
@@ -18754,6 +20152,12 @@
             "state" : "translated",
             "value" : "แชร์ไปยังสตอรี่ Instagram"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ lên Story Instagram"
+          }
         }
       }
     },
@@ -18832,6 +20236,12 @@
             "state" : "translated",
             "value" : "ต้องติดตั้ง Instagram ไว้จึงจะแชร์ไปยังสตอรี่ได้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần cài Instagram để chia sẻ lên Story."
+          }
         }
       }
     },
@@ -18909,6 +20319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่พบ Instagram"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy Instagram"
           }
         }
       }
@@ -18989,6 +20405,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -19075,6 +20497,12 @@
             "state" : "translated",
             "value" : "ทั่วไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông thường"
+          }
         }
       }
     },
@@ -19151,6 +20579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านทั่วไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng thông thường"
           }
         }
       }
@@ -19229,6 +20663,12 @@
             "state" : "translated",
             "value" : "เปิดบางร้าน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Một số mở cửa"
+          }
         }
       }
     },
@@ -19304,6 +20744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บางร้านปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Một số cửa hàng đóng cửa"
           }
         }
       }
@@ -19381,6 +20827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อิลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
           }
         }
       }
@@ -19465,6 +20917,12 @@
             "state" : "translated",
             "value" : "Costco อิลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -19547,6 +21005,12 @@
             "state" : "translated",
             "value" : "อิลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -19628,6 +21092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อิลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
           }
         }
       }
@@ -19712,6 +21182,12 @@
             "state" : "translated",
             "value" : "ซื้อครั้งเดียว ไม่มีการสมัครสมาชิก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mua một lần. Không đăng ký định kỳ."
+          }
         }
       }
     },
@@ -19787,6 +21263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มรูปแบบวันปิดของร้านโปรดของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm lịch đóng cửa của các cửa hàng yêu thích"
           }
         }
       }
@@ -19865,6 +21347,12 @@
             "state" : "translated",
             "value" : "เตือนซื้อของ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhắc đi mua sắm"
+          }
         }
       }
     },
@@ -19942,6 +21430,12 @@
             "state" : "translated",
             "value" : "รายการซื้อของ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách mua sắm"
+          }
         }
       }
     },
@@ -20018,6 +21512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แจ้งเตือนซื้อของ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo mua sắm"
           }
         }
       }
@@ -20102,6 +21602,12 @@
             "state" : "translated",
             "value" : "เตือนซื้อของ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhắc đi mua sắm"
+          }
         }
       }
     },
@@ -20180,6 +21686,12 @@
             "state" : "translated",
             "value" : "แจ้งเตือนวันเหมาะซื้อของ (วันก่อนหน้า)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhắc ngày thích hợp đi chợ (hôm trước)"
+          }
         }
       }
     },
@@ -20257,6 +21769,12 @@
             "state" : "translated",
             "value" : "เพิ่มรายการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm mục"
+          }
         }
       }
     },
@@ -20333,6 +21851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มรายการลงในรายการซื้อของของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm mục vào danh sách mua sắm"
           }
         }
       }
@@ -20415,6 +21939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บันทึก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu"
           }
         }
       }
@@ -20499,6 +22029,12 @@
             "state" : "translated",
             "value" : "เกือบทุกภูมิภาคทั่วประเทศ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hầu hết các vùng trên cả nước"
+          }
         }
       }
     },
@@ -20581,6 +22117,12 @@
             "state" : "translated",
             "value" : "วันหยุดราชการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày lễ quốc gia"
+          }
         }
       }
     },
@@ -20662,6 +22204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันหยุดราชการ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày lễ quốc gia"
           }
         }
       }
@@ -20746,6 +22294,12 @@
             "state" : "translated",
             "value" : "ปิดทั้งวัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng cửa cả ngày"
+          }
         }
       }
     },
@@ -20823,6 +22377,12 @@
             "state" : "translated",
             "value" : "ลบทั้งหมด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tất cả"
+          }
         }
       }
     },
@@ -20899,6 +22459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ดูทั้งหมด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem tất cả"
           }
         }
       }
@@ -20978,6 +22544,12 @@
             "state" : "translated",
             "value" : "ขอบคุณมาก ๆ เลย!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn rất nhiều!"
+          }
         }
       }
     },
@@ -21054,6 +22626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เกี่ยวกับ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới thiệu"
           }
         }
       }
@@ -21137,6 +22715,12 @@
             "state" : "translated",
             "value" : "เชจู"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -21213,6 +22797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รายสัปดาห์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo tuần"
           }
         }
       }
@@ -21291,6 +22881,12 @@
             "state" : "translated",
             "value" : "ร้านใกล้เคียง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng gần đây"
+          }
         }
       }
     },
@@ -21367,6 +22963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ตรวจหาร้านใกล้เคียงอัตโนมัติ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động phát hiện cửa hàng gần đây"
           }
         }
       }
@@ -21445,6 +23047,12 @@
             "state" : "translated",
             "value" : "หากต้องการค้นหาร้านใกล้เคียง\nโปรดอนุญาตการเข้าถึงตำแหน่งที่\nการตั้งค่า > DontGoMart > ตำแหน่ง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để tìm cửa hàng gần đây,\nhãy cho phép truy cập vị trí tại\nCài đặt > DontGoMart > Vị trí."
+          }
         }
       }
     },
@@ -21522,6 +23130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บอกคนรอบตัวเรื่องร้านปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cho những người quanh bạn biết về ngày đóng cửa"
           }
         }
       }
@@ -21606,6 +23220,12 @@
             "state" : "translated",
             "value" : "ปักหมุดร้านโปรดไว้ด้านบน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghim các cửa hàng yêu thích lên trên cùng"
+          }
         }
       }
     },
@@ -21689,6 +23309,12 @@
             "state" : "translated",
             "value" : "รายการโปรด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yêu thích"
+          }
         }
       }
     },
@@ -21767,6 +23393,12 @@
             "state" : "translated",
             "value" : "กำลังใจที่ได้รับจนถึงตอนนี้ ☕️ ×%lld"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự ủng hộ nhận được đến nay ☕️ ×%lld"
+          }
         }
       }
     },
@@ -21843,6 +23475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ความคืบหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiến độ"
           }
         }
       }
@@ -21921,6 +23559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันปิดแรก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày đóng cửa đầu tiên"
           }
         }
       }
@@ -22004,6 +23648,12 @@
             "state" : "translated",
             "value" : "เพิ่ม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm"
+          }
         }
       }
     },
@@ -22079,6 +23729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เลือกร้านที่จะติดตาม (เลือกได้หลายร้าน)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn các cửa hàng cần theo dõi (chọn nhiều)"
           }
         }
       }
@@ -22162,6 +23818,12 @@
             "state" : "translated",
             "value" : "ยกเลิก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
+          }
         }
       }
     },
@@ -22240,6 +23902,12 @@
             "state" : "translated",
             "value" : "กำลังเตรียมการ์ด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang chuẩn bị thẻ"
+          }
         }
       }
     },
@@ -22317,6 +23985,12 @@
             "state" : "translated",
             "value" : "ดูปฏิทิน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem lịch"
+          }
         }
       }
     },
@@ -22393,6 +24067,12 @@
             "state" : "translated",
             "value" : "เพิ่มร้านที่กำหนดเอง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm cửa hàng tùy chỉnh"
+          }
         }
       }
     },
@@ -22468,6 +24148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แก้ไขร้านที่กำหนดเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sửa cửa hàng tùy chỉnh"
           }
         }
       }
@@ -22551,6 +24237,12 @@
             "state" : "translated",
             "value" : "ร้านที่กำหนดเอง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng tùy chỉnh"
+          }
         }
       }
     },
@@ -22633,6 +24325,12 @@
             "state" : "translated",
             "value" : "ร้านที่กำหนดเอง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng tùy chỉnh"
+          }
         }
       }
     },
@@ -22714,6 +24412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านที่กำหนดเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng tùy chỉnh"
           }
         }
       }
@@ -22798,6 +24502,12 @@
             "state" : "translated",
             "value" : "เพิ่มรูปแบบวันปิดของร้านคุณเอง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm lịch đóng cửa của cửa hàng riêng của bạn"
+          }
         }
       }
     },
@@ -22880,6 +24590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านที่กำหนดเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng tùy chỉnh"
           }
         }
       }
@@ -22964,6 +24680,12 @@
             "state" : "translated",
             "value" : "เพิ่มรูปแบบวันปิดของร้านคุณเอง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm lịch đóng cửa của cửa hàng riêng của bạn"
+          }
         }
       }
     },
@@ -23041,6 +24763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เลี้ยงกาแฟ %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mời cà phê %@"
           }
         }
       }
@@ -23120,6 +24848,12 @@
             "state" : "translated",
             "value" : "เลี้ยงกาแฟ, %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mời cà phê, %@"
+          }
         }
       }
     },
@@ -23193,6 +24927,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -23279,6 +25019,12 @@
             "state" : "translated",
             "value" : "Costco แทกู"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -23360,6 +25106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco แทกู"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
           }
         }
       }
@@ -23443,6 +25195,12 @@
             "state" : "translated",
             "value" : "Costco แทกู"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -23524,6 +25282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco อุลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
           }
         }
       }
@@ -23607,6 +25371,12 @@
             "state" : "translated",
             "value" : "Costco อุลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -23688,6 +25458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco อุลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
           }
         }
       }
@@ -23771,6 +25547,12 @@
             "state" : "translated",
             "value" : "Costco ทั่วไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco thông thường"
+          }
         }
       }
     },
@@ -23852,6 +25634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco ทั่วไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco thông thường"
           }
         }
       }
@@ -23935,6 +25723,12 @@
             "state" : "translated",
             "value" : "Costco ทั่วไป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco thông thường"
+          }
         }
       }
     },
@@ -24016,6 +25810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco อิลซาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
           }
         }
       }
@@ -24099,6 +25899,12 @@
             "state" : "translated",
             "value" : "Costco อิลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -24181,6 +25987,12 @@
             "state" : "translated",
             "value" : "Costco อิลซาน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -24259,6 +26071,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -24345,6 +26163,12 @@
             "state" : "translated",
             "value" : "ทั่วไป – ยางพย็อง, แทจอน, ยังแจ, \nซังบง, ปูซาน, กวังมย็อง, \nช็อนัน, อุยจองบู, คงเซ, \nซงโด, เซจง, ฮานัม, \nคิมแฮ, โคช็อก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông thường – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -24421,6 +26245,12 @@
             "state" : "translated",
             "value" : "เพิ่มรูปแบบ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm lịch"
+          }
         }
       }
     },
@@ -24496,6 +26326,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โปรดเพิ่มรูปแบบ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng thêm lịch"
           }
         }
       }
@@ -24580,6 +26416,12 @@
             "state" : "translated",
             "value" : "ปลดล็อกการติดตามหลายร้าน การแจ้งเตือน และอื่น ๆ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở khóa theo dõi nhiều cửa hàng, thông báo và nhiều hơn nữa"
+          }
         }
       }
     },
@@ -24658,6 +26500,12 @@
             "state" : "translated",
             "value" : "ให้กำลังใจอีกครั้ง ☕️"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ủng hộ thêm một lần nữa ☕️"
+          }
         }
       }
     },
@@ -24735,6 +26583,12 @@
             "state" : "translated",
             "value" : "สาขาที่เลือก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chi nhánh đã chọn"
+          }
         }
       }
     },
@@ -24811,6 +26665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ค้นหาและแนะนำร้านใกล้เคียงตามตำแหน่งปัจจุบันของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm và gợi ý các cửa hàng gần bạn dựa trên vị trí hiện tại."
           }
         }
       }
@@ -24890,6 +26750,12 @@
             "state" : "translated",
             "value" : "ตกลง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
         }
       }
     },
@@ -24967,6 +26833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โหลดรายการตัวเลือกทิปใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tải lại danh sách các mức ủng hộ"
           }
         }
       }
@@ -25046,6 +26918,12 @@
             "state" : "translated",
             "value" : "กำลังโหลดตัวเลือกทิป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang tải các mức ủng hộ"
+          }
         }
       }
     },
@@ -25123,6 +27001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โหลดตัวเลือกทิปไม่สำเร็จ ลองอีกครั้ง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tải được các mức ủng hộ. Thử lại"
           }
         }
       }
@@ -25202,6 +27086,12 @@
             "state" : "translated",
             "value" : "เกี่ยวกับทิป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về tiền ủng hộ"
+          }
         }
       }
     },
@@ -25279,6 +27169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปิดการ์ดทิป จะไม่แสดงอีกเป็นเวลา 30 วัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng thẻ ủng hộ. Thẻ sẽ không hiện lại trong 30 ngày"
           }
         }
       }
@@ -25358,6 +27254,12 @@
             "state" : "translated",
             "value" : "ผู้สนับสนุน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Người ủng hộ"
+          }
         }
       }
     },
@@ -25435,6 +27337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ผู้สนับสนุน ตอนนี้เลี้ยงกาแฟแล้ว %lld แก้ว ขอบคุณที่สนับสนุนแอปนี้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Người ủng hộ. Đến nay đã mời %lld ly cà phê. Cảm ơn bạn đã ủng hộ ứng dụng."
           }
         }
       }
@@ -25514,6 +27422,12 @@
             "state" : "translated",
             "value" : "เรายังไม่ลืมคุณนะ!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi chưa quên bạn!"
+          }
         }
       }
     },
@@ -25591,6 +27505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ขอบคุณสำหรับกำลังใจ ตอนนี้คุณส่งกาแฟมาแล้ว %lld แก้ว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn đã ủng hộ. Đến nay bạn đã gửi %lld ly cà phê."
           }
         }
       }
@@ -25677,6 +27597,12 @@
             "state" : "translated",
             "value" : "ขอบคุณมากสำหรับกำลังใจ มีความหมายกับเรามาก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn rất nhiều vì đã ủng hộ. Điều đó rất có ý nghĩa với chúng tôi."
+          }
         }
       }
     },
@@ -25754,6 +27680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ขอบคุณมากสำหรับกำลังใจ ตอนนี้คุณส่งกาแฟมาแล้ว %lld แก้ว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn bạn rất nhiều vì đã ủng hộ. Đến nay bạn đã gửi %lld ly cà phê."
           }
         }
       }
@@ -25839,6 +27771,12 @@
             "state" : "translated",
             "value" : "ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng cửa"
+          }
         }
       }
     },
@@ -25914,6 +27852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รูปแบบวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểu đóng cửa"
           }
         }
       }
@@ -25993,6 +27937,12 @@
             "state" : "translated",
             "value" : "แจ้งข่าวร้านปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo tin đóng cửa"
+          }
         }
       }
     },
@@ -26070,6 +28020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แชร์รูปการ์ดแจ้งวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ hình thẻ thông báo đóng cửa"
           }
         }
       }
@@ -26155,6 +28111,12 @@
             "state" : "translated",
             "value" : "การ์ดแจ้งวันปิด %1$@ %2$@, %3$@ ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thẻ thông báo đóng cửa. %1$@ %2$@, %3$@ đóng cửa"
+          }
         }
       }
     },
@@ -26233,6 +28195,12 @@
             "state" : "translated",
             "value" : "สร้างและแชร์การ์ดแจ้งวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo và chia sẻ thẻ thông báo đóng cửa"
+          }
         }
       }
     },
@@ -26310,6 +28278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แชร์การ์ดแจ้งวันปิดไปยังสตอรี่ Instagram"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ thẻ thông báo đóng cửa lên Story Instagram"
           }
         }
       }
@@ -26396,6 +28370,12 @@
             "state" : "translated",
             "value" : "ไม่มีวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không đóng cửa"
+          }
         }
       }
     },
@@ -26471,6 +28451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รูปแบบวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lịch đóng cửa"
           }
         }
       }
@@ -26554,6 +28540,12 @@
             "state" : "translated",
             "value" : "ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng cửa"
+          }
         }
       }
     },
@@ -26630,6 +28622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันนี้ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay đóng cửa"
           }
         }
       }
@@ -26709,6 +28707,12 @@
             "state" : "translated",
             "value" : "ไม่มีร้านที่ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có cửa hàng nào đóng cửa"
+          }
         }
       }
     },
@@ -26785,6 +28789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày đóng cửa"
           }
         }
       }
@@ -26863,6 +28873,12 @@
             "state" : "translated",
             "value" : "จะส่งการแจ้งเตือนก่อนวันปิด 3 วันและ 1 วัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo sẽ được gửi trước ngày đóng cửa 3 ngày và 1 ngày."
+          }
         }
       }
     },
@@ -26938,6 +28954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แจ้งเตือนวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo ngày đóng cửa"
           }
         }
       }
@@ -27016,6 +29038,12 @@
             "state" : "translated",
             "value" : "โปรดเปิดการแจ้งเตือนวันปิดก่อน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng bật thông báo ngày đóng cửa trước."
+          }
         }
       }
     },
@@ -27091,6 +29119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "หากต้องการรับการแจ้งเตือนวันปิด โปรดอนุญาตการแจ้งเตือนในการตั้งค่า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để nhận thông báo ngày đóng cửa, hãy cho phép thông báo trong Cài đặt."
           }
         }
       }
@@ -27168,6 +29202,12 @@
             "state" : "translated",
             "value" : "ไม่มีข้อมูลวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có thông tin ngày đóng cửa"
+          }
         }
       }
     },
@@ -27244,6 +29284,12 @@
             "state" : "translated",
             "value" : "ไม่มีข้อมูลวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có thông tin về ngày đóng cửa"
+          }
         }
       }
     },
@@ -27319,6 +29365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปฏิทินวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lịch ngày đóng cửa"
           }
         }
       }
@@ -27398,6 +29450,12 @@
             "state" : "translated",
             "value" : "ดูปฏิทินวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem lịch ngày đóng cửa"
+          }
         }
       }
     },
@@ -27475,6 +29533,12 @@
             "state" : "translated",
             "value" : "เลือกวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn ngày đóng cửa"
+          }
         }
       }
     },
@@ -27551,6 +29615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่ใช่วันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không phải ngày đóng cửa"
           }
         }
       }
@@ -27634,6 +29704,12 @@
             "state" : "translated",
             "value" : "พบ “%@” ตรวจสอบแล้วแตะเพิ่ม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã tìm thấy “%@”. Kiểm tra rồi chạm Thêm."
+          }
         }
       }
     },
@@ -27715,6 +29791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่มีร้านปิดใน 7 วันข้างหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có nơi nào đóng cửa trong 7 ngày tới"
           }
         }
       }
@@ -27798,6 +29880,12 @@
             "state" : "translated",
             "value" : "ร้านอาหารของคุณไม่มีร้านไหนปิดใน 7 วันข้างหน้า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có nhà hàng quen nào nghỉ trong 7 ngày tới"
+          }
         }
       }
     },
@@ -27879,6 +29967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สัปดาห์นี้ไม่มีวันปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuần này không có ngày đóng cửa"
           }
         }
       }
@@ -27962,6 +30056,12 @@
             "state" : "translated",
             "value" : "จัดการ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quản lý"
+          }
         }
       }
     },
@@ -28043,6 +30143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มได้จากลิงก์แชร์ของ Naver Maps หรือภาพหน้าจอ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có thể thêm từ liên kết chia sẻ của Naver Maps hoặc ảnh chụp màn hình"
           }
         }
       }
@@ -28126,6 +30232,12 @@
             "state" : "translated",
             "value" : "ร้านอาหารของฉัน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhà hàng của tôi"
+          }
         }
       }
     },
@@ -28207,6 +30319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านอาหาร · 7 วัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhà hàng · 7 ngày"
           }
         }
       }
@@ -28290,6 +30408,12 @@
             "state" : "translated",
             "value" : "เพิ่มหรือแก้ไขร้านอาหารของคุณ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm hoặc sửa nhà hàng của bạn"
+          }
         }
       }
     },
@@ -28371,6 +30495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ยังไม่มีร้านอาหาร เพิ่มได้ในแอป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chưa có nhà hàng nào. Hãy thêm trong ứng dụng."
           }
         }
       }
@@ -28454,6 +30584,12 @@
             "state" : "translated",
             "value" : "หรือวางลิงก์หรือข้อความที่แชร์มาที่นี่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoặc dán liên kết hay đoạn văn bản đã chia sẻ vào đây"
+          }
         }
       }
     },
@@ -28535,6 +30671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "นำเข้าด่วน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập nhanh"
           }
         }
       }
@@ -28618,6 +30760,12 @@
             "state" : "translated",
             "value" : "อ่านข้อมูลวันหยุดจากรูปบนอุปกรณ์ของคุณ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đọc thông tin ngày nghỉ từ ảnh ngay trên thiết bị của bạn"
+          }
         }
       }
     },
@@ -28699,6 +30847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โหลดรูปไม่สำเร็จ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tải được ảnh"
           }
         }
       }
@@ -28782,6 +30936,12 @@
             "state" : "translated",
             "value" : "ไม่มีร้านอาหารที่ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có nhà hàng nào nghỉ"
+          }
         }
       }
     },
@@ -28863,6 +31023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ภาพหน้าจอ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ảnh chụp màn hình"
           }
         }
       }
@@ -28946,6 +31112,12 @@
             "state" : "translated",
             "value" : "ลบร้านอาหาร"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa nhà hàng"
+          }
         }
       }
     },
@@ -29027,6 +31199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ชื่อร้านอาหาร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tên nhà hàng"
           }
         }
       }
@@ -29110,6 +31288,12 @@
             "state" : "translated",
             "value" : "ร้านอาหาร"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhà hàng"
+          }
         }
       }
     },
@@ -29191,6 +31375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มร้านอาหาร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm nhà hàng"
           }
         }
       }
@@ -29274,6 +31464,12 @@
             "state" : "translated",
             "value" : "เพิ่มร้านอาหาร"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm nhà hàng"
+          }
         }
       }
     },
@@ -29355,6 +31551,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แก้ไขร้านอาหาร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sửa nhà hàng"
           }
         }
       }
@@ -29438,6 +31640,12 @@
             "state" : "translated",
             "value" : "ร้านอาหารของคุณไม่มีร้านไหนปิดใน 7 วันข้างหน้า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có nhà hàng quen nào nghỉ trong 7 ngày tới."
+          }
         }
       }
     },
@@ -29519,6 +31727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แสดงจุดในวันที่ร้านอาหารของคุณปิดภายใน 7 วันข้างหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị chấm vào những ngày nhà hàng của bạn nghỉ trong 7 ngày tới."
           }
         }
       }
@@ -29602,6 +31816,12 @@
             "state" : "translated",
             "value" : "เพิ่มร้านอาหารในแอป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy thêm nhà hàng trong ứng dụng"
+          }
         }
       }
     },
@@ -29683,6 +31903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ระบุว่าเปิดทุกวัน ไม่มีวันหยุดประจำ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Được ghi là mở cửa mỗi ngày — không có ngày nghỉ cố định."
           }
         }
       }
@@ -29766,6 +31992,12 @@
             "state" : "translated",
             "value" : "เพิ่มวิดเจ็ต “ร้านอาหาร · 7 วัน” ลงในหน้าจอโฮมเพื่อดูได้โดยไม่ต้องเปิดแอป"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm widget “Nhà hàng · 7 ngày” vào Màn hình chính để xem mà không cần mở ứng dụng."
+          }
         }
       }
     },
@@ -29847,6 +32079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "นำเข้าตามนี้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập nội dung này"
           }
         }
       }
@@ -29930,6 +32168,12 @@
             "state" : "translated",
             "value" : "ได้ชื่อร้านแล้วแต่ไม่มีข้อมูลวันหยุด ลองใช้ภาพหน้าจอตารางเวลาเปิด หรือเลือกวันด้านล่าง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã lấy được tên nhưng không có thông tin ngày nghỉ. Hãy thử ảnh chụp màn hình giờ mở cửa hoặc chọn ngày bên dưới."
+          }
         }
       }
     },
@@ -30011,6 +32255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใส่วันหยุดประจำของร้านอาหารที่คุณไปบ่อย แล้วเราจะทำจุดบอกวันที่ปิดภายใน 7 วันข้างหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập ngày nghỉ cố định của các nhà hàng bạn hay đến, chúng tôi sẽ đánh dấu chấm những ngày nghỉ trong 7 ngày tới."
           }
         }
       }
@@ -30094,6 +32344,12 @@
             "state" : "translated",
             "value" : "สีของจุด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu chấm"
+          }
         }
       }
     },
@@ -30175,6 +32431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วันหยุดประจำ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày nghỉ cố định"
           }
         }
       }
@@ -30258,6 +32520,12 @@
             "state" : "translated",
             "value" : "ที่อยู่ (ไม่บังคับ)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Địa chỉ (không bắt buộc)"
+          }
         }
       }
     },
@@ -30339,6 +32607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ในแอปแผนที่ แตะ “แชร์ → คัดลอก” ที่ร้านอาหาร แล้ววางที่นี่ หรือเลือกภาพหน้าจอหน้าข้อมูลร้าน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trong ứng dụng bản đồ, chạm Chia sẻ → Sao chép ở nhà hàng rồi dán vào đây, hoặc chọn ảnh chụp màn hình trang thông tin của nhà hàng."
           }
         }
       }
@@ -30422,6 +32696,12 @@
             "state" : "translated",
             "value" : "เปิดในแผนที่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở trong Bản đồ"
+          }
         }
       }
     },
@@ -30503,6 +32783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มวันหยุดด้วยตัวเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự thêm ngày nghỉ"
           }
         }
       }
@@ -30586,6 +32872,12 @@
             "state" : "translated",
             "value" : "โปรดเพิ่มวันหยุด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng thêm ngày nghỉ"
+          }
         }
       }
     },
@@ -30667,6 +32959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แก้ไขข้อมูลวันหยุด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sửa thông tin ngày nghỉ"
           }
         }
       }
@@ -30750,6 +33048,12 @@
             "state" : "translated",
             "value" : "กำลังค้นหาข้อมูลวันหยุด…"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang tìm thông tin ngày nghỉ…"
+          }
         }
       }
     },
@@ -30831,6 +33135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่พบข้อมูลวันหยุด โปรดเลือกวันด้านล่าง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy thông tin ngày nghỉ. Hãy chọn ngày bên dưới."
           }
         }
       }
@@ -30914,6 +33224,12 @@
             "state" : "translated",
             "value" : "โพสต์ 4:5"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bài đăng 4:5"
+          }
         }
       }
     },
@@ -30995,6 +33311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สตอรี่ 9:16"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
           }
         }
       }
@@ -31078,6 +33400,12 @@
             "state" : "translated",
             "value" : "ปฏิทินวันปิด 2 สัปดาห์"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lịch đóng cửa 2 tuần"
+          }
         }
       }
     },
@@ -31159,6 +33487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เร็ว ๆ นี้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sắp tới"
           }
         }
       }
@@ -31242,6 +33576,12 @@
             "state" : "translated",
             "value" : "ค้นหา “DontGoMart” ใน App Store"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm “DontGoMart” trên App Store"
+          }
         }
       }
     },
@@ -31323,6 +33663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ร้านปิดแล้ว!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cửa hàng đóng cửa rồi!"
           }
         }
       }
@@ -31406,6 +33752,12 @@
             "state" : "translated",
             "value" : "รูปภาพ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ảnh"
+          }
         }
       }
     },
@@ -31487,6 +33839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วิดีโอ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
           }
         }
       }
@@ -31570,6 +33928,12 @@
             "state" : "translated",
             "value" : "รูปแบบ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Định dạng"
+          }
         }
       }
     },
@@ -31651,6 +34015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สื่อ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phương tiện"
           }
         }
       }
@@ -31734,6 +34104,12 @@
             "state" : "translated",
             "value" : "การ์ดแจ้งวันปิด %1$@ %2$@, %3$@ ปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thẻ thông báo đóng cửa. %1$@ %2$@, %3$@ đóng cửa"
+          }
         }
       }
     },
@@ -31815,6 +34191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กำลังสร้างวิดีโอ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang tạo video"
           }
         }
       }
@@ -31898,6 +34280,12 @@
             "state" : "translated",
             "value" : "โพสต์ลง Instagram"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng lên Instagram"
+          }
         }
       }
     },
@@ -31979,6 +34367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เลือก Instagram ในรายการแชร์ เพื่อโพสต์เป็นโพสต์ สตอรี่ หรือรีล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn Instagram trong danh sách chia sẻ để đăng dưới dạng bài đăng, story hoặc reel"
           }
         }
       }
@@ -32062,6 +34456,12 @@
             "state" : "translated",
             "value" : "เปิดตัวแก้ไขสตอรี่ของ Instagram โดยตรง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở thẳng trình soạn Story của Instagram"
+          }
         }
       }
     },
@@ -32143,6 +34543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แชร์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ"
           }
         }
       }
@@ -32226,6 +34632,12 @@
             "state" : "translated",
             "value" : "แชร์วิดีโอแจ้งวันปิด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ video thông báo đóng cửa"
+          }
         }
       }
     },
@@ -32307,6 +34719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สร้างวิดีโอไม่สำเร็จ โปรดแชร์เป็นรูปภาพแทน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tạo được video. Hãy chia sẻ ảnh thay thế."
           }
         }
       }
@@ -32390,6 +34808,12 @@
             "state" : "translated",
             "value" : "เปิดอีกครั้ง %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở cửa lại %@"
+          }
         }
       }
     },
@@ -32471,6 +34895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซื้อของให้เสร็จภายใน %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy mua sắm xong trước %@"
           }
         }
       }

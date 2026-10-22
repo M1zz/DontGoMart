@@ -84,6 +84,12 @@ O feedback agora pergunta o que houve
 ดูคำตอบต่อความคิดเห็นในการตั้งค่า
 ส่งความคิดเห็นแล้วจะถามว่าเกิดอะไรขึ้น
 
+### App Store (vi)
+
+Widget giờ hiển thị tên DontGoMart
+Xem phản hồi cho góp ý trong Cài đặt
+Gửi góp ý sẽ hỏi chuyện gì đã xảy ra
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
