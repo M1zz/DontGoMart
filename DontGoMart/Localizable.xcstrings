@@ -66,6 +66,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — faites vos courses à l’avance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — fai la spesa per tempo"
+          }
         }
       }
     },
@@ -122,6 +128,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -186,6 +198,12 @@
             "state" : "translated",
             "value" : "Supprimer %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina %@"
+          }
         }
       }
     },
@@ -245,6 +263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica %@"
           }
         }
       }
@@ -311,6 +335,12 @@
             "state" : "translated",
             "value" : "%@ fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chiuso"
+          }
         }
       }
     },
@@ -370,6 +400,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ fermé Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chiuso Pro"
           }
         }
       }
@@ -436,6 +472,12 @@
             "state" : "translated",
             "value" : "Fermé : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso: %@"
+          }
         }
       }
     },
@@ -496,6 +538,12 @@
             "state" : "translated",
             "value" : "Fermé le %@ !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso il %@!"
+          }
         }
       }
     },
@@ -552,6 +600,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -621,6 +675,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -677,6 +737,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -742,6 +808,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -801,6 +873,12 @@
             "state" : "translated",
             "value" : "%lld éléments"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld elementi"
+          }
         }
       }
     },
@@ -855,6 +933,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -916,6 +1000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld h"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld:00"
           }
         }
       }
@@ -984,6 +1074,12 @@
             "state" : "translated",
             "value" : "Jours restants : %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni rimasti: %lld"
+          }
         }
       }
     },
@@ -1044,6 +1140,12 @@
             "state" : "translated",
             "value" : "%lld j avant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld g prima"
+          }
         }
       }
     },
@@ -1101,6 +1203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semaine %lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settimana %lld"
           }
         }
       }
@@ -1165,6 +1273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dans %lld sem., %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tra %lld sett., %@"
           }
         }
       }
@@ -1232,6 +1346,12 @@
             "state" : "translated",
             "value" : "Semaine %lld, %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settimana %lld, %@"
+          }
         }
       }
     },
@@ -1296,6 +1416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus pratique avec VoiceOver"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più comodo con VoiceOver"
           }
         }
       }
@@ -1362,6 +1488,12 @@
             "state" : "translated",
             "value" : "Siri et Raccourcis"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri e Comandi rapidi"
+          }
         }
       }
     },
@@ -1427,6 +1559,12 @@
             "state" : "translated",
             "value" : "Demandez à Siri ou lancez un raccourci pour savoir tout de suite si votre magasin est fermé."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiedi a Siri o usa un comando rapido per sapere subito se il tuo negozio è chiuso."
+          }
         }
       }
     },
@@ -1483,6 +1621,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -1547,6 +1691,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -1603,6 +1753,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -1667,6 +1823,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -1717,6 +1879,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -1786,6 +1954,12 @@
             "state" : "translated",
             "value" : "Même avec la plus grande taille de texte, les écrans se réorganisent proprement, sans rien tronquer."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche con la dimensione del testo più grande, le schermate si riorganizzano bene senza tagliare nulla."
+          }
         }
       }
     },
@@ -1850,6 +2024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Effacez en une fois, dans l’app, vos magasins choisis et ajoutés ainsi que vos réglages d’alertes."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella in un colpo solo, dall’app, i negozi scelti e aggiunti e le impostazioni degli avvisi."
           }
         }
       }
@@ -1916,6 +2096,12 @@
             "state" : "translated",
             "value" : "Annonce"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso"
+          }
         }
       }
     },
@@ -1974,6 +2160,12 @@
             "state" : "translated",
             "value" : "Ouvre l’annonce complète"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre l’avviso completo"
+          }
         }
       }
     },
@@ -2031,6 +2223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer l’annonce"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi avviso"
           }
         }
       }
@@ -2097,6 +2295,12 @@
             "state" : "translated",
             "value" : "Mode sombre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità scura"
+          }
         }
       }
     },
@@ -2161,6 +2365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Repérez les jours de fermeture même avec « Contraste accru » ou si vous distinguez mal les couleurs."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riconosci i giorni di chiusura anche con «Aumenta contrasto» attivo o se fai fatica a distinguere i colori."
           }
         }
       }
@@ -2227,6 +2437,12 @@
             "state" : "translated",
             "value" : "Plus de langues"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più lingue"
+          }
         }
       }
     },
@@ -2291,6 +2507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez l’app dans davantage de langues."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa l’app in più lingue."
           }
         }
       }
@@ -2357,6 +2579,12 @@
             "state" : "translated",
             "value" : "Enregistrez dans un fichier les magasins que vous avez ajoutés et retrouvez-les à tout moment."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva in un file i negozi che hai aggiunto e recuperali quando vuoi."
+          }
         }
       }
     },
@@ -2422,6 +2650,12 @@
             "state" : "translated",
             "value" : "Effacer toutes mes données"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutti i miei dati"
+          }
         }
       }
     },
@@ -2485,6 +2719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alerte de fermeture de magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso di chiusura del negozio"
           }
         }
       }
@@ -2551,6 +2791,12 @@
             "state" : "translated",
             "value" : "Le texte et les boutons restent nets sur un écran sombre."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testo e pulsanti restano nitidi anche su schermo scuro."
+          }
         }
       }
     },
@@ -2615,6 +2861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Des couleurs plus lisibles"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori più facili da vedere"
           }
         }
       }
@@ -2681,6 +2933,12 @@
             "state" : "translated",
             "value" : "Sur iPad, choisissez des magasins et feuilletez le calendrier avec le seul clavier."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su iPad scegli i negozi e sfoglia il calendario usando solo la tastiera."
+          }
         }
       }
     },
@@ -2745,6 +3003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouveautés après les mises à jour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novità dopo gli aggiornamenti"
           }
         }
       }
@@ -2811,6 +3075,12 @@
             "state" : "translated",
             "value" : "À la première ouverture après une mise à jour, découvrez les nouveautés."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prima volta che apri l’app dopo un aggiornamento, scopri le novità."
+          }
         }
       }
     },
@@ -2875,6 +3145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Astuces d’utilisation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consigli utili"
           }
         }
       }
@@ -2941,6 +3217,12 @@
             "state" : "translated",
             "value" : "Recevez au bon moment un petit conseil sur les fonctions utiles."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti segnaliamo con discrezione le funzioni utili al momento giusto."
+          }
         }
       }
     },
@@ -3005,6 +3287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sauvegarde et export"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup ed esportazione"
           }
         }
       }
@@ -3071,6 +3359,12 @@
             "state" : "translated",
             "value" : "Si l’app se ferme pendant l’ajout d’un magasin, ce que vous avez saisi est conservé."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se l’app si chiude mentre aggiungi un negozio, quello che avevi scritto resta."
+          }
         }
       }
     },
@@ -3128,6 +3422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld autres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e altri %lld"
           }
         }
       }
@@ -3194,6 +3494,12 @@
             "state" : "translated",
             "value" : "VoiceOver lit les jours de fermeture et les boutons en entier et dans le bon ordre."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver legge giorni di chiusura e pulsanti per intero e nell’ordine giusto."
+          }
         }
       }
     },
@@ -3258,6 +3564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prêt pour les grands textes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronta per il testo grande"
           }
         }
       }
@@ -3324,6 +3636,12 @@
             "state" : "translated",
             "value" : "Commandes au clavier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controllo da tastiera"
+          }
         }
       }
     },
@@ -3388,6 +3706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guide de démarrage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guida rapida"
           }
         }
       }
@@ -3454,6 +3778,12 @@
             "state" : "translated",
             "value" : "À la première ouverture, découvrez en quelques étapes ce que l’app peut faire."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prima volta che apri l’app, scopri in pochi passaggi cosa puoi fare."
+          }
         }
       }
     },
@@ -3518,6 +3848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conçue pour l’iPhone pliable"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pensata per iPhone pieghevole"
           }
         }
       }
@@ -3584,6 +3920,12 @@
             "state" : "translated",
             "value" : "Sur un iPhone pliable, utilisez le grand écran en deux volets côte à côte."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su un iPhone pieghevole, usa lo schermo largo come due pannelli affiancati."
+          }
         }
       }
     },
@@ -3649,6 +3991,12 @@
             "state" : "translated",
             "value" : "Reprenez où vous en étiez"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riprendi da dove avevi lasciato"
+          }
         }
       }
     },
@@ -3699,6 +4047,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -3757,6 +4111,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -3811,6 +4171,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -3861,6 +4227,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -3923,6 +4295,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Alerte « bon jour pour les courses »"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Avviso «buon giorno per la spesa»"
           }
         }
       }
@@ -3987,6 +4365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Bon jour pour les courses"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Buon giorno per la spesa"
           }
         }
       }
@@ -4054,6 +4438,12 @@
             "state" : "translated",
             "value" : "Vous prévient quand un jour de fermeture approche dans la semaine !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti avvisa quando c’è un giorno di chiusura entro una settimana!"
+          }
         }
       }
     },
@@ -4110,6 +4500,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -4180,6 +4576,12 @@
             "state" : "translated",
             "value" : "Widget d’alerte de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget avviso di chiusura"
+          }
         }
       }
     },
@@ -4246,6 +4648,12 @@
             "state" : "translated",
             "value" : "Widget de compte à rebours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget conto alla rovescia chiusura"
+          }
         }
       }
     },
@@ -4302,6 +4710,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -4366,6 +4780,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -4422,6 +4842,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -4486,6 +4912,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -4542,6 +4974,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -4610,6 +5048,12 @@
             "state" : "translated",
             "value" : "%@ est fermé demain. Aujourd’hui, c’est le bon jour pour faire vos courses !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ domani è chiuso. Oggi è un buon giorno per fare la spesa!"
+          }
         }
       }
     },
@@ -4673,6 +5117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ fermera dans %lld jour(s)."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chiuderà tra %lld giorno/i."
           }
         }
       }
@@ -4739,6 +5189,12 @@
             "state" : "translated",
             "value" : "%@ fermera dans %lld jour(s)."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chiuderà tra %lld giorno/i."
+          }
         }
       }
     },
@@ -4803,6 +5259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "N’oubliez pas de faire vos courses avant le prochain jour de fermeture !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non dimenticare di fare la spesa prima del prossimo giorno di chiusura!"
           }
         }
       }
@@ -4869,6 +5331,12 @@
             "state" : "translated",
             "value" : "Gérez aussi les fermetures des magasins de votre quartier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestisci anche le chiusure dei negozi della tua zona"
+          }
         }
       }
     },
@@ -4933,6 +5401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistrez le rythme de fermeture de votre propre magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registra lo schema di chiusura del tuo negozio"
           }
         }
       }
@@ -4999,6 +5473,12 @@
             "state" : "translated",
             "value" : "Vos favoris restent toujours en haut"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I tuoi preferiti sono sempre in alto"
+          }
         }
       }
     },
@@ -5063,6 +5543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajoutez vos magasins préférés aux favoris"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metti tra i preferiti i tuoi negozi"
           }
         }
       }
@@ -5129,6 +5615,12 @@
             "state" : "translated",
             "value" : "Un seul achat pour toutes les fonctions, à vie"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un solo acquisto per tutte le funzioni, per sempre"
+          }
         }
       }
     },
@@ -5193,6 +5685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passer à DontGoMart Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passa a DontGoMart Pro"
           }
         }
       }
@@ -5259,6 +5757,12 @@
             "state" : "translated",
             "value" : "Consultez d’un coup les fermetures de E-Mart, Costco et Homeplus"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla insieme le chiusure di E-Mart, Costco e Homeplus"
+          }
         }
       }
     },
@@ -5323,6 +5827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suivez plusieurs magasins à la fois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segui più negozi insieme"
           }
         }
       }
@@ -5389,6 +5899,12 @@
             "state" : "translated",
             "value" : "Soyez alerté avant les jours de fermeture et ne faites plus de trajet pour rien"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi avvisi prima dei giorni di chiusura e non fare più viaggi a vuoto"
+          }
         }
       }
     },
@@ -5453,6 +5969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne tombez plus jamais sur un magasin fermé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non trovare mai più un negozio chiuso"
           }
         }
       }
@@ -5519,6 +6041,12 @@
             "state" : "translated",
             "value" : "Ajoutez autant d’articles que nécessaire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi tutti gli articoli che ti servono"
+          }
         }
       }
     },
@@ -5583,6 +6111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liste de courses illimitée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista della spesa illimitata"
           }
         }
       }
@@ -5649,6 +6183,12 @@
             "state" : "translated",
             "value" : "☕ Pour le prix d’un café, débloquez tout à vie"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Al prezzo di un caffè, sblocchi tutto per sempre"
+          }
         }
       }
     },
@@ -5713,6 +6253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous serez prévenu %1$lld jours et %2$lld jour avant les jours de fermeture, à %3$@."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riceverai un avviso %1$lld giorni e %2$lld giorno prima dei giorni di chiusura, alle %3$@."
           }
         }
       }
@@ -5780,6 +6326,12 @@
             "state" : "translated",
             "value" : "Indique en vert ou en rouge si votre magasin est ouvert ce dimanche."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra in verde o rosso se il tuo negozio è aperto questa domenica."
+          }
         }
       }
     },
@@ -5843,6 +6395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Affiche les deux prochains jours de fermeture !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra i prossimi due giorni di chiusura!"
           }
         }
       }
@@ -5910,6 +6468,12 @@
             "state" : "translated",
             "value" : "Affiche le nombre de jours avant le prochain jour de fermeture !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra i giorni che mancano al prossimo giorno di chiusura!"
+          }
         }
       }
     },
@@ -5976,6 +6540,12 @@
             "state" : "translated",
             "value" : "Dimanche : ouvert/fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domenica aperto/chiuso"
+          }
         }
       }
     },
@@ -6036,6 +6606,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -6092,6 +6668,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -6162,6 +6744,12 @@
             "state" : "translated",
             "value" : "Widget des deux jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget due giorni di chiusura"
+          }
         }
       }
     },
@@ -6221,6 +6809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferme le message de remerciement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiude il messaggio di ringraziamento"
           }
         }
       }
@@ -6282,6 +6876,12 @@
             "state" : "translated",
             "value" : "Merci !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie!"
+          }
         }
       }
     },
@@ -6342,6 +6942,12 @@
             "state" : "translated",
             "value" : "Offre un café au développeur"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offre un caffè allo sviluppatore"
+          }
         }
       }
     },
@@ -6401,6 +7007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Envoie un pourboire au développeur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invia una mancia allo sviluppatore"
           }
         }
       }
@@ -6467,6 +7079,12 @@
             "state" : "translated",
             "value" : "Une partie de Gyeonggi/Cheongju"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parte di Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -6527,6 +7145,12 @@
             "state" : "translated",
             "value" : "Merci, à bientôt"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie, alla prossima"
+          }
         }
       }
     },
@@ -6585,6 +7209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bientôt fermé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiude presto"
           }
         }
       }
@@ -6645,6 +7275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partager"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi"
           }
         }
       }
@@ -6710,6 +7346,12 @@
             "state" : "translated",
             "value" : "Jour férié"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festività"
+          }
         }
       }
     },
@@ -6767,6 +7409,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurer les achats"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina acquisti"
           }
         }
       }
@@ -6833,6 +7481,12 @@
             "state" : "translated",
             "value" : "Fonction"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzione"
+          }
         }
       }
     },
@@ -6890,6 +7544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mes magasins"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I miei negozi"
           }
         }
       }
@@ -6956,6 +7616,12 @@
             "state" : "translated",
             "value" : "Demain"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domani"
+          }
         }
       }
     },
@@ -7014,6 +7680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Demain, %@ fermé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domani %@ chiuso"
           }
         }
       }
@@ -7082,6 +7754,12 @@
             "state" : "translated",
             "value" : "Fermé demain"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso domani"
+          }
         }
       }
     },
@@ -7139,6 +7817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prochains jours de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimi giorni di chiusura"
           }
         }
       }
@@ -7199,6 +7883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mois suivant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese successivo"
           }
         }
       }
@@ -7267,6 +7957,12 @@
             "state" : "translated",
             "value" : "Semaine prochaine : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossima settimana: %@"
+          }
         }
       }
     },
@@ -7332,6 +8028,12 @@
             "state" : "translated",
             "value" : "Prochain jour de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimo giorno di chiusura"
+          }
         }
       }
     },
@@ -7390,6 +8092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nous vous rappellerons de faire vos courses 2 jours avant le prochain jour de fermeture."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti ricorderemo di fare la spesa 2 giorni prima del prossimo giorno di chiusura."
           }
         }
       }
@@ -7458,6 +8166,12 @@
             "state" : "translated",
             "value" : "Aucune info de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna info sulle chiusure"
+          }
         }
       }
     },
@@ -7517,6 +8231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus tard"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più tardi"
           }
         }
       }
@@ -7583,6 +8303,12 @@
             "state" : "translated",
             "value" : "Suivez plusieurs magasins en même temps"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segui più negozi contemporaneamente"
+          }
         }
       }
     },
@@ -7648,6 +8374,12 @@
             "state" : "translated",
             "value" : "Suivi de plusieurs magasins"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monitoraggio di più negozi"
+          }
         }
       }
     },
@@ -7707,6 +8439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         }
       }
@@ -7768,6 +8506,12 @@
             "state" : "translated",
             "value" : "Ouvre le calendrier pour voir les jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre il calendario per vedere i giorni di chiusura"
+          }
         }
       }
     },
@@ -7823,6 +8567,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -7892,6 +8642,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -7952,6 +8708,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -8020,6 +8782,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -8078,6 +8846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato"
           }
         }
       }
@@ -8143,6 +8917,12 @@
             "state" : "translated",
             "value" : "Supermarché (fermé le mercredi)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (chiuso il mercoledì)"
+          }
         }
       }
     },
@@ -8206,6 +8986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché (fermé le mercredi)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (chiuso il mercoledì)"
           }
         }
       }
@@ -8271,6 +9057,12 @@
             "state" : "translated",
             "value" : "Supermarché (mer.)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (mer)"
+          }
         }
       }
     },
@@ -8334,6 +9126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché (Ulsan, mixte)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Ulsan, misto)"
           }
         }
       }
@@ -8399,6 +9197,12 @@
             "state" : "translated",
             "value" : "Supermarché (Ulsan)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Ulsan)"
+          }
         }
       }
     },
@@ -8462,6 +9266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché (Ulsan)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Ulsan)"
           }
         }
       }
@@ -8527,6 +9337,12 @@
             "state" : "translated",
             "value" : "Supermarché (fermé le dimanche)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (chiuso la domenica)"
+          }
         }
       }
     },
@@ -8590,6 +9406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché (fermé le dimanche)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (chiuso la domenica)"
           }
         }
       }
@@ -8655,6 +9477,12 @@
             "state" : "translated",
             "value" : "Supermarché (dim.)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (dom)"
+          }
         }
       }
     },
@@ -8718,6 +9546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarché (Jeju)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Jeju)"
           }
         }
       }
@@ -8783,6 +9617,12 @@
             "state" : "translated",
             "value" : "Supermarché (Jeju)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Jeju)"
+          }
         }
       }
     },
@@ -8847,6 +9687,12 @@
             "state" : "translated",
             "value" : "Supermarché (Jeju)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermercato (Jeju)"
+          }
         }
       }
     },
@@ -8907,6 +9753,12 @@
             "state" : "translated",
             "value" : "Si l’app vous a aidé, encouragez-nous avec un café."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se l’app ti è stata utile, incoraggiaci con un caffè."
+          }
         }
       }
     },
@@ -8963,6 +9815,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -9028,6 +9886,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -9088,6 +9952,12 @@
             "state" : "translated",
             "value" : "Touchez deux fois pour fermer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca due volte per chiudere"
+          }
         }
       }
     },
@@ -9147,6 +10017,12 @@
             "state" : "translated",
             "value" : "Magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio"
+          }
         }
       }
     },
@@ -9205,6 +10081,12 @@
             "state" : "translated",
             "value" : "Avant d’aller faire vos courses, consultez les fermetures sur DontGoMart ✅"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima di fare la spesa, controlla le chiusure su DontGoMart ✅"
+          }
         }
       }
     },
@@ -9262,6 +10144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couleur du magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colore del negozio"
           }
         }
       }
@@ -9327,6 +10215,12 @@
             "state" : "translated",
             "value" : "Choisir un magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli un negozio"
+          }
         }
       }
     },
@@ -9384,6 +10278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom du magasin (p. ex. Homeplus Gangnam)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome del negozio (es. Homeplus Gangnam)"
           }
         }
       }
@@ -9443,6 +10343,12 @@
             "state" : "translated",
             "value" : "Infos du magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info sul negozio"
+          }
         }
       }
     },
@@ -9500,6 +10406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter un magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi negozio"
           }
         }
       }
@@ -9559,6 +10471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasin fermé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio chiuso"
           }
         }
       }
@@ -9625,6 +10543,12 @@
             "state" : "translated",
             "value" : "Avis de jour de fermeture du magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso di giorno di chiusura del negozio"
+          }
         }
       }
     },
@@ -9684,6 +10608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alerte de fermeture de magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso di chiusura del negozio"
           }
         }
       }
@@ -9750,6 +10680,12 @@
             "state" : "translated",
             "value" : "Magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio"
+          }
         }
       }
     },
@@ -9814,6 +10750,12 @@
             "state" : "translated",
             "value" : "Magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio"
+          }
         }
       }
     },
@@ -9873,6 +10815,12 @@
             "state" : "translated",
             "value" : "Choisir un magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli negozio"
+          }
         }
       }
     },
@@ -9930,6 +10878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvre le choix du magasin et les réglages des alertes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre la scelta del negozio e le impostazioni degli avvisi"
           }
         }
       }
@@ -9996,6 +10950,12 @@
             "state" : "translated",
             "value" : "Varie selon le magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varia da negozio a negozio"
+          }
         }
       }
     },
@@ -10054,6 +11014,12 @@
             "state" : "translated",
             "value" : "Choisir un magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli negozio"
+          }
         }
       }
     },
@@ -10111,6 +11077,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veuillez choisir un magasin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli un negozio"
           }
         }
       }
@@ -10177,6 +11149,12 @@
             "state" : "translated",
             "value" : "Aucun magasin sélectionné. Choisissez-en un dans Réglages."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun negozio selezionato. Sceglilo nelle Impostazioni."
+          }
         }
       }
     },
@@ -10237,6 +11215,12 @@
             "state" : "translated",
             "value" : "Chaque %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni %@"
+          }
         }
       }
     },
@@ -10296,6 +11280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toutes les fonctions restent gratuites. Un pourboire est un simple encouragement, et vous pouvez en envoyer quand vous voulez."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutte le funzioni restano gratuite. La mancia è solo un incoraggiamento e puoi mandarne quante vuoi."
           }
         }
       }
@@ -10364,6 +11354,12 @@
             "state" : "translated",
             "value" : "Après-demain"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopodomani"
+          }
         }
       }
     },
@@ -10428,6 +11424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune limite d’articles dans votre liste de courses"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun limite di articoli nella tua lista della spesa"
           }
         }
       }
@@ -10494,6 +11496,12 @@
             "state" : "translated",
             "value" : "Liste de courses illimitée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista della spesa illimitata"
+          }
         }
       }
     },
@@ -10559,6 +11567,12 @@
             "state" : "translated",
             "value" : "Passez à Pro pour ajouter des articles sans limite"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passa a Pro per aggiungere articoli senza limiti"
+          }
         }
       }
     },
@@ -10617,6 +11631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione"
           }
         }
       }
@@ -10678,6 +11698,12 @@
             "state" : "translated",
             "value" : "Grâce à votre soutien, nous pouvons continuer à faire vivre l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie al tuo sostegno possiamo continuare a far crescere l’app."
+          }
         }
       }
     },
@@ -10738,6 +11764,12 @@
             "state" : "translated",
             "value" : "Votre soutien compte beaucoup. (☕️ ×%lld jusqu’ici)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo sostegno conta molto. (finora ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -10792,6 +11824,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -10854,6 +11892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Actions rapides"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Azioni rapide"
           }
         }
       }
@@ -10922,6 +11966,12 @@
             "state" : "translated",
             "value" : "Non sélectionné"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non selezionato"
+          }
         }
       }
     },
@@ -10980,6 +12030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Effacer la sélection"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella selezione"
           }
         }
       }
@@ -11045,6 +12101,12 @@
             "state" : "translated",
             "value" : "Aucun magasin sélectionné. Ouvrez l’app pour en choisir un."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun negozio selezionato. Apri l’app per sceglierne uno."
+          }
         }
       }
     },
@@ -11102,6 +12164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rythme sélectionné"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schema selezionato"
           }
         }
       }
@@ -11170,6 +12238,12 @@
             "state" : "translated",
             "value" : "Sélectionné"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selezionato"
+          }
         }
       }
     },
@@ -11229,6 +12303,12 @@
             "state" : "translated",
             "value" : "Tous les magasins sélectionnés sont ouverts"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutti i negozi selezionati sono aperti"
+          }
         }
       }
     },
@@ -11287,6 +12367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tous les magasins sélectionnés sont fermés"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutti i negozi selezionati sono chiusi"
           }
         }
       }
@@ -11352,6 +12438,12 @@
             "state" : "translated",
             "value" : "Jours fériés de Seollal et Chuseok"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festività di Seollal e Chuseok"
+          }
         }
       }
     },
@@ -11409,6 +12501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réglages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
           }
         }
       }
@@ -11470,6 +12568,12 @@
             "state" : "translated",
             "value" : "Choisissez dans Réglages les magasins à suivre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli nelle Impostazioni i negozi da seguire"
+          }
         }
       }
     },
@@ -11529,6 +12633,12 @@
             "state" : "translated",
             "value" : "Choisissez dans Réglages les magasins à suivre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli nelle Impostazioni i negozi da seguire"
+          }
         }
       }
     },
@@ -11587,6 +12697,12 @@
             "state" : "translated",
             "value" : "Aller aux Réglages"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai alle Impostazioni"
+          }
         }
       }
     },
@@ -11644,6 +12760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heure"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora"
           }
         }
       }
@@ -11710,6 +12832,12 @@
             "state" : "translated",
             "value" : "Inconnu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sconosciuto"
+          }
         }
       }
     },
@@ -11767,6 +12895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Autorisation de notifications requise"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve l’autorizzazione per le notifiche"
           }
         }
       }
@@ -11827,6 +12961,12 @@
             "state" : "translated",
             "value" : "Réglages des notifications"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni notifiche"
+          }
         }
       }
     },
@@ -11884,6 +13024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heure de la notification"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orario della notifica"
           }
         }
       }
@@ -11944,6 +13090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Me prévenir"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avvisami"
           }
         }
       }
@@ -12010,6 +13162,12 @@
             "state" : "translated",
             "value" : "Soyez prévenu avant les jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi avvisi prima dei giorni di chiusura"
+          }
         }
       }
     },
@@ -12074,6 +13232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifications"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifiche"
           }
         }
       }
@@ -12140,6 +13304,12 @@
             "state" : "translated",
             "value" : "Soyez prévenu avant les jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi avvisi prima dei giorni di chiusura"
+          }
         }
       }
     },
@@ -12197,6 +13367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifications"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifiche"
           }
         }
       }
@@ -12257,6 +13433,12 @@
             "state" : "translated",
             "value" : "Laisser un avis sur l’App Store"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia una recensione sull’App Store"
+          }
         }
       }
     },
@@ -12315,6 +13497,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voir sur l’App Store"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi su App Store"
           }
         }
       }
@@ -12376,6 +13564,12 @@
             "state" : "translated",
             "value" : "Merci de soutenir l’app ☕️"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie per il tuo sostegno all’app ☕️"
+          }
         }
       }
     },
@@ -12431,6 +13625,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -12499,6 +13699,12 @@
             "state" : "translated",
             "value" : "Ouvert"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto"
+          }
         }
       }
     },
@@ -12564,6 +13770,12 @@
             "state" : "translated",
             "value" : "Ouvert"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto"
+          }
         }
       }
     },
@@ -12622,6 +13834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvert aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto oggi"
           }
         }
       }
@@ -12688,6 +13906,12 @@
             "state" : "translated",
             "value" : "Aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi"
+          }
         }
       }
     },
@@ -12746,6 +13970,12 @@
             "state" : "translated",
             "value" : "%@ fermé aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chiuso oggi"
+          }
         }
       }
     },
@@ -12803,6 +14033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puis-je y aller aujourd’hui ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posso andare oggi?"
           }
         }
       }
@@ -12869,6 +14105,12 @@
             "state" : "translated",
             "value" : "Tous les magasins sélectionnés sont ouverts aujourd’hui."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi tutti i negozi selezionati sono aperti."
+          }
         }
       }
     },
@@ -12934,6 +14176,12 @@
             "state" : "translated",
             "value" : "Tous les magasins sélectionnés sont fermés aujourd’hui."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi tutti i negozi selezionati sono chiusi."
+          }
         }
       }
     },
@@ -12994,6 +14242,12 @@
             "state" : "translated",
             "value" : "Partage l’état du jour et les prochains jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condivide lo stato di oggi e i prossimi giorni di chiusura"
+          }
         }
       }
     },
@@ -13053,6 +14307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvert aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto oggi"
           }
         }
       }
@@ -13121,6 +14381,12 @@
             "state" : "translated",
             "value" : "Aujourd’hui, seuls certains magasins sont fermés : %@."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi sono chiusi solo alcuni negozi: %@."
+          }
         }
       }
     },
@@ -13180,6 +14446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nous vous avons évité un trajet pour rien aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi ti abbiamo evitato un viaggio a vuoto"
           }
         }
       }
@@ -13248,6 +14520,12 @@
             "state" : "translated",
             "value" : "Fermé aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso oggi"
+          }
         }
       }
     },
@@ -13308,6 +14586,12 @@
             "state" : "translated",
             "value" : "Fermé aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso oggi"
+          }
         }
       }
     },
@@ -13365,6 +14649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nous vous avons encore évité un trajet pour rien aujourd’hui.\nNous n’oublions pas votre généreux soutien."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi ti abbiamo evitato un altro viaggio a vuoto.\nRicordiamo sempre il tuo generoso sostegno."
           }
         }
       }
@@ -13430,6 +14720,12 @@
             "state" : "translated",
             "value" : "Terminé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
+          }
         }
       }
     },
@@ -13489,6 +14785,12 @@
             "state" : "translated",
             "value" : "Supprimer les éléments terminés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina elementi completati"
+          }
         }
       }
     },
@@ -13544,6 +14846,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -13613,6 +14921,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -13673,6 +14987,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -13741,6 +15061,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -13805,6 +15131,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -13863,6 +15195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensile"
           }
         }
       }
@@ -13923,6 +15261,12 @@
             "state" : "translated",
             "value" : "Autorisation de localisation requise"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve l’autorizzazione alla posizione"
+          }
         }
       }
     },
@@ -13982,6 +15326,12 @@
             "state" : "translated",
             "value" : "Fonctions de localisation"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzioni di posizione"
+          }
         }
       }
     },
@@ -14039,6 +15389,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nous soutenir"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostienici"
           }
         }
       }
@@ -14103,6 +15459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dim."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dom"
           }
         }
       }
@@ -14171,6 +15533,12 @@
             "state" : "translated",
             "value" : "Cette semaine : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa settimana: %@"
+          }
         }
       }
     },
@@ -14229,6 +15597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette semaine, %@ fermé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa settimana %@ chiuso"
           }
         }
       }
@@ -14294,6 +15668,12 @@
             "state" : "translated",
             "value" : "Ce dimanche"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa domenica"
+          }
         }
       }
     },
@@ -14357,6 +15737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce dimanche %@, magasin ouvert"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa domenica %@, negozio aperto"
           }
         }
       }
@@ -14422,6 +15808,12 @@
             "state" : "translated",
             "value" : "Ce dimanche %@, magasin fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa domenica %@, negozio chiuso"
+          }
         }
       }
     },
@@ -14481,6 +15873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mois précédent"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese precedente"
           }
         }
       }
@@ -14542,6 +15940,12 @@
             "state" : "translated",
             "value" : "Partager dans les stories Instagram"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi nelle storie di Instagram"
+          }
         }
       }
     },
@@ -14602,6 +16006,12 @@
             "state" : "translated",
             "value" : "Instagram doit être installé pour partager dans les stories."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per condividere nelle storie serve avere Instagram installato."
+          }
         }
       }
     },
@@ -14661,6 +16071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram introuvable"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram non trovato"
           }
         }
       }
@@ -14723,6 +16139,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -14791,6 +16213,12 @@
             "state" : "translated",
             "value" : "Standard"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normale"
+          }
         }
       }
     },
@@ -14849,6 +16277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasins standard"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozi normali"
           }
         }
       }
@@ -14909,6 +16343,12 @@
             "state" : "translated",
             "value" : "Certains ouverts"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alcuni aperti"
+          }
         }
       }
     },
@@ -14967,6 +16407,12 @@
             "state" : "translated",
             "value" : "Certains magasins sont fermés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alcuni negozi sono chiusi"
+          }
         }
       }
     },
@@ -15022,6 +16468,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -15091,6 +16543,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -15155,6 +16613,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -15215,6 +16679,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -15284,6 +16754,12 @@
             "state" : "translated",
             "value" : "Achat unique. Sans abonnement."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acquisto una tantum. Nessun abbonamento."
+          }
         }
       }
     },
@@ -15341,6 +16817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajoutez les rythmes de fermeture de vos magasins préférés"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi gli schemi di chiusura dei tuoi negozi preferiti"
           }
         }
       }
@@ -15401,6 +16883,12 @@
             "state" : "translated",
             "value" : "Rappel de courses"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria spesa"
+          }
         }
       }
     },
@@ -15460,6 +16948,12 @@
             "state" : "translated",
             "value" : "Liste de courses"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista della spesa"
+          }
         }
       }
     },
@@ -15518,6 +17012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alerte de courses"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso spesa"
           }
         }
       }
@@ -15584,6 +17084,12 @@
             "state" : "translated",
             "value" : "Rappel de courses"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria spesa"
+          }
         }
       }
     },
@@ -15644,6 +17150,12 @@
             "state" : "translated",
             "value" : "Alerte « bon jour pour les courses » (la veille)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso «buon giorno per la spesa» (il giorno prima)"
+          }
         }
       }
     },
@@ -15703,6 +17215,12 @@
             "state" : "translated",
             "value" : "Ajouter un article"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi articolo"
+          }
         }
       }
     },
@@ -15761,6 +17279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajoutez des articles à votre liste de courses"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi articoli alla lista della spesa"
           }
         }
       }
@@ -15825,6 +17349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistrer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
           }
         }
       }
@@ -15891,6 +17421,12 @@
             "state" : "translated",
             "value" : "La plupart des régions du pays"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quasi tutte le regioni del Paese"
+          }
         }
       }
     },
@@ -15955,6 +17491,12 @@
             "state" : "translated",
             "value" : "Jour férié national"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festività nazionale"
+          }
         }
       }
     },
@@ -16018,6 +17560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jour férié national"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festività nazionale"
           }
         }
       }
@@ -16084,6 +17632,12 @@
             "state" : "translated",
             "value" : "Fermé toute la journée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso tutto il giorno"
+          }
         }
       }
     },
@@ -16143,6 +17697,12 @@
             "state" : "translated",
             "value" : "Tout supprimer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutto"
+          }
         }
       }
     },
@@ -16201,6 +17761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tout afficher"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra tutto"
           }
         }
       }
@@ -16262,6 +17828,12 @@
             "state" : "translated",
             "value" : "Un immense merci !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie mille!"
+          }
         }
       }
     },
@@ -16320,6 +17892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À propos"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
           }
         }
       }
@@ -16385,6 +17963,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -16443,6 +18027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settimanale"
           }
         }
       }
@@ -16503,6 +18093,12 @@
             "state" : "translated",
             "value" : "Magasins à proximité"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozi vicini"
+          }
         }
       }
     },
@@ -16561,6 +18157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Détecter automatiquement les magasins à proximité"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rileva automaticamente i negozi vicini"
           }
         }
       }
@@ -16621,6 +18223,12 @@
             "state" : "translated",
             "value" : "Pour trouver les magasins à proximité,\nautorisez l’accès à la localisation dans\nRéglages > DontGoMart > Localisation."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per trovare i negozi vicini,\nconsenti l’accesso alla posizione in\nImpostazioni > DontGoMart > Posizione."
+          }
         }
       }
     },
@@ -16680,6 +18288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prévenez votre entourage des fermetures"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avvisa chi ti sta intorno delle chiusure"
           }
         }
       }
@@ -16746,6 +18360,12 @@
             "state" : "translated",
             "value" : "Épinglez vos magasins préférés en haut"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fissa in alto i tuoi negozi preferiti"
+          }
         }
       }
     },
@@ -16811,6 +18431,12 @@
             "state" : "translated",
             "value" : "Favoris"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferiti"
+          }
         }
       }
     },
@@ -16871,6 +18497,12 @@
             "state" : "translated",
             "value" : "Soutien reçu jusqu’ici ☕️ ×%lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostegno ricevuto finora ☕️ ×%lld"
+          }
         }
       }
     },
@@ -16929,6 +18561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Progression"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanzamento"
           }
         }
       }
@@ -16989,6 +18627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Premier jour de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primo giorno di chiusura"
           }
         }
       }
@@ -17054,6 +18698,12 @@
             "state" : "translated",
             "value" : "Ajouter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi"
+          }
         }
       }
     },
@@ -17111,6 +18761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisissez les magasins à suivre (plusieurs possibles)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli i negozi da seguire (anche più di uno)"
           }
         }
       }
@@ -17176,6 +18832,12 @@
             "state" : "translated",
             "value" : "Annuler"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
         }
       }
     },
@@ -17236,6 +18898,12 @@
             "state" : "translated",
             "value" : "Préparation de la carte"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparazione della scheda"
+          }
         }
       }
     },
@@ -17295,6 +18963,12 @@
             "state" : "translated",
             "value" : "Voir le calendrier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi calendario"
+          }
         }
       }
     },
@@ -17353,6 +19027,12 @@
             "state" : "translated",
             "value" : "Ajouter un magasin personnalisé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi negozio personalizzato"
+          }
         }
       }
     },
@@ -17410,6 +19090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier le magasin personnalisé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica negozio personalizzato"
           }
         }
       }
@@ -17475,6 +19161,12 @@
             "state" : "translated",
             "value" : "Magasin personnalisé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio personalizzato"
+          }
         }
       }
     },
@@ -17539,6 +19231,12 @@
             "state" : "translated",
             "value" : "Magasin personnalisé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio personalizzato"
+          }
         }
       }
     },
@@ -17602,6 +19300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasin personnalisé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio personalizzato"
           }
         }
       }
@@ -17668,6 +19372,12 @@
             "state" : "translated",
             "value" : "Ajoutez les rythmes de fermeture de votre propre magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi gli schemi di chiusura del tuo negozio"
+          }
         }
       }
     },
@@ -17732,6 +19442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasin personnalisé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio personalizzato"
           }
         }
       }
@@ -17798,6 +19514,12 @@
             "state" : "translated",
             "value" : "Ajoutez les rythmes de fermeture de votre propre magasin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi gli schemi di chiusura del tuo negozio"
+          }
         }
       }
     },
@@ -17857,6 +19579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Offrir un café %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offri un caffè %@"
           }
         }
       }
@@ -17918,6 +19646,12 @@
             "state" : "translated",
             "value" : "Offrir un café, %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offri un caffè, %@"
+          }
         }
       }
     },
@@ -17973,6 +19707,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -18041,6 +19781,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -18101,6 +19847,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
@@ -18169,6 +19921,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -18229,6 +19987,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -18297,6 +20061,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -18357,6 +20127,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -18425,6 +20201,12 @@
             "state" : "translated",
             "value" : "Costco standard"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normale"
+          }
         }
       }
     },
@@ -18488,6 +20270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco standard"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normale"
           }
         }
       }
@@ -18553,6 +20341,12 @@
             "state" : "translated",
             "value" : "Costco standard"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco normale"
+          }
         }
       }
     },
@@ -18613,6 +20407,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -18681,6 +20481,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -18741,6 +20547,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -18809,6 +20621,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -18873,6 +20691,12 @@
             "state" : "translated",
             "value" : "Standard – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normali – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -18931,6 +20755,12 @@
             "state" : "translated",
             "value" : "Ajouter un rythme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi schema"
+          }
         }
       }
     },
@@ -18988,6 +20818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veuillez ajouter un rythme"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi uno schema"
           }
         }
       }
@@ -19054,6 +20890,12 @@
             "state" : "translated",
             "value" : "Débloquez le suivi de plusieurs magasins, les alertes et plus encore"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca il monitoraggio di più negozi, gli avvisi e altro"
+          }
         }
       }
     },
@@ -19114,6 +20956,12 @@
             "state" : "translated",
             "value" : "Nous soutenir encore une fois ☕️"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostienici ancora una volta ☕️"
+          }
         }
       }
     },
@@ -19172,6 +21020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasin sélectionné"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filiale selezionata"
           }
         }
       }
@@ -19232,6 +21086,12 @@
             "state" : "translated",
             "value" : "Trouve et recommande les magasins proches de votre position actuelle."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trova e consiglia i negozi vicini in base alla tua posizione attuale."
+          }
         }
       }
     },
@@ -19288,6 +21148,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -19352,6 +21218,12 @@
             "state" : "translated",
             "value" : "Recharge la liste des pourboires"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricarica l’elenco delle opzioni di mancia"
+          }
         }
       }
     },
@@ -19411,6 +21283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chargement des pourboires"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caricamento delle opzioni di mancia"
           }
         }
       }
@@ -19472,6 +21350,12 @@
             "state" : "translated",
             "value" : "Impossible de charger les pourboires. Réessayer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile caricare le opzioni di mancia. Riprova"
+          }
         }
       }
     },
@@ -19531,6 +21415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À propos des pourboires"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sulle mance"
           }
         }
       }
@@ -19592,6 +21482,12 @@
             "state" : "translated",
             "value" : "Ferme la carte de pourboire. Elle ne réapparaîtra pas avant 30 jours"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiude la scheda della mancia. Non comparirà per 30 giorni"
+          }
         }
       }
     },
@@ -19651,6 +21547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soutien"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostenitore"
           }
         }
       }
@@ -19712,6 +21614,12 @@
             "state" : "translated",
             "value" : "Soutien. %lld cafés jusqu’ici. Merci de soutenir l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostenitore. Finora %lld caffè. Grazie per il sostegno all’app."
+          }
         }
       }
     },
@@ -19772,6 +21680,12 @@
             "state" : "translated",
             "value" : "Nous ne vous avons pas oublié !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ti abbiamo dimenticato!"
+          }
         }
       }
     },
@@ -19831,6 +21745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Merci de votre soutien. Vous avez envoyé %lld cafés jusqu’ici."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie per il tuo sostegno. Finora hai offerto %lld caffè."
           }
         }
       }
@@ -19899,6 +21819,12 @@
             "state" : "translated",
             "value" : "Merci infiniment pour votre soutien. Il compte beaucoup pour nous."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie mille per il tuo sostegno. Per noi significa molto."
+          }
         }
       }
     },
@@ -19958,6 +21884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Merci infiniment pour votre soutien. Vous avez envoyé %lld cafés jusqu’ici."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie mille per il tuo sostegno. Finora hai offerto %lld caffè."
           }
         }
       }
@@ -20025,6 +21957,12 @@
             "state" : "translated",
             "value" : "Fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso"
+          }
         }
       }
     },
@@ -20082,6 +22020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rythme de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schema di chiusura"
           }
         }
       }
@@ -20143,6 +22087,12 @@
             "state" : "translated",
             "value" : "Annoncer une fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi una chiusura"
+          }
         }
       }
     },
@@ -20202,6 +22152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partage l’image de la carte de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condivide l’immagine della scheda di chiusura"
           }
         }
       }
@@ -20269,6 +22225,12 @@
             "state" : "translated",
             "value" : "Carte de fermeture. %1$@ %2$@, %3$@ fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheda di chiusura. %1$@ %2$@, %3$@ chiuso"
+          }
         }
       }
     },
@@ -20329,6 +22291,12 @@
             "state" : "translated",
             "value" : "Crée et partage une carte de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea e condivide una scheda di chiusura"
+          }
         }
       }
     },
@@ -20388,6 +22356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partage la carte de fermeture dans les stories Instagram"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condivide la scheda di chiusura nelle storie di Instagram"
           }
         }
       }
@@ -20456,6 +22430,12 @@
             "state" : "translated",
             "value" : "Aucune fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna chiusura"
+          }
         }
       }
     },
@@ -20513,6 +22493,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rythme de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schema di chiusura"
           }
         }
       }
@@ -20578,6 +22564,12 @@
             "state" : "translated",
             "value" : "Fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso"
+          }
         }
       }
     },
@@ -20636,6 +22628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermé aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso oggi"
           }
         }
       }
@@ -20697,6 +22695,12 @@
             "state" : "translated",
             "value" : "Aucun magasin fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun negozio chiuso"
+          }
         }
       }
     },
@@ -20755,6 +22759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jours de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni di chiusura"
           }
         }
       }
@@ -20815,6 +22825,12 @@
             "state" : "translated",
             "value" : "Des notifications seront envoyées 3 jours et 1 jour avant les jours de fermeture."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le notifiche verranno inviate 3 giorni e 1 giorno prima dei giorni di chiusura."
+          }
         }
       }
     },
@@ -20872,6 +22888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alertes de jours de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avvisi di giorni di chiusura"
           }
         }
       }
@@ -20932,6 +22954,12 @@
             "state" : "translated",
             "value" : "Veuillez d’abord activer les alertes de jours de fermeture."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva prima gli avvisi di giorni di chiusura."
+          }
         }
       }
     },
@@ -20989,6 +23017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour recevoir les alertes de jours de fermeture, autorisez les notifications dans Réglages."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per ricevere gli avvisi di giorni di chiusura, consenti le notifiche nelle Impostazioni."
           }
         }
       }
@@ -21048,6 +23082,12 @@
             "state" : "translated",
             "value" : "Aucune info de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna info sulle chiusure"
+          }
         }
       }
     },
@@ -21106,6 +23146,12 @@
             "state" : "translated",
             "value" : "Aucune information sur les jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna informazione sui giorni di chiusura"
+          }
         }
       }
     },
@@ -21163,6 +23209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Calendrier des fermetures"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendario delle chiusure"
           }
         }
       }
@@ -21224,6 +23276,12 @@
             "state" : "translated",
             "value" : "Voir le calendrier des fermetures"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi il calendario delle chiusure"
+          }
         }
       }
     },
@@ -21283,6 +23341,12 @@
             "state" : "translated",
             "value" : "Choisissez les jours de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli i giorni di chiusura"
+          }
         }
       }
     },
@@ -21341,6 +23405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pas un jour de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non è un giorno di chiusura"
           }
         }
       }
@@ -21406,6 +23476,12 @@
             "state" : "translated",
             "value" : "« %@ » trouvé. Vérifiez et touchez Ajouter."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trovato «%@». Controlla e tocca Aggiungi."
+          }
         }
       }
     },
@@ -21469,6 +23545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune fermeture dans les 7 prochains jours"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna chiusura nei prossimi 7 giorni"
           }
         }
       }
@@ -21534,6 +23616,12 @@
             "state" : "translated",
             "value" : "Aucun de vos restaurants ne ferme dans les 7 prochains jours"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuno dei tuoi ristoranti chiude nei prossimi 7 giorni"
+          }
         }
       }
     },
@@ -21597,6 +23685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune fermeture cette semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna chiusura questa settimana"
           }
         }
       }
@@ -21662,6 +23756,12 @@
             "state" : "translated",
             "value" : "Gérer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestisci"
+          }
         }
       }
     },
@@ -21725,6 +23825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pouvez en ajouter un depuis un lien de partage Naver Maps ou une capture d’écran"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi aggiungerne uno da un link di condivisione di Naver Maps o da uno screenshot"
           }
         }
       }
@@ -21790,6 +23896,12 @@
             "state" : "translated",
             "value" : "Mes restaurants"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I miei ristoranti"
+          }
         }
       }
     },
@@ -21853,6 +23965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurants · 7 jours"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ristoranti · 7 giorni"
           }
         }
       }
@@ -21918,6 +24036,12 @@
             "state" : "translated",
             "value" : "Ajoutez ou modifiez vos restaurants"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi o modifica i tuoi ristoranti"
+          }
         }
       }
     },
@@ -21981,6 +24105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun restaurant pour l’instant. Ajoutez-en dans l’app."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora nessun ristorante. Aggiungili nell’app."
           }
         }
       }
@@ -22046,6 +24176,12 @@
             "state" : "translated",
             "value" : "Ou collez ici un lien ou un texte partagé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppure incolla qui un link o un testo condiviso"
+          }
         }
       }
     },
@@ -22109,6 +24245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Import rapide"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importazione rapida"
           }
         }
       }
@@ -22174,6 +24316,12 @@
             "state" : "translated",
             "value" : "Lit sur votre appareil les infos de fermeture de la photo"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legge sul dispositivo le info di chiusura dalla foto"
+          }
         }
       }
     },
@@ -22237,6 +24385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible de charger la photo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile caricare la foto"
           }
         }
       }
@@ -22302,6 +24456,12 @@
             "state" : "translated",
             "value" : "Aucun restaurant fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun ristorante chiuso"
+          }
         }
       }
     },
@@ -22365,6 +24525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Capture d’écran"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot"
           }
         }
       }
@@ -22430,6 +24596,12 @@
             "state" : "translated",
             "value" : "Supprimer le restaurant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina ristorante"
+          }
         }
       }
     },
@@ -22493,6 +24665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom du restaurant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome del ristorante"
           }
         }
       }
@@ -22558,6 +24736,12 @@
             "state" : "translated",
             "value" : "Restaurant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ristorante"
+          }
         }
       }
     },
@@ -22621,6 +24805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter un restaurant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi un ristorante"
           }
         }
       }
@@ -22686,6 +24876,12 @@
             "state" : "translated",
             "value" : "Ajouter un restaurant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi ristorante"
+          }
         }
       }
     },
@@ -22749,6 +24945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier le restaurant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica ristorante"
           }
         }
       }
@@ -22814,6 +25016,12 @@
             "state" : "translated",
             "value" : "Aucun de vos restaurants ne ferme dans les 7 prochains jours."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuno dei tuoi ristoranti chiude nei prossimi 7 giorni."
+          }
         }
       }
     },
@@ -22877,6 +25085,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Affiche un point les jours, parmi les 7 prochains, où vos restaurants sont fermés."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra un punto nei giorni, tra i prossimi 7, in cui i tuoi ristoranti sono chiusi."
           }
         }
       }
@@ -22942,6 +25156,12 @@
             "state" : "translated",
             "value" : "Ajoutez des restaurants dans l’app"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi i ristoranti nell’app"
+          }
         }
       }
     },
@@ -23005,6 +25225,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indiqué ouvert tous les jours : pas de jour de repos fixe."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Risulta aperto tutti i giorni: nessun giorno di riposo fisso."
           }
         }
       }
@@ -23070,6 +25296,12 @@
             "state" : "translated",
             "value" : "Ajoutez le widget « Restaurants · 7 jours » à l’écran d’accueil pour le voir sans ouvrir l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi il widget «Ristoranti · 7 giorni» alla schermata Home per vederlo senza aprire l’app."
+          }
         }
       }
     },
@@ -23133,6 +25365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importer ceci"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importa questo"
           }
         }
       }
@@ -23198,6 +25436,12 @@
             "state" : "translated",
             "value" : "Le nom a été récupéré, mais pas les infos de fermeture. Essayez une capture d’écran des horaires ou choisissez les jours ci-dessous."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il nome è stato recuperato ma mancano le info di chiusura. Prova con uno screenshot degli orari o scegli i giorni qui sotto."
+          }
         }
       }
     },
@@ -23261,6 +25505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indiquez les jours de repos fixes des restaurants où vous allez et nous marquerons d’un point les jours de fermeture des 7 prochains jours."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci i giorni di riposo fissi dei ristoranti che frequenti e segneremo con un punto i giorni di chiusura dei prossimi 7."
           }
         }
       }
@@ -23326,6 +25576,12 @@
             "state" : "translated",
             "value" : "Couleur du point"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colore del punto"
+          }
         }
       }
     },
@@ -23389,6 +25645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jours de repos fixes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni di riposo fissi"
           }
         }
       }
@@ -23454,6 +25716,12 @@
             "state" : "translated",
             "value" : "Adresse (facultatif)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indirizzo (facoltativo)"
+          }
         }
       }
     },
@@ -23517,6 +25785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dans votre app de cartes, touchez Partager → Copier sur le restaurant puis collez-le ici, ou choisissez une capture de sa page d’infos."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nella tua app di mappe tocca Condividi → Copia sul ristorante e incollalo qui, oppure scegli uno screenshot della sua pagina di info."
           }
         }
       }
@@ -23582,6 +25856,12 @@
             "state" : "translated",
             "value" : "Ouvrir dans Plans"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri in Mappe"
+          }
         }
       }
     },
@@ -23645,6 +25925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter un jour de repos manuellement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi un giorno di riposo a mano"
           }
         }
       }
@@ -23710,6 +25996,12 @@
             "state" : "translated",
             "value" : "Veuillez ajouter un jour de repos"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi un giorno di riposo"
+          }
         }
       }
     },
@@ -23773,6 +26065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier les infos de fermeture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica info di chiusura"
           }
         }
       }
@@ -23838,6 +26136,12 @@
             "state" : "translated",
             "value" : "Recherche des infos de fermeture…"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricerca delle info di chiusura…"
+          }
         }
       }
     },
@@ -23901,6 +26205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Infos de fermeture introuvables. Choisissez les jours ci-dessous."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info di chiusura non trovate. Scegli i giorni qui sotto."
           }
         }
       }
@@ -23966,6 +26276,12 @@
             "state" : "translated",
             "value" : "Publication 4:5"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Post 4:5"
+          }
         }
       }
     },
@@ -24029,6 +26345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Storia 9:16"
           }
         }
       }
@@ -24094,6 +26416,12 @@
             "state" : "translated",
             "value" : "Calendrier de fermetures sur 2 semaines"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendario chiusure di 2 settimane"
+          }
         }
       }
     },
@@ -24157,6 +26485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À venir"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In arrivo"
           }
         }
       }
@@ -24222,6 +26556,12 @@
             "state" : "translated",
             "value" : "Recherchez « DontGoMart » sur l’App Store"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca «DontGoMart» sull’App Store"
+          }
         }
       }
     },
@@ -24285,6 +26625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Magasins fermés !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozi chiusi!"
           }
         }
       }
@@ -24350,6 +26696,12 @@
             "state" : "translated",
             "value" : "Photo"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
         }
       }
     },
@@ -24413,6 +26765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vidéo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
           }
         }
       }
@@ -24478,6 +26836,12 @@
             "state" : "translated",
             "value" : "Format"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formato"
+          }
         }
       }
     },
@@ -24541,6 +26905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Média"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contenuto"
           }
         }
       }
@@ -24606,6 +26976,12 @@
             "state" : "translated",
             "value" : "Carte de fermeture. %1$@ %2$@, %3$@ fermé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheda di chiusura. %1$@ %2$@, %3$@ chiuso"
+          }
         }
       }
     },
@@ -24669,6 +27045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Création de la vidéo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creazione del video"
           }
         }
       }
@@ -24734,6 +27116,12 @@
             "state" : "translated",
             "value" : "Publier sur Instagram"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pubblica su Instagram"
+          }
         }
       }
     },
@@ -24797,6 +27185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisissez Instagram dans la liste de partage pour publier en post, story ou reel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli Instagram nell’elenco di condivisione per pubblicarlo come post, storia o reel"
           }
         }
       }
@@ -24862,6 +27256,12 @@
             "state" : "translated",
             "value" : "Ouvre directement l’éditeur de stories Instagram"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre direttamente l’editor delle storie di Instagram"
+          }
         }
       }
     },
@@ -24925,6 +27325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partager"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi"
           }
         }
       }
@@ -24990,6 +27396,12 @@
             "state" : "translated",
             "value" : "Partage la vidéo de fermeture"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condivide il video di chiusura"
+          }
         }
       }
     },
@@ -25053,6 +27465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible de créer la vidéo. Partagez plutôt la photo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile creare il video. Condividi la foto."
           }
         }
       }
@@ -25118,6 +27536,12 @@
             "state" : "translated",
             "value" : "Rouvre %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riapre %@"
+          }
         }
       }
     },
@@ -25181,6 +27605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Terminez vos courses avant %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finisci la spesa entro %@"
           }
         }
       }

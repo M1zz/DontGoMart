@@ -63,6 +63,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -124,6 +130,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -193,6 +205,12 @@
             "state" : "translated",
             "value" : "La localisation sert à trouver et recommander les magasins à proximité."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La posizione serve per trovare e consigliare i negozi vicini."
+          }
         }
       }
     },
@@ -257,6 +275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nécessaire pour enregistrer dans votre photothèque les photos et vidéos des cartes de fermeture."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve per salvare nella libreria le foto e i video delle schede di chiusura."
           }
         }
       }

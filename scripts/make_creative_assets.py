@@ -24,7 +24,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 PROFILE = tempfile.mkdtemp(prefix="dontgomart-creative-chrome-")
 
 # 앱 언어 코드(raw · marketing 폴더 이름) → App Store Connect 로케일 (--storetext 로 확인한 것)
-STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR"}
+STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -45,6 +45,7 @@ HEADER = {
     "es": ("Días de cierre de tiendas", "Sabe si abre<br>antes de ir"),
     "de": ("Schließtage von Märkten", "Vorher wissen,<br>ob geöffnet ist"),
     "fr": ("Jours de fermeture", "Sachez s’il est ouvert<br>avant de partir"),
+    "it": ("Giorni di chiusura", "Sai se è aperto<br>prima di uscire"),
 }
 
 # 검색 결과: 스크린샷 1장("마트 가기 전, 딱 3초")과 **같은 이야기**. 눈썹글은 그 나라 사람이 검색창에 치는 말.
@@ -59,6 +60,7 @@ SEARCH = {
     "es": ("días de cierre supermercado", "Comprueba<br>antes de ir", "Mira de un vistazo si tu tienda abre hoy"),
     "de": ("Supermarkt Schließtage", "Vorher prüfen,<br>dann losgehen", "Sieh auf einen Blick, ob dein Markt heute offen ist"),
     "fr": ("jours de fermeture supermarché", "Vérifiez<br>avant de partir", "Voyez d’un coup d’œil si votre magasin est ouvert"),
+    "it": ("chiusura supermercato", "Controlla<br>prima di uscire", "Vedi a colpo d’occhio se il tuo negozio è aperto"),
 }
 
 ACCENT = "#F0566A"   # 앱의 분홍(D-Day · 휴무 표시)

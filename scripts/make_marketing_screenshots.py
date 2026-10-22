@@ -94,6 +94,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Ajoutez votre<br>magasin de quartier", "Des rythmes comme les 2e et 4e mardis"),
         ("05-share.png", "dark", "Annoncez une fermeture<br>en une carte", "Prévenez famille et voisins"),
     ],
+    "it": [
+        ("01-main.png", "hero-bleed", "Controlla<br>prima di uscire", "Vedi a colpo d’occhio se il negozio è aperto"),
+        ("02-calendar.png", "left-text", "Le chiusure<br>di questo mese", "Ogni giorno di chiusura, nel calendario"),
+        ("03-marts.png", "text-bottom", "Solo i tuoi negozi", "Supermercati, Costco, chiusure festive"),
+        ("04-pattern.png", "flat-rotate", "Aggiungi il tuo<br>negozio di quartiere", "Schemi come il secondo e il quarto martedì"),
+        ("05-share.png", "dark", "Condividi una chiusura<br>in una scheda", "Avvisa famiglia e vicini"),
+    ],
 }
 
 BASE_CSS = f"""
