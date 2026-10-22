@@ -157,6 +157,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Tambahkan toko<br>di sekitarmu", "Pola seperti Selasa kedua dan keempat"),
         ("05-share.png", "dark", "Kabari hari tutup<br>dengan satu kartu", "Beri tahu keluarga dan tetangga"),
     ],
+    "nb": [
+        ("01-main.png", "hero-bleed", "Sjekk<br>før du drar", "Se med et blikk om butikken har åpent i dag"),
+        ("02-calendar.png", "left-text", "Månedens<br>stengedager", "Alle stengedager rett i kalenderen"),
+        ("03-marts.png", "text-bottom", "Bare butikkene dine", "Supermarkeder, Costco, stengt på helligdager"),
+        ("04-pattern.png", "flat-rotate", "Legg til din<br>lokale butikk", "Mønstre som andre og fjerde tirsdag"),
+        ("05-share.png", "dark", "Del en stenging<br>med ett kort", "Gi familie og naboer beskjed"),
+    ],
 }
 
 BASE_CSS = f"""

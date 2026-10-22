@@ -120,6 +120,12 @@ Widget kini menampilkan nama DontGoMart
 Lihat balasan masukanmu di Pengaturan
 Masukan kini menanyakan apa yang terjadi
 
+### App Store (nb)
+
+Widgeter viser nå navnet DontGoMart
+Se svar på tilbakemeldingen din
+Tilbakemelding spør nå hva som skjedde
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)

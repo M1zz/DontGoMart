@@ -1105,3 +1105,61 @@ https://m1zz.github.io/DontGoMart/id/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/id/
+
+## nb
+
+### 이름
+
+DontGoMart: Stengedager
+
+### 부제
+
+Ingen bortkastede turer
+
+### 키워드
+
+supermarked,Korea,Seoul,åpningstider,søndag,onsdag,helligdager,Chuseok,innkjøp,kalender,widget
+
+### 프로모션 텍스트
+
+Nå kan du også se fridagene til favorittrestaurantene dine. En Naver Maps-lenke eller ett skjermbilde er nok, og appen varsler deg før en stengedag nærmer seg.
+
+### 설명
+
+Sjekk om butikken har åpent før du drar.
+DontGoMart samler de lovpålagte stengedagene for store koreanske supermarkeder og Costco, og varsler deg i god tid når en stengedag nærmer seg.
+
+Se med en gang om du kan dra i dag
+Når du åpner appen, ser du først om den valgte butikken har åpent i dag. Du ser også hvor mange dager det er til neste stengedag, og en liste over kommende stengedager.
+
+Passer for stengedager i ulike områder
+Velg butikker som stenger søndager eller onsdager, eller områder med andre stengedager som Ulsan og Jeju. Hos Costco kan du stille inn vanlige butikker og avdelingene i Daegu, Ilsan og Ulsan hver for seg. Stengedager rundt Seollal (månenyttår) og Chuseok vises også.
+
+Legg til butikker i nabolaget ditt
+Hvis en butikk ikke står i listen, kan du registrere den selv ved å velge hvilken uke og hvilken ukedag den er stengt, for eksempel andre og fjerde søndag.
+
+Fridagene til favorittrestaurantene dine også
+Legg inn de faste fridagene til restaurantene du besøker, så vises dagene de neste 7 dagene når de er stengt, med en prikk. Lim inn lenken du har delt og kopiert fra Naver Maps, eller velg et skjermbilde av restaurantens infoside, så fylles fridagen ut automatisk. Tekst i bilder leses bare på enheten din.
+
+Varsler så du ikke glemmer det
+Velg å få varsel 1, 2, 3 eller 7 dager før stenging, til det tidspunktet som passer deg. Dagen før en stenging minner appen deg på at i dag er en god dag å handle. Når en stengedag er innen 3 dager, vises også et banner øverst i appen.
+
+Widgeter for Hjem-skjermen og låseskjermen
+Med widgetene ser du nærmeste stengedag, de to neste stengedagene med dager igjen, om butikken din har åpent denne søndagen og fridagene til favorittrestaurantene dine de neste 7 dagene. Widgeten for denne ukens søndag og restaurantwidgeten kan også ligge på låseskjermen.
+
+Kalender og deling
+I kalenderen ser du stengedagene for en hel måned. Du kan dele en stengemelding som et kort med to ukers kalender og et handletips, i størrelser for Instagram-innlegg og -stories, eller som en kort video.
+
+Alle funksjoner er gratis. Hvis appen er til nytte, kan du støtte utviklingen med en kaffe.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/nb/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/nb/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/nb/

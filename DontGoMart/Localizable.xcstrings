@@ -120,6 +120,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — belanja lebih awal"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — handle i god tid"
+          }
         }
       }
     },
@@ -230,6 +236,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -348,6 +360,12 @@
             "state" : "translated",
             "value" : "Hapus %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett %@"
+          }
         }
       }
     },
@@ -461,6 +479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger %@"
           }
         }
       }
@@ -581,6 +605,12 @@
             "state" : "translated",
             "value" : "%@ tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ stengt"
+          }
         }
       }
     },
@@ -694,6 +724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ tutup Pro"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ stengt Pro"
           }
         }
       }
@@ -814,6 +850,12 @@
             "state" : "translated",
             "value" : "Tutup: %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt: %@"
+          }
         }
       }
     },
@@ -928,6 +970,12 @@
             "state" : "translated",
             "value" : "Tutup %@!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt %@!"
+          }
         }
       }
     },
@@ -1038,6 +1086,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -1161,6 +1215,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1271,6 +1331,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1390,6 +1456,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1503,6 +1575,12 @@
             "state" : "translated",
             "value" : "%lld item"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld elementer"
+          }
         }
       }
     },
@@ -1615,6 +1693,12 @@
             "state" : "translated",
             "value" : "%lld mnt"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -1726,6 +1810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pukul %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kl. %lld"
           }
         }
       }
@@ -1848,6 +1938,12 @@
             "state" : "translated",
             "value" : "Sisa %lld hari"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dager igjen: %lld"
+          }
         }
       }
     },
@@ -1962,6 +2058,12 @@
             "state" : "translated",
             "value" : "%lld hari sebelumnya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d. før"
+          }
         }
       }
     },
@@ -2073,6 +2175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minggu ke-%lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uke %lld"
           }
         }
       }
@@ -2191,6 +2299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld minggu lagi, %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om %lld uke(r), %@"
           }
         }
       }
@@ -2312,6 +2426,12 @@
             "state" : "translated",
             "value" : "Minggu ke-%lld, %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uke %lld, %@"
+          }
         }
       }
     },
@@ -2430,6 +2550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lebih mudah dengan VoiceOver"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enklere med VoiceOver"
           }
         }
       }
@@ -2550,6 +2676,12 @@
             "state" : "translated",
             "value" : "Siri dan Pintasan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Snarveier"
+          }
         }
       }
     },
@@ -2669,6 +2801,12 @@
             "state" : "translated",
             "value" : "Tanya Siri atau jalankan pintasan untuk langsung tahu apakah tokomu tutup."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spør Siri eller kjør en snarvei, så ser du med en gang om butikken din er stengt."
+          }
         }
       }
     },
@@ -2779,6 +2917,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -2897,6 +3041,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -3007,6 +3157,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -3125,6 +3281,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -3229,6 +3391,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -3352,6 +3520,12 @@
             "state" : "translated",
             "value" : "Bahkan dengan ukuran teks terbesar, tampilan tertata ulang dengan rapi tanpa ada yang terpotong."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv med største tekststørrelse ordner skjermene seg pent uten at noe kuttes."
+          }
         }
       }
     },
@@ -3470,6 +3644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus toko yang dipilih, toko yang ditambahkan, dan pengaturan pengingat sekaligus di dalam aplikasi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett valgte og lagt til butikker og varslingsinnstillinger i appen på én gang."
           }
         }
       }
@@ -3590,6 +3770,12 @@
             "state" : "translated",
             "value" : "Pengumuman"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunngjøring"
+          }
         }
       }
     },
@@ -3702,6 +3888,12 @@
             "state" : "translated",
             "value" : "Membuka pengumuman lengkap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpner hele kunngjøringen"
+          }
         }
       }
     },
@@ -3813,6 +4005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutup pengumuman"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukk kunngjøring"
           }
         }
       }
@@ -3933,6 +4131,12 @@
             "state" : "translated",
             "value" : "Mode Gelap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk modus"
+          }
         }
       }
     },
@@ -4051,6 +4255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari tutup tetap terlihat jelas meski Tingkatkan Kontras aktif atau kamu sulit membedakan warna."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se stengedager selv med Øk kontrast slått på eller hvis du har vanskelig for å skille farger."
           }
         }
       }
@@ -4171,6 +4381,12 @@
             "state" : "translated",
             "value" : "Lebih banyak bahasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere språk"
+          }
         }
       }
     },
@@ -4289,6 +4505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gunakan aplikasi dalam lebih banyak bahasa."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk appen på flere språk."
           }
         }
       }
@@ -4409,6 +4631,12 @@
             "state" : "translated",
             "value" : "Simpan toko yang kamu tambahkan ke file dan pulihkan kapan saja."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre butikkene du har lagt til i en fil, og hent dem tilbake når som helst."
+          }
         }
       }
     },
@@ -4528,6 +4756,12 @@
             "state" : "translated",
             "value" : "Hapus semua datamu sekaligus"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle dataene mine"
+          }
         }
       }
     },
@@ -4645,6 +4879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengingat toko tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsel om butikkstenging"
           }
         }
       }
@@ -4765,6 +5005,12 @@
             "state" : "translated",
             "value" : "Teks dan tombol tetap jelas di layar gelap."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst og knapper er fortsatt tydelige på en mørk skjerm."
+          }
         }
       }
     },
@@ -4883,6 +5129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warna yang lebih mudah dilihat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farger som er lettere å se"
           }
         }
       }
@@ -5003,6 +5255,12 @@
             "state" : "translated",
             "value" : "Di iPad, pilih toko dan geser kalender hanya dengan keyboard."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På iPad kan du velge butikker og bla i kalenderen bare med tastaturet."
+          }
         }
       }
     },
@@ -5121,6 +5379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang baru setelah pembaruan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nytt etter oppdateringer"
           }
         }
       }
@@ -5241,6 +5505,12 @@
             "state" : "translated",
             "value" : "Saat pertama kali membuka aplikasi setelah pembaruan, kamu akan melihat apa yang baru."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
+          }
         }
       }
     },
@@ -5359,6 +5629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tips penggunaan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruksråd"
           }
         }
       }
@@ -5479,6 +5755,12 @@
             "state" : "translated",
             "value" : "Kami memberi tahu fitur berguna dengan halus pada waktu yang tepat."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi gir deg diskret tips om nyttige funksjoner til rett tid."
+          }
         }
       }
     },
@@ -5597,6 +5879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pencadangan dan ekspor"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sikkerhetskopi og eksport"
           }
         }
       }
@@ -5717,6 +6005,12 @@
             "state" : "translated",
             "value" : "Jika aplikasi tertutup saat kamu menambah toko, yang sudah kamu ketik tetap ada."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis appen lukkes mens du legger til en butikk, er det du skrev fortsatt der."
+          }
         }
       }
     },
@@ -5828,6 +6122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld lainnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld til"
           }
         }
       }
@@ -5948,6 +6248,12 @@
             "state" : "translated",
             "value" : "VoiceOver membacakan hari tutup dan tombol secara lengkap dan berurutan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver leser stengedager og knapper fullstendig og i riktig rekkefølge."
+          }
         }
       }
     },
@@ -6066,6 +6372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siap untuk teks besar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar for stor tekst"
           }
         }
       }
@@ -6186,6 +6498,12 @@
             "state" : "translated",
             "value" : "Kontrol dengan keyboard"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Styring med tastatur"
+          }
         }
       }
     },
@@ -6304,6 +6622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Panduan memulai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang"
           }
         }
       }
@@ -6424,6 +6748,12 @@
             "state" : "translated",
             "value" : "Saat pertama kali membuka aplikasi, lihat dalam beberapa langkah singkat apa yang bisa dilakukan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åpner appen, ser du i noen få trinn hva den kan."
+          }
         }
       }
     },
@@ -6542,6 +6872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dibuat untuk iPhone lipat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laget for foldbar iPhone"
           }
         }
       }
@@ -6662,6 +6998,12 @@
             "state" : "translated",
             "value" : "Di iPhone lipat, gunakan layar lebar sebagai dua panel berdampingan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På en foldbar iPhone kan du bruke den brede skjermen som to ruter side ved side."
+          }
         }
       }
     },
@@ -6781,6 +7123,12 @@
             "state" : "translated",
             "value" : "Lanjutkan dari yang terakhir"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett der du slapp"
+          }
         }
       }
     },
@@ -6885,6 +7233,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -6997,6 +7351,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -7105,6 +7465,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -7209,6 +7575,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -7325,6 +7697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Pengingat hari baik untuk belanja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Varsel om en god handledag"
           }
         }
       }
@@ -7443,6 +7821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Hari yang baik untuk belanja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 God dag for å handle"
           }
         }
       }
@@ -7564,6 +7948,12 @@
             "state" : "translated",
             "value" : "Memberi tahu jika ada hari tutup dalam seminggu!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsler deg når en stengedag er innen en uke!"
+          }
         }
       }
     },
@@ -7674,6 +8064,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -7798,6 +8194,12 @@
             "state" : "translated",
             "value" : "Widget pengingat hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget for stengevarsel"
+          }
         }
       }
     },
@@ -7918,6 +8320,12 @@
             "state" : "translated",
             "value" : "Widget hitung mundur hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget for nedtelling til stenging"
+          }
         }
       }
     },
@@ -8028,6 +8436,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -8146,6 +8560,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -8256,6 +8676,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -8374,6 +8800,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -8484,6 +8916,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -8606,6 +9044,12 @@
             "state" : "translated",
             "value" : "%@ tutup besok. Hari ini waktu yang tepat untuk belanja!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ er stengt i morgen. I dag er det en god dag å handle!"
+          }
         }
       }
     },
@@ -8723,6 +9167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ akan tutup dalam %lld hari."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ stenger om %lld dag(er)."
           }
         }
       }
@@ -8843,6 +9293,12 @@
             "state" : "translated",
             "value" : "%@ akan tutup dalam %lld hari."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ stenger om %lld dag(er)."
+          }
         }
       }
     },
@@ -8961,6 +9417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jangan lupa belanja sebelum hari tutup berikutnya!"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke glem å handle før neste stengedag!"
           }
         }
       }
@@ -9081,6 +9543,12 @@
             "state" : "translated",
             "value" : "Kelola juga hari tutup toko di sekitarmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold orden på stengedager for butikker i nærområdet også"
+          }
         }
       }
     },
@@ -9199,6 +9667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daftarkan pola tutup tokomu sendiri"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrer stengemønsteret til din egen butikk"
           }
         }
       }
@@ -9319,6 +9793,12 @@
             "state" : "translated",
             "value" : "Favoritmu selalu tampil di atas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorittene dine vises alltid øverst"
+          }
         }
       }
     },
@@ -9437,6 +9917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tandai toko favoritmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bokmerk favorittbutikkene dine"
           }
         }
       }
@@ -9557,6 +10043,12 @@
             "state" : "translated",
             "value" : "Sekali bayar untuk semua fitur selamanya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett kjøp gir alle funksjoner for alltid"
+          }
         }
       }
     },
@@ -9675,6 +10167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tingkatkan ke DontGoMart Pro"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppgrader til DontGoMart Pro"
           }
         }
       }
@@ -9795,6 +10293,12 @@
             "state" : "translated",
             "value" : "Cek hari tutup E-Mart, Costco, dan Homeplus sekaligus"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se stengedager for E-Mart, Costco og Homeplus samtidig"
+          }
         }
       }
     },
@@ -9913,6 +10417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pantau beberapa toko sekaligus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker samtidig"
           }
         }
       }
@@ -10033,6 +10543,12 @@
             "state" : "translated",
             "value" : "Dapatkan pengingat sebelum hari tutup supaya tak perlu bolak-balik sia-sia"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få varsel før stengedager, så du slipper bortkastede turer"
+          }
         }
       }
     },
@@ -10151,6 +10667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tak perlu lagi mendapati toko yang tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aldri mer en stengt butikk"
           }
         }
       }
@@ -10271,6 +10793,12 @@
             "state" : "translated",
             "value" : "Tambahkan item sebanyak yang kamu perlukan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til så mange varer du trenger"
+          }
         }
       }
     },
@@ -10389,6 +10917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daftar belanja tanpa batas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrenset handleliste"
           }
         }
       }
@@ -10509,6 +11043,12 @@
             "state" : "translated",
             "value" : "☕ Dengan harga secangkir kopi, buka semuanya selamanya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ For prisen av en kaffe låser du opp alt for alltid"
+          }
         }
       }
     },
@@ -10627,6 +11167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu akan diberi tahu %1$lld hari dan %2$lld hari sebelum hari tutup pukul %3$@."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du får varsel %1$lld dager og %2$lld dag før stengedager kl. %3$@."
           }
         }
       }
@@ -10748,6 +11294,12 @@
             "state" : "translated",
             "value" : "Menampilkan hijau atau merah untuk menunjukkan apakah tokomu buka Minggu ini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser med grønt eller rødt om butikken din har åpent denne søndagen."
+          }
         }
       }
     },
@@ -10865,6 +11417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menampilkan dua hari tutup berikutnya!"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser de to neste stengedagene!"
           }
         }
       }
@@ -10986,6 +11544,12 @@
             "state" : "translated",
             "value" : "Menampilkan jumlah hari menuju hari tutup berikutnya!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser antall dager til neste stengedag!"
+          }
         }
       }
     },
@@ -11106,6 +11670,12 @@
             "state" : "translated",
             "value" : "Minggu buka/tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søndag åpen/stengt"
+          }
         }
       }
     },
@@ -11220,6 +11790,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -11330,6 +11906,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -11454,6 +12036,12 @@
             "state" : "translated",
             "value" : "Widget dua hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget for to stengedager"
+          }
         }
       }
     },
@@ -11567,6 +12155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menutup pesan terima kasih"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukker takkemeldingen"
           }
         }
       }
@@ -11682,6 +12276,12 @@
             "state" : "translated",
             "value" : "Terima kasih!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takk!"
+          }
         }
       }
     },
@@ -11796,6 +12396,12 @@
             "state" : "translated",
             "value" : "Traktir pengembang secangkir kopi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spanderer en kaffe på utvikleren"
+          }
         }
       }
     },
@@ -11909,6 +12515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mengirim tip kepada pengembang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sender en tips til utvikleren"
           }
         }
       }
@@ -12029,6 +12641,12 @@
             "state" : "translated",
             "value" : "Sebagian Gyeonggi/Cheongju"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler av Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -12143,6 +12761,12 @@
             "state" : "translated",
             "value" : "Terima kasih, sampai jumpa lagi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takk, vi ses neste gang"
+          }
         }
       }
     },
@@ -12255,6 +12879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segera tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stenger snart"
           }
         }
       }
@@ -12369,6 +12999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagikan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del"
           }
         }
       }
@@ -12488,6 +13124,12 @@
             "state" : "translated",
             "value" : "Hari libur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helligdag"
+          }
         }
       }
     },
@@ -12599,6 +13241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulihkan Pembelian"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenopprett kjøp"
           }
         }
       }
@@ -12719,6 +13367,12 @@
             "state" : "translated",
             "value" : "Fitur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funksjon"
+          }
         }
       }
     },
@@ -12830,6 +13484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko saya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikkene mine"
           }
         }
       }
@@ -12950,6 +13610,12 @@
             "state" : "translated",
             "value" : "Besok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen"
+          }
         }
       }
     },
@@ -13062,6 +13728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Besok %@ tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen stengt: %@"
           }
         }
       }
@@ -13184,6 +13856,12 @@
             "state" : "translated",
             "value" : "Tutup besok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt i morgen"
+          }
         }
       }
     },
@@ -13295,6 +13973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari tutup mendatang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommende stengedager"
           }
         }
       }
@@ -13409,6 +14093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulan depan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste måned"
           }
         }
       }
@@ -13531,6 +14221,12 @@
             "state" : "translated",
             "value" : "%@ minggu depan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ neste uke"
+          }
         }
       }
     },
@@ -13650,6 +14346,12 @@
             "state" : "translated",
             "value" : "Hari tutup berikutnya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste stengedag"
+          }
         }
       }
     },
@@ -13762,6 +14464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kami akan mengingatkanmu belanja 2 hari sebelum hari tutup berikutnya."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi minner deg på å handle 2 dager før neste stengedag."
           }
         }
       }
@@ -13884,6 +14592,12 @@
             "state" : "translated",
             "value" : "Tidak ada info hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen informasjon om stengedager"
+          }
         }
       }
     },
@@ -13997,6 +14711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nanti saja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senere"
           }
         }
       }
@@ -14117,6 +14837,12 @@
             "state" : "translated",
             "value" : "Pantau beberapa toko sekaligus"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker samtidig"
+          }
         }
       }
     },
@@ -14236,6 +14962,12 @@
             "state" : "translated",
             "value" : "Pemantauan multi-toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker"
+          }
         }
       }
     },
@@ -14349,6 +15081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukk"
           }
         }
       }
@@ -14464,6 +15202,12 @@
             "state" : "translated",
             "value" : "Membuka kalender untuk melihat hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpner kalenderen for å se stengedager"
+          }
         }
       }
     },
@@ -14573,6 +15317,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -14696,6 +15446,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -14810,6 +15566,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
@@ -14932,6 +15694,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -15044,6 +15812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked"
           }
         }
       }
@@ -15163,6 +15937,12 @@
             "state" : "translated",
             "value" : "Supermarket (tutup hari Rabu)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (stengt onsdager)"
+          }
         }
       }
     },
@@ -15280,6 +16060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (tutup hari Rabu)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (stengt onsdager)"
           }
         }
       }
@@ -15399,6 +16185,12 @@
             "state" : "translated",
             "value" : "Supermarket (Rab)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (ons)"
+          }
         }
       }
     },
@@ -15516,6 +16308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan, campuran)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan, blandet)"
           }
         }
       }
@@ -15635,6 +16433,12 @@
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan)"
+          }
         }
       }
     },
@@ -15752,6 +16556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan)"
           }
         }
       }
@@ -15871,6 +16681,12 @@
             "state" : "translated",
             "value" : "Supermarket (tutup hari Minggu)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (stengt søndager)"
+          }
         }
       }
     },
@@ -15988,6 +16804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (tutup hari Minggu)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (stengt søndager)"
           }
         }
       }
@@ -16107,6 +16929,12 @@
             "state" : "translated",
             "value" : "Supermarket (Min)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (søn)"
+          }
         }
       }
     },
@@ -16224,6 +17052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
           }
         }
       }
@@ -16343,6 +17177,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
+          }
         }
       }
     },
@@ -16461,6 +17301,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
+          }
         }
       }
     },
@@ -16575,6 +17421,12 @@
             "state" : "translated",
             "value" : "Kalau aplikasi ini membantu, beri kami semangat lewat secangkir kopi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis appen har hjulpet deg, kan du heie på oss med en kaffe."
+          }
         }
       }
     },
@@ -16685,6 +17537,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -16804,6 +17662,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -16918,6 +17782,12 @@
             "state" : "translated",
             "value" : "Ketuk dua kali untuk menutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dobbelttrykk for å lukke"
+          }
         }
       }
     },
@@ -17031,6 +17901,12 @@
             "state" : "translated",
             "value" : "Toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikk"
+          }
         }
       }
     },
@@ -17143,6 +18019,12 @@
             "state" : "translated",
             "value" : "Sebelum belanja, cek hari tutup di DontGoMart ✅"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekk stengedager i DontGoMart før du handler ✅"
+          }
         }
       }
     },
@@ -17254,6 +18136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warna toko"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikkfarge"
           }
         }
       }
@@ -17373,6 +18261,12 @@
             "state" : "translated",
             "value" : "Pilih toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg en butikk"
+          }
         }
       }
     },
@@ -17484,6 +18378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nama toko (mis. Homeplus Gangnam)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikknavn (f.eks. Homeplus Gangnam)"
           }
         }
       }
@@ -17597,6 +18497,12 @@
             "state" : "translated",
             "value" : "Info toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikkinfo"
+          }
         }
       }
     },
@@ -17708,6 +18614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah toko"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til butikk"
           }
         }
       }
@@ -17821,6 +18733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikk stengt"
           }
         }
       }
@@ -17941,6 +18859,12 @@
             "state" : "translated",
             "value" : "Pemberitahuan hari tutup toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melding om butikkens stengedag"
+          }
         }
       }
     },
@@ -18054,6 +18978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengingat toko tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsel om butikkstenging"
           }
         }
       }
@@ -18174,6 +19104,12 @@
             "state" : "translated",
             "value" : "Toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikk"
+          }
         }
       }
     },
@@ -18292,6 +19228,12 @@
             "state" : "translated",
             "value" : "Toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikk"
+          }
         }
       }
     },
@@ -18405,6 +19347,12 @@
             "state" : "translated",
             "value" : "Pilih toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg butikk"
+          }
         }
       }
     },
@@ -18516,6 +19464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Membuka pilihan toko dan pengaturan pengingat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpner valg av butikk og varslingsinnstillinger"
           }
         }
       }
@@ -18636,6 +19590,12 @@
             "state" : "translated",
             "value" : "Berbeda di tiap toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varierer fra butikk til butikk"
+          }
         }
       }
     },
@@ -18748,6 +19708,12 @@
             "state" : "translated",
             "value" : "Pilih toko"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg butikk"
+          }
         }
       }
     },
@@ -18859,6 +19825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silakan pilih toko"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg en butikk"
           }
         }
       }
@@ -18979,6 +19951,12 @@
             "state" : "translated",
             "value" : "Belum ada toko yang dipilih. Pilih di Pengaturan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butikk valgt. Velg en i Innstillinger."
+          }
         }
       }
     },
@@ -19093,6 +20071,12 @@
             "state" : "translated",
             "value" : "Setiap %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver %@"
+          }
         }
       }
     },
@@ -19206,6 +20190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua fitur tetap gratis. Tip hanyalah dukungan semangat, dan bisa kamu kirim kapan saja."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle funksjoner er fortsatt gratis. Tips er ren oppmuntring, og du kan sende det når du vil."
           }
         }
       }
@@ -19328,6 +20318,12 @@
             "state" : "translated",
             "value" : "Lusa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I overmorgen"
+          }
         }
       }
     },
@@ -19446,6 +20442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanpa batas item di daftar belanjamu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen grense for varer på handlelisten din"
           }
         }
       }
@@ -19566,6 +20568,12 @@
             "state" : "translated",
             "value" : "Daftar belanja tanpa batas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrenset handleliste"
+          }
         }
       }
     },
@@ -19685,6 +20693,12 @@
             "state" : "translated",
             "value" : "Tingkatkan ke Pro untuk menambah item tanpa batas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppgrader til Pro for å legge til varer uten grense"
+          }
         }
       }
     },
@@ -19797,6 +20811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versjon"
           }
         }
       }
@@ -19912,6 +20932,12 @@
             "state" : "translated",
             "value" : "Berkat dukunganmu, kami bisa terus membuat aplikasi ini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takket være støtten din kan vi fortsette å lage appen."
+          }
         }
       }
     },
@@ -20026,6 +21052,12 @@
             "state" : "translated",
             "value" : "Dukunganmu sangat berarti. (sejauh ini ☕️ ×%lld)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtten din betyr mye. (☕️ ×%lld så langt)"
+          }
         }
       }
     },
@@ -20137,6 +21169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "mnt"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
           }
         }
       }
@@ -20250,6 +21288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aksi cepat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hurtighandlinger"
           }
         }
       }
@@ -20372,6 +21416,12 @@
             "state" : "translated",
             "value" : "Belum dipilih"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke valgt"
+          }
         }
       }
     },
@@ -20484,6 +21534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus pilihan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjern valg"
           }
         }
       }
@@ -20603,6 +21659,12 @@
             "state" : "translated",
             "value" : "Belum ada toko yang dipilih. Buka aplikasi untuk memilih."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butikk valgt. Åpne appen for å velge en."
+          }
         }
       }
     },
@@ -20714,6 +21776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pola terpilih"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt mønster"
           }
         }
       }
@@ -20836,6 +21904,12 @@
             "state" : "translated",
             "value" : "Dipilih"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt"
+          }
         }
       }
     },
@@ -20949,6 +22023,12 @@
             "state" : "translated",
             "value" : "Semua toko yang dipilih buka"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har åpent"
+          }
         }
       }
     },
@@ -21061,6 +22141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua toko yang dipilih tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker er stengt"
           }
         }
       }
@@ -21180,6 +22266,12 @@
             "state" : "translated",
             "value" : "Libur Seollal/Chuseok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helligdager ved Seollal/Chuseok"
+          }
         }
       }
     },
@@ -21291,6 +22383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengaturan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger"
           }
         }
       }
@@ -21406,6 +22504,12 @@
             "state" : "translated",
             "value" : "Pilih toko yang ingin dipantau di Pengaturan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg butikkene du vil følge i Innstillinger"
+          }
         }
       }
     },
@@ -21519,6 +22623,12 @@
             "state" : "translated",
             "value" : "Pilih toko yang ingin dipantau di Pengaturan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg butikkene du vil følge i Innstillinger"
+          }
         }
       }
     },
@@ -21631,6 +22741,12 @@
             "state" : "translated",
             "value" : "Buka Pengaturan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gå til Innstillinger"
+          }
         }
       }
     },
@@ -21742,6 +22858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time"
           }
         }
       }
@@ -21862,6 +22984,12 @@
             "state" : "translated",
             "value" : "Tidak diketahui"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukjent"
+          }
         }
       }
     },
@@ -21973,6 +23101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Izin notifikasi diperlukan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillatelse til varsler kreves"
           }
         }
       }
@@ -22087,6 +23221,12 @@
             "state" : "translated",
             "value" : "Pengaturan notifikasi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varslingsinnstillinger"
+          }
         }
       }
     },
@@ -22198,6 +23338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu notifikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidspunkt for varsel"
           }
         }
       }
@@ -22312,6 +23458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingatkan saya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsle meg"
           }
         }
       }
@@ -22432,6 +23584,12 @@
             "state" : "translated",
             "value" : "Dapatkan notifikasi sebelum hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få varsel før stengedager"
+          }
         }
       }
     },
@@ -22550,6 +23708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsler"
           }
         }
       }
@@ -22670,6 +23834,12 @@
             "state" : "translated",
             "value" : "Dapatkan notifikasi sebelum hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få varsel før stengedager"
+          }
         }
       }
     },
@@ -22781,6 +23951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsler"
           }
         }
       }
@@ -22895,6 +24071,12 @@
             "state" : "translated",
             "value" : "Tulis ulasan di App Store"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en anmeldelse i App Store"
+          }
         }
       }
     },
@@ -23007,6 +24189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat di App Store"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se i App Store"
           }
         }
       }
@@ -23122,6 +24310,12 @@
             "state" : "translated",
             "value" : "Terima kasih sudah mendukung aplikasi ☕️"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takk for at du støtter appen ☕️"
+          }
         }
       }
     },
@@ -23231,6 +24425,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
@@ -23353,6 +24553,12 @@
             "state" : "translated",
             "value" : "Buka"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpen"
+          }
         }
       }
     },
@@ -23472,6 +24678,12 @@
             "state" : "translated",
             "value" : "Buka"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpen"
+          }
         }
       }
     },
@@ -23584,6 +24796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buka hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpen i dag"
           }
         }
       }
@@ -23704,6 +24922,12 @@
             "state" : "translated",
             "value" : "Hari ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag"
+          }
         }
       }
     },
@@ -23816,6 +25040,12 @@
             "state" : "translated",
             "value" : "%@ tutup hari ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ stengt i dag"
+          }
         }
       }
     },
@@ -23927,6 +25157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bisa pergi hari ini?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan jeg dra i dag?"
           }
         }
       }
@@ -24047,6 +25283,12 @@
             "state" : "translated",
             "value" : "Hari ini semua toko yang dipilih buka."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har åpent i dag."
+          }
         }
       }
     },
@@ -24166,6 +25408,12 @@
             "state" : "translated",
             "value" : "Hari ini semua toko yang dipilih tutup."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker er stengt i dag."
+          }
         }
       }
     },
@@ -24280,6 +25528,12 @@
             "state" : "translated",
             "value" : "Membagikan status hari ini dan hari tutup mendatang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler dagens status og kommende stengedager"
+          }
         }
       }
     },
@@ -24393,6 +25647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buka hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpen i dag"
           }
         }
       }
@@ -24515,6 +25775,12 @@
             "state" : "translated",
             "value" : "Hari ini hanya sebagian toko yang tutup: %@."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag er bare noen butikker stengt: %@."
+          }
         }
       }
     },
@@ -24628,6 +25894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari ini kami menyelamatkanmu dari perjalanan sia-sia"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag sparte vi deg for en bortkastet tur"
           }
         }
       }
@@ -24750,6 +26022,12 @@
             "state" : "translated",
             "value" : "Tutup hari ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt i dag"
+          }
         }
       }
     },
@@ -24864,6 +26142,12 @@
             "state" : "translated",
             "value" : "Tutup hari ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt i dag"
+          }
         }
       }
     },
@@ -24975,6 +26259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari ini kami kembali menyelamatkanmu dari perjalanan sia-sia.\nKami selalu mengingat dukunganmu yang murah hati."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag sparte vi deg for enda en bortkastet tur.\nVi husker fortsatt den raushjertede støtten din."
           }
         }
       }
@@ -25094,6 +26384,12 @@
             "state" : "translated",
             "value" : "Selesai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
+          }
         }
       }
     },
@@ -25207,6 +26503,12 @@
             "state" : "translated",
             "value" : "Hapus item yang selesai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett fullførte varer"
+          }
         }
       }
     },
@@ -25316,6 +26618,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -25439,6 +26747,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -25553,6 +26867,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -25675,6 +26995,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -25793,6 +27119,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -25905,6 +27237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulanan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måned"
           }
         }
       }
@@ -26019,6 +27357,12 @@
             "state" : "translated",
             "value" : "Izin lokasi diperlukan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillatelse til posisjon kreves"
+          }
         }
       }
     },
@@ -26132,6 +27476,12 @@
             "state" : "translated",
             "value" : "Fitur berbasis lokasi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posisjonsfunksjoner"
+          }
         }
       }
     },
@@ -26243,6 +27593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dukung kami"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtt oss"
           }
         }
       }
@@ -26361,6 +27717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søn"
           }
         }
       }
@@ -26483,6 +27845,12 @@
             "state" : "translated",
             "value" : "%@ minggu ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ denne uken"
+          }
         }
       }
     },
@@ -26595,6 +27963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ minggu ini tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt %@ denne uken"
           }
         }
       }
@@ -26714,6 +28088,12 @@
             "state" : "translated",
             "value" : "Minggu ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndagen"
+          }
         }
       }
     },
@@ -26831,6 +28211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minggu ini %@, toko buka"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndagen %@, butikken har åpent"
           }
         }
       }
@@ -26950,6 +28336,12 @@
             "state" : "translated",
             "value" : "Minggu ini %@, toko tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndagen %@, butikken er stengt"
+          }
         }
       }
     },
@@ -27063,6 +28455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulan sebelumnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forrige måned"
           }
         }
       }
@@ -27178,6 +28576,12 @@
             "state" : "translated",
             "value" : "Bagikan ke Instagram Stories"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del til Instagram Stories"
+          }
         }
       }
     },
@@ -27292,6 +28696,12 @@
             "state" : "translated",
             "value" : "Instagram harus terpasang untuk membagikan ke Stories."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram må være installert for å dele til Stories."
+          }
         }
       }
     },
@@ -27405,6 +28815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram tidak ditemukan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fant ikke Instagram"
           }
         }
       }
@@ -27521,6 +28937,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -27643,6 +29065,12 @@
             "state" : "translated",
             "value" : "Biasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanlig"
+          }
         }
       }
     },
@@ -27755,6 +29183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko biasa"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanlige butikker"
           }
         }
       }
@@ -27869,6 +29303,12 @@
             "state" : "translated",
             "value" : "Sebagian buka"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noen åpne"
+          }
         }
       }
     },
@@ -27981,6 +29421,12 @@
             "state" : "translated",
             "value" : "Sebagian toko tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noen butikker er stengt"
+          }
         }
       }
     },
@@ -28090,6 +29536,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -28213,6 +29665,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -28331,6 +29789,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -28445,6 +29909,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -28568,6 +30038,12 @@
             "state" : "translated",
             "value" : "Pembelian sekali bayar. Tanpa langganan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engangskjøp. Ingen abonnement."
+          }
         }
       }
     },
@@ -28679,6 +30155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambahkan pola tutup toko favoritmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til stengemønstre for favorittbutikkene dine"
           }
         }
       }
@@ -28793,6 +30275,12 @@
             "state" : "translated",
             "value" : "Pengingat belanja"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handlepåminnelse"
+          }
         }
       }
     },
@@ -28906,6 +30394,12 @@
             "state" : "translated",
             "value" : "Daftar belanja"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handleliste"
+          }
         }
       }
     },
@@ -29018,6 +30512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Peringatan belanja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handlevarsel"
           }
         }
       }
@@ -29138,6 +30638,12 @@
             "state" : "translated",
             "value" : "Pengingat belanja"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handlepåminnelse"
+          }
         }
       }
     },
@@ -29252,6 +30758,12 @@
             "state" : "translated",
             "value" : "Pengingat hari baik untuk belanja (sehari sebelumnya)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsel om god handledag (dagen før)"
+          }
         }
       }
     },
@@ -29365,6 +30877,12 @@
             "state" : "translated",
             "value" : "Tambah item"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til vare"
+          }
         }
       }
     },
@@ -29477,6 +30995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambahkan item ke daftar belanjamu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til varer på handlelisten din"
           }
         }
       }
@@ -29595,6 +31119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simpan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre"
           }
         }
       }
@@ -29715,6 +31245,12 @@
             "state" : "translated",
             "value" : "Sebagian besar wilayah di seluruh negeri"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De fleste områder i landet"
+          }
         }
       }
     },
@@ -29833,6 +31369,12 @@
             "state" : "translated",
             "value" : "Hari libur nasional"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nasjonal helligdag"
+          }
         }
       }
     },
@@ -29950,6 +31492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari libur nasional"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nasjonal helligdag"
           }
         }
       }
@@ -30070,6 +31618,12 @@
             "state" : "translated",
             "value" : "Tutup seharian"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt hele dagen"
+          }
         }
       }
     },
@@ -30183,6 +31737,12 @@
             "state" : "translated",
             "value" : "Hapus semua"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle"
+          }
         }
       }
     },
@@ -30295,6 +31855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat semua"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se alle"
           }
         }
       }
@@ -30410,6 +31976,12 @@
             "state" : "translated",
             "value" : "Terima kasih banyak!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tusen takk!"
+          }
         }
       }
     },
@@ -30522,6 +32094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tentang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om"
           }
         }
       }
@@ -30641,6 +32219,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -30753,6 +32337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mingguan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukentlig"
           }
         }
       }
@@ -30867,6 +32457,12 @@
             "state" : "translated",
             "value" : "Toko terdekat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikker i nærheten"
+          }
         }
       }
     },
@@ -30979,6 +32575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deteksi otomatis toko terdekat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finn butikker i nærheten automatisk"
           }
         }
       }
@@ -31093,6 +32695,12 @@
             "state" : "translated",
             "value" : "Untuk menemukan toko terdekat,\nizinkan akses lokasi di\nPengaturan > DontGoMart > Lokasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For å finne butikker i nærheten,\ntillat tilgang til posisjon i\nInnstillinger > DontGoMart > Posisjon."
+          }
         }
       }
     },
@@ -31206,6 +32814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kabari orang di sekitarmu soal hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si fra til folk rundt deg om stenginger"
           }
         }
       }
@@ -31326,6 +32940,12 @@
             "state" : "translated",
             "value" : "Sematkan toko favoritmu di atas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fest favorittbutikkene dine øverst"
+          }
         }
       }
     },
@@ -31445,6 +33065,12 @@
             "state" : "translated",
             "value" : "Favorit"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritter"
+          }
         }
       }
     },
@@ -31559,6 +33185,12 @@
             "state" : "translated",
             "value" : "Dukungan yang diterima sejauh ini ☕️ ×%lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte mottatt så langt ☕️ ×%lld"
+          }
         }
       }
     },
@@ -31671,6 +33303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kemajuan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fremdrift"
           }
         }
       }
@@ -31785,6 +33423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari tutup pertama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første stengedag"
           }
         }
       }
@@ -31904,6 +33548,12 @@
             "state" : "translated",
             "value" : "Tambah"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til"
+          }
         }
       }
     },
@@ -32015,6 +33665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pilih toko yang ingin dipantau (bisa lebih dari satu)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg butikker å følge (flere mulig)"
           }
         }
       }
@@ -32134,6 +33790,12 @@
             "state" : "translated",
             "value" : "Batal"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
         }
       }
     },
@@ -32248,6 +33910,12 @@
             "state" : "translated",
             "value" : "Menyiapkan kartu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjør kortet klart"
+          }
         }
       }
     },
@@ -32361,6 +34029,12 @@
             "state" : "translated",
             "value" : "Lihat kalender"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se kalender"
+          }
         }
       }
     },
@@ -32473,6 +34147,12 @@
             "state" : "translated",
             "value" : "Tambah toko kustom"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til egen butikk"
+          }
         }
       }
     },
@@ -32584,6 +34264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit toko kustom"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger egen butikk"
           }
         }
       }
@@ -32703,6 +34389,12 @@
             "state" : "translated",
             "value" : "Toko kustom"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butikk"
+          }
         }
       }
     },
@@ -32821,6 +34513,12 @@
             "state" : "translated",
             "value" : "Toko kustom"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butikk"
+          }
         }
       }
     },
@@ -32938,6 +34636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko kustom"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butikk"
           }
         }
       }
@@ -33058,6 +34762,12 @@
             "state" : "translated",
             "value" : "Tambahkan pola tutup tokomu sendiri"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til stengemønstre for din egen butikk"
+          }
         }
       }
     },
@@ -33176,6 +34886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko kustom"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butikk"
           }
         }
       }
@@ -33296,6 +35012,12 @@
             "state" : "translated",
             "value" : "Tambahkan pola tutup tokomu sendiri"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til stengemønstre for din egen butikk"
+          }
         }
       }
     },
@@ -33409,6 +35131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Traktir kopi %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spander en kaffe %@"
           }
         }
       }
@@ -33524,6 +35252,12 @@
             "state" : "translated",
             "value" : "Traktir kopi, %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spander en kaffe, %@"
+          }
         }
       }
     },
@@ -33633,6 +35367,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -33755,6 +35495,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -33869,6 +35615,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
@@ -33991,6 +35743,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -34105,6 +35863,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -34227,6 +35991,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -34341,6 +36111,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -34463,6 +36239,12 @@
             "state" : "translated",
             "value" : "Costco biasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco vanlig"
+          }
         }
       }
     },
@@ -34580,6 +36362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco biasa"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco vanlig"
           }
         }
       }
@@ -34699,6 +36487,12 @@
             "state" : "translated",
             "value" : "Costco biasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco vanlig"
+          }
         }
       }
     },
@@ -34813,6 +36607,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -34935,6 +36735,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -35049,6 +36855,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -35171,6 +36983,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -35289,6 +37107,12 @@
             "state" : "translated",
             "value" : "Biasa – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanlige – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -35401,6 +37225,12 @@
             "state" : "translated",
             "value" : "Tambah pola"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til mønster"
+          }
         }
       }
     },
@@ -35512,6 +37342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silakan tambahkan pola"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til et mønster"
           }
         }
       }
@@ -35632,6 +37468,12 @@
             "state" : "translated",
             "value" : "Buka pemantauan multi-toko, notifikasi, dan lainnya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp oppfølging av flere butikker, varsler og mer"
+          }
         }
       }
     },
@@ -35746,6 +37588,12 @@
             "state" : "translated",
             "value" : "Dukung sekali lagi ☕️"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtt oss en gang til ☕️"
+          }
         }
       }
     },
@@ -35858,6 +37706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cabang terpilih"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt filial"
           }
         }
       }
@@ -35972,6 +37826,12 @@
             "state" : "translated",
             "value" : "Menemukan dan merekomendasikan toko terdekat berdasarkan lokasimu saat ini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finner og anbefaler butikker i nærheten ut fra din nåværende posisjon."
+          }
         }
       }
     },
@@ -36082,6 +37942,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -36200,6 +38066,12 @@
             "state" : "translated",
             "value" : "Memuat ulang daftar pilihan tip"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laster inn listen over tipsalternativer på nytt"
+          }
         }
       }
     },
@@ -36313,6 +38185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Memuat pilihan tip"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laster inn tipsalternativer"
           }
         }
       }
@@ -36428,6 +38306,12 @@
             "state" : "translated",
             "value" : "Gagal memuat pilihan tip. Coba lagi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke laste inn tipsalternativer. Prøv igjen"
+          }
         }
       }
     },
@@ -36541,6 +38425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tentang tip"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om tips"
           }
         }
       }
@@ -36656,6 +38546,12 @@
             "state" : "translated",
             "value" : "Menutup kartu tip. Tidak akan muncul lagi selama 30 hari"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukker tipskortet. Det vises ikke igjen på 30 dager"
+          }
         }
       }
     },
@@ -36769,6 +38665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pendukung"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støttespiller"
           }
         }
       }
@@ -36884,6 +38786,12 @@
             "state" : "translated",
             "value" : "Pendukung. Sejauh ini %lld kopi. Terima kasih sudah mendukung aplikasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støttespiller. %lld kaffe(r) så langt. Takk for at du støtter appen."
+          }
         }
       }
     },
@@ -36998,6 +38906,12 @@
             "state" : "translated",
             "value" : "Kami tidak melupakanmu!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi har ikke glemt deg!"
+          }
         }
       }
     },
@@ -37111,6 +39025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Terima kasih atas dukunganmu. Sejauh ini kamu sudah mengirim %lld kopi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takk for støtten. Du har sendt %lld kaffe(r) så langt."
           }
         }
       }
@@ -37233,6 +39153,12 @@
             "state" : "translated",
             "value" : "Terima kasih banyak atas dukunganmu. Ini sangat berarti bagi kami."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tusen takk for støtten. Den betyr mye for oss."
+          }
         }
       }
     },
@@ -37346,6 +39272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Terima kasih banyak atas dukunganmu. Sejauh ini kamu sudah mengirim %lld kopi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tusen takk for støtten. Du har sendt %lld kaffe(r) så langt."
           }
         }
       }
@@ -37467,6 +39399,12 @@
             "state" : "translated",
             "value" : "Tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt"
+          }
         }
       }
     },
@@ -37578,6 +39516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pola tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengemønster"
           }
         }
       }
@@ -37693,6 +39637,12 @@
             "state" : "translated",
             "value" : "Kabari soal hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del nyhet om stenging"
+          }
         }
       }
     },
@@ -37806,6 +39756,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Membagikan gambar kartu hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler bildet av stengekortet"
           }
         }
       }
@@ -37927,6 +39883,12 @@
             "state" : "translated",
             "value" : "Kartu hari tutup. %1$@ %2$@, %3$@ tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengekort. %1$@ %2$@, %3$@ stengt"
+          }
         }
       }
     },
@@ -38041,6 +40003,12 @@
             "state" : "translated",
             "value" : "Membuat dan membagikan kartu hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lager og deler et stengekort"
+          }
         }
       }
     },
@@ -38154,6 +40122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Membagikan kartu hari tutup ke Instagram Stories"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler stengekortet til Instagram Stories"
           }
         }
       }
@@ -38276,6 +40250,12 @@
             "state" : "translated",
             "value" : "Tidak ada hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen stenging"
+          }
         }
       }
     },
@@ -38387,6 +40367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pola tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengemønster"
           }
         }
       }
@@ -38506,6 +40492,12 @@
             "state" : "translated",
             "value" : "Tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt"
+          }
         }
       }
     },
@@ -38618,6 +40610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutup hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengt i dag"
           }
         }
       }
@@ -38733,6 +40731,12 @@
             "state" : "translated",
             "value" : "Tidak ada toko yang tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butikker er stengt"
+          }
         }
       }
     },
@@ -38845,6 +40849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengedager"
           }
         }
       }
@@ -38959,6 +40969,12 @@
             "state" : "translated",
             "value" : "Notifikasi akan dikirim 3 hari dan 1 hari sebelum hari tutup."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsler sendes 3 dager og 1 dag før stengedager."
+          }
         }
       }
     },
@@ -39070,6 +41086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengingat hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsler om stengedager"
           }
         }
       }
@@ -39184,6 +41206,12 @@
             "state" : "translated",
             "value" : "Aktifkan dulu pengingat hari tutup."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå først på varsler om stengedager."
+          }
         }
       }
     },
@@ -39295,6 +41323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Untuk menerima pengingat hari tutup, izinkan notifikasi di Pengaturan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For å få varsler om stengedager må du tillate varsler i Innstillinger."
           }
         }
       }
@@ -39408,6 +41442,12 @@
             "state" : "translated",
             "value" : "Tidak ada info hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen informasjon om stengedager"
+          }
         }
       }
     },
@@ -39520,6 +41560,12 @@
             "state" : "translated",
             "value" : "Tidak ada informasi hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen informasjon om stengedager tilgjengelig"
+          }
         }
       }
     },
@@ -39631,6 +41677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalender hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender med stengedager"
           }
         }
       }
@@ -39746,6 +41798,12 @@
             "state" : "translated",
             "value" : "Lihat kalender hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se kalenderen med stengedager"
+          }
         }
       }
     },
@@ -39859,6 +41917,12 @@
             "state" : "translated",
             "value" : "Pilih hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg stengedager"
+          }
         }
       }
     },
@@ -39971,6 +42035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bukan hari tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke en stengedag"
           }
         }
       }
@@ -40090,6 +42160,12 @@
             "state" : "translated",
             "value" : "Menemukan “%@”. Periksa lalu ketuk Tambah."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fant «%@». Sjekk og trykk på Legg til."
+          }
         }
       }
     },
@@ -40207,6 +42283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada yang tutup dalam 7 hari ke depan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen stenger de neste 7 dagene"
           }
         }
       }
@@ -40326,6 +42408,12 @@
             "state" : "translated",
             "value" : "Tidak ada restoranmu yang tutup dalam 7 hari ke depan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen av restaurantene dine er stengt de neste 7 dagene"
+          }
         }
       }
     },
@@ -40443,6 +42531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada hari tutup minggu ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen stengedager denne uken"
           }
         }
       }
@@ -40562,6 +42656,12 @@
             "state" : "translated",
             "value" : "Kelola"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrer"
+          }
         }
       }
     },
@@ -40679,6 +42779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu bisa menambahkan dari tautan bagikan Naver Maps atau tangkapan layar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan legge til fra en delingslenke fra Naver Maps eller et skjermbilde"
           }
         }
       }
@@ -40798,6 +42904,12 @@
             "state" : "translated",
             "value" : "Restoran saya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurantene mine"
+          }
         }
       }
     },
@@ -40915,6 +43027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoran · 7 hari"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauranter · 7 dager"
           }
         }
       }
@@ -41034,6 +43152,12 @@
             "state" : "translated",
             "value" : "Tambah atau ubah restoranmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til eller rediger restaurantene dine"
+          }
         }
       }
     },
@@ -41151,6 +43275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Belum ada restoran. Tambahkan di aplikasi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen restauranter ennå. Legg dem til i appen."
           }
         }
       }
@@ -41270,6 +43400,12 @@
             "state" : "translated",
             "value" : "Atau tempel tautan atau teks yang dibagikan di sini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eller lim inn en delt lenke eller tekst her"
+          }
         }
       }
     },
@@ -41387,6 +43523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impor cepat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hurtigimport"
           }
         }
       }
@@ -41506,6 +43648,12 @@
             "state" : "translated",
             "value" : "Membaca info libur dari foto di perangkatmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leser stengeinformasjonen fra bildet på enheten din"
+          }
         }
       }
     },
@@ -41623,6 +43771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak dapat memuat foto"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke laste inn bildet"
           }
         }
       }
@@ -41742,6 +43896,12 @@
             "state" : "translated",
             "value" : "Tidak ada restoran yang tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen restauranter er stengt"
+          }
         }
       }
     },
@@ -41859,6 +44019,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tangkapan layar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjermbilde"
           }
         }
       }
@@ -41978,6 +44144,12 @@
             "state" : "translated",
             "value" : "Hapus restoran"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett restaurant"
+          }
         }
       }
     },
@@ -42095,6 +44267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nama restoran"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurantnavn"
           }
         }
       }
@@ -42214,6 +44392,12 @@
             "state" : "translated",
             "value" : "Restoran"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant"
+          }
         }
       }
     },
@@ -42331,6 +44515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah restoran"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til en restaurant"
           }
         }
       }
@@ -42450,6 +44640,12 @@
             "state" : "translated",
             "value" : "Tambah restoran"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til restaurant"
+          }
         }
       }
     },
@@ -42567,6 +44763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit restoran"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger restaurant"
           }
         }
       }
@@ -42686,6 +44888,12 @@
             "state" : "translated",
             "value" : "Tidak ada restoranmu yang tutup dalam 7 hari ke depan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen av restaurantene dine er stengt de neste 7 dagene."
+          }
         }
       }
     },
@@ -42803,6 +45011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menampilkan titik pada hari dalam 7 hari ke depan saat restoranmu tutup."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser en prikk på dagene de neste 7 dagene når restaurantene dine er stengt."
           }
         }
       }
@@ -42922,6 +45136,12 @@
             "state" : "translated",
             "value" : "Tambahkan restoran di aplikasi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til restauranter i appen"
+          }
         }
       }
     },
@@ -43039,6 +45259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tercantum buka setiap hari — tidak ada hari libur tetap."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppført som åpen hver dag — ingen fast fridag."
           }
         }
       }
@@ -43158,6 +45384,12 @@
             "state" : "translated",
             "value" : "Tambahkan widget “Restoran · 7 hari” ke Layar Utama agar bisa melihatnya tanpa membuka aplikasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til widgeten «Restauranter · 7 dager» på Hjem-skjermen for å se dette uten å åpne appen."
+          }
         }
       }
     },
@@ -43275,6 +45507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impor ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer dette"
           }
         }
       }
@@ -43394,6 +45632,12 @@
             "state" : "translated",
             "value" : "Nama berhasil didapat, tetapi tidak ada info libur. Coba tangkapan layar jam buka atau pilih hari di bawah."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navnet ble hentet, men det mangler stengeinformasjon. Prøv et skjermbilde av åpningstidene, eller velg dagene nedenfor."
+          }
         }
       }
     },
@@ -43511,6 +45755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Masukkan hari libur tetap restoran yang sering kamu kunjungi, dan kami tandai hari tutup dalam 7 hari ke depan dengan titik."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg inn de faste fridagene til restaurantene du besøker, så markerer vi stengedagene de neste 7 dagene med en prikk."
           }
         }
       }
@@ -43630,6 +45880,12 @@
             "state" : "translated",
             "value" : "Warna titik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikkfarge"
+          }
         }
       }
     },
@@ -43747,6 +46003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari libur tetap"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faste fridager"
           }
         }
       }
@@ -43866,6 +46128,12 @@
             "state" : "translated",
             "value" : "Alamat (opsional)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse (valgfritt)"
+          }
         }
       }
     },
@@ -43983,6 +46251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Di aplikasi peta, ketuk Bagikan → Salin pada restoran lalu tempel di sini, atau pilih tangkapan layar halaman infonya."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I kart-appen trykker du Del → Kopier på restauranten og limer inn her, eller velger et skjermbilde av infosiden."
           }
         }
       }
@@ -44102,6 +46376,12 @@
             "state" : "translated",
             "value" : "Buka di Peta"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpne i Kart"
+          }
         }
       }
     },
@@ -44219,6 +46499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah hari libur secara manual"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til fridag manuelt"
           }
         }
       }
@@ -44338,6 +46624,12 @@
             "state" : "translated",
             "value" : "Silakan tambahkan hari libur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til en fridag"
+          }
         }
       }
     },
@@ -44455,6 +46747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit info libur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger stengeinformasjon"
           }
         }
       }
@@ -44574,6 +46872,12 @@
             "state" : "translated",
             "value" : "Mencari info libur…"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leter etter stengeinformasjon…"
+          }
         }
       }
     },
@@ -44691,6 +46995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info libur tidak ditemukan. Pilih hari di bawah."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fant ikke stengeinformasjon. Velg dagene nedenfor."
           }
         }
       }
@@ -44810,6 +47120,12 @@
             "state" : "translated",
             "value" : "Postingan 4:5"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innlegg 4:5"
+          }
         }
       }
     },
@@ -44924,6 +47240,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -45046,6 +47368,12 @@
             "state" : "translated",
             "value" : "Kalender hari tutup 2 minggu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengekalender for 2 uker"
+          }
         }
       }
     },
@@ -45163,6 +47491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segera hadir"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På vei"
           }
         }
       }
@@ -45282,6 +47616,12 @@
             "state" : "translated",
             "value" : "Cari “DontGoMart” di App Store"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søk etter «DontGoMart» i App Store"
+          }
         }
       }
     },
@@ -45399,6 +47739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toko tutup!"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikker stengt!"
           }
         }
       }
@@ -45518,6 +47864,12 @@
             "state" : "translated",
             "value" : "Foto"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilde"
+          }
         }
       }
     },
@@ -45632,6 +47984,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
@@ -45754,6 +48112,12 @@
             "state" : "translated",
             "value" : "Format"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
         }
       }
     },
@@ -45871,6 +48235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium"
           }
         }
       }
@@ -45990,6 +48360,12 @@
             "state" : "translated",
             "value" : "Kartu hari tutup. %1$@ %2$@, %3$@ tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stengekort. %1$@ %2$@, %3$@ stengt"
+          }
         }
       }
     },
@@ -46107,6 +48483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Membuat video"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lager videoen"
           }
         }
       }
@@ -46226,6 +48608,12 @@
             "state" : "translated",
             "value" : "Posting ke Instagram"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg ut på Instagram"
+          }
         }
       }
     },
@@ -46343,6 +48731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pilih Instagram di daftar bagikan untuk memposting sebagai postingan, story, atau reel"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg Instagram i delingslisten for å legge ut som innlegg, story eller reel"
           }
         }
       }
@@ -46462,6 +48856,12 @@
             "state" : "translated",
             "value" : "Langsung membuka editor story Instagram"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpner Instagrams story-redigerer direkte"
+          }
         }
       }
     },
@@ -46579,6 +48979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagikan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del"
           }
         }
       }
@@ -46698,6 +49104,12 @@
             "state" : "translated",
             "value" : "Membagikan video hari tutup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler videoen om stenging"
+          }
         }
       }
     },
@@ -46815,6 +49227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gagal membuat video. Bagikan fotonya saja."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lage videoen. Del bildet i stedet."
           }
         }
       }
@@ -46934,6 +49352,12 @@
             "state" : "translated",
             "value" : "Buka lagi %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpner igjen %@"
+          }
         }
       }
     },
@@ -47051,6 +49475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selesaikan belanja sebelum %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fullfør handelen innen %@"
           }
         }
       }

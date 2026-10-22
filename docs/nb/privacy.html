@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personvernerklæring - DontGoMart</title>
+  <meta name="description" content="Hva DontGoMart lagrer på enheten din, hva den sender, og hvor.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/nb/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/DontGoMart/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/DontGoMart/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/DontGoMart/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/DontGoMart/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/DontGoMart/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/DontGoMart/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/DontGoMart/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/DontGoMart/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/DontGoMart/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/DontGoMart/fi/privacy.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/DontGoMart/id/privacy.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/DontGoMart/nb/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/privacy.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/privacy.html" hreflang="es" lang="es" title="Español">ES</a>
+        <a href="../de/privacy.html" hreflang="de" lang="de" title="Deutsch">DE</a>
+        <a href="../fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a>
+        <a href="../it/privacy.html" hreflang="it" lang="it" title="Italiano">IT</a>
+        <a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
+        <a href="../th/privacy.html" hreflang="th" lang="th" title="ไทย">TH</a>
+        <a href="../vi/privacy.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
+        <a href="../cs/privacy.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
+        <a href="../da/privacy.html" hreflang="da" lang="da" title="Dansk">DA</a>
+        <a href="../el/privacy.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
+        <a href="../fi/privacy.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
+        <a href="../id/privacy.html" hreflang="id" lang="id" title="Indonesia">ID</a>
+        <a href="../nb/privacy.html" hreflang="nb" lang="nb" title="Norsk bokmål" class="active" aria-current="true">NB</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Personvernerklæring</h1>
+    <p class="last-updated">Sist oppdatert: 8. oktober 2026</p>
+
+    <h2>Oversikt</h2>
+    <p>DontGoMart har ingen kontoer og bruker verken reklame eller sporingsverktøy. Butikkene du velger eller legger til, restaurantene og varslingsinnstillingene lagres bare på enheten din. Utvikleren mottar bare anonym bruksstatistikk som ikke kan identifisere deg, og tilbakemeldinger du selv velger å sende.</p>
+    <h2>1. Informasjon lagret på enheten</h2>
+    <p>For at appen skal fungere, lagres følgende informasjon bare på enheten din. For at widgetene på Hjem-skjermen skal kunne vise den, legges samme innhold også i appens delte beholder på enheten.</p>
+    <ul>
+      <li>Butikkene og regionen du velger</li>
+      <li>Butikkene du legger til (navn og stengeregel)</li>
+      <li>Restauranter (navn, adresse, faste fridager, kartlenke)</li>
+      <li>Varslingsinnstillinger (hvor mange dager før og når på dagen) og appinnstillinger</li>
+    </ul>
+    <p>Ingenting av dette sendes til utvikleren, og alt slettes sammen med appen.</p>
+    <h2>2. Varsler</h2>
+    <p>Varsler om stengedager planlegges på enheten din. Ingenting sendes til en server for å levere dem.</p>
+    <h2>3. Bilder</h2>
+    <p>Når du fyller ut en restaurants fridager fra et skjermbilde, mottar appen bare bildet du velger. Teksten i bildet leses på enheten med Apples Vision-rammeverk, og verken bildet eller teksten sendes noe sted.</p>
+    <p>Tillatelsen til å legge til i bildebiblioteket spørres det bare om når du lagrer bilder eller videoer fra stengekort. Appen leser ingen andre bilder i biblioteket ditt.</p>
+    <h2>4. Importere en restaurant fra en Naver Maps-lenke</h2>
+    <p>Når du limer inn en lenke delt fra Naver Maps, kobler appen seg direkte til lenken og restaurantens side på Naver Place for å lese navn, adresse og fridager. Som ved ethvert nettstedsbesøk kan Naver motta tilkoblingsinformasjon som IP-adressen, og Navers personvernerklæring gjelder for den forespørselen. Denne kommunikasjonen går ikke gjennom utviklerens servere.</p>
+    <h2>5. Posisjon</h2>
+    <p>DontGoMart ber ikke om og samler ikke inn posisjonsdata. Du velger butikkene selv fra listen.</p>
+    <h2>6. Støtte (kjøp i appen)</h2>
+    <p>Støtte i form av kaffe, kake eller et måltid håndteres som kjøp i appen via Apple, så utvikleren kjenner verken betalingsmetoden din eller betalingsdetaljene. Antall støttebidrag og om støttemerket vises, lagres i ditt eget nøkkel-verdi-lager i iCloud slik at det følger med til de andre enhetene dine. Disse dataene er beskyttet av Apple-kontoen din, og utvikleren kan ikke se dem.</p>
+    <h2>7. Kunngjøringer</h2>
+    <p>For å sjekke om utvikleren har en kunngjøring, leser appen den fra Apples offentlige CloudKit-database. Ingen informasjon om deg sendes i den forbindelse.</p>
+    <h2>8. Tilbakemeldinger</h2>
+    <p>Når du sender en tilbakemelding fra appen, sendes følgende informasjon til utviklerens CloudKit-database (iCloud.com.Ysoup.FeedbackHub) og brukes bare til å svare deg og forbedre appen.</p>
+    <ul>
+      <li>Innholdet i og typen tilbakemelding</li>
+      <li>Appversjon, enhetsmodell, iOS-versjon og språk- og regioninnstillinger</li>
+      <li>Navn og e-postadresse (bare hvis du selv skriver dem inn for å få svar)</li>
+    </ul>
+    <p>En tilbakemelding sendes bare når du trykker på send-knappen.</p>
+    <h2>9. Anonym bruksstatistikk</h2>
+    <p>For å forstå hvordan appen faktisk brukes, sender den anonym statistikk til utviklerens CloudKit-database (iCloud.com.Ysoup.FeedbackHub).</p>
+    <ul>
+      <li>Et tilfeldig installasjonsnummer som opprettes når appen installeres (det er ikke knyttet til navnet ditt, Apple-kontoen din eller enhetens identifikatorer, og forsvinner når du sletter appen)</li>
+      <li>Appversjon, iOS-versjon, språk- og regioninnstillinger, antall oppstarter, antall dager siden installasjonen og dagene du har åpnet appen</li>
+      <li>Antall butikker du følger, antall butikker du har lagt til, om varsler er på og hvor mange dager før, og antall støttebidrag</li>
+      <li>Navnene på de viktigste handlingene som å dele, åpne kalenderen, bytte butikk, lagre en egen butikk, slå på varsler eller fullføre en støtte</li>
+    </ul>
+    <p>Navn, adresser og lenker til butikker og restauranter, bilder, navnet ditt, e-postadressen din og posisjonen din sendes aldri. Statistikk sendes høyst hver 12. time, og per handlingstype høyst hver 6. time.</p>
+    <h2>10. Tredjeparter</h2>
+    <p>DontGoMart bruker ingen reklame, reklamenettverk eller analyse- eller sporingsverktøy fra tredjeparter. Informasjonen din behandles bare av Apple-tjenestene nevnt ovenfor (CloudKit, iCloud, kjøp i appen og rammeverk på enheten) og av Naver hvis du limer inn en lenke. Vi selger ikke personopplysningene dine og gir dem ikke til tredjeparter.</p>
+    <h2>11. Lagring og sletting</h2>
+    <p>Informasjon lagret på enheten slettes i appen eller ved å slette appen. Støtteposter lagret i iCloud kan du administrere i Innstillinger under Apple-konto og iCloud. Hvis du vil at en sendt tilbakemelding skal slettes, kan du sende e-post til adressen nedenfor.</p>
+    <h2>12. Barns personvern</h2>
+    <p>DontGoMart samler ikke bevisst inn personopplysninger om barn.</p>
+    <h2>13. Endringer i denne erklæringen</h2>
+    <p>Hvis vi endrer denne erklæringen, oppdaterer vi denne siden og datoen ovenfor.</p>
+    <h2>14. Kontakt oss</h2>
+    <p>Har du spørsmål om behandling av informasjon, kan du kontakte oss på denne adressen.</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Hjem</a>
+    <a href="support.html">Støtte</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>
