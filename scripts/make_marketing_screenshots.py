@@ -108,6 +108,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Adicione a loja<br>do seu bairro", "Padrões como a 2ª e a 4ª terça-feira"),
         ("05-share.png", "dark", "Avise sobre um fechamento<br>em um cartão", "Avise família e vizinhos"),
     ],
+    "th": [
+        ("01-main.png", "hero-bleed", "เช็กก่อนไป<br>แค่ 3 วินาที", "ดูได้ทันทีว่าวันนี้ร้านเปิดหรือไม่"),
+        ("02-calendar.png", "left-text", "วันปิดของ<br>เดือนนี้ในที่เดียว", "ทุกวันปิดอยู่บนปฏิทิน"),
+        ("03-marts.png", "text-bottom", "เลือกเฉพาะร้านที่คุณไป", "ซูเปอร์มาร์เก็ต Costco และวันหยุดเทศกาล"),
+        ("04-pattern.png", "flat-rotate", "เพิ่มร้านในละแวกบ้าน<br>ด้วยตัวเอง", "รูปแบบอย่างวันอังคารที่สองและสี่ก็ทำได้"),
+        ("05-share.png", "dark", "แจ้งร้านปิด<br>ด้วยการ์ดใบเดียว", "บอกครอบครัวและเพื่อนบ้านได้ทันที"),
+    ],
 }
 
 BASE_CSS = f"""
