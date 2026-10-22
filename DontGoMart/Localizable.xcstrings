@@ -42,6 +42,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — 购物请趁早"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — 採買請趁早"
+          }
         }
       }
     },
@@ -74,6 +80,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -114,6 +126,12 @@
             "state" : "translated",
             "value" : "删除%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除%@"
+          }
         }
       }
     },
@@ -149,6 +167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "编辑%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯%@"
           }
         }
       }
@@ -191,6 +215,12 @@
             "state" : "translated",
             "value" : "%@休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@公休"
+          }
         }
       }
     },
@@ -226,6 +256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@休业 Pro"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@公休 Pro"
           }
         }
       }
@@ -268,6 +304,12 @@
             "state" : "translated",
             "value" : "%@休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@公休"
+          }
         }
       }
     },
@@ -304,6 +346,12 @@
             "state" : "translated",
             "value" : "%@休业！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@公休！"
+          }
         }
       }
     },
@@ -336,6 +384,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -381,6 +435,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -413,6 +473,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -454,6 +520,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -489,6 +561,12 @@
             "state" : "translated",
             "value" : "%lld 项"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 項"
+          }
         }
       }
     },
@@ -523,6 +601,12 @@
             "state" : "translated",
             "value" : "%lld 分钟"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 分鐘"
+          }
         }
       }
     },
@@ -556,6 +640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 点"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 點"
           }
         }
       }
@@ -600,6 +690,12 @@
             "state" : "translated",
             "value" : "还剩 %lld 天"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "還剩 %lld 天"
+          }
         }
       }
     },
@@ -632,6 +728,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提前 %lld 天"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "提前 %lld 天"
@@ -669,6 +771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "第 %lld 周"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第 %lld 週"
           }
         }
       }
@@ -709,6 +817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 周后 %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 週後 %@"
           }
         }
       }
@@ -752,6 +866,12 @@
             "state" : "translated",
             "value" : "第 %lld 周 %@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第 %lld 週 %@"
+          }
         }
       }
     },
@@ -789,6 +909,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver 更好用"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver 更好用"
@@ -834,6 +960,12 @@
             "state" : "translated",
             "value" : "Siri 与快捷指令"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 與捷徑"
+          }
         }
       }
     },
@@ -875,6 +1007,12 @@
             "state" : "translated",
             "value" : "问问 Siri，或运行快捷指令，马上知道你的店今天是否休业。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "問問 Siri 或執行捷徑，馬上知道你的店今天是否公休。"
+          }
         }
       }
     },
@@ -907,6 +1045,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -947,6 +1091,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -979,6 +1129,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -1019,6 +1175,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -1045,6 +1207,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -1090,6 +1258,12 @@
             "state" : "translated",
             "value" : "即使使用最大字号，页面也会重新排版，内容不会被截断。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使使用最大字級，畫面也會重新排版，內容不會被截斷。"
+          }
         }
       }
     },
@@ -1130,6 +1304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在 App 内一次清除已选店铺、添加的店铺和通知设置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App 內一次清除已選店家、新增的店家與通知設定。"
           }
         }
       }
@@ -1172,6 +1352,12 @@
             "state" : "translated",
             "value" : "公告"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公告"
+          }
         }
       }
     },
@@ -1202,6 +1388,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看公告全文"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "查看公告全文"
@@ -1240,6 +1432,12 @@
             "state" : "translated",
             "value" : "关闭公告"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉公告"
+          }
         }
       }
     },
@@ -1277,6 +1475,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "深色模式"
@@ -1322,6 +1526,12 @@
             "state" : "translated",
             "value" : "即使开启“增强对比度”或不易分辨颜色，也能看清休业日。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使開啟「提高對比」或不易分辨顏色，也能看清公休日。"
+          }
         }
       }
     },
@@ -1362,6 +1572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更多语言"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多語言"
           }
         }
       }
@@ -1404,6 +1620,12 @@
             "state" : "translated",
             "value" : "用更多语言使用 App。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用更多語言使用 App。"
+          }
         }
       }
     },
@@ -1444,6 +1666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把你添加的店铺保存为文件，随时可以再导入。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將你新增的店家儲存成檔案，隨時可以再匯入。"
           }
         }
       }
@@ -1486,6 +1714,12 @@
             "state" : "translated",
             "value" : "一键清除我的数据"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次清除我的資料"
+          }
         }
       }
     },
@@ -1525,6 +1759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "店铺休业提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家公休提醒"
           }
         }
       }
@@ -1567,6 +1807,12 @@
             "state" : "translated",
             "value" : "在深色屏幕上，文字和按钮依然清晰。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在深色畫面上，文字與按鈕依然清晰。"
+          }
         }
       }
     },
@@ -1607,6 +1853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更易辨认的颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更容易辨認的顏色"
           }
         }
       }
@@ -1649,6 +1901,12 @@
             "state" : "translated",
             "value" : "在 iPad 上，只用键盘就能选择店铺、翻看日历。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 iPad 上，只用鍵盤就能選擇店家、翻看行事曆。"
+          }
         }
       }
     },
@@ -1689,6 +1947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新后的新内容"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新後的新內容"
           }
         }
       }
@@ -1731,6 +1995,12 @@
             "state" : "translated",
             "value" : "更新后首次打开时，告诉你有哪些新功能。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新後第一次開啟時，告訴你有哪些新功能。"
+          }
         }
       }
     },
@@ -1768,6 +2038,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用小技巧"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用小技巧"
@@ -1813,6 +2089,12 @@
             "state" : "translated",
             "value" : "在合适的时候，轻轻提示实用功能。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在適當的時機，輕輕提示實用功能。"
+          }
         }
       }
     },
@@ -1853,6 +2135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "备份与导出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "備份與匯出"
           }
         }
       }
@@ -1895,6 +2183,12 @@
             "state" : "translated",
             "value" : "添加店铺时即使 App 被关闭，已输入的内容也会保留。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增店家時即使 App 被關閉，已輸入的內容也會保留。"
+          }
         }
       }
     },
@@ -1925,6 +2219,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "另有 %lld 家"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "另有 %lld 家"
@@ -1970,6 +2270,12 @@
             "state" : "translated",
             "value" : "VoiceOver 会按正确的顺序完整朗读休业日和按钮。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver 會依正確順序完整朗讀公休日與按鈕。"
+          }
         }
       }
     },
@@ -2010,6 +2316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "适配大字号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支援大字級"
           }
         }
       }
@@ -2052,6 +2364,12 @@
             "state" : "translated",
             "value" : "键盘操作"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鍵盤操作"
+          }
         }
       }
     },
@@ -2089,6 +2407,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新手指南"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "新手指南"
@@ -2134,6 +2458,12 @@
             "state" : "translated",
             "value" : "首次打开时，用几个简短步骤介绍 App 能做什么。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一次開啟時，用幾個簡短步驟介紹 App 能做什麼。"
+          }
         }
       }
     },
@@ -2174,6 +2504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "为折叠屏 iPhone 而设计"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "專為可摺疊 iPhone 設計"
           }
         }
       }
@@ -2216,6 +2552,12 @@
             "state" : "translated",
             "value" : "在折叠屏 iPhone 上，宽屏会分成左右两栏。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在可摺疊 iPhone 上，寬螢幕會分成左右兩欄。"
+          }
         }
       }
     },
@@ -2257,6 +2599,12 @@
             "state" : "translated",
             "value" : "从上次的地方继续"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從上次的地方繼續"
+          }
         }
       }
     },
@@ -2283,6 +2631,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -2317,6 +2671,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -2347,6 +2707,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -2373,6 +2739,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -2411,6 +2783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 适合购物的日子提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 適合採買的日子提醒"
           }
         }
       }
@@ -2451,6 +2829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 今天适合购物"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 今天適合採買"
           }
         }
       }
@@ -2494,6 +2878,12 @@
             "state" : "translated",
             "value" : "一周内有休业日时提醒你！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一週內有公休日時提醒你！"
+          }
         }
       }
     },
@@ -2526,6 +2916,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -2572,6 +2968,12 @@
             "state" : "translated",
             "value" : "休业提醒小组件"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休提醒小工具"
+          }
         }
       }
     },
@@ -2614,6 +3016,12 @@
             "state" : "translated",
             "value" : "休业倒计时小组件"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休倒數小工具"
+          }
         }
       }
     },
@@ -2646,6 +3054,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -2686,6 +3100,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -2718,6 +3138,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -2758,6 +3184,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -2790,6 +3222,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -2834,6 +3272,12 @@
             "state" : "translated",
             "value" : "%@明天休业。今天正适合去购物！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@明天公休。今天正適合去採買！"
+          }
         }
       }
     },
@@ -2873,6 +3317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@将在 %lld 天后休业。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@將在 %lld 天後公休。"
           }
         }
       }
@@ -2915,6 +3365,12 @@
             "state" : "translated",
             "value" : "%@将在 %lld 天后休业。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@將在 %lld 天後公休。"
+          }
         }
       }
     },
@@ -2955,6 +3411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "别忘了在下一个休业日之前去购物！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "別忘了在下一個公休日之前去採買！"
           }
         }
       }
@@ -2997,6 +3459,12 @@
             "state" : "translated",
             "value" : "当地店铺的休业日也能管理"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地店家的公休日也能管理"
+          }
         }
       }
     },
@@ -3037,6 +3505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "登记你自己店铺的休业规律"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登錄你自己店家的公休規律"
           }
         }
       }
@@ -3079,6 +3553,12 @@
             "state" : "translated",
             "value" : "收藏的店铺始终显示在最前面"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏的店家永遠顯示在最前面"
+          }
         }
       }
     },
@@ -3119,6 +3599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "收藏你常去的店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏你常去的店家"
           }
         }
       }
@@ -3161,6 +3647,12 @@
             "state" : "translated",
             "value" : "一次性购买，永久解锁全部功能"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次性購買，永久解鎖全部功能"
+          }
         }
       }
     },
@@ -3201,6 +3693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "升级到 DontGoMart Pro"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升級到 DontGoMart Pro"
           }
         }
       }
@@ -3243,6 +3741,12 @@
             "state" : "translated",
             "value" : "一次查看 E-Mart、Costco、Homeplus 的休业日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次查看 E-Mart、Costco、Homeplus 的公休日"
+          }
         }
       }
     },
@@ -3283,6 +3787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "同时关注多家店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同時追蹤多家店家"
           }
         }
       }
@@ -3325,6 +3835,12 @@
             "state" : "translated",
             "value" : "休业日前收到提醒，不再白跑一趟"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日前收到提醒，不再白跑一趟"
+          }
         }
       }
     },
@@ -3366,6 +3882,12 @@
             "state" : "translated",
             "value" : "不再扑空闭门的店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不再撲空關門的店家"
+          }
         }
       }
     },
@@ -3403,6 +3925,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "想加多少就加多少"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "想加多少就加多少"
@@ -3448,6 +3976,12 @@
             "state" : "translated",
             "value" : "不限数量的购物清单"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限數量的購物清單"
+          }
         }
       }
     },
@@ -3489,6 +4023,12 @@
             "state" : "translated",
             "value" : "☕ 一杯咖啡的价钱，永久解锁全部功能"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ 一杯咖啡的價錢，永久解鎖全部功能"
+          }
         }
       }
     },
@@ -3529,6 +4069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "将在休业日前 %1$lld 天和 %2$lld 天的 %3$@ 通知你。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將在公休日前 %1$lld 天與 %2$lld 天的 %3$@ 通知你。"
           }
         }
       }
@@ -3572,6 +4118,12 @@
             "state" : "translated",
             "value" : "用绿色或红色显示你的店铺本周日是否营业。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用綠色或紅色顯示你的店家本週日是否營業。"
+          }
         }
       }
     },
@@ -3611,6 +4163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "显示接下来的两个休业日！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示接下來的兩個公休日！"
           }
         }
       }
@@ -3654,6 +4212,12 @@
             "state" : "translated",
             "value" : "显示距离下一个休业日还有几天！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示距離下一個公休日還有幾天！"
+          }
         }
       }
     },
@@ -3696,6 +4260,12 @@
             "state" : "translated",
             "value" : "周日营业情况"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "週日營業狀況"
+          }
         }
       }
     },
@@ -3732,6 +4302,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -3764,6 +4340,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -3810,6 +4392,12 @@
             "state" : "translated",
             "value" : "两个休业日小组件"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "兩個公休日小工具"
+          }
         }
       }
     },
@@ -3845,6 +4433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关闭感谢消息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉感謝訊息"
           }
         }
       }
@@ -3882,6 +4476,12 @@
             "state" : "translated",
             "value" : "谢谢你！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "謝謝你！"
+          }
         }
       }
     },
@@ -3918,6 +4518,12 @@
             "state" : "translated",
             "value" : "请开发者喝一杯咖啡"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請開發者喝一杯咖啡"
+          }
         }
       }
     },
@@ -3953,6 +4559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "给开发者打赏"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "贊助開發者"
           }
         }
       }
@@ -3995,6 +4607,12 @@
             "state" : "translated",
             "value" : "京畿部分地区/清州"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "京畿部分地區／清州"
+          }
         }
       }
     },
@@ -4031,6 +4649,12 @@
             "state" : "translated",
             "value" : "谢谢，下次再见"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "謝謝，下次再見"
+          }
         }
       }
     },
@@ -4066,6 +4690,12 @@
             "state" : "translated",
             "value" : "即将休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即將公休"
+          }
         }
       }
     },
@@ -4098,6 +4728,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "分享"
@@ -4142,6 +4778,12 @@
             "state" : "translated",
             "value" : "节假日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "國定假日"
+          }
         }
       }
     },
@@ -4175,6 +4817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "恢复购买"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢復購買"
           }
         }
       }
@@ -4217,6 +4865,12 @@
             "state" : "translated",
             "value" : "功能"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "功能"
+          }
         }
       }
     },
@@ -4250,6 +4904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "我的店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的店家"
           }
         }
       }
@@ -4292,6 +4952,12 @@
             "state" : "translated",
             "value" : "明天"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天"
+          }
         }
       }
     },
@@ -4326,6 +4992,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明天%@休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天%@公休"
           }
         }
       }
@@ -4370,6 +5042,12 @@
             "state" : "translated",
             "value" : "明天休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明天公休"
+          }
         }
       }
     },
@@ -4403,6 +5081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即将到来的休业日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即將到來的公休日"
           }
         }
       }
@@ -4439,6 +5123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下个月"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下個月"
           }
         }
       }
@@ -4479,6 +5169,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下%@"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "下%@"
@@ -4524,6 +5220,12 @@
             "state" : "translated",
             "value" : "下一个休业日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一個公休日"
+          }
         }
       }
     },
@@ -4558,6 +5260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "会在下一个休业日的 2 天前提醒你去购物。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "會在下一個公休日的 2 天前提醒你去採買。"
           }
         }
       }
@@ -4602,6 +5310,12 @@
             "state" : "translated",
             "value" : "没有休业日信息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有公休日資訊"
+          }
         }
       }
     },
@@ -4637,6 +5351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "以后再说"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以後再說"
           }
         }
       }
@@ -4679,6 +5399,12 @@
             "state" : "translated",
             "value" : "同时关注多家店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同時追蹤多家店家"
+          }
         }
       }
     },
@@ -4720,6 +5446,12 @@
             "state" : "translated",
             "value" : "多店铺关注"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "多店追蹤"
+          }
         }
       }
     },
@@ -4755,6 +5487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
           }
         }
       }
@@ -4792,6 +5530,12 @@
             "state" : "translated",
             "value" : "打开日历查看休业日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟行事曆查看公休日"
+          }
         }
       }
     },
@@ -4823,6 +5567,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "大邱"
@@ -4868,6 +5618,12 @@
             "state" : "translated",
             "value" : "Costco 大邱店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -4904,6 +5660,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "大邱"
@@ -4948,6 +5710,12 @@
             "state" : "translated",
             "value" : "大邱店、大邱革新店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大邱店、大邱革新店"
+          }
         }
       }
     },
@@ -4979,6 +5747,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市"
@@ -5023,6 +5797,12 @@
             "state" : "translated",
             "value" : "大型超市（周三休业）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週三公休）"
+          }
         }
       }
     },
@@ -5062,6 +5842,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市（周三休业）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週三公休）"
           }
         }
       }
@@ -5103,6 +5889,12 @@
             "state" : "translated",
             "value" : "大型超市（周三）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週三）"
+          }
         }
       }
     },
@@ -5139,6 +5931,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山混合）"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市（蔚山混合）"
@@ -5183,6 +5981,12 @@
             "state" : "translated",
             "value" : "大型超市（蔚山）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山）"
+          }
         }
       }
     },
@@ -5219,6 +6023,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（蔚山）"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市（蔚山）"
@@ -5263,6 +6073,12 @@
             "state" : "translated",
             "value" : "大型超市（周日休业）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週日公休）"
+          }
         }
       }
     },
@@ -5302,6 +6118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市（周日休业）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週日公休）"
           }
         }
       }
@@ -5343,6 +6165,12 @@
             "state" : "translated",
             "value" : "大型超市（周日）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（週日）"
+          }
         }
       }
     },
@@ -5382,6 +6210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "大型超市（济州）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（濟州）"
           }
         }
       }
@@ -5423,6 +6257,12 @@
             "state" : "translated",
             "value" : "大型超市（济州）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（濟州）"
+          }
         }
       }
     },
@@ -5463,6 +6303,12 @@
             "state" : "translated",
             "value" : "大型超市（济州）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大型超市（濟州）"
+          }
         }
       }
     },
@@ -5499,6 +6345,12 @@
             "state" : "translated",
             "value" : "如果这个 App 帮到了你，请用一杯咖啡给我们打打气。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果這個 App 幫上了忙，請用一杯咖啡為我們加油。"
+          }
         }
       }
     },
@@ -5531,6 +6383,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -5572,6 +6430,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -5608,6 +6472,12 @@
             "state" : "translated",
             "value" : "轻点两下即可关闭"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輕點兩下即可關閉"
+          }
         }
       }
     },
@@ -5643,6 +6513,12 @@
             "state" : "translated",
             "value" : "店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家"
+          }
         }
       }
     },
@@ -5677,6 +6553,12 @@
             "state" : "translated",
             "value" : "去店铺之前，先用 DontGoMart 查看休业日 ✅"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "去店家之前，先用 DontGoMart 查看公休日 ✅"
+          }
         }
       }
     },
@@ -5710,6 +6592,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "店铺颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家顏色"
           }
         }
       }
@@ -5751,6 +6639,12 @@
             "state" : "translated",
             "value" : "选择店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇店家"
+          }
         }
       }
     },
@@ -5784,6 +6678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "店铺名称（例：Homeplus 江南店）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家名稱（例：Homeplus 江南店）"
           }
         }
       }
@@ -5819,6 +6719,12 @@
             "state" : "translated",
             "value" : "店铺信息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家資訊"
+          }
         }
       }
     },
@@ -5852,6 +6758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "添加店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增店家"
           }
         }
       }
@@ -5887,6 +6799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "店铺休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家公休"
           }
         }
       }
@@ -5929,6 +6847,12 @@
             "state" : "translated",
             "value" : "店铺休业日提醒"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家公休日提醒"
+          }
         }
       }
     },
@@ -5964,6 +6888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "店铺休业日提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家公休日提醒"
           }
         }
       }
@@ -6006,6 +6936,12 @@
             "state" : "translated",
             "value" : "店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家"
+          }
         }
       }
     },
@@ -6046,6 +6982,12 @@
             "state" : "translated",
             "value" : "店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家"
+          }
         }
       }
     },
@@ -6081,6 +7023,12 @@
             "state" : "translated",
             "value" : "选择店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇店家"
+          }
         }
       }
     },
@@ -6114,6 +7062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "打开店铺选择和通知设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟店家選擇與通知設定"
           }
         }
       }
@@ -6156,6 +7110,12 @@
             "state" : "translated",
             "value" : "各店不同"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各店不同"
+          }
         }
       }
     },
@@ -6190,6 +7150,12 @@
             "state" : "translated",
             "value" : "选择店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇店家"
+          }
         }
       }
     },
@@ -6223,6 +7189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请选择店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請選擇店家"
           }
         }
       }
@@ -6265,6 +7237,12 @@
             "state" : "translated",
             "value" : "尚未选择店铺。请在设置中选择。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未選擇店家。請到設定中選擇。"
+          }
         }
       }
     },
@@ -6297,6 +7275,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每%@"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "每%@"
@@ -6336,6 +7320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "所有功能依然免费。打赏纯属心意，想打赏几次都可以。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有功能依然免費。贊助純屬心意，想贊助幾次都可以。"
           }
         }
       }
@@ -6380,6 +7370,12 @@
             "state" : "translated",
             "value" : "后天"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "後天"
+          }
         }
       }
     },
@@ -6420,6 +7416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "购物清单不限数量"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購物清單不限數量"
           }
         }
       }
@@ -6462,6 +7464,12 @@
             "state" : "translated",
             "value" : "不限数量的购物清单"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限數量的購物清單"
+          }
         }
       }
     },
@@ -6503,6 +7511,12 @@
             "state" : "translated",
             "value" : "升级后可添加不限数量的购物项目"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升級後可新增不限數量的購物項目"
+          }
         }
       }
     },
@@ -6534,6 +7548,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "版本"
@@ -6574,6 +7594,12 @@
             "state" : "translated",
             "value" : "有你的支持，我们才能继续把 App 做下去。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有你的支持，我們才能繼續把 App 做下去。"
+          }
         }
       }
     },
@@ -6610,6 +7636,12 @@
             "state" : "translated",
             "value" : "你的支持对我们意义重大。（目前共 ☕️ ×%lld）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的支持對我們意義重大。（目前共 ☕️ ×%lld）"
+          }
         }
       }
     },
@@ -6643,6 +7675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分鐘"
           }
         }
       }
@@ -6678,6 +7716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "快捷操作"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速操作"
           }
         }
       }
@@ -6722,6 +7766,12 @@
             "state" : "translated",
             "value" : "未选择"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未選擇"
+          }
         }
       }
     },
@@ -6756,6 +7806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "清除选择"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清除選擇"
           }
         }
       }
@@ -6797,6 +7853,12 @@
             "state" : "translated",
             "value" : "尚未选择店铺。请打开 App 选择店铺。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未選擇店家。請開啟 App 選擇店家。"
+          }
         }
       }
     },
@@ -6830,6 +7892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已选规律"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已選規律"
           }
         }
       }
@@ -6874,6 +7942,12 @@
             "state" : "translated",
             "value" : "已选择"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已選擇"
+          }
         }
       }
     },
@@ -6909,6 +7983,12 @@
             "state" : "translated",
             "value" : "所有已选店铺都营业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有已選店家都營業"
+          }
         }
       }
     },
@@ -6943,6 +8023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "所有已选店铺都休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有已選店家都公休"
           }
         }
       }
@@ -6984,6 +8070,12 @@
             "state" : "translated",
             "value" : "春节/中秋节假日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "春節／中秋連假"
+          }
         }
       }
     },
@@ -7017,6 +8109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
           }
         }
       }
@@ -7054,6 +8152,12 @@
             "state" : "translated",
             "value" : "请在设置中选择要关注的店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請到設定中選擇要追蹤的店家"
+          }
         }
       }
     },
@@ -7089,6 +8193,12 @@
             "state" : "translated",
             "value" : "请在设置中选择要关注的店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請到設定中選擇要追蹤的店家"
+          }
         }
       }
     },
@@ -7123,6 +8233,12 @@
             "state" : "translated",
             "value" : "前往设置"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往設定"
+          }
         }
       }
     },
@@ -7156,6 +8272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "時"
           }
         }
       }
@@ -7198,6 +8320,12 @@
             "state" : "translated",
             "value" : "未知"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知"
+          }
         }
       }
     },
@@ -7231,6 +8359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "需要通知权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要通知權限"
           }
         }
       }
@@ -7267,6 +8401,12 @@
             "state" : "translated",
             "value" : "通知设置"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知設定"
+          }
         }
       }
     },
@@ -7300,6 +8440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "通知时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知時間"
           }
         }
       }
@@ -7336,6 +8482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "提醒时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒時間"
           }
         }
       }
@@ -7378,6 +8530,12 @@
             "state" : "translated",
             "value" : "休业日前收到通知"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日前收到通知"
+          }
         }
       }
     },
@@ -7415,6 +8573,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "通知"
@@ -7460,6 +8624,12 @@
             "state" : "translated",
             "value" : "休业日前收到通知"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日前收到通知"
+          }
         }
       }
     },
@@ -7490,6 +8660,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "通知"
@@ -7529,6 +8705,12 @@
             "state" : "translated",
             "value" : "在 App Store 留下评价"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 留下評價"
+          }
         }
       }
     },
@@ -7560,6 +8742,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 中查看"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "在 App Store 中查看"
@@ -7600,6 +8788,12 @@
             "state" : "translated",
             "value" : "感谢你支持这个 App ☕️"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感謝你支持這個 App ☕️"
+          }
         }
       }
     },
@@ -7634,6 +8828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "杨平店、大田店、良才店、\n上凤店、釜山店、光明店、\n天安店、议政府店、公世店、\n松岛店、世宗店、河南店、\n金海店、高尺店"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "楊平店、大田店、良才店、\n上鳳店、釜山店、光明店、\n天安店、議政府店、公世店、\n松島店、世宗店、河南店、\n金海店、高尺店"
           }
         }
       }
@@ -7674,6 +8874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "营业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "營業"
           }
         }
       }
@@ -7716,6 +8922,12 @@
             "state" : "translated",
             "value" : "营业中"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "營業中"
+          }
         }
       }
     },
@@ -7750,6 +8962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天营业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天營業"
           }
         }
       }
@@ -7792,6 +9010,12 @@
             "state" : "translated",
             "value" : "今天"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天"
+          }
         }
       }
     },
@@ -7826,6 +9050,12 @@
             "state" : "translated",
             "value" : "今天%@休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天%@公休"
+          }
         }
       }
     },
@@ -7859,6 +9089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天能去吗？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天能去嗎？"
           }
         }
       }
@@ -7901,6 +9137,12 @@
             "state" : "translated",
             "value" : "今天所有已选店铺都营业。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天所有已選店家都營業。"
+          }
         }
       }
     },
@@ -7942,6 +9184,12 @@
             "state" : "translated",
             "value" : "今天所有已选店铺都休业。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天所有已選店家都公休。"
+          }
         }
       }
     },
@@ -7978,6 +9226,12 @@
             "state" : "translated",
             "value" : "分享今天的营业情况和即将到来的休业日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享今天的營業狀況與即將到來的公休日"
+          }
         }
       }
     },
@@ -8013,6 +9267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天营业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天營業"
           }
         }
       }
@@ -8057,6 +9317,12 @@
             "state" : "translated",
             "value" : "今天只有部分店铺休业：%@。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天只有部分店家公休：%@。"
+          }
         }
       }
     },
@@ -8092,6 +9358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天帮你避免了一次白跑"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天幫你避免了一次白跑"
           }
         }
       }
@@ -8136,6 +9408,12 @@
             "state" : "translated",
             "value" : "今天休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天公休"
+          }
         }
       }
     },
@@ -8172,6 +9450,12 @@
             "state" : "translated",
             "value" : "今天休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天公休"
+          }
         }
       }
     },
@@ -8205,6 +9489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天又帮你避免了一次白跑。\n我们一直记得你慷慨的支持。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天又幫你避免了一次白跑。\n我們一直記得你慷慨的支持。"
           }
         }
       }
@@ -8246,6 +9536,12 @@
             "state" : "translated",
             "value" : "完成"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
         }
       }
     },
@@ -8281,6 +9577,12 @@
             "state" : "translated",
             "value" : "删除已完成项目"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除已完成項目"
+          }
         }
       }
     },
@@ -8312,6 +9614,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "蔚山"
@@ -8357,6 +9665,12 @@
             "state" : "translated",
             "value" : "Costco 蔚山店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
         }
       }
     },
@@ -8393,6 +9707,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "蔚山"
@@ -8437,6 +9757,12 @@
             "state" : "translated",
             "value" : "蔚山"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
         }
       }
     },
@@ -8477,6 +9803,12 @@
             "state" : "translated",
             "value" : "蔚山"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蔚山"
+          }
         }
       }
     },
@@ -8508,6 +9840,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "月"
@@ -8547,6 +9885,12 @@
             "state" : "translated",
             "value" : "需要位置权限"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要位置權限"
+          }
         }
       }
     },
@@ -8582,6 +9926,12 @@
             "state" : "translated",
             "value" : "位置相关功能"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置相關功能"
+          }
         }
       }
     },
@@ -8615,6 +9965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "支持我们"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持我們"
           }
         }
       }
@@ -8655,6 +10011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "周日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "週日"
           }
         }
       }
@@ -8699,6 +10061,12 @@
             "state" : "translated",
             "value" : "本%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本%@"
+          }
         }
       }
     },
@@ -8733,6 +10101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本周%@休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本週%@公休"
           }
         }
       }
@@ -8774,6 +10148,12 @@
             "state" : "translated",
             "value" : "本周日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本週日"
+          }
         }
       }
     },
@@ -8813,6 +10193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本周日%@，店铺营业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本週日%@，店家營業"
           }
         }
       }
@@ -8854,6 +10240,12 @@
             "state" : "translated",
             "value" : "本周日%@，店铺休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本週日%@，店家公休"
+          }
         }
       }
     },
@@ -8889,6 +10281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "上个月"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上個月"
           }
         }
       }
@@ -8926,6 +10324,12 @@
             "state" : "translated",
             "value" : "分享到 Instagram 快拍"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享到 Instagram 限時動態"
+          }
         }
       }
     },
@@ -8962,6 +10366,12 @@
             "state" : "translated",
             "value" : "需要安装 Instagram，才能分享到快拍。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要安裝 Instagram，才能分享到限時動態。"
+          }
         }
       }
     },
@@ -8997,6 +10407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未找到 Instagram"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到 Instagram"
           }
         }
       }
@@ -9035,6 +10451,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -9079,6 +10501,12 @@
             "state" : "translated",
             "value" : "普通店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般店"
+          }
         }
       }
     },
@@ -9113,6 +10541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "普通店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般店家"
           }
         }
       }
@@ -9149,6 +10583,12 @@
             "state" : "translated",
             "value" : "部分营业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部分營業"
+          }
         }
       }
     },
@@ -9183,6 +10623,12 @@
             "state" : "translated",
             "value" : "部分店铺休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部分店家公休"
+          }
         }
       }
     },
@@ -9214,6 +10660,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "一山"
@@ -9259,6 +10711,12 @@
             "state" : "translated",
             "value" : "Costco 一山店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
         }
       }
     },
@@ -9299,6 +10757,12 @@
             "state" : "translated",
             "value" : "一山"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
+          }
         }
       }
     },
@@ -9335,6 +10799,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一山"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "一山"
@@ -9380,6 +10850,12 @@
             "state" : "translated",
             "value" : "一次性购买，无需订阅。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次性購買，無需訂閱。"
+          }
         }
       }
     },
@@ -9413,6 +10889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "添加你常去店铺的休业规律"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增你常去店家的公休規律"
           }
         }
       }
@@ -9449,6 +10931,12 @@
             "state" : "translated",
             "value" : "购物提醒"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購物提醒"
+          }
         }
       }
     },
@@ -9484,6 +10972,12 @@
             "state" : "translated",
             "value" : "购物清单"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購物清單"
+          }
         }
       }
     },
@@ -9518,6 +11012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "购物提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購物提醒"
           }
         }
       }
@@ -9560,6 +11060,12 @@
             "state" : "translated",
             "value" : "购物提醒"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購物提醒"
+          }
         }
       }
     },
@@ -9596,6 +11102,12 @@
             "state" : "translated",
             "value" : "适合购物的日子提醒（前一天）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適合採買的日子提醒（前一天）"
+          }
         }
       }
     },
@@ -9631,6 +11143,12 @@
             "state" : "translated",
             "value" : "添加项目"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增項目"
+          }
         }
       }
     },
@@ -9665,6 +11183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "添加要买的东西"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增要買的東西"
           }
         }
       }
@@ -9705,6 +11229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "保存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "儲存"
           }
         }
       }
@@ -9747,6 +11277,12 @@
             "state" : "translated",
             "value" : "全国大部分地区"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全國大部分地區"
+          }
         }
       }
     },
@@ -9787,6 +11323,12 @@
             "state" : "translated",
             "value" : "法定节假日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "國定假日"
+          }
         }
       }
     },
@@ -9826,6 +11368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "法定节假日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "國定假日"
           }
         }
       }
@@ -9868,6 +11416,12 @@
             "state" : "translated",
             "value" : "全天休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全天公休"
+          }
         }
       }
     },
@@ -9903,6 +11457,12 @@
             "state" : "translated",
             "value" : "全部删除"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部刪除"
+          }
         }
       }
     },
@@ -9934,6 +11494,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看全部"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "查看全部"
@@ -9974,6 +11540,12 @@
             "state" : "translated",
             "value" : "非常感谢！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感謝！"
+          }
         }
       }
     },
@@ -10008,6 +11580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关于"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於"
           }
         }
       }
@@ -10049,6 +11627,12 @@
             "state" : "translated",
             "value" : "济州"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "濟州"
+          }
         }
       }
     },
@@ -10083,6 +11667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "周"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "週"
           }
         }
       }
@@ -10119,6 +11709,12 @@
             "state" : "translated",
             "value" : "附近的店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "附近的店家"
+          }
         }
       }
     },
@@ -10153,6 +11749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自动识别附近店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動偵測附近店家"
           }
         }
       }
@@ -10189,6 +11791,12 @@
             "state" : "translated",
             "value" : "要查找附近的店铺，\n请在“设置 > DontGoMart > 位置”\n中允许访问位置。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要尋找附近的店家，\n請在「設定 > DontGoMart > 位置」\n中允許存取位置。"
+          }
         }
       }
     },
@@ -10224,6 +11832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把休业消息告诉身边的人"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把公休消息告訴身邊的人"
           }
         }
       }
@@ -10266,6 +11880,12 @@
             "state" : "translated",
             "value" : "把常去的店铺固定在最前面"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把常去的店家固定在最前面"
+          }
         }
       }
     },
@@ -10307,6 +11927,12 @@
             "state" : "translated",
             "value" : "收藏"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏"
+          }
         }
       }
     },
@@ -10339,6 +11965,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目前收到的支持 ☕️ ×%lld"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "目前收到的支持 ☕️ ×%lld"
@@ -10378,6 +12010,12 @@
             "state" : "translated",
             "value" : "进度"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進度"
+          }
         }
       }
     },
@@ -10413,6 +12051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "首个休业日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首個公休日"
           }
         }
       }
@@ -10454,6 +12098,12 @@
             "state" : "translated",
             "value" : "添加"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增"
+          }
         }
       }
     },
@@ -10487,6 +12137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "选择要关注的店铺（可多选）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇要追蹤的店家（可多選）"
           }
         }
       }
@@ -10528,6 +12184,12 @@
             "state" : "translated",
             "value" : "取消"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
         }
       }
     },
@@ -10564,6 +12226,12 @@
             "state" : "translated",
             "value" : "正在准备卡片"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在準備卡片"
+          }
         }
       }
     },
@@ -10599,6 +12267,12 @@
             "state" : "translated",
             "value" : "查看日历"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看行事曆"
+          }
         }
       }
     },
@@ -10633,6 +12307,12 @@
             "state" : "translated",
             "value" : "添加自定义店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增自訂店家"
+          }
         }
       }
     },
@@ -10666,6 +12346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "编辑自定义店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯自訂店家"
           }
         }
       }
@@ -10707,6 +12393,12 @@
             "state" : "translated",
             "value" : "自定义店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂店家"
+          }
         }
       }
     },
@@ -10747,6 +12439,12 @@
             "state" : "translated",
             "value" : "自定义店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂店家"
+          }
         }
       }
     },
@@ -10786,6 +12484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自定义店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂店家"
           }
         }
       }
@@ -10828,6 +12532,12 @@
             "state" : "translated",
             "value" : "添加你自己店铺的休业规律"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增你自己店家的公休規律"
+          }
         }
       }
     },
@@ -10868,6 +12578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自定义店铺"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂店家"
           }
         }
       }
@@ -10910,6 +12626,12 @@
             "state" : "translated",
             "value" : "添加你自己店铺的休业规律"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增你自己店家的公休規律"
+          }
         }
       }
     },
@@ -10945,6 +12667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请喝咖啡 %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請喝咖啡 %@"
           }
         }
       }
@@ -10982,6 +12710,12 @@
             "state" : "translated",
             "value" : "请喝咖啡，%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請喝咖啡，%@"
+          }
         }
       }
     },
@@ -11013,6 +12747,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -11057,6 +12797,12 @@
             "state" : "translated",
             "value" : "Costco 大邱店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -11093,6 +12839,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 大邱店"
@@ -11137,6 +12889,12 @@
             "state" : "translated",
             "value" : "Costco 大邱店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 大邱店"
+          }
         }
       }
     },
@@ -11173,6 +12931,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 蔚山店"
@@ -11217,6 +12981,12 @@
             "state" : "translated",
             "value" : "Costco 蔚山店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
         }
       }
     },
@@ -11253,6 +13023,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 蔚山店"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 蔚山店"
@@ -11297,6 +13073,12 @@
             "state" : "translated",
             "value" : "Costco 普通店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一般店"
+          }
         }
       }
     },
@@ -11336,6 +13118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 普通店"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一般店"
           }
         }
       }
@@ -11377,6 +13165,12 @@
             "state" : "translated",
             "value" : "Costco 普通店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一般店"
+          }
         }
       }
     },
@@ -11413,6 +13207,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 一山店"
@@ -11457,6 +13257,12 @@
             "state" : "translated",
             "value" : "Costco 一山店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
         }
       }
     },
@@ -11493,6 +13299,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco 一山店"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco 一山店"
@@ -11537,6 +13349,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -11577,6 +13395,12 @@
             "state" : "translated",
             "value" : "普通店 - 杨平店、大田店、良才店、\n上凤店、釜山店、光明店、\n天安店、议政府店、公世店、\n松岛店、世宗店、河南店、\n金海店、高尺店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般店 - 楊平店、大田店、良才店、\n上鳳店、釜山店、光明店、\n天安店、議政府店、公世店、\n松島店、世宗店、河南店、\n金海店、高尺店"
+          }
         }
       }
     },
@@ -11611,6 +13435,12 @@
             "state" : "translated",
             "value" : "添加规律"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增規律"
+          }
         }
       }
     },
@@ -11644,6 +13474,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请添加规律"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請新增規律"
           }
         }
       }
@@ -11686,6 +13522,12 @@
             "state" : "translated",
             "value" : "解锁多店铺关注、通知等更多功能"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解鎖多店追蹤、通知等更多功能"
+          }
         }
       }
     },
@@ -11718,6 +13560,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再支持一次 ☕️"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "再支持一次 ☕️"
@@ -11757,6 +13605,12 @@
             "state" : "translated",
             "value" : "所选分店"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所選分店"
+          }
         }
       }
     },
@@ -11792,6 +13646,12 @@
             "state" : "translated",
             "value" : "根据你当前的位置，查找并推荐附近的店铺。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "根據你目前的位置，尋找並推薦附近的店家。"
+          }
         }
       }
     },
@@ -11824,6 +13684,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "好"
@@ -11864,6 +13730,12 @@
             "state" : "translated",
             "value" : "重新加载打赏选项列表"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新載入贊助選項清單"
+          }
         }
       }
     },
@@ -11899,6 +13771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正在加载打赏选项"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在載入贊助選項"
           }
         }
       }
@@ -11936,6 +13814,12 @@
             "state" : "translated",
             "value" : "无法加载打赏选项。请重试"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法載入贊助選項。請重試"
+          }
         }
       }
     },
@@ -11971,6 +13855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关于打赏"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於贊助"
           }
         }
       }
@@ -12008,6 +13898,12 @@
             "state" : "translated",
             "value" : "关闭打赏卡片。30 天内不会再次显示"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉贊助卡片。30 天內不會再次顯示"
+          }
         }
       }
     },
@@ -12040,6 +13936,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持者"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "支持者"
@@ -12080,6 +13982,12 @@
             "state" : "translated",
             "value" : "支持者。目前已请开发者喝了 %lld 杯咖啡。感谢你支持这个 App。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持者。目前已請開發者喝了 %lld 杯咖啡。感謝你支持這個 App。"
+          }
         }
       }
     },
@@ -12116,6 +14024,12 @@
             "state" : "translated",
             "value" : "我们没有忘记你！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我們沒有忘記你！"
+          }
         }
       }
     },
@@ -12151,6 +14065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "感谢你的支持。你目前已送出 %lld 杯咖啡。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感謝你的支持。你目前已送出 %lld 杯咖啡。"
           }
         }
       }
@@ -12195,6 +14115,12 @@
             "state" : "translated",
             "value" : "非常感谢你的支持，这对我们意义重大。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感謝你的支持，這對我們意義重大。"
+          }
         }
       }
     },
@@ -12230,6 +14156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "非常感谢你的支持。你目前已送出 %lld 杯咖啡。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常感謝你的支持。你目前已送出 %lld 杯咖啡。"
           }
         }
       }
@@ -12273,6 +14205,12 @@
             "state" : "translated",
             "value" : "休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休"
+          }
         }
       }
     },
@@ -12306,6 +14244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业方式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休方式"
           }
         }
       }
@@ -12343,6 +14287,12 @@
             "state" : "translated",
             "value" : "分享休业消息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享公休消息"
+          }
         }
       }
     },
@@ -12378,6 +14328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "分享休业提醒卡片图片"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享公休提醒卡片圖片"
           }
         }
       }
@@ -12421,6 +14377,12 @@
             "state" : "translated",
             "value" : "休业提醒卡片。%1$@ %2$@，%3$@休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休提醒卡片。%1$@ %2$@，%3$@公休"
+          }
         }
       }
     },
@@ -12457,6 +14419,12 @@
             "state" : "translated",
             "value" : "制作并分享休业提醒卡片"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "製作並分享公休提醒卡片"
+          }
         }
       }
     },
@@ -12492,6 +14460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把休业提醒卡片分享到 Instagram 快拍"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將公休提醒卡片分享到 Instagram 限時動態"
           }
         }
       }
@@ -12536,6 +14510,12 @@
             "state" : "translated",
             "value" : "无休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無公休"
+          }
         }
       }
     },
@@ -12569,6 +14549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业规律"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休規律"
           }
         }
       }
@@ -12610,6 +14596,12 @@
             "state" : "translated",
             "value" : "休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休"
+          }
         }
       }
     },
@@ -12644,6 +14636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天公休"
           }
         }
       }
@@ -12681,6 +14679,12 @@
             "state" : "translated",
             "value" : "没有休业的店铺"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有公休的店家"
+          }
         }
       }
     },
@@ -12715,6 +14719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日"
           }
         }
       }
@@ -12751,6 +14761,12 @@
             "state" : "translated",
             "value" : "将在休业日前 3 天和 1 天发送通知。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將在公休日前 3 天與 1 天發送通知。"
+          }
         }
       }
     },
@@ -12784,6 +14800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业日提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日提醒"
           }
         }
       }
@@ -12820,6 +14842,12 @@
             "state" : "translated",
             "value" : "请先开启休业日提醒。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請先開啟公休日提醒。"
+          }
         }
       }
     },
@@ -12853,6 +14881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "要接收休业日提醒，请在“设置”中允许通知权限。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要接收公休日提醒，請在「設定」中允許通知權限。"
           }
         }
       }
@@ -12888,6 +14922,12 @@
             "state" : "translated",
             "value" : "没有休业日信息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有公休日資訊"
+          }
         }
       }
     },
@@ -12922,6 +14962,12 @@
             "state" : "translated",
             "value" : "没有休业日信息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有公休日資訊"
+          }
         }
       }
     },
@@ -12955,6 +15001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业日日历"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休日行事曆"
           }
         }
       }
@@ -12992,6 +15044,12 @@
             "state" : "translated",
             "value" : "查看休业日日历"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看公休日行事曆"
+          }
         }
       }
     },
@@ -13027,6 +15085,12 @@
             "state" : "translated",
             "value" : "选择休业日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇公休日"
+          }
         }
       }
     },
@@ -13061,6 +15125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不是休业日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不是公休日"
           }
         }
       }
@@ -13102,6 +15172,12 @@
             "state" : "translated",
             "value" : "找到了“%@”。请确认无误后点按“添加”。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找到了「%@」。請確認無誤後點一下「新增」。"
+          }
         }
       }
     },
@@ -13141,6 +15217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未来 7 天没有休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未來 7 天沒有公休"
           }
         }
       }
@@ -13182,6 +15264,12 @@
             "state" : "translated",
             "value" : "你常去的餐厅未来 7 天都不休息"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你常去的餐廳未來 7 天都不休息"
+          }
         }
       }
     },
@@ -13222,6 +15310,12 @@
             "state" : "translated",
             "value" : "本周没有休业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本週沒有公休"
+          }
         }
       }
     },
@@ -13258,6 +15352,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "管理"
@@ -13302,6 +15402,12 @@
             "state" : "translated",
             "value" : "可以通过 Naver 地图分享链接或截图添加"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可以透過 Naver 地圖分享連結或螢幕截圖新增"
+          }
         }
       }
     },
@@ -13341,6 +15447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "我的餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的餐廳"
           }
         }
       }
@@ -13382,6 +15494,12 @@
             "state" : "translated",
             "value" : "餐厅 · 7 天"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐廳 · 7 天"
+          }
         }
       }
     },
@@ -13421,6 +15539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "添加或修改你常去的餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增或修改你常去的餐廳"
           }
         }
       }
@@ -13462,6 +15586,12 @@
             "state" : "translated",
             "value" : "还没有餐厅。请在 App 中添加。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "還沒有餐廳。請在 App 中新增。"
+          }
         }
       }
     },
@@ -13501,6 +15631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "或在此粘贴分享链接或文字"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "或在此貼上分享連結或文字"
           }
         }
       }
@@ -13542,6 +15678,12 @@
             "state" : "translated",
             "value" : "快速导入"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速匯入"
+          }
         }
       }
     },
@@ -13581,6 +15723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在设备上识别照片中的休息信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在裝置上辨識照片中的休息資訊"
           }
         }
       }
@@ -13622,6 +15770,12 @@
             "state" : "translated",
             "value" : "无法加载照片"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法載入照片"
+          }
         }
       }
     },
@@ -13661,6 +15815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "没有休息的餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有休息的餐廳"
           }
         }
       }
@@ -13702,6 +15862,12 @@
             "state" : "translated",
             "value" : "截图"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕截圖"
+          }
         }
       }
     },
@@ -13741,6 +15907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "删除餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除餐廳"
           }
         }
       }
@@ -13782,6 +15954,12 @@
             "state" : "translated",
             "value" : "餐厅名称"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐廳名稱"
+          }
         }
       }
     },
@@ -13821,6 +15999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "餐廳"
           }
         }
       }
@@ -13862,6 +16046,12 @@
             "state" : "translated",
             "value" : "添加餐厅"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增餐廳"
+          }
         }
       }
     },
@@ -13901,6 +16091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "添加餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增餐廳"
           }
         }
       }
@@ -13942,6 +16138,12 @@
             "state" : "translated",
             "value" : "编辑餐厅"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯餐廳"
+          }
         }
       }
     },
@@ -13981,6 +16183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未来 7 天，你常去的餐厅都不休息。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未來 7 天，你常去的餐廳都不休息。"
           }
         }
       }
@@ -14022,6 +16230,12 @@
             "state" : "translated",
             "value" : "用圆点显示未来 7 天里你常去的餐厅休息的日子。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用圓點顯示未來 7 天裡你常去的餐廳休息的日子。"
+          }
         }
       }
     },
@@ -14061,6 +16275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请在 App 中添加常去的餐厅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請在 App 中新增常去的餐廳"
           }
         }
       }
@@ -14102,6 +16322,12 @@
             "state" : "translated",
             "value" : "显示为全年无休，这家餐厅没有固定休息日。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示為全年無休，這家餐廳沒有固定休息日。"
+          }
         }
       }
     },
@@ -14141,6 +16367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把“餐厅 · 7 天”小组件添加到主屏幕，不用打开 App 也能看到。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將「餐廳 · 7 天」小工具加到主畫面，不用開啟 App 也能看到。"
           }
         }
       }
@@ -14182,6 +16414,12 @@
             "state" : "translated",
             "value" : "按此内容导入"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "依此內容匯入"
+          }
         }
       }
     },
@@ -14221,6 +16459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已获取名称，但没有休息信息。请选择营业时间页面的截图，或在下方手动选择。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已取得名稱，但沒有休息資訊。請選擇營業時間頁面的螢幕截圖，或在下方手動選擇。"
           }
         }
       }
@@ -14262,6 +16506,12 @@
             "state" : "translated",
             "value" : "填入你常去餐厅的固定休息日，我们会用圆点标出未来 7 天里休息的日子。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "填入你常去餐廳的固定休息日，我們會用圓點標出未來 7 天裡休息的日子。"
+          }
         }
       }
     },
@@ -14302,6 +16552,12 @@
             "state" : "translated",
             "value" : "圆点颜色"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圓點顏色"
+          }
         }
       }
     },
@@ -14338,6 +16594,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "固定休息日"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "固定休息日"
@@ -14382,6 +16644,12 @@
             "state" : "translated",
             "value" : "地址（选填）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址（選填）"
+          }
         }
       }
     },
@@ -14421,6 +16689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在地图 App 中点按餐厅的“分享 → 拷贝”后粘贴到这里，或选择餐厅信息页面的截图。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地圖 App 中點一下餐廳的「分享 → 拷貝」後貼到這裡，或選擇餐廳資訊頁面的螢幕截圖。"
           }
         }
       }
@@ -14462,6 +16736,12 @@
             "state" : "translated",
             "value" : "在地图中打开"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地圖中開啟"
+          }
         }
       }
     },
@@ -14501,6 +16781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "手动添加休息日"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動新增休息日"
           }
         }
       }
@@ -14542,6 +16828,12 @@
             "state" : "translated",
             "value" : "请添加休息日"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請新增休息日"
+          }
         }
       }
     },
@@ -14581,6 +16873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "修改休息信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改休息資訊"
           }
         }
       }
@@ -14622,6 +16920,12 @@
             "state" : "translated",
             "value" : "正在查找休息信息…"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在尋找休息資訊…"
+          }
         }
       }
     },
@@ -14661,6 +16965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "没有找到休息信息。请在下方手动选择。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到休息資訊。請在下方手動選擇。"
           }
         }
       }
@@ -14702,6 +17012,12 @@
             "state" : "translated",
             "value" : "帖子 4:5"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "貼文 4:5"
+          }
         }
       }
     },
@@ -14741,6 +17057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "快拍 9:16"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "限時動態 9:16"
           }
         }
       }
@@ -14782,6 +17104,12 @@
             "state" : "translated",
             "value" : "两周休业日历"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "兩週公休行事曆"
+          }
         }
       }
     },
@@ -14821,6 +17149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即将到来"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即將到來"
           }
         }
       }
@@ -14862,6 +17196,12 @@
             "state" : "translated",
             "value" : "在 App Store 搜索“DontGoMart”"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 搜尋「DontGoMart」"
+          }
         }
       }
     },
@@ -14902,6 +17242,12 @@
             "state" : "translated",
             "value" : "店铺休业啦！"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "店家公休囉！"
+          }
         }
       }
     },
@@ -14938,6 +17284,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "照片"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "照片"
@@ -14982,6 +17334,12 @@
             "state" : "translated",
             "value" : "视频"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "影片"
+          }
         }
       }
     },
@@ -15018,6 +17376,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "格式"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "格式"
@@ -15062,6 +17426,12 @@
             "state" : "translated",
             "value" : "媒体"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "媒體"
+          }
         }
       }
     },
@@ -15101,6 +17471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休业提醒卡片。%1$@ %2$@，%3$@休业"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公休提醒卡片。%1$@ %2$@，%3$@公休"
           }
         }
       }
@@ -15142,6 +17518,12 @@
             "state" : "translated",
             "value" : "正在制作视频"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在製作影片"
+          }
         }
       }
     },
@@ -15181,6 +17563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "发布到 Instagram"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發佈到 Instagram"
           }
         }
       }
@@ -15222,6 +17610,12 @@
             "state" : "translated",
             "value" : "在分享列表中选择 Instagram，即可发布为帖子、快拍或 Reels"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在分享列表中選擇 Instagram，即可發佈為貼文、限時動態或 Reels"
+          }
         }
       }
     },
@@ -15262,6 +17656,12 @@
             "state" : "translated",
             "value" : "直接打开 Instagram 快拍编辑器"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直接開啟 Instagram 限時動態編輯器"
+          }
         }
       }
     },
@@ -15298,6 +17698,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "分享"
@@ -15342,6 +17748,12 @@
             "state" : "translated",
             "value" : "分享休业提醒视频"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享公休提醒影片"
+          }
         }
       }
     },
@@ -15381,6 +17793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法制作视频。请改为分享照片。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法製作影片。請改為分享照片。"
           }
         }
       }
@@ -15422,6 +17840,12 @@
             "state" : "translated",
             "value" : "%@起恢复营业"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@起恢復營業"
+          }
         }
       }
     },
@@ -15461,6 +17885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请在%@之前买好东西"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請在%@之前買好東西"
           }
         }
       }

@@ -39,6 +39,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -76,6 +82,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -121,6 +133,12 @@
             "state" : "translated",
             "value" : "需要位置信息，才能查找并推荐附近的店铺。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要位置資訊，才能尋找並推薦附近的店家。"
+          }
         }
       }
     },
@@ -161,6 +179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用于把休业提醒卡片的照片和视频保存到相册。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用於將公休提醒卡片的照片與影片儲存到相簿。"
           }
         }
       }

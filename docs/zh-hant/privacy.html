@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隱私權政策 - DontGoMart</title>
+  <meta name="description" content="說明 DontGoMart 會在裝置上儲存哪些資訊、傳送哪些資訊，以及傳送到哪裡。">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/privacy.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文" class="active" aria-current="true">繁</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>隱私權政策</h1>
+    <p class="last-updated">最後更新：2026 年 10 月 8 日</p>
+
+    <h2>概述</h2>
+    <p>DontGoMart 沒有帳號，也不使用廣告或追蹤工具。你選擇的店家、新增的店家、餐廳與通知設定都只儲存在你的裝置上。開發者收到的只有無法識別個人身分的匿名使用統計，以及你主動選擇傳送的意見。</p>
+    <h2>1. 儲存在裝置上的資訊</h2>
+    <p>為了讓 App 正常運作，以下資訊只儲存在你的裝置上。為了讓主畫面上的小工具能顯示這些內容，裝置上 App 的共用容器裡也會存放相同的內容。</p>
+    <ul>
+      <li>你選擇的店家與地區</li>
+      <li>你自己新增的店家（名稱與公休規律）</li>
+      <li>餐廳（名稱、地址、固定休息日、地圖連結）</li>
+      <li>通知設定（提前幾天、幾點通知）與 App 設定</li>
+    </ul>
+    <p>這些資訊不會傳送給開發者，刪除 App 時會一併刪除。</p>
+    <h2>2. 通知</h2>
+    <p>公休日通知是在裝置上預約的。為了送達通知，不會向伺服器傳送任何內容。</p>
+    <h2>3. 照片</h2>
+    <p>透過螢幕截圖填寫餐廳固定休息日時，App 只會接收你選擇的那張照片。照片中的文字由 Apple 的 Vision 框架在裝置上辨識，照片與文字都不會傳送到任何地方。</p>
+    <p>只有在儲存公休提醒卡片的圖片或影片時，才會請求「加入照片圖庫」的權限。App 不會讀取照片圖庫中的其他照片。</p>
+    <h2>4. 透過 Naver 地圖連結匯入餐廳</h2>
+    <p>貼上從 Naver 地圖分享的連結後，App 會直接連線到該連結與餐廳的 Naver Place 頁面，讀取名稱、地址與固定休息日。和一般瀏覽網頁一樣，Naver 可能會收到 IP 位址等連線資訊，該請求適用 Naver 的隱私權政策。這些通訊不會經過開發者的伺服器。</p>
+    <h2>5. 位置資訊</h2>
+    <p>DontGoMart 不會要求或蒐集位置資訊。店家由你從清單中選擇。</p>
+    <h2>6. 贊助（App 內購買）</h2>
+    <p>咖啡、蛋糕與餐點的贊助透過 Apple 的 App 內購買處理，開發者不會知道你的付款方式與付款明細。贊助次數以及是否顯示支持者徽章，會儲存在你自己的 iCloud 鍵值儲存空間中，以便同步到你的其他裝置。這些資料受你的 Apple 帳號保護，開發者無法查看。</p>
+    <h2>7. 公告</h2>
+    <p>為了確認開發者是否發布了公告，App 會從 Apple CloudKit 的公用資料庫讀取公告。這個過程中不會傳送任何關於你的資訊。</p>
+    <h2>8. 意見回饋</h2>
+    <p>從 App 傳送意見後，以下資訊會傳送到開發者的 CloudKit 資料庫（iCloud.com.Ysoup.FeedbackHub），僅用於回覆你與改進 App。</p>
+    <ul>
+      <li>意見內容與類型</li>
+      <li>App 版本、裝置型號、iOS 版本、語言與地區設定</li>
+      <li>姓名與電子郵件地址（僅在你為了接收回覆而自行填寫時）</li>
+    </ul>
+    <p>只有在你點一下傳送按鈕時，意見才會被傳送。</p>
+    <h2>9. 匿名使用統計</h2>
+    <p>為了了解 App 的實際使用情況，App 會將匿名統計資料傳送到開發者的 CloudKit 資料庫（iCloud.com.Ysoup.FeedbackHub）。</p>
+    <ul>
+      <li>安裝 App 時產生的隨機安裝編號（它與你的姓名、Apple 帳號和裝置識別碼無關，刪除 App 後即消失）</li>
+      <li>App 版本、iOS 版本、語言與地區設定、啟動次數、安裝後的天數、開啟 App 的日期</li>
+      <li>正在追蹤的店家數量、新增的店家數量、通知開關與提前天數、贊助次數</li>
+      <li>分享、開啟行事曆、更換店家、儲存自訂店家、開啟通知、完成贊助等主要操作的名稱</li>
+    </ul>
+    <p>店家與餐廳的名稱、地址、連結、照片、你的姓名、電子郵件地址與位置資訊絕不會被傳送。統計資料最多每 12 小時傳送一次，每種操作最多每 6 小時傳送一次。</p>
+    <h2>10. 第三方</h2>
+    <p>DontGoMart 不使用任何廣告、廣告網路，也不使用第三方分析或追蹤工具。你的資訊只會由上述 Apple 服務（CloudKit、iCloud、App 內購買與裝置上的框架）處理；如果你貼上了連結，還會涉及 Naver。我們不會販售個人資訊，也不會提供給第三方。</p>
+    <h2>11. 保存與刪除</h2>
+    <p>儲存在裝置上的資訊，可以在 App 內刪除，或隨刪除 App 一併清除。儲存在 iCloud 中的贊助紀錄，可以在「設定」的 Apple 帳號與 iCloud 中管理。如果你希望刪除已傳送的意見，請寄電子郵件到下方的地址。</p>
+    <h2>12. 兒童隱私</h2>
+    <p>DontGoMart 不會有意蒐集兒童的個人資訊。</p>
+    <h2>13. 本政策的變更</h2>
+    <p>如果修改本政策，我們會更新此頁面與上方的日期。</p>
+    <h2>14. 聯絡我們</h2>
+    <p>如對資訊處理有任何疑問，請聯絡以下地址。</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">首頁</a>
+    <a href="support.html">支援</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>

@@ -66,6 +66,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "附近的小店<br>也能自己添加", "像“每月第二、第四个周二”这样的规律也行"),
         ("05-share.png", "dark", "休业消息，<br>一张卡片搞定", "马上告诉家人和邻居"),
     ],
+    "zh-Hant": [
+        ("01-main.png", "hero-bleed", "出門之前，<br>只要 3 秒", "今天營業與否，一眼看清"),
+        ("02-calendar.png", "left-text", "本月公休日<br>一眼看清", "行事曆上只標出店家休息的日子"),
+        ("03-marts.png", "text-bottom", "只選你常去的店家", "大型超市、Costco、連假公休都有"),
+        ("04-pattern.png", "flat-rotate", "附近的小店<br>也能自己新增", "像「每月第二、第四個週二」這樣的規律也行"),
+        ("05-share.png", "dark", "公休消息，<br>一張卡片搞定", "馬上告訴家人與鄰居"),
+    ],
 }
 
 BASE_CSS = f"""
