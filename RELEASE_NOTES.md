@@ -30,6 +30,12 @@ Feedback now asks what happened
 設定で送ったご意見と返信を見られます
 ご意見を送るとき、状況を順に尋ねます
 
+### App Store (ru)
+
+В виджетах появилось имя DontGoMart
+Ответы на отзывы — в настройках
+Отзыв теперь уточняет, что случилось
+
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)

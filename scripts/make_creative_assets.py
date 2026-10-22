@@ -24,7 +24,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 PROFILE = tempfile.mkdtemp(prefix="dontgomart-creative-chrome-")
 
 # 앱 언어 코드(raw · marketing 폴더 이름) → App Store Connect 로케일 (--storetext 로 확인한 것)
-STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja"}
+STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -39,6 +39,7 @@ HEADER = {
     "en": ("Store closed days", "Know it's open<br>before you go"),
     "en-GB": ("Shop closing days", "Know it's open<br>before you go"),
     "ja": ("お店の休業日", "行く前にわかる、<br>無駄足なし"),
+    "ru": ("Выходные магазинов", "Узнайте заранее,<br>открыто ли"),
 }
 
 # 검색 결과: 스크린샷 1장("마트 가기 전, 딱 3초")과 **같은 이야기**. 눈썹글은 그 나라 사람이 검색창에 치는 말.
@@ -47,6 +48,7 @@ SEARCH = {
     "en": ("Store closing days", "Check before<br>you go", "See at a glance if your store is open today"),
     "en-GB": ("Shop closing days", "Check before<br>you go", "See at a glance if your shop is open today"),
     "ja": ("スーパー 定休日", "出かける前に、<br>たった3秒", "今日営業しているか、ひと目でわかります"),
+    "ru": ("магазин выходной", "Проверьте до<br>выхода из дома", "Сразу видно, открыт ли магазин сегодня"),
 }
 
 ACCENT = "#F0566A"   # 앱의 분홍(D-Day · 휴무 표시)

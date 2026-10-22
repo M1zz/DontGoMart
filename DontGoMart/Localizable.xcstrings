@@ -30,6 +30,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — shop ahead of time"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — закупитесь заранее"
+          }
         }
       }
     },
@@ -53,6 +59,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
           }
         }
       }
@@ -78,6 +90,12 @@
             "state" : "translated",
             "value" : "Delete %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить: %@"
+          }
         }
       }
     },
@@ -101,6 +119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить: %@"
           }
         }
       }
@@ -131,6 +155,12 @@
             "state" : "translated",
             "value" : "%@ Closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — выходной"
+          }
         }
       }
     },
@@ -154,6 +184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ Closed Pro"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — выходной Pro"
           }
         }
       }
@@ -184,6 +220,12 @@
             "state" : "translated",
             "value" : "Closed %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыто: %@"
+          }
         }
       }
     },
@@ -208,6 +250,12 @@
             "state" : "translated",
             "value" : "Closed on %@!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходной: %@!"
+          }
         }
       }
     },
@@ -231,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
           }
         }
       }
@@ -261,6 +315,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -281,6 +341,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -310,6 +376,12 @@
             "state" : "translated",
             "value" : "%1$lld / %2$lld"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -333,6 +405,12 @@
             "state" : "translated",
             "value" : "%lld items"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld шт."
+          }
         }
       }
     },
@@ -355,6 +433,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld мин"
+          }
         }
       }
     },
@@ -376,6 +460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld o'clock"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ч"
           }
         }
       }
@@ -408,6 +498,12 @@
             "state" : "translated",
             "value" : "%lld days left"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось дней: %lld"
+          }
         }
       }
     },
@@ -432,6 +528,12 @@
             "state" : "translated",
             "value" : "%lld days before"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "За %lld дн."
+          }
         }
       }
     },
@@ -453,6 +555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Week %lld"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неделя %lld"
           }
         }
       }
@@ -481,6 +589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "in %lld weeks, %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Через %lld нед.: %@"
           }
         }
       }
@@ -512,6 +626,12 @@
             "state" : "translated",
             "value" : "Week %lld, %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неделя %lld: %@"
+          }
         }
       }
     },
@@ -540,6 +660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Better VoiceOver support"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобнее с VoiceOver"
           }
         }
       }
@@ -570,6 +696,12 @@
             "state" : "translated",
             "value" : "Siri and Shortcuts"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri и «Команды»"
+          }
         }
       }
     },
@@ -599,6 +731,12 @@
             "state" : "translated",
             "value" : "Ask Siri or run a shortcut to check right away if your store is closed."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спросите Siri или запустите команду, чтобы сразу узнать, закрыт ли ваш магазин."
+          }
         }
       }
     },
@@ -619,6 +757,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -647,6 +791,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -667,6 +817,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -695,6 +851,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -709,6 +871,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -742,6 +910,12 @@
             "state" : "translated",
             "value" : "Even at the largest text sizes, screens rearrange neatly with nothing cut off."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Даже при самом крупном тексте экраны аккуратно перестраиваются, и ничего не обрезается."
+          }
         }
       }
     },
@@ -770,6 +944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erase your chosen stores, added stores, and alert settings in the app at once."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сотрите выбранные и добавленные магазины и настройки уведомлений прямо в приложении."
           }
         }
       }
@@ -800,6 +980,12 @@
             "state" : "translated",
             "value" : "Notice"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Объявление"
+          }
         }
       }
     },
@@ -822,6 +1008,12 @@
             "state" : "translated",
             "value" : "Opens the full notice"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открывает объявление целиком"
+          }
         }
       }
     },
@@ -843,6 +1035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dismiss notice"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть объявление"
           }
         }
       }
@@ -873,6 +1071,12 @@
             "state" : "translated",
             "value" : "Dark Mode"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная тема"
+          }
         }
       }
     },
@@ -901,6 +1105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spot closed days even with Increase Contrast on or when colours are hard to tell apart."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходные видны, даже если включена повышенная контрастность или трудно различать цвета."
           }
         }
       }
@@ -931,6 +1141,12 @@
             "state" : "translated",
             "value" : "More languages"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше языков"
+          }
         }
       }
     },
@@ -959,6 +1175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use the app in more languages."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользуйтесь приложением на большем числе языков."
           }
         }
       }
@@ -989,6 +1211,12 @@
             "state" : "translated",
             "value" : "Save the stores you've added to a file and bring them back anytime."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраняйте добавленные магазины в файл и возвращайте их в любой момент."
+          }
         }
       }
     },
@@ -1018,6 +1246,12 @@
             "state" : "translated",
             "value" : "Delete all my data"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все мои данные"
+          }
         }
       }
     },
@@ -1045,6 +1279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Store closing alert"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оповещение о выходном дне магазина"
           }
         }
       }
@@ -1075,6 +1315,12 @@
             "state" : "translated",
             "value" : "Text and buttons stay clear on a dark screen."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текст и кнопки чётко видны на тёмном экране."
+          }
         }
       }
     },
@@ -1103,6 +1349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Easier-to-see colours"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвета, которые проще различать"
           }
         }
       }
@@ -1133,6 +1385,12 @@
             "state" : "translated",
             "value" : "On iPad, pick stores and flip through the calendar with just the keyboard."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На iPad выбирайте магазины и листайте календарь только с клавиатуры."
+          }
         }
       }
     },
@@ -1161,6 +1419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What's new after updates"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового после обновлений"
           }
         }
       }
@@ -1191,6 +1455,12 @@
             "state" : "translated",
             "value" : "The first time you open the app after an update, see what's new."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При первом запуске после обновления вы увидите, что появилось нового."
+          }
         }
       }
     },
@@ -1219,6 +1489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Handy tips"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полезные советы"
           }
         }
       }
@@ -1249,6 +1525,12 @@
             "state" : "translated",
             "value" : "Get a quick tip about useful features at just the right moment."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В подходящий момент ненавязчиво подскажем полезные функции."
+          }
         }
       }
     },
@@ -1277,6 +1559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backup and export"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Резервная копия и экспорт"
           }
         }
       }
@@ -1307,6 +1595,12 @@
             "state" : "translated",
             "value" : "If the app closes while you're adding a store, what you typed is still there."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если приложение закроется во время добавления магазина, введённое сохранится."
+          }
         }
       }
     },
@@ -1328,6 +1622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld more"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "и ещё: %lld"
           }
         }
       }
@@ -1358,6 +1658,12 @@
             "state" : "translated",
             "value" : "VoiceOver reads closed days and buttons in full, in the right order."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver полностью и в правильном порядке читает выходные дни и кнопки."
+          }
         }
       }
     },
@@ -1386,6 +1692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ready for larger text"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Крупный текст"
           }
         }
       }
@@ -1416,6 +1728,12 @@
             "state" : "translated",
             "value" : "Keyboard controls"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управление с клавиатуры"
+          }
         }
       }
     },
@@ -1444,6 +1762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quick start guide"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Краткое руководство"
           }
         }
       }
@@ -1474,6 +1798,12 @@
             "state" : "translated",
             "value" : "The first time you open the app, see what it can do in a few short steps."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При первом запуске в нескольких шагах покажем, что умеет приложение."
+          }
         }
       }
     },
@@ -1502,6 +1832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Made for foldable iPhone"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для складного iPhone"
           }
         }
       }
@@ -1532,6 +1868,12 @@
             "state" : "translated",
             "value" : "On a foldable iPhone, use the wide screen as two side-by-side panes."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На складном iPhone широкий экран делится на две панели."
+          }
         }
       }
     },
@@ -1561,6 +1903,12 @@
             "state" : "translated",
             "value" : "Pick up where you left off"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжайте с того же места"
+          }
         }
       }
     },
@@ -1575,6 +1923,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -1597,6 +1951,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -1615,6 +1975,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -1629,6 +1995,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -1655,6 +2027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Good Day to Shop Alert"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Напоминание: пора за покупками"
           }
         }
       }
@@ -1683,6 +2061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Good Day to Shop"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Хороший день для покупок"
           }
         }
       }
@@ -1714,6 +2098,12 @@
             "state" : "translated",
             "value" : "Alerts you when a closed day is within a week!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предупредит, если выходной день наступит в течение недели!"
+          }
         }
       }
     },
@@ -1734,6 +2124,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -1768,6 +2164,12 @@
             "state" : "translated",
             "value" : "Closure Alert Widget"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виджет оповещения о выходных"
+          }
         }
       }
     },
@@ -1798,6 +2200,12 @@
             "state" : "translated",
             "value" : "Closure D-Day Widget"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виджет обратного отсчёта до выходного"
+          }
         }
       }
     },
@@ -1818,6 +2226,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -1846,6 +2260,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -1866,6 +2286,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -1894,6 +2320,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -1914,6 +2346,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -1946,6 +2384,12 @@
             "state" : "translated",
             "value" : "%@ is closed tomorrow. Today is a good day to shop!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра «%@» закрыт. Сегодня самое время сходить за покупками!"
+          }
         }
       }
     },
@@ -1973,6 +2417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ will be closed in %lld days."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» закроется через %lld дн."
           }
         }
       }
@@ -2003,6 +2453,12 @@
             "state" : "translated",
             "value" : "%@ will be closed in %lld day(s)."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» закроется через %lld дн."
+          }
         }
       }
     },
@@ -2031,6 +2487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Don't forget to shop before the next closed day!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не забудьте закупиться до следующего выходного!"
           }
         }
       }
@@ -2061,6 +2523,12 @@
             "state" : "translated",
             "value" : "Manage local store closures too"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следите и за выходными местных магазинов"
+          }
         }
       }
     },
@@ -2089,6 +2557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Register your own store's closure pattern"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте график выходных своего магазина"
           }
         }
       }
@@ -2119,6 +2593,12 @@
             "state" : "translated",
             "value" : "Your favourites always appear at the top"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Избранное всегда сверху"
+          }
         }
       }
     },
@@ -2147,6 +2627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bookmark your favourite stores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавляйте любимые магазины в закладки"
           }
         }
       }
@@ -2177,6 +2663,12 @@
             "state" : "translated",
             "value" : "One-time purchase for all features, forever"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разовая покупка открывает все функции навсегда"
+          }
         }
       }
     },
@@ -2205,6 +2697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upgrade to DontGoMart Pro"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейдите на DontGoMart Pro"
           }
         }
       }
@@ -2235,6 +2733,12 @@
             "state" : "translated",
             "value" : "Check E-Mart, Costco, Homeplus closures at once"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверяйте выходные E-Mart, Costco и Homeplus сразу"
+          }
         }
       }
     },
@@ -2263,6 +2767,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Track multiple marts at once"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следите сразу за несколькими магазинами"
           }
         }
       }
@@ -2293,6 +2803,12 @@
             "state" : "translated",
             "value" : "Get alerts before closed days so you never waste a trip"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминания перед выходными — и никаких напрасных поездок"
+          }
         }
       }
     },
@@ -2321,6 +2837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Never visit a closed store again"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше никаких поездок к закрытым магазинам"
           }
         }
       }
@@ -2351,6 +2873,12 @@
             "state" : "translated",
             "value" : "Add as many items as you need"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавляйте сколько угодно товаров"
+          }
         }
       }
     },
@@ -2379,6 +2907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlimited shopping list"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список покупок без ограничений"
           }
         }
       }
@@ -2409,6 +2943,12 @@
             "state" : "translated",
             "value" : "☕ For the price of a coffee, unlock everything forever"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ По цене чашки кофе — все функции навсегда"
+          }
         }
       }
     },
@@ -2437,6 +2977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You'll be notified %1$lld days and %2$lld day before closed days at %3$@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления придут за %1$lld и за %2$lld дн. до выходного в %3$@."
           }
         }
       }
@@ -2468,6 +3014,12 @@
             "state" : "translated",
             "value" : "Shows in green/red whether your store is open this Sunday."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зелёным или красным показывает, работает ли ваш магазин в это воскресенье."
+          }
         }
       }
     },
@@ -2495,6 +3047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shows the next two upcoming closed days!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывает два ближайших выходных дня!"
           }
         }
       }
@@ -2526,6 +3084,12 @@
             "state" : "translated",
             "value" : "Shows the number of days until the next closed day!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывает, сколько дней осталось до следующего выходного!"
+          }
         }
       }
     },
@@ -2556,6 +3120,12 @@
             "state" : "translated",
             "value" : "Sunday Open/Closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Воскресенье: открыто или закрыто"
+          }
         }
       }
     },
@@ -2580,6 +3150,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -2600,6 +3176,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -2634,6 +3216,12 @@
             "state" : "translated",
             "value" : "Two Closed Days Widget"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виджет двух выходных"
+          }
         }
       }
     },
@@ -2657,6 +3245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dismisses the thank-you message"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрывает слова благодарности"
           }
         }
       }
@@ -2682,6 +3276,12 @@
             "state" : "translated",
             "value" : "Thank you!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо!"
+          }
         }
       }
     },
@@ -2706,6 +3306,12 @@
             "state" : "translated",
             "value" : "Sends the developer the price of a coffee"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отправляет разработчику на чашку кофе"
+          }
         }
       }
     },
@@ -2729,6 +3335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sends a tip to the developer"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержать разработчика"
           }
         }
       }
@@ -2759,6 +3371,12 @@
             "state" : "translated",
             "value" : "Parts of Gyeonggi/Cheongju"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часть Кёнгидо / Чхонджу"
+          }
         }
       }
     },
@@ -2783,6 +3401,12 @@
             "state" : "translated",
             "value" : "Thanks, see you next time"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо, до новых встреч"
+          }
         }
       }
     },
@@ -2805,6 +3429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closing Soon"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скоро выходной"
           }
         }
       }
@@ -2829,6 +3459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Share"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться"
           }
         }
       }
@@ -2858,6 +3494,12 @@
             "state" : "translated",
             "value" : "Holiday"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Праздник"
+          }
         }
       }
     },
@@ -2879,6 +3521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restore Purchases"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восстановить покупки"
           }
         }
       }
@@ -2909,6 +3557,12 @@
             "state" : "translated",
             "value" : "Feature"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Функция"
+          }
         }
       }
     },
@@ -2930,6 +3584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "My Stores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои магазины"
           }
         }
       }
@@ -2960,6 +3620,12 @@
             "state" : "translated",
             "value" : "Tomorrow"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра"
+          }
         }
       }
     },
@@ -2982,6 +3648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tomorrow %@ Closed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра закрыт: %@"
           }
         }
       }
@@ -3014,6 +3686,12 @@
             "state" : "translated",
             "value" : "Closed tomorrow"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра выходной"
+          }
         }
       }
     },
@@ -3035,6 +3713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upcoming Closed Days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ближайшие выходные"
           }
         }
       }
@@ -3059,6 +3743,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Next month"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий месяц"
           }
         }
       }
@@ -3091,6 +3781,12 @@
             "state" : "translated",
             "value" : "Next %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На следующей неделе: %@"
+          }
         }
       }
     },
@@ -3120,6 +3816,12 @@
             "state" : "translated",
             "value" : "Next Closed Day"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий выходной"
+          }
         }
       }
     },
@@ -3142,6 +3844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We'll remind you to shop 2 days before the next closed day."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напомним о покупках за 2 дня до следующего выходного."
           }
         }
       }
@@ -3174,6 +3882,12 @@
             "state" : "translated",
             "value" : "No closed day info"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет данных о выходных"
+          }
         }
       }
     },
@@ -3197,6 +3911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maybe later"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не сейчас"
           }
         }
       }
@@ -3227,6 +3947,12 @@
             "state" : "translated",
             "value" : "Track multiple marts simultaneously"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следите за несколькими магазинами одновременно"
+          }
         }
       }
     },
@@ -3256,6 +3982,12 @@
             "state" : "translated",
             "value" : "Multi-Mart Tracking"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Несколько магазинов"
+          }
         }
       }
     },
@@ -3279,6 +4011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Close"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         }
       }
@@ -3304,6 +4042,12 @@
             "state" : "translated",
             "value" : "Opens the calendar to check closed days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открывает календарь с выходными днями"
+          }
         }
       }
     },
@@ -3326,6 +4070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тэгу"
           }
         }
       }
@@ -3356,6 +4106,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Тэгу"
+          }
         }
       }
     },
@@ -3383,6 +4139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daegu"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тэгу"
           }
         }
       }
@@ -3412,6 +4174,12 @@
             "state" : "translated",
             "value" : "Daegu, Daegu Innovation"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тэгу, Тэгу Хёксин"
+          }
         }
       }
     },
@@ -3434,6 +4202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет"
           }
         }
       }
@@ -3463,6 +4237,12 @@
             "state" : "translated",
             "value" : "Supermarket (Wednesday closed)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (выходной в среду)"
+          }
         }
       }
     },
@@ -3490,6 +4270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Wednesday closed)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (выходной в среду)"
           }
         }
       }
@@ -3519,6 +4305,12 @@
             "state" : "translated",
             "value" : "Supermarket (Wed)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (ср)"
+          }
         }
       }
     },
@@ -3546,6 +4338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan mixed)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Ульсан, смешанный)"
           }
         }
       }
@@ -3575,6 +4373,12 @@
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Ульсан)"
+          }
         }
       }
     },
@@ -3602,6 +4406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Ульсан)"
           }
         }
       }
@@ -3631,6 +4441,12 @@
             "state" : "translated",
             "value" : "Supermarket (Sunday closed)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (выходной в воскресенье)"
+          }
         }
       }
     },
@@ -3658,6 +4474,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Sunday closed)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (выходной в воскресенье)"
           }
         }
       }
@@ -3687,6 +4509,12 @@
             "state" : "translated",
             "value" : "Supermarket (Sun)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (вс)"
+          }
         }
       }
     },
@@ -3714,6 +4542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Чеджу)"
           }
         }
       }
@@ -3743,6 +4577,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Чеджу)"
+          }
         }
       }
     },
@@ -3771,6 +4611,12 @@
             "state" : "translated",
             "value" : "Supermarket (Jeju)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супермаркет (Чеджу)"
+          }
         }
       }
     },
@@ -3795,6 +4641,12 @@
             "state" : "translated",
             "value" : "If this helped, cheer us on with a coffee."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если приложение помогло, поддержите нас чашкой кофе."
+          }
         }
       }
     },
@@ -3815,6 +4667,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -3844,6 +4702,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -3868,6 +4732,12 @@
             "state" : "translated",
             "value" : "Double tap to dismiss"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дважды коснитесь, чтобы закрыть"
+          }
         }
       }
     },
@@ -3891,6 +4761,12 @@
             "state" : "translated",
             "value" : "Mart"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазин"
+          }
         }
       }
     },
@@ -3913,6 +4789,12 @@
             "state" : "translated",
             "value" : "Check closed days on DontGoMart before you shop ✅"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перед походом в магазин проверьте выходные в DontGoMart ✅"
+          }
         }
       }
     },
@@ -3934,6 +4816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Store Colour"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет магазина"
           }
         }
       }
@@ -3963,6 +4851,12 @@
             "state" : "translated",
             "value" : "Pick a store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите магазин"
+          }
         }
       }
     },
@@ -3984,6 +4878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Store name (e.g. Homeplus Gangnam)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название магазина (напр., Homeplus Gangnam)"
           }
         }
       }
@@ -4007,6 +4907,12 @@
             "state" : "translated",
             "value" : "Store Info"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О магазине"
+          }
         }
       }
     },
@@ -4028,6 +4934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add Store"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить магазин"
           }
         }
       }
@@ -4051,6 +4963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closed Mart"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазин закрыт"
           }
         }
       }
@@ -4081,6 +4999,12 @@
             "state" : "translated",
             "value" : "Store Closure Notice"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомление о выходном дне магазина"
+          }
         }
       }
     },
@@ -4104,6 +5028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Store closure alert"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оповещение о выходном дне магазина"
           }
         }
       }
@@ -4134,6 +5064,12 @@
             "state" : "translated",
             "value" : "Mart"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазин"
+          }
         }
       }
     },
@@ -4162,6 +5098,12 @@
             "state" : "translated",
             "value" : "Mart"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазин"
+          }
         }
       }
     },
@@ -4185,6 +5127,12 @@
             "state" : "translated",
             "value" : "Select Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбор магазина"
+          }
         }
       }
     },
@@ -4206,6 +5154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opens store selection and notification settings"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открывает выбор магазина и настройки уведомлений"
           }
         }
       }
@@ -4236,6 +5190,12 @@
             "state" : "translated",
             "value" : "Varies by store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зависит от магазина"
+          }
         }
       }
     },
@@ -4258,6 +5218,12 @@
             "state" : "translated",
             "value" : "Select Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбор магазина"
+          }
         }
       }
     },
@@ -4279,6 +5245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Please select a store"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите магазин"
           }
         }
       }
@@ -4309,6 +5281,12 @@
             "state" : "translated",
             "value" : "No store selected. Please choose one in Settings."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазин не выбран. Выберите его в настройках."
+          }
         }
       }
     },
@@ -4333,6 +5311,12 @@
             "state" : "translated",
             "value" : "Every %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Еженедельно: %@"
+          }
         }
       }
     },
@@ -4356,6 +5340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Every feature stays free. A tip is pure encouragement, and you can send one any time."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все функции остаются бесплатными. Поддержка — это просто знак внимания, и отправить её можно сколько угодно раз."
           }
         }
       }
@@ -4388,6 +5378,12 @@
             "state" : "translated",
             "value" : "In 2 days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Послезавтра"
+          }
         }
       }
     },
@@ -4416,6 +5412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No item limit on your shopping list"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список покупок без ограничения по количеству"
           }
         }
       }
@@ -4446,6 +5448,12 @@
             "state" : "translated",
             "value" : "Unlimited Shopping List"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список покупок без ограничений"
+          }
         }
       }
     },
@@ -4475,6 +5483,12 @@
             "state" : "translated",
             "value" : "Upgrade for unlimited shopping items"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейдите на Pro — без ограничения по количеству покупок"
+          }
         }
       }
     },
@@ -4497,6 +5511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия"
           }
         }
       }
@@ -4522,6 +5542,12 @@
             "state" : "translated",
             "value" : "Your support is what keeps this app going."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Благодаря вашей поддержке мы продолжаем развивать приложение."
+          }
         }
       }
     },
@@ -4546,6 +5572,12 @@
             "state" : "translated",
             "value" : "Your support means a lot. (☕️ ×%lld so far)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша поддержка очень важна. (☕️ ×%lld на данный момент)"
+          }
         }
       }
     },
@@ -4567,6 +5599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "мин"
           }
         }
       }
@@ -4590,6 +5628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quick Actions"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Быстрые действия"
           }
         }
       }
@@ -4622,6 +5666,12 @@
             "state" : "translated",
             "value" : "Not selected"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не выбрано"
+          }
         }
       }
     },
@@ -4644,6 +5694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clear Selection"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить выбор"
           }
         }
       }
@@ -4673,6 +5729,12 @@
             "state" : "translated",
             "value" : "No store selected. Open the app to choose one."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазины не выбраны. Откройте приложение и выберите магазин."
+          }
         }
       }
     },
@@ -4694,6 +5756,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selected Pattern"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбранный шаблон"
           }
         }
       }
@@ -4726,6 +5794,12 @@
             "state" : "translated",
             "value" : "Selected"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрано"
+          }
         }
       }
     },
@@ -4749,6 +5823,12 @@
             "state" : "translated",
             "value" : "All selected stores are open"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все выбранные магазины работают"
+          }
         }
       }
     },
@@ -4771,6 +5851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All selected stores are closed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все выбранные магазины закрыты"
           }
         }
       }
@@ -4800,6 +5886,12 @@
             "state" : "translated",
             "value" : "Lunar New Year/Chuseok Holidays"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Праздники: лунный Новый год и Чхусок"
+          }
         }
       }
     },
@@ -4821,6 +5913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settings"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         }
       }
@@ -4846,6 +5944,12 @@
             "state" : "translated",
             "value" : "Choose the stores to track in Settings"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите в настройках магазины для отслеживания"
+          }
         }
       }
     },
@@ -4869,6 +5973,12 @@
             "state" : "translated",
             "value" : "Select stores to track in Settings"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите в настройках магазины для отслеживания"
+          }
         }
       }
     },
@@ -4891,6 +6001,12 @@
             "state" : "translated",
             "value" : "Go to Settings"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейти в настройки"
+          }
         }
       }
     },
@@ -4912,6 +6028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hour"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Час"
           }
         }
       }
@@ -4942,6 +6064,12 @@
             "state" : "translated",
             "value" : "Unknown"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неизвестно"
+          }
         }
       }
     },
@@ -4963,6 +6091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notification Permission Required"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нужно разрешение на уведомления"
           }
         }
       }
@@ -4987,6 +6121,12 @@
             "state" : "translated",
             "value" : "Notification Settings"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки уведомлений"
+          }
         }
       }
     },
@@ -5008,6 +6148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notification Time"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время уведомления"
           }
         }
       }
@@ -5032,6 +6178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notify me"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Когда уведомлять"
           }
         }
       }
@@ -5062,6 +6214,12 @@
             "state" : "translated",
             "value" : "Get notified before closed days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления перед выходными"
+          }
         }
       }
     },
@@ -5090,6 +6248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifications"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления"
           }
         }
       }
@@ -5120,6 +6284,12 @@
             "state" : "translated",
             "value" : "Get notified before closed days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления перед выходными"
+          }
         }
       }
     },
@@ -5141,6 +6311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifications"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления"
           }
         }
       }
@@ -5165,6 +6341,12 @@
             "state" : "translated",
             "value" : "Leave a Review on App Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставить отзыв в App Store"
+          }
         }
       }
     },
@@ -5187,6 +6369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "View on App Store"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть в App Store"
           }
         }
       }
@@ -5212,6 +6400,12 @@
             "state" : "translated",
             "value" : "Thank you for supporting the app ☕️"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо, что поддерживаете приложение ☕️"
+          }
         }
       }
     },
@@ -5234,6 +6428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Янпхён, Тэджон, Янчжэ, \nСанбон, Пусан, Кванмён, \nЧхонан, Ыйджонбу, Консе, \nСондо, Седжон, Ханам, \nКимхэ, Кочхок"
           }
         }
       }
@@ -5262,6 +6462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыто"
           }
         }
       }
@@ -5292,6 +6498,12 @@
             "state" : "translated",
             "value" : "Open"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыто"
+          }
         }
       }
     },
@@ -5314,6 +6526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open Today"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня открыто"
           }
         }
       }
@@ -5344,6 +6562,12 @@
             "state" : "translated",
             "value" : "Today"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня"
+          }
         }
       }
     },
@@ -5366,6 +6590,12 @@
             "state" : "translated",
             "value" : "%@ closed today"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня закрыт: %@"
+          }
         }
       }
     },
@@ -5387,6 +6617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Can I go today?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Можно сегодня идти?"
           }
         }
       }
@@ -5417,6 +6653,12 @@
             "state" : "translated",
             "value" : "All selected stores are open today."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня все выбранные магазины открыты."
+          }
         }
       }
     },
@@ -5446,6 +6688,12 @@
             "state" : "translated",
             "value" : "All selected stores are closed today."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня все выбранные магазины закрыты."
+          }
         }
       }
     },
@@ -5470,6 +6718,12 @@
             "state" : "translated",
             "value" : "Shares today's status and upcoming closed days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Делится сегодняшним статусом и ближайшими выходными"
+          }
         }
       }
     },
@@ -5493,6 +6747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open today"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня открыто"
           }
         }
       }
@@ -5525,6 +6785,12 @@
             "state" : "translated",
             "value" : "Some stores are closed today: %@."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня закрыты только некоторые магазины: %@."
+          }
         }
       }
     },
@@ -5548,6 +6814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We saved you a wasted trip today"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня мы уберегли вас от напрасной поездки"
           }
         }
       }
@@ -5580,6 +6852,12 @@
             "state" : "translated",
             "value" : "Closed today"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня выходной"
+          }
         }
       }
     },
@@ -5604,6 +6882,12 @@
             "state" : "translated",
             "value" : "Closed today"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня выходной"
+          }
         }
       }
     },
@@ -5625,6 +6909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We saved you another wasted trip today.\nWe still remember your generous support."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мы снова уберегли вас от напрасной поездки.\nМы помним вашу щедрую поддержку."
           }
         }
       }
@@ -5654,6 +6944,12 @@
             "state" : "translated",
             "value" : "Done"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
+          }
         }
       }
     },
@@ -5677,6 +6973,12 @@
             "state" : "translated",
             "value" : "Delete Completed Items"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить выполненные"
+          }
         }
       }
     },
@@ -5699,6 +7001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ульсан"
           }
         }
       }
@@ -5729,6 +7037,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ульсан"
+          }
         }
       }
     },
@@ -5756,6 +7070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ульсан"
           }
         }
       }
@@ -5785,6 +7105,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ульсан"
+          }
         }
       }
     },
@@ -5813,6 +7139,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ульсан"
+          }
         }
       }
     },
@@ -5835,6 +7167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месяц"
           }
         }
       }
@@ -5859,6 +7197,12 @@
             "state" : "translated",
             "value" : "Location Permission Required"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нужен доступ к геопозиции"
+          }
         }
       }
     },
@@ -5882,6 +7226,12 @@
             "state" : "translated",
             "value" : "Location Features"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Функции геопозиции"
+          }
         }
       }
     },
@@ -5903,6 +7253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Support Us"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержать"
           }
         }
       }
@@ -5931,6 +7287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sun"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вс"
           }
         }
       }
@@ -5963,6 +7325,12 @@
             "state" : "translated",
             "value" : "This %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На этой неделе: %@"
+          }
         }
       }
     },
@@ -5985,6 +7353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This week %@ Closed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На этой неделе закрыт: %@"
           }
         }
       }
@@ -6014,6 +7388,12 @@
             "state" : "translated",
             "value" : "This Sunday"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это воскресенье"
+          }
         }
       }
     },
@@ -6041,6 +7421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This Sunday %@, store open"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это воскресенье, %@: магазин открыт"
           }
         }
       }
@@ -6070,6 +7456,12 @@
             "state" : "translated",
             "value" : "This Sunday %@, store closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это воскресенье, %@: магазин закрыт"
+          }
         }
       }
     },
@@ -6093,6 +7485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Previous month"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предыдущий месяц"
           }
         }
       }
@@ -6118,6 +7516,12 @@
             "state" : "translated",
             "value" : "Share to Instagram Stories"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться в Instagram Stories"
+          }
         }
       }
     },
@@ -6142,6 +7546,12 @@
             "state" : "translated",
             "value" : "Instagram must be installed to share to Stories."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы поделиться в Stories, на устройстве должен быть установлен Instagram."
+          }
         }
       }
     },
@@ -6165,6 +7575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram not found"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram не найден"
           }
         }
       }
@@ -6191,6 +7607,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -6223,6 +7645,12 @@
             "state" : "translated",
             "value" : "Regular"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обычный"
+          }
         }
       }
     },
@@ -6245,6 +7673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Regular Stores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обычные магазины"
           }
         }
       }
@@ -6269,6 +7703,12 @@
             "state" : "translated",
             "value" : "Some Open"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часть открыта"
+          }
         }
       }
     },
@@ -6290,6 +7730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Some stores are closed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыты только некоторые магазины"
           }
         }
       }
@@ -6313,6 +7759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ильсан"
           }
         }
       }
@@ -6343,6 +7795,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ильсан"
+          }
         }
       }
     },
@@ -6371,6 +7829,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ильсан"
+          }
         }
       }
     },
@@ -6398,6 +7862,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ильсан"
           }
         }
       }
@@ -6428,6 +7898,12 @@
             "state" : "translated",
             "value" : "One-time purchase. No subscription."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разовая покупка. Без подписки."
+          }
         }
       }
     },
@@ -6449,6 +7925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add closure patterns for your favourite stores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте график выходных любимых магазинов"
           }
         }
       }
@@ -6473,6 +7955,12 @@
             "state" : "translated",
             "value" : "Shopping Reminder"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминание о покупках"
+          }
         }
       }
     },
@@ -6496,6 +7984,12 @@
             "state" : "translated",
             "value" : "Shopping List"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список покупок"
+          }
         }
       }
     },
@@ -6518,6 +8012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shopping Alert"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминание о покупках"
           }
         }
       }
@@ -6548,6 +8048,12 @@
             "state" : "translated",
             "value" : "Shopping Reminder"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминание о покупках"
+          }
         }
       }
     },
@@ -6572,6 +8078,12 @@
             "state" : "translated",
             "value" : "Good-day-to-shop alert (day before)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминание о хорошем дне для покупок (накануне)"
+          }
         }
       }
     },
@@ -6595,6 +8107,12 @@
             "state" : "translated",
             "value" : "Add item"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить товар"
+          }
         }
       }
     },
@@ -6617,6 +8135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add items to your shopping list"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте товары в список покупок"
           }
         }
       }
@@ -6645,6 +8169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить"
           }
         }
       }
@@ -6675,6 +8205,12 @@
             "state" : "translated",
             "value" : "Most regions nationwide"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Большинство регионов страны"
+          }
         }
       }
     },
@@ -6703,6 +8239,12 @@
             "state" : "translated",
             "value" : "National Holiday"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Государственный праздник"
+          }
         }
       }
     },
@@ -6730,6 +8272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "National Holiday"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Государственный праздник"
           }
         }
       }
@@ -6760,6 +8308,12 @@
             "state" : "translated",
             "value" : "Closed all day"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходной весь день"
+          }
         }
       }
     },
@@ -6783,6 +8337,12 @@
             "state" : "translated",
             "value" : "Delete All"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все"
+          }
         }
       }
     },
@@ -6805,6 +8365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "View All"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать все"
           }
         }
       }
@@ -6830,6 +8396,12 @@
             "state" : "translated",
             "value" : "Thank you so much!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огромное спасибо!"
+          }
         }
       }
     },
@@ -6852,6 +8424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "About"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О приложении"
           }
         }
       }
@@ -6881,6 +8459,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чеджу"
+          }
         }
       }
     },
@@ -6903,6 +8487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weekly"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неделя"
           }
         }
       }
@@ -6927,6 +8517,12 @@
             "state" : "translated",
             "value" : "Nearby Stores"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазины рядом"
+          }
         }
       }
     },
@@ -6949,6 +8545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auto-detect Nearby Stores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоопределение магазинов рядом"
           }
         }
       }
@@ -6973,6 +8575,12 @@
             "state" : "translated",
             "value" : "To find nearby stores,\nplease allow location access in\nSettings > DontGoMart > Location."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы найти магазины рядом,\nразрешите доступ к геопозиции в\nНастройки > DontGoMart > Геопозиция."
+          }
         }
       }
     },
@@ -6996,6 +8604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tell people around you about closures"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расскажите окружающим о выходных"
           }
         }
       }
@@ -7026,6 +8640,12 @@
             "state" : "translated",
             "value" : "Pin your favourite marts to the top"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрепите любимые магазины сверху"
+          }
         }
       }
     },
@@ -7055,6 +8675,12 @@
             "state" : "translated",
             "value" : "Favourites"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Избранное"
+          }
         }
       }
     },
@@ -7079,6 +8705,12 @@
             "state" : "translated",
             "value" : "Support received so far ☕️ ×%lld"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка на данный момент ☕️ ×%lld"
+          }
         }
       }
     },
@@ -7101,6 +8733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Progress"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс"
           }
         }
       }
@@ -7125,6 +8763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "First closed day"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Первый выходной"
           }
         }
       }
@@ -7154,6 +8798,12 @@
             "state" : "translated",
             "value" : "Add"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить"
+          }
         }
       }
     },
@@ -7175,6 +8825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Select stores to track (multiple)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите магазины для отслеживания (можно несколько)"
           }
         }
       }
@@ -7204,6 +8860,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
         }
       }
     },
@@ -7228,6 +8890,12 @@
             "state" : "translated",
             "value" : "Preparing your card"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готовим карточку"
+          }
         }
       }
     },
@@ -7251,6 +8919,12 @@
             "state" : "translated",
             "value" : "View Calendar"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть календарь"
+          }
         }
       }
     },
@@ -7273,6 +8947,12 @@
             "state" : "translated",
             "value" : "Add Custom Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить свой магазин"
+          }
         }
       }
     },
@@ -7294,6 +8974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit Custom Store"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить свой магазин"
           }
         }
       }
@@ -7323,6 +9009,12 @@
             "state" : "translated",
             "value" : "Custom Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свой магазин"
+          }
         }
       }
     },
@@ -7351,6 +9043,12 @@
             "state" : "translated",
             "value" : "Custom Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свой магазин"
+          }
         }
       }
     },
@@ -7378,6 +9076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Custom Store"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свой магазин"
           }
         }
       }
@@ -7408,6 +9112,12 @@
             "state" : "translated",
             "value" : "Add your own mart's closed-day patterns"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте график выходных своего магазина"
+          }
         }
       }
     },
@@ -7436,6 +9146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Custom Mart"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свой магазин"
           }
         }
       }
@@ -7466,6 +9182,12 @@
             "state" : "translated",
             "value" : "Add your own mart's closed-day patterns"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте график выходных своего магазина"
+          }
         }
       }
     },
@@ -7489,6 +9211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buy a coffee %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Угостить кофе %@"
           }
         }
       }
@@ -7514,6 +9242,12 @@
             "state" : "translated",
             "value" : "Buy a coffee, %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Угостить кофе, %@"
+          }
         }
       }
     },
@@ -7533,6 +9267,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -7565,6 +9305,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Тэгу"
+          }
         }
       }
     },
@@ -7592,6 +9338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Daegu"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Тэгу"
           }
         }
       }
@@ -7621,6 +9373,12 @@
             "state" : "translated",
             "value" : "Costco Daegu"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Тэгу"
+          }
         }
       }
     },
@@ -7648,6 +9406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ульсан"
           }
         }
       }
@@ -7677,6 +9441,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ульсан"
+          }
         }
       }
     },
@@ -7704,6 +9474,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ульсан"
           }
         }
       }
@@ -7733,6 +9509,12 @@
             "state" : "translated",
             "value" : "Costco Regular"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco, обычные"
+          }
         }
       }
     },
@@ -7760,6 +9542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Regular"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco, обычные"
           }
         }
       }
@@ -7789,6 +9577,12 @@
             "state" : "translated",
             "value" : "Costco Regular"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco, обычные"
+          }
         }
       }
     },
@@ -7816,6 +9610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ильсан"
           }
         }
       }
@@ -7845,6 +9645,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ильсан"
+          }
         }
       }
     },
@@ -7873,6 +9679,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ильсан"
+          }
         }
       }
     },
@@ -7897,6 +9709,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -7929,6 +9747,12 @@
             "state" : "translated",
             "value" : "Regular - Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обычные — Янпхён, Тэджон, Янчжэ, \nСанбон, Пусан, Кванмён, \nЧхонан, Ыйджонбу, Консе, \nСондо, Седжон, Ханам, \nКимхэ, Кочхок"
+          }
         }
       }
     },
@@ -7951,6 +9775,12 @@
             "state" : "translated",
             "value" : "Add Pattern"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить шаблон"
+          }
         }
       }
     },
@@ -7972,6 +9802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Please add a pattern"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте шаблон"
           }
         }
       }
@@ -8002,6 +9838,12 @@
             "state" : "translated",
             "value" : "Unlock multi-mart tracking, notifications & more"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте отслеживание нескольких магазинов, уведомления и многое другое"
+          }
         }
       }
     },
@@ -8026,6 +9868,12 @@
             "state" : "translated",
             "value" : "Cheer us on again ☕️"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержать ещё раз ☕️"
+          }
         }
       }
     },
@@ -8049,6 +9897,12 @@
             "state" : "translated",
             "value" : "Selected Branch"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбранный филиал"
+          }
         }
       }
     },
@@ -8071,6 +9925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Find and recommend nearby stores based on your current location."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Находит и рекомендует ближайшие магазины по вашей геопозиции."
           }
         }
       }
@@ -8096,6 +9956,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
         }
       }
     },
@@ -8119,6 +9985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reloads the list of tip options"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перезагружает список вариантов поддержки"
           }
         }
       }
@@ -8144,6 +10016,12 @@
             "state" : "translated",
             "value" : "Loading tip options"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загружаем варианты поддержки"
+          }
         }
       }
     },
@@ -8167,6 +10045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't load tip options. Try again"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось загрузить варианты поддержки. Повторить"
           }
         }
       }
@@ -8192,6 +10076,12 @@
             "state" : "translated",
             "value" : "About tipping"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О поддержке"
+          }
         }
       }
     },
@@ -8215,6 +10105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dismisses the tip card. It won't appear again for 30 days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрывает карточку поддержки. Она не появится снова в течение 30 дней"
           }
         }
       }
@@ -8240,6 +10136,12 @@
             "state" : "translated",
             "value" : "Supporter"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сторонник"
+          }
         }
       }
     },
@@ -8263,6 +10165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supporter. %lld coffees so far. Thank you for supporting the app."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сторонник. Чашек кофе на данный момент: %lld. Спасибо, что поддерживаете приложение."
           }
         }
       }
@@ -8288,6 +10196,12 @@
             "state" : "translated",
             "value" : "We haven't forgotten you!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мы вас не забыли!"
+          }
         }
       }
     },
@@ -8311,6 +10225,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thank you for your support. You've sent %lld coffees so far."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо за поддержку. Чашек кофе на данный момент: %lld."
           }
         }
       }
@@ -8343,6 +10263,12 @@
             "state" : "translated",
             "value" : "Thank you so much for your support. It means a lot."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огромное спасибо за поддержку. Для нас это очень важно."
+          }
         }
       }
     },
@@ -8366,6 +10292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thank you so much for your support. You've sent %lld coffees so far."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огромное спасибо за поддержку. Чашек кофе на данный момент: %lld."
           }
         }
       }
@@ -8397,6 +10329,12 @@
             "state" : "translated",
             "value" : "Closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходной"
+          }
         }
       }
     },
@@ -8418,6 +10356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closing pattern"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Схема выходных"
           }
         }
       }
@@ -8443,6 +10387,12 @@
             "state" : "translated",
             "value" : "Share closure news"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рассказать о выходном"
+          }
         }
       }
     },
@@ -8466,6 +10416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shares the closure card image"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Делится изображением карточки о выходном"
           }
         }
       }
@@ -8497,6 +10453,12 @@
             "state" : "translated",
             "value" : "Closure card. %@ %@, %@ closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карточка о выходном. %1$@ %2$@, %3$@ закрыт"
+          }
         }
       }
     },
@@ -8521,6 +10483,12 @@
             "state" : "translated",
             "value" : "Creates and shares a closure card"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создаёт карточку о выходном и делится ею"
+          }
         }
       }
     },
@@ -8544,6 +10512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shares the closure card to Instagram Stories"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Делится карточкой о выходном в Instagram Stories"
           }
         }
       }
@@ -8576,6 +10550,12 @@
             "state" : "translated",
             "value" : "No closure"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без выходных"
+          }
         }
       }
     },
@@ -8597,6 +10577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closure Pattern"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Схема выходных"
           }
         }
       }
@@ -8626,6 +10612,12 @@
             "state" : "translated",
             "value" : "Closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходной"
+          }
         }
       }
     },
@@ -8648,6 +10640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closed Today"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня выходной"
           }
         }
       }
@@ -8673,6 +10671,12 @@
             "state" : "translated",
             "value" : "No stores are closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрытых магазинов нет"
+          }
         }
       }
     },
@@ -8695,6 +10699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closed Days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходные дни"
           }
         }
       }
@@ -8719,6 +10729,12 @@
             "state" : "translated",
             "value" : "Notifications will be sent 3 days and 1 day before closed days."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления придут за 3 дня и за 1 день до выходных."
+          }
         }
       }
     },
@@ -8740,6 +10756,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closed Day Alerts"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оповещения о выходных"
           }
         }
       }
@@ -8764,6 +10786,12 @@
             "state" : "translated",
             "value" : "Please enable closed day alerts first."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сначала включите оповещения о выходных."
+          }
         }
       }
     },
@@ -8785,6 +10813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Please allow notification permission in Settings to receive closed day alerts."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы получать оповещения о выходных, разрешите уведомления в настройках."
           }
         }
       }
@@ -8808,6 +10842,12 @@
             "state" : "translated",
             "value" : "No closed day info"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет данных о выходных"
+          }
         }
       }
     },
@@ -8830,6 +10870,12 @@
             "state" : "translated",
             "value" : "No closed day information available"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данных о выходных днях нет"
+          }
         }
       }
     },
@@ -8851,6 +10897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closed Days Calendar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Календарь выходных"
           }
         }
       }
@@ -8876,6 +10928,12 @@
             "state" : "translated",
             "value" : "View the closure calendar"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть календарь выходных"
+          }
         }
       }
     },
@@ -8899,6 +10957,12 @@
             "state" : "translated",
             "value" : "Select closed days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите выходные дни"
+          }
         }
       }
     },
@@ -8921,6 +10985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not a closed day"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это не выходной"
           }
         }
       }
@@ -8950,6 +11020,12 @@
             "state" : "translated",
             "value" : "Found \"%@\". Check it and tap Add."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нашли «%@». Проверьте и нажмите «Добавить»."
+          }
         }
       }
     },
@@ -8977,6 +11053,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No closures in the next 7 days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В ближайшие 7 дней закрытых нет"
           }
         }
       }
@@ -9006,6 +11088,12 @@
             "state" : "translated",
             "value" : "None of your restaurants close in the next 7 days"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваши рестораны не закрываются в ближайшие 7 дней"
+          }
         }
       }
     },
@@ -9033,6 +11121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No closures this week"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На этой неделе выходных нет"
           }
         }
       }
@@ -9062,6 +11156,12 @@
             "state" : "translated",
             "value" : "Manage"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управление"
+          }
         }
       }
     },
@@ -9089,6 +11189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You can add one from a Naver Map share link or a screenshot"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Можно добавить по ссылке из Naver Maps или по скриншоту"
           }
         }
       }
@@ -9118,6 +11224,12 @@
             "state" : "translated",
             "value" : "My Restaurants"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои рестораны"
+          }
         }
       }
     },
@@ -9145,6 +11257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurants · 7 Days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рестораны · 7 дней"
           }
         }
       }
@@ -9174,6 +11292,12 @@
             "state" : "translated",
             "value" : "Add or edit your restaurants"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте или измените свои рестораны"
+          }
         }
       }
     },
@@ -9201,6 +11325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No restaurants yet. Add them in the app."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ресторанов пока нет. Добавьте их в приложении."
           }
         }
       }
@@ -9230,6 +11360,12 @@
             "state" : "translated",
             "value" : "Or paste a share link or text here"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Или вставьте сюда ссылку или текст"
+          }
         }
       }
     },
@@ -9257,6 +11393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quick Import"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Быстрый импорт"
           }
         }
       }
@@ -9286,6 +11428,12 @@
             "state" : "translated",
             "value" : "Reads the closing info from the photo on your device"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Считывает данные о выходных с фото прямо на устройстве"
+          }
         }
       }
     },
@@ -9313,6 +11461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't load the photo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось загрузить фото"
           }
         }
       }
@@ -9342,6 +11496,12 @@
             "state" : "translated",
             "value" : "No restaurant closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все рестораны открыты"
+          }
         }
       }
     },
@@ -9369,6 +11529,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screenshot"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скриншот"
           }
         }
       }
@@ -9398,6 +11564,12 @@
             "state" : "translated",
             "value" : "Delete Restaurant"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить ресторан"
+          }
         }
       }
     },
@@ -9425,6 +11597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurant name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название ресторана"
           }
         }
       }
@@ -9454,6 +11632,12 @@
             "state" : "translated",
             "value" : "Restaurant"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ресторан"
+          }
         }
       }
     },
@@ -9481,6 +11665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add a Restaurant"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить ресторан"
           }
         }
       }
@@ -9510,6 +11700,12 @@
             "state" : "translated",
             "value" : "Add Restaurant"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить ресторан"
+          }
         }
       }
     },
@@ -9537,6 +11733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit Restaurant"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить ресторан"
           }
         }
       }
@@ -9566,6 +11768,12 @@
             "state" : "translated",
             "value" : "None of your restaurants close in the next 7 days."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В ближайшие 7 дней ваши рестораны не закрываются."
+          }
         }
       }
     },
@@ -9593,6 +11801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shows a dot on days your restaurants are closed in the next 7 days."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точками отмечены дни ближайшей недели, когда ваши рестораны закрыты."
           }
         }
       }
@@ -9622,6 +11836,12 @@
             "state" : "translated",
             "value" : "Add restaurants in the app"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте рестораны в приложении"
+          }
         }
       }
     },
@@ -9649,6 +11869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Listed as open every day — no regular closed day."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Указано «без выходных» — у ресторана нет постоянного выходного дня."
           }
         }
       }
@@ -9678,6 +11904,12 @@
             "state" : "translated",
             "value" : "Add the \"Restaurants · 7 Days\" widget to your Home Screen to see this without opening the app."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте виджет «Рестораны · 7 дней» на экран «Домой», чтобы видеть это, не открывая приложение."
+          }
         }
       }
     },
@@ -9705,6 +11937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Import This"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Импортировать"
           }
         }
       }
@@ -9734,6 +11972,12 @@
             "state" : "translated",
             "value" : "Got the name but no closing info. Try a screenshot of the hours, or pick the days below."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название получено, но данных о выходных нет. Попробуйте скриншот с часами работы или выберите дни ниже."
+          }
         }
       }
     },
@@ -9761,6 +12005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add the regular closing days of restaurants you visit, and we'll mark closed days in the next 7 days with a dot."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте постоянные выходные дни ресторанов, в которые вы ходите, и мы отметим точкой закрытые дни ближайшей недели."
           }
         }
       }
@@ -9790,6 +12040,12 @@
             "state" : "translated",
             "value" : "Dot colour"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет точки"
+          }
         }
       }
     },
@@ -9817,6 +12073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Regular Closing Days"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Постоянные выходные"
           }
         }
       }
@@ -9846,6 +12108,12 @@
             "state" : "translated",
             "value" : "Address (optional)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Адрес (необязательно)"
+          }
         }
       }
     },
@@ -9873,6 +12141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In your map app, tap Share → Copy on the restaurant and paste it here, or pick a screenshot of its info page."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В картографическом приложении нажмите «Поделиться → Копировать» для ресторана и вставьте сюда или выберите скриншот страницы с информацией."
           }
         }
       }
@@ -9902,6 +12176,12 @@
             "state" : "translated",
             "value" : "Open in Map"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть на карте"
+          }
         }
       }
     },
@@ -9929,6 +12209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add Closing Day Manually"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить выходной день вручную"
           }
         }
       }
@@ -9958,6 +12244,12 @@
             "state" : "translated",
             "value" : "Please add a closing day"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте выходной день"
+          }
         }
       }
     },
@@ -9985,6 +12277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edit closing info"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить данные о выходных"
           }
         }
       }
@@ -10014,6 +12312,12 @@
             "state" : "translated",
             "value" : "Looking for closing info…"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ищем данные о выходных…"
+          }
         }
       }
     },
@@ -10041,6 +12345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't find closing info. Please pick the days below."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось найти данные о выходных. Выберите дни ниже."
           }
         }
       }
@@ -10070,6 +12380,12 @@
             "state" : "translated",
             "value" : "Post 4:5"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пост 4:5"
+          }
         }
       }
     },
@@ -10097,6 +12413,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stories 9:16"
           }
         }
       }
@@ -10126,6 +12448,12 @@
             "state" : "translated",
             "value" : "2-Week Closing Calendar"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Календарь выходных на 2 недели"
+          }
         }
       }
     },
@@ -10153,6 +12481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coming Up"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скоро"
           }
         }
       }
@@ -10182,6 +12516,12 @@
             "state" : "translated",
             "value" : "Search \"DontGoMart\" on the App Store"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Найдите «DontGoMart» в App Store"
+          }
         }
       }
     },
@@ -10209,6 +12549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stores closed!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магазины закрыты!"
           }
         }
       }
@@ -10238,6 +12584,12 @@
             "state" : "translated",
             "value" : "Photo"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фото"
+          }
         }
       }
     },
@@ -10265,6 +12617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видео"
           }
         }
       }
@@ -10294,6 +12652,12 @@
             "state" : "translated",
             "value" : "Format"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Формат"
+          }
         }
       }
     },
@@ -10321,6 +12685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип"
           }
         }
       }
@@ -10350,6 +12720,12 @@
             "state" : "translated",
             "value" : "Closing card. %1$@ %2$@, %3$@ closed"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карточка о выходном. %1$@ %2$@, %3$@ закрыт"
+          }
         }
       }
     },
@@ -10377,6 +12753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Making the video"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создаём видео"
           }
         }
       }
@@ -10406,6 +12788,12 @@
             "state" : "translated",
             "value" : "Post to Instagram"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Опубликовать в Instagram"
+          }
         }
       }
     },
@@ -10433,6 +12821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pick Instagram in the share list to post it as a post, story or reel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите Instagram в списке «Поделиться», чтобы опубликовать пост, Stories или Reels"
           }
         }
       }
@@ -10462,6 +12856,12 @@
             "state" : "translated",
             "value" : "Opens the Instagram story editor directly"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сразу открывает редактор Stories в Instagram"
+          }
         }
       }
     },
@@ -10489,6 +12889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Share"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться"
           }
         }
       }
@@ -10518,6 +12924,12 @@
             "state" : "translated",
             "value" : "Shares the closing-day video"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Делится видео о выходном"
+          }
         }
       }
     },
@@ -10545,6 +12957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't make the video. Please share the photo instead."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось создать видео. Поделитесь фото."
           }
         }
       }
@@ -10574,6 +12992,12 @@
             "state" : "translated",
             "value" : "Open again %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откроется снова %@"
+          }
         }
       }
     },
@@ -10601,6 +13025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Finish shopping by %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закупитесь до %@"
           }
         }
       }

@@ -27,6 +27,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -52,6 +58,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -85,6 +97,12 @@
             "state" : "translated",
             "value" : "Location access is needed to find and recommend nearby stores."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Геопозиция нужна, чтобы находить и рекомендовать ближайшие магазины."
+          }
         }
       }
     },
@@ -113,6 +131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Needed to save closing-day card photos and videos to your library."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нужно, чтобы сохранять в медиатеку фото и видео карточек о выходных днях."
           }
         }
       }
