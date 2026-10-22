@@ -422,7 +422,7 @@ Sin viajes en balde
 
 ### 키워드
 
-supermercado,hipermercado,Corea,Seúl,horario,domingo,festivos,Chuseok,compras,aviso,calendario,widget
+supermercado,hipermercado,Corea,Seúl,horario,domingo,festivos,Chuseok,compras,calendario,widget
 
 ### 프로모션 텍스트
 
