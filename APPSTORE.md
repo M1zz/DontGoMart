@@ -409,3 +409,61 @@ https://m1zz.github.io/DontGoMart/zh-hant/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/zh-hant/
+
+## es
+
+### 이름
+
+DontGoMart: días de cierre
+
+### 부제
+
+Sin viajes en balde
+
+### 키워드
+
+supermercado,hipermercado,Corea,Seúl,horario,domingo,festivos,Chuseok,compras,aviso,calendario,widget
+
+### 프로모션 텍스트
+
+Ahora también ves los días de descanso de tus restaurantes favoritos: con un enlace de Naver Maps o una captura se cargan solos, y la app te avisa antes del cierre.
+
+### 설명
+
+Antes de salir, comprueba si la tienda está abierta.
+DontGoMart reúne los días de cierre obligatorio de los grandes supermercados de Corea y de Costco, y te avisa con antelación cuando se acerca uno.
+
+Sabrás al instante si puedes ir hoy
+Al abrir la app, lo primero que ves es si la tienda que elegiste abre hoy. También verás cuántos días faltan para el próximo cierre y la lista de los siguientes días de cierre.
+
+Se adapta a los cierres de cada zona
+Elige tiendas que cierran los domingos o los miércoles, o zonas con otros días de cierre, como Ulsan y Jeju. En Costco puedes configurar por separado las tiendas normales y las de Daegu, Ilsan y Ulsan. También se muestran los cierres de los días de Seollal (Año Nuevo lunar) y Chuseok.
+
+Añade las tiendas de tu barrio
+Si una tienda no está en la lista, regístrala tú mismo indicando en qué semana y qué día de la semana cierra, por ejemplo el segundo y el cuarto domingo.
+
+Los días de descanso de tus restaurantes favoritos
+Indica los días de descanso fijos de los restaurantes a los que sueles ir y, de los próximos 7 días, verás marcados con un punto los que cierran. Basta con pegar el enlace copiado desde Naver Maps o elegir una captura de la pantalla de información del restaurante, y el día de descanso se rellena solo. El texto de la foto se lee únicamente en tu dispositivo.
+
+Avisos para que no se te olvide
+Elige si quieres que te avise 1, 2, 3 o 7 días antes del cierre y a la hora que prefieras. El día antes de un cierre, te recuerda que hoy es un buen día para ir de compras. Cuando falten 3 días o menos, también verás un banner en la parte superior de la app.
+
+Widgets para la pantalla de inicio y la de bloqueo
+Con los widgets puedes ver el próximo día de cierre, los dos siguientes con los días que faltan, si tu tienda abre este domingo y los días de descanso de tus restaurantes favoritos en los próximos 7 días. El widget del domingo de esta semana y el de restaurantes también pueden ir en la pantalla de bloqueo.
+
+Calendario y compartir
+Consulta los días de cierre de todo el mes en el calendario. Puedes compartir un aviso de cierre como una tarjeta con el calendario de dos semanas y un consejo de compra, en formato de publicación o historia de Instagram, o en un vídeo corto.
+
+Todas las funciones son gratis. Si te ha sido útil, apoya el desarrollo con un café.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/es/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/es/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/es/

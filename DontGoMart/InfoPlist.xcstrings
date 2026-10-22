@@ -45,6 +45,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -88,6 +94,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -139,6 +151,12 @@
             "state" : "translated",
             "value" : "需要位置資訊，才能尋找並推薦附近的店家。"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se necesita la ubicación para buscar y recomendar tiendas cercanas."
+          }
         }
       }
     },
@@ -185,6 +203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用於將公休提醒卡片的照片與影片儲存到相簿。"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se necesita para guardar en tu fototeca las fotos y los vídeos de las tarjetas de cierre."
           }
         }
       }

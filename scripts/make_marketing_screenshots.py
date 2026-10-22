@@ -73,6 +73,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "附近的小店<br>也能自己新增", "像「每月第二、第四個週二」這樣的規律也行"),
         ("05-share.png", "dark", "公休消息，<br>一張卡片搞定", "馬上告訴家人與鄰居"),
     ],
+    "es": [
+        ("01-main.png", "hero-bleed", "Comprueba<br>antes de ir", "Mira de un vistazo si la tienda abre hoy"),
+        ("02-calendar.png", "left-text", "Los cierres<br>de este mes", "Todos los días de cierre, en el calendario"),
+        ("03-marts.png", "text-bottom", "Solo tus tiendas", "Supermercados, Costco y cierres por festivos"),
+        ("04-pattern.png", "flat-rotate", "Añade tu tienda<br>de barrio", "Patrones como el segundo y el cuarto martes"),
+        ("05-share.png", "dark", "Comparte un cierre<br>en una tarjeta", "Avisa a tu familia y a tus vecinos"),
+    ],
 }
 
 BASE_CSS = f"""

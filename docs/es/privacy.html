@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de privacidad - DontGoMart</title>
+  <meta name="description" content="Qué guarda DontGoMart en tu dispositivo, qué envía y adónde.">
+  <link rel="canonical" href="https://m1zz.github.io/DontGoMart/es/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/DontGoMart/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/DontGoMart/es/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/privacy.html">
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --divider: #d2d2d7;
+      --primary: #FF3B30;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --divider: #38383a;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--divider);
+      padding: 12px 20px;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo img { width: 36px; height: 36px; border-radius: 8px; }
+    .logo span { font-size: 1.25rem; font-weight: 700; }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .lang-toggle a {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 24px 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-secondary); margin: 0 12px; }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 20px 60px; }
+      h1 { font-size: 1.5rem; }
+    }
+      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
+    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
+    .header-inner { flex-wrap: wrap; gap: 8px; }
+    .lang-toggle a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="../app-icon.png" alt="DontGoMart">
+        <span>DontGoMart</span>
+      </a>
+      <nav class="lang-toggle" aria-label="Language">
+        <a href="../privacy.html" hreflang="ko" lang="ko" title="한국어">KO</a>
+        <a href="../en/privacy.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../ja/privacy.html" hreflang="ja" lang="ja" title="日本語">JA</a>
+        <a href="../ru/privacy.html" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
+        <a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
+        <a href="../es/privacy.html" hreflang="es" lang="es" title="Español" class="active" aria-current="true">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="last-updated">Última actualización: 8 de octubre de 2026</p>
+
+    <h2>Resumen</h2>
+    <p>DontGoMart no tiene cuentas ni usa publicidad ni herramientas de seguimiento. Las tiendas que eliges o añades, los restaurantes y los ajustes de avisos se guardan solo en tu dispositivo. El desarrollador únicamente recibe estadísticas de uso anónimas, con las que no se puede identificar a nadie, y los comentarios que decidas enviar.</p>
+    <h2>1. Información guardada en tu dispositivo</h2>
+    <p>Para que la app funcione, la siguiente información se guarda solo en tu dispositivo. Para que los widgets de la pantalla de inicio puedan mostrarla, el mismo contenido se guarda también en el contenedor compartido de la app dentro del dispositivo.</p>
+    <ul>
+      <li>Las tiendas y la región que eliges</li>
+      <li>Las tiendas que añades (nombre y regla de cierre)</li>
+      <li>Los restaurantes (nombre, dirección, días de descanso fijos, enlace del mapa)</li>
+      <li>Los ajustes de avisos (con cuántos días de antelación y a qué hora) y los ajustes de la app</li>
+    </ul>
+    <p>No se envía nada de esto al desarrollador y se elimina al desinstalar la app.</p>
+    <h2>2. Notificaciones</h2>
+    <p>Los avisos de días de cierre se programan en tu dispositivo. No se envía nada a ningún servidor para entregarlos.</p>
+    <h2>3. Fotos</h2>
+    <p>Cuando rellenas los días de descanso de un restaurante a partir de una captura de pantalla, la app solo recibe la foto que elijas. El texto de la foto se lee en tu dispositivo con el framework Vision de Apple, y ni la foto ni el texto se envían a ningún sitio.</p>
+    <p>El permiso para añadir a la fototeca solo se solicita para guardar imágenes o vídeos de las tarjetas de cierre. La app no lee ninguna otra foto de tu fototeca.</p>
+    <h2>4. Al importar un restaurante desde un enlace de Naver Maps</h2>
+    <p>Cuando pegas un enlace compartido desde Naver Maps, la app se conecta directamente a ese enlace y a la página del restaurante en Naver Place para leer el nombre, la dirección y los días de descanso. Como al visitar cualquier sitio web, es posible que Naver reciba datos de la conexión, como la dirección IP, y a esa solicitud se aplica la política de privacidad de Naver. Esta comunicación no pasa por los servidores del desarrollador.</p>
+    <h2>5. Ubicación</h2>
+    <p>DontGoMart no solicita ni recopila datos de ubicación. Tú eliges las tiendas de la lista.</p>
+    <h2>6. Propinas (compras dentro de la app)</h2>
+    <p>Las propinas de café, tarta o comida se gestionan como compras dentro de la app a través de Apple, por lo que el desarrollador no conoce tu método de pago ni los detalles del cobro. El número de propinas y si se muestra la insignia de colaborador se guardan en tu propio almacenamiento de clave-valor de iCloud para que pasen a tus otros dispositivos. Estos datos están protegidos por tu cuenta de Apple y el desarrollador no puede verlos.</p>
+    <h2>7. Avisos</h2>
+    <p>Para saber si el desarrollador ha publicado algún aviso, la app lo lee de la base de datos pública de Apple CloudKit. En ese proceso no se envía ninguna información sobre ti.</p>
+    <h2>8. Comentarios</h2>
+    <p>Cuando envías comentarios desde la app, la siguiente información se envía a la base de datos CloudKit del desarrollador (iCloud.com.Ysoup.FeedbackHub) y se usa solo para responderte y mejorar la app.</p>
+    <ul>
+      <li>El contenido y el tipo del comentario</li>
+      <li>La versión de la app, el modelo del dispositivo, la versión de iOS y los ajustes de idioma y región</li>
+      <li>Tu nombre y correo electrónico (solo si los introduces tú para recibir respuesta)</li>
+    </ul>
+    <p>Los comentarios solo se envían cuando tocas el botón de enviar.</p>
+    <h2>9. Estadísticas de uso anónimas</h2>
+    <p>Para saber cómo se usa realmente la app, esta envía estadísticas anónimas a la base de datos CloudKit del desarrollador (iCloud.com.Ysoup.FeedbackHub).</p>
+    <ul>
+      <li>Un número de instalación aleatorio que se crea al instalar la app (no está vinculado a tu nombre, a tu cuenta de Apple ni a los identificadores del dispositivo, y desaparece al eliminar la app)</li>
+      <li>La versión de la app, la versión de iOS, los ajustes de idioma y región, el número de aperturas, los días desde la instalación y el día en que abriste la app</li>
+      <li>El número de tiendas que sigues, el número de tiendas añadidas, si los avisos están activados y con cuántos días de antelación, y el número de propinas</li>
+      <li>El nombre de las acciones principales: compartir, abrir el calendario, cambiar de tienda, guardar una tienda propia, activar los avisos o completar una propina</li>
+    </ul>
+    <p>Nunca se envían los nombres, direcciones ni enlaces de tiendas y restaurantes, ni fotos, ni tu nombre, correo electrónico o ubicación. Las estadísticas se envían como máximo una vez cada 12 horas y, por tipo de acción, como máximo una vez cada 6 horas.</p>
+    <h2>10. Terceros</h2>
+    <p>DontGoMart no usa publicidad, redes publicitarias ni herramientas de análisis o seguimiento de terceros. Tu información solo la tratan los servicios de Apple indicados arriba (CloudKit, iCloud, compras dentro de la app y frameworks del dispositivo) y, si pegas un enlace, Naver. No vendemos tu información personal ni la cedemos a terceros.</p>
+    <h2>11. Conservación y eliminación</h2>
+    <p>La información guardada en el dispositivo se elimina desde la app o al desinstalarla. Los registros de propinas guardados en iCloud puedes gestionarlos en Ajustes, en tu cuenta de Apple e iCloud. Si quieres que se elimine un comentario que enviaste, escríbenos al correo de abajo.</p>
+    <h2>12. Privacidad de los menores</h2>
+    <p>DontGoMart no recopila de forma intencionada información personal de menores.</p>
+    <h2>13. Cambios en esta política</h2>
+    <p>Si modificamos esta política, actualizaremos esta página y la fecha de arriba.</p>
+    <h2>14. Contacto</h2>
+    <p>Si tienes preguntas sobre el tratamiento de la información, escríbenos a esta dirección.</p>
+    <p><a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="index.html">Inicio</a>
+    <a href="support.html">Soporte</a>
+    <span>&copy; 2026 DontGoMart</span>
+  </footer>
+
+</body>
+</html>
