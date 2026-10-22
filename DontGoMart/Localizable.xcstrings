@@ -96,6 +96,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — nakupte s předstihem"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — køb ind i god tid"
+          }
         }
       }
     },
@@ -182,6 +188,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %@"
@@ -276,6 +288,12 @@
             "state" : "translated",
             "value" : "Smazat: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet %@"
+          }
         }
       }
     },
@@ -365,6 +383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upravit: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger %@"
           }
         }
       }
@@ -461,6 +485,12 @@
             "state" : "translated",
             "value" : "%@ zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lukket"
+          }
         }
       }
     },
@@ -550,6 +580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ zavřeno Pro"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lukket Pro"
           }
         }
       }
@@ -646,6 +682,12 @@
             "state" : "translated",
             "value" : "Zavřeno: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket: %@"
+          }
         }
       }
     },
@@ -736,6 +778,12 @@
             "state" : "translated",
             "value" : "Zavřeno: %@!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket %@!"
+          }
         }
       }
     },
@@ -822,6 +870,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@, %@"
@@ -921,6 +975,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1007,6 +1067,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1102,6 +1168,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
         }
       }
     },
@@ -1191,6 +1263,12 @@
             "state" : "translated",
             "value" : "Položek: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ting"
+          }
         }
       }
     },
@@ -1279,6 +1357,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min."
+          }
         }
       }
     },
@@ -1366,6 +1450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld h"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kl. %lld"
           }
         }
       }
@@ -1464,6 +1554,12 @@
             "state" : "translated",
             "value" : "Zbývá dní: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dage tilbage: %lld"
+          }
         }
       }
     },
@@ -1554,6 +1650,12 @@
             "state" : "translated",
             "value" : "Dnů předem: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d. før"
+          }
         }
       }
     },
@@ -1641,6 +1743,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld. týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uge %lld"
           }
         }
       }
@@ -1735,6 +1843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Za %lld týd.: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om %lld uge(r), %@"
           }
         }
       }
@@ -1832,6 +1946,12 @@
             "state" : "translated",
             "value" : "%lld. týden: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uge %lld, %@"
+          }
         }
       }
     },
@@ -1926,6 +2046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pohodlnější s VoiceOver"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nemmere med VoiceOver"
           }
         }
       }
@@ -2022,6 +2148,12 @@
             "state" : "translated",
             "value" : "Siri a Zkratky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Genveje"
+          }
         }
       }
     },
@@ -2117,6 +2249,12 @@
             "state" : "translated",
             "value" : "Zeptejte se Siri nebo spusťte zkratku a hned zjistíte, jestli má váš obchod zavřeno."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spørg Siri eller kør en genvej, så ser du med det samme, om din butik har lukket."
+          }
         }
       }
     },
@@ -2203,6 +2341,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -2297,6 +2441,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -2383,6 +2533,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -2477,6 +2633,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -2557,6 +2719,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -2656,6 +2824,12 @@
             "state" : "translated",
             "value" : "Ani při největší velikosti textu se obrazovky nerozbijí a nic se neořízne."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv med den største tekststørrelse ordner skærmene sig pænt, uden at noget bliver skåret af."
+          }
         }
       }
     },
@@ -2750,6 +2924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smažte přímo v aplikaci najednou vybrané a přidané obchody i nastavení upozornění."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet valgte og tilføjede butikker og indstillinger for påmindelser i appen på én gang."
           }
         }
       }
@@ -2846,6 +3026,12 @@
             "state" : "translated",
             "value" : "Oznámení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meddelelse"
+          }
         }
       }
     },
@@ -2934,6 +3120,12 @@
             "state" : "translated",
             "value" : "Otevře celé oznámení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbner hele meddelelsen"
+          }
         }
       }
     },
@@ -3021,6 +3213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavřít oznámení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luk meddelelse"
           }
         }
       }
@@ -3117,6 +3315,12 @@
             "state" : "translated",
             "value" : "Tmavý režim"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk tilstand"
+          }
         }
       }
     },
@@ -3211,6 +3415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dny zavření poznáte i se zapnutým zvýšeným kontrastem nebo když hůř rozlišujete barvy."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se lukkedage, selv med Øg kontrast slået til, eller hvis du har svært ved at kende forskel på farver."
           }
         }
       }
@@ -3307,6 +3517,12 @@
             "state" : "translated",
             "value" : "Další jazyky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere sprog"
+          }
         }
       }
     },
@@ -3401,6 +3617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Používejte aplikaci ve více jazycích."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug appen på flere sprog."
           }
         }
       }
@@ -3497,6 +3719,12 @@
             "state" : "translated",
             "value" : "Uložte přidané obchody do souboru a kdykoli je znovu načtěte."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem de butikker, du har tilføjet, i en fil, og hent dem tilbage, når du vil."
+          }
         }
       }
     },
@@ -3592,6 +3820,12 @@
             "state" : "translated",
             "value" : "Smazat všechna moje data"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle mine data"
+          }
         }
       }
     },
@@ -3685,6 +3919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornění na zavření obchodu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelse om butikslukning"
           }
         }
       }
@@ -3781,6 +4021,12 @@
             "state" : "translated",
             "value" : "Text a tlačítka zůstávají čitelné i na tmavé obrazovce."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst og knapper er stadig tydelige på en mørk skærm."
+          }
         }
       }
     },
@@ -3875,6 +4121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Barvy, které se lépe rozlišují"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farver, der er nemmere at se"
           }
         }
       }
@@ -3971,6 +4223,12 @@
             "state" : "translated",
             "value" : "Na iPadu vybírejte obchody a listujte kalendářem jen pomocí klávesnice."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På iPad kan du vælge butikker og bladre i kalenderen kun med tastaturet."
+          }
         }
       }
     },
@@ -4065,6 +4323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novinky po aktualizaci"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyt efter opdateringer"
           }
         }
       }
@@ -4161,6 +4425,12 @@
             "state" : "translated",
             "value" : "Při prvním otevření po aktualizaci uvidíte, co je nového."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
+          }
         }
       }
     },
@@ -4255,6 +4525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipy k používání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gode råd"
           }
         }
       }
@@ -4351,6 +4627,12 @@
             "state" : "translated",
             "value" : "V pravou chvíli vám nenápadně poradíme užitečné funkce."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi giver dig diskret et praktisk tip om nyttige funktioner på det rette tidspunkt."
+          }
         }
       }
     },
@@ -4445,6 +4727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Záloha a export"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sikkerhedskopi og eksport"
           }
         }
       }
@@ -4541,6 +4829,12 @@
             "state" : "translated",
             "value" : "Když se aplikace při přidávání obchodu zavře, vaše zadání zůstane zachováno."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis appen lukker, mens du tilføjer en butik, er det, du har skrevet, stadig der."
+          }
         }
       }
     },
@@ -4628,6 +4922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "a dalších: %lld"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld mere"
           }
         }
       }
@@ -4724,6 +5024,12 @@
             "state" : "translated",
             "value" : "VoiceOver čte dny zavření i tlačítka celé a ve správném pořadí."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver læser lukkedage og knapper helt og i den rigtige rækkefølge."
+          }
         }
       }
     },
@@ -4818,6 +5124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Připraveno na velký text"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar til stor tekst"
           }
         }
       }
@@ -4914,6 +5226,12 @@
             "state" : "translated",
             "value" : "Ovládání klávesnicí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Styring med tastatur"
+          }
         }
       }
     },
@@ -5008,6 +5326,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rychlý úvod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom godt i gang"
           }
         }
       }
@@ -5104,6 +5428,12 @@
             "state" : "translated",
             "value" : "Při prvním otevření uvidíte v několika krocích, co aplikace umí."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åbner appen, kan du på få trin se, hvad den kan."
+          }
         }
       }
     },
@@ -5198,6 +5528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro skládací iPhone"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lavet til foldbar iPhone"
           }
         }
       }
@@ -5294,6 +5630,12 @@
             "state" : "translated",
             "value" : "Na skládacím iPhonu využijete širokou obrazovku jako dva panely vedle sebe."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På en foldbar iPhone kan du bruge den brede skærm som to ruder side om side."
+          }
         }
       }
     },
@@ -5389,6 +5731,12 @@
             "state" : "translated",
             "value" : "Pokračujte, kde jste skončili"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsæt, hvor du slap"
+          }
         }
       }
     },
@@ -5469,6 +5817,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -5557,6 +5911,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -5641,6 +6001,12 @@
             "state" : "translated",
             "value" : "🚫"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
         }
       }
     },
@@ -5721,6 +6087,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒"
@@ -5813,6 +6185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Upozornění na dobrý den pro nákup"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 Påmindelse om en god indkøbsdag"
           }
         }
       }
@@ -5907,6 +6285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Dobrý den pro nákup"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 God dag til indkøb"
           }
         }
       }
@@ -6004,6 +6388,12 @@
             "state" : "translated",
             "value" : "Upozorní vás, když se do týdne blíží den zavření!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giver dig besked, når en lukkedag er inden for en uge!"
+          }
         }
       }
     },
@@ -6090,6 +6480,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -6190,6 +6586,12 @@
             "state" : "translated",
             "value" : "Widget upozornění na zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget med påmindelse om lukning"
+          }
         }
       }
     },
@@ -6286,6 +6688,12 @@
             "state" : "translated",
             "value" : "Widget odpočtu do zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget med nedtælling til lukning"
+          }
         }
       }
     },
@@ -6372,6 +6780,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -6466,6 +6880,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -6552,6 +6972,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -6646,6 +7072,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -6732,6 +7164,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -6830,6 +7268,12 @@
             "state" : "translated",
             "value" : "%@ má zítra zavřeno. Dnes je ideální den na nákup!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ har lukket i morgen. I dag er det en god dag at handle!"
+          }
         }
       }
     },
@@ -6923,6 +7367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ zavře za %lld d."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lukker om %lld dag(e)."
           }
         }
       }
@@ -7019,6 +7469,12 @@
             "state" : "translated",
             "value" : "%@ zavře za %lld d."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lukker om %lld dag(e)."
+          }
         }
       }
     },
@@ -7113,6 +7569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nezapomeňte nakoupit před dalším dnem zavření!"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glem ikke at handle ind før næste lukkedag!"
           }
         }
       }
@@ -7209,6 +7671,12 @@
             "state" : "translated",
             "value" : "Spravujte i zavírací dny obchodů ve svém okolí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold også styr på lukkedage for butikker i nærområdet"
+          }
         }
       }
     },
@@ -7303,6 +7771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zadejte vlastní vzorec zavření svého obchodu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrer lukkemønsteret for din egen butik"
           }
         }
       }
@@ -7399,6 +7873,12 @@
             "state" : "translated",
             "value" : "Oblíbené jsou vždy nahoře"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dine favoritter står altid øverst"
+          }
         }
       }
     },
@@ -7493,6 +7973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte si oblíbené obchody do záložek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem dine yndlingsbutikker"
           }
         }
       }
@@ -7589,6 +8075,12 @@
             "state" : "translated",
             "value" : "Jednorázový nákup, všechny funkce navždy"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ét køb giver alle funktioner for altid"
+          }
         }
       }
     },
@@ -7683,6 +8175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přejděte na DontGoMart Pro"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opgrader til DontGoMart Pro"
           }
         }
       }
@@ -7779,6 +8277,12 @@
             "state" : "translated",
             "value" : "Zjistěte zavírací dny E-Mart, Costco a Homeplus najednou"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se lukkedage for E-Mart, Costco og Homeplus på én gang"
+          }
         }
       }
     },
@@ -7873,6 +8377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sledujte více obchodů najednou"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker på samme tid"
           }
         }
       }
@@ -7969,6 +8479,12 @@
             "state" : "translated",
             "value" : "Upozornění před dny zavření, ať nejezdíte zbytečně"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få besked før lukkedage, så du aldrig kører forgæves"
+          }
         }
       }
     },
@@ -8063,6 +8579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Už nikdy nestůjte před zavřeným obchodem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aldrig mere en lukket butik"
           }
         }
       }
@@ -8159,6 +8681,12 @@
             "state" : "translated",
             "value" : "Přidejte tolik položek, kolik potřebujete"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj så mange varer, du har brug for"
+          }
         }
       }
     },
@@ -8253,6 +8781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nákupní seznam bez omezení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrænset indkøbsliste"
           }
         }
       }
@@ -8349,6 +8883,12 @@
             "state" : "translated",
             "value" : "☕ Za cenu jedné kávy odemknete vše navždy"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ Til prisen for en kop kaffe låser du alt op for altid"
+          }
         }
       }
     },
@@ -8443,6 +8983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornění přijde %1$lld dnů a %2$lld den před dny zavření v %3$@."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du får besked %1$lld dage og %2$lld dag før lukkedage kl. %3$@."
           }
         }
       }
@@ -8540,6 +9086,12 @@
             "state" : "translated",
             "value" : "Zeleně nebo červeně ukáže, jestli je váš obchod tuto neděli otevřený."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser med grøn eller rød, om din butik har åbent denne søndag."
+          }
         }
       }
     },
@@ -8633,6 +9185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ukáže dva nejbližší dny zavření!"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser de næste to lukkedage!"
           }
         }
       }
@@ -8730,6 +9288,12 @@
             "state" : "translated",
             "value" : "Ukáže počet dnů do dalšího dne zavření!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser antal dage til næste lukkedag!"
+          }
         }
       }
     },
@@ -8826,6 +9390,12 @@
             "state" : "translated",
             "value" : "Neděle otevřeno/zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søndag åben/lukket"
+          }
         }
       }
     },
@@ -8916,6 +9486,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -9002,6 +9578,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -9102,6 +9684,12 @@
             "state" : "translated",
             "value" : "Widget dvou dnů zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget med to lukkedage"
+          }
         }
       }
     },
@@ -9191,6 +9779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavře poděkování"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukker takkebeskeden"
           }
         }
       }
@@ -9282,6 +9876,12 @@
             "state" : "translated",
             "value" : "Děkujeme!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tak!"
+          }
         }
       }
     },
@@ -9372,6 +9972,12 @@
             "state" : "translated",
             "value" : "Pošle vývojáři na kávu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giver udvikleren en kop kaffe"
+          }
         }
       }
     },
@@ -9461,6 +10067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pošle vývojáři spropitné"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sender en drikkepenge til udvikleren"
           }
         }
       }
@@ -9557,6 +10169,12 @@
             "state" : "translated",
             "value" : "Část Kjonggi/Čchongdžu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En del af Gyeonggi/Cheongju"
+          }
         }
       }
     },
@@ -9647,6 +10265,12 @@
             "state" : "translated",
             "value" : "Díky, na viděnou příště"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tak, vi ses næste gang"
+          }
         }
       }
     },
@@ -9735,6 +10359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brzy zavírá"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukker snart"
           }
         }
       }
@@ -9825,6 +10455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sdílet"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del"
           }
         }
       }
@@ -9920,6 +10556,12 @@
             "state" : "translated",
             "value" : "Svátek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helligdag"
+          }
         }
       }
     },
@@ -10007,6 +10649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obnovit nákupy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gendan køb"
           }
         }
       }
@@ -10103,6 +10751,12 @@
             "state" : "translated",
             "value" : "Funkce"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funktion"
+          }
         }
       }
     },
@@ -10190,6 +10844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moje obchody"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine butikker"
           }
         }
       }
@@ -10286,6 +10946,12 @@
             "state" : "translated",
             "value" : "Zítra"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen"
+          }
         }
       }
     },
@@ -10374,6 +11040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zítra zavřeno: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen lukket: %@"
           }
         }
       }
@@ -10472,6 +11144,12 @@
             "state" : "translated",
             "value" : "Zítra zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket i morgen"
+          }
         }
       }
     },
@@ -10559,6 +11237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nadcházející dny zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommende lukkedage"
           }
         }
       }
@@ -10649,6 +11333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Příští měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste måned"
           }
         }
       }
@@ -10747,6 +11437,12 @@
             "state" : "translated",
             "value" : "Příští týden: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ i næste uge"
+          }
         }
       }
     },
@@ -10842,6 +11538,12 @@
             "state" : "translated",
             "value" : "Další den zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste lukkedag"
+          }
         }
       }
     },
@@ -10930,6 +11632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Připomeneme vám nákup 2 dny před dalším dnem zavření."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi minder dig om at handle 2 dage før næste lukkedag."
           }
         }
       }
@@ -11028,6 +11736,12 @@
             "state" : "translated",
             "value" : "Žádné údaje o zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen oplysninger om lukkedage"
+          }
         }
       }
     },
@@ -11117,6 +11831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teď ne"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senere"
           }
         }
       }
@@ -11213,6 +11933,12 @@
             "state" : "translated",
             "value" : "Sledujte více obchodů najednou"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker på samme tid"
+          }
         }
       }
     },
@@ -11308,6 +12034,12 @@
             "state" : "translated",
             "value" : "Sledování více obchodů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Følg flere butikker"
+          }
         }
       }
     },
@@ -11397,6 +12129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavřít"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luk"
           }
         }
       }
@@ -11488,6 +12226,12 @@
             "state" : "translated",
             "value" : "Otevře kalendář se dny zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbner kalenderen, så du kan se lukkedage"
+          }
         }
       }
     },
@@ -11576,6 +12320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tegu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -11672,6 +12422,12 @@
             "state" : "translated",
             "value" : "Costco Tegu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -11765,6 +12521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tegu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu"
           }
         }
       }
@@ -11860,6 +12622,12 @@
             "state" : "translated",
             "value" : "Tegu, Tegu Innovation"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daegu, Daegu Innovation"
+          }
         }
       }
     },
@@ -11948,6 +12716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked"
           }
         }
       }
@@ -12043,6 +12817,12 @@
             "state" : "translated",
             "value" : "Supermarket (ve středu zavřeno)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (lukket om onsdagen)"
+          }
         }
       }
     },
@@ -12136,6 +12916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (ve středu zavřeno)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (lukket om onsdagen)"
           }
         }
       }
@@ -12231,6 +13017,12 @@
             "state" : "translated",
             "value" : "Supermarket (st)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (ons)"
+          }
         }
       }
     },
@@ -12324,6 +13116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan, smíšený)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan, blandet)"
           }
         }
       }
@@ -12419,6 +13217,12 @@
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan)"
+          }
         }
       }
     },
@@ -12512,6 +13316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Ulsan)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Ulsan)"
           }
         }
       }
@@ -12607,6 +13417,12 @@
             "state" : "translated",
             "value" : "Supermarket (v neděli zavřeno)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (lukket om søndagen)"
+          }
         }
       }
     },
@@ -12700,6 +13516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (v neděli zavřeno)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (lukket om søndagen)"
           }
         }
       }
@@ -12795,6 +13617,12 @@
             "state" : "translated",
             "value" : "Supermarket (ne)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (søn)"
+          }
         }
       }
     },
@@ -12888,6 +13716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supermarket (Čedžu)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
           }
         }
       }
@@ -12983,6 +13817,12 @@
             "state" : "translated",
             "value" : "Supermarket (Čedžu)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
+          }
         }
       }
     },
@@ -13077,6 +13917,12 @@
             "state" : "translated",
             "value" : "Supermarket (Čedžu)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supermarked (Jeju)"
+          }
         }
       }
     },
@@ -13167,6 +14013,12 @@
             "state" : "translated",
             "value" : "Pokud vám aplikace pomohla, povzbuďte nás kávou."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis appen har hjulpet dig, så støt os med en kop kaffe."
+          }
         }
       }
     },
@@ -13253,6 +14105,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -13348,6 +14206,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -13438,6 +14302,12 @@
             "state" : "translated",
             "value" : "Zavřete dvojitým klepnutím"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dobbelttryk for at lukke"
+          }
         }
       }
     },
@@ -13527,6 +14397,12 @@
             "state" : "translated",
             "value" : "Obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butik"
+          }
         }
       }
     },
@@ -13615,6 +14491,12 @@
             "state" : "translated",
             "value" : "Než půjdete nakupovat, zkontrolujte dny zavření v DontGoMart ✅"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjek lukkedage i DontGoMart, før du handler ✅"
+          }
         }
       }
     },
@@ -13702,6 +14584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Barva obchodu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikkens farve"
           }
         }
       }
@@ -13797,6 +14685,12 @@
             "state" : "translated",
             "value" : "Vyberte obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg en butik"
+          }
         }
       }
     },
@@ -13884,6 +14778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Název obchodu (např. Homeplus Gangnam)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butiksnavn (fx Homeplus Gangnam)"
           }
         }
       }
@@ -13973,6 +14873,12 @@
             "state" : "translated",
             "value" : "Údaje o obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butiksinfo"
+          }
         }
       }
     },
@@ -14060,6 +14966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat obchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj butik"
           }
         }
       }
@@ -14149,6 +15061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obchod zavřený"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butik lukket"
           }
         }
       }
@@ -14245,6 +15163,12 @@
             "state" : "translated",
             "value" : "Oznámení o dni zavření obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meddelelse om butikkens lukkedag"
+          }
         }
       }
     },
@@ -14334,6 +15258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornění na zavření obchodu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelse om butikslukning"
           }
         }
       }
@@ -14430,6 +15360,12 @@
             "state" : "translated",
             "value" : "Obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butik"
+          }
         }
       }
     },
@@ -14524,6 +15460,12 @@
             "state" : "translated",
             "value" : "Obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butik"
+          }
         }
       }
     },
@@ -14613,6 +15555,12 @@
             "state" : "translated",
             "value" : "Výběr obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg butik"
+          }
         }
       }
     },
@@ -14700,6 +15648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otevře výběr obchodu a nastavení upozornění"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbner valg af butik og indstillinger for påmindelser"
           }
         }
       }
@@ -14796,6 +15750,12 @@
             "state" : "translated",
             "value" : "Liší se podle obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varierer fra butik til butik"
+          }
         }
       }
     },
@@ -14884,6 +15844,12 @@
             "state" : "translated",
             "value" : "Výběr obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg butik"
+          }
         }
       }
     },
@@ -14971,6 +15937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vyberte obchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg en butik"
           }
         }
       }
@@ -15067,6 +16039,12 @@
             "state" : "translated",
             "value" : "Není vybrán žádný obchod. Vyberte ho v Nastavení."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butik valgt. Vælg en i Indstillinger."
+          }
         }
       }
     },
@@ -15157,6 +16135,12 @@
             "state" : "translated",
             "value" : "Týdně: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver %@"
+          }
         }
       }
     },
@@ -15246,6 +16230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Všechny funkce zůstávají zdarma. Spropitné je jen povzbuzení a můžete ho poslat, kdykoli chcete."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle funktioner er stadig gratis. En drikkepenge er ren opmuntring, og du kan sende en, når du vil."
           }
         }
       }
@@ -15344,6 +16334,12 @@
             "state" : "translated",
             "value" : "Pozítří"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I overmorgen"
+          }
         }
       }
     },
@@ -15438,6 +16434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Žádné omezení počtu položek v nákupním seznamu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen grænse for varer på din indkøbsliste"
           }
         }
       }
@@ -15534,6 +16536,12 @@
             "state" : "translated",
             "value" : "Nákupní seznam bez omezení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrænset indkøbsliste"
+          }
         }
       }
     },
@@ -15629,6 +16637,12 @@
             "state" : "translated",
             "value" : "S Pro přidáte položky bez omezení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opgrader til Pro for at tilføje ubegrænset mange varer"
+          }
         }
       }
     },
@@ -15717,6 +16731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verze"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
           }
         }
       }
@@ -15808,6 +16828,12 @@
             "state" : "translated",
             "value" : "Díky vaší podpoře můžeme v aplikaci pokračovat."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takket være din støtte kan vi blive ved med at lave appen."
+          }
         }
       }
     },
@@ -15898,6 +16924,12 @@
             "state" : "translated",
             "value" : "Vaše podpora hodně znamená. (zatím ☕️ ×%lld)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din støtte betyder meget. (☕️ ×%lld indtil nu)"
+          }
         }
       }
     },
@@ -15985,6 +17017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min."
           }
         }
       }
@@ -16074,6 +17112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rychlé akce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hurtige handlinger"
           }
         }
       }
@@ -16172,6 +17216,12 @@
             "state" : "translated",
             "value" : "Nevybráno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke valgt"
+          }
         }
       }
     },
@@ -16260,6 +17310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zrušit výběr"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ryd valg"
           }
         }
       }
@@ -16355,6 +17411,12 @@
             "state" : "translated",
             "value" : "Není vybrán žádný obchod. Otevřete aplikaci a vyberte ho."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butik valgt. Åbn appen for at vælge en."
+          }
         }
       }
     },
@@ -16442,6 +17504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vybraný vzorec"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt mønster"
           }
         }
       }
@@ -16540,6 +17608,12 @@
             "state" : "translated",
             "value" : "Vybráno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt"
+          }
         }
       }
     },
@@ -16629,6 +17703,12 @@
             "state" : "translated",
             "value" : "Všechny vybrané obchody mají otevřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har åbent"
+          }
         }
       }
     },
@@ -16717,6 +17797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Všechny vybrané obchody mají zavřeno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har lukket"
           }
         }
       }
@@ -16812,6 +17898,12 @@
             "state" : "translated",
             "value" : "Svátky Sollal a Čchusok"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helligdage ved Seollal/Chuseok"
+          }
         }
       }
     },
@@ -16899,6 +17991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger"
           }
         }
       }
@@ -16990,6 +18088,12 @@
             "state" : "translated",
             "value" : "V Nastavení vyberte obchody, které chcete sledovat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg i Indstillinger, hvilke butikker du vil følge"
+          }
         }
       }
     },
@@ -17079,6 +18183,12 @@
             "state" : "translated",
             "value" : "V Nastavení vyberte obchody, které chcete sledovat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg i Indstillinger, hvilke butikker du vil følge"
+          }
         }
       }
     },
@@ -17167,6 +18277,12 @@
             "state" : "translated",
             "value" : "Přejít do Nastavení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gå til Indstillinger"
+          }
         }
       }
     },
@@ -17254,6 +18370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hodina"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time"
           }
         }
       }
@@ -17350,6 +18472,12 @@
             "state" : "translated",
             "value" : "Neznámé"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukendt"
+          }
         }
       }
     },
@@ -17437,6 +18565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je nutné povolit oznámení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilladelse til meddelelser påkrævet"
           }
         }
       }
@@ -17527,6 +18661,12 @@
             "state" : "translated",
             "value" : "Nastavení oznámení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger for meddelelser"
+          }
         }
       }
     },
@@ -17614,6 +18754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas oznámení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidspunkt for meddelelse"
           }
         }
       }
@@ -17704,6 +18850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornit mě"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giv mig besked"
           }
         }
       }
@@ -17800,6 +18952,12 @@
             "state" : "translated",
             "value" : "Upozornění před dny zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få besked før lukkedage"
+          }
         }
       }
     },
@@ -17894,6 +19052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oznámení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meddelelser"
           }
         }
       }
@@ -17990,6 +19154,12 @@
             "state" : "translated",
             "value" : "Upozornění před dny zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få besked før lukkedage"
+          }
         }
       }
     },
@@ -18077,6 +19247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oznámení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meddelelser"
           }
         }
       }
@@ -18167,6 +19343,12 @@
             "state" : "translated",
             "value" : "Napsat recenzi do App Storu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en anmeldelse i App Store"
+          }
         }
       }
     },
@@ -18255,6 +19437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit v App Storu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se i App Store"
           }
         }
       }
@@ -18346,6 +19534,12 @@
             "state" : "translated",
             "value" : "Děkujeme, že podporujete aplikaci ☕️"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tak, fordi du støtter appen ☕️"
+          }
         }
       }
     },
@@ -18434,6 +19628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jangpjong, Tedžon, Jangdže, \nSangbong, Pusan, Kwangmjong, \nČchonan, Ujdžongbu, Kongse, \nSongdo, Sedžong, Hanam, \nKimhe, Kočchok"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
         }
       }
@@ -18528,6 +19728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otevřeno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åben"
           }
         }
       }
@@ -18624,6 +19830,12 @@
             "state" : "translated",
             "value" : "Otevřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åben"
+          }
         }
       }
     },
@@ -18712,6 +19924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes otevřeno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åben i dag"
           }
         }
       }
@@ -18808,6 +20026,12 @@
             "state" : "translated",
             "value" : "Dnes"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag"
+          }
         }
       }
     },
@@ -18896,6 +20120,12 @@
             "state" : "translated",
             "value" : "Dnes zavřeno: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lukket i dag"
+          }
         }
       }
     },
@@ -18983,6 +20213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Můžu dnes jít?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan jeg tage af sted i dag?"
           }
         }
       }
@@ -19079,6 +20315,12 @@
             "state" : "translated",
             "value" : "Všechny vybrané obchody mají dnes otevřeno."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har åbent i dag."
+          }
         }
       }
     },
@@ -19174,6 +20416,12 @@
             "state" : "translated",
             "value" : "Všechny vybrané obchody mají dnes zavřeno."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle valgte butikker har lukket i dag."
+          }
         }
       }
     },
@@ -19264,6 +20512,12 @@
             "state" : "translated",
             "value" : "Sdílí dnešní stav a nadcházející dny zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler dagens status og de kommende lukkedage"
+          }
         }
       }
     },
@@ -19353,6 +20607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes otevřeno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åben i dag"
           }
         }
       }
@@ -19451,6 +20711,12 @@
             "state" : "translated",
             "value" : "Dnes mají zavřeno jen některé obchody: %@."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag er det kun nogle butikker, der har lukket: %@."
+          }
         }
       }
     },
@@ -19540,6 +20806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes jsme vám ušetřili zbytečnou cestu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag sparede vi dig for en spildt tur"
           }
         }
       }
@@ -19638,6 +20910,12 @@
             "state" : "translated",
             "value" : "Dnes zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket i dag"
+          }
         }
       }
     },
@@ -19728,6 +21006,12 @@
             "state" : "translated",
             "value" : "Dnes zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket i dag"
+          }
         }
       }
     },
@@ -19815,6 +21099,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes jsme vám zase ušetřili zbytečnou cestu.\nVaši štědrou podporu si stále pamatujeme."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag sparede vi dig for endnu en spildt tur.\nVi husker stadig din generøse støtte."
           }
         }
       }
@@ -19910,6 +21200,12 @@
             "state" : "translated",
             "value" : "Hotovo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Færdig"
+          }
         }
       }
     },
@@ -19999,6 +21295,12 @@
             "state" : "translated",
             "value" : "Smazat dokončené položky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet færdige varer"
+          }
         }
       }
     },
@@ -20084,6 +21386,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -20183,6 +21491,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -20273,6 +21587,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
@@ -20371,6 +21691,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -20465,6 +21791,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulsan"
+          }
         }
       }
     },
@@ -20553,6 +21885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måned"
           }
         }
       }
@@ -20643,6 +21981,12 @@
             "state" : "translated",
             "value" : "Je nutné povolit polohu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilladelse til lokalitet påkrævet"
+          }
         }
       }
     },
@@ -20732,6 +22076,12 @@
             "state" : "translated",
             "value" : "Funkce s polohou"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokalitetsfunktioner"
+          }
         }
       }
     },
@@ -20819,6 +22169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Podpořte nás"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støt os"
           }
         }
       }
@@ -20913,6 +22269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søn"
           }
         }
       }
@@ -21011,6 +22373,12 @@
             "state" : "translated",
             "value" : "Tento týden: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ i denne uge"
+          }
         }
       }
     },
@@ -21099,6 +22467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento týden zavřeno: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket %@ i denne uge"
           }
         }
       }
@@ -21194,6 +22568,12 @@
             "state" : "translated",
             "value" : "Tuto neděli"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndag"
+          }
         }
       }
     },
@@ -21287,6 +22667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuto neděli %@: obchod otevřen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndag %@, butikken har åbent"
           }
         }
       }
@@ -21382,6 +22768,12 @@
             "state" : "translated",
             "value" : "Tuto neděli %@: obchod zavřen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne søndag %@, butikken har lukket"
+          }
         }
       }
     },
@@ -21471,6 +22863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Předchozí měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forrige måned"
           }
         }
       }
@@ -21562,6 +22960,12 @@
             "state" : "translated",
             "value" : "Sdílet do Instagram Stories"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del til Instagram Stories"
+          }
         }
       }
     },
@@ -21652,6 +23056,12 @@
             "state" : "translated",
             "value" : "Pro sdílení do Stories musí být nainstalovaný Instagram."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram skal være installeret for at dele til Stories."
+          }
         }
       }
     },
@@ -21741,6 +23151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram nenalezen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram ikke fundet"
           }
         }
       }
@@ -21833,6 +23249,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -21931,6 +23353,12 @@
             "state" : "translated",
             "value" : "Běžný"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almindelig"
+          }
         }
       }
     },
@@ -22019,6 +23447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Běžné obchody"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almindelige butikker"
           }
         }
       }
@@ -22109,6 +23543,12 @@
             "state" : "translated",
             "value" : "Některé otevřeny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nogle åbne"
+          }
         }
       }
     },
@@ -22197,6 +23637,12 @@
             "state" : "translated",
             "value" : "Některé obchody mají zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nogle butikker har lukket"
+          }
         }
       }
     },
@@ -22282,6 +23728,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -22381,6 +23833,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -22475,6 +23933,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
         }
       }
     },
@@ -22565,6 +24029,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
@@ -22664,6 +24134,12 @@
             "state" : "translated",
             "value" : "Jednorázový nákup. Bez předplatného."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engangskøb. Intet abonnement."
+          }
         }
       }
     },
@@ -22751,6 +24227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte vzorce zavření svých oblíbených obchodů"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj lukkemønstre for dine yndlingsbutikker"
           }
         }
       }
@@ -22841,6 +24323,12 @@
             "state" : "translated",
             "value" : "Připomínka nákupu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelse om indkøb"
+          }
         }
       }
     },
@@ -22930,6 +24418,12 @@
             "state" : "translated",
             "value" : "Nákupní seznam"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indkøbsliste"
+          }
         }
       }
     },
@@ -23018,6 +24512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornění na nákup"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indkøbspåmindelse"
           }
         }
       }
@@ -23114,6 +24614,12 @@
             "state" : "translated",
             "value" : "Připomínka nákupu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelse om indkøb"
+          }
         }
       }
     },
@@ -23204,6 +24710,12 @@
             "state" : "translated",
             "value" : "Upozornění na dobrý den pro nákup (den předem)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelse om en god indkøbsdag (dagen før)"
+          }
         }
       }
     },
@@ -23293,6 +24805,12 @@
             "state" : "translated",
             "value" : "Přidat položku"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj vare"
+          }
         }
       }
     },
@@ -23381,6 +24899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte položky do nákupního seznamu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj varer til din indkøbsliste"
           }
         }
       }
@@ -23475,6 +24999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uložit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem"
           }
         }
       }
@@ -23571,6 +25101,12 @@
             "state" : "translated",
             "value" : "Většina regionů v zemi"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De fleste egne i landet"
+          }
         }
       }
     },
@@ -23665,6 +25201,12 @@
             "state" : "translated",
             "value" : "Státní svátek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landsdækkende helligdag"
+          }
         }
       }
     },
@@ -23758,6 +25300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Státní svátek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landsdækkende helligdag"
           }
         }
       }
@@ -23854,6 +25402,12 @@
             "state" : "translated",
             "value" : "Celý den zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket hele dagen"
+          }
         }
       }
     },
@@ -23943,6 +25497,12 @@
             "state" : "translated",
             "value" : "Smazat vše"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle"
+          }
         }
       }
     },
@@ -24031,6 +25591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit vše"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se alle"
           }
         }
       }
@@ -24122,6 +25688,12 @@
             "state" : "translated",
             "value" : "Moc děkujeme!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mange tak!"
+          }
         }
       }
     },
@@ -24210,6 +25782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informace"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om"
           }
         }
       }
@@ -24305,6 +25883,12 @@
             "state" : "translated",
             "value" : "Čedžu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeju"
+          }
         }
       }
     },
@@ -24393,6 +25977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Týdně"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ugentlig"
           }
         }
       }
@@ -24483,6 +26073,12 @@
             "state" : "translated",
             "value" : "Obchody poblíž"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikker i nærheden"
+          }
         }
       }
     },
@@ -24571,6 +26167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automaticky najít obchody poblíž"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find automatisk butikker i nærheden"
           }
         }
       }
@@ -24661,6 +26263,12 @@
             "state" : "translated",
             "value" : "Chcete-li najít obchody poblíž,\npovolte přístup k poloze v\nNastavení > DontGoMart > Poloha."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For at finde butikker i nærheden\nskal du tillade adgang til lokalitet i\nIndstillinger > DontGoMart > Lokalitet."
+          }
         }
       }
     },
@@ -24750,6 +26358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dejte lidem kolem sebe vědět o zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortæl folk omkring dig om lukninger"
           }
         }
       }
@@ -24846,6 +26460,12 @@
             "state" : "translated",
             "value" : "Připněte oblíbené obchody nahoru"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fastgør dine yndlingsbutikker øverst"
+          }
         }
       }
     },
@@ -24941,6 +26561,12 @@
             "state" : "translated",
             "value" : "Oblíbené"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritter"
+          }
         }
       }
     },
@@ -25031,6 +26657,12 @@
             "state" : "translated",
             "value" : "Dosud přijatá podpora ☕️ ×%lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte modtaget indtil nu ☕️ ×%lld"
+          }
         }
       }
     },
@@ -25119,6 +26751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Průběh"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fremgang"
           }
         }
       }
@@ -25209,6 +26847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "První den zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første lukkedag"
           }
         }
       }
@@ -25304,6 +26948,12 @@
             "state" : "translated",
             "value" : "Přidat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj"
+          }
         }
       }
     },
@@ -25391,6 +27041,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vyberte obchody ke sledování (lze více)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg butikker at følge (flere mulige)"
           }
         }
       }
@@ -25486,6 +27142,12 @@
             "state" : "translated",
             "value" : "Zrušit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuller"
+          }
         }
       }
     },
@@ -25576,6 +27238,12 @@
             "state" : "translated",
             "value" : "Připravujeme kartu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gør kortet klar"
+          }
         }
       }
     },
@@ -25665,6 +27333,12 @@
             "state" : "translated",
             "value" : "Zobrazit kalendář"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se kalender"
+          }
         }
       }
     },
@@ -25753,6 +27427,12 @@
             "state" : "translated",
             "value" : "Přidat vlastní obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj egen butik"
+          }
         }
       }
     },
@@ -25840,6 +27520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upravit vlastní obchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger egen butik"
           }
         }
       }
@@ -25935,6 +27621,12 @@
             "state" : "translated",
             "value" : "Vlastní obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butik"
+          }
         }
       }
     },
@@ -26029,6 +27721,12 @@
             "state" : "translated",
             "value" : "Vlastní obchod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butik"
+          }
         }
       }
     },
@@ -26122,6 +27820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vlastní obchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butik"
           }
         }
       }
@@ -26218,6 +27922,12 @@
             "state" : "translated",
             "value" : "Přidejte vzorce zavření svého vlastního obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj lukkemønstre for din egen butik"
+          }
         }
       }
     },
@@ -26312,6 +28022,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vlastní obchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Egen butik"
           }
         }
       }
@@ -26408,6 +28124,12 @@
             "state" : "translated",
             "value" : "Přidejte vzorce zavření svého vlastního obchodu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj lukkemønstre for din egen butik"
+          }
         }
       }
     },
@@ -26497,6 +28219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koupit kávu %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giv en kop kaffe %@"
           }
         }
       }
@@ -26588,6 +28316,12 @@
             "state" : "translated",
             "value" : "Koupit kávu, %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giv en kop kaffe, %@"
+          }
         }
       }
     },
@@ -26673,6 +28407,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -26771,6 +28511,12 @@
             "state" : "translated",
             "value" : "Costco Tegu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -26864,6 +28610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Tegu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
           }
         }
       }
@@ -26959,6 +28711,12 @@
             "state" : "translated",
             "value" : "Costco Tegu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Daegu"
+          }
         }
       }
     },
@@ -27049,6 +28807,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -27147,6 +28911,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
         }
       }
     },
@@ -27237,6 +29007,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ulsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
@@ -27335,6 +29111,12 @@
             "state" : "translated",
             "value" : "Costco běžné"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco almindelig"
+          }
         }
       }
     },
@@ -27428,6 +29210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco běžné"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco almindelig"
           }
         }
       }
@@ -27523,6 +29311,12 @@
             "state" : "translated",
             "value" : "Costco běžné"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco almindelig"
+          }
         }
       }
     },
@@ -27613,6 +29407,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -27711,6 +29511,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
         }
       }
     },
@@ -27801,6 +29607,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco Ilsan"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
@@ -27899,6 +29711,12 @@
             "state" : "translated",
             "value" : "Costco"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
         }
       }
     },
@@ -27993,6 +29811,12 @@
             "state" : "translated",
             "value" : "Běžné – Jangpjong, Tedžon, Jangdže, \nSangbong, Pusan, Kwangmjong, \nČchonan, Ujdžongbu, Kongse, \nSongdo, Sedžong, Hanam, \nKimhe, Kočchok"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almindelige – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
         }
       }
     },
@@ -28081,6 +29905,12 @@
             "state" : "translated",
             "value" : "Přidat vzorec"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj mønster"
+          }
         }
       }
     },
@@ -28168,6 +29998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte vzorec"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj et mønster"
           }
         }
       }
@@ -28264,6 +30100,12 @@
             "state" : "translated",
             "value" : "Odemkněte sledování více obchodů, upozornění a další"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås op for at følge flere butikker, påmindelser og meget mere"
+          }
         }
       }
     },
@@ -28354,6 +30196,12 @@
             "state" : "translated",
             "value" : "Podpořit ještě jednou ☕️"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støt os en gang til ☕️"
+          }
         }
       }
     },
@@ -28442,6 +30290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vybraná pobočka"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt filial"
           }
         }
       }
@@ -28532,6 +30386,12 @@
             "state" : "translated",
             "value" : "Najde a doporučí obchody poblíž podle vaší aktuální polohy."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder og anbefaler butikker i nærheden ud fra din aktuelle lokalitet."
+          }
         }
       }
     },
@@ -28618,6 +30478,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -28712,6 +30578,12 @@
             "state" : "translated",
             "value" : "Znovu načte nabídku spropitného"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genindlæser listen med drikkepengemuligheder"
+          }
         }
       }
     },
@@ -28801,6 +30673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Načítá se nabídka spropitného"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indlæser drikkepengemuligheder"
           }
         }
       }
@@ -28892,6 +30770,12 @@
             "state" : "translated",
             "value" : "Nabídku spropitného se nepodařilo načíst. Zkusit znovu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke indlæse drikkepengemuligheder. Prøv igen"
+          }
         }
       }
     },
@@ -28981,6 +30865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O spropitném"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om drikkepenge"
           }
         }
       }
@@ -29072,6 +30962,12 @@
             "state" : "translated",
             "value" : "Zavře kartu spropitného. 30 dní se znovu nezobrazí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukker drikkepengekortet. Det vises ikke igen i 30 dage"
+          }
         }
       }
     },
@@ -29161,6 +31057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Podporovatel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte"
           }
         }
       }
@@ -29252,6 +31154,12 @@
             "state" : "translated",
             "value" : "Podporovatel. Zatím %lld káv. Děkujeme, že podporujete aplikaci."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte. %lld kopper kaffe indtil nu. Tak, fordi du støtter appen."
+          }
         }
       }
     },
@@ -29342,6 +31250,12 @@
             "state" : "translated",
             "value" : "Nezapomněli jsme na vás!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi har ikke glemt dig!"
+          }
         }
       }
     },
@@ -29431,6 +31345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Děkujeme za podporu. Zatím jste poslali %lld káv."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tak for din støtte. Du har sendt %lld kopper kaffe indtil nu."
           }
         }
       }
@@ -29529,6 +31449,12 @@
             "state" : "translated",
             "value" : "Moc děkujeme za podporu. Hodně nám znamená."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mange tak for din støtte. Den betyder meget for os."
+          }
         }
       }
     },
@@ -29618,6 +31544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moc děkujeme za podporu. Zatím jste poslali %lld káv."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mange tak for din støtte. Du har sendt %lld kopper kaffe indtil nu."
           }
         }
       }
@@ -29715,6 +31647,12 @@
             "state" : "translated",
             "value" : "Zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket"
+          }
         }
       }
     },
@@ -29802,6 +31740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vzorec zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkemønster"
           }
         }
       }
@@ -29893,6 +31837,12 @@
             "state" : "translated",
             "value" : "Oznámit zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del nyt om lukning"
+          }
         }
       }
     },
@@ -29982,6 +31932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sdílí obrázek karty o zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler billedet af lukkekortet"
           }
         }
       }
@@ -30079,6 +32035,12 @@
             "state" : "translated",
             "value" : "Karta o zavření. %1$@ %2$@, %3$@ zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkekort. %1$@ %2$@, %3$@ lukket"
+          }
         }
       }
     },
@@ -30169,6 +32131,12 @@
             "state" : "translated",
             "value" : "Vytvoří a sdílí kartu o zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opretter og deler et lukkekort"
+          }
         }
       }
     },
@@ -30258,6 +32226,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sdílí kartu o zavření do Instagram Stories"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler lukkekortet til Instagram Stories"
           }
         }
       }
@@ -30356,6 +32330,12 @@
             "state" : "translated",
             "value" : "Bez zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen lukning"
+          }
         }
       }
     },
@@ -30443,6 +32423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vzorec zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkemønster"
           }
         }
       }
@@ -30538,6 +32524,12 @@
             "state" : "translated",
             "value" : "Zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket"
+          }
         }
       }
     },
@@ -30626,6 +32618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes zavřeno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukket i dag"
           }
         }
       }
@@ -30717,6 +32715,12 @@
             "state" : "translated",
             "value" : "Žádný obchod nemá zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen butikker har lukket"
+          }
         }
       }
     },
@@ -30805,6 +32809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dny zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkedage"
           }
         }
       }
@@ -30895,6 +32905,12 @@
             "state" : "translated",
             "value" : "Oznámení přijdou 3 dny a 1 den před dny zavření."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der sendes meddelelser 3 dage og 1 dag før lukkedage."
+          }
         }
       }
     },
@@ -30982,6 +32998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upozornění na dny zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelser om lukkedage"
           }
         }
       }
@@ -31072,6 +33094,12 @@
             "state" : "translated",
             "value" : "Nejdřív zapněte upozornění na dny zavření."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå først påmindelser om lukkedage til."
+          }
         }
       }
     },
@@ -31159,6 +33187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abyste dostávali upozornění na dny zavření, povolte oznámení v Nastavení."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For at få påmindelser om lukkedage skal du tillade meddelelser i Indstillinger."
           }
         }
       }
@@ -31248,6 +33282,12 @@
             "state" : "translated",
             "value" : "Žádné údaje o zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen oplysninger om lukkedage"
+          }
         }
       }
     },
@@ -31336,6 +33376,12 @@
             "state" : "translated",
             "value" : "Žádné údaje o dnech zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen oplysninger om lukkedage tilgængelige"
+          }
         }
       }
     },
@@ -31423,6 +33469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalendář zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender med lukkedage"
           }
         }
       }
@@ -31514,6 +33566,12 @@
             "state" : "translated",
             "value" : "Zobrazit kalendář zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se kalenderen med lukkedage"
+          }
         }
       }
     },
@@ -31603,6 +33661,12 @@
             "state" : "translated",
             "value" : "Vyberte dny zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg lukkedage"
+          }
         }
       }
     },
@@ -31691,6 +33755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Není den zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke en lukkedag"
           }
         }
       }
@@ -31786,6 +33856,12 @@
             "state" : "translated",
             "value" : "Nalezeno „%@“. Zkontrolujte a klepněte na Přidat."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fandt „%@“. Tjek det, og tryk på Tilføj."
+          }
         }
       }
     },
@@ -31879,6 +33955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "V příštích 7 dnech nikde nezavírají"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen lukker de næste 7 dage"
           }
         }
       }
@@ -31974,6 +34056,12 @@
             "state" : "translated",
             "value" : "Žádná z vašich restaurací v příštích 7 dnech nezavírá"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen af dine restauranter har lukket de næste 7 dage"
+          }
         }
       }
     },
@@ -32067,6 +34155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento týden bez zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen lukkedage denne uge"
           }
         }
       }
@@ -32162,6 +34256,12 @@
             "state" : "translated",
             "value" : "Spravovat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrer"
+          }
         }
       }
     },
@@ -32255,6 +34355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat můžete z odkazu ke sdílení z Naver Maps nebo ze snímku obrazovky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan tilføje en fra et delingslink fra Naver Maps eller et skærmbillede"
           }
         }
       }
@@ -32350,6 +34456,12 @@
             "state" : "translated",
             "value" : "Moje restaurace"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine restauranter"
+          }
         }
       }
     },
@@ -32443,6 +34555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurace · 7 dní"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauranter · 7 dage"
           }
         }
       }
@@ -32538,6 +34656,12 @@
             "state" : "translated",
             "value" : "Přidejte nebo upravte své restaurace"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj eller rediger dine restauranter"
+          }
         }
       }
     },
@@ -32631,6 +34755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zatím žádné restaurace. Přidejte je v aplikaci."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen restauranter endnu. Tilføj dem i appen."
           }
         }
       }
@@ -32726,6 +34856,12 @@
             "state" : "translated",
             "value" : "Nebo sem vložte sdílený odkaz či text"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eller indsæt et delt link eller en tekst her"
+          }
         }
       }
     },
@@ -32819,6 +34955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rychlý import"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hurtig import"
           }
         }
       }
@@ -32914,6 +35056,12 @@
             "state" : "translated",
             "value" : "Přečte údaje o zavření z fotky přímo ve vašem zařízení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læser lukkeoplysningerne fra billedet på din enhed"
+          }
         }
       }
     },
@@ -33007,6 +35155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotku se nepodařilo načíst"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Billedet kunne ikke indlæses"
           }
         }
       }
@@ -33102,6 +35256,12 @@
             "state" : "translated",
             "value" : "Žádná restaurace nezavírá"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen restaurant har lukket"
+          }
         }
       }
     },
@@ -33195,6 +35355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snímek obrazovky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skærmbillede"
           }
         }
       }
@@ -33290,6 +35456,12 @@
             "state" : "translated",
             "value" : "Smazat restauraci"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet restaurant"
+          }
         }
       }
     },
@@ -33383,6 +35555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Název restaurace"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurantens navn"
           }
         }
       }
@@ -33478,6 +35656,12 @@
             "state" : "translated",
             "value" : "Restaurace"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant"
+          }
         }
       }
     },
@@ -33571,6 +35755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat restauraci"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj en restaurant"
           }
         }
       }
@@ -33666,6 +35856,12 @@
             "state" : "translated",
             "value" : "Přidat restauraci"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj restaurant"
+          }
         }
       }
     },
@@ -33759,6 +35955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upravit restauraci"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger restaurant"
           }
         }
       }
@@ -33854,6 +36056,12 @@
             "state" : "translated",
             "value" : "Žádná z vašich restaurací v příštích 7 dnech nezavírá."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen af dine restauranter har lukket de næste 7 dage."
+          }
         }
       }
     },
@@ -33947,6 +36155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tečkou označí dny z příštích 7, kdy mají vaše restaurace zavřeno."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viser en prik på de dage inden for de næste 7, hvor dine restauranter har lukket."
           }
         }
       }
@@ -34042,6 +36256,12 @@
             "state" : "translated",
             "value" : "Přidejte restaurace v aplikaci"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj restauranter i appen"
+          }
         }
       }
     },
@@ -34135,6 +36355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uvedeno jako otevřeno každý den — bez pravidelného volna."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Står opført som åben hver dag — ingen fast fridag."
           }
         }
       }
@@ -34230,6 +36456,12 @@
             "state" : "translated",
             "value" : "Přidejte widget „Restaurace · 7 dní“ na plochu, abyste to viděli bez otevření aplikace."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj widgetten „Restauranter · 7 dage“ til hjemmeskærmen for at se det uden at åbne appen."
+          }
         }
       }
     },
@@ -34323,6 +36555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importovat toto"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importér dette"
           }
         }
       }
@@ -34418,6 +36656,12 @@
             "state" : "translated",
             "value" : "Název se načetl, ale chybí údaje o zavření. Zkuste snímek otevírací doby nebo vyberte dny níže."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navnet blev hentet, men der er ingen lukkeoplysninger. Prøv et skærmbillede af åbningstiderne, eller vælg dagene nedenfor."
+          }
         }
       }
     },
@@ -34511,6 +36755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zadejte pravidelné dny volna restaurací, kam chodíte, a dny zavření v příštích 7 dnech označíme tečkou."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj de faste fridage for de restauranter, du besøger, så markerer vi lukkedage inden for de næste 7 dage med en prik."
           }
         }
       }
@@ -34606,6 +36856,12 @@
             "state" : "translated",
             "value" : "Barva tečky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikkens farve"
+          }
         }
       }
     },
@@ -34699,6 +36955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pravidelné dny volna"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faste fridage"
           }
         }
       }
@@ -34794,6 +37056,12 @@
             "state" : "translated",
             "value" : "Adresa (volitelné)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse (valgfri)"
+          }
         }
       }
     },
@@ -34887,6 +37155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "V mapové aplikaci klepněte u restaurace na Sdílet → Kopírovat a vložte sem, nebo vyberte snímek její informační stránky."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I din kort-app skal du trykke på Del → Kopiér ved restauranten og indsætte det her eller vælge et skærmbillede af dens infoside."
           }
         }
       }
@@ -34982,6 +37256,12 @@
             "state" : "translated",
             "value" : "Otevřít v Mapách"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbn i Kort"
+          }
         }
       }
     },
@@ -35075,6 +37355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat den volna ručně"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj fridag manuelt"
           }
         }
       }
@@ -35170,6 +37456,12 @@
             "state" : "translated",
             "value" : "Přidejte den volna"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj en fridag"
+          }
         }
       }
     },
@@ -35263,6 +37555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upravit údaje o zavření"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger lukkeoplysninger"
           }
         }
       }
@@ -35358,6 +37656,12 @@
             "state" : "translated",
             "value" : "Hledáme údaje o zavření…"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leder efter lukkeoplysninger…"
+          }
         }
       }
     },
@@ -35451,6 +37755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Údaje o zavření se nenašly. Vyberte dny níže."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke finde lukkeoplysninger. Vælg dagene nedenfor."
           }
         }
       }
@@ -35546,6 +37856,12 @@
             "state" : "translated",
             "value" : "Příspěvek 4:5"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslag 4:5"
+          }
         }
       }
     },
@@ -35636,6 +37952,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story 9:16"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Story 9:16"
@@ -35734,6 +38056,12 @@
             "state" : "translated",
             "value" : "Kalendář zavření na 2 týdny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkekalender for 2 uger"
+          }
         }
       }
     },
@@ -35827,6 +38155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Již brzy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På vej"
           }
         }
       }
@@ -35922,6 +38256,12 @@
             "state" : "translated",
             "value" : "Vyhledejte v App Storu „DontGoMart“"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søg efter „DontGoMart“ i App Store"
+          }
         }
       }
     },
@@ -36015,6 +38355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obchody zavřeny!"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butikker lukket!"
           }
         }
       }
@@ -36110,6 +38456,12 @@
             "state" : "translated",
             "value" : "Fotka"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Billede"
+          }
         }
       }
     },
@@ -36200,6 +38552,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
@@ -36298,6 +38656,12 @@
             "state" : "translated",
             "value" : "Formát"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
         }
       }
     },
@@ -36391,6 +38755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Médium"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medie"
           }
         }
       }
@@ -36486,6 +38856,12 @@
             "state" : "translated",
             "value" : "Karta o zavření. %1$@ %2$@, %3$@ zavřeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukkekort. %1$@ %2$@, %3$@ lukket"
+          }
         }
       }
     },
@@ -36579,6 +38955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vytváříme video"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laver videoen"
           }
         }
       }
@@ -36674,6 +39056,12 @@
             "state" : "translated",
             "value" : "Zveřejnit na Instagramu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del på Instagram"
+          }
         }
       }
     },
@@ -36767,6 +39155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "V seznamu sdílení vyberte Instagram a zveřejněte to jako příspěvek, story nebo reel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg Instagram på delingslisten for at dele det som opslag, story eller reel"
           }
         }
       }
@@ -36862,6 +39256,12 @@
             "state" : "translated",
             "value" : "Rovnou otevře editor stories na Instagramu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbner direkte Instagrams story-editor"
+          }
         }
       }
     },
@@ -36955,6 +39355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sdílet"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del"
           }
         }
       }
@@ -37050,6 +39456,12 @@
             "state" : "translated",
             "value" : "Sdílí video o zavření"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deler videoen om lukning"
+          }
         }
       }
     },
@@ -37143,6 +39555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video se nepodařilo vytvořit. Sdílejte místo něj fotku."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Videoen kunne ikke laves. Del billedet i stedet."
           }
         }
       }
@@ -37238,6 +39656,12 @@
             "state" : "translated",
             "value" : "Znovu otevře %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbner igen %@"
+          }
         }
       }
     },
@@ -37331,6 +39755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nakupte nejpozději do %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slut med at handle inden %@"
           }
         }
       }

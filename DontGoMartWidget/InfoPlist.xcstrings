@@ -94,6 +94,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -186,6 +192,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"

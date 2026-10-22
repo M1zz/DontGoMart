@@ -873,3 +873,61 @@ https://m1zz.github.io/DontGoMart/cs/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/DontGoMart/cs/
+
+## da
+
+### 이름
+
+DontGoMart: Lukkedage
+
+### 부제
+
+Ingen spildte ture
+
+### 키워드
+
+supermarked,Korea,Seoul,åbningstider,søndag,onsdag,helligdage,Chuseok,indkøb,kalender,widget
+
+### 프로모션 텍스트
+
+Nu kan du også se fridage for dine yndlingsrestauranter. Et link fra Naver Maps eller ét skærmbillede er nok, og appen giver besked, før en lukkedag nærmer sig.
+
+### 설명
+
+Tjek, om butikken har åbent, før du tager af sted.
+DontGoMart samler de lovpligtige lukkedage for store koreanske supermarkeder og Costco og giver dig besked i god tid, når en lukkedag nærmer sig.
+
+Se med det samme, om du kan tage af sted i dag
+Når du åbner appen, ser du først, om den valgte butik har åbent i dag. Du ser også antal dage til næste lukkedag og en liste over de kommende lukkedage.
+
+Passer til lukkedage i forskellige områder
+Vælg butikker, der lukker om søndagen eller onsdagen, eller områder med andre lukkedage som Ulsan og Jeju. Hos Costco kan du indstille almindelige butikker og afdelingerne i Daegu, Ilsan og Ulsan hver for sig. Lukkedage omkring Seollal (månenytår) og Chuseok vises også.
+
+Tilføj butikker fra dit nabolag
+Hvis en butik ikke står på listen, kan du selv oprette den ved at vælge, hvilken uge og hvilken ugedag den har lukket, for eksempel anden og fjerde søndag.
+
+Fridage for dine yndlingsrestauranter
+Tilføj de faste fridage for de restauranter, du besøger, så vises de dage inden for de næste 7, hvor de har lukket, med en prik. Indsæt blot linket, du har kopieret fra Naver Maps, eller vælg et skærmbillede af restaurantens infoside, så udfyldes fridagen automatisk. Tekst i billeder læses kun på din enhed.
+
+Påmindelser, så du ikke glemmer det
+Vælg at få besked 1, 2, 3 eller 7 dage før lukning på det tidspunkt, der passer dig. Dagen før en lukning minder appen dig om, at i dag er en god dag at handle. Når en lukkedag er inden for 3 dage, vises også et banner øverst i appen.
+
+Widgets til hjemmeskærm og låseskærm
+Med widgets kan du se den nærmeste lukkedag, de næste to lukkedage med dage tilbage, om din butik har åbent denne søndag, og yndlingsrestauranternes fridage de næste 7 dage. Widgetten for denne uges søndag og restaurantwidgetten kan også ligge på låseskærmen.
+
+Kalender og deling
+I kalenderen ser du lukkedage for en hel måned. Du kan dele en lukkemeddelelse som et kort med to ugers kalender og et indkøbstip i størrelser til Instagram-opslag og -stories eller som en kort video.
+
+Alle funktioner er gratis. Hvis appen er til nytte, kan du støtte udviklingen med en kop kaffe.
+
+### 지원 URL
+
+https://m1zz.github.io/DontGoMart/da/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/DontGoMart/da/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/DontGoMart/da/

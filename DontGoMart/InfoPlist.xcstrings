@@ -93,6 +93,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -184,6 +190,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -283,6 +295,12 @@
             "state" : "translated",
             "value" : "Poloha je potřeba k nalezení a doporučení obchodů poblíž."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din lokalitet bruges til at finde og anbefale butikker i nærheden."
+          }
         }
       }
     },
@@ -377,6 +395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Potřebné k uložení fotek a videí karet o zavření do vaší knihovny."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruges til at gemme billeder og videoer fra lukkekortene i dit fotobibliotek."
           }
         }
       }

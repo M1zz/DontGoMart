@@ -129,6 +129,13 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Přidejte svůj<br>obchod z okolí", "Vzorce jako druhé a čtvrté úterý"),
         ("05-share.png", "dark", "Oznamte zavření<br>jednou kartou", "Dejte vědět rodině i sousedům"),
     ],
+    "da": [
+        ("01-main.png", "hero-bleed", "Tjek,<br>før du tager af sted", "Se med et blik, om butikken har åbent i dag"),
+        ("02-calendar.png", "left-text", "Denne måneds<br>lukkedage", "Alle lukkedage lige i kalenderen"),
+        ("03-marts.png", "text-bottom", "Kun dine butikker", "Supermarkeder, Costco, helligdagslukninger"),
+        ("04-pattern.png", "flat-rotate", "Tilføj din<br>lokale butik", "Mønstre som anden og fjerde tirsdag"),
+        ("05-share.png", "dark", "Del en lukning<br>på ét kort", "Giv familie og naboer besked"),
+    ],
 }
 
 BASE_CSS = f"""
