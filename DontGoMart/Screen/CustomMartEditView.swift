@@ -76,6 +76,13 @@ struct CustomMartEditView: View {
                 }
             }
             .navigationTitle(editingMart == nil ? "커스텀 마트 추가" : "커스텀 마트 편집")
+            #if DEBUG
+            .onAppear {
+                if UserDefaults.standard.string(forKey: "ScreenshotScreen") == "pattern" {
+                    showingPatternEditor = true
+                }
+            }
+            #endif
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -216,6 +223,16 @@ struct PatternEditorView: View {
                 }
             }
             .navigationTitle("패턴 추가")
+            #if DEBUG
+            .onAppear {
+                // 스토어 스크린샷용: 2·4주차 화요일을 골라 둔 상태로 연다
+                if UserDefaults.standard.string(forKey: "ScreenshotScreen") == "pattern" {
+                    mode = .monthly
+                    selectedCells = [GridCell(week: .second, weekday: .tuesday),
+                                     GridCell(week: .fourth, weekday: .tuesday)]
+                }
+            }
+            #endif
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

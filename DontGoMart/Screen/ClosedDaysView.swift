@@ -134,6 +134,17 @@ struct ClosedDaysView: View {
             if ProcessInfo.processInfo.arguments.contains("-ScreenshotShareCard") {
                 isShowingShareCard = true
             }
+            // -ScreenshotScreen calendar | settings | pattern : 스크린샷 스크립트가 화면을 바로 연다
+            if UserDefaults.standard.string(forKey: "ScreenshotScreen") != nil,
+               martSelection.selectedMartTypes.isEmpty {
+                martSelection.setSelected(true, for: .normal(type: .sunday))
+            }
+            switch UserDefaults.standard.string(forKey: "ScreenshotScreen") {
+            case "calendar": isShowingCalendar = true
+            case "settings", "pattern": isShowingSettings = true
+            case "share": isShowingShareCard = true
+            default: break
+            }
         }
         #endif
         .onChange(of: scenePhase) { _, phase in
@@ -780,6 +791,13 @@ struct ClosedDaysView: View {
             return nil
         }
         let days = calendar.dateComponents([.day], from: today, to: dayBefore).day ?? 0
+        // 오늘·내일·모레는 문장째 번역한다 — "%@까지" 에 '오늘' 을 끼우면 "by Today" · "bis Heute" 처럼 어색해진다
+        switch days {
+        case ...0: return String(localized: "장보기는 오늘 끝내세요", defaultValue: "Do your shopping today")
+        case 1: return String(localized: "장보기는 내일까지 끝내세요", defaultValue: "Finish shopping by tomorrow")
+        case 2: return String(localized: "장보기는 모레까지 끝내세요", defaultValue: "Finish shopping within 2 days")
+        default: break
+        }
         return String(format: String(localized: "장보기는 %@까지 끝내세요", defaultValue: "Finish shopping by %@"),
                       relativeDayPhrase(date: dayBefore, days: days))
     }

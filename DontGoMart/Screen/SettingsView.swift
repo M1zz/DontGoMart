@@ -70,6 +70,12 @@ struct SettingsView: View {
                 }
             }
             .onAppear {
+                #if DEBUG
+                // 스토어 스크린샷용: -ScreenshotScreen pattern 이면 내 매장 → 패턴 편집까지 바로 연다
+                if UserDefaults.standard.string(forKey: "ScreenshotScreen") == "pattern" {
+                    showingCustomMartEditor = true
+                }
+                #endif
                 Task {
                     await checkAndSyncNotificationStatus()
                 }

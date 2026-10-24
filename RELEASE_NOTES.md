@@ -8,152 +8,201 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 
 ### 앱스토어 (한국어)
 
+이제 24개 언어로 앱을 쓸 수 있어요
 위젯 목록에 돈꼬마트 이름이 제대로 보여요
 설정에서 보낸 의견과 개발자 답장을 볼 수 있어요
 의견을 보낼 때 어떤 상황이었는지 차근차근 물어봐요
+앞으로 만들 기능을 설정에서 미리 볼 수 있어요
 
 ### App Store (English)
 
+DontGoMart now speaks 24 languages
 Widgets now carry the DontGoMart name
 See replies to your feedback in Settings
 Feedback now asks what happened
+Preview upcoming features in Settings
 
 ### App Store (en-GB)
 
+DontGoMart now speaks 24 languages
 Widgets now carry the DontGoMart name
 See replies to your feedback in Settings
 Feedback now asks what happened
+Preview upcoming features in Settings
 
-### App Store (ja)
+### 앱스토어 (일본어)
 
+24の言語で使えるようになりました
 ウィジェットにDontGoMartの名前が表示されます
 設定で送ったご意見と返信を見られます
 ご意見を送るとき、状況を順に尋ねます
+今後追加予定の機能を設定で確認できます
 
-### App Store (zh-Hans)
+### 앱스토어 (중국어 간체)
 
+现已支持 24 种语言
 小组件现在会显示 DontGoMart 名称
 可在设置中查看反馈和开发者回复
 发送反馈时会逐步询问当时的情况
+可在设置中预览即将推出的功能
 
-### App Store (ru)
+### 앱스토어 (중국어 번체)
 
-В виджетах появилось имя DontGoMart
-Ответы на отзывы — в настройках
-Отзыв теперь уточняет, что случилось
-
-### App Store (zh-Hant)
-
+現已支援 24 種語言
 小工具現在會顯示 DontGoMart 名稱
 可在設定中查看意見與開發者回覆
 傳送意見時會逐步詢問當時的狀況
+可在設定中預覽即將推出的功能
 
-### App Store (es)
+### 앱스토어 (러시아어)
 
+Приложение теперь на русском
+В виджетах появилось имя DontGoMart
+Ответы на отзывы — в настройках
+Отзыв теперь уточняет, что случилось
+Будущие функции видны в настройках
+
+### 앱스토어 (스페인어)
+
+Ahora disponible en español
 Los widgets ya muestran DontGoMart
 Respuestas a tus opiniones, en Ajustes
 Al opinar, preguntamos qué ocurrió
+Mira en Ajustes lo que está por llegar
 
-### App Store (de)
+### 앱스토어 (독일어)
 
+Jetzt auch auf Deutsch
 Widgets zeigen jetzt DontGoMart an
 Antworten auf dein Feedback ansehen
 Feedback fragt nach dem Hergang
+Geplante Funktionen in den Einstellungen
 
-### App Store (fr)
+### 앱스토어 (프랑스어)
 
+Désormais disponible en français
 Les widgets affichent DontGoMart
 Réponses à vos avis dans Réglages
 L’avis demande ce qui s’est passé
+Découvrez les nouveautés à venir
 
-### App Store (it)
+### 앱스토어 (이탈리아어)
 
+Ora disponibile in italiano
 I widget mostrano il nome DontGoMart
 Vedi nelle Impostazioni le risposte
 Il feedback chiede cosa è successo
+Scopri le funzioni in arrivo
 
-### App Store (pt-BR)
+### 앱스토어 (포르투갈어)
 
+Agora disponível em português
 Widgets agora mostram o nome DontGoMart
 Veja respostas aos feedbacks em Ajustes
 O feedback agora pergunta o que houve
+Veja em Ajustes o que vem por aí
 
-### App Store (th)
+### 앱스토어 (태국어)
 
+รองรับภาษาไทยแล้ว
 วิดเจ็ตแสดงชื่อ DontGoMart แล้ว
 ดูคำตอบต่อความคิดเห็นในการตั้งค่า
 ส่งความคิดเห็นแล้วจะถามว่าเกิดอะไรขึ้น
+ดูฟีเจอร์ที่กำลังจะมาในการตั้งค่า
 
-### App Store (vi)
+### 앱스토어 (베트남어)
 
+Đã hỗ trợ tiếng Việt
 Widget giờ hiển thị tên DontGoMart
 Xem phản hồi cho góp ý trong Cài đặt
 Gửi góp ý sẽ hỏi chuyện gì đã xảy ra
+Xem trước tính năng sắp có trong Cài đặt
 
-### App Store (cs)
+### 앱스토어 (체코어)
 
+Nově také v češtině
 Widgety nově nesou jméno DontGoMart
 Odpovědi na vaše podněty v Nastavení
 Podnět se ptá, co se stalo
+Chystané funkce najdete v Nastavení
 
-### App Store (da)
+### 앱스토어 (덴마크어)
 
+Nu også på dansk
 Widgets viser nu navnet DontGoMart
 Se svar på din feedback i Indstillinger
 Feedback spørger nu, hvad der skete
+Se kommende funktioner i Indstillinger
 
-### App Store (el)
+### 앱스토어 (그리스어)
 
+Τώρα και στα ελληνικά
 Τα widgets δείχνουν πλέον το DontGoMart
 Δείτε απαντήσεις στα σχόλιά σας
 Τα σχόλια ρωτούν τι συνέβη
+Δείτε τι έρχεται στις Ρυθμίσεις
 
-### App Store (fi)
+### 앱스토어 (핀란드어)
 
+Nyt myös suomeksi
 Widgetit näyttävät nyt DontGoMart-nimen
 Näe vastaukset palautteeseesi
 Palaute kysyy nyt, mitä tapahtui
+Tulevat ominaisuudet asetuksissa
 
-### App Store (id)
+### 앱스토어 (인도네시아어)
 
+Kini tersedia dalam bahasa Indonesia
 Widget kini menampilkan nama DontGoMart
 Lihat balasan masukanmu di Pengaturan
 Masukan kini menanyakan apa yang terjadi
+Intip fitur mendatang di Pengaturan
 
-### App Store (nb)
+### 앱스토어 (노르웨이어 보크말)
 
+Nå også på norsk
 Widgeter viser nå navnet DontGoMart
 Se svar på tilbakemeldingen din
 Tilbakemelding spør nå hva som skjedde
+Se kommende funksjoner i Innstillinger
 
-### App Store (nl)
+### 앱스토어 (네덜란드어)
 
+Nu ook in het Nederlands
 Widgets tonen nu de naam DontGoMart
 Bekijk reacties op je feedback
 Feedback vraagt nu wat er gebeurde
+Bekijk geplande functies in Instellingen
 
-### App Store (pl)
+### 앱스토어 (폴란드어)
 
+Teraz także po polsku
 Widżety pokazują nazwę DontGoMart
 Odpowiedzi na opinie w Ustawieniach
 Opinia pyta teraz, co się stało
+Zobacz w Ustawieniach, co nadchodzi
 
-### App Store (sv)
+### 앱스토어 (스웨덴어)
 
+Nu även på svenska
 Widgets visar nu namnet DontGoMart
 Se svar på din feedback i Inställningar
 Feedback frågar nu vad som hände
+Se kommande funktioner i Inställningar
 
-### App Store (tr)
+### 앱스토어 (튀르키예어)
 
+Artık Türkçe de kullanılabilir
 Widget’lar artık DontGoMart adını taşır
 Geri bildirim yanıtlarını Ayarlar’da gör
 Geri bildirim artık ne olduğunu soruyor
+Gelecek özellikleri Ayarlar’da gör
 
 ### 개발 메모 (노출 안 함)
 
 - 위젯 표시 이름: CalendarWidget → 언어별 앱 이름 (DontGoMartWidget/InfoPlist.xcstrings, bd72fdb)
 - LeeoKit 3.7.1 → 3.16.2: 보낸 의견 · 답장 화면(LeeoSentFeedbackRow), 유형별 질문(LeeoFeedbackPrompt)
+- 다국어: ko/en/en-GB 외 21개 언어 추가(앱 · 스토어 · 웹 페이지), 설정 '앞으로 만들 기능'(a99b374)
 
 ## 2.0.8
 

@@ -208,6 +208,9 @@ struct ShareCardView: View {
                     Text(headline)
                         .font(.system(size: isStory ? 36 : 32, weight: .heavy))
                         .foregroundColor(Self.closedRed)
+                        // "Morgen geschlossen" 처럼 긴 언어에서 말줄임표로 잘리지 않게 더 줄인다
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.4)
                     Text(payload.dateText)
                         .font(.system(size: isStory ? 16 : 14, weight: .semibold))
                         .foregroundColor(Self.ink)
@@ -240,6 +243,10 @@ struct ShareCardView: View {
             Text(payload.heroDate.formatted(.dateTime.month(.abbreviated)))
                 .font(.system(size: isStory ? 15 : 13, weight: .bold))
                 .foregroundColor(.white)
+                // 베트남어 "Tháng 10" 처럼 긴 달 약칭이 "Thán…" 으로 잘리지 않게
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                .padding(.horizontal, 2)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 3)
                 .background(Self.closedRed)

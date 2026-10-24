@@ -226,7 +226,8 @@ struct ClosedDayCalendarView: View {
         let date = monthDate()
         let month = calendar.component(.month, from: date) - 1
         let year = calendar.component(.year, from: date)
-        return ("\(year)", calendar.monthSymbols[month])
+        // 제목처럼 홀로 쓰는 달 이름은 standalone 형 — 러시아어 등에서 monthSymbols 는 "октября" 같은 소유격이다
+        return ("\(year)", calendar.standaloneMonthSymbols[month])
     }
 
     private func monthDate() -> Date {

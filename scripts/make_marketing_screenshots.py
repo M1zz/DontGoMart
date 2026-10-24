@@ -10,13 +10,15 @@ App Store Connect 제출 규격(1242x2688)으로 바로 렌더링한다.
     python3 scripts/make_marketing_screenshots.py          # ko, en 전부
     python3 scripts/make_marketing_screenshots.py ko       # 특정 로케일만
 """
-import subprocess, sys, pathlib
+import subprocess, sys, pathlib, tempfile, time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "docs" / "screenshots" / "raw"
 OUT = ROOT / "docs" / "screenshots" / "marketing"
 WORK = ROOT / "docs" / "screenshots" / ".html"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# 사용자가 쓰는 Chrome 과 프로필이 겹치면 헤드리스가 멈춘다 — 따로 쓴다
+PROFILE = tempfile.mkdtemp(prefix="dontgomart-shots-chrome-")
 
 # App Store Connect 제출 규격. 원본(1320x2868)을 리사이즈하지 않고
 # 캔버스 자체를 이 크기로 잡아 렌더링해야 화질이 유지된다.
@@ -251,7 +253,7 @@ BODY_TEXT_FIRST = ('<div class="headline">{headline}</div><div class="sub">{sub}
 BODY_PHONE_FIRST = ('<div class="wrap"><div class="phone"><img src="{img}"></div></div>'
                     '<div class="headline">{headline}</div><div class="sub">{sub}</div>')
 
-HTML = """<!doctype html><html><head><meta charset="utf-8"><style>
+HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>
 {base}{layout}
 </style></head><body>{body}</body></html>"""
 
@@ -267,12 +269,14 @@ def render(locale):
         body_tpl = BODY_PHONE_FIRST if layout == "text-bottom" else BODY_TEXT_FIRST
         body = body_tpl.format(headline=headline, sub=sub, img=src.as_uri())
         html_path = WORK / f"{locale}-{fname.replace('.png', '.html')}"
-        html_path.write_text(HTML.format(base=BASE_CSS, layout=LAYOUTS[layout], body=body), encoding="utf-8")
+        html_path.write_text(HTML.format(lang=locale, base=BASE_CSS, layout=LAYOUTS[layout], body=body), encoding="utf-8")
         out_png = out_dir / fname
         subprocess.run([CHROME, "--headless=new", f"--screenshot={out_png}",
                         f"--window-size={W},{H}", "--force-device-scale-factor=1",
-                        "--hide-scrollbars", "--disable-gpu", html_path.as_uri()],
-                       check=True, capture_output=True)
+                        "--hide-scrollbars", "--disable-gpu", f"--user-data-dir={PROFILE}",
+                        "--allow-file-access-from-files", html_path.as_uri()],
+                       check=True, capture_output=True, timeout=120)
+        time.sleep(2)   # 한 Mac 을 여럿이 쓴다 — 렌더 사이를 띄운다
         print(f"rendered {out_png}")
 
 

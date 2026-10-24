@@ -24,7 +24,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 PROFILE = tempfile.mkdtemp(prefix="dontgomart-creative-chrome-")
 
 # 앱 언어 코드(raw · marketing 폴더 이름) → App Store Connect 로케일 (--storetext 로 확인한 것)
-STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
+STORE = {"en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {

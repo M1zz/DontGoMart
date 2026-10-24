@@ -57,7 +57,9 @@ echo "   $XC_VERSION ($XC_BUILD) · xcconfig 와 pbxproj 일치"
 # 휴무 규칙 엔진(ClosureRuleEngine)과 팁 상품 로드(SKTestSession)를 검증한다.
 # UI 계층은 여기서 검증되지 않는다 — 3단계 Release 빌드까지가 한계다.
 echo "🧪 [2/3] 테스트 (DontGoMartTests)"
-DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
+# PREDEPLOY_SIM_UDID 를 주면 그 시뮬레이터를 쓴다(여러 에이전트가 한 Mac 을 쓸 때 서로의 기기를 피하려고)
+DEST_ID="${PREDEPLOY_SIM_UDID:-}"
+[ -n "$DEST_ID" ] || DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
 import json, re, sys
 best = None
 for runtime, devices in json.load(sys.stdin)["devices"].items():
