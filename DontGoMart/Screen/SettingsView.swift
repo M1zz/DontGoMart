@@ -49,6 +49,8 @@ struct SettingsView: View {
                     LeeoSupportSection<DontGoMartSpec>()
                     // 앞으로 만들 기능 — 원본은 DontGoMartRoadmap.swift
                     NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
+                    // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
+                    LeeoShareAppLink<DontGoMartSpec>()
                     if isMasterMode {
                         NavigationLink {
                             LeeoUsageStatsView<DontGoMartSpec>()
