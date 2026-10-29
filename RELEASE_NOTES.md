@@ -4,6 +4,176 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 `### 앱스토어 (언어)` 절만 스토어로 나가고, `### 개발 메모` 절은 나가지 않는다.
 확인: `DeployBar --reponotes 돈꼬마트 2.0.9`
 
+## 2.0.10
+
+### 앱스토어 (한국어)
+
+설정에서 친구에게 앱을 소개할 수 있어요
+큰 글씨에서도 화면이 깔끔하게 보여요
+대비 증가를 켜면 글자가 더 또렷해요
+VoiceOver와 음성 제어로 더 쉽게 쓸 수 있어요
+
+### App Store (English)
+
+Share the app with friends from Settings
+Looks tidy even with larger text sizes
+Sharper text with Increase Contrast on
+Improved VoiceOver and Voice Control
+
+### App Store (en-GB)
+
+Share the app with friends from Settings
+Looks tidy even with larger text sizes
+Sharper text with Increase Contrast on
+Improved VoiceOver and Voice Control
+
+### 앱스토어 (일본어)
+
+設定から友だちにアプリを紹介できます
+大きな文字でも画面がすっきり見やすくなりました
+コントラストを上げる設定で文字がくっきり見えます
+VoiceOverや音声コントロールで使いやすくなりました
+
+### 앱스토어 (중국어 간체)
+
+可在设置中把应用推荐给朋友
+使用大字体时界面也清晰整齐
+开启增强对比度后文字更清晰
+VoiceOver 和语音控制更好用了
+
+### 앱스토어 (중국어 번체)
+
+可在設定中把 App 推薦給朋友
+使用大字體時畫面也清楚整齊
+開啟增加對比後文字更清晰
+VoiceOver 與語音控制更好用了
+
+### 앱스토어 (러시아어)
+
+Поделитесь приложением из настроек
+Аккуратный вид даже с крупным шрифтом
+Текст чётче при увеличенном контрасте
+Лучше с VoiceOver и управлением голосом
+
+### 앱스토어 (스페인어)
+
+Comparte la app con amigos desde Ajustes
+Se ve bien incluso con texto grande
+Texto más nítido con Aumentar contraste
+Mejor con VoiceOver y Control por voz
+
+### 앱스토어 (독일어)
+
+App in den Einstellungen weiterempfehlen
+Auch mit großer Schrift übersichtlich
+Klarere Schrift mit Kontrast erhöhen
+Besser mit VoiceOver und Sprachsteuerung
+
+### 앱스토어 (프랑스어)
+
+Recommandez l'app depuis les Réglages
+Bien lisible avec un texte agrandi
+Texte plus net en contraste augmenté
+VoiceOver et Commande vocale améliorés
+
+### 앱스토어 (이탈리아어)
+
+Consiglia l'app dalle Impostazioni
+Ordinata anche con testo più grande
+Testo più nitido con Aumenta contrasto
+Meglio con VoiceOver e Controllo vocale
+
+### 앱스토어 (포르투갈어)
+
+Indique o app aos amigos nos Ajustes
+Fica bem organizado com texto grande
+Texto mais nítido com Aumentar Contraste
+Melhor com VoiceOver e Controle por Voz
+
+### 앱스토어 (태국어)
+
+แนะนำแอปให้เพื่อนได้จากการตั้งค่า
+ตัวอักษรใหญ่ก็ยังดูเป็นระเบียบ
+เปิดเพิ่มความต่างของสีแล้วตัวอักษรชัดขึ้น
+ใช้ VoiceOver และสั่งงานด้วยเสียงได้ดีขึ้น
+
+### 앱스토어 (베트남어)
+
+Giới thiệu app cho bạn bè trong Cài đặt
+Gọn gàng ngay cả khi dùng chữ lớn
+Chữ rõ hơn khi bật Tăng độ tương phản
+Dùng tốt hơn với VoiceOver và Khẩu lệnh
+
+### 앱스토어 (체코어)
+
+Doporučte aplikaci přátelům v Nastavení
+Přehledné i s větším písmem
+Ostřejší text se zvýšeným kontrastem
+Lepší s VoiceOverem a Ovládáním hlasem
+
+### 앱스토어 (덴마크어)
+
+Del appen med venner fra Indstillinger
+Overskuelig selv med stor tekst
+Skarpere tekst med Forøg kontrast
+Bedre med VoiceOver og Stemmestyring
+
+### 앱스토어 (그리스어)
+
+Στείλτε την εφαρμογή σε φίλους
+Καθαρή εμφάνιση και με μεγάλο κείμενο
+Πιο καθαρό κείμενο με Αύξηση αντίθεσης
+Καλύτερο VoiceOver και Φωνητικός έλεγχος
+
+### 앱스토어 (핀란드어)
+
+Jaa sovellus ystäville asetuksista
+Selkeä myös suurella tekstillä
+Selkeämpi teksti kontrastia lisättäessä
+Parempi VoiceOverilla ja puheohjauksella
+
+### 앱스토어 (인도네시아어)
+
+Bagikan app ke teman dari Pengaturan
+Tetap rapi meski memakai teks besar
+Teks lebih tajam di kontras tinggi
+VoiceOver dan Kontrol Suara makin nyaman
+
+### 앱스토어 (노르웨이어 보크말)
+
+Del appen med venner fra Innstillinger
+Ryddig også med stor tekst
+Skarpere tekst med Øk kontrast
+Bedre med VoiceOver og Stemmekontroll
+
+### 앱스토어 (네덜란드어)
+
+Deel de app met vrienden in Instellingen
+Ook met grote tekst overzichtelijk
+Scherpere tekst met Verhoog contrast
+Beter met VoiceOver en Stembediening
+
+### 앱스토어 (폴란드어)
+
+Poleć aplikację znajomym w Ustawieniach
+Przejrzyście nawet z dużym tekstem
+Ostrzejszy tekst z wyższym kontrastem
+Lepiej z VoiceOver i Sterowaniem głosem
+
+### 앱스토어 (스웨덴어)
+
+Tipsa vänner om appen i Inställningar
+Tydligt även med stor text
+Skarpare text med Öka kontrast
+Bättre med VoiceOver och Röststyrning
+
+### 앱스토어 (튀르키예어)
+
+Uygulamayı Ayarlar'dan paylaşabilirsiniz
+Büyük metinde de düzenli görünüm
+Kontrastı Artır açıkken yazılar net
+VoiceOver ve Sesle Denetim ile daha iyi
+
 ## 2.0.9
 
 ### 앱스토어 (한국어)
