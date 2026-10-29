@@ -350,7 +350,6 @@ struct SettingsView: View {
                                     Text(mart.patterns.map { $0.displayText }.joined(separator: ", "))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
-                                        .lineLimit(1)
                                 }
                             }
                         }

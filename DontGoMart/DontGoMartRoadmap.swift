@@ -16,19 +16,20 @@ import LeeoKit
 
 extension DontGoMartSpec {
     static var roadmap: [LeeoRoadmapItem] {[
-        // MARK: 다음에 만들어요
-        .init(id: "a11y.voiceover", status: .planned,
+        // MARK: 지금 만들고 있어요 (손쉬운 사용)
+        .init(id: "a11y.voiceover", status: .building,
               title: NSLocalizedString("VoiceOver로 더 편하게", comment: "Roadmap item: a11y.voiceover"),
               detail: NSLocalizedString("화면 읽기 기능이 휴무일과 단추를 빠짐없이, 알맞은 순서로 읽어 줘요.", comment: "Roadmap item detail: a11y.voiceover")),
-        .init(id: "a11y.largetext", status: .planned,
+        .init(id: "a11y.largetext", status: .building,
               title: NSLocalizedString("큰 글씨에 맞춘 화면", comment: "Roadmap item: a11y.largetext"),
               detail: NSLocalizedString("가장 큰 글자 크기에서도 잘리지 않고 보기 좋게 다시 배치돼요.", comment: "Roadmap item detail: a11y.largetext")),
-        .init(id: "display.dark", status: .planned,
+        .init(id: "display.dark", status: .building,
               title: NSLocalizedString("다크 모드", comment: "Roadmap item: display.dark"),
               detail: NSLocalizedString("어두운 화면에서도 글자와 단추가 또렷하게 보여요.", comment: "Roadmap item detail: display.dark")),
-        .init(id: "a11y.contrast", status: .planned,
+        .init(id: "a11y.contrast", status: .building,
               title: NSLocalizedString("보기 편한 색과 대비", comment: "Roadmap item: a11y.contrast"),
               detail: NSLocalizedString("대비를 높이거나 색을 구별하기 어려워도 휴무일을 알아볼 수 있어요.", comment: "Roadmap item detail: a11y.contrast")),
+        // MARK: 다음에 만들어요
         .init(id: "a11y.keyboard", status: .planned,
               title: NSLocalizedString("키보드로 조작하기", comment: "Roadmap item: a11y.keyboard"),
               detail: NSLocalizedString("아이패드에서 키보드만으로 마트를 고르고 달력을 넘겨요.", comment: "Roadmap item detail: a11y.keyboard")),

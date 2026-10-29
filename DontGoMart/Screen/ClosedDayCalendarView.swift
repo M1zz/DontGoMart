@@ -11,6 +11,9 @@ struct ClosedDayCalendarView: View {
     @Binding var currentDate: Date
     @State private var currentMonth: Int = 0
     @StateObject private var martSelection = MartSelectionManager.shared
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    /// 날짜 칸 높이 — 글자 크기를 키우면 함께 커진다
+    @ScaledMetric(relativeTo: .body) private var cellHeight: CGFloat = 48
 
     private let weekdaySymbols = Weekday.symbols
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 4), count: 7)
@@ -44,7 +47,7 @@ struct ClosedDayCalendarView: View {
             Spacer(minLength: 0)
 
             Button {
-                withAnimation { currentMonth -= 1 }
+                withAnimation(reduceMotion ? nil : .default) { currentMonth -= 1 }
             } label: {
                 Image(systemName: "chevron.left")
                     .font(.title3.weight(.semibold))
@@ -53,7 +56,7 @@ struct ClosedDayCalendarView: View {
             .accessibilityLabel(Text("이전 달"))
 
             Button {
-                withAnimation { currentMonth += 1 }
+                withAnimation(reduceMotion ? nil : .default) { currentMonth += 1 }
             } label: {
                 Image(systemName: "chevron.right")
                     .font(.title3.weight(.semibold))
@@ -90,6 +93,8 @@ struct ClosedDayCalendarView: View {
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel(Text(cellAccessibilityLabel(for: value)))
                     .accessibilityAddTraits(cellAccessibilityTraits(for: value))
+                    // 음성 명령: "15 탭" 처럼 날짜 숫자로 부른다
+                    .accessibilityInputLabels(value.day == -1 ? [] : [Text(verbatim: "\(value.day)")])
                     .accessibilityHidden(value.day == -1)
             }
         }
@@ -99,7 +104,7 @@ struct ClosedDayCalendarView: View {
     @ViewBuilder
     private func dayCell(_ value: DateValue) -> some View {
         if value.day == -1 {
-            Color.clear.frame(height: 48)
+            Color.clear.frame(height: cellHeight)
         } else {
             let isSelected = isSameDay(value.date, currentDate)
             let closedMarts = closedMarts(on: value.date)
@@ -109,19 +114,21 @@ struct ClosedDayCalendarView: View {
                 Text("\(value.day)")
                     .font(.body.weight(isClosed ? .bold : .regular))
                     .foregroundColor(dayTextColor(isSelected: isSelected, isClosed: isClosed, date: value.date))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
 
                 // 휴무 마트 색 점 (최대 3개)
                 HStack(spacing: 3) {
                     ForEach(closedMarts.prefix(3)) { mart in
                         Circle()
-                            .fill(isSelected ? Color.white : mart.type.themeColor)
+                            .fill(isSelected ? Color("OnPink") : mart.type.themeColor)
                             .frame(width: 5, height: 5)
                     }
                 }
                 .frame(height: 5)
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 48)
+            .frame(height: cellHeight)
             .background(
                 RoundedRectangle(cornerRadius: 12)
                     .fill(isSelected ? Color("Pink") : Color.clear)
@@ -134,7 +141,7 @@ struct ClosedDayCalendarView: View {
     }
 
     private func dayTextColor(isSelected: Bool, isClosed: Bool, date: Date) -> Color {
-        if isSelected { return .white }
+        if isSelected { return Color("OnPink") }
         if isWeekend(date) { return .red }
         return .primary
     }

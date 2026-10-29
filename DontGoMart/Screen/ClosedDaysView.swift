@@ -22,6 +22,10 @@ struct ClosedDaysView: View {
     /// 휴무 임박 배너를 닫은 휴무일 ("yyyy-MM-dd"). 같은 휴무일엔 다시 띄우지 않는다.
     @AppStorage("closingBanner.dismissedDay") private var dismissedClosingDay = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    /// 날짜 블록 크기 — 글자 크기를 키우면 함께 커진다
+    @ScaledMetric(relativeTo: .title) private var dateBlockWidth: CGFloat = 60
+    @ScaledMetric(relativeTo: .title) private var dateBlockHeight: CGFloat = 68
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var tipStore = CoffeeTipStore.shared
@@ -65,15 +69,17 @@ struct ClosedDaysView: View {
                                     height: isShareButtonCollapsed ? 32 : nil
                                 )
                                 .background(Capsule().fill(Color("Pink")))
-                                .foregroundColor(.white)
+                                .foregroundColor(Color("OnPink"))
                             }
                             .buttonStyle(.plain)
                             .accessibilityLabel(Text("주변 사람에게 휴무소식 알려주기"))
+                            // 접히면 확성기만 보이므로 음성 명령은 짧은 이름으로도 부를 수 있게 한다
+                            .accessibilityInputLabels([Text("공유"), Text("주변 사람에게 휴무소식 알려주기")])
                             .accessibilityHint(Text("휴무 알림 카드를 만들어 공유합니다"))
                             .task {
                                 // 문구를 읽을 시간을 준 뒤 확성기만 남기고 접는다
                                 try? await Task.sleep(for: .seconds(3))
-                                withAnimation(.spring(duration: 0.45, bounce: 0.25)) {
+                                withAnimation(reduceMotion ? nil : .spring(duration: 0.45, bounce: 0.25)) {
                                     isShareButtonCollapsed = true
                                 }
                             }
@@ -100,7 +106,7 @@ struct ClosedDaysView: View {
                                 },
                                 tapHint: "달력에서 휴무일을 확인합니다"
                             )
-                            .transition(.move(edge: .top).combined(with: .opacity))
+                            .transition(bannerTransition)
                         }
                         // 운영자 공지가 있을 때만 (CloudKit 원격 공지)
                         if let notice = announcements.current {
@@ -108,7 +114,7 @@ struct ClosedDaysView: View {
                                 announcement: notice,
                                 onDismiss: { announcements.dismiss(notice) }
                             )
-                            .transition(.move(edge: .top).combined(with: .opacity))
+                            .transition(bannerTransition)
                         }
                     }
                 }
@@ -183,6 +189,11 @@ struct ClosedDaysView: View {
         }
         // 메인 화면 커피 카드에서 후원했을 때의 감사 연출 (콘페티 + 감사 카드)
         .tipCelebrationOverlay()
+    }
+
+    /// 배너 등장 — 동작 줄이기를 켜면 미끄러지지 않고 나타나기만 한다
+    private var bannerTransition: AnyTransition {
+        reduceMotion ? .opacity : .move(edge: .top).combined(with: .opacity)
     }
 
     private func dismissSupporterThanks() {
@@ -611,7 +622,12 @@ struct ClosedDaysView: View {
             : "\(monthIndex + 1)"
         let isSoon = days <= 3
 
-        return HStack(spacing: 14) {
+        // 아주 큰 글씨에서는 가로로 놓으면 마트 이름이 잘리므로 세로로 쌓는다
+        let layout = dynamicTypeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10))
+            : AnyLayout(HStackLayout(spacing: 14))
+
+        return layout {
             // 달력 한 장 블록 (月 / 일 / 요일)
             VStack(spacing: 1) {
                 Text(monthText)
@@ -624,7 +640,7 @@ struct ClosedDaysView: View {
                     .font(.caption2.bold())
                     .foregroundColor(isSunday ? .red : .secondary)
             }
-            .frame(width: 60, height: 68)
+            .frame(minWidth: dateBlockWidth, minHeight: dateBlockHeight)
             .background(
                 RoundedRectangle(cornerRadius: 12)
                     .fill(isSoon ? Color("Pink").opacity(0.15) : Color(.systemBackground))
@@ -644,7 +660,6 @@ struct ClosedDaysView: View {
                         Text(mart.type.displayName)
                             .font(.subheadline.weight(.semibold))
                             .foregroundColor(.secondary)
-                            .lineLimit(1)
                     }
                 }
             }
@@ -654,7 +669,7 @@ struct ClosedDaysView: View {
             // D-day 배지
             Text(operationStatusManager.formatDDay(days))
                 .font(.subheadline.bold())
-                .foregroundColor(isSoon ? .white : Color("Pink"))
+                .foregroundColor(isSoon ? Color("OnPink") : Color("Pink"))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 7)
                 .background(

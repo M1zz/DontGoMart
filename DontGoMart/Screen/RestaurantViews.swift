@@ -57,7 +57,7 @@ struct RestaurantWeekCard: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 12)
                     .background(Capsule().fill(Color("Pink")))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("OnPink"))
             }
             .buttonStyle(.plain)
             .accessibilityHint(Text("네이버지도 공유 링크나 스크린샷으로 추가할 수 있습니다"))
@@ -106,6 +106,9 @@ struct RestaurantDayCell: View {
     let day: RestaurantDay
     let isToday: Bool
 
+    /// 오늘 동그라미 크기 — 글자 크기를 키우면 함께 커진다
+    @ScaledMetric(relativeTo: .body) private var circleSize: CGFloat = 34
+
     private var weekdayIndex: Int { Calendar.current.component(.weekday, from: day.date) }
 
     var body: some View {
@@ -113,10 +116,14 @@ struct RestaurantDayCell: View {
             Text(Weekday.symbol(calendarWeekday: weekdayIndex))
                 .font(.body.weight(.semibold))
                 .foregroundColor(weekdayIndex == 1 ? .red : (weekdayIndex == 7 ? .blue : .primary))
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
             Text("\(Calendar.current.component(.day, from: day.date))")
                 .font(.body)
-                .foregroundColor(isToday ? .white : .primary)
-                .frame(width: 34, height: 34)
+                .foregroundColor(isToday ? Color("OnPink") : .primary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
+                .frame(width: circleSize, height: circleSize)
                 .background(Circle().fill(isToday ? Color("Pink") : Color.clear))
             ClosedDots(colors: day.closed.map { Color(hex: $0.color) ?? .orange })
                 .frame(height: 8)

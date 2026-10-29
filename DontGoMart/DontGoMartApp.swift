@@ -24,8 +24,8 @@ struct DontGoMartApp: App {
     var body: some Scene {
         WindowGroup {
             ClosedDaysView()
-                // 큰 글씨 접근성 옵션도 레이아웃이 깨지지 않는 선에서 지원.
-                .dynamicTypeSize(...DynamicTypeSize.accessibility2)
+                // 큰 글씨 접근성 옵션도 레이아웃이 깨지지 않는 선에서 지원 (기본 글씨의 2배 이상).
+                .dynamicTypeSize(...DynamicTypeSize.accessibility3)
                 .leeoSatisfactionCheck(DontGoMartSpec.self)
                 .onAppear {
                     WidgetManager.shared.updateWidget()
