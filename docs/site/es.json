@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: días de cierre de hipermercados y Costco en Corea",
+  "description": "Mira si tu hipermercado o Costco en Corea abre hoy, recibe avisos antes de los cierres obligatorios y sigue los descansos de tus restaurantes. Gratis.",
+  "hero": {
+    "headline": "Antes de ir a comprar,\ncomprueba que esté abierto",
+    "lead": "Al abrir la app, lo primero que ves es si tus tiendas abren hoy. Te avisa antes de cada día de cierre para que no vuelvas a encontrarte la puerta cerrada.",
+    "cta": "Descárgala gratis en el App Store",
+    "note": "Todas las funciones son gratis. Sin cuenta ni anuncios."
+  },
+  "demo": {
+    "title": "Pruébalo con tu tienda",
+    "lead": "Elige una tienda y verás al momento si abre hoy y cuándo cierra la próxima vez. Usa las mismas reglas que la app.",
+    "pick": "Elige una tienda",
+    "marts": [
+      "Supermercado (cierra los domingos)",
+      "Supermercado (cierra los miércoles)",
+      "Supermercado (Ulsan)",
+      "Supermercado (Jeju)",
+      "Costco normal",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "¿Puedo ir hoy?",
+    "openToday": "Hoy abre",
+    "closedToday": "Hoy cierra",
+    "nextLabel": "Próximo día de cierre",
+    "today": "Hoy",
+    "tomorrow": "Mañana",
+    "closed": "Cerrado",
+    "prev": "Mes anterior",
+    "next": "Mes siguiente",
+    "note": "Los cierres de Seollal y Chuseok, las tiendas que añadas tú, los avisos y los widgets están en la app."
+  },
+  "problem": {
+    "title": "¿Alguna vez has llegado con la lista de la compra y estaba cerrado?",
+    "text": "En Corea los hipermercados deben cerrar dos días al mes, pero cuáles depende de dónde estés. La mayoría cierra el segundo y el cuarto domingo, otros los miércoles, y Ulsan y Jeju tienen sus propias reglas. En Costco cambia según el local. DontGoMart calcula los cierres de tus tiendas y te dice lo primero si puedes ir hoy."
+  },
+  "features": [
+    {
+      "title": "Acierta en cada región",
+      "text": "Elige tiendas que cierran en domingo o en miércoles, o regiones con calendario propio como Ulsan y Jeju. Los almacenes normales de Costco y los de Daegu, Ilsan y Ulsan se configuran por separado.\nTambién aparecen los cierres del día de Seollal y Chuseok, y puedes seguir varias tiendas a la vez.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Tu tienda del barrio y tus restaurantes de siempre",
+      "text": "Si una tienda no está en la lista, añádela tú: cada semana, cada dos semanas o qué semanas del mes y qué día cierra.\nPara un restaurante, pega un enlace compartido desde Naver Map o elige una captura de su ficha, y los días de descanso se rellenan solos. El texto de las fotos se lee solo en tu dispositivo.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Avisos y widgets para no olvidarte",
+      "text": "Recibe un aviso 1, 2, 3 o 7 días antes a la hora que elijas, y otro la víspera recordándote que hoy es buen día para comprar.\nLos widgets de la pantalla de inicio y la pantalla bloqueada muestran el próximo cierre, si abre este domingo y los próximos siete días de tus restaurantes. El calendario enseña un mes entero de cierres.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Compártelo en una sola tarjeta",
+      "text": "Convierte el aviso en una tarjeta con un calendario de dos semanas y un consejo de compra, y mándalo al chat familiar. Hay tamaños para publicación e historia de Instagram, y también vídeo corto.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Empezar lleva tres pasos",
+    "items": [
+      {
+        "title": "Elige tus tiendas",
+        "text": "Activa las tiendas y regiones donde compras. Las que quieras."
+      },
+      {
+        "title": "Activa los avisos",
+        "text": "Elige con cuántos días de antelación y a qué hora."
+      },
+      {
+        "title": "Añade un widget",
+        "text": "Consúltalo en la pantalla de inicio o bloqueada sin abrir la app."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Reglas de cierre por tienda",
+    "rows": [
+      [
+        "Supermercado (cierra los domingos)",
+        "2.º y 4.º domingo · casi todas las regiones"
+      ],
+      [
+        "Supermercado (cierra los miércoles)",
+        "2.º y 4.º miércoles · parte de Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermercado (Ulsan)",
+        "2.º miércoles, 4.º domingo"
+      ],
+      [
+        "Supermercado (Jeju)",
+        "2.º viernes, 4.º sábado"
+      ],
+      [
+        "Costco normal",
+        "2.º y 4.º domingo"
+      ],
+      [
+        "Costco Daegu",
+        "2.º y 4.º lunes · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2.º y 4.º miércoles"
+      ],
+      [
+        "Costco Ulsan",
+        "2.º miércoles, 4.º domingo"
+      ],
+      [
+        "Seollal, Chuseok",
+        "cierre el mismo día"
+      ]
+    ],
+    "note": "Los cierres obligatorios los fijan los gobiernos locales y pueden cambiar. Si algo no cuadra, escríbenos a la dirección de abajo."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "Los días de cierre no coinciden con la realidad.",
+        "a": "Los cierres obligatorios dependen de ordenanzas locales y varían por región. Comprueba en Ajustes que elegiste el tipo de tienda correcto (cierre en domingo, en miércoles, Ulsan, Jeju, etc.). Si aun así no coincide, envíanos el nombre de la tienda y la zona y lo revisaremos."
+      },
+      {
+        "q": "Mi tienda no está en la lista.",
+        "a": "Añádela como tienda propia. Elige cada semana, cada dos semanas o qué semanas del mes y qué día cierra, por ejemplo el segundo y el cuarto domingo."
+      },
+      {
+        "q": "Los días libres de un restaurante no se rellenaron bien.",
+        "a": "Al importar desde un enlace de Naver Map, la ficha del restaurante debe indicar sus días de descanso. Con una captura, asegúrate de que el aviso de cierre se vea en pantalla. Puedes corregir lo rellenado antes de guardar."
+      },
+      {
+        "q": "No me llegan los avisos.",
+        "a": "Comprueba que las notificaciones estén permitidas en Ajustes > Notificaciones > DontGoMart y que los avisos de cierre estén activados dentro de la app."
+      },
+      {
+        "q": "El widget no se actualiza.",
+        "a": "Abrir la app una vez actualiza los widgets. Si sigue igual, quita el widget y vuelve a añadirlo."
+      },
+      {
+        "q": "¿Qué son las propinas?",
+        "a": "Todas las funciones de DontGoMart son gratis. Las propinas de café, tarta y comida sirven para apoyar al desarrollador. Después verás un agradecimiento y una insignia con las veces que has dado propina."
+      },
+      {
+        "q": "¿Dónde pregunto por pagos o reembolsos?",
+        "a": "Apple gestiona las compras dentro de la app, así que los reembolsos se piden en reportaproblem.apple.com. Para todo lo demás, escríbenos."
+      },
+      {
+        "q": "¿Cómo se tratan mis datos?",
+        "a": "No hay cuentas, anuncios ni herramientas de rastreo, y el texto de las capturas se lee solo en tu dispositivo. Consulta la política de privacidad más abajo."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Se acabó darse la vuelta\nante una tienda cerrada",
+    "cta": "Descárgala gratis en el App Store"
+  },
+  "ui": {
+    "skip": "Ir al contenido",
+    "languages": "Idiomas",
+    "privacy": "Política de privacidad",
+    "contact": "¿Dudas o ideas? Escríbenos a {email}. Solemos responder en uno o dos días."
+  }
+}

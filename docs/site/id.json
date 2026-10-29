@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: hari tutup hipermarket dan Costco di Korea",
+  "description": "Cek apakah hipermarket atau Costco di Korea buka hari ini, dapat pengingat sebelum hari tutup wajib, dan pantau hari libur restoran favoritmu.",
+  "hero": {
+    "headline": "Sebelum berangkat belanja,\npastikan tokonya buka",
+    "lead": "Begitu aplikasi dibuka, yang pertama terlihat adalah apakah toko pilihanmu buka hari ini. Pengingat datang sebelum tiap hari tutup, jadi kamu tak akan lagi ketemu pintu terkunci.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Semua fitur gratis. Tanpa akun, tanpa iklan."
+  },
+  "demo": {
+    "title": "Coba dengan tokomu",
+    "lead": "Pilih toko dan langsung lihat apakah buka hari ini dan kapan tutup berikutnya. Dihitung dengan aturan yang sama seperti di aplikasi.",
+    "pick": "Pilih toko",
+    "marts": [
+      "Supermarket (tutup hari Minggu)",
+      "Supermarket (tutup hari Rabu)",
+      "Supermarket (Ulsan)",
+      "Supermarket (Jeju)",
+      "Costco biasa",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Bisa pergi hari ini?",
+    "openToday": "Buka hari ini",
+    "closedToday": "Tutup hari ini",
+    "nextLabel": "Hari tutup berikutnya",
+    "today": "Hari ini",
+    "tomorrow": "Besok",
+    "closed": "Tutup",
+    "prev": "Bulan sebelumnya",
+    "next": "Bulan berikutnya",
+    "note": "Hari tutup saat Seollal dan Chuseok, toko yang kamu tambahkan sendiri, pengingat, dan widget ada di aplikasi."
+  },
+  "problem": {
+    "title": "Pernah datang bawa daftar belanja tapi tokonya tutup?",
+    "text": "Hipermarket di Korea wajib tutup dua hari tiap bulan, tapi harinya tergantung lokasi. Kebanyakan Minggu kedua dan keempat, ada yang hari Rabu, dan Ulsan serta Jeju punya aturan sendiri. Di Costco tergantung cabangnya. DontGoMart menghitung hari tutup sesuai aturan toko langgananmu dan langsung memberi tahu apakah hari ini bisa pergi."
+  },
+  "features": [
+    {
+      "title": "Tepat di tiap daerah",
+      "text": "Pilih toko yang tutup hari Minggu atau Rabu, atau daerah dengan jadwal sendiri seperti Ulsan dan Jeju. Costco biasa dan cabang Daegu, Ilsan, serta Ulsan diatur terpisah.\nHari tutup tepat saat Seollal dan Chuseok juga ditampilkan, dan kamu bisa memantau beberapa toko sekaligus.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Toko dekat rumah dan restoran langganan",
+      "text": "Kalau toko tidak ada di daftar, tambahkan sendiri: tiap minggu, dua minggu sekali, atau minggu ke berapa dan hari apa dalam sebulan.\nUntuk restoran, tempel tautan yang dibagikan dari Naver Map atau pilih tangkapan layar halaman infonya, dan hari libur rutinnya terisi otomatis. Teks di foto hanya dibaca di perangkatmu.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Pengingat dan widget supaya tak lupa",
+      "text": "Dapatkan pengingat 1, 2, 3, atau 7 hari sebelumnya pada jam pilihanmu, dan sehari sebelumnya satu lagi bahwa hari ini waktu yang pas untuk belanja.\nWidget di Layar Utama dan Layar Terkunci menampilkan hari tutup terdekat, apakah Minggu ini buka, dan tujuh hari ke depan restoranmu. Kalender menampilkan sebulan penuh.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Bagikan lewat satu kartu",
+      "text": "Ubah info hari tutup jadi kartu berisi kalender dua minggu dan tips belanja, lalu kirim ke grup keluarga. Tersedia ukuran postingan dan story Instagram, juga video pendek.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Pilih toko",
+        "text": "Aktifkan toko dan daerah tempatmu belanja. Sebanyak yang kamu mau."
+      },
+      {
+        "title": "Nyalakan pengingat",
+        "text": "Tentukan berapa hari sebelumnya dan jam berapa."
+      },
+      {
+        "title": "Pasang widget",
+        "text": "Cek dari Layar Utama atau Layar Terkunci tanpa membuka aplikasi."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Aturan tutup tiap toko",
+    "rows": [
+      [
+        "Supermarket (tutup hari Minggu)",
+        "Minggu ke-2 dan ke-4 · sebagian besar daerah"
+      ],
+      [
+        "Supermarket (tutup hari Rabu)",
+        "Rabu ke-2 dan ke-4 · sebagian Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarket (Ulsan)",
+        "Rabu ke-2, Minggu ke-4"
+      ],
+      [
+        "Supermarket (Jeju)",
+        "Jumat ke-2, Sabtu ke-4"
+      ],
+      [
+        "Costco biasa",
+        "Minggu ke-2 dan ke-4"
+      ],
+      [
+        "Costco Daegu",
+        "Senin ke-2 dan ke-4 · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "Rabu ke-2 dan ke-4"
+      ],
+      [
+        "Costco Ulsan",
+        "Rabu ke-2, Minggu ke-4"
+      ],
+      [
+        "Seollal, Chuseok",
+        "tutup tepat di hari itu"
+      ]
+    ],
+    "note": "Hari tutup wajib ditetapkan pemerintah daerah dan bisa berubah. Kalau ada yang tidak cocok, kabari kami lewat email di bawah."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Hari tutupnya tidak sesuai kenyataan.",
+        "a": "Hari tutup wajib hipermarket mengikuti peraturan daerah dan berbeda tiap wilayah. Cek di Pengaturan apakah jenis toko yang dipilih sudah tepat (tutup Minggu, tutup Rabu, Ulsan, Jeju, dan lainnya). Kalau masih tidak cocok, kirim nama toko dan daerahnya, kami akan memeriksanya."
+      },
+      {
+        "q": "Tokoku tidak ada di daftar.",
+        "a": "Tambahkan sebagai toko sendiri. Pilih tiap minggu, dua minggu sekali, atau minggu ke berapa dan hari apa, misalnya Minggu kedua dan keempat."
+      },
+      {
+        "q": "Hari libur restoran tidak terisi dengan benar.",
+        "a": "Saat impor lewat tautan Naver Map, halaman restoran harus mencantumkan hari libur rutinnya. Saat memakai tangkapan layar, pastikan tulisan soal hari tutup terlihat di layar. Semua bisa diubah sebelum disimpan."
+      },
+      {
+        "q": "Pengingat tidak muncul.",
+        "a": "Pastikan notifikasi diizinkan di Pengaturan > Notifikasi > DontGoMart dan pengingat hari tutup sudah aktif di aplikasi."
+      },
+      {
+        "q": "Widget tidak diperbarui.",
+        "a": "Buka aplikasi sekali dan widget akan diperbarui. Kalau masih sama, hapus widget lalu tambahkan lagi."
+      },
+      {
+        "q": "Apa itu tip?",
+        "a": "Semua fitur DontGoMart gratis. Tip kopi, kue, dan makan siang adalah dukungan untuk pengembang. Setelah memberi tip, kamu akan melihat ucapan terima kasih dan lencana dengan jumlah tip."
+      },
+      {
+        "q": "Ke mana bertanya soal pembayaran atau pengembalian dana?",
+        "a": "Pembelian di dalam aplikasi diproses Apple, jadi pengembalian dana diajukan di reportaproblem.apple.com. Untuk hal lain, kirim email ke kami."
+      },
+      {
+        "q": "Bagaimana dataku ditangani?",
+        "a": "Tidak ada akun, iklan, atau alat pelacak, dan teks di tangkapan layar hanya dibaca di perangkatmu. Detailnya ada di Kebijakan Privasi di bawah."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Tak perlu lagi putar balik\ndi depan toko yang tutup",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada pertanyaan atau ide? Kirim ke {email}. Biasanya kami membalas dalam satu atau dua hari."
+  }
+}

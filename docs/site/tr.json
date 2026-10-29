@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: Kore’deki hipermarketlerin ve Costco’nun kapalı günleri",
+  "description": "Kore’deki hipermarketin ya da Costco’nun bugün açık olup olmadığını gör, kapalı günlerden önce hatırlatma al, restoranlarının izin günlerini izle.",
+  "hero": {
+    "headline": "Alışverişe çıkmadan önce\naçık olup olmadığına bak",
+    "lead": "Uygulamayı açınca ilk gördüğün şey, seçtiğin mağazaların bugün açık olup olmadığı. Her kapalı günden önce hatırlatma gelir; bir daha kilitli kapıyla karşılaşmazsın.",
+    "cta": "App Store’dan ücretsiz indir",
+    "note": "Tüm özellikler ücretsiz. Hesap yok, reklam yok."
+  },
+  "demo": {
+    "title": "Kendi mağazanla dene",
+    "lead": "Bir mağaza seç; bugün açık mı, bir sonraki kapalı gün ne zaman, hemen gör. Uygulamadaki kuralların aynısıyla hesaplanır.",
+    "pick": "Mağaza seç",
+    "marts": [
+      "Süpermarket (pazar kapalı)",
+      "Süpermarket (çarşamba kapalı)",
+      "Süpermarket (Ulsan)",
+      "Süpermarket (Jeju)",
+      "Costco normal",
+      "Costco Taegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Bugün gidebilir miyim?",
+    "openToday": "Bugün açık",
+    "closedToday": "Bugün kapalı",
+    "nextLabel": "Sonraki kapalı gün",
+    "today": "Bugün",
+    "tomorrow": "Yarın",
+    "closed": "Kapalı",
+    "prev": "Önceki ay",
+    "next": "Sonraki ay",
+    "note": "Seollal ve Chuseok kapanışları, kendi eklediğin mağazalar, hatırlatmalar ve widget’lar uygulamada."
+  },
+  "problem": {
+    "title": "Alışveriş listesiyle gidip kapalı bir mağazaya denk geldin mi?",
+    "text": "Kore’de büyük süpermarketler ayda iki gün kapanmak zorunda, ama hangi günler olduğu yere göre değişiyor. Çoğu yerde ayın ikinci ve dördüncü pazarı, bazı yerlerde çarşamba; Ulsan ve Jeju’nun ise kendi kuralları var. Costco’da şubeye göre değişir. DontGoMart kapalı günleri mağazalarının kurallarına göre hesaplar ve önce bugün gidip gidemeyeceğini söyler."
+  },
+  "features": [
+    {
+      "title": "Her bölge için doğru",
+      "text": "Pazar ya da çarşamba kapanan mağazaları veya Ulsan ve Jeju gibi kendi takvimi olan bölgeleri seç. Normal Costco şubeleri ile Taegu, Ilsan ve Ulsan şubeleri ayrı ayrı ayarlanır.\nSeollal ve Chuseok günündeki kapanışlar da görünür; aynı anda birden fazla mağazayı takip edebilirsin.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Mahalledeki mağazan ve müdavimi olduğun restoranlar",
+      "text": "Listede olmayan bir mağazayı kendin ekle: her hafta, iki haftada bir ya da ayın hangi haftaları ve hangi gün kapandığını seçerek.\nRestoran için Naver Map’ten paylaşılan bağlantıyı yapıştır ya da bilgi sayfasının ekran görüntüsünü seç; düzenli izin günleri kendiliğinden doldurulur. Fotoğraflardaki yazılar yalnızca cihazında okunur.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Unutmaman için hatırlatmalar ve widget’lar",
+      "text": "Seçtiğin saatte 1, 2, 3 ya da 7 gün önceden hatırlatma al; bir gün önce de bugünün alışveriş için iyi bir gün olduğunu hatırlatan bir bildirim daha gelir.\nAna ekran ve kilitli ekran widget’ları en yakın kapalı günü, bu pazar açık olup olmadığını ve restoranlarının önümüzdeki yedi gününü gösterir. Takvim tüm ayı gösterir.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Tek bir kartla paylaş",
+      "text": "Haberi iki haftalık takvim ve alışveriş ipucu içeren bir karta dönüştür, aile grubuna gönder. Instagram gönderisi ve hikâyesi boyutları ile kısa video da var.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başla",
+    "items": [
+      {
+        "title": "Mağazalarını seç",
+        "text": "Alışveriş yaptığın mağazaları ve bölgeleri aç. İstediğin kadar."
+      },
+      {
+        "title": "Hatırlatmaları aç",
+        "text": "Kaç gün önce ve saat kaçta haber verileceğini seç."
+      },
+      {
+        "title": "Widget ekle",
+        "text": "Uygulamayı açmadan ana ekrandan ya da kilitli ekrandan bak."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Mağazaya göre kapanış kuralları",
+    "rows": [
+      [
+        "Süpermarket (pazar kapalı)",
+        "Ayın 2. ve 4. pazarı · çoğu bölge"
+      ],
+      [
+        "Süpermarket (çarşamba kapalı)",
+        "Ayın 2. ve 4. çarşambası · Gyeonggi’nin bir kısmı, Cheongju"
+      ],
+      [
+        "Süpermarket (Ulsan)",
+        "2. çarşamba, 4. pazar"
+      ],
+      [
+        "Süpermarket (Jeju)",
+        "2. cuma, 4. cumartesi"
+      ],
+      [
+        "Costco normal",
+        "Ayın 2. ve 4. pazarı"
+      ],
+      [
+        "Costco Taegu",
+        "Ayın 2. ve 4. pazartesisi · Taegu, Taegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "Ayın 2. ve 4. çarşambası"
+      ],
+      [
+        "Costco Ulsan",
+        "2. çarşamba, 4. pazar"
+      ],
+      [
+        "Seollal, Chuseok",
+        "bayramın kendisinde kapalı"
+      ]
+    ],
+    "note": "Zorunlu kapalı günleri yerel yönetimler belirler ve değişebilir. Bir şey tutmuyorsa aşağıdaki adrese yaz."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Kapalı günler gerçekle uyuşmuyor.",
+        "a": "Zorunlu kapalı günler yerel yönetmeliklere göre belirlenir ve bölgeden bölgeye değişir. Ayarlar’da doğru mağaza türünü (pazar kapalı, çarşamba kapalı, Ulsan, Jeju vb.) seçtiğinden emin ol. Hâlâ tutmuyorsa mağazanın adını ve bölgesini bize yaz, kontrol edelim."
+      },
+      {
+        "q": "Mağazam listede yok.",
+        "a": "Kendi mağazan olarak ekle. Her hafta, iki haftada bir ya da ayın hangi haftaları ve hangi gün kapandığını seç; örneğin ayın ikinci ve dördüncü pazarı."
+      },
+      {
+        "q": "Bir restoranın izin günleri yanlış doldu.",
+        "a": "Naver Map bağlantısıyla içe aktarırken restoranın sayfasında düzenli izin günleri yazmalı. Ekran görüntüsü kullanırken kapanışla ilgili yazının görünmesine dikkat et. Kaydetmeden önce her şeyi düzeltebilirsin."
+      },
+      {
+        "q": "Hatırlatma gelmiyor.",
+        "a": "Ayarlar > Bildirimler > DontGoMart altında bildirimlere izin verildiğini ve uygulama içinde hatırlatmaların açık olduğunu kontrol et."
+      },
+      {
+        "q": "Widget güncellenmiyor.",
+        "a": "Uygulamayı bir kez açınca widget’lar yenilenir. Değişmezse widget’ı kaldırıp yeniden ekle."
+      },
+      {
+        "q": "Bahşiş nedir?",
+        "a": "DontGoMart’ın tüm özellikleri ücretsizdir. Kahve, pasta ve yemek bahşişleri geliştiriciyi desteklemek içindir. Sonrasında bir teşekkür ve kaç kez bahşiş verdiğini gösteren bir rozet görürsün."
+      },
+      {
+        "q": "Ödeme ya da iade için nereye başvururum?",
+        "a": "Uygulama içi satın alımları Apple yürütür; iadeyi reportaproblem.apple.com üzerinden isteyebilirsin. Diğer her şey için bize yaz."
+      },
+      {
+        "q": "Verilerim nasıl işleniyor?",
+        "a": "Hesap, reklam ya da izleme aracı yok; ekran görüntülerindeki yazılar yalnızca cihazında okunur. Ayrıntılar aşağıdaki Gizlilik Politikası’nda."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Kapalı kapıdan\ngeri dönmek yok artık",
+    "cta": "App Store’dan ücretsiz indir"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Diller",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Soruların ya da fikirlerin mi var? {email} adresine yaz. Genellikle bir iki gün içinde yanıt veririz."
+  }
+}

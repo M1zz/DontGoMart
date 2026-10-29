@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: korealaisten hypermarkettien ja Costcon sulkupäivät",
+  "description": "Näe, onko hypermarketti tai Costco Koreassa tänään auki, saa muistutus ennen pakollisia sulkupäiviä ja seuraa kantaravintoloiden vapaapäiviä.",
+  "hero": {
+    "headline": "Ennen kauppareissua\ntarkista, onko auki",
+    "lead": "Kun avaat apin, näet ensimmäisenä, ovatko valitsemasi kaupat tänään auki. Ennen jokaista sulkupäivää tulee muistutus, joten et enää törmää lukittuun oveen.",
+    "cta": "Lataa ilmaiseksi App Storesta",
+    "note": "Kaikki ominaisuudet ovat ilmaisia. Ei tiliä, ei mainoksia."
+  },
+  "demo": {
+    "title": "Kokeile omalla kaupallasi",
+    "lead": "Valitse kauppa ja näe heti, onko se tänään auki ja milloin se seuraavan kerran sulkee. Laskenta noudattaa samoja sääntöjä kuin appi.",
+    "pick": "Valitse kauppa",
+    "marts": [
+      "Supermarket (suljettu sunnuntaisin)",
+      "Supermarket (suljettu keskiviikkoisin)",
+      "Supermarket (Ulsan)",
+      "Supermarket (Jeju)",
+      "Costco tavallinen",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Voinko mennä tänään?",
+    "openToday": "Auki tänään",
+    "closedToday": "Suljettu tänään",
+    "nextLabel": "Seuraava sulkupäivä",
+    "today": "Tänään",
+    "tomorrow": "Huomenna",
+    "closed": "Suljettu",
+    "prev": "Edellinen kuukausi",
+    "next": "Seuraava kuukausi",
+    "note": "Seollalin ja Chuseokin sulkupäivät, omat kaupat, muistutukset ja widgetit löytyvät apista."
+  },
+  "problem": {
+    "title": "Oletko joskus saapunut ostoslistan kanssa suljetulle ovelle?",
+    "text": "Korean suurten supermarkettien on oltava kiinni kaksi päivää kuussa, mutta mitkä päivät, riippuu paikasta. Useimmiten kuun toinen ja neljäs sunnuntai, muualla keskiviikko, ja Ulsanilla ja Jejulla on omat sääntönsä. Costcossa se riippuu myymälästä. DontGoMart laskee sulkupäivät kauppojesi sääntöjen mukaan ja kertoo ensimmäiseksi, voitko lähteä tänään."
+  },
+  "features": [
+    {
+      "title": "Oikein joka alueella",
+      "text": "Valitse sunnuntaisin tai keskiviikkoisin sulkevat kaupat tai alueet, joilla on oma aikataulu, kuten Ulsan ja Jeju. Tavalliset Costco-myymälät sekä Daegun, Ilsanin ja Ulsanin myymälät asetetaan erikseen.\nMyös Seollalin ja Chuseokin päivän sulkemiset näkyvät, ja voit seurata useaa kauppaa kerralla.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Lähikauppasi ja kantaravintolasi",
+      "text": "Jos kauppa puuttuu listalta, lisää se itse: joka viikko, joka toinen viikko tai minä kuun viikkoina ja minä päivänä se sulkee.\nRavintolaa varten liitä Naver Mapista jaettu linkki tai valitse kuvakaappaus sen tietosivusta, niin vakituiset vapaapäivät täyttyvät itsestään. Kuvien teksti luetaan vain laitteellasi.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Muistutukset ja widgetit, ettei unohdu",
+      "text": "Saat muistutuksen 1, 2, 3 tai 7 päivää etukäteen haluamaasi aikaan, ja edellisenä päivänä vielä toisen siitä, että tänään on hyvä päivä käydä kaupassa.\nKoti-valikon ja lukitusnäytön widgetit näyttävät seuraavan sulkupäivän, onko tänä sunnuntaina auki ja ravintoloidesi seuraavat seitsemän päivää. Kalenteri näyttää koko kuukauden.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Jaa yhdellä kortilla",
+      "text": "Tee tiedosta kortti, jossa on kahden viikon kalenteri ja ostosvinkki, ja lähetä se perheen chattiin. Mukana koot Instagram-julkaisulle ja -tarinalle sekä lyhyt video.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Alkuun kolmella askeleella",
+    "items": [
+      {
+        "title": "Valitse kaupat",
+        "text": "Laita päälle kaupat ja alueet, joissa asioit. Niin monta kuin haluat."
+      },
+      {
+        "title": "Laita muistutukset päälle",
+        "text": "Valitse, montako päivää etukäteen ja mihin aikaan."
+      },
+      {
+        "title": "Lisää widget",
+        "text": "Tarkista Koti-valikosta tai lukitusnäytöltä avaamatta appia."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kauppakohtaiset sulkusäännöt",
+    "rows": [
+      [
+        "Supermarket (suljettu sunnuntaisin)",
+        "Kuun 2. ja 4. sunnuntai · useimmat alueet"
+      ],
+      [
+        "Supermarket (suljettu keskiviikkoisin)",
+        "Kuun 2. ja 4. keskiviikko · osa Gyeonggia, Cheongju"
+      ],
+      [
+        "Supermarket (Ulsan)",
+        "2. keskiviikko, 4. sunnuntai"
+      ],
+      [
+        "Supermarket (Jeju)",
+        "2. perjantai, 4. lauantai"
+      ],
+      [
+        "Costco tavallinen",
+        "Kuun 2. ja 4. sunnuntai"
+      ],
+      [
+        "Costco Daegu",
+        "Kuun 2. ja 4. maanantai · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "Kuun 2. ja 4. keskiviikko"
+      ],
+      [
+        "Costco Ulsan",
+        "2. keskiviikko, 4. sunnuntai"
+      ],
+      [
+        "Seollal, Chuseok",
+        "kiinni itse juhlapäivänä"
+      ]
+    ],
+    "note": "Pakolliset sulkupäivät päättävät paikallisviranomaiset, ja ne voivat muuttua. Jos jokin ei täsmää, kirjoita meille alla olevaan osoitteeseen."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Sulkupäivät eivät täsmää todellisuuteen.",
+        "a": "Pakolliset sulkupäivät määräytyvät paikallisten säädösten mukaan ja vaihtelevat alueittain. Tarkista asetuksista, että olet valinnut oikean kauppatyypin (suljettu sunnuntaisin, keskiviikkoisin, Ulsan, Jeju jne.). Jos se ei vieläkään täsmää, lähetä meille kaupan nimi ja alue, niin tarkistamme asian."
+      },
+      {
+        "q": "Kauppani ei ole listalla.",
+        "a": "Lisää se omaksi kaupaksesi. Valitse joka viikko, joka toinen viikko tai minä kuun viikkoina ja minä päivänä se sulkee, esimerkiksi kuun toisena ja neljäntenä sunnuntaina."
+      },
+      {
+        "q": "Ravintolan vapaapäivät täyttyivät väärin.",
+        "a": "Naver Map -linkistä tuotaessa ravintolan sivulla on oltava vakituiset vapaapäivät. Kuvakaappausta käyttäessä varmista, että sulkemismaininta näkyy ruudulla. Voit korjata kaiken ennen tallennusta."
+      },
+      {
+        "q": "En saa muistutuksia.",
+        "a": "Tarkista, että ilmoitukset on sallittu kohdassa Asetukset > Ilmoitukset > DontGoMart ja että muistutukset ovat päällä apissa."
+      },
+      {
+        "q": "Widget ei päivity.",
+        "a": "Kun avaat apin kerran, widgetit päivittyvät. Jos ei auta, poista widget ja lisää se uudelleen."
+      },
+      {
+        "q": "Mitä tipit ovat?",
+        "a": "Kaikki DontGoMartin ominaisuudet ovat ilmaisia. Kahvi, kakku ja ateria ovat tippejä kehittäjälle. Sen jälkeen saat kiitoksen ja merkin, jossa näkyy tippiesi määrä."
+      },
+      {
+        "q": "Mistä kysyn maksuista tai hyvityksistä?",
+        "a": "Apple hoitaa sovelluksen sisäiset ostot, joten hyvitystä pyydetään osoitteessa reportaproblem.apple.com. Muissa asioissa kirjoita meille."
+      },
+      {
+        "q": "Miten tietojani käsitellään?",
+        "a": "Ei tilejä, mainoksia tai seurantatyökaluja, ja kuvakaappausten teksti luetaan vain laitteellasi. Lisätietoja alla olevassa tietosuojakäytännössä."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Ei enää kääntymistä\nsuljetulta ovelta",
+    "cta": "Lataa ilmaiseksi App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kielet",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Kysyttävää tai ideoita? Kirjoita osoitteeseen {email}. Vastaamme yleensä päivän tai kahden sisällä."
+  }
+}

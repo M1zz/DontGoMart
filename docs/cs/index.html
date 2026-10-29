@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart – upozornění na dny zavření obchodů</title>
-  <meta name="description" content="DontGoMart shromažďuje povinné dny zavření velkých korejských supermarketů a Costca i dny volna oblíbených restaurací a včas vás na ně upozorní.">
-  <meta property="og:title" content="DontGoMart – upozornění na dny zavření obchodů">
-  <meta property="og:description" content="DontGoMart shromažďuje povinné dny zavření velkých korejských supermarketů a Costca i dny volna oblíbených restaurací a včas vás na ně upozorní.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: dny zavření korejských hypermarketů a Costco</title>
+  <meta name="description" content="Zjistěte, jestli má váš hypermarket nebo Costco v Koreji dnes otevřeno, dostaňte připomínku před zavřením a sledujte volno oblíbených restaurací.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/cs/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: dny zavření korejských hypermarketů a Costco">
+  <meta property="og:description" content="Zjistěte, jestli má váš hypermarket nebo Costco v Koreji dnes otevřeno, dostaňte připomínku před zavřením a sledujte volno oblíbených restaurací.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština" class="active" aria-current="true">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Přejít na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Jazyky</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Než vyrazíte,<br>zkontrolujte, jestli je obchod otevřený</h1>
-    <p>DontGoMart ukazuje povinné dny zavření velkých korejských supermarketů a Costca a včas vás upozorní. Můžete také spravovat dny volna oblíbených restaurací.</p>
-    <a href="https://apps.apple.com/cz/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/cs-cz?size=250x83" alt="Stáhnout z App Storu">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Hlavní funkce</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Jedním pohledem: dnes otevřeno, nebo ne</h3>
-          <p>Po otevření aplikace uvidíte nejdřív, jestli je vybraný obchod dnes otevřený. Vedle toho počet dnů do dalšího zavření a seznam nadcházejících dnů zavření.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Zvládá různé dny zavření podle regionu</h3>
-          <p>Vybírejte obchody zavřené v neděli nebo ve středu i regiony s jinými dny zavření, například Ulsan a Čedžu. Costco v Tegu, Ilsanu a Ulsanu nastavíte zvlášť a zobrazují se i dny zavření o Sollalu a Čchusoku.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Přidejte obchody ze svého okolí</h3>
-          <p>Pokud obchod v seznamu chybí, zadejte ho sami: stačí vybrat, který týden a který den v týdnu zavírá, například druhou a čtvrtou neděli.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>I oblíbené restaurace</h3>
-          <p>Vložte odkaz sdílený z Naver Maps nebo vyberte snímek informační stránky restaurace a pravidelné dny volna se vyplní samy. Text na fotce se čte jen ve vašem zařízení.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Upozornění podle vašeho rytmu</h3>
-          <p>Vyberte, zda vás upozornit 1, 2, 3 nebo 7 dnů před zavřením a v jaký čas. K dispozici je i připomínka den předem, že dnes je dobrý den na nákup.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Widgety na plochu a zamykací obrazovku</h3>
-          <p>Bez otevření aplikace uvidíte odpočet do nejbližšího zavření, jestli je váš obchod tuto neděli otevřený, a dny volna restaurací na příštích 7 dní.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Kalendář a sdílení</h3>
-          <p>Prohlédněte si dny zavření na celý měsíc v kalendáři a sdílejte je jako kartu s kalendářem na dva týdny nebo jako krátké video.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Než vyrazíte nakoupit,<br>ověřte, že mají otevřeno</h1>
+        <p class="lead">Po otevření aplikace hned vidíte, jestli mají vaše obchody dnes otevřeno. Před každým dnem zavření přijde připomínka, takže už nenarazíte na zamčené dveře.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Stáhnout zdarma z App Storu</a><a class="try" href="#try">Vyzkoušejte to na svém obchodě ↓</a></div>
+        <p class="muted small">Všechny funkce jsou zdarma. Bez účtu a bez reklam.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/cs/01-main.jpg" alt="Než vyrazíte nakoupit, ověřte, že mají otevřeno" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Všechny funkce jsou zdarma</h2>
-    <p>Už se nemusíte vracet od zavřeného obchodu.</p>
-    <a href="https://apps.apple.com/cz/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/cs-cz?size=250x83" alt="Stáhnout z App Storu">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Vyzkoušejte to na svém obchodě</h2>
+      <p class="muted">Vyberte obchod a hned uvidíte, jestli má dnes otevřeno a kdy příště zavírá. Počítá se podle stejných pravidel jako v aplikaci.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Vyzkoušejte to na svém obchodě&quot;, &quot;lead&quot;: &quot;Vyberte obchod a hned uvidíte, jestli má dnes otevřeno a kdy příště zavírá. Počítá se podle stejných pravidel jako v aplikaci.&quot;, &quot;pick&quot;: &quot;Vyberte obchod&quot;, &quot;marts&quot;: [&quot;Supermarket (v neděli zavřeno)&quot;, &quot;Supermarket (ve středu zavřeno)&quot;, &quot;Supermarket (Ulsan)&quot;, &quot;Supermarket (Čedžu)&quot;, &quot;Costco běžné&quot;, &quot;Costco Tegu&quot;, &quot;Costco Ilsan&quot;, &quot;Costco Ulsan&quot;], &quot;question&quot;: &quot;Můžu dnes jít?&quot;, &quot;openToday&quot;: &quot;Dnes otevřeno&quot;, &quot;closedToday&quot;: &quot;Dnes zavřeno&quot;, &quot;nextLabel&quot;: &quot;Další den zavření&quot;, &quot;today&quot;: &quot;Dnes&quot;, &quot;tomorrow&quot;: &quot;Zítra&quot;, &quot;closed&quot;: &quot;Zavřeno&quot;, &quot;prev&quot;: &quot;Předchozí měsíc&quot;, &quot;next&quot;: &quot;Další měsíc&quot;, &quot;note&quot;: &quot;Zavření o svátcích Sollal a Čchusok, vlastní obchody, připomínky a widgety najdete v aplikaci.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Stalo se vám, že jste dorazili se seznamem a bylo zavřeno?</h2>
+      <p>Hypermarkety v Koreji musí dva dny v měsíci zavřít, ale které to jsou, záleží na místě. Většinou druhá a čtvrtá neděle, jinde středa, a Ulsan s Čedžu mají vlastní pravidla. U Costco rozhoduje pobočka. DontGoMart spočítá dny zavření podle pravidel vašich obchodů a hned vám řekne, jestli můžete jít dnes.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sedí pro každý region</h2>
+        <p>Vyberte obchody, které zavírají v neděli nebo ve středu, nebo regiony s vlastním rozpisem jako Ulsan a Čedžu. Běžné pobočky Costco a ty v Tegu, Ilsanu a Ulsanu se nastavují zvlášť.<br>Zobrazí se i zavření přímo o svátcích Sollal a Čchusok a sledovat můžete víc obchodů najednou.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/03-marts.jpg" alt="Sedí pro každý region" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Obchod za rohem i oblíbené restaurace</h2>
+        <p>Chybí-li obchod v seznamu, přidejte si ho sami: každý týden, jednou za dva týdny nebo ve které týdny v měsíci a který den zavírá.<br>U restaurace vložte odkaz sdílený z Naver Map nebo vyberte snímek obrazovky s její stránkou a pravidelné dny volna se vyplní samy. Text na fotkách se čte jen ve vašem zařízení.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/04-pattern.jpg" alt="Obchod za rohem i oblíbené restaurace" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Připomínky a widgety, abyste nezapomněli</h2>
+        <p>Nechte si připomenout 1, 2, 3 nebo 7 dní předem ve zvolený čas a den předtím ještě jednou, že dnes je dobrý den na nákup.<br>Widgety na ploše a zamčené obrazovce ukazují nejbližší den zavření, jestli je tuto neděli otevřeno a nejbližších sedm dní vašich restaurací. Kalendář ukáže celý měsíc.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/02-calendar.jpg" alt="Připomínky a widgety, abyste nezapomněli" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sdílejte jednou kartou</h2>
+        <p>Udělejte ze zprávy kartu s dvoutýdenním kalendářem a tipem na nákup a pošlete ji do rodinného chatu. Formáty pro příspěvek i příběh na Instagramu a krátké video.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/05-share.jpg" alt="Sdílejte jednou kartou" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Začnete ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Vyberte obchody</h3><p>Zapněte obchody a regiony, kde nakupujete. Kolik chcete.</p></li>
+<li class="card"><span class="n">2</span><h3>Zapněte připomínky</h3><p>Zvolte, kolik dní předem a v kolik hodin.</p></li>
+<li class="card"><span class="n">3</span><h3>Přidejte widget</h3><p>Kontrolujte na ploše nebo zamčené obrazovce bez otevírání aplikace.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Pravidla zavření podle obchodu</h2>
+      <div class="card table">
+        <dl><div><dt>Supermarket (v neděli zavřeno)</dt><dd>2. a 4. neděle · většina regionů</dd></div><div><dt>Supermarket (ve středu zavřeno)</dt><dd>2. a 4. středa · část Kjonggi, Čchongdžu</dd></div><div><dt>Supermarket (Ulsan)</dt><dd>2. středa, 4. neděle</dd></div><div><dt>Supermarket (Čedžu)</dt><dd>2. pátek, 4. sobota</dd></div><div><dt>Costco běžné</dt><dd>2. a 4. neděle</dd></div><div><dt>Costco Tegu</dt><dd>2. a 4. pondělí · Tegu, Tegu Innovation</dd></div><div><dt>Costco Ilsan</dt><dd>2. a 4. středa</dd></div><div><dt>Costco Ulsan</dt><dd>2. středa, 4. neděle</dd></div><div><dt>Sollal, Čchusok</dt><dd>zavřeno přímo ve svátek</dd></div></dl>
+      </div>
+      <p class="muted">Povinné dny zavření určují místní úřady a mohou se změnit. Pokud něco nesedí, napište nám na adresu níže.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Časté dotazy</h2>
+      <div class="faq"><details><summary>Dny zavření neodpovídají skutečnosti.</summary><p>Povinné dny zavření určují místní vyhlášky a liší se podle regionu. Zkontrolujte v Nastavení, že máte vybraný správný typ obchodu (v neděli zavřeno, ve středu zavřeno, Ulsan, Čedžu atd.). Pokud to stále nesedí, pošlete nám název obchodu a oblast a prověříme to.</p></details>
+<details><summary>Můj obchod v seznamu není.</summary><p>Přidejte si ho jako vlastní obchod. Zvolte každý týden, jednou za dva týdny nebo ve které týdny v měsíci a který den zavírá, například 2. a 4. neděli.</p></details>
+<details><summary>Dny volna restaurace se nevyplnily správně.</summary><p>Při importu z odkazu Naver Map musí mít restaurace na své stránce uvedené pravidelné volno. U snímku obrazovky dbejte, aby byl text o zavření vidět. Před uložením můžete vše upravit.</p></details>
+<details><summary>Nechodí mi připomínky.</summary><p>Zkontrolujte, že máte povolená oznámení v Nastavení &gt; Oznámení &gt; DontGoMart a že jsou připomínky zapnuté v aplikaci.</p></details>
+<details><summary>Widget se neaktualizuje.</summary><p>Stačí jednou otevřít aplikaci a widgety se obnoví. Když to nepomůže, widget odeberte a přidejte znovu.</p></details>
+<details><summary>Co je spropitné?</summary><p>Všechny funkce DontGoMart jsou zdarma. Spropitné ve formě kávy, dortu nebo jídla je podpora vývojáře. Potom uvidíte poděkování a odznak s počtem spropitných.</p></details>
+<details><summary>Kde se ptát na platby nebo vrácení peněz?</summary><p>Nákupy v aplikaci vyřizuje Apple, o vrácení peněz tedy žádejte na reportaproblem.apple.com. S ostatním nám napište.</p></details>
+<details><summary>Jak se nakládá s mými daty?</summary><p>Žádné účty, reklamy ani sledovací nástroje a text na snímcích se čte jen ve vašem zařízení. Podrobnosti najdete v zásadách ochrany osobních údajů níže.</p></details></div>
+      <p class="contact">Dotazy nebo nápady posílejte na <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Obvykle odpovídáme do jednoho až dvou dnů.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Konec otáčení<br>před zavřeným obchodem</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Stáhnout zdarma z App Storu</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Zásady ochrany osobních údajů</a>
-      <a href="support.html">Podpora</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Kontakt</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Jazyky"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany osobních údajů</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

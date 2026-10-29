@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: closing days for Korean supermarkets and Costco",
+  "description": "See whether your Korean supermarket or Costco is open today, get reminded before mandatory closing days, and track your restaurants' days off. Free.",
+  "hero": {
+    "headline": "Before you go shopping,\ncheck that it's open",
+    "lead": "Open the app and the first thing you see is whether your stores are open today. You get a heads up before each closed day, so you never walk up to locked doors.",
+    "cta": "Get it free on the App Store",
+    "note": "Every feature is free. No account, no ads."
+  },
+  "demo": {
+    "title": "Try it with your store",
+    "lead": "Pick a store to see whether it's open today and when it closes next. It uses the same rules as the app.",
+    "pick": "Choose a store",
+    "marts": [
+      "Supermarket (Sunday closed)",
+      "Supermarket (Wednesday closed)",
+      "Supermarket (Ulsan)",
+      "Supermarket (Jeju)",
+      "Costco Regular",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Can I go today?",
+    "openToday": "Open today",
+    "closedToday": "Closed today",
+    "nextLabel": "Next closed day",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "closed": "Closed",
+    "prev": "Previous month",
+    "next": "Next month",
+    "note": "Lunar New Year and Chuseok closures, stores you add yourself, reminders and widgets are in the app."
+  },
+  "problem": {
+    "title": "Ever shown up with a shopping list to a closed store?",
+    "text": "Large supermarkets in Korea must close two days a month, but which days depends on where you are. Most close on the second and fourth Sunday, some on Wednesdays, and Ulsan and Jeju have their own rules. Costco varies by location. DontGoMart works out the closed days for the stores you use and tells you first thing whether you can go today."
+  },
+  "features": [
+    {
+      "title": "Right for every region",
+      "text": "Pick stores that close on Sundays or Wednesdays, or regions with their own schedule such as Ulsan and Jeju. Costco regular warehouses and the Daegu, Ilsan and Ulsan locations each have their own setting.\nLunar New Year and Chuseok closures show up too, and you can follow several stores at once.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Your local store and go-to restaurants",
+      "text": "If a store isn't listed, add it yourself: every week, every other week, or which weeks of the month and which weekday it closes.\nFor restaurants, paste a link shared from Naver Map or pick a screenshot of the restaurant's info page, and the regular days off are filled in for you. Text in photos is read on your device only.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Reminders and widgets so you don't forget",
+      "text": "Get an alert 1, 2, 3 or 7 days ahead at the time you choose, plus a reminder the day before that today is a good day to shop.\nHome Screen and Lock Screen widgets show the nearest closed day, whether this Sunday is open, and your restaurants' next seven days. The calendar shows a whole month of closed days.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Share it in one card",
+      "text": "Turn the news into a card with a two-week calendar and a shopping tip and send it to the family chat. Cards come in Instagram post and Story sizes, and as short videos.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Pick your stores",
+        "text": "Turn on the stores and regions you shop at. Choose as many as you like."
+      },
+      {
+        "title": "Turn on reminders",
+        "text": "Choose how many days ahead and at what time."
+      },
+      {
+        "title": "Add a widget",
+        "text": "Check from your Home Screen or Lock Screen without opening the app."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Closing rules by store",
+    "rows": [
+      [
+        "Supermarket (Sunday closed)",
+        "2nd and 4th Sunday · most regions"
+      ],
+      [
+        "Supermarket (Wednesday closed)",
+        "2nd and 4th Wednesday · parts of Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarket (Ulsan)",
+        "2nd Wednesday, 4th Sunday"
+      ],
+      [
+        "Supermarket (Jeju)",
+        "2nd Friday, 4th Saturday"
+      ],
+      [
+        "Costco Regular",
+        "2nd and 4th Sunday"
+      ],
+      [
+        "Costco Daegu",
+        "2nd and 4th Monday · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2nd and 4th Wednesday"
+      ],
+      [
+        "Costco Ulsan",
+        "2nd Wednesday, 4th Sunday"
+      ],
+      [
+        "Lunar New Year, Chuseok",
+        "closed on the day itself"
+      ]
+    ],
+    "note": "Mandatory closing days are set by local governments and can change. If something looks wrong, let us know at the address below."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "The closed days don't match reality.",
+        "a": "Mandatory closing days are set by local ordinances and differ by region. Check in Settings that you picked the right store type (Sunday closed, Wednesday closed, Ulsan, Jeju and so on). If it still doesn't match, email us the store name and area and we'll look into it."
+      },
+      {
+        "q": "My store isn't on the list.",
+        "a": "Add it as your own store. Choose every week, every other week, or which weeks of the month and which weekday it closes, for example the second and fourth Sunday."
+      },
+      {
+        "q": "A restaurant's days off weren't filled in correctly.",
+        "a": "When importing from a Naver Map link, the restaurant's place page needs to list its regular days off. When using a screenshot, make sure the closing note is visible on screen. You can edit what was filled in before saving."
+      },
+      {
+        "q": "I'm not getting reminders.",
+        "a": "Check that notifications are allowed in Settings > Notifications > DontGoMart, and that closed-day reminders are turned on inside the app."
+      },
+      {
+        "q": "My widget isn't updating.",
+        "a": "Opening the app once refreshes the widgets. If it still looks stale, remove the widget and add it again."
+      },
+      {
+        "q": "What are tips?",
+        "a": "Every feature in DontGoMart is free. The coffee, cake and meal tips are a way to support the developer. After a tip you get a thank-you and a supporter badge showing how many times you've tipped."
+      },
+      {
+        "q": "Where do I ask about payments or refunds?",
+        "a": "Apple handles in-app purchases, so request refunds at reportaproblem.apple.com. For anything else, email us."
+      },
+      {
+        "q": "How is my data handled?",
+        "a": "There are no accounts, ads or tracking tools, and text in screenshots is read on your device only. See the Privacy Policy below for details."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "No more turning back\nat a closed store",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Languages",
+    "privacy": "Privacy Policy",
+    "contact": "Questions or ideas? Write to {email}. We usually reply within a day or two."
+  }
+}

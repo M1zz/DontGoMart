@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: dny zavření korejských hypermarketů a Costco",
+  "description": "Zjistěte, jestli má váš hypermarket nebo Costco v Koreji dnes otevřeno, dostaňte připomínku před zavřením a sledujte volno oblíbených restaurací.",
+  "hero": {
+    "headline": "Než vyrazíte nakoupit,\nověřte, že mají otevřeno",
+    "lead": "Po otevření aplikace hned vidíte, jestli mají vaše obchody dnes otevřeno. Před každým dnem zavření přijde připomínka, takže už nenarazíte na zamčené dveře.",
+    "cta": "Stáhnout zdarma z App Storu",
+    "note": "Všechny funkce jsou zdarma. Bez účtu a bez reklam."
+  },
+  "demo": {
+    "title": "Vyzkoušejte to na svém obchodě",
+    "lead": "Vyberte obchod a hned uvidíte, jestli má dnes otevřeno a kdy příště zavírá. Počítá se podle stejných pravidel jako v aplikaci.",
+    "pick": "Vyberte obchod",
+    "marts": [
+      "Supermarket (v neděli zavřeno)",
+      "Supermarket (ve středu zavřeno)",
+      "Supermarket (Ulsan)",
+      "Supermarket (Čedžu)",
+      "Costco běžné",
+      "Costco Tegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Můžu dnes jít?",
+    "openToday": "Dnes otevřeno",
+    "closedToday": "Dnes zavřeno",
+    "nextLabel": "Další den zavření",
+    "today": "Dnes",
+    "tomorrow": "Zítra",
+    "closed": "Zavřeno",
+    "prev": "Předchozí měsíc",
+    "next": "Další měsíc",
+    "note": "Zavření o svátcích Sollal a Čchusok, vlastní obchody, připomínky a widgety najdete v aplikaci."
+  },
+  "problem": {
+    "title": "Stalo se vám, že jste dorazili se seznamem a bylo zavřeno?",
+    "text": "Hypermarkety v Koreji musí dva dny v měsíci zavřít, ale které to jsou, záleží na místě. Většinou druhá a čtvrtá neděle, jinde středa, a Ulsan s Čedžu mají vlastní pravidla. U Costco rozhoduje pobočka. DontGoMart spočítá dny zavření podle pravidel vašich obchodů a hned vám řekne, jestli můžete jít dnes."
+  },
+  "features": [
+    {
+      "title": "Sedí pro každý region",
+      "text": "Vyberte obchody, které zavírají v neděli nebo ve středu, nebo regiony s vlastním rozpisem jako Ulsan a Čedžu. Běžné pobočky Costco a ty v Tegu, Ilsanu a Ulsanu se nastavují zvlášť.\nZobrazí se i zavření přímo o svátcích Sollal a Čchusok a sledovat můžete víc obchodů najednou.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Obchod za rohem i oblíbené restaurace",
+      "text": "Chybí-li obchod v seznamu, přidejte si ho sami: každý týden, jednou za dva týdny nebo ve které týdny v měsíci a který den zavírá.\nU restaurace vložte odkaz sdílený z Naver Map nebo vyberte snímek obrazovky s její stránkou a pravidelné dny volna se vyplní samy. Text na fotkách se čte jen ve vašem zařízení.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Připomínky a widgety, abyste nezapomněli",
+      "text": "Nechte si připomenout 1, 2, 3 nebo 7 dní předem ve zvolený čas a den předtím ještě jednou, že dnes je dobrý den na nákup.\nWidgety na ploše a zamčené obrazovce ukazují nejbližší den zavření, jestli je tuto neděli otevřeno a nejbližších sedm dní vašich restaurací. Kalendář ukáže celý měsíc.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Sdílejte jednou kartou",
+      "text": "Udělejte ze zprávy kartu s dvoutýdenním kalendářem a tipem na nákup a pošlete ji do rodinného chatu. Formáty pro příspěvek i příběh na Instagramu a krátké video.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Začnete ve třech krocích",
+    "items": [
+      {
+        "title": "Vyberte obchody",
+        "text": "Zapněte obchody a regiony, kde nakupujete. Kolik chcete."
+      },
+      {
+        "title": "Zapněte připomínky",
+        "text": "Zvolte, kolik dní předem a v kolik hodin."
+      },
+      {
+        "title": "Přidejte widget",
+        "text": "Kontrolujte na ploše nebo zamčené obrazovce bez otevírání aplikace."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Pravidla zavření podle obchodu",
+    "rows": [
+      [
+        "Supermarket (v neděli zavřeno)",
+        "2. a 4. neděle · většina regionů"
+      ],
+      [
+        "Supermarket (ve středu zavřeno)",
+        "2. a 4. středa · část Kjonggi, Čchongdžu"
+      ],
+      [
+        "Supermarket (Ulsan)",
+        "2. středa, 4. neděle"
+      ],
+      [
+        "Supermarket (Čedžu)",
+        "2. pátek, 4. sobota"
+      ],
+      [
+        "Costco běžné",
+        "2. a 4. neděle"
+      ],
+      [
+        "Costco Tegu",
+        "2. a 4. pondělí · Tegu, Tegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2. a 4. středa"
+      ],
+      [
+        "Costco Ulsan",
+        "2. středa, 4. neděle"
+      ],
+      [
+        "Sollal, Čchusok",
+        "zavřeno přímo ve svátek"
+      ]
+    ],
+    "note": "Povinné dny zavření určují místní úřady a mohou se změnit. Pokud něco nesedí, napište nám na adresu níže."
+  },
+  "faq": {
+    "title": "Časté dotazy",
+    "items": [
+      {
+        "q": "Dny zavření neodpovídají skutečnosti.",
+        "a": "Povinné dny zavření určují místní vyhlášky a liší se podle regionu. Zkontrolujte v Nastavení, že máte vybraný správný typ obchodu (v neděli zavřeno, ve středu zavřeno, Ulsan, Čedžu atd.). Pokud to stále nesedí, pošlete nám název obchodu a oblast a prověříme to."
+      },
+      {
+        "q": "Můj obchod v seznamu není.",
+        "a": "Přidejte si ho jako vlastní obchod. Zvolte každý týden, jednou za dva týdny nebo ve které týdny v měsíci a který den zavírá, například 2. a 4. neděli."
+      },
+      {
+        "q": "Dny volna restaurace se nevyplnily správně.",
+        "a": "Při importu z odkazu Naver Map musí mít restaurace na své stránce uvedené pravidelné volno. U snímku obrazovky dbejte, aby byl text o zavření vidět. Před uložením můžete vše upravit."
+      },
+      {
+        "q": "Nechodí mi připomínky.",
+        "a": "Zkontrolujte, že máte povolená oznámení v Nastavení > Oznámení > DontGoMart a že jsou připomínky zapnuté v aplikaci."
+      },
+      {
+        "q": "Widget se neaktualizuje.",
+        "a": "Stačí jednou otevřít aplikaci a widgety se obnoví. Když to nepomůže, widget odeberte a přidejte znovu."
+      },
+      {
+        "q": "Co je spropitné?",
+        "a": "Všechny funkce DontGoMart jsou zdarma. Spropitné ve formě kávy, dortu nebo jídla je podpora vývojáře. Potom uvidíte poděkování a odznak s počtem spropitných."
+      },
+      {
+        "q": "Kde se ptát na platby nebo vrácení peněz?",
+        "a": "Nákupy v aplikaci vyřizuje Apple, o vrácení peněz tedy žádejte na reportaproblem.apple.com. S ostatním nám napište."
+      },
+      {
+        "q": "Jak se nakládá s mými daty?",
+        "a": "Žádné účty, reklamy ani sledovací nástroje a text na snímcích se čte jen ve vašem zařízení. Podrobnosti najdete v zásadách ochrany osobních údajů níže."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Konec otáčení\npřed zavřeným obchodem",
+    "cta": "Stáhnout zdarma z App Storu"
+  },
+  "ui": {
+    "skip": "Přejít na obsah",
+    "languages": "Jazyky",
+    "privacy": "Zásady ochrany osobních údajů",
+    "contact": "Dotazy nebo nápady posílejte na {email}. Obvykle odpovídáme do jednoho až dvou dnů."
+  }
+}

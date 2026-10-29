@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart — выходные дни магазинов</title>
-  <meta name="description" content="DontGoMart собирает обязательные выходные дни крупных супермаркетов Кореи и Costco, а также постоянные выходные любимых ресторанов и заранее напоминает о них.">
-  <meta property="og:title" content="DontGoMart — выходные дни магазинов">
-  <meta property="og:description" content="DontGoMart собирает обязательные выходные дни крупных супермаркетов Кореи и Costco, а также постоянные выходные любимых ресторанов и заранее напоминает о них.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: выходные дни гипермаркетов и Costco в Корее</title>
+  <meta name="description" content="Обязательные выходные корейских гипермаркетов и Costco, а также выходные любимых ресторанов: виджеты и уведомления заранее. Все функции бесплатны.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: выходные дни гипермаркетов и Costco в Корее">
+  <meta property="og:description" content="Обязательные выходные корейских гипермаркетов и Costco, а также выходные любимых ресторанов: виджеты и уведомления заранее. Все функции бесплатны.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/ru/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/ru/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский" class="active" aria-current="true">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header class="bar">
+    <a class="brand" href="../ru/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Языки</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Перед тем как идти,<br>проверьте, открыт ли магазин</h1>
-    <p>DontGoMart показывает обязательные выходные дни крупных супермаркетов Кореи и Costco и напоминает о них заранее. Можно также следить за постоянными выходными любимых ресторанов.</p>
-    <a href="https://apps.apple.com/ru/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ru-ru?size=250x83" alt="Загрузите в App Store">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Основные возможности</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Сразу видно, работает ли магазин сегодня</h3>
-          <p>При запуске первым делом показывается, открыт ли выбранный магазин сегодня. Там же — сколько дней осталось до следующего выходного и список ближайших выходных дней.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Учитывает выходные в разных регионах</h3>
-          <p>Выбирайте магазины с выходным в воскресенье или в среду, а также регионы с другими выходными, например Ульсан и Чеджу. Для Costco можно отдельно настроить филиалы в Тэгу, Ильсане и Ульсане, а выходные в дни Соллаля и Чхусока тоже показываются.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Добавляйте магазины рядом с домом</h3>
-          <p>Если магазина нет в списке, зарегистрируйте его сами: выберите, в какую неделю и какой день он закрыт, например во второе и четвёртое воскресенье.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>И любимые рестораны</h3>
-          <p>Достаточно вставить ссылку из Naver Maps или выбрать скриншот страницы с информацией о ресторане — постоянные выходные заполнятся автоматически. Текст на фото считывается только на самом устройстве.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Уведомления под ваш распорядок</h3>
-          <p>Выберите, за сколько дней предупреждать — за 1, 2, 3 или 7, — и удобное время. Можно включить и напоминание накануне: «Сегодня хороший день для покупок».</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Виджеты для экрана «Домой» и экрана блокировки</h3>
-          <p>Не открывая приложение, можно увидеть обратный отсчёт до ближайшего выходного, работает ли магазин в это воскресенье и выходные ресторанов на ближайшие 7 дней.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Календарь и обмен</h3>
-          <p>Смотрите выходные на целый месяц в календаре и делитесь ими в виде карточки с календарём на 2 недели или короткого видео.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Прежде чем идти за покупками,<br>узнайте, открыт ли магазин</h1>
+        <p class="lead">Открыв приложение, вы сразу видите, работают ли сегодня выбранные магазины. Перед каждым выходным приходит напоминание, так что вы больше не упрётесь в закрытые двери.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Скачать бесплатно в App Store</a><a class="try" href="#try">Проверьте на своём магазине ↓</a></div>
+        <p class="muted small">Все функции бесплатны. Без аккаунта и рекламы.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/ru/01-main.jpg" alt="Прежде чем идти за покупками, узнайте, открыт ли магазин" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Все функции бесплатны</h2>
-    <p>Больше никаких поездок к закрытым магазинам.</p>
-    <a href="https://apps.apple.com/ru/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ru-ru?size=250x83" alt="Загрузите в App Store">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Проверьте на своём магазине</h2>
+      <p class="muted">Выберите магазин и сразу увидите, открыт ли он сегодня и когда следующий выходной. Расчёт по тем же правилам, что и в приложении.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Проверьте на своём магазине&quot;, &quot;lead&quot;: &quot;Выберите магазин и сразу увидите, открыт ли он сегодня и когда следующий выходной. Расчёт по тем же правилам, что и в приложении.&quot;, &quot;pick&quot;: &quot;Выберите магазин&quot;, &quot;marts&quot;: [&quot;Супермаркет (выходной в воскресенье)&quot;, &quot;Супермаркет (выходной в среду)&quot;, &quot;Супермаркет (Ульсан)&quot;, &quot;Супермаркет (Чеджу)&quot;, &quot;Costco, обычные&quot;, &quot;Costco Тэгу&quot;, &quot;Costco Ильсан&quot;, &quot;Costco Ульсан&quot;], &quot;question&quot;: &quot;Можно сегодня идти?&quot;, &quot;openToday&quot;: &quot;Сегодня открыто&quot;, &quot;closedToday&quot;: &quot;Сегодня выходной&quot;, &quot;nextLabel&quot;: &quot;Следующий выходной&quot;, &quot;today&quot;: &quot;Сегодня&quot;, &quot;tomorrow&quot;: &quot;Завтра&quot;, &quot;closed&quot;: &quot;Выходной&quot;, &quot;prev&quot;: &quot;Предыдущий месяц&quot;, &quot;next&quot;: &quot;Следующий месяц&quot;, &quot;note&quot;: &quot;Выходные на Соллаль и Чхусок, свои магазины, уведомления и виджеты доступны в приложении.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Приходили со списком покупок к закрытому магазину?</h2>
+      <p>Гипермаркеты в Корее обязаны закрываться два дня в месяц, но какие именно, зависит от места. Чаще всего это второе и четвёртое воскресенье, где-то среда, а в Ульсане и Чеджу свои правила. У Costco всё зависит от филиала. DontGoMart считает выходные по правилам ваших магазинов и первым делом говорит, можно ли идти сегодня.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Верно для любого региона</h2>
+        <p>Выбирайте магазины с выходным в воскресенье или в среду, а также регионы со своим графиком, например Ульсан и Чеджу. Обычные склады Costco и филиалы в Тэгу, Ильсане и Ульсане настраиваются отдельно.<br>Выходные в сам Соллаль и Чхусок тоже отмечены. Следить можно сразу за несколькими магазинами.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/03-marts.jpg" alt="Верно для любого региона" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ваш магазин у дома и любимые рестораны</h2>
+        <p>Если магазина нет в списке, добавьте его сами: каждую неделю, раз в две недели или в какие недели месяца и в какой день он закрыт.<br>Для ресторана вставьте ссылку из Naver Map или выберите скриншот страницы заведения, и постоянные выходные заполнятся сами. Текст на фото распознаётся только на устройстве.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/04-pattern.jpg" alt="Ваш магазин у дома и любимые рестораны" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Уведомления и виджеты, чтобы не забыть</h2>
+        <p>Получайте напоминание за 1, 2, 3 или 7 дней в удобное время, а накануне выходного ещё одно: сегодня хороший день для покупок.<br>Виджеты на экране «Домой» и экране блокировки показывают ближайший выходной, работает ли магазин в это воскресенье и выходные ресторанов на 7 дней вперёд. В календаре виден целый месяц.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/02-calendar.jpg" alt="Уведомления и виджеты, чтобы не забыть" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Одна карточка для всей семьи</h2>
+        <p>Превратите новость в карточку с календарём на две недели и советом для покупок и отправьте в семейный чат. Есть размеры для поста и истории в Instagram, а также короткое видео.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/05-share.jpg" alt="Одна карточка для всей семьи" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Начать можно в три шага</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Выберите магазины</h3><p>Включите магазины и регионы, где вы покупаете. Сколько угодно.</p></li>
+<li class="card"><span class="n">2</span><h3>Включите напоминания</h3><p>Выберите, за сколько дней и во сколько.</p></li>
+<li class="card"><span class="n">3</span><h3>Добавьте виджет</h3><p>Смотрите на экране «Домой» или экране блокировки, не открывая приложение.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Правила выходных по магазинам</h2>
+      <div class="card table">
+        <dl><div><dt>Супермаркет (выходной в воскресенье)</dt><dd>2-е и 4-е воскресенье · большинство регионов</dd></div><div><dt>Супермаркет (выходной в среду)</dt><dd>2-я и 4-я среда · часть Кёнгидо, Чхонджу</dd></div><div><dt>Супермаркет (Ульсан)</dt><dd>2-я среда, 4-е воскресенье</dd></div><div><dt>Супермаркет (Чеджу)</dt><dd>2-я пятница, 4-я суббота</dd></div><div><dt>Costco, обычные</dt><dd>2-е и 4-е воскресенье</dd></div><div><dt>Costco Тэгу</dt><dd>2-й и 4-й понедельник · Тэгу, Тэгу Хёксин</dd></div><div><dt>Costco Ильсан</dt><dd>2-я и 4-я среда</dd></div><div><dt>Costco Ульсан</dt><dd>2-я среда, 4-е воскресенье</dd></div><div><dt>Соллаль, Чхусок</dt><dd>выходной в сам праздник</dd></div></dl>
+      </div>
+      <p class="muted">Обязательные выходные устанавливают местные власти, и они могут меняться. Если что-то не совпадает, напишите нам по адресу ниже.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Частые вопросы</h2>
+      <div class="faq"><details><summary>Выходные не совпадают с реальностью.</summary><p>Обязательные выходные устанавливаются местными постановлениями и отличаются по регионам. Проверьте в настройках, что выбран нужный тип магазина (выходной в воскресенье, в среду, Ульсан, Чеджу и т. д.). Если всё равно не совпадает, пришлите нам название магазина и район, мы проверим и исправим.</p></details>
+<details><summary>Моего магазина нет в списке.</summary><p>Добавьте его как свой магазин. Укажите: каждую неделю, раз в две недели или в какие недели месяца и в какой день он закрыт, например во второе и четвёртое воскресенье.</p></details>
+<details><summary>Выходные ресторана заполнились неправильно.</summary><p>При импорте по ссылке Naver Map на странице заведения должны быть указаны постоянные выходные. При импорте со скриншота следите, чтобы надпись о выходных была видна на экране. Заполненное можно исправить до сохранения.</p></details>
+<details><summary>Не приходят уведомления.</summary><p>Проверьте, что уведомления разрешены в Настройки &gt; Уведомления &gt; DontGoMart и что напоминания о выходных включены в самом приложении.</p></details>
+<details><summary>Виджет не обновляется.</summary><p>Откройте приложение один раз, и виджеты обновятся. Если не помогло, удалите виджет и добавьте снова.</p></details>
+<details><summary>Что такое чаевые?</summary><p>Все функции DontGoMart бесплатны. Чаевые в виде кофе, торта или обеда помогают поддержать разработчика. После них вы увидите благодарность и значок поддержавшего с числом чаевых.</p></details>
+<details><summary>Куда обращаться по оплате и возвратам?</summary><p>Встроенные покупки обрабатывает Apple, поэтому возврат запрашивается на reportaproblem.apple.com. По остальным вопросам пишите нам.</p></details>
+<details><summary>Как обрабатываются мои данные?</summary><p>Нет аккаунтов, рекламы и средств отслеживания, а текст на скриншотах распознаётся только на устройстве. Подробнее в политике конфиденциальности ниже.</p></details></div>
+      <p class="contact">Вопросы и идеи присылайте на <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Обычно отвечаем за день-два.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Хватит разворачиваться<br>у закрытых дверей</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Скачать бесплатно в App Store</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Политика конфиденциальности</a>
-      <a href="support.html">Поддержка</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Связаться с нами</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Языки"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Политика конфиденциальности</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

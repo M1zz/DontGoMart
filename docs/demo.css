@@ -1,0 +1,42 @@
+/* 돈꼬마트 웹 체험. 영업은 초록, 휴무는 빨강: 앱 첫 화면과 같은 색. */
+.demo-card { display: grid; gap: var(--s5); }
+.mart-pick { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.chip { font: inherit; font-weight: 600; color: var(--text); background: var(--bg); border: 0;
+        border-radius: 999px; padding: var(--s2) var(--s4); min-height: 44px; cursor: pointer;
+        transition: transform .15s var(--ease), background .15s var(--ease); }
+.chip:hover { background: color-mix(in srgb, var(--accent) 12%, var(--bg)); }
+.chip:active { transform: scale(.96); }
+.chip[aria-checked="true"] { background: var(--accent); color: var(--on-accent); }
+
+.mart-board { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: start; }
+.mart-status { border-radius: var(--r-inner); padding: var(--s5);
+               background: color-mix(in srgb, #34C759 16%, var(--surface)); transition: background .3s var(--ease); }
+.mart-status.shut { background: color-mix(in srgb, #FF3B30 16%, var(--surface)); }
+.mart-status p { margin: 0; }
+.mart-q { font-weight: 600; }
+.mart-big { font-size: clamp(1.75rem, 4.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.02em;
+            line-height: 1.2; margin: var(--s2) 0 var(--s4) !important; color: #1E8E3E; }
+.mart-status.shut .mart-big { color: #D32F2F; }
+.mart-next b { color: var(--accent); font-variant-numeric: tabular-nums; }
+
+.mart-cal { background: var(--bg); border-radius: var(--r-inner); padding: var(--s4); }
+.mart-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--s3); }
+.mart-nav { font: inherit; font-size: 1.5rem; line-height: 1; color: var(--accent); background: transparent;
+            border: 0; border-radius: 999px; width: 44px; height: 44px; cursor: pointer; }
+.mart-nav:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.mart-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center;
+             font-variant-numeric: tabular-nums; }
+.mart-grid span { display: grid; place-items: center; height: 40px; border-radius: 10px; font-size: .95rem; }
+.mart-grid .wd { height: 24px; font-size: .8rem; color: var(--muted); }
+.mart-grid .sun { color: #E5484D; }
+.mart-grid .off { background: #E5484D; color: #fff; font-weight: 700; }
+.mart-grid .now { box-shadow: inset 0 0 0 2px var(--text); font-weight: 700; }
+.mart-legend { display: flex; align-items: center; gap: var(--s2); margin: var(--s3) 0 0; }
+.mart-legend i { width: 12px; height: 12px; border-radius: 4px; background: #E5484D; }
+
+@media (prefers-color-scheme: dark) {
+  .mart-big { color: #4ADE80; }
+  .mart-status.shut .mart-big { color: #FF6B61; }
+}
+@media (prefers-reduced-motion: reduce) { .chip, .mart-status { transition: none; } }
+@media (max-width: 760px) { .mart-board { grid-template-columns: 1fr; } }

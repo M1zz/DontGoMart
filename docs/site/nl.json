@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: sluitingsdagen van Koreaanse supermarkten en Costco",
+  "description": "Zie of je supermarkt of Costco in Korea vandaag open is, krijg een melding vóór verplichte sluitingsdagen en volg de rustdagen van je restaurants.",
+  "hero": {
+    "headline": "Voor je boodschappen gaat doen:\nis de winkel vandaag open?",
+    "lead": "Als je de app opent, zie je als eerste of je winkels vandaag open zijn. Vóór elke sluitingsdag krijg je een herinnering, zodat je nooit meer voor een dichte deur staat.",
+    "cta": "Gratis downloaden in de App Store",
+    "note": "Alle functies zijn gratis. Geen account, geen advertenties."
+  },
+  "demo": {
+    "title": "Probeer het met jouw winkel",
+    "lead": "Kies een winkel en zie meteen of hij vandaag open is en wanneer hij weer dichtgaat. Berekend met dezelfde regels als de app.",
+    "pick": "Kies een winkel",
+    "marts": [
+      "Supermarkt (zondag gesloten)",
+      "Supermarkt (woensdag gesloten)",
+      "Supermarkt (Ulsan)",
+      "Supermarkt (Jeju)",
+      "Costco gewoon",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Kan ik vandaag gaan?",
+    "openToday": "Vandaag open",
+    "closedToday": "Vandaag gesloten",
+    "nextLabel": "Volgende sluitingsdag",
+    "today": "Vandaag",
+    "tomorrow": "Morgen",
+    "closed": "Gesloten",
+    "prev": "Vorige maand",
+    "next": "Volgende maand",
+    "note": "Sluiting op Seollal en Chuseok, eigen winkels, herinneringen en widgets vind je in de app."
+  },
+  "problem": {
+    "title": "Ooit met je boodschappenlijst voor een gesloten winkel gestaan?",
+    "text": "Grote supermarkten in Korea moeten twee dagen per maand dicht, maar welke hangt af van de plek. Meestal de tweede en vierde zondag, elders woensdag, en Ulsan en Jeju hebben eigen regels. Bij Costco hangt het af van de vestiging. DontGoMart rekent de sluitingsdagen uit volgens de regels van jouw winkels en vertelt je eerst of je vandaag kunt gaan."
+  },
+  "features": [
+    {
+      "title": "Klopt in elke regio",
+      "text": "Kies winkels die op zondag of woensdag sluiten, of regio’s met een eigen schema zoals Ulsan en Jeju. Gewone Costco-vestigingen en die in Daegu, Ilsan en Ulsan stel je apart in.\nOok sluiting op de dag van Seollal en Chuseok staat erbij, en je kunt meerdere winkels tegelijk volgen.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Je buurtwinkel en je vaste restaurants",
+      "text": "Staat een winkel er niet bij, voeg hem dan zelf toe: elke week, om de week of in welke weken van de maand en op welke dag hij dicht is.\nVoor een restaurant plak je een link die je vanuit Naver Map deelt of kies je een screenshot van de infopagina, en de vaste rustdagen worden vanzelf ingevuld. Tekst op foto’s wordt alleen op je apparaat gelezen.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Herinneringen en widgets zodat je het niet vergeet",
+      "text": "Krijg een melding 1, 2, 3 of 7 dagen van tevoren op het tijdstip dat jij kiest, en de dag ervoor nog een dat vandaag een goede dag is om boodschappen te doen.\nWidgets op het beginscherm en toegangsscherm tonen de volgende sluitingsdag, of het deze zondag open is en de komende zeven dagen van je restaurants. De kalender toont een hele maand.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Deel het met één kaart",
+      "text": "Maak van het nieuws een kaart met een kalender van twee weken en een boodschappentip en stuur hem naar de familie-app. Formaten voor Instagram-post en -story, en een korte video.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {
+        "title": "Kies je winkels",
+        "text": "Zet de winkels en regio’s aan waar je boodschappen doet. Zoveel als je wilt."
+      },
+      {
+        "title": "Zet herinneringen aan",
+        "text": "Kies hoeveel dagen van tevoren en hoe laat."
+      },
+      {
+        "title": "Voeg een widget toe",
+        "text": "Kijk op je beginscherm of toegangsscherm zonder de app te openen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Sluitingsregels per winkel",
+    "rows": [
+      [
+        "Supermarkt (zondag gesloten)",
+        "2e en 4e zondag · de meeste regio’s"
+      ],
+      [
+        "Supermarkt (woensdag gesloten)",
+        "2e en 4e woensdag · deel van Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarkt (Ulsan)",
+        "2e woensdag, 4e zondag"
+      ],
+      [
+        "Supermarkt (Jeju)",
+        "2e vrijdag, 4e zaterdag"
+      ],
+      [
+        "Costco gewoon",
+        "2e en 4e zondag"
+      ],
+      [
+        "Costco Daegu",
+        "2e en 4e maandag · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2e en 4e woensdag"
+      ],
+      [
+        "Costco Ulsan",
+        "2e woensdag, 4e zondag"
+      ],
+      [
+        "Seollal, Chuseok",
+        "gesloten op de dag zelf"
+      ]
+    ],
+    "note": "Verplichte sluitingsdagen worden door lokale overheden bepaald en kunnen veranderen. Klopt er iets niet, mail ons op het adres hieronder."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "De sluitingsdagen kloppen niet.",
+        "a": "Verplichte sluitingsdagen hangen af van lokale verordeningen en verschillen per regio. Controleer in Instellingen of je het juiste winkeltype hebt gekozen (zondag gesloten, woensdag gesloten, Ulsan, Jeju enz.). Klopt het nog steeds niet, stuur ons de naam van de winkel en de buurt, dan kijken we ernaar."
+      },
+      {
+        "q": "Mijn winkel staat er niet bij.",
+        "a": "Voeg hem toe als eigen winkel. Kies elke week, om de week of in welke weken van de maand en op welke dag hij dicht is, bijvoorbeeld de tweede en vierde zondag."
+      },
+      {
+        "q": "De rustdagen van een restaurant zijn verkeerd ingevuld.",
+        "a": "Bij importeren via een Naver Map-link moet de pagina van het restaurant de vaste rustdagen vermelden. Bij een screenshot moet de tekst over de sluiting zichtbaar zijn. Je kunt alles aanpassen voordat je opslaat."
+      },
+      {
+        "q": "Ik krijg geen herinneringen.",
+        "a": "Controleer of meldingen zijn toegestaan in Instellingen > Berichtgeving > DontGoMart en of de herinneringen in de app aanstaan."
+      },
+      {
+        "q": "Mijn widget werkt niet bij.",
+        "a": "Open de app één keer en de widgets worden ververst. Helpt dat niet, verwijder de widget en voeg hem opnieuw toe."
+      },
+      {
+        "q": "Wat zijn fooien?",
+        "a": "Alle functies van DontGoMart zijn gratis. Koffie, taart en maaltijd zijn fooien voor de ontwikkelaar. Daarna krijg je een bedankje en een badge met hoe vaak je hebt gegeven."
+      },
+      {
+        "q": "Waar vraag ik naar betalingen of terugbetalingen?",
+        "a": "Apple verwerkt aankopen in de app, dus terugbetaling vraag je aan via reportaproblem.apple.com. Voor de rest kun je ons mailen."
+      },
+      {
+        "q": "Hoe worden mijn gegevens behandeld?",
+        "a": "Geen accounts, advertenties of trackingtools, en tekst op screenshots wordt alleen op je apparaat gelezen. Details in het privacybeleid hieronder."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Nooit meer omkeren\nvoor een dichte deur",
+    "cta": "Gratis downloaden in de App Store"
+  },
+  "ui": {
+    "skip": "Naar inhoud",
+    "languages": "Talen",
+    "privacy": "Privacybeleid",
+    "contact": "Vragen of ideeën? Mail naar {email}. We reageren meestal binnen een à twee dagen."
+  }
+}

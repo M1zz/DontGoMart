@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: stengedager for koreanske supermarkeder og Costco",
+  "description": "Se om supermarkedet eller Costco i Korea har åpent i dag, få varsel før lovpålagte stengedager, og følg med på stamrestaurantenes fridager.",
+  "hero": {
+    "headline": "Før du drar og handler,\nsjekk at det er åpent",
+    "lead": "Når du åpner appen, ser du først om butikkene dine har åpent i dag. Før hver stengedag får du en påminnelse, så du aldri står foran en låst dør igjen.",
+    "cta": "Last ned gratis i App Store",
+    "note": "Alle funksjoner er gratis. Ingen konto, ingen reklame."
+  },
+  "demo": {
+    "title": "Prøv med din butikk",
+    "lead": "Velg en butikk og se med en gang om den har åpent i dag, og når den stenger neste gang. Beregnet etter de samme reglene som i appen.",
+    "pick": "Velg butikk",
+    "marts": [
+      "Supermarked (stengt søndager)",
+      "Supermarked (stengt onsdager)",
+      "Supermarked (Ulsan)",
+      "Supermarked (Jeju)",
+      "Costco vanlig",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Kan jeg dra i dag?",
+    "openToday": "Åpent i dag",
+    "closedToday": "Stengt i dag",
+    "nextLabel": "Neste stengedag",
+    "today": "I dag",
+    "tomorrow": "I morgen",
+    "closed": "Stengt",
+    "prev": "Forrige måned",
+    "next": "Neste måned",
+    "note": "Stenging på Seollal og Chuseok, egne butikker, påminnelser og widgeter finner du i appen."
+  },
+  "problem": {
+    "title": "Har du stått med handlelisten foran en stengt butikk?",
+    "text": "Store supermarkeder i Korea må holde stengt to dager i måneden, men hvilke kommer an på hvor du bor. Oftest andre og fjerde søndag, andre steder onsdag, og Ulsan og Jeju har egne regler. Hos Costco kommer det an på varehuset. DontGoMart regner ut stengedagene etter reglene til butikkene dine og forteller deg først om du kan dra i dag."
+  },
+  "features": [
+    {
+      "title": "Riktig for hver region",
+      "text": "Velg butikker som stenger på søndager eller onsdager, eller regioner med egen plan som Ulsan og Jeju. Vanlige Costco-varehus og de i Daegu, Ilsan og Ulsan stilles inn hver for seg.\nStenging på selve Seollal og Chuseok vises også, og du kan følge flere butikker samtidig.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Nærbutikken og stamrestaurantene",
+      "text": "Mangler en butikk på listen, legger du den til selv: hver uke, annenhver uke eller hvilke uker i måneden og hvilken dag den stenger.\nFor en restaurant limer du inn en lenke delt fra Naver Map eller velger et skjermbilde av infosiden, så fylles de faste fridagene ut av seg selv. Tekst på bilder leses bare på enheten din.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Påminnelser og widgeter, så du ikke glemmer",
+      "text": "Få varsel 1, 2, 3 eller 7 dager før til tiden du velger, og dagen før en til om at i dag er en fin dag å handle.\nWidgeter på Hjem-skjermen og låseskjermen viser neste stengedag, om det er åpent denne søndagen og de neste sju dagene for restaurantene dine. Kalenderen viser en hel måned.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Del det på ett kort",
+      "text": "Gjør nyheten om til et kort med en kalender for to uker og et handletips, og send det til familiechatten. Formater for Instagram-innlegg og -story, og kort video.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang på tre steg",
+    "items": [
+      {
+        "title": "Velg butikkene",
+        "text": "Slå på butikkene og regionene der du handler. Så mange du vil."
+      },
+      {
+        "title": "Slå på påminnelser",
+        "text": "Velg hvor mange dager før og når på dagen."
+      },
+      {
+        "title": "Legg til en widget",
+        "text": "Sjekk fra Hjem-skjermen eller låseskjermen uten å åpne appen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Stengeregler per butikk",
+    "rows": [
+      [
+        "Supermarked (stengt søndager)",
+        "2. og 4. søndag · de fleste regioner"
+      ],
+      [
+        "Supermarked (stengt onsdager)",
+        "2. og 4. onsdag · deler av Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarked (Ulsan)",
+        "2. onsdag, 4. søndag"
+      ],
+      [
+        "Supermarked (Jeju)",
+        "2. fredag, 4. lørdag"
+      ],
+      [
+        "Costco vanlig",
+        "2. og 4. søndag"
+      ],
+      [
+        "Costco Daegu",
+        "2. og 4. mandag · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2. og 4. onsdag"
+      ],
+      [
+        "Costco Ulsan",
+        "2. onsdag, 4. søndag"
+      ],
+      [
+        "Seollal, Chuseok",
+        "stengt på selve dagen"
+      ]
+    ],
+    "note": "Lovpålagte stengedager bestemmes av lokale myndigheter og kan endre seg. Stemmer noe ikke, skriv til adressen nedenfor."
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      {
+        "q": "Stengedagene stemmer ikke.",
+        "a": "Lovpålagte stengedager fastsettes av lokale forskrifter og varierer mellom regioner. Sjekk i Innstillinger at du har valgt riktig butikktype (stengt søndager, onsdager, Ulsan, Jeju osv.). Stemmer det fortsatt ikke, send oss butikknavn og område, så ser vi på det."
+      },
+      {
+        "q": "Butikken min er ikke på listen.",
+        "a": "Legg den til som din egen butikk. Velg hver uke, annenhver uke eller hvilke uker i måneden og hvilken dag den stenger, for eksempel andre og fjerde søndag."
+      },
+      {
+        "q": "Fridagene til en restaurant ble fylt ut feil.",
+        "a": "Ved import fra en Naver Map-lenke må restaurantens side oppgi faste fridager. Ved skjermbilde må teksten om stenging være synlig. Du kan rette alt før du lagrer."
+      },
+      {
+        "q": "Jeg får ingen påminnelser.",
+        "a": "Sjekk at varsler er tillatt under Innstillinger > Varslinger > DontGoMart, og at påminnelsene er slått på i appen."
+      },
+      {
+        "q": "Widgeten oppdateres ikke.",
+        "a": "Åpne appen én gang, så oppdateres widgetene. Hjelper ikke det, fjerner du widgeten og legger den til igjen."
+      },
+      {
+        "q": "Hva er tips?",
+        "a": "Alle funksjoner i DontGoMart er gratis. Kaffe, kake og måltid er tips til utvikleren. Etterpå får du en takk og et merke som viser hvor mange ganger du har gitt."
+      },
+      {
+        "q": "Hvor spør jeg om betaling eller refusjon?",
+        "a": "Apple håndterer kjøp i appen, så refusjon ber du om på reportaproblem.apple.com. Alt annet kan du skrive til oss om."
+      },
+      {
+        "q": "Hvordan behandles dataene mine?",
+        "a": "Ingen kontoer, reklame eller sporingsverktøy, og tekst på skjermbilder leses bare på enheten din. Se personvernerklæringen nedenfor."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Slutt på å snu\nforan en stengt butikk",
+    "cta": "Last ned gratis i App Store"
+  },
+  "ui": {
+    "skip": "Gå til innhold",
+    "languages": "Språk",
+    "privacy": "Personvernerklæring",
+    "contact": "Spørsmål eller ideer? Skriv til {email}. Vi svarer som regel innen en dag eller to."
+  }
+}

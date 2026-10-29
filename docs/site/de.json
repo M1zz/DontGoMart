@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: Schließtage koreanischer Supermärkte und Costco",
+  "description": "Sieh, ob dein Supermarkt oder Costco in Korea heute offen hat, werde vor Pflicht-Schließtagen erinnert und behalte Ruhetage deiner Lokale im Blick.",
+  "hero": {
+    "headline": "Bevor du einkaufen gehst:\nHat der Laden heute offen?",
+    "lead": "Beim Öffnen der App siehst du als Erstes, ob deine Märkte heute geöffnet sind. Vor jedem Schließtag kommt eine Erinnerung, damit du nie wieder vor verschlossenen Türen stehst.",
+    "cta": "Kostenlos im App Store laden",
+    "note": "Alle Funktionen sind kostenlos. Ohne Konto, ohne Werbung."
+  },
+  "demo": {
+    "title": "Probier es mit deinem Markt",
+    "lead": "Wähl einen Markt und sieh sofort, ob er heute offen hat und wann der nächste Schließtag ist. Gerechnet wird nach denselben Regeln wie in der App.",
+    "pick": "Markt wählen",
+    "marts": [
+      "Supermarkt (sonntags geschlossen)",
+      "Supermarkt (mittwochs geschlossen)",
+      "Supermarkt (Ulsan)",
+      "Supermarkt (Jeju)",
+      "Costco normal",
+      "Costco Daegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Kann ich heute hin?",
+    "openToday": "Heute geöffnet",
+    "closedToday": "Heute geschlossen",
+    "nextLabel": "Nächster Schließtag",
+    "today": "Heute",
+    "tomorrow": "Morgen",
+    "closed": "Geschlossen",
+    "prev": "Vorheriger Monat",
+    "next": "Nächster Monat",
+    "note": "Schließtage an Seollal und Chuseok, eigene Märkte, Erinnerungen und Widgets gibt es in der App."
+  },
+  "problem": {
+    "title": "Schon mal mit Einkaufsliste vor geschlossener Tür gestanden?",
+    "text": "Große Supermärkte in Korea müssen an zwei Tagen im Monat schließen, aber an welchen, hängt vom Ort ab. Meist sind es der zweite und vierte Sonntag, anderswo Mittwoch, und Ulsan und Jeju haben eigene Regeln. Bei Costco kommt es auf die Filiale an. DontGoMart berechnet die Schließtage nach den Regeln deiner Märkte und sagt dir zuerst, ob du heute hingehen kannst."
+  },
+  "features": [
+    {
+      "title": "Stimmt für jede Region",
+      "text": "Wähl Märkte, die sonntags oder mittwochs schließen, oder Regionen mit eigenem Rhythmus wie Ulsan und Jeju. Die normalen Costco-Filialen und die in Daegu, Ilsan und Ulsan lassen sich einzeln einstellen.\nAuch die Schließtage an Seollal und Chuseok werden angezeigt, und du kannst mehrere Märkte gleichzeitig verfolgen.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Dein Markt um die Ecke und deine Stammrestaurants",
+      "text": "Fehlt ein Markt in der Liste, leg ihn selbst an: jede Woche, alle zwei Wochen oder in welchen Wochen des Monats an welchem Tag er schließt.\nFür Restaurants fügst du einen aus Naver Map geteilten Link ein oder wählst einen Screenshot der Infoseite, und die Ruhetage werden automatisch eingetragen. Text auf Fotos wird nur auf deinem Gerät gelesen.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Erinnerungen und Widgets, damit nichts untergeht",
+      "text": "Lass dich 1, 2, 3 oder 7 Tage vorher zur gewünschten Uhrzeit erinnern, und am Vortag noch einmal daran, dass heute ein guter Tag zum Einkaufen ist.\nWidgets auf dem Home-Bildschirm und Sperrbildschirm zeigen den nächsten Schließtag, ob diesen Sonntag geöffnet ist und die nächsten sieben Tage deiner Restaurants. Der Kalender zeigt einen ganzen Monat.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Mit einer Karte geteilt",
+      "text": "Mach aus der Info eine Karte mit Zwei-Wochen-Kalender und Einkaufstipp und schick sie in den Familienchat. Es gibt Formate für Instagram-Beitrag und Story sowie kurze Videos.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten startklar",
+    "items": [
+      {
+        "title": "Märkte wählen",
+        "text": "Schalte die Märkte und Regionen ein, in denen du einkaufst. So viele du willst."
+      },
+      {
+        "title": "Erinnerungen einschalten",
+        "text": "Leg fest, wie viele Tage vorher und um wie viel Uhr."
+      },
+      {
+        "title": "Widget hinzufügen",
+        "text": "Auf Home- oder Sperrbildschirm nachsehen, ohne die App zu öffnen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Schließregeln je Markt",
+    "rows": [
+      [
+        "Supermarkt (sonntags geschlossen)",
+        "2. und 4. Sonntag · fast alle Regionen"
+      ],
+      [
+        "Supermarkt (mittwochs geschlossen)",
+        "2. und 4. Mittwoch · Teile von Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarkt (Ulsan)",
+        "2. Mittwoch, 4. Sonntag"
+      ],
+      [
+        "Supermarkt (Jeju)",
+        "2. Freitag, 4. Samstag"
+      ],
+      [
+        "Costco normal",
+        "2. und 4. Sonntag"
+      ],
+      [
+        "Costco Daegu",
+        "2. und 4. Montag · Daegu, Daegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2. und 4. Mittwoch"
+      ],
+      [
+        "Costco Ulsan",
+        "2. Mittwoch, 4. Sonntag"
+      ],
+      [
+        "Seollal, Chuseok",
+        "am Feiertag selbst geschlossen"
+      ]
+    ],
+    "note": "Die Pflicht-Schließtage legen die Kommunen fest, sie können sich ändern. Stimmt etwas nicht, schreib uns an die Adresse unten."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Die Schließtage stimmen nicht.",
+        "a": "Pflicht-Schließtage regeln örtliche Verordnungen, sie unterscheiden sich je Region. Prüf in den Einstellungen, ob du den passenden Markttyp gewählt hast (sonntags geschlossen, mittwochs geschlossen, Ulsan, Jeju usw.). Passt es trotzdem nicht, schick uns Name und Gegend des Markts, wir prüfen das."
+      },
+      {
+        "q": "Mein Markt fehlt in der Liste.",
+        "a": "Leg ihn als eigenen Markt an. Wähl jede Woche, alle zwei Wochen oder in welchen Wochen des Monats an welchem Tag er schließt, zum Beispiel am zweiten und vierten Sonntag."
+      },
+      {
+        "q": "Die Ruhetage eines Restaurants wurden falsch eingetragen.",
+        "a": "Beim Import über einen Naver-Map-Link müssen die Ruhetage auf der Seite des Restaurants stehen. Beim Screenshot muss der Hinweis auf den Ruhetag im Bild zu sehen sein. Vor dem Speichern kannst du alles anpassen."
+      },
+      {
+        "q": "Ich bekomme keine Erinnerungen.",
+        "a": "Prüf, ob Mitteilungen unter Einstellungen > Mitteilungen > DontGoMart erlaubt sind und die Erinnerungen in der App eingeschaltet sind."
+      },
+      {
+        "q": "Das Widget aktualisiert sich nicht.",
+        "a": "Öffne die App einmal, dann werden die Widgets aktualisiert. Hilft das nicht, entferne das Widget und füg es neu hinzu."
+      },
+      {
+        "q": "Was ist das Trinkgeld?",
+        "a": "Alle Funktionen von DontGoMart sind kostenlos. Kaffee, Kuchen und Essen sind Trinkgelder für den Entwickler. Danach bekommst du ein Dankeschön und ein Abzeichen mit der Zahl deiner Trinkgelder."
+      },
+      {
+        "q": "Wo frage ich wegen Zahlungen oder Erstattungen?",
+        "a": "In-App-Käufe wickelt Apple ab, Erstattungen beantragst du also unter reportaproblem.apple.com. Für alles andere schreib uns."
+      },
+      {
+        "q": "Wie werden meine Daten behandelt?",
+        "a": "Es gibt keine Konten, keine Werbung und keine Tracking-Tools, und Text auf Screenshots wird nur auf deinem Gerät gelesen. Details in der Datenschutzerklärung unten."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Nie wieder umkehren\nvor verschlossener Tür",
+    "cta": "Kostenlos im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprachen",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Fragen oder Ideen? Schreib an {email}. Wir antworten meist innerhalb von ein bis zwei Tagen."
+  }
+}

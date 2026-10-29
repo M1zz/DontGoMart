@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - お店の休業日をお知らせ</title>
-  <meta name="description" content="DontGoMartは、韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日をまとめて確認し、休業日の前にお知らせするアプリです。">
-  <meta property="og:title" content="DontGoMart - お店の休業日をお知らせ">
-  <meta property="og:description" content="DontGoMartは、韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日をまとめて確認し、休業日の前にお知らせするアプリです。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart：韓国の大型スーパー・コストコの休業日チェック</title>
+  <meta name="description" content="韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日まで、ウィジェットと通知で前もってお知らせ。すべての機能が無料です。">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart：韓国の大型スーパー・コストコの休業日チェック">
+  <meta property="og:description" content="韓国の大型スーパーやコストコの義務休業日、お気に入りの飲食店の定休日まで、ウィジェットと通知で前もってお知らせ。すべての機能が無料です。">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/ja/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語" class="active" aria-current="true">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">言語</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>出かける前に、<br>お店が開いているか確認</h1>
-    <p>DontGoMartは、韓国の大型スーパーやコストコの義務休業日を確認し、休業日の前にお知らせするアプリです。お気に入りの飲食店の定休日も管理できます。</p>
-    <a href="https://apps.apple.com/jp/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>今日の営業状況がひと目でわかる</h3>
-          <p>アプリを開くと、選んだお店が今日営業しているかが真っ先に表示されます。次の休業日までの日数と、今後の休業日の一覧も確認できます。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>地域ごとの休業日に対応</h3>
-          <p>日曜休業や水曜休業のお店のほか、蔚山や済州のように休業日が異なる地域も選べます。コストコの大邱店・一山店・蔚山店は個別に設定でき、旧正月と秋夕の休業日も表示されます。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>近所のお店を追加</h3>
-          <p>一覧にないお店は、第2・第4日曜日のように、何週目の何曜日に休むかを選んで自分で登録できます。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>お気に入りの飲食店も</h3>
-          <p>Naverマップの共有リンクを貼り付けるか、お店の情報画面のスクリーンショットを選ぶだけで、定休日が自動で入力されます。写真の中の文字は端末の中だけで読み取ります。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>生活に合わせた通知</h3>
-          <p>休業日の1日前・2日前・3日前・7日前から選び、好きな時刻に通知を受け取れます。前日には「今日は買い物にぴったりの日」とお知らせするオプションもあります。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>ホーム画面・ロック画面のウィジェット</h3>
-          <p>直近の休業日までのカウントダウン、今週の日曜日が休業かどうか、飲食店の今後7日間の休みを、アプリを開かずに確認できます。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>カレンダーと共有</h3>
-          <p>1か月分の休業日をカレンダーで確認し、2週間分のカレンダー付きのカードや短い動画にして共有できます。</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>お店に行く前に、<br>今日の営業を確認</h1>
+        <p class="lead">アプリを開くと、選んだお店が今日営業しているかが真っ先にわかります。休業日が近づくと前もってお知らせするので、閉まったお店の前で引き返すことはもうありません。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">App Storeで無料ダウンロード</a><a class="try" href="#try">いつものお店で試してみましょう ↓</a></div>
+        <p class="muted small">すべての機能が無料。アカウントも広告もありません。</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/ja/01-main.jpg" alt="お店に行く前に、 今日の営業を確認" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>すべての機能が無料</h2>
-    <p>閉まっているお店の前で引き返すことは、もうありません。</p>
-    <a href="https://apps.apple.com/jp/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>いつものお店で試してみましょう</h2>
+      <p class="muted">お店を選ぶと、今日営業しているか、次の休業日がいつかがすぐにわかります。アプリと同じルールで計算しています。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;いつものお店で試してみましょう&quot;, &quot;lead&quot;: &quot;お店を選ぶと、今日営業しているか、次の休業日がいつかがすぐにわかります。アプリと同じルールで計算しています。&quot;, &quot;pick&quot;: &quot;お店を選ぶ&quot;, &quot;marts&quot;: [&quot;大型スーパー(日曜休業)&quot;, &quot;大型スーパー(水曜休業)&quot;, &quot;大型スーパー(蔚山)&quot;, &quot;大型スーパー(済州)&quot;, &quot;コストコ一般店舗&quot;, &quot;コストコ大邱店&quot;, &quot;コストコ一山店&quot;, &quot;コストコ蔚山店&quot;], &quot;question&quot;: &quot;今日は行けますか?&quot;, &quot;openToday&quot;: &quot;今日は営業しています&quot;, &quot;closedToday&quot;: &quot;今日はお休みです&quot;, &quot;nextLabel&quot;: &quot;次の休業日&quot;, &quot;today&quot;: &quot;今日&quot;, &quot;tomorrow&quot;: &quot;明日&quot;, &quot;closed&quot;: &quot;休業&quot;, &quot;prev&quot;: &quot;前の月&quot;, &quot;next&quot;: &quot;次の月&quot;, &quot;note&quot;: &quot;旧正月・秋夕の当日休業、自分で追加したお店、通知とウィジェットはアプリで使えます。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>買い物袋を持って行ったら閉まっていた、なんてことはありませんか？</h2>
+      <p>韓国の大型スーパーの義務休業日は、第2・第4日曜日のところもあれば水曜日のところもあり、蔚山や済州はまた別です。コストコは店舗ごとに違います。DontGoMartは、あなたが行くお店のルールで休業日を計算して、まず今日行けるかどうかを教えてくれます。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>地域ごとに違う休業日にも対応</h2>
+        <p>日曜休業のお店、水曜休業のお店はもちろん、蔚山や済州のように休業の曜日が異なる地域も選べます。コストコは一般店舗と大邱店・一山店・蔚山店を個別に選べます。<br>旧正月と秋夕の当日休業も表示されます。複数のお店をまとめて登録できます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/03-marts.jpg" alt="地域ごとに違う休業日にも対応" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>近所のお店も、お気に入りの飲食店も</h2>
+        <p>一覧にないお店は、毎週、隔週、または毎月何週目の何曜日に休むかを決めて、自分だけのお店として登録できます。<br>飲食店は、Naverマップで共有したリンクを貼り付けるか、お店の情報画面のスクリーンショットを選ぶだけで定休日が自動で入力されます。写真の中の文字は端末の中だけで読み取ります。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/04-pattern.jpg" alt="近所のお店も、お気に入りの飲食店も" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>忘れないように通知とウィジェットで</h2>
+        <p>休業日の1日前・2日前・3日前・7日前から選んで、好きな時刻に通知を受け取れます。休業日の前日には、今日が買い物にぴったりの日だとあらためてお知らせします。<br>ホーム画面とロック画面のウィジェットで、直近の休業日、今週の日曜日の営業状況、飲食店の7日間の休みをすぐ確認。カレンダーでは1か月分の休業日をひと目で見られます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/02-calendar.jpg" alt="忘れないように通知とウィジェットで" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>家族のトークにカード1枚で</h2>
+        <p>休業のお知らせを、2週間分のカレンダーと買い物のヒントが入ったカードにして送れます。Instagramの投稿やストーリーズのサイズ、短い動画にも対応しています。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/05-share.jpg" alt="家族のトークにカード1枚で" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>はじめ方は3ステップ</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>お店を選ぶ</h3><p>よく行くお店と地域をオンに。いくつ選んでもかまいません。</p></li>
+<li class="card"><span class="n">2</span><h3>通知をオンにする</h3><p>何日前の何時に知らせるかを決めます。</p></li>
+<li class="card"><span class="n">3</span><h3>ウィジェットを置く</h3><p>ホーム画面やロック画面で、アプリを開かずに確認できます。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>お店ごとの休業ルール</h2>
+      <div class="card table">
+        <dl><div><dt>大型スーパー(日曜休業)</dt><dd>第2・第4日曜日・ほとんどの地域</dd></div><div><dt>大型スーパー(水曜休業)</dt><dd>第2・第4水曜日・京畿道の一部、清州</dd></div><div><dt>大型スーパー(蔚山)</dt><dd>第2水曜日、第4日曜日</dd></div><div><dt>大型スーパー(済州)</dt><dd>第2金曜日、第4土曜日</dd></div><div><dt>コストコ一般店舗</dt><dd>第2・第4日曜日</dd></div><div><dt>コストコ大邱店</dt><dd>第2・第4月曜日・大邱店、大邱革新店</dd></div><div><dt>コストコ一山店</dt><dd>第2・第4水曜日</dd></div><div><dt>コストコ蔚山店</dt><dd>第2水曜日、第4日曜日</dd></div><div><dt>旧正月・秋夕</dt><dd>当日休業</dd></div></dl>
+      </div>
+      <p class="muted">義務休業日は自治体の条例で変わることがあります。実際と違う場合は、下記のメールでお知らせください。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>休業日が実際と違います。</summary><p>大型スーパーの義務休業日は自治体の条例によって地域ごとに異なります。設定で地域に合ったお店（日曜休業、水曜休業、蔚山、済州など）を選んでいるか確認してください。それでも違う場合は、お店の名前と地域をメールで教えていただければ、確認して反映します。</p></details>
+<details><summary>一覧にないお店はどうすればいいですか？</summary><p>自分だけのお店として追加できます。毎週、隔週、または第2・第4日曜日のように何週目の何曜日に休むかを決めて保存してください。</p></details>
+<details><summary>飲食店の定休日がうまく入力されません。</summary><p>Naverマップのリンクから取り込むときは、お店のプレイスページに定休日が書かれている必要があります。スクリーンショットから取り込むときは、休業に関する文言が画面に写るように撮ってください。入力された内容は保存する前に修正できます。</p></details>
+<details><summary>通知が届きません。</summary><p>iPhoneの設定 &gt; 通知 &gt; DontGoMartで通知が許可されているか、アプリ内で休業日の通知がオンになっているか確認してください。</p></details>
+<details><summary>ウィジェットが更新されません。</summary><p>アプリを一度開くとウィジェットの情報が更新されます。それでも変わらない場合は、ウィジェットを削除してから追加し直してください。</p></details>
+<details><summary>チップとは何ですか？</summary><p>DontGoMartのすべての機能は無料です。コーヒー、ケーキ、食事のチップは開発者を応援するためのもので、送るとお礼のメッセージと、累計回数が入ったサポーターバッジが表示されます。</p></details>
+<details><summary>支払い（返金など）はどこに問い合わせればいいですか？</summary><p>App内課金はAppleが処理しているため、返金はAppleの問題を報告するページ（reportaproblem.apple.com）からリクエストできます。そのほかのご質問はメールでどうぞ。</p></details>
+<details><summary>個人情報はどう扱われますか？</summary><p>アカウントはなく、広告やトラッキングツールも使っていません。スクリーンショットの文字も端末の中だけで読み取ります。詳しくは下記のプライバシーポリシーをご覧ください。</p></details></div>
+      <p class="contact">ご質問やご意見は <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> までお送りください。通常1〜2日以内にお返事します。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>閉まったお店の前で<br>引き返すのは、もう終わり</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">App Storeで無料ダウンロード</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">プライバシーポリシー</a>
-      <a href="support.html">サポート</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">お問い合わせ</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">プライバシーポリシー</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

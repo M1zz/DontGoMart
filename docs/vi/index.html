@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - Nhắc ngày đóng cửa của cửa hàng</title>
-  <meta name="description" content="DontGoMart tổng hợp ngày đóng cửa bắt buộc của các siêu thị lớn ở Hàn Quốc và Costco, cùng ngày nghỉ của nhà hàng yêu thích, đồng thời nhắc bạn trước ngày đóng cửa.">
-  <meta property="og:title" content="DontGoMart - Nhắc ngày đóng cửa của cửa hàng">
-  <meta property="og:description" content="DontGoMart tổng hợp ngày đóng cửa bắt buộc của các siêu thị lớn ở Hàn Quốc và Costco, cùng ngày nghỉ của nhà hàng yêu thích, đồng thời nhắc bạn trước ngày đóng cửa.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: ngày nghỉ của đại siêu thị và Costco ở Hàn Quốc</title>
+  <meta name="description" content="Xem đại siêu thị hay Costco ở Hàn Quốc hôm nay có mở không, nhận nhắc trước ngày nghỉ bắt buộc và theo dõi ngày nghỉ của quán quen. Miễn phí.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/vi/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: ngày nghỉ của đại siêu thị và Costco ở Hàn Quốc">
+  <meta property="og:description" content="Xem đại siêu thị hay Costco ở Hàn Quốc hôm nay có mở không, nhận nhắc trước ngày nghỉ bắt buộc và theo dõi ngày nghỉ của quán quen. Miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt" class="active" aria-current="true">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Trước khi ra khỏi nhà,<br>hãy kiểm tra cửa hàng có mở cửa không</h1>
-    <p>DontGoMart hiển thị ngày đóng cửa bắt buộc của các siêu thị lớn ở Hàn Quốc và Costco, đồng thời nhắc bạn trước ngày đóng cửa. Bạn cũng quản lý được ngày nghỉ của nhà hàng yêu thích.</p>
-    <a href="https://apps.apple.com/vn/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/vi-vn?size=250x83" alt="Tải xuống trên App Store">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Tính năng chính</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Biết ngay hôm nay có mở cửa không</h3>
-          <p>Khi mở ứng dụng, điều đầu tiên bạn thấy là cửa hàng đã chọn hôm nay có mở cửa không. Bạn cũng thấy số ngày còn lại đến ngày đóng cửa tiếp theo và danh sách các ngày đóng cửa sắp tới.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Hỗ trợ ngày đóng cửa khác nhau theo khu vực</h3>
-          <p>Chọn cửa hàng đóng cửa Chủ nhật hoặc thứ Tư, hay những khu vực có ngày đóng cửa khác như Ulsan và Jeju. Costco Daegu, Ilsan, Ulsan cài riêng được, và ngày đóng cửa dịp Seollal, Chuseok cũng được hiển thị.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Thêm cửa hàng gần nhà</h3>
-          <p>Cửa hàng không có trong danh sách thì bạn tự đăng ký bằng cách chọn tuần thứ mấy và thứ mấy trong tuần cửa hàng nghỉ, ví dụ Chủ nhật thứ hai và thứ tư.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>Cả nhà hàng yêu thích</h3>
-          <p>Dán liên kết chia sẻ từ Naver Maps hoặc chọn ảnh chụp màn hình trang thông tin nhà hàng, ngày nghỉ cố định sẽ được điền tự động. Chữ trong ảnh chỉ được đọc ngay trên thiết bị của bạn.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Thông báo hợp với nhịp sống của bạn</h3>
-          <p>Chọn nhận thông báo trước ngày đóng cửa 1, 2, 3 hoặc 7 ngày, vào giờ bạn muốn. Còn có tùy chọn nhắc vào hôm trước rằng hôm nay là ngày thích hợp để đi mua sắm.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Widget cho Màn hình chính và Màn hình khóa</h3>
-          <p>Không cần mở ứng dụng vẫn xem được đếm ngược đến ngày đóng cửa gần nhất, cửa hàng có mở cửa Chủ nhật này không và ngày nghỉ của nhà hàng trong 7 ngày tới.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Lịch và chia sẻ</h3>
-          <p>Xem ngày đóng cửa của cả tháng trên lịch và chia sẻ dưới dạng thẻ kèm lịch hai tuần hoặc video ngắn.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Trước khi đi chợ,<br>xem hôm nay có mở cửa không</h1>
+        <p class="lead">Mở ứng dụng là thấy ngay cửa hàng bạn chọn hôm nay có mở không. Trước mỗi ngày nghỉ sẽ có nhắc nhở, để bạn không còn đến nơi rồi gặp cửa đóng.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Tải miễn phí trên App Store</a><a class="try" href="#try">Thử với cửa hàng của bạn ↓</a></div>
+        <p class="muted small">Mọi tính năng đều miễn phí. Không cần tài khoản, không quảng cáo.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/vi/01-main.jpg" alt="Trước khi đi chợ, xem hôm nay có mở cửa không" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Mọi tính năng đều miễn phí</h2>
-    <p>Không còn phải quay về tay không trước cửa hàng đã đóng cửa.</p>
-    <a href="https://apps.apple.com/vn/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/vi-vn?size=250x83" alt="Tải xuống trên App Store">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Thử với cửa hàng của bạn</h2>
+      <p class="muted">Chọn một cửa hàng để xem ngay hôm nay có mở không và ngày nghỉ tới là khi nào. Tính theo đúng quy tắc của ứng dụng.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử với cửa hàng của bạn&quot;, &quot;lead&quot;: &quot;Chọn một cửa hàng để xem ngay hôm nay có mở không và ngày nghỉ tới là khi nào. Tính theo đúng quy tắc của ứng dụng.&quot;, &quot;pick&quot;: &quot;Chọn cửa hàng&quot;, &quot;marts&quot;: [&quot;Siêu thị (đóng cửa Chủ nhật)&quot;, &quot;Siêu thị (đóng cửa thứ Tư)&quot;, &quot;Siêu thị (Ulsan)&quot;, &quot;Siêu thị (Jeju)&quot;, &quot;Costco thông thường&quot;, &quot;Costco Daegu&quot;, &quot;Costco Ilsan&quot;, &quot;Costco Ulsan&quot;], &quot;question&quot;: &quot;Hôm nay đi được không?&quot;, &quot;openToday&quot;: &quot;Hôm nay mở cửa&quot;, &quot;closedToday&quot;: &quot;Hôm nay nghỉ&quot;, &quot;nextLabel&quot;: &quot;Ngày đóng cửa tiếp theo&quot;, &quot;today&quot;: &quot;Hôm nay&quot;, &quot;tomorrow&quot;: &quot;Ngày mai&quot;, &quot;closed&quot;: &quot;Đóng cửa&quot;, &quot;prev&quot;: &quot;Tháng trước&quot;, &quot;next&quot;: &quot;Tháng sau&quot;, &quot;note&quot;: &quot;Ngày nghỉ Seollal và Chuseok, cửa hàng tự thêm, nhắc nhở và widget có trong ứng dụng.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Bạn từng cầm danh sách đi chợ rồi gặp cửa đóng chưa?</h2>
+      <p>Ở Hàn Quốc, đại siêu thị phải nghỉ hai ngày mỗi tháng, nhưng ngày nào thì tùy nơi. Phần lớn là Chủ nhật tuần thứ hai và thứ tư, có nơi là thứ Tư, còn Ulsan và Jeju có quy định riêng. Costco thì mỗi chi nhánh mỗi khác. DontGoMart tính ngày nghỉ theo quy tắc của cửa hàng bạn hay đến và cho bạn biết trước tiên hôm nay có đi được không.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Đúng cho từng vùng</h2>
+        <p>Chọn cửa hàng nghỉ Chủ nhật hay thứ Tư, hoặc vùng có lịch riêng như Ulsan và Jeju. Costco thông thường và các chi nhánh Daegu, Ilsan, Ulsan được cài đặt riêng.<br>Ngày nghỉ đúng ngày Seollal và Chuseok cũng được hiển thị, và bạn có thể theo dõi nhiều cửa hàng cùng lúc.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/03-marts.jpg" alt="Đúng cho từng vùng" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Cửa hàng gần nhà và quán ăn quen</h2>
+        <p>Cửa hàng chưa có trong danh sách thì tự thêm: hằng tuần, cách tuần, hoặc nghỉ vào tuần thứ mấy, thứ mấy trong tháng.<br>Với quán ăn, chỉ cần dán liên kết chia sẻ từ Naver Map hoặc chọn ảnh chụp màn hình trang thông tin quán, ngày nghỉ cố định sẽ tự được điền. Chữ trong ảnh chỉ được đọc trên thiết bị.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/04-pattern.jpg" alt="Cửa hàng gần nhà và quán ăn quen" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nhắc nhở và widget để không quên</h2>
+        <p>Chọn nhận nhắc trước 1, 2, 3 hoặc 7 ngày vào giờ bạn muốn, và hôm trước ngày nghỉ còn được nhắc rằng hôm nay là ngày nên đi mua sắm.<br>Widget trên Màn hình chính và Màn hình khóa cho thấy ngày nghỉ gần nhất, Chủ nhật này có mở không và lịch nghỉ 7 ngày tới của quán quen. Lịch hiển thị cả tháng.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/02-calendar.jpg" alt="Nhắc nhở và widget để không quên" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Chia sẻ bằng một tấm thẻ</h2>
+        <p>Biến tin ngày nghỉ thành thẻ có lịch hai tuần và mẹo đi chợ, rồi gửi vào nhóm gia đình. Có cỡ bài đăng và tin Instagram, cả video ngắn.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/05-share.jpg" alt="Chia sẻ bằng một tấm thẻ" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu chỉ với ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Chọn cửa hàng</h3><p>Bật những cửa hàng và vùng bạn hay mua. Bao nhiêu cũng được.</p></li>
+<li class="card"><span class="n">2</span><h3>Bật nhắc nhở</h3><p>Chọn nhắc trước mấy ngày và lúc mấy giờ.</p></li>
+<li class="card"><span class="n">3</span><h3>Thêm widget</h3><p>Xem ngay trên Màn hình chính hoặc Màn hình khóa mà không cần mở ứng dụng.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Quy tắc nghỉ theo cửa hàng</h2>
+      <div class="card table">
+        <dl><div><dt>Siêu thị (đóng cửa Chủ nhật)</dt><dd>Chủ nhật tuần 2 và 4 · hầu hết các vùng</dd></div><div><dt>Siêu thị (đóng cửa thứ Tư)</dt><dd>Thứ Tư tuần 2 và 4 · một phần Gyeonggi, Cheongju</dd></div><div><dt>Siêu thị (Ulsan)</dt><dd>Thứ Tư tuần 2, Chủ nhật tuần 4</dd></div><div><dt>Siêu thị (Jeju)</dt><dd>Thứ Sáu tuần 2, thứ Bảy tuần 4</dd></div><div><dt>Costco thông thường</dt><dd>Chủ nhật tuần 2 và 4</dd></div><div><dt>Costco Daegu</dt><dd>Thứ Hai tuần 2 và 4 · Daegu, Daegu Innovation</dd></div><div><dt>Costco Ilsan</dt><dd>Thứ Tư tuần 2 và 4</dd></div><div><dt>Costco Ulsan</dt><dd>Thứ Tư tuần 2, Chủ nhật tuần 4</dd></div><div><dt>Seollal, Chuseok</dt><dd>nghỉ đúng ngày lễ</dd></div></dl>
+      </div>
+      <p class="muted">Ngày nghỉ bắt buộc do chính quyền địa phương quy định và có thể thay đổi. Nếu thấy không khớp, hãy báo cho chúng tôi qua email bên dưới.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Ngày nghỉ không khớp với thực tế.</summary><p>Ngày nghỉ bắt buộc của đại siêu thị theo quy định địa phương và khác nhau từng vùng. Hãy kiểm tra trong Cài đặt xem đã chọn đúng loại cửa hàng (nghỉ Chủ nhật, nghỉ thứ Tư, Ulsan, Jeju…) chưa. Nếu vẫn không khớp, gửi tên siêu thị và khu vực qua email, chúng tôi sẽ kiểm tra và cập nhật.</p></details>
+<details><summary>Cửa hàng của tôi không có trong danh sách.</summary><p>Bạn có thể thêm thành cửa hàng của riêng mình. Chọn hằng tuần, cách tuần, hoặc tuần thứ mấy và thứ mấy trong tháng, ví dụ Chủ nhật tuần 2 và 4, rồi lưu.</p></details>
+<details><summary>Ngày nghỉ của quán ăn điền chưa đúng.</summary><p>Khi nhập bằng liên kết Naver Map, trang thông tin của quán cần ghi ngày nghỉ cố định. Khi dùng ảnh chụp màn hình, hãy chụp sao cho dòng chữ về ngày nghỉ hiện trên màn hình. Bạn có thể sửa trước khi lưu.</p></details>
+<details><summary>Tôi không nhận được nhắc nhở.</summary><p>Kiểm tra đã cho phép thông báo trong Cài đặt &gt; Thông báo &gt; DontGoMart và đã bật nhắc ngày nghỉ trong ứng dụng.</p></details>
+<details><summary>Widget không cập nhật.</summary><p>Mở ứng dụng một lần là widget được làm mới. Nếu vẫn vậy, hãy xóa widget rồi thêm lại.</p></details>
+<details><summary>Tip là gì?</summary><p>Mọi tính năng của DontGoMart đều miễn phí. Tip cà phê, bánh ngọt và bữa ăn là để ủng hộ nhà phát triển. Sau khi tip, bạn sẽ thấy lời cảm ơn và huy hiệu người ủng hộ kèm số lần tip.</p></details>
+<details><summary>Hỏi về thanh toán hoặc hoàn tiền ở đâu?</summary><p>Apple xử lý giao dịch mua trong ứng dụng, nên yêu cầu hoàn tiền tại reportaproblem.apple.com. Các câu hỏi khác, hãy gửi email cho chúng tôi.</p></details>
+<details><summary>Dữ liệu của tôi được xử lý thế nào?</summary><p>Không có tài khoản, quảng cáo hay công cụ theo dõi, và chữ trong ảnh chụp màn hình chỉ được đọc trên thiết bị. Xem chi tiết trong Chính sách quyền riêng tư bên dưới.</p></details></div>
+      <p class="contact">Có câu hỏi hay ý tưởng? Gửi đến <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Chúng tôi thường trả lời trong 1–2 ngày.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Thôi quay về tay không<br>trước cửa siêu thị đóng</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Tải miễn phí trên App Store</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Chính sách quyền riêng tư</a>
-      <a href="support.html">Hỗ trợ</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Liên hệ</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

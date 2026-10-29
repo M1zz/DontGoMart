@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - 店铺休业日提醒</title>
-  <meta name="description" content="DontGoMart 可以一次查看韩国大型超市和 Costco 的义务休业日，以及常去餐厅的固定休息日，并在休业日之前提醒你。">
-  <meta property="og:title" content="DontGoMart - 店铺休业日提醒">
-  <meta property="og:description" content="DontGoMart 可以一次查看韩国大型超市和 Costco 的义务休业日，以及常去餐厅的固定休息日，并在休业日之前提醒你。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart：韩国大型超市与 Costco 休业日提醒</title>
+  <meta name="description" content="韩国大型超市和 Costco 的强制休业日，连常去餐厅的公休日也一起，用小组件和通知提前告诉你。所有功能免费。">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/zh-hans/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart：韩国大型超市与 Costco 休业日提醒">
+  <meta property="og:description" content="韩国大型超市和 Costco 的强制休业日，连常去餐厅的公休日也一起，用小组件和通知提前告诉你。所有功能免费。">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/zh-hans/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文" class="active" aria-current="true">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-hans/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">语言</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>出门之前，<br>先确认店铺是否营业</h1>
-    <p>DontGoMart 可以查看韩国大型超市和 Costco 的义务休业日，并在休业日之前提醒你。常去餐厅的固定休息日也能管理。</p>
-    <a href="https://apps.apple.com/cn/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" alt="在 App Store 下载">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>主要功能</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>今天是否营业，一目了然</h3>
-          <p>打开 App，首先显示你选择的店铺今天是否营业。距离下一个休业日还有几天，以及之后的休业日列表，也能一并查看。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>适配各地不同的休业日</h3>
-          <p>周日休业、周三休业的店铺自不必说，蔚山、济州这类休业日不同的地区也能选择。Costco 的大邱店、一山店、蔚山店可以分别设置，春节和中秋的休业日也会显示。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>自己添加附近的店铺</h3>
-          <p>列表里没有的店铺，可以选择“每月第几周的星期几”休息，比如第二、第四个周日，自己登记。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>常去的餐厅也能管理</h3>
-          <p>粘贴 Naver 地图的分享链接，或选择餐厅信息页面的截图，固定休息日就会自动填好。照片里的文字只在设备上识别。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>贴合你生活的通知</h3>
-          <p>可以选择休业日前 1 天、2 天、3 天或 7 天，在你喜欢的时间收到通知。还可以开启前一天的“今天正适合购物”提醒。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>主屏幕和锁定屏幕小组件</h3>
-          <p>不用打开 App，就能看到最近休业日的倒计时、本周日是否营业，以及餐厅未来 7 天的休息情况。</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>日历与分享</h3>
-          <p>在日历上查看整月的休业日，还可以做成带有两周日历的卡片或短视频分享出去。</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>去超市之前，<br>先看看今天开不开门</h1>
+        <p class="lead">打开应用，第一眼就能看到你选的门店今天是否营业。休业日快到时会提前提醒，再也不会白跑一趟。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">在 App Store 免费下载</a><a class="try" href="#try">用你常去的门店试试 ↓</a></div>
+        <p class="muted small">所有功能免费，无需账户，没有广告。</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/zh-Hans/01-main.jpg" alt="去超市之前， 先看看今天开不开门" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>所有功能均免费</h2>
-    <p>再也不会在关门的店铺前白跑一趟。</p>
-    <a href="https://apps.apple.com/cn/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" alt="在 App Store 下载">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>用你常去的门店试试</h2>
+      <p class="muted">选一家门店，马上看到今天是否营业、下一个休业日是哪天。计算规则与应用完全相同。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;用你常去的门店试试&quot;, &quot;lead&quot;: &quot;选一家门店，马上看到今天是否营业、下一个休业日是哪天。计算规则与应用完全相同。&quot;, &quot;pick&quot;: &quot;选择门店&quot;, &quot;marts&quot;: [&quot;大型超市（周日休业）&quot;, &quot;大型超市（周三休业）&quot;, &quot;大型超市（蔚山）&quot;, &quot;大型超市（济州）&quot;, &quot;Costco 普通店&quot;, &quot;Costco 大邱店&quot;, &quot;Costco 一山店&quot;, &quot;Costco 蔚山店&quot;], &quot;question&quot;: &quot;今天能去吗？&quot;, &quot;openToday&quot;: &quot;今天营业&quot;, &quot;closedToday&quot;: &quot;今天休息&quot;, &quot;nextLabel&quot;: &quot;下一个休业日&quot;, &quot;today&quot;: &quot;今天&quot;, &quot;tomorrow&quot;: &quot;明天&quot;, &quot;closed&quot;: &quot;休业&quot;, &quot;prev&quot;: &quot;上个月&quot;, &quot;next&quot;: &quot;下个月&quot;, &quot;note&quot;: &quot;春节和中秋当天的休业、自己添加的门店、通知和小组件请在应用里使用。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>拎着购物袋到了门口，才发现关门了？</h2>
+      <p>韩国大型超市的强制休业日，有的是第二、第四个星期日，有的是星期三，蔚山和济州又不一样；Costco 各分店也各不相同。DontGoMart 按你常去门店的规则算出休业日，先告诉你今天能不能去。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>各地不同的休业日都算得准</h2>
+        <p>周日休业、周三休业的门店都有，蔚山、济州这类休业日不同的地区也能选。Costco 普通店和大邱店、一山店、蔚山店可以分别选择。<br>春节和中秋当天的休业也会显示。可以同时关注多家门店。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/03-marts.jpg" alt="各地不同的休业日都算得准" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>家附近的超市和常去的餐厅也行</h2>
+        <p>列表里没有的门店，可以按每周、隔周或每月第几周星期几来设定休息日，添加成你自己的超市。<br>餐厅只要粘贴从 Naver 地图分享的链接，或选一张餐厅信息页的截图，就会自动填好固定休息日。图片里的文字只在设备上识别。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/04-pattern.jpg" alt="家附近的超市和常去的餐厅也行" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>用通知和小组件，不怕忘</h2>
+        <p>可在休业前 1、2、3、7 天中选择，并在你想要的时间收到通知。休业前一天还会再提醒你：今天适合去采购。<br>主屏幕和锁定屏幕小组件能直接看到最近的休业日、本周日是否营业、餐厅未来 7 天的休息情况。日历里一个月的休业日一目了然。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/02-calendar.jpg" alt="用通知和小组件，不怕忘" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>一张卡片发到家庭群</h2>
+        <p>把休业消息做成带两周日历和购物小贴士的卡片发出去。也能做成 Instagram 帖子和快拍尺寸，或者短视频。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/05-share.jpg" alt="一张卡片发到家庭群" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步就能开始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>选择门店</h3><p>打开你常去的超市和地区，可以选多家。</p></li>
+<li class="card"><span class="n">2</span><h3>打开通知</h3><p>设定提前几天、几点提醒。</p></li>
+<li class="card"><span class="n">3</span><h3>放上小组件</h3><p>不用打开应用，在主屏幕或锁定屏幕上就能看到。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>各门店的休业规则</h2>
+      <div class="card table">
+        <dl><div><dt>大型超市（周日休业）</dt><dd>第二、第四个星期日 · 大部分地区</dd></div><div><dt>大型超市（周三休业）</dt><dd>第二、第四个星期三 · 京畿部分地区、清州</dd></div><div><dt>大型超市（蔚山）</dt><dd>第二个星期三、第四个星期日</dd></div><div><dt>大型超市（济州）</dt><dd>第二个星期五、第四个星期六</dd></div><div><dt>Costco 普通店</dt><dd>第二、第四个星期日</dd></div><div><dt>Costco 大邱店</dt><dd>第二、第四个星期一 · 大邱店、大邱革新店</dd></div><div><dt>Costco 一山店</dt><dd>第二、第四个星期三</dd></div><div><dt>Costco 蔚山店</dt><dd>第二个星期三、第四个星期日</dd></div><div><dt>春节、中秋</dt><dd>当天休业</dd></div></dl>
+      </div>
+      <p class="muted">强制休业日由地方政府条例规定，可能会变动。如与实际不符，请发邮件告诉我们。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>休业日和实际不一样。</summary><p>大型超市的强制休业日由地方政府条例规定，各地不同。请在设置中确认选择了符合所在地区的门店（周日休业、周三休业、蔚山、济州等）。如果仍然不对，请把超市名称和地区发邮件告诉我们，确认后会更新。</p></details>
+<details><summary>列表里没有我常去的超市怎么办？</summary><p>可以添加为你自己的超市。按每周、隔周，或像第二、第四个星期日这样设定第几周星期几休息，然后保存。</p></details>
+<details><summary>餐厅的休息日没有正确填好。</summary><p>通过 Naver 地图链接导入时，餐厅的地点页面上需要写有固定休息日。用截图导入时，请让“每周二休息”之类的文字出现在画面中。填好的内容在保存前都可以手动修改。</p></details>
+<details><summary>收不到通知。</summary><p>请在 iPhone 的“设置”&gt;“通知”&gt;“DontGoMart”中确认已允许通知，并确认应用内的休业日提醒已打开。</p></details>
+<details><summary>小组件不更新。</summary><p>打开一次应用，小组件信息就会刷新。如果还是没变，请删除小组件后重新添加。</p></details>
+<details><summary>打赏是什么？</summary><p>DontGoMart 的所有功能都是免费的。咖啡、蛋糕、正餐打赏是用来支持开发者的，打赏后会看到感谢的话和显示累计次数的支持者徽章。</p></details>
+<details><summary>付款（退款等）问题该找谁？</summary><p>App 内购买由 Apple 处理，退款请在 Apple 的报告问题页面（reportaproblem.apple.com）申请。其他问题欢迎发邮件。</p></details>
+<details><summary>个人信息怎么处理？</summary><p>没有账户，不使用广告或追踪工具，截图里的文字也只在设备上识别。详情请看下方的隐私政策。</p></details></div>
+      <p class="contact">有问题或建议，请发邮件到 <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>，我们通常 1～2 天内回复。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>别再站在关门的超市前<br>掉头回家</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">在 App Store 免费下载</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">隐私政策</a>
-      <a href="support.html">支持</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">联系我们</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隐私政策</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

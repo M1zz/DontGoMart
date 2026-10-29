@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - Muistutukset kauppojen sulkupäivistä</title>
-  <meta name="description" content="DontGoMart kokoaa Korean suurten supermarkettien ja Costcon pakolliset sulkupäivät sekä lempiravintoloidesi vapaapäivät yhteen ja muistuttaa ajoissa.">
-  <meta property="og:title" content="DontGoMart - Muistutukset kauppojen sulkupäivistä">
-  <meta property="og:description" content="DontGoMart kokoaa Korean suurten supermarkettien ja Costcon pakolliset sulkupäivät sekä lempiravintoloidesi vapaapäivät yhteen ja muistuttaa ajoissa.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: korealaisten hypermarkettien ja Costcon sulkupäivät</title>
+  <meta name="description" content="Näe, onko hypermarketti tai Costco Koreassa tänään auki, saa muistutus ennen pakollisia sulkupäiviä ja seuraa kantaravintoloiden vapaapäiviä.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/fi/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: korealaisten hypermarkettien ja Costcon sulkupäivät">
+  <meta property="og:description" content="Näe, onko hypermarketti tai Costco Koreassa tänään auki, saa muistutus ennen pakollisia sulkupäiviä ja seuraa kantaravintoloiden vapaapäiviä.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi" class="active" aria-current="true">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Kielet</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Tarkista ennen lähtöä,<br>onko kauppa auki</h1>
-    <p>DontGoMart näyttää Korean suurten supermarkettien ja Costcon pakolliset sulkupäivät ja muistuttaa niistä ajoissa. Voit hallita myös lempiravintoloidesi vapaapäiviä.</p>
-    <a href="https://apps.apple.com/fi/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fi-fi?size=250x83" alt="Lataa App Storesta">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Pääominaisuudet</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Näet yhdellä silmäyksellä, onko auki tänään</h3>
-          <p>Kun avaat sovelluksen, näet ensimmäisenä, onko valitsemasi kauppa auki tänään. Näet myös päivien määrän seuraavaan sulkupäivään ja luettelon tulevista sulkupäivistä.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Huomioi alueelliset erot sulkupäivissä</h3>
-          <p>Valitse sunnuntaisin tai keskiviikkoisin suljetut kaupat sekä alueet, joilla on muut sulkupäivät, kuten Ulsan ja Jeju. Costcon Daegun, Ilsanin ja Ulsanin toimipisteet voi asettaa erikseen, ja myös Seollalin ja Chuseokin sulkupäivät näytetään.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Lisää oman naapurustosi kaupat</h3>
-          <p>Jos kauppaa ei löydy luettelosta, rekisteröi se itse valitsemalla, minä viikkona ja minä viikonpäivänä se on kiinni, esimerkiksi toisena ja neljäntenä sunnuntaina.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>Myös lempiravintolasi</h3>
-          <p>Liitä Naver Mapsista jaettu linkki tai valitse kuvakaappaus ravintolan tietosivulta, niin vakiovapaapäivät täyttyvät automaattisesti. Kuvan teksti luetaan vain laitteellasi.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Muistutukset elämäsi rytmiin</h3>
-          <p>Valitse, haluatko ilmoituksen 1, 2, 3 vai 7 päivää ennen sulkupäivää ja mihin aikaan. Valittavissa on myös muistutus edellisenä päivänä siitä, että tänään on hyvä päivä tehdä ostokset.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Widgetit Koti- ja lukitusnäytölle</h3>
-          <p>Näet avaamatta sovellusta laskurin seuraavaan sulkupäivään, onko kauppasi auki tänä sunnuntaina ja ravintoloiden vapaapäivät seuraavien 7 päivän ajalta.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Kalenteri ja jakaminen</h3>
-          <p>Katso koko kuukauden sulkupäivät kalenterista ja jaa ne korttina, jossa on kahden viikon kalenteri, tai lyhyenä videona.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Ennen kauppareissua<br>tarkista, onko auki</h1>
+        <p class="lead">Kun avaat apin, näet ensimmäisenä, ovatko valitsemasi kaupat tänään auki. Ennen jokaista sulkupäivää tulee muistutus, joten et enää törmää lukittuun oveen.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Lataa ilmaiseksi App Storesta</a><a class="try" href="#try">Kokeile omalla kaupallasi ↓</a></div>
+        <p class="muted small">Kaikki ominaisuudet ovat ilmaisia. Ei tiliä, ei mainoksia.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/fi/01-main.jpg" alt="Ennen kauppareissua tarkista, onko auki" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Kaikki ominaisuudet ovat ilmaisia</h2>
-    <p>Ei enää turhia käännöksiä suljetun kaupan ovelta.</p>
-    <a href="https://apps.apple.com/fi/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fi-fi?size=250x83" alt="Lataa App Storesta">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Kokeile omalla kaupallasi</h2>
+      <p class="muted">Valitse kauppa ja näe heti, onko se tänään auki ja milloin se seuraavan kerran sulkee. Laskenta noudattaa samoja sääntöjä kuin appi.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Kokeile omalla kaupallasi&quot;, &quot;lead&quot;: &quot;Valitse kauppa ja näe heti, onko se tänään auki ja milloin se seuraavan kerran sulkee. Laskenta noudattaa samoja sääntöjä kuin appi.&quot;, &quot;pick&quot;: &quot;Valitse kauppa&quot;, &quot;marts&quot;: [&quot;Supermarket (suljettu sunnuntaisin)&quot;, &quot;Supermarket (suljettu keskiviikkoisin)&quot;, &quot;Supermarket (Ulsan)&quot;, &quot;Supermarket (Jeju)&quot;, &quot;Costco tavallinen&quot;, &quot;Costco Daegu&quot;, &quot;Costco Ilsan&quot;, &quot;Costco Ulsan&quot;], &quot;question&quot;: &quot;Voinko mennä tänään?&quot;, &quot;openToday&quot;: &quot;Auki tänään&quot;, &quot;closedToday&quot;: &quot;Suljettu tänään&quot;, &quot;nextLabel&quot;: &quot;Seuraava sulkupäivä&quot;, &quot;today&quot;: &quot;Tänään&quot;, &quot;tomorrow&quot;: &quot;Huomenna&quot;, &quot;closed&quot;: &quot;Suljettu&quot;, &quot;prev&quot;: &quot;Edellinen kuukausi&quot;, &quot;next&quot;: &quot;Seuraava kuukausi&quot;, &quot;note&quot;: &quot;Seollalin ja Chuseokin sulkupäivät, omat kaupat, muistutukset ja widgetit löytyvät apista.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Oletko joskus saapunut ostoslistan kanssa suljetulle ovelle?</h2>
+      <p>Korean suurten supermarkettien on oltava kiinni kaksi päivää kuussa, mutta mitkä päivät, riippuu paikasta. Useimmiten kuun toinen ja neljäs sunnuntai, muualla keskiviikko, ja Ulsanilla ja Jejulla on omat sääntönsä. Costcossa se riippuu myymälästä. DontGoMart laskee sulkupäivät kauppojesi sääntöjen mukaan ja kertoo ensimmäiseksi, voitko lähteä tänään.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Oikein joka alueella</h2>
+        <p>Valitse sunnuntaisin tai keskiviikkoisin sulkevat kaupat tai alueet, joilla on oma aikataulu, kuten Ulsan ja Jeju. Tavalliset Costco-myymälät sekä Daegun, Ilsanin ja Ulsanin myymälät asetetaan erikseen.<br>Myös Seollalin ja Chuseokin päivän sulkemiset näkyvät, ja voit seurata useaa kauppaa kerralla.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/03-marts.jpg" alt="Oikein joka alueella" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Lähikauppasi ja kantaravintolasi</h2>
+        <p>Jos kauppa puuttuu listalta, lisää se itse: joka viikko, joka toinen viikko tai minä kuun viikkoina ja minä päivänä se sulkee.<br>Ravintolaa varten liitä Naver Mapista jaettu linkki tai valitse kuvakaappaus sen tietosivusta, niin vakituiset vapaapäivät täyttyvät itsestään. Kuvien teksti luetaan vain laitteellasi.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/04-pattern.jpg" alt="Lähikauppasi ja kantaravintolasi" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Muistutukset ja widgetit, ettei unohdu</h2>
+        <p>Saat muistutuksen 1, 2, 3 tai 7 päivää etukäteen haluamaasi aikaan, ja edellisenä päivänä vielä toisen siitä, että tänään on hyvä päivä käydä kaupassa.<br>Koti-valikon ja lukitusnäytön widgetit näyttävät seuraavan sulkupäivän, onko tänä sunnuntaina auki ja ravintoloidesi seuraavat seitsemän päivää. Kalenteri näyttää koko kuukauden.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/02-calendar.jpg" alt="Muistutukset ja widgetit, ettei unohdu" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jaa yhdellä kortilla</h2>
+        <p>Tee tiedosta kortti, jossa on kahden viikon kalenteri ja ostosvinkki, ja lähetä se perheen chattiin. Mukana koot Instagram-julkaisulle ja -tarinalle sekä lyhyt video.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/05-share.jpg" alt="Jaa yhdellä kortilla" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Alkuun kolmella askeleella</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Valitse kaupat</h3><p>Laita päälle kaupat ja alueet, joissa asioit. Niin monta kuin haluat.</p></li>
+<li class="card"><span class="n">2</span><h3>Laita muistutukset päälle</h3><p>Valitse, montako päivää etukäteen ja mihin aikaan.</p></li>
+<li class="card"><span class="n">3</span><h3>Lisää widget</h3><p>Tarkista Koti-valikosta tai lukitusnäytöltä avaamatta appia.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kauppakohtaiset sulkusäännöt</h2>
+      <div class="card table">
+        <dl><div><dt>Supermarket (suljettu sunnuntaisin)</dt><dd>Kuun 2. ja 4. sunnuntai · useimmat alueet</dd></div><div><dt>Supermarket (suljettu keskiviikkoisin)</dt><dd>Kuun 2. ja 4. keskiviikko · osa Gyeonggia, Cheongju</dd></div><div><dt>Supermarket (Ulsan)</dt><dd>2. keskiviikko, 4. sunnuntai</dd></div><div><dt>Supermarket (Jeju)</dt><dd>2. perjantai, 4. lauantai</dd></div><div><dt>Costco tavallinen</dt><dd>Kuun 2. ja 4. sunnuntai</dd></div><div><dt>Costco Daegu</dt><dd>Kuun 2. ja 4. maanantai · Daegu, Daegu Innovation</dd></div><div><dt>Costco Ilsan</dt><dd>Kuun 2. ja 4. keskiviikko</dd></div><div><dt>Costco Ulsan</dt><dd>2. keskiviikko, 4. sunnuntai</dd></div><div><dt>Seollal, Chuseok</dt><dd>kiinni itse juhlapäivänä</dd></div></dl>
+      </div>
+      <p class="muted">Pakolliset sulkupäivät päättävät paikallisviranomaiset, ja ne voivat muuttua. Jos jokin ei täsmää, kirjoita meille alla olevaan osoitteeseen.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Sulkupäivät eivät täsmää todellisuuteen.</summary><p>Pakolliset sulkupäivät määräytyvät paikallisten säädösten mukaan ja vaihtelevat alueittain. Tarkista asetuksista, että olet valinnut oikean kauppatyypin (suljettu sunnuntaisin, keskiviikkoisin, Ulsan, Jeju jne.). Jos se ei vieläkään täsmää, lähetä meille kaupan nimi ja alue, niin tarkistamme asian.</p></details>
+<details><summary>Kauppani ei ole listalla.</summary><p>Lisää se omaksi kaupaksesi. Valitse joka viikko, joka toinen viikko tai minä kuun viikkoina ja minä päivänä se sulkee, esimerkiksi kuun toisena ja neljäntenä sunnuntaina.</p></details>
+<details><summary>Ravintolan vapaapäivät täyttyivät väärin.</summary><p>Naver Map -linkistä tuotaessa ravintolan sivulla on oltava vakituiset vapaapäivät. Kuvakaappausta käyttäessä varmista, että sulkemismaininta näkyy ruudulla. Voit korjata kaiken ennen tallennusta.</p></details>
+<details><summary>En saa muistutuksia.</summary><p>Tarkista, että ilmoitukset on sallittu kohdassa Asetukset &gt; Ilmoitukset &gt; DontGoMart ja että muistutukset ovat päällä apissa.</p></details>
+<details><summary>Widget ei päivity.</summary><p>Kun avaat apin kerran, widgetit päivittyvät. Jos ei auta, poista widget ja lisää se uudelleen.</p></details>
+<details><summary>Mitä tipit ovat?</summary><p>Kaikki DontGoMartin ominaisuudet ovat ilmaisia. Kahvi, kakku ja ateria ovat tippejä kehittäjälle. Sen jälkeen saat kiitoksen ja merkin, jossa näkyy tippiesi määrä.</p></details>
+<details><summary>Mistä kysyn maksuista tai hyvityksistä?</summary><p>Apple hoitaa sovelluksen sisäiset ostot, joten hyvitystä pyydetään osoitteessa reportaproblem.apple.com. Muissa asioissa kirjoita meille.</p></details>
+<details><summary>Miten tietojani käsitellään?</summary><p>Ei tilejä, mainoksia tai seurantatyökaluja, ja kuvakaappausten teksti luetaan vain laitteellasi. Lisätietoja alla olevassa tietosuojakäytännössä.</p></details></div>
+      <p class="contact">Kysyttävää tai ideoita? Kirjoita osoitteeseen <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Vastaamme yleensä päivän tai kahden sisällä.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Ei enää kääntymistä<br>suljetulta ovelta</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Lataa ilmaiseksi App Storesta</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Tietosuojakäytäntö</a>
-      <a href="support.html">Tuki</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Ota yhteyttä</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Kielet"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

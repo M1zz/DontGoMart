@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - Ειδοποιήσεις ημερών κλεισίματος καταστημάτων</title>
-  <meta name="description" content="Το DontGoMart συγκεντρώνει τις υποχρεωτικές ημέρες κλεισίματος των μεγάλων σούπερ μάρκετ της Κορέας και του Costco, καθώς και τις ημέρες αργίας των αγαπημένων σας εστιατορίων, και σας ειδοποιεί έγκαιρα.">
-  <meta property="og:title" content="DontGoMart - Ειδοποιήσεις ημερών κλεισίματος καταστημάτων">
-  <meta property="og:description" content="Το DontGoMart συγκεντρώνει τις υποχρεωτικές ημέρες κλεισίματος των μεγάλων σούπερ μάρκετ της Κορέας και του Costco, καθώς και τις ημέρες αργίας των αγαπημένων σας εστιατορίων, και σας ειδοποιεί έγκαιρα.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: μέρες κλεισίματος σούπερ μάρκετ και Costco στην Κορέα</title>
+  <meta name="description" content="Δες αν το σούπερ μάρκετ ή το Costco σου στην Κορέα είναι ανοιχτό σήμερα, πάρε υπενθύμιση πριν από τα κλεισίματα και δες τα ρεπό των εστιατορίων σου.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/el/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: μέρες κλεισίματος σούπερ μάρκετ και Costco στην Κορέα">
+  <meta property="og:description" content="Δες αν το σούπερ μάρκετ ή το Costco σου στην Κορέα είναι ανοιχτό σήμερα, πάρε υπενθύμιση πριν από τα κλεισίματα και δες τα ρεπό των εστιατορίων σου.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/el/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά" class="active" aria-current="true">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Γλώσσες</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Πριν βγείτε,<br>ελέγξτε αν το κατάστημα είναι ανοιχτό</h1>
-    <p>Το DontGoMart δείχνει τις υποχρεωτικές ημέρες κλεισίματος των μεγάλων σούπερ μάρκετ της Κορέας και του Costco και σας ειδοποιεί έγκαιρα. Μπορείτε να διαχειρίζεστε και τις ημέρες αργίας των αγαπημένων σας εστιατορίων.</p>
-    <a href="https://apps.apple.com/gr/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/el-gr?size=250x83" alt="Λήψη από το App Store">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Βασικές λειτουργίες</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Ανοιχτό σήμερα ή όχι, με μια ματιά</h3>
-          <p>Όταν ανοίγετε την εφαρμογή, βλέπετε πρώτα αν το επιλεγμένο κατάστημα είναι ανοιχτό σήμερα. Βλέπετε επίσης πόσες ημέρες απομένουν μέχρι το επόμενο κλείσιμο και τη λίστα με τις επερχόμενες ημέρες κλεισίματος.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Προσαρμόζεται στα κλεισίματα κάθε περιοχής</h3>
-          <p>Επιλέξτε καταστήματα που κλείνουν Κυριακή ή Τετάρτη, καθώς και περιοχές με άλλες ημέρες κλεισίματος, όπως το Ούλσαν και το Τζέζου. Τα Costco σε Ντεγκού, Ιλσάν και Ούλσαν ρυθμίζονται χωριστά και εμφανίζονται και τα κλεισίματα των Σολλάλ και Τσουσόκ.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Προσθέστε καταστήματα της γειτονιάς σας</h3>
-          <p>Αν ένα κατάστημα δεν υπάρχει στη λίστα, καταχωρίστε το μόνοι σας επιλέγοντας ποια εβδομάδα και ποια ημέρα της εβδομάδας κλείνει, π.χ. τη δεύτερη και την τέταρτη Κυριακή.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>Και τα αγαπημένα σας εστιατόρια</h3>
-          <p>Επικολλήστε έναν σύνδεσμο που κοινοποιήσατε από το Naver Maps ή επιλέξτε στιγμιότυπο της σελίδας πληροφοριών του εστιατορίου και οι σταθερές ημέρες αργίας συμπληρώνονται αυτόματα. Το κείμενο στις φωτογραφίες διαβάζεται μόνο στη συσκευή σας.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Ειδοποιήσεις στα μέτρα της ζωής σας</h3>
-          <p>Επιλέξτε να ειδοποιείστε 1, 2, 3 ή 7 ημέρες πριν από το κλείσιμο, την ώρα που σας βολεύει. Υπάρχει και επιλογή υπενθύμισης την προηγούμενη μέρα ότι σήμερα είναι καλή μέρα για ψώνια.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Widgets για την Αρχική οθόνη και την οθόνη κλειδώματος</h3>
-          <p>Χωρίς να ανοίξετε την εφαρμογή, δείτε την αντίστροφη μέτρηση μέχρι το κοντινότερο κλείσιμο, αν το κατάστημά σας είναι ανοιχτό αυτή την Κυριακή και τις ημέρες αργίας των εστιατορίων για τις επόμενες 7 ημέρες.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Ημερολόγιο και κοινοποίηση</h3>
-          <p>Δείτε τα κλεισίματα ενός ολόκληρου μήνα στο ημερολόγιο και κοινοποιήστε τα ως κάρτα με ημερολόγιο δύο εβδομάδων ή ως σύντομο βίντεο.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Πριν πας για ψώνια,<br>δες αν είναι ανοιχτά</h1>
+        <p class="lead">Ανοίγοντας την εφαρμογή, βλέπεις πρώτα απ’ όλα αν τα καταστήματά σου είναι ανοιχτά σήμερα. Πριν από κάθε μέρα κλεισίματος έρχεται υπενθύμιση, ώστε να μη βρεις ποτέ ξανά κλειστή πόρτα.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Κατέβασέ το δωρεάν από το App Store</a><a class="try" href="#try">Δοκίμασέ το με το κατάστημά σου ↓</a></div>
+        <p class="muted small">Όλες οι λειτουργίες δωρεάν. Χωρίς λογαριασμό, χωρίς διαφημίσεις.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/el/01-main.jpg" alt="Πριν πας για ψώνια, δες αν είναι ανοιχτά" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Όλες οι λειτουργίες είναι δωρεάν</h2>
-    <p>Τέλος οι άδικες διαδρομές μπροστά σε κλειστά καταστήματα.</p>
-    <a href="https://apps.apple.com/gr/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/el-gr?size=250x83" alt="Λήψη από το App Store">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Δοκίμασέ το με το κατάστημά σου</h2>
+      <p class="muted">Διάλεξε κατάστημα και δες αμέσως αν είναι ανοιχτό σήμερα και πότε κλείνει ξανά. Ο υπολογισμός γίνεται με τους ίδιους κανόνες με την εφαρμογή.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Δοκίμασέ το με το κατάστημά σου&quot;, &quot;lead&quot;: &quot;Διάλεξε κατάστημα και δες αμέσως αν είναι ανοιχτό σήμερα και πότε κλείνει ξανά. Ο υπολογισμός γίνεται με τους ίδιους κανόνες με την εφαρμογή.&quot;, &quot;pick&quot;: &quot;Διάλεξε κατάστημα&quot;, &quot;marts&quot;: [&quot;Σούπερ μάρκετ (κλειστό τις Κυριακές)&quot;, &quot;Σούπερ μάρκετ (κλειστό τις Τετάρτες)&quot;, &quot;Σούπερ μάρκετ (Ούλσαν)&quot;, &quot;Σούπερ μάρκετ (Τζέζου)&quot;, &quot;Costco κανονικό&quot;, &quot;Costco Ντεγκού&quot;, &quot;Costco Ιλσάν&quot;, &quot;Costco Ούλσαν&quot;], &quot;question&quot;: &quot;Μπορώ να πάω σήμερα;&quot;, &quot;openToday&quot;: &quot;Ανοιχτό σήμερα&quot;, &quot;closedToday&quot;: &quot;Κλειστό σήμερα&quot;, &quot;nextLabel&quot;: &quot;Επόμενη ημέρα κλεισίματος&quot;, &quot;today&quot;: &quot;Σήμερα&quot;, &quot;tomorrow&quot;: &quot;Αύριο&quot;, &quot;closed&quot;: &quot;Κλειστό&quot;, &quot;prev&quot;: &quot;Προηγούμενος μήνας&quot;, &quot;next&quot;: &quot;Επόμενος μήνας&quot;, &quot;note&quot;: &quot;Τα κλεισίματα του Σολλάλ και του Τσουσόκ, τα δικά σου καταστήματα, οι υπενθυμίσεις και τα widget βρίσκονται στην εφαρμογή.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Έχεις φτάσει ποτέ με τη λίστα για ψώνια σε κλειστό κατάστημα;</h2>
+      <p>Στην Κορέα τα μεγάλα σούπερ μάρκετ πρέπει να κλείνουν δύο μέρες τον μήνα, αλλά ποιες εξαρτάται από την περιοχή. Συνήθως τη 2η και την 4η Κυριακή, αλλού την Τετάρτη, ενώ το Ούλσαν και το Τζέζου έχουν δικούς τους κανόνες. Στο Costco εξαρτάται από το κατάστημα. Το DontGoMart υπολογίζει τα κλεισίματα με τους κανόνες των καταστημάτων σου και σου λέει πρώτα αν μπορείς να πας σήμερα.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Σωστό για κάθε περιοχή</h2>
+        <p>Διάλεξε καταστήματα που κλείνουν Κυριακή ή Τετάρτη, ή περιοχές με δικό τους πρόγραμμα όπως το Ούλσαν και το Τζέζου. Τα κανονικά Costco και αυτά στο Ντεγκού, το Ιλσάν και το Ούλσαν ρυθμίζονται χωριστά.<br>Εμφανίζονται και τα κλεισίματα ανήμερα του Σολλάλ και του Τσουσόκ, και μπορείς να παρακολουθείς πολλά καταστήματα μαζί.</p>
+      </div>
+      <div class="phone"><img src="../img/el/03-marts.jpg" alt="Σωστό για κάθε περιοχή" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Το μαγαζί της γειτονιάς και τα αγαπημένα σου εστιατόρια</h2>
+        <p>Αν ένα κατάστημα λείπει από τη λίστα, πρόσθεσέ το μόνος σου: κάθε εβδομάδα, κάθε δεύτερη εβδομάδα ή ποιες εβδομάδες του μήνα και ποια μέρα κλείνει.<br>Για εστιατόριο, επικόλλησε έναν σύνδεσμο από το Naver Map ή διάλεξε στιγμιότυπο της σελίδας του, και τα σταθερά ρεπό συμπληρώνονται μόνα τους. Το κείμενο των φωτογραφιών διαβάζεται μόνο στη συσκευή σου.</p>
+      </div>
+      <div class="phone"><img src="../img/el/04-pattern.jpg" alt="Το μαγαζί της γειτονιάς και τα αγαπημένα σου εστιατόρια" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Υπενθυμίσεις και widget για να μην ξεχνάς</h2>
+        <p>Πάρε ειδοποίηση 1, 2, 3 ή 7 μέρες πριν, την ώρα που θέλεις, και την προηγούμενη μέρα άλλη μία ότι σήμερα είναι καλή μέρα για ψώνια.<br>Τα widget στην οθόνη Αφετηρίας και κλειδώματος δείχνουν το επόμενο κλείσιμο, αν είναι ανοιχτά αυτή την Κυριακή και τις επόμενες επτά μέρες των εστιατορίων σου. Το ημερολόγιο δείχνει όλο τον μήνα.</p>
+      </div>
+      <div class="phone"><img src="../img/el/02-calendar.jpg" alt="Υπενθυμίσεις και widget για να μην ξεχνάς" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Μοιράσου το με μία κάρτα</h2>
+        <p>Κάνε την ενημέρωση κάρτα με ημερολόγιο δύο εβδομάδων και μια συμβουλή για ψώνια και στείλ’ την στην οικογενειακή συνομιλία. Υπάρχουν μεγέθη για ανάρτηση και story στο Instagram, καθώς και σύντομο βίντεο.</p>
+      </div>
+      <div class="phone"><img src="../img/el/05-share.jpg" alt="Μοιράσου το με μία κάρτα" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Ξεκινάς σε τρία βήματα</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Διάλεξε καταστήματα</h3><p>Ενεργοποίησε τα καταστήματα και τις περιοχές όπου ψωνίζεις. Όσα θέλεις.</p></li>
+<li class="card"><span class="n">2</span><h3>Άνοιξε τις υπενθυμίσεις</h3><p>Διάλεξε πόσες μέρες πριν και τι ώρα.</p></li>
+<li class="card"><span class="n">3</span><h3>Πρόσθεσε widget</h3><p>Δες τα στην οθόνη Αφετηρίας ή κλειδώματος χωρίς να ανοίξεις την εφαρμογή.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Κανόνες κλεισίματος ανά κατάστημα</h2>
+      <div class="card table">
+        <dl><div><dt>Σούπερ μάρκετ (κλειστό τις Κυριακές)</dt><dd>2η και 4η Κυριακή · οι περισσότερες περιοχές</dd></div><div><dt>Σούπερ μάρκετ (κλειστό τις Τετάρτες)</dt><dd>2η και 4η Τετάρτη · μέρος του Γκιόνγκι, Τσονγκτζού</dd></div><div><dt>Σούπερ μάρκετ (Ούλσαν)</dt><dd>2η Τετάρτη, 4η Κυριακή</dd></div><div><dt>Σούπερ μάρκετ (Τζέζου)</dt><dd>2η Παρασκευή, 4ο Σάββατο</dd></div><div><dt>Costco κανονικό</dt><dd>2η και 4η Κυριακή</dd></div><div><dt>Costco Ντεγκού</dt><dd>2η και 4η Δευτέρα · Ντεγκού, Ντεγκού Innovation</dd></div><div><dt>Costco Ιλσάν</dt><dd>2η και 4η Τετάρτη</dd></div><div><dt>Costco Ούλσαν</dt><dd>2η Τετάρτη, 4η Κυριακή</dd></div><div><dt>Σολλάλ, Τσουσόκ</dt><dd>κλειστά ανήμερα</dd></div></dl>
+      </div>
+      <p class="muted">Τα υποχρεωτικά κλεισίματα τα ορίζουν οι τοπικές αρχές και μπορεί να αλλάξουν. Αν κάτι δεν ταιριάζει, γράψε μας στη διεύθυνση παρακάτω.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Οι μέρες κλεισίματος δεν ταιριάζουν.</summary><p>Τα υποχρεωτικά κλεισίματα ορίζονται από τοπικούς κανονισμούς και διαφέρουν ανά περιοχή. Έλεγξε στις Ρυθμίσεις ότι διάλεξες τον σωστό τύπο καταστήματος (κλειστό Κυριακή, Τετάρτη, Ούλσαν, Τζέζου κ.λπ.). Αν πάλι δεν ταιριάζει, στείλε μας όνομα και περιοχή του καταστήματος και θα το ελέγξουμε.</p></details>
+<details><summary>Το κατάστημά μου δεν είναι στη λίστα.</summary><p>Πρόσθεσέ το ως δικό σου κατάστημα. Διάλεξε κάθε εβδομάδα, κάθε δεύτερη εβδομάδα ή ποιες εβδομάδες του μήνα και ποια μέρα κλείνει, π.χ. τη 2η και την 4η Κυριακή.</p></details>
+<details><summary>Τα ρεπό ενός εστιατορίου δεν συμπληρώθηκαν σωστά.</summary><p>Στην εισαγωγή από σύνδεσμο Naver Map, η σελίδα του εστιατορίου πρέπει να γράφει τα σταθερά ρεπό. Με στιγμιότυπο, φρόντισε να φαίνεται η σημείωση για το κλείσιμο. Μπορείς να διορθώσεις τα πάντα πριν από την αποθήκευση.</p></details>
+<details><summary>Δεν λαμβάνω υπενθυμίσεις.</summary><p>Έλεγξε ότι οι γνωστοποιήσεις επιτρέπονται στις Ρυθμίσεις &gt; Γνωστοποιήσεις &gt; DontGoMart και ότι οι υπενθυμίσεις είναι ενεργές στην εφαρμογή.</p></details>
+<details><summary>Το widget δεν ενημερώνεται.</summary><p>Άνοιξε μία φορά την εφαρμογή και τα widget ανανεώνονται. Αν δεν αλλάξει, αφαίρεσε το widget και πρόσθεσέ το ξανά.</p></details>
+<details><summary>Τι είναι τα φιλοδωρήματα;</summary><p>Όλες οι λειτουργίες του DontGoMart είναι δωρεάν. Ο καφές, το γλυκό και το γεύμα είναι φιλοδωρήματα για τον δημιουργό. Μετά βλέπεις ένα ευχαριστώ και ένα σήμα με το πόσες φορές έδωσες.</p></details>
+<details><summary>Πού ρωτάω για πληρωμές ή επιστροφές χρημάτων;</summary><p>Τις αγορές μέσα στην εφαρμογή τις διαχειρίζεται η Apple, οπότε η επιστροφή ζητείται στο reportaproblem.apple.com. Για οτιδήποτε άλλο, γράψε μας.</p></details>
+<details><summary>Πώς χειρίζεστε τα δεδομένα μου;</summary><p>Δεν υπάρχουν λογαριασμοί, διαφημίσεις ή εργαλεία παρακολούθησης, και το κείμενο των στιγμιοτύπων διαβάζεται μόνο στη συσκευή σου. Λεπτομέρειες στην πολιτική απορρήτου παρακάτω.</p></details></div>
+      <p class="contact">Ερωτήσεις ή ιδέες; Γράψε στο <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Συνήθως απαντάμε σε μία με δύο μέρες.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Τέλος οι επιστροφές<br>από κλειστή πόρτα</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Κατέβασέ το δωρεάν από το App Store</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Πολιτική απορρήτου</a>
-      <a href="support.html">Υποστήριξη</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Επικοινωνία</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Γλώσσες"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

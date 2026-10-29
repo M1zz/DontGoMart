@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - แจ้งวันปิดของห้างร้าน</title>
-  <meta name="description" content="DontGoMart รวมวันปิดตามกฎหมายของซูเปอร์มาร์เก็ตใหญ่ในเกาหลีและ Costco รวมถึงวันหยุดของร้านอาหารโปรด และเตือนคุณล่วงหน้าก่อนถึงวันปิด">
-  <meta property="og:title" content="DontGoMart - แจ้งวันปิดของห้างร้าน">
-  <meta property="og:description" content="DontGoMart รวมวันปิดตามกฎหมายของซูเปอร์มาร์เก็ตใหญ่ในเกาหลีและ Costco รวมถึงวันหยุดของร้านอาหารโปรด และเตือนคุณล่วงหน้าก่อนถึงวันปิด">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: วันหยุดไฮเปอร์มาร์เก็ตและ Costco ในเกาหลี</title>
+  <meta name="description" content="ดูว่าไฮเปอร์มาร์เก็ตหรือ Costco ในเกาหลีเปิดวันนี้ไหม รับการแจ้งเตือนก่อนวันหยุดบังคับ และติดตามวันหยุดร้านอาหารประจำ ใช้ฟรีทุกฟีเจอร์">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/th/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: วันหยุดไฮเปอร์มาร์เก็ตและ Costco ในเกาหลี">
+  <meta property="og:description" content="ดูว่าไฮเปอร์มาร์เก็ตหรือ Costco ในเกาหลีเปิดวันนี้ไหม รับการแจ้งเตือนก่อนวันหยุดบังคับ และติดตามวันหยุดร้านอาหารประจำ ใช้ฟรีทุกฟีเจอร์">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/th/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย" class="active" aria-current="true">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>ก่อนออกจากบ้าน<br>เช็กก่อนว่าร้านเปิดหรือไม่</h1>
-    <p>DontGoMart แสดงวันปิดตามกฎหมายของซูเปอร์มาร์เก็ตใหญ่ในเกาหลีและ Costco และเตือนล่วงหน้าก่อนถึงวันปิด จัดการวันหยุดของร้านอาหารโปรดได้ด้วย</p>
-    <a href="https://apps.apple.com/th/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/th-th?size=250x83" alt="ดาวน์โหลดบน App Store">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>ฟีเจอร์หลัก</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>เห็นทันทีว่าวันนี้ร้านเปิดหรือไม่</h3>
-          <p>เมื่อเปิดแอป สิ่งแรกที่เห็นคือร้านที่คุณเลือกเปิดวันนี้หรือไม่ พร้อมจำนวนวันก่อนวันปิดครั้งถัดไปและรายการวันปิดที่กำลังจะมาถึง</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>รองรับวันปิดที่ต่างกันในแต่ละพื้นที่</h3>
-          <p>เลือกร้านที่ปิดวันอาทิตย์หรือวันพุธ รวมถึงพื้นที่ที่วันปิดต่างออกไป เช่น อุลซานและเชจู ตั้งค่า Costco สาขาแทกู อิลซาน อุลซานแยกกันได้ และแสดงวันปิดช่วงซอลลัลและชูซ็อกด้วย</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>เพิ่มร้านในละแวกบ้าน</h3>
-          <p>ถ้าร้านที่ต้องการไม่อยู่ในรายการ ให้ลงทะเบียนเองได้ โดยเลือกว่าปิดสัปดาห์ที่เท่าไรและวันอะไร เช่น วันอาทิตย์ที่สองและสี่</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>รวมถึงร้านอาหารโปรด</h3>
-          <p>วางลิงก์ที่แชร์จาก Naver Maps หรือเลือกภาพหน้าจอหน้าข้อมูลร้าน วันหยุดประจำก็จะถูกกรอกให้อัตโนมัติ ข้อความในรูปจะถูกอ่านบนอุปกรณ์ของคุณเท่านั้น</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>การแจ้งเตือนที่เข้ากับชีวิตคุณ</h3>
-          <p>เลือกให้แจ้งก่อนวันปิด 1, 2, 3 หรือ 7 วัน ในเวลาที่คุณสะดวก และมีตัวเลือกเตือนในวันก่อนหน้าว่าวันนี้เหมาะกับการไปซื้อของ</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>วิดเจ็ตหน้าจอโฮมและหน้าจอล็อก</h3>
-          <p>ดูการนับถอยหลังถึงวันปิดครั้งถัดไป ร้านเปิดวันอาทิตย์นี้หรือไม่ และวันหยุดของร้านอาหารใน 7 วันข้างหน้า โดยไม่ต้องเปิดแอป</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>ปฏิทินและการแชร์</h3>
-          <p>ดูวันปิดทั้งเดือนในปฏิทิน และแชร์เป็นการ์ดที่มีปฏิทิน 2 สัปดาห์หรือวิดีโอสั้นได้</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>ก่อนออกไปซื้อของ<br>เช็กก่อนว่าวันนี้เปิดไหม</h1>
+        <p class="lead">เปิดแอปปุ๊บ สิ่งแรกที่เห็นคือร้านที่เลือกไว้เปิดวันนี้หรือเปล่า และจะแจ้งเตือนล่วงหน้าก่อนวันหยุดทุกครั้ง ไม่ต้องไปเจอประตูปิดอีก</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">ดาวน์โหลดฟรีบน App Store</a><a class="try" href="#try">ลองกับร้านของคุณ ↓</a></div>
+        <p class="muted small">ทุกฟีเจอร์ใช้ฟรี ไม่ต้องมีบัญชี ไม่มีโฆษณา</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/th/01-main.jpg" alt="ก่อนออกไปซื้อของ เช็กก่อนว่าวันนี้เปิดไหม" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>ทุกฟีเจอร์ใช้ฟรี</h2>
-    <p>ไม่ต้องกลับบ้านมือเปล่าเพราะร้านปิดอีกต่อไป</p>
-    <a href="https://apps.apple.com/th/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/th-th?size=250x83" alt="ดาวน์โหลดบน App Store">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>ลองกับร้านของคุณ</h2>
+      <p class="muted">เลือกร้านแล้วดูได้ทันทีว่าวันนี้เปิดไหม และวันหยุดถัดไปคือวันไหน คำนวณด้วยกฎเดียวกับในแอป</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองกับร้านของคุณ&quot;, &quot;lead&quot;: &quot;เลือกร้านแล้วดูได้ทันทีว่าวันนี้เปิดไหม และวันหยุดถัดไปคือวันไหน คำนวณด้วยกฎเดียวกับในแอป&quot;, &quot;pick&quot;: &quot;เลือกร้าน&quot;, &quot;marts&quot;: [&quot;ซูเปอร์มาร์เก็ต (ปิดวันอาทิตย์)&quot;, &quot;ซูเปอร์มาร์เก็ต (ปิดวันพุธ)&quot;, &quot;ซูเปอร์มาร์เก็ต (อุลซาน)&quot;, &quot;ซูเปอร์มาร์เก็ต (เชจู)&quot;, &quot;Costco ทั่วไป&quot;, &quot;Costco แทกู&quot;, &quot;Costco อิลซาน&quot;, &quot;Costco อุลซาน&quot;], &quot;question&quot;: &quot;วันนี้ไปได้ไหม?&quot;, &quot;openToday&quot;: &quot;วันนี้เปิด&quot;, &quot;closedToday&quot;: &quot;วันนี้หยุด&quot;, &quot;nextLabel&quot;: &quot;วันปิดครั้งถัดไป&quot;, &quot;today&quot;: &quot;วันนี้&quot;, &quot;tomorrow&quot;: &quot;พรุ่งนี้&quot;, &quot;closed&quot;: &quot;ปิด&quot;, &quot;prev&quot;: &quot;เดือนก่อนหน้า&quot;, &quot;next&quot;: &quot;เดือนถัดไป&quot;, &quot;note&quot;: &quot;วันหยุดวันซอลลัลและชูซ็อก ร้านที่เพิ่มเอง การแจ้งเตือน และวิดเจ็ตใช้ได้ในแอป&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>เคยถือรายการซื้อของไปแล้วเจอร้านปิดไหม</h2>
+      <p>ไฮเปอร์มาร์เก็ตในเกาหลีต้องหยุดเดือนละ 2 วัน แต่เป็นวันไหนขึ้นอยู่กับพื้นที่ ส่วนใหญ่คือวันอาทิตย์ที่ 2 และ 4 บางแห่งเป็นวันพุธ ส่วนอุลซานและเชจูก็มีกฎของตัวเอง Costco ก็ต่างกันไปตามสาขา DontGoMart คำนวณวันหยุดตามกฎของร้านที่คุณไป แล้วบอกก่อนเลยว่าวันนี้ไปได้ไหม</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ถูกต้องในทุกพื้นที่</h2>
+        <p>เลือกร้านที่หยุดวันอาทิตย์หรือวันพุธ หรือพื้นที่ที่มีตารางของตัวเองอย่างอุลซานและเชจู Costco สาขาทั่วไปกับสาขาแทกู อิลซาน และอุลซานตั้งค่าแยกกันได้<br>วันหยุดในวันซอลลัลและชูซ็อกก็แสดงด้วย และติดตามหลายร้านพร้อมกันได้</p>
+      </div>
+      <div class="phone"><img src="../img/th/03-marts.jpg" alt="ถูกต้องในทุกพื้นที่" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ร้านใกล้บ้านและร้านอาหารประจำ</h2>
+        <p>ร้านที่ไม่มีในรายการ เพิ่มเองได้ ทั้งแบบทุกสัปดาห์ เว้นสัปดาห์ หรือสัปดาห์ที่เท่าไรของเดือนวันอะไร<br>สำหรับร้านอาหาร แค่วางลิงก์ที่แชร์จาก Naver Map หรือเลือกภาพหน้าจอข้อมูลร้าน วันหยุดประจำจะถูกกรอกให้เอง ข้อความในภาพอ่านบนอุปกรณ์เท่านั้น</p>
+      </div>
+      <div class="phone"><img src="../img/th/04-pattern.jpg" alt="ร้านใกล้บ้านและร้านอาหารประจำ" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>แจ้งเตือนและวิดเจ็ตกันลืม</h2>
+        <p>เลือกให้แจ้งก่อน 1, 2, 3 หรือ 7 วันตามเวลาที่ต้องการ และวันก่อนวันหยุดจะเตือนอีกครั้งว่าวันนี้เหมาะกับการไปซื้อของ<br>วิดเจ็ตบนหน้าจอโฮมและหน้าจอล็อกแสดงวันหยุดที่ใกล้ที่สุด วันอาทิตย์นี้เปิดไหม และวันหยุดของร้านอาหาร 7 วันข้างหน้า ปฏิทินแสดงวันหยุดทั้งเดือน</p>
+      </div>
+      <div class="phone"><img src="../img/th/02-calendar.jpg" alt="แจ้งเตือนและวิดเจ็ตกันลืม" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>แชร์ด้วยการ์ดใบเดียว</h2>
+        <p>ทำข่าววันหยุดเป็นการ์ดที่มีปฏิทิน 2 สัปดาห์และเคล็ดลับการซื้อของ แล้วส่งเข้ากลุ่มครอบครัว มีขนาดโพสต์และสตอรี่ Instagram และวิดีโอสั้นด้วย</p>
+      </div>
+      <div class="phone"><img src="../img/th/05-share.jpg" alt="แชร์ด้วยการ์ดใบเดียว" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>เริ่มได้ใน 3 ขั้นตอน</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>เลือกร้าน</h3><p>เปิดร้านและพื้นที่ที่คุณไปซื้อของ เลือกได้หลายร้าน</p></li>
+<li class="card"><span class="n">2</span><h3>เปิดการแจ้งเตือน</h3><p>เลือกว่าจะให้เตือนก่อนกี่วันและกี่โมง</p></li>
+<li class="card"><span class="n">3</span><h3>วางวิดเจ็ต</h3><p>ดูได้จากหน้าจอโฮมหรือหน้าจอล็อกโดยไม่ต้องเปิดแอป</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>กฎวันหยุดของแต่ละร้าน</h2>
+      <div class="card table">
+        <dl><div><dt>ซูเปอร์มาร์เก็ต (ปิดวันอาทิตย์)</dt><dd>อาทิตย์ที่ 2 และ 4 · เกือบทุกพื้นที่</dd></div><div><dt>ซูเปอร์มาร์เก็ต (ปิดวันพุธ)</dt><dd>พุธที่ 2 และ 4 · บางส่วนของคย็องกี ชองจู</dd></div><div><dt>ซูเปอร์มาร์เก็ต (อุลซาน)</dt><dd>พุธที่ 2 อาทิตย์ที่ 4</dd></div><div><dt>ซูเปอร์มาร์เก็ต (เชจู)</dt><dd>ศุกร์ที่ 2 เสาร์ที่ 4</dd></div><div><dt>Costco ทั่วไป</dt><dd>อาทิตย์ที่ 2 และ 4</dd></div><div><dt>Costco แทกู</dt><dd>จันทร์ที่ 2 และ 4 · แทกู แทกูฮย็อกชิน</dd></div><div><dt>Costco อิลซาน</dt><dd>พุธที่ 2 และ 4</dd></div><div><dt>Costco อุลซาน</dt><dd>พุธที่ 2 อาทิตย์ที่ 4</dd></div><div><dt>ซอลลัล ชูซ็อก</dt><dd>หยุดในวันนั้น</dd></div></dl>
+      </div>
+      <p class="muted">วันหยุดบังคับกำหนดโดยหน่วยงานท้องถิ่นและอาจเปลี่ยนได้ หากไม่ตรงกับความจริง แจ้งเราทางอีเมลด้านล่าง</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>วันหยุดไม่ตรงกับความจริง</summary><p>วันหยุดบังคับของไฮเปอร์มาร์เก็ตเป็นไปตามข้อบัญญัติท้องถิ่นและต่างกันในแต่ละพื้นที่ โปรดตรวจสอบในการตั้งค่าว่าเลือกประเภทร้านถูกต้อง (หยุดวันอาทิตย์ หยุดวันพุธ อุลซาน เชจู ฯลฯ) ถ้ายังไม่ตรง ส่งชื่อร้านและพื้นที่มาทางอีเมล เราจะตรวจสอบให้</p></details>
+<details><summary>ร้านของฉันไม่มีในรายการ</summary><p>เพิ่มเป็นร้านของคุณเองได้ เลือกแบบทุกสัปดาห์ เว้นสัปดาห์ หรือสัปดาห์ที่เท่าไรของเดือนวันอะไร เช่น อาทิตย์ที่ 2 และ 4 แล้วบันทึก</p></details>
+<details><summary>วันหยุดของร้านอาหารกรอกไม่ถูก</summary><p>เมื่อนำเข้าจากลิงก์ Naver Map หน้าข้อมูลร้านต้องระบุวันหยุดประจำไว้ เมื่อใช้ภาพหน้าจอ ให้ถ่ายให้เห็นข้อความเรื่องวันหยุดบนหน้าจอ แก้ไขข้อมูลได้ก่อนบันทึก</p></details>
+<details><summary>ไม่ได้รับการแจ้งเตือน</summary><p>ตรวจสอบว่าอนุญาตการแจ้งเตือนใน การตั้งค่า &gt; การแจ้งเตือน &gt; DontGoMart และเปิดการแจ้งเตือนวันหยุดในแอปแล้ว</p></details>
+<details><summary>วิดเจ็ตไม่อัปเดต</summary><p>เปิดแอปหนึ่งครั้งแล้ววิดเจ็ตจะรีเฟรช ถ้ายังไม่เปลี่ยน ให้ลบวิดเจ็ตแล้วเพิ่มใหม่</p></details>
+<details><summary>ทิปคืออะไร</summary><p>ทุกฟีเจอร์ของ DontGoMart ใช้ฟรี ทิปกาแฟ เค้ก และอาหารเป็นการสนับสนุนนักพัฒนา หลังให้ทิปจะเห็นคำขอบคุณและป้ายผู้สนับสนุนพร้อมจำนวนครั้ง</p></details>
+<details><summary>สอบถามเรื่องการชำระเงินหรือขอคืนเงินที่ไหน</summary><p>Apple เป็นผู้ดูแลการซื้อภายในแอป ขอคืนเงินได้ที่ reportaproblem.apple.com เรื่องอื่น ๆ ส่งอีเมลหาเราได้</p></details>
+<details><summary>ข้อมูลของฉันถูกจัดการอย่างไร</summary><p>ไม่มีบัญชี ไม่มีโฆษณาหรือเครื่องมือติดตาม และข้อความในภาพหน้าจออ่านบนอุปกรณ์เท่านั้น ดูรายละเอียดในนโยบายความเป็นส่วนตัวด้านล่าง</p></details></div>
+      <p class="contact">มีคำถามหรือไอเดีย ส่งมาที่ <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> ปกติเราตอบภายใน 1–2 วัน</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>เลิกเดินกลับบ้าน<br>เพราะร้านปิดได้แล้ว</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">ดาวน์โหลดฟรีบน App Store</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-      <a href="support.html">ช่วยเหลือ</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">ติดต่อเรา</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

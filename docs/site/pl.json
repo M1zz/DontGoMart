@@ -1,0 +1,167 @@
+{
+  "title": "DontGoMart: dni zamknięcia koreańskich hipermarketów i Costco",
+  "description": "Sprawdź, czy hipermarket albo Costco w Korei jest dziś otwarty, dostań przypomnienie przed obowiązkowym zamknięciem i śledź dni wolne restauracji.",
+  "hero": {
+    "headline": "Zanim pójdziesz na zakupy,\nsprawdź, czy jest otwarte",
+    "lead": "Po otwarciu aplikacji od razu widzisz, czy twoje sklepy są dziś otwarte. Przed każdym dniem zamknięcia przychodzi przypomnienie, więc już nie trafisz na zamknięte drzwi.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Wszystkie funkcje są darmowe. Bez konta i bez reklam."
+  },
+  "demo": {
+    "title": "Sprawdź na swoim sklepie",
+    "lead": "Wybierz sklep i od razu zobacz, czy jest dziś otwarty i kiedy następnym razem zamyka. Liczone według tych samych zasad co w aplikacji.",
+    "pick": "Wybierz sklep",
+    "marts": [
+      "Supermarket (zamknięte w niedziele)",
+      "Supermarket (zamknięte w środy)",
+      "Supermarket (Ulsan)",
+      "Supermarket (Czedżu)",
+      "Costco zwykłe",
+      "Costco Taegu",
+      "Costco Ilsan",
+      "Costco Ulsan"
+    ],
+    "question": "Czy mogę dziś jechać?",
+    "openToday": "Dziś otwarte",
+    "closedToday": "Dziś zamknięte",
+    "nextLabel": "Następny dzień zamknięcia",
+    "today": "Dziś",
+    "tomorrow": "Jutro",
+    "closed": "Zamknięte",
+    "prev": "Poprzedni miesiąc",
+    "next": "Następny miesiąc",
+    "note": "Zamknięcia w Seollal i Chuseok, własne sklepy, przypomnienia i widżety są w aplikacji."
+  },
+  "problem": {
+    "title": "Zdarzyło ci się przyjść z listą zakupów pod zamknięty sklep?",
+    "text": "Duże supermarkety w Korei muszą być zamknięte dwa dni w miesiącu, ale które, zależy od miejsca. Najczęściej druga i czwarta niedziela, gdzie indziej środa, a Ulsan i Czedżu mają własne zasady. W Costco zależy to od placówki. DontGoMart wylicza dni zamknięcia według zasad twoich sklepów i najpierw mówi, czy możesz iść dziś."
+  },
+  "features": [
+    {
+      "title": "Trafnie w każdym regionie",
+      "text": "Wybierz sklepy zamykane w niedzielę lub w środę albo regiony z własnym harmonogramem, jak Ulsan i Czedżu. Zwykłe placówki Costco oraz te w Taegu, Ilsanie i Ulsanie ustawia się osobno.\nWidać też zamknięcia w sam dzień Seollal i Chuseok, a obserwować można kilka sklepów naraz.",
+      "shot": "03-marts"
+    },
+    {
+      "title": "Sklep za rogiem i ulubione restauracje",
+      "text": "Jeśli sklepu nie ma na liście, dodaj go sam: co tydzień, co dwa tygodnie albo w które tygodnie miesiąca i w jaki dzień jest zamknięty.\nDla restauracji wklej link udostępniony z Naver Map albo wybierz zrzut ekranu jej strony, a stałe dni wolne uzupełnią się same. Tekst na zdjęciach jest odczytywany tylko na twoim urządzeniu.",
+      "shot": "04-pattern"
+    },
+    {
+      "title": "Przypomnienia i widżety, żeby nie zapomnieć",
+      "text": "Dostań przypomnienie 1, 2, 3 lub 7 dni wcześniej o wybranej godzinie, a dzień przed jeszcze jedno, że dziś dobry dzień na zakupy.\nWidżety na ekranie początkowym i ekranie blokady pokazują najbliższe zamknięcie, czy w tę niedzielę jest otwarte i najbliższe siedem dni twoich restauracji. Kalendarz pokazuje cały miesiąc.",
+      "shot": "02-calendar"
+    },
+    {
+      "title": "Udostępnij jedną kartą",
+      "text": "Zamień informację w kartę z kalendarzem na dwa tygodnie i wskazówką zakupową i wyślij na rodzinny czat. Są formaty na post i relację na Instagramie oraz krótkie wideo.",
+      "shot": "05-share"
+    }
+  ],
+  "steps": {
+    "title": "Zaczynasz w trzech krokach",
+    "items": [
+      {
+        "title": "Wybierz sklepy",
+        "text": "Włącz sklepy i regiony, w których robisz zakupy. Ile chcesz."
+      },
+      {
+        "title": "Włącz przypomnienia",
+        "text": "Wybierz, ile dni wcześniej i o której godzinie."
+      },
+      {
+        "title": "Dodaj widżet",
+        "text": "Sprawdzaj na ekranie początkowym lub ekranie blokady bez otwierania aplikacji."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Zasady zamknięcia według sklepu",
+    "rows": [
+      [
+        "Supermarket (zamknięte w niedziele)",
+        "2. i 4. niedziela · większość regionów"
+      ],
+      [
+        "Supermarket (zamknięte w środy)",
+        "2. i 4. środa · część Gyeonggi, Cheongju"
+      ],
+      [
+        "Supermarket (Ulsan)",
+        "2. środa, 4. niedziela"
+      ],
+      [
+        "Supermarket (Czedżu)",
+        "2. piątek, 4. sobota"
+      ],
+      [
+        "Costco zwykłe",
+        "2. i 4. niedziela"
+      ],
+      [
+        "Costco Taegu",
+        "2. i 4. poniedziałek · Taegu, Taegu Innovation"
+      ],
+      [
+        "Costco Ilsan",
+        "2. i 4. środa"
+      ],
+      [
+        "Costco Ulsan",
+        "2. środa, 4. niedziela"
+      ],
+      [
+        "Seollal, Chuseok",
+        "zamknięte w sam dzień święta"
+      ]
+    ],
+    "note": "Obowiązkowe dni zamknięcia ustalają władze lokalne i mogą się zmienić. Jeśli coś się nie zgadza, napisz do nas na adres poniżej."
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      {
+        "q": "Dni zamknięcia nie zgadzają się z rzeczywistością.",
+        "a": "Obowiązkowe dni zamknięcia zależą od lokalnych przepisów i różnią się między regionami. Sprawdź w Ustawieniach, czy wybrany jest właściwy typ sklepu (zamknięte w niedziele, w środy, Ulsan, Czedżu itd.). Jeśli nadal się nie zgadza, wyślij nam nazwę sklepu i okolicę, a sprawdzimy."
+      },
+      {
+        "q": "Mojego sklepu nie ma na liście.",
+        "a": "Dodaj go jako własny sklep. Wybierz co tydzień, co dwa tygodnie albo w które tygodnie miesiąca i w jaki dzień jest zamknięty, na przykład w drugą i czwartą niedzielę."
+      },
+      {
+        "q": "Dni wolne restauracji uzupełniły się źle.",
+        "a": "Przy imporcie z linku Naver Map strona restauracji musi podawać stałe dni wolne. Przy zrzucie ekranu zadbaj, żeby informacja o zamknięciu była widoczna. Wszystko możesz poprawić przed zapisaniem."
+      },
+      {
+        "q": "Nie dostaję przypomnień.",
+        "a": "Sprawdź, czy powiadomienia są dozwolone w Ustawienia > Powiadomienia > DontGoMart i czy przypomnienia są włączone w aplikacji."
+      },
+      {
+        "q": "Widżet się nie odświeża.",
+        "a": "Otwórz aplikację raz, a widżety się odświeżą. Jeśli to nie pomoże, usuń widżet i dodaj go ponownie."
+      },
+      {
+        "q": "Czym są napiwki?",
+        "a": "Wszystkie funkcje DontGoMart są darmowe. Kawa, ciasto i obiad to napiwki dla twórcy. Potem zobaczysz podziękowanie i odznakę z liczbą przesłanych napiwków."
+      },
+      {
+        "q": "Gdzie pytać o płatności lub zwroty?",
+        "a": "Zakupy w aplikacji obsługuje Apple, więc o zwrot prosisz na reportaproblem.apple.com. W innych sprawach napisz do nas."
+      },
+      {
+        "q": "Jak są traktowane moje dane?",
+        "a": "Bez kont, reklam i narzędzi śledzących, a tekst na zrzutach ekranu jest odczytywany tylko na twoim urządzeniu. Szczegóły w polityce prywatności poniżej."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Koniec z zawracaniem\nspod zamkniętych drzwi",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Języki",
+    "privacy": "Polityka prywatności",
+    "contact": "Pytania lub pomysły? Napisz na {email}. Zwykle odpowiadamy w ciągu dnia lub dwóch."
+  }
+}

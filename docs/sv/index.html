@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DontGoMart - Påminnelser om butikers stängningsdagar</title>
-  <meta name="description" content="DontGoMart samlar de lagstadgade stängningsdagarna för stora koreanska stormarknader och Costco samt lediga dagar för dina favoritrestauranger och påminner dig i god tid.">
-  <meta property="og:title" content="DontGoMart - Påminnelser om butikers stängningsdagar">
-  <meta property="og:description" content="DontGoMart samlar de lagstadgade stängningsdagarna för stora koreanska stormarknader och Costco samt lediga dagar för dina favoritrestauranger och påminner dig i god tid.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/app-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DontGoMart: stängningsdagar för koreanska stormarknader och Costco</title>
+  <meta name="description" content="Se om din stormarknad eller ditt Costco i Korea har öppet i dag, få påminnelse före stängningsdagar och håll koll på restaurangernas lediga dagar.">
+  <meta name="theme-color" content="#D32F2F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6450387984">
   <link rel="canonical" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/DontGoMart/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/DontGoMart/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/DontGoMart/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/DontGoMart/ja/">
   <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/DontGoMart/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/DontGoMart/zh-hans/">
@@ -35,375 +33,150 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/DontGoMart/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/DontGoMart/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/DontGoMart/">
-  <link rel="icon" type="image/png" href="../app-icon.png">
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --primary: #FF3B30;
-      --primary-dark: #D32F2F;
-      --bg: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --text: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --card-bg: #ffffff;
-      --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      --divider: #d2d2d7;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --bg-secondary: #1c1c1e;
-        --text: #f5f5f7;
-        --text-secondary: #a1a1a6;
-        --card-bg: #1c1c1e;
-        --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
-        --divider: #38383a;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Header ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
-    }
-
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .logo img {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-    }
-
-    .logo span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .lang-toggle {
-      display: flex;
-      border: 1px solid var(--divider);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lang-toggle a {
-      padding: 6px 14px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-toggle a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* ===== Hero ===== */
-    .hero {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px 60px;
-      text-align: center;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 40px;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .app-store-badge img {
-      height: 54px;
-    }
-
-    /* ===== Features ===== */
-    .features {
-      background: var(--bg-secondary);
-      padding: 80px 20px;
-    }
-
-    .features-inner {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 32px 24px;
-      box-shadow: var(--card-shadow);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ===== CTA ===== */
-    .cta {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-
-    .cta p {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 32px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--divider);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    footer a:hover {
-      color: var(--primary);
-    }
-
-    .footer-links {
-      margin-bottom: 12px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 20px 40px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .features { padding: 48px 20px; }
-      .features h2 { font-size: 1.5rem; margin-bottom: 32px; }
-      .feature-grid { grid-template-columns: 1fr; gap: 16px; }
-      .feature-card { padding: 24px 20px; }
-      .cta { padding: 48px 20px; }
-      .cta h2 { font-size: 1.5rem; }
-    }
-      .lang-toggle a { display: inline-block; text-decoration: none; padding: 6px 9px; }
-    .lang-toggle { flex-wrap: wrap; justify-content: flex-end; }
-    .header-inner { flex-wrap: wrap; gap: 8px; }
-    .lang-toggle a:hover { text-decoration: none; }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DontGoMart: stängningsdagar för koreanska stormarknader och Costco">
+  <meta property="og:description" content="Se om din stormarknad eller ditt Costco i Korea har öppet i dag, få påminnelse före stängningsdagar och håll koll på restaurangernas lediga dagar.">
+  <meta property="og:url" content="https://m1zz.github.io/DontGoMart/sv/">
+  <meta property="og:image" content="https://m1zz.github.io/DontGoMart/img/sv/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#D32F2F}@media (prefers-color-scheme:dark){:root{--accent:#FF6B61}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="../app-icon.png" alt="DontGoMart">
-        <span>DontGoMart</span>
-      </a>
-      <nav class="lang-toggle" aria-label="Language">
-        <a href="../index.html" hreflang="ko" lang="ko" title="한국어">KO</a>
-        <a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a>
-        <a href="../ja/index.html" hreflang="ja" lang="ja" title="日本語">JA</a>
-        <a href="../ru/index.html" hreflang="ru" lang="ru" title="Русский">RU</a>
-        <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文">简</a>
-        <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" title="繁體中文">繁</a>
-        <a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a>
-        <a href="../de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-        <a href="../fr/index.html" hreflang="fr" lang="fr" title="Français">FR</a>
-        <a href="../it/index.html" hreflang="it" lang="it" title="Italiano">IT</a>
-        <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a>
-        <a href="../th/index.html" hreflang="th" lang="th" title="ไทย">TH</a>
-        <a href="../vi/index.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a>
-        <a href="../cs/index.html" hreflang="cs" lang="cs" title="Čeština">CS</a>
-        <a href="../da/index.html" hreflang="da" lang="da" title="Dansk">DA</a>
-        <a href="../el/index.html" hreflang="el" lang="el" title="Ελληνικά">EL</a>
-        <a href="../fi/index.html" hreflang="fi" lang="fi" title="Suomi">FI</a>
-        <a href="../id/index.html" hreflang="id" lang="id" title="Indonesia">ID</a>
-        <a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk bokmål">NB</a>
-        <a href="../nl/index.html" hreflang="nl" lang="nl" title="Nederlands">NL</a>
-        <a href="../pl/index.html" hreflang="pl" lang="pl" title="Polski">PL</a>
-        <a href="../sv/index.html" hreflang="sv" lang="sv" title="Svenska" class="active" aria-current="true">SV</a>
-        <a href="../tr/index.html" hreflang="tr" lang="tr" title="Türkçe">TR</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Hoppa till innehåll</a>
+  <header class="bar">
+    <a class="brand" href="../sv/"><img src="../icon.png" alt="" width="32" height="32">DontGoMart</a>
+    <a class="lang-link" href="#languages">Språk</a>
   </header>
 
-  <section class="hero">
-    <img src="../app-icon.png" alt="DontGoMart" class="hero-icon">
-    <h1>Innan du åker,<br>kolla om butiken har öppet</h1>
-    <p>DontGoMart visar de lagstadgade stängningsdagarna för stora koreanska stormarknader och Costco och påminner dig i god tid. Du kan också hantera lediga dagar för dina favoritrestauranger.</p>
-    <a href="https://apps.apple.com/se/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/sv-se?size=250x83" alt="Hämta från App Store">
-    </a>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <h2>Huvudfunktioner</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F6D2;</span>
-          <h3>Se med en blick om det är öppet i dag</h3>
-          <p>När du öppnar appen ser du först om din valda butik har öppet i dag. Du ser också hur många dagar det är till nästa stängningsdag och en lista över kommande stängningsdagar.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F5FA;</span>
-          <h3>Anpassad efter stängningsdagar i olika områden</h3>
-          <p>Välj butiker som stänger på söndagar eller onsdagar, eller områden med andra stängningsdagar som Ulsan och Jeju. Costco i Daegu, Ilsan och Ulsan ställs in var för sig, och stängningsdagar vid Seollal och Chuseok visas också.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x2795;</span>
-          <h3>Lägg till butiker i ditt närområde</h3>
-          <p>Saknas en butik i listan kan du registrera den själv genom att välja vilken vecka och vilken veckodag den är stängd, till exempel andra och fjärde söndagen.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F35C;</span>
-          <h3>Även dina favoritrestauranger</h3>
-          <p>Klistra in en länk som delats från Naver Maps eller välj en skärmavbild av restaurangens infosida, så fylls de fasta lediga dagarna i automatiskt. Text i foton läses bara på din enhet.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F514;</span>
-          <h3>Påminnelser som passar din vardag</h3>
-          <p>Välj att få en avisering 1, 2, 3 eller 7 dagar före stängning, vid den tid som passar dig. Det finns också ett alternativ som dagen före påminner dig om att i dag är en bra dag att handla.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4F1;</span>
-          <h3>Widgets för hemskärm och låsskärm</h3>
-          <p>Utan att öppna appen ser du nedräkningen till närmaste stängningsdag, om din butik har öppet den här söndagen och restaurangernas lediga dagar de kommande 7 dagarna.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">&#x1F4C5;</span>
-          <h3>Kalender och delning</h3>
-          <p>Se stängningsdagarna för en hel månad i kalendern och dela dem som ett kort med tvåveckorskalender eller som en kort video.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Innan du åker och handlar,<br>kolla att det är öppet</h1>
+        <p class="lead">När du öppnar appen ser du först om dina butiker har öppet i dag. Före varje stängningsdag får du en påminnelse, så att du aldrig står vid en låst dörr igen.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6450387984">Hämta gratis på App Store</a><a class="try" href="#try">Testa med din butik ↓</a></div>
+        <p class="muted small">Alla funktioner är gratis. Inget konto, ingen reklam.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/sv/01-main.jpg" alt="Innan du åker och handlar, kolla att det är öppet" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="cta">
-    <h2>Alla funktioner är gratis</h2>
-    <p>Aldrig mer en onödig resa till en stängd butik.</p>
-    <a href="https://apps.apple.com/se/app/id6450387984" class="app-store-badge" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/sv-se?size=250x83" alt="Hämta från App Store">
-    </a>
-  </section>
+
+    <section class="reveal" id="try">
+      <h2>Testa med din butik</h2>
+      <p class="muted">Välj en butik och se direkt om den har öppet i dag och när den stänger nästa gång. Beräknat med samma regler som i appen.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Testa med din butik&quot;, &quot;lead&quot;: &quot;Välj en butik och se direkt om den har öppet i dag och när den stänger nästa gång. Beräknat med samma regler som i appen.&quot;, &quot;pick&quot;: &quot;Välj butik&quot;, &quot;marts&quot;: [&quot;Stormarknad (stängt på söndagar)&quot;, &quot;Stormarknad (stängt på onsdagar)&quot;, &quot;Stormarknad (Ulsan)&quot;, &quot;Stormarknad (Jeju)&quot;, &quot;Costco vanlig&quot;, &quot;Costco Daegu&quot;, &quot;Costco Ilsan&quot;, &quot;Costco Ulsan&quot;], &quot;question&quot;: &quot;Kan jag åka i dag?&quot;, &quot;openToday&quot;: &quot;Öppet i dag&quot;, &quot;closedToday&quot;: &quot;Stängt i dag&quot;, &quot;nextLabel&quot;: &quot;Nästa stängningsdag&quot;, &quot;today&quot;: &quot;I dag&quot;, &quot;tomorrow&quot;: &quot;I morgon&quot;, &quot;closed&quot;: &quot;Stängt&quot;, &quot;prev&quot;: &quot;Föregående månad&quot;, &quot;next&quot;: &quot;Nästa månad&quot;, &quot;note&quot;: &quot;Stängning på Seollal och Chuseok, egna butiker, påminnelser och widgetar finns i appen.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Har du stått med inköpslistan framför en stängd butik?</h2>
+      <p>Stora stormarknader i Korea måste hålla stängt två dagar i månaden, men vilka beror på var du bor. Oftast andra och fjärde söndagen, på andra ställen onsdag, och Ulsan och Jeju har egna regler. Hos Costco beror det på varuhuset. DontGoMart räknar ut stängningsdagarna enligt dina butikers regler och säger först om du kan åka i dag.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Rätt i varje region</h2>
+        <p>Välj butiker som stänger på söndagar eller onsdagar, eller regioner med eget schema som Ulsan och Jeju. Vanliga Costco-varuhus och de i Daegu, Ilsan och Ulsan ställs in var för sig.<br>Stängning på själva Seollal och Chuseok visas också, och du kan följa flera butiker samtidigt.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/03-marts.jpg" alt="Rätt i varje region" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Närbutiken och stamrestaurangerna</h2>
+        <p>Saknas en butik i listan lägger du till den själv: varje vecka, varannan vecka eller vilka veckor i månaden och vilken dag den stänger.<br>För en restaurang klistrar du in en länk delad från Naver Map eller väljer en skärmbild av infosidan, så fylls de fasta lediga dagarna i automatiskt. Text på bilder läses bara på din enhet.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/04-pattern.jpg" alt="Närbutiken och stamrestaurangerna" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Påminnelser och widgetar så att du inte glömmer</h2>
+        <p>Få en påminnelse 1, 2, 3 eller 7 dagar innan vid den tid du väljer, och dagen före en till om att i dag är en bra dag att handla.<br>Widgetar på hemskärmen och låsskärmen visar nästa stängningsdag, om det är öppet den här söndagen och de kommande sju dagarna för dina restauranger. Kalendern visar en hel månad.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/02-calendar.jpg" alt="Påminnelser och widgetar så att du inte glömmer" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Dela på ett kort</h2>
+        <p>Gör om nyheten till ett kort med en kalender för två veckor och ett handlingstips och skicka det till familjechatten. Format för Instagram-inlägg och -story, och kort video.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/05-share.jpg" alt="Dela på ett kort" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom igång i tre steg</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Välj butiker</h3><p>Slå på butikerna och regionerna där du handlar. Så många du vill.</p></li>
+<li class="card"><span class="n">2</span><h3>Slå på påminnelser</h3><p>Välj hur många dagar innan och vilken tid.</p></li>
+<li class="card"><span class="n">3</span><h3>Lägg till en widget</h3><p>Kolla från hemskärmen eller låsskärmen utan att öppna appen.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Stängningsregler per butik</h2>
+      <div class="card table">
+        <dl><div><dt>Stormarknad (stängt på söndagar)</dt><dd>2:a och 4:e söndagen · de flesta regioner</dd></div><div><dt>Stormarknad (stängt på onsdagar)</dt><dd>2:a och 4:e onsdagen · delar av Gyeonggi, Cheongju</dd></div><div><dt>Stormarknad (Ulsan)</dt><dd>2:a onsdagen, 4:e söndagen</dd></div><div><dt>Stormarknad (Jeju)</dt><dd>2:a fredagen, 4:e lördagen</dd></div><div><dt>Costco vanlig</dt><dd>2:a och 4:e söndagen</dd></div><div><dt>Costco Daegu</dt><dd>2:a och 4:e måndagen · Daegu, Daegu Innovation</dd></div><div><dt>Costco Ilsan</dt><dd>2:a och 4:e onsdagen</dd></div><div><dt>Costco Ulsan</dt><dd>2:a onsdagen, 4:e söndagen</dd></div><div><dt>Seollal, Chuseok</dt><dd>stängt på själva dagen</dd></div></dl>
+      </div>
+      <p class="muted">Lagstadgade stängningsdagar bestäms av lokala myndigheter och kan ändras. Stämmer något inte, mejla adressen nedan.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Vanliga frågor</h2>
+      <div class="faq"><details><summary>Stängningsdagarna stämmer inte.</summary><p>Lagstadgade stängningsdagar styrs av lokala föreskrifter och skiljer sig mellan regioner. Kontrollera i Inställningar att du har valt rätt butikstyp (stängt på söndagar, onsdagar, Ulsan, Jeju osv.). Stämmer det fortfarande inte, skicka oss butikens namn och område så tittar vi på det.</p></details>
+<details><summary>Min butik finns inte i listan.</summary><p>Lägg till den som egen butik. Välj varje vecka, varannan vecka eller vilka veckor i månaden och vilken dag den stänger, till exempel andra och fjärde söndagen.</p></details>
+<details><summary>En restaurangs lediga dagar fylldes i fel.</summary><p>Vid import från en Naver Map-länk måste restaurangens sida ange de fasta lediga dagarna. Vid skärmbild ska texten om stängning synas. Du kan rätta allt innan du sparar.</p></details>
+<details><summary>Jag får inga påminnelser.</summary><p>Kontrollera att notiser är tillåtna under Inställningar &gt; Notiser &gt; DontGoMart och att påminnelserna är påslagna i appen.</p></details>
+<details><summary>Widgeten uppdateras inte.</summary><p>Öppna appen en gång så uppdateras widgetarna. Hjälper inte det, ta bort widgeten och lägg till den igen.</p></details>
+<details><summary>Vad är dricks?</summary><p>Alla funktioner i DontGoMart är gratis. Kaffe, tårta och måltid är dricks till utvecklaren. Efteråt får du ett tack och ett märke som visar hur många gånger du har gett.</p></details>
+<details><summary>Vart vänder jag mig om betalning eller återbetalning?</summary><p>Apple hanterar köp i appen, så återbetalning begär du på reportaproblem.apple.com. För allt annat, mejla oss.</p></details>
+<details><summary>Hur hanteras mina uppgifter?</summary><p>Inga konton, ingen reklam och inga spårningsverktyg, och text på skärmbilder läses bara på din enhet. Läs mer i integritetspolicyn nedan.</p></details></div>
+      <p class="contact">Frågor eller idéer? Mejla <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a>. Vi svarar oftast inom en dag eller två.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Slut på att vända<br>vid en stängd butik</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6450387984">Hämta gratis på App Store</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="privacy.html">Integritetspolicy</a>
-      <a href="support.html">Support</a>
-      <a href="mailto:hyunho.lee.1993@gmail.com">Kontakta oss</a>
-    </div>
-    <p>&copy; 2026 DontGoMart</p>
+    <nav id="languages" class="langs" aria-label="Språk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv" aria-current="page">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Integritetspolicy</a> · <a href="mailto:hyunho.lee.1993@gmail.com">hyunho.lee.1993@gmail.com</a> · © 2026 DontGoMart</p>
   </footer>
 
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>
