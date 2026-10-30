@@ -86,9 +86,7 @@ struct CustomMartEditView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") {
-                        dismiss()
-                    }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                 }
             }
             .sheet(isPresented: $showingPatternEditor) {
@@ -236,10 +234,10 @@ struct PatternEditorView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("추가") { savePatterns() }
+                    Button { savePatterns() } label: { Label("추가", systemImage: "checkmark") }
                         .disabled(!isValid)
                 }
             }

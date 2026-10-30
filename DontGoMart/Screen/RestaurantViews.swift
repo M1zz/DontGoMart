@@ -202,7 +202,7 @@ struct RestaurantListView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("완료") { dismiss() }
+                    Button { dismiss() } label: { Label("완료", systemImage: "checkmark") }
                 }
                 ToolbarItem(placement: .primaryAction) {
                     Button {
@@ -309,10 +309,12 @@ struct RestaurantEditView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button(editing == nil ? LocalizedStringKey("추가") : LocalizedStringKey("저장"), action: save)
+                    Button(action: save) {
+                        Label(editing == nil ? LocalizedStringKey("추가") : LocalizedStringKey("저장"), systemImage: "checkmark")
+                    }
                         .disabled(name.trimmingCharacters(in: .whitespaces).isEmpty || patterns.isEmpty)
                 }
             }
