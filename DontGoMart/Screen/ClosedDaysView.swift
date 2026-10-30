@@ -8,6 +8,7 @@
 import SwiftUI
 import WidgetKit
 import StoreKit
+import LeeoKit
 
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
@@ -31,8 +32,72 @@ struct ClosedDaysView: View {
     @StateObject private var tipStore = CoffeeTipStore.shared
     @StateObject private var announcements = AnnouncementManager.shared
     @Environment(\.scenePhase) private var scenePhase
+    /// 아이폰 듀오를 폈는가. 펴면 휴무일 캘린더가 결과 쪽 판에 늘 서 있다.
+    @Environment(\.foldLayout) private var fold
 
     var body: some View {
+        // 아이폰 듀오를 펴면 고르는 쪽(가로면 왼쪽, 세로면 아래)에 지금 화면, 결과 쪽(오른쪽, 위)에 휴무일 캘린더.
+        // 접혀 있거나 보통 아이폰이면 고르는 쪽만 그린다. 지금 화면 그대로다.
+        FoldSplitView {
+            mainNavigation
+        } result: {
+            foldCalendarPane
+        }
+        .sheet(isPresented: $isShowingSettings) {
+            SettingsView(isShowingSettings: $isShowingSettings)
+        }
+        .sheet(isPresented: $isShowingCalendar) {
+            calendarSheet
+        }
+        .sheet(isPresented: $isShowingShareCard) {
+            if let payload = sharePayload {
+                ShareCardSheet(payload: payload, messageText: shareText)
+                    .presentationDetents([.large])
+            }
+        }
+        .task { await announcements.refresh() }
+        #if DEBUG
+        // 스토어 스크린샷용: 탭 없이 공유 카드 화면을 바로 연다 (디버그 빌드 전용)
+        .task {
+            if ProcessInfo.processInfo.arguments.contains("-ScreenshotShareCard") {
+                isShowingShareCard = true
+            }
+            // -ScreenshotScreen calendar | settings | pattern : 스크린샷 스크립트가 화면을 바로 연다
+            if UserDefaults.standard.string(forKey: "ScreenshotScreen") != nil,
+               martSelection.selectedMartTypes.isEmpty {
+                martSelection.setSelected(true, for: .normal(type: .sunday))
+            }
+            switch UserDefaults.standard.string(forKey: "ScreenshotScreen") {
+            case "calendar": isShowingCalendar = true
+            case "settings", "pattern": isShowingSettings = true
+            case "share": isShowingShareCard = true
+            default: break
+            }
+        }
+        #endif
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active {
+                Task { await announcements.refresh() }
+            }
+        }
+        .onOpenURL { url in
+            // 위젯 탭 딥링크 → 캘린더 열기
+            if url.scheme == Utillity.deepLinkScheme, url.host == "calendar" {
+                isShowingSettings = false
+                isShowingCalendar = true
+            }
+        }
+        .alert("후원 안내", isPresented: tipMessagePresented) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text(tipStore.userMessage ?? "")
+        }
+    }
+
+    // MARK: - 아이폰 듀오
+
+    /// 지금 화면 그대로(고르는 쪽). 축하 연출도 이 판 안에 둔다. 창 가운데에 두면 펼친 화면에서 접힌 선 위에 선다.
+    private var mainNavigation: some View {
         NavigationStack {
             mainScrollView
                 .navigationTitle("")
@@ -121,55 +186,6 @@ struct ClosedDaysView: View {
                 .animation(.spring(duration: 0.4), value: closingSoonBanner)
                 .animation(.spring(duration: 0.4), value: announcements.current)
         }
-        .sheet(isPresented: $isShowingSettings) {
-            SettingsView(isShowingSettings: $isShowingSettings)
-        }
-        .sheet(isPresented: $isShowingCalendar) {
-            calendarSheet
-        }
-        .sheet(isPresented: $isShowingShareCard) {
-            if let payload = sharePayload {
-                ShareCardSheet(payload: payload, messageText: shareText)
-                    .presentationDetents([.large])
-            }
-        }
-        .task { await announcements.refresh() }
-        #if DEBUG
-        // 스토어 스크린샷용: 탭 없이 공유 카드 화면을 바로 연다 (디버그 빌드 전용)
-        .task {
-            if ProcessInfo.processInfo.arguments.contains("-ScreenshotShareCard") {
-                isShowingShareCard = true
-            }
-            // -ScreenshotScreen calendar | settings | pattern : 스크린샷 스크립트가 화면을 바로 연다
-            if UserDefaults.standard.string(forKey: "ScreenshotScreen") != nil,
-               martSelection.selectedMartTypes.isEmpty {
-                martSelection.setSelected(true, for: .normal(type: .sunday))
-            }
-            switch UserDefaults.standard.string(forKey: "ScreenshotScreen") {
-            case "calendar": isShowingCalendar = true
-            case "settings", "pattern": isShowingSettings = true
-            case "share": isShowingShareCard = true
-            default: break
-            }
-        }
-        #endif
-        .onChange(of: scenePhase) { _, phase in
-            if phase == .active {
-                Task { await announcements.refresh() }
-            }
-        }
-        .onOpenURL { url in
-            // 위젯 탭 딥링크 → 캘린더 열기
-            if url.scheme == Utillity.deepLinkScheme, url.host == "calendar" {
-                isShowingSettings = false
-                isShowingCalendar = true
-            }
-        }
-        .alert("후원 안내", isPresented: tipMessagePresented) {
-            Button("확인", role: .cancel) {}
-        } message: {
-            Text(tipStore.userMessage ?? "")
-        }
         // 후원자 감사 리마인더 — 휴무일에 가끔(1년에 ~3번) '기부의 감사함을 잊지 않았다' 축하
         .overlay {
             if isShowingSupporterThanks {
@@ -189,6 +205,17 @@ struct ClosedDaysView: View {
         }
         // 메인 화면 커피 카드에서 후원했을 때의 감사 연출 (콘페티 + 감사 카드)
         .tipCelebrationOverlay()
+    }
+
+    /// 펼친 화면의 결과 쪽: 시트로 열던 휴무일 캘린더를 늘 세워 둔다. 고른 달은 시트와 같이 쓴다.
+    private var foldCalendarPane: some View {
+        NavigationStack {
+            ClosedDayCalendarView(currentDate: $currentDate)
+                .navigationTitle("휴무일 캘린더")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+        // 이 판 안에서는 접히지 않은 화면처럼 선다.
+        .environment(\.foldLayout, .single)
     }
 
     /// 배너 등장 — 동작 줄이기를 켜면 미끄러지지 않고 나타나기만 한다
@@ -221,7 +248,10 @@ struct ClosedDaysView: View {
                 }
                 nextClosedDateCard
                 RestaurantWeekCard()
-                calendarButton
+                // 펼친 화면에서는 캘린더가 결과 쪽 판에 이미 서 있다.
+                if !fold.isUnfolded {
+                    calendarButton
+                }
                 upcomingClosedDatesCard
             }
             .padding(.vertical)
@@ -258,8 +288,10 @@ struct ClosedDaysView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("완료") {
+                        Button {
                             isShowingCalendar = false
+                        } label: {
+                            Label("완료", systemImage: "checkmark")
                         }
                     }
                 }

@@ -65,9 +65,11 @@ struct SettingsView: View {
             .navigationTitle("매장선택")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("완료") {
+                    Button {
                         WidgetManager.shared.updateWidget()
                         isShowingSettings = false
+                    } label: {
+                        Label("완료", systemImage: "checkmark")
                     }
                 }
             }
