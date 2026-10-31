@@ -36,9 +36,9 @@ struct DontGoMartApp: App {
                         await setupSmartNotifications()
                     }
 
-                    // 과거 Pro 구매자(후원자) 여부 확인 → 후원자 배지 표시
+                    // 옛 후원자 확인 → LeeoKit 팁 장부로 옮기고, 상품 · 응원 점수를 맞춘다
                     Task {
-                        await SupporterManager.refresh()
+                        await DontGoMartTips.start()
                     }
 
                     // 익명 사용 스냅샷 (피드백과 같은 CloudKit 허브로, 12시간에 한 번)

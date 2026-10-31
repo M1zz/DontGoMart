@@ -18,12 +18,9 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.notificationMinute, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationMinute: Int = 0
     @AppStorage(AppStorageKeys.beforeDayNotificationEnabled, store: UserDefaults(suiteName: Utillity.appGroupId)) var beforeDayNotificationEnabled: Bool = true
     @AppStorage(AppStorageKeys.notificationLeadDays, store: UserDefaults(suiteName: Utillity.appGroupId)) var notificationLeadDays: Int = NotificationManager.defaultLeadDays
-    @AppStorage(AppStorageKeys.isLegacySupporter) var isSupporter: Bool = false
-    @AppStorage(AppStorageKeys.tipCount) var tipCount: Int = 0
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var customMartManager = CustomMartManager.shared
-    @StateObject private var tipStore = CoffeeTipStore.shared
 
     private let notificationManager = NotificationManager.shared
     @State private var showingPermissionAlert = false
@@ -38,9 +35,6 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
-                if isSupporter {
-                    supporterSection
-                }
                 martSelectionSection
                 customMartSection
                 notificationSection
@@ -81,9 +75,6 @@ struct SettingsView: View {
                 Task {
                     await checkAndSyncNotificationStatus()
                 }
-                Task {
-                    await tipStore.loadProductsIfNeeded()
-                }
             }
             .background(
                 NotificationPermissionAlert(isPresented: $showingPermissionAlert)
@@ -91,141 +82,19 @@ struct SettingsView: View {
             .sheet(isPresented: $showingCustomMartEditor) {
                 CustomMartEditView(editingMart: editingCustomMart)
             }
-            .alert("후원 안내", isPresented: tipMessagePresented) {
-                Button("확인", role: .cancel) {}
-            } message: {
-                Text(tipStore.userMessage ?? "")
-            }
-        }
-        // 설정 시트에서 후원했을 때의 감사 연출 (시트가 메인 화면을 덮으므로 여기에도 부착)
-        .tipCelebrationOverlay()
-    }
-
-    /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
-    private var tipMessagePresented: Binding<Bool> {
-        Binding(
-            get: { tipStore.userMessage != nil },
-            set: { if !$0 { tipStore.userMessage = nil } }
-        )
-    }
-
-    // MARK: - Supporter Section (커피 후원자 감사 배지)
-
-    private var supporterSection: some View {
-        Section {
-            HStack(spacing: 12) {
-                Image(systemName: "cup.and.saucer.fill")
-                    .font(.title2)
-                    .foregroundColor(.brown)
-                VStack(alignment: .leading, spacing: 2) {
-                    HStack(spacing: 6) {
-                        Text("후원자")
-                            .font(.subheadline.bold())
-                        if tipCount > 0 {
-                            Text("☕️ ×\(tipCount)")
-                                .font(.caption.bold())
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 2)
-                                .background(Capsule().fill(Color.brown.opacity(0.15)))
-                        }
-                    }
-                    Text("앱을 응원해주셔서 감사합니다 ☕️")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-                Spacer()
-            }
-            .padding(.vertical, 4)
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel(Text("후원자. 지금까지 커피 \(tipCount)잔. 앱을 응원해주셔서 감사합니다."))
         }
     }
 
-    // MARK: - Support Section (팁 후원 — 소모성이라 여러 번 가능)
+    // MARK: - Support Section (팁 — 리이오의 다른 앱과 같은 LeeoKit 팁 화면)
 
+    /// 낸 사람에게는 줄에 후원자 배지(응원 단계 · 점수)가 선다. 상품을 못 불러오면 줄이 서지 않는다.
     private var supportSection: some View {
         Section(
             header: Text("응원하기"),
             footer: Text("모든 기능은 계속 무료예요. 후원은 순수한 응원이며, 몇 번이든 보낼 수 있어요.")
         ) {
-            switch tipStore.loadState {
-            case .loaded:
-                ForEach(tipStore.tipProducts, id: \.id) { product in
-                    tipRow(for: product)
-                }
-            case .loading:
-                HStack(spacing: 8) {
-                    ProgressView()
-                    Text("후원 상품을 불러오는 중이에요")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-            case .failed:
-                Button {
-                    Task { await tipStore.loadProductsIfNeeded() }
-                } label: {
-                    Label("후원 상품을 불러오지 못했어요. 다시 시도", systemImage: "arrow.clockwise")
-                        .font(.caption)
-                }
-                .accessibilityHint(Text("후원 상품 목록을 다시 불러옵니다"))
-            }
+            LeeoTipJarLink<DontGoMartSpec>(tipJar: DontGoMartTips.jar, systemImage: "cup.and.saucer.fill")
         }
-    }
-
-    private func tipRow(for product: Product) -> some View {
-        Button(action: {
-            Task { await tipStore.purchase(product) }
-        }) {
-            HStack(spacing: 12) {
-                Text(tipEmoji(for: product.id))
-                    .font(.title2)
-                    .accessibilityHidden(true)
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(tipTitle(for: product))
-                        .font(.subheadline.bold())
-                        .foregroundColor(.primary)
-                    Text(tipDescription(for: product))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-                Spacer()
-                if tipStore.isPurchasing {
-                    ProgressView()
-                } else {
-                    Text(product.displayPrice)
-                        .font(.subheadline.bold())
-                        .foregroundColor(.brown)
-                }
-            }
-            .padding(.vertical, 4)
-        }
-        .disabled(tipStore.isPurchasing)
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text("\(tipTitle(for: product)), \(product.displayPrice)"))
-        .accessibilityHint(Text("개발자에게 후원합니다"))
-        .accessibilityAddTraits(.isButton)
-    }
-
-    private func tipEmoji(for productID: String) -> String {
-        SupporterManager.emoji(for: productID)
-    }
-
-    /// ASC 메타데이터가 비었거나 제품 ID 그대로면 로컬 이름으로 대체한다
-    /// (스토어 설정 실수로 사용자에게 원시 ID 가 노출되지 않도록).
-    private func tipTitle(for product: Product) -> String {
-        let name = product.displayName
-        if !name.isEmpty, name != product.id { return name }
-        switch product.id {
-        case "com.dontgomart.tip.cake": return "케이크 한 조각"
-        case "com.dontgomart.tip.meal": return "든든한 한 끼"
-        default: return "커피 한 잔"
-        }
-    }
-
-    private func tipDescription(for product: Product) -> String {
-        let description = product.description
-        if !description.isEmpty, description != product.id { return description }
-        return "개발자에게 보내는 순수한 응원이에요"
     }
 
     // MARK: - Mart Selection Section

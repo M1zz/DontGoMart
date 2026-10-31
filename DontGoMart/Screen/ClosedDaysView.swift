@@ -8,13 +8,15 @@
 import SwiftUI
 import WidgetKit
 import StoreKit
+import LeeoKit
 
 struct ClosedDaysView: View {
     @State var currentDate: Date = Date()
     @State private var isShowingSettings = false
     @State private var isShowingCalendar = false
     @State private var isShowingShareCard = false
-    @State private var isTipCardDismissed = false
+    /// 후원자 감사 리마인더의 '한 번 더 응원하기' 가 여는 팁 화면
+    @State private var isShowingTipJar = false
     /// 공유 버튼 축소 여부 — 진입 직후엔 문구로 어필하고, 잠시 후 확성기 아이콘만 남긴다
     @State private var isShareButtonCollapsed = false
     /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) 표시 여부
@@ -28,7 +30,6 @@ struct ClosedDaysView: View {
     @ScaledMetric(relativeTo: .title) private var dateBlockHeight: CGFloat = 68
 
     @StateObject private var martSelection = MartSelectionManager.shared
-    @StateObject private var tipStore = CoffeeTipStore.shared
     @StateObject private var announcements = AnnouncementManager.shared
     @Environment(\.scenePhase) private var scenePhase
 
@@ -165,11 +166,6 @@ struct ClosedDaysView: View {
                 isShowingCalendar = true
             }
         }
-        .alert("후원 안내", isPresented: tipMessagePresented) {
-            Button("확인", role: .cancel) {}
-        } message: {
-            Text(tipStore.userMessage ?? "")
-        }
         // 후원자 감사 리마인더 — 휴무일에 가끔(1년에 ~3번) '기부의 감사함을 잊지 않았다' 축하
         .overlay {
             if isShowingSupporterThanks {
@@ -177,18 +173,24 @@ struct ClosedDaysView: View {
                     mode: .supporterReminder,
                     showsConfetti: !reduceMotion,
                     onDismiss: dismissSupporterThanks,
-                    onTipAgain: tipStore.coffeeTip == nil ? nil : {
+                    onTipAgain: {
                         dismissSupporterThanks()
-                        if let coffee = tipStore.coffeeTip {
-                            Task { await tipStore.purchase(coffee) }
-                        }
+                        isShowingTipJar = true
                     }
                 )
                 .transition(.opacity)
             }
         }
-        // 메인 화면 커피 카드에서 후원했을 때의 감사 연출 (콘페티 + 감사 카드)
-        .tipCelebrationOverlay()
+        .sheet(isPresented: $isShowingTipJar) {
+            NavigationStack {
+                LeeoTipJarView<DontGoMartSpec>(tipJar: DontGoMartTips.jar)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("닫기") { isShowingTipJar = false }
+                        }
+                    }
+            }
+        }
     }
 
     /// 배너 등장 — 동작 줄이기를 켜면 미끄러지지 않고 나타나기만 한다
@@ -202,23 +204,16 @@ struct ClosedDaysView: View {
         }
     }
 
-    /// 구매 실패·승인 대기 알림 표시 여부 (닫으면 메시지를 비운다)
-    private var tipMessagePresented: Binding<Bool> {
-        Binding(
-            get: { tipStore.userMessage != nil },
-            set: { if !$0 { tipStore.userMessage = nil } }
-        )
-    }
-
     // MARK: - Subviews
 
     private var mainScrollView: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
                 todayStatusCard
-                if shouldShowTipCard {
-                    coffeeTipCard
-                }
+                // 헛걸음을 막아 준 날의 응원 부탁 — 리이오의 다른 앱과 같은 LeeoKit 카드 · 같은 드문 규칙
+                LeeoTipAskSlot<DontGoMartSpec>(tipJar: DontGoMartTips.jar,
+                                               reached: DontGoMartTips.moments(todayHasClosedMart: todayHasClosedMart))
+                    .padding(.horizontal)
                 nextClosedDateCard
                 RestaurantWeekCard()
                 calendarButton
@@ -227,9 +222,6 @@ struct ClosedDaysView: View {
             .padding(.vertical)
         }
         .task {
-            // 팁 상품을 미리 로드해 둔다 (카드/설정 화면 공용, 소모성이라 후원자도 재구매 가능)
-            await tipStore.loadProductsIfNeeded()
-
             // 후원자에게는 휴무일에 가끔 감사 인사를 다시 전한다 (표시 즉시 주기 기록)
             if SupporterThanksPrompt.shouldShow(todayHasClosedMart: todayHasClosedMart) {
                 SupporterThanksPrompt.markShown()
@@ -377,95 +369,6 @@ struct ClosedDaysView: View {
         let selected = martSelection.getSelectedMartTypes()
         return tasks.contains { task in
             selected.contains(task.type) && calendar.isDate(task.taskDate, inSameDayAs: today)
-        }
-    }
-
-    private var shouldShowTipCard: Bool {
-        // 방금 후원한 직후에는 감사 인사를 보여준다
-        if tipStore.justThanked { return true }
-        guard !isTipCardDismissed, tipStore.coffeeTip != nil else { return false }
-        return CoffeeTipPrompt.shouldShow(todayHasClosedMart: todayHasClosedMart)
-    }
-
-    private var coffeeTipCard: some View {
-        VStack(spacing: 12) {
-            if tipStore.justThanked {
-                HStack(spacing: 16) {
-                    Text("☕️")
-                        .font(.system(size: 40))
-                        .accessibilityHidden(true)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("감사합니다!")
-                            .font(.headline)
-                        Text("보내주신 응원이 큰 힘이 됩니다. (지금까지 ☕️ ×\(SupporterManager.tipCount))")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                    Spacer()
-                }
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel(Text("후원해주셔서 감사합니다. 지금까지 커피 \(SupporterManager.tipCount)잔을 보내주셨습니다."))
-            } else {
-                HStack(spacing: 16) {
-                    Text("☕️")
-                        .font(.system(size: 40))
-                        .accessibilityHidden(true)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("오늘 헛걸음을 막아드렸어요")
-                            .font(.headline)
-                        Text("도움이 되셨다면 커피 한 잔으로 응원해주세요.")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                    Spacer()
-                }
-
-                HStack(spacing: 10) {
-                    Button(action: {
-                        if let coffee = tipStore.coffeeTip {
-                            Task { await tipStore.purchase(coffee) }
-                        }
-                    }) {
-                        HStack(spacing: 6) {
-                            if tipStore.isPurchasing {
-                                ProgressView()
-                                    .tint(.white)
-                            }
-                            Text("커피 사주기 \(tipStore.coffeeTip?.displayPrice ?? "")")
-                                .font(.subheadline.bold())
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(Capsule().fill(Color.brown))
-                        .foregroundColor(.white)
-                    }
-                    .disabled(tipStore.isPurchasing)
-                    .accessibilityLabel(Text("커피 사주기, \(tipStore.coffeeTip?.displayPrice ?? "")"))
-                    .accessibilityHint(Text("개발자에게 커피 한 잔 값을 후원합니다"))
-
-                    Button(action: dismissTipCard) {
-                        Text("다음에")
-                            .font(.subheadline)
-                            .padding(.vertical, 10)
-                            .padding(.horizontal, 16)
-                            .foregroundColor(.secondary)
-                    }
-                    .accessibilityHint(Text("후원 카드를 닫습니다. 30일 동안 다시 표시되지 않습니다"))
-                }
-            }
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(Color.brown.opacity(0.1))
-        )
-        .padding(.horizontal)
-    }
-
-    private func dismissTipCard() {
-        CoffeeTipPrompt.markDismissed()
-        withAnimation {
-            isTipCardDismissed = true
         }
     }
 

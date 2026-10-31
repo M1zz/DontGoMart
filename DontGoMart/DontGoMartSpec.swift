@@ -26,8 +26,8 @@ enum DontGoMartSpec: LeeoAppSpec {
     /// 수익모델 — 전 기능 무료다. 페이월이 없고, 잠긴 기능도 없다.
     ///
     /// 파는 소모성 팁(coffee/cake/meal)이 있지만 `.credits` 가 아니다. 크레딧은 쓸 때마다
-    /// 차감되는 잔액 모델인데, 이 앱의 팁은 차감되지 않는 순수 후원이라 '감사 연출 + 후원자
-    /// 배지' 라는 앱 고유 로직(CoffeeTipStore)이 직접 다룬다. 결제가 기능을 열지 않으므로
+    /// 차감되는 잔액 모델인데, 이 앱의 팁은 차감되지 않는 순수 후원이라 LeeoKit 팁을 혼자 쓴다
+    /// (`DontGoMartTips` — 리이오의 다른 앱과 같은 팁 화면 · 응원 단계). 결제가 기능을 열지 않으므로
     /// 계약상으로는 무료 앱이 맞다.
     static let monetization = LeeoMonetization.free
 }
