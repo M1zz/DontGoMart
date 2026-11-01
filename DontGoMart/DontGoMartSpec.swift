@@ -8,7 +8,7 @@ import LeeoKit
 
 enum DontGoMartSpec: LeeoAppSpec {
     static let appName = "돈꼬마트"
-    static let developerEmail = "mizzking75@gmail.com"
+    static let developerEmail = "leeo@kakao.com"
     static let feedback = LeeoFeedbackConfig(containerIdentifier: "iCloud.com.Ysoup.FeedbackHub", appIdentifier: "com.leeo.DontGoMart")
 
     /// App Store 숫자 ID. 있어야 설정의 '리뷰 남기기' 가 시스템 평점 팝업 대신
