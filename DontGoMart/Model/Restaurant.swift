@@ -71,8 +71,11 @@ enum RestaurantStore {
     private static let key = "restaurants"
 
     static func load() -> [Restaurant] {
-        guard let data = UserDefaults(suiteName: Utillity.appGroupId)?.data(forKey: key),
-              let list = try? JSONDecoder().decode([Restaurant].self, from: data) else {
+        let defaults = UserDefaults(suiteName: Utillity.appGroupId)
+        guard let data = defaults?.data(forKey: key) else { return [] }
+        guard let list = try? JSONDecoder().decode([Restaurant].self, from: data) else {
+            // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+            defaults?.set(data, forKey: key + ".unreadable")
             return []
         }
         return list
