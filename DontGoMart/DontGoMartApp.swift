@@ -14,6 +14,8 @@ struct DontGoMartApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     init() {
+        // 백업 금고 — 예약된 복원 적용 · 업데이트 직전 백업. 저장된 마트를 읽기 전에 가장 먼저.
+        LeeoVault.start(DontGoMartSpec.self)
         // 앱 시작 시 즉시 tasks 초기화
         initializeTasks()
         LeeoEngagement.shared.registerLaunch()
