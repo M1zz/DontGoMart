@@ -14,6 +14,8 @@ struct DontGoMartApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     init() {
+        // 백업 금고 — 예약된 복원 적용 · 업데이트 직전 백업. 저장된 마트를 읽기 전에 가장 먼저.
+        LeeoVault.start(DontGoMartSpec.self)
         // 앱 시작 시 즉시 tasks 초기화
         initializeTasks()
         LeeoEngagement.shared.registerLaunch()
@@ -38,9 +40,9 @@ struct DontGoMartApp: App {
                         await setupSmartNotifications()
                     }
 
-                    // 과거 Pro 구매자(후원자) 여부 확인 → 후원자 배지 표시
+                    // 옛 후원자 확인 → LeeoKit 팁 장부로 옮기고, 상품 · 응원 점수를 맞춘다
                     Task {
-                        await SupporterManager.refresh()
+                        await DontGoMartTips.start()
                     }
 
                     // 익명 사용 스냅샷 (피드백과 같은 CloudKit 허브로, 12시간에 한 번)
@@ -52,6 +54,10 @@ struct DontGoMartApp: App {
             // Provider 의 .after(nextMidnight) 정책과 함께 매일 최소 1회 갱신 보장.
             if newPhase == .active {
                 WidgetManager.shared.updateWidget()
+            }
+            // 단골 식당 Spotlight 색인을 지금 목록에 맞춘다
+            if newPhase == .active || newPhase == .background {
+                Task { await RestaurantQuery.reindex() }
             }
         }
     }

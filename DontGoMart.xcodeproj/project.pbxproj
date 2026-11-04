@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1E20C30F59A9F6E45F6E57 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7913EF8772686C3F70F23AE8 /* AppShortcuts.xcstrings */; };
 		507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B39D9FD06434D8FB0F292 /* CustomMartEditView.swift */; };
 		529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */; };
 		58446A282A59493C001CC9D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58446A272A59493C001CC9D1 /* SettingsView.swift */; };
@@ -75,6 +76,7 @@
 		D0075D5800000000000000B8 /* RestaurantWeekWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */; };
 		D0075D5A00000000000000BA /* ShareVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D5900000000000000B9 /* ShareVideoExporter.swift */; };
 		D1C229962E0C2AC000969839 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C229952E0C2ABB00969839 /* NotificationManager.swift */; };
+		DAD045502EDFBF7FF16074C6 /* ClosedDayIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E16E2EF810B6081976BEDE /* ClosedDayIntents.swift */; };
 		E5E0D55DE3634E938977BCCE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
 		F296107E67395B3895BEAAE7 /* DontGoMartRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA94B637D861A2268C6114 /* DontGoMartRoadmap.swift */; };
 		F8CAF74282B87E515EA26B48 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6D8E1AF9898CD59B16480C /* LeeoKit */; };
@@ -142,6 +144,7 @@
 		58D40AD22CDF8E15008C6458 /* MartClosedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartClosedData.swift; sourceTree = "<group>"; };
 		58D40AD42CDF8E68008C6458 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		58D40AD62CDF9130008C6458 /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
+		7913EF8772686C3F70F23AE8 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatusManager.swift; sourceTree = "<group>"; };
 		9C2035732F2AE56D00AF1279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMart.swift; sourceTree = "<group>"; };
 		A5EA94B637D861A2268C6114 /* DontGoMartRoadmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DontGoMartRoadmap.swift; sourceTree = "<group>"; };
 		AB1004BA229141238536EE02 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B4E16E2EF810B6081976BEDE /* ClosedDayIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClosedDayIntents.swift; sourceTree = "<group>"; };
 		C359F4EE2CFD724000F26B1D /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C359F4F22CFD8AD800F26B1D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C359F4F82CFD8FA700F26B1D /* DDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayWidget.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				D0075D4700000000000000A7 /* AnnouncementManager.swift */,
 				C3F7E7332D2CACF5003B7762 /* WidgetManager.swift */,
 				9C2035782F2AE58000AF1279 /* ReviewManager.swift */,
+				B4E16E2EF810B6081976BEDE /* ClosedDayIntents.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				9C2035762F2AE57000AF1279 /* InfoPlist.xcstrings */,
 				18486640C96835BB82BFD493 /* DontGoMartSpec.swift */,
 				A5EA94B637D861A2268C6114 /* DontGoMartRoadmap.swift */,
+				7913EF8772686C3F70F23AE8 /* AppShortcuts.xcstrings */,
 			);
 			path = DontGoMart;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				9C2035742F2AE56D00AF1279 /* Localizable.xcstrings in Resources */,
 				9C2035752F2AE57000AF1279 /* InfoPlist.xcstrings in Resources */,
 				58B693D42A3B56E900FF904B /* Assets.xcassets in Resources */,
+				4E1E20C30F59A9F6E45F6E57 /* AppShortcuts.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +609,7 @@
 				529607494EBF4AEEA43559C8 /* OperationStatusManager.swift in Sources */,
 				AED7BB247263EE03E9181B58 /* DontGoMartSpec.swift in Sources */,
 				F296107E67395B3895BEAAE7 /* DontGoMartRoadmap.swift in Sources */,
+				DAD045502EDFBF7FF16074C6 /* ClosedDayIntents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,7 +1009,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.26.1;
+				minimumVersion = 3.29.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

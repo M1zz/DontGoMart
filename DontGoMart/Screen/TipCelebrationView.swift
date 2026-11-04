@@ -6,71 +6,13 @@
 //
 
 import SwiftUI
-
-// MARK: - 부착용 Modifier
-
-/// 팁(소모성 IAP) 구매 성공 시 콘페티 + 전면 감사 카드 연출을 재생하는 오버레이.
-///
-/// 심사 지적(2.1 — 소모성 구매 후 반응 없음) 대응: 결제가 끝나는 순간
-/// '개발자의 감사' 가 화면 전체로 즉시 보이게 한다. 햅틱·VoiceOver 안내는
-/// 중복 재생을 피하려고 CoffeeTipStore.celebrate() 가 한 번만 담당한다.
-struct TipCelebrationOverlay: ViewModifier {
-    @ObservedObject private var tipStore = CoffeeTipStore.shared
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @State private var isShowing = false
-    @State private var hideTask: Task<Void, Never>?
-
-    func body(content: Content) -> some View {
-        content
-            .overlay {
-                if isShowing {
-                    TipCelebrationView(
-                        mode: .purchaseThanks(productID: tipStore.lastTippedProductID),
-                        showsConfetti: !reduceMotion,
-                        onDismiss: hide
-                    )
-                    .transition(.opacity)
-                }
-            }
-            .onChange(of: tipStore.celebrationCount) {
-                show()
-            }
-    }
-
-    private func show() {
-        hideTask?.cancel()
-        withAnimation(.easeIn(duration: 0.2)) {
-            isShowing = true
-        }
-        // 콘페티가 다 떨어질 때까지 보여준 뒤 알아서 닫는다 (탭으로 즉시 닫기 가능)
-        hideTask = Task {
-            try? await Task.sleep(for: .seconds(4.5))
-            guard !Task.isCancelled else { return }
-            hide()
-        }
-    }
-
-    private func hide() {
-        hideTask?.cancel()
-        withAnimation(.easeOut(duration: 0.35)) {
-            isShowing = false
-        }
-    }
-}
-
-extension View {
-    /// 팁 구매가 일어날 수 있는 화면의 최상단 뷰에 붙인다.
-    func tipCelebrationOverlay() -> some View {
-        modifier(TipCelebrationOverlay())
-    }
-}
+import LeeoKit
 
 // MARK: - 연출 본체 (딤 배경 + 콘페티 + 감사 카드)
 
 struct TipCelebrationView: View {
+    /// 구매 직후의 감사는 LeeoKit 팁 화면이 한다(감사 카드 · 개발자 편지 · 응원 단계). 여기는 돈꼬마트만의 순간 하나.
     enum Mode {
-        /// 구매 직후의 감사 연출 — 잠시 보여주고 자동으로 닫힌다
-        case purchaseThanks(productID: String?)
         /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) — '기부의 감사함을 잊지 않았다' 는
         /// 축하와 함께 한 번 더 응원할 수 있는 버튼을 담는다
         case supporterReminder
@@ -98,8 +40,6 @@ struct TipCelebrationView: View {
 
             Group {
                 switch mode {
-                case .purchaseThanks(let productID):
-                    purchaseThanksCard(productID: productID)
                 case .supporterReminder:
                     supporterReminderCard
                 }
@@ -116,36 +56,6 @@ struct TipCelebrationView: View {
         }
     }
 
-    private func purchaseThanksCard(productID: String?) -> some View {
-        VStack(spacing: 14) {
-            Text(SupporterManager.emoji(for: productID ?? ""))
-                .font(.system(size: 64))
-                .accessibilityHidden(true)
-
-            Text("정말 감사합니다!")
-                .font(.title2.bold())
-
-            Text("보내주신 응원 덕분에 앱을 계속 만들어갈 수 있어요.")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-
-            if SupporterManager.tipCount > 0 {
-                tipCountBadge
-            }
-        }
-        .padding(28)
-        .background(
-            RoundedRectangle(cornerRadius: 24)
-                .fill(.regularMaterial)
-        )
-        .padding(.horizontal, 40)
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text("후원해주셔서 정말 감사합니다. 지금까지 커피 \(SupporterManager.tipCount)잔을 보내주셨습니다."))
-        .accessibilityHint(Text("두 번 탭하면 닫힙니다"))
-        .accessibilityAddTraits(.isButton)
-    }
-
     private var supporterReminderCard: some View {
         VStack(spacing: 14) {
             Text("💛")
@@ -157,16 +67,17 @@ struct TipCelebrationView: View {
                 .multilineTextAlignment(.center)
 
             Text("오늘도 헛걸음을 막아드렸어요.\n보내주신 기부의 감사함을 늘 기억하고 있습니다.")
-                .font(.subheadline)
+                .font(.body)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
 
-            tipCountBadge
+            // 응원 단계 배지 — 리이오의 어느 앱에서 응원했든 합친 점수
+            LeeoSupporterBadge(tipJar: DontGoMartTips.jar)
 
             if let onTipAgain {
                 Button(action: onTipAgain) {
                     Text("한 번 더 응원하기 ☕️")
-                        .font(.subheadline.bold())
+                        .font(.body.bold())
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 10)
                         .background(Capsule().fill(Color.brown))
@@ -178,7 +89,7 @@ struct TipCelebrationView: View {
 
             Button(action: onDismiss) {
                 Text("고마워요, 다음에 또 만나요")
-                    .font(.subheadline)
+                    .font(.body)
                     .foregroundColor(.secondary)
             }
             .accessibilityHint(Text("감사 인사를 닫습니다"))
@@ -189,14 +100,6 @@ struct TipCelebrationView: View {
                 .fill(.regularMaterial)
         )
         .padding(.horizontal, 40)
-    }
-
-    private var tipCountBadge: some View {
-        Text("지금까지 받은 응원 ☕️ ×\(SupporterManager.tipCount)")
-            .font(.caption.bold())
-            .padding(.horizontal, 10)
-            .padding(.vertical, 4)
-            .background(Capsule().fill(Color.brown.opacity(0.15)))
     }
 }
 
@@ -295,14 +198,6 @@ private struct ConfettiPiece {
             )
         }
     }
-}
-
-#Preview("구매 감사") {
-    TipCelebrationView(
-        mode: .purchaseThanks(productID: "com.dontgomart.tip.coffee"),
-        showsConfetti: true,
-        onDismiss: {}
-    )
 }
 
 #Preview("후원자 리마인더") {
