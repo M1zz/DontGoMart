@@ -55,6 +55,10 @@ struct DontGoMartApp: App {
             if newPhase == .active {
                 WidgetManager.shared.updateWidget()
             }
+            // 단골 식당 Spotlight 색인을 지금 목록에 맞춘다
+            if newPhase == .active || newPhase == .background {
+                Task { await RestaurantQuery.reindex() }
+            }
         }
     }
 

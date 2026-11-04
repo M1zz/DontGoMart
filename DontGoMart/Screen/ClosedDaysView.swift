@@ -31,6 +31,8 @@ struct ClosedDaysView: View {
 
     @StateObject private var martSelection = MartSelectionManager.shared
     @StateObject private var announcements = AnnouncementManager.shared
+    /// Siri · Spotlight 가 연 단골 식당
+    @ObservedObject private var router = DontGoMartRouter.shared
     @Environment(\.scenePhase) private var scenePhase
     /// 아이폰 듀오를 폈는가. 펴면 휴무일 캘린더가 결과 쪽 판에 늘 서 있다.
     @Environment(\.foldLayout) private var fold
@@ -49,6 +51,7 @@ struct ClosedDaysView: View {
         .sheet(isPresented: $isShowingCalendar) {
             calendarSheet
         }
+        .sheet(item: $router.restaurant) { RestaurantEditView(editing: $0) }
         .sheet(isPresented: $isShowingShareCard) {
             if let payload = sharePayload {
                 ShareCardSheet(payload: payload, messageText: shareText)
