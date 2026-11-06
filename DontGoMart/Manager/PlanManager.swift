@@ -27,7 +27,7 @@ enum PlanProducts {
     static let plusWeekly = "com.leeo.DontGoMart.plus.weekly"
     static let plusMonthly = "com.leeo.DontGoMart.plus.monthly"
     static let plusYearly = "com.leeo.DontGoMart.plus.yearly"
-    static let plusLifetime = "com.leeo.DontGoMart.plus"
+    static let plusLifetime = "com.leeo.DontGoMart.plus.lifetime"
     static let proWeekly = "com.leeo.DontGoMart.pro.weekly"
     static let proMonthly = "com.leeo.DontGoMart.pro.monthly"
     static let proYearly = "com.leeo.DontGoMart.pro.yearly"
