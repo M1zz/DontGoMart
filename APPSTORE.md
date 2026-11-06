@@ -50,6 +50,11 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 언어별 칸에 올린
 
 마트 휴무를 확인하고 알림을 받는 기능은 모두 무료입니다. 나만의 마트와 단골 식당을 더 넣거나 스토리와 동영상으로 공유하려면 Plus를, 추가 위젯과 잠금 화면 위젯, 식당 휴무 자동 채우기는 Pro를 이용해 보세요.
 
+구독 안내
+돈꼬마트 Plus와 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/DontGoMart/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/support.html
@@ -107,6 +112,11 @@ Calendar and sharing
 Browse a full month of closed days in the calendar, and send the news as a card with a two-week calendar and a shopping tip. Cards come in Instagram post and Story sizes, and as short videos.
 
 Checking closed days and getting alerts is free. Plus lets you add more of your own stores and restaurants and share as Stories and videos. Pro adds the extra widgets, Lock Screen widgets and restaurant auto-fill.
+
+Subscriptions
+DontGoMart Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless canceled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/DontGoMart/en/privacy.html
 
 ### 지원 URL
 
@@ -166,6 +176,11 @@ Browse a full month of closed days in the calendar, and send the news as a card 
 
 Checking closed days and getting alerts is free. Plus lets you add more of your own stores and restaurants and share as Stories and videos. Pro adds the extra widgets, Lock Screen widgets and restaurant auto-fill.
 
+Subscriptions
+DontGoMart Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless cancelled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/DontGoMart/en/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/en/support.html
@@ -223,6 +238,11 @@ DontGoMartは、韓国の大型スーパーやコストコの義務休業日を�
 カレンダーで1か月分の休業日をまとめて確認できます。休業のお知らせは、2週間分のカレンダーと買い物のヒントが入ったカードにして送れます。Instagramの投稿やストーリーズのサイズ、短い動画にも対応しています。
 
 休業日の確認と通知はすべて無料です。マイストアやお気に入りの飲食店をもっと登録したり、ストーリーズや動画でシェアしたりするならPlus、追加のウィジェットとロック画面ウィジェット、飲食店の定休日の自動入力はProでどうぞ。
+
+サブスクリプションについて
+DontGoMartのPlusとProは自動更新のサブスクリプションです。期間終了の24時間前までに解約しない限り、Apple Accountに自動で請求されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/DontGoMart/ja/privacy.html
 
 ### 지원 URL
 
@@ -282,6 +302,11 @@ DontGoMart 可以一次查看韩国大型超市和 Costco 的义务休业日，�
 
 查看休业日和接收提醒完全免费。想添加更多自定义店铺和餐厅、用快拍和视频分享，可选择 Plus；更多小组件、锁定屏幕小组件和餐厅休息日自动填写则在 Pro 中提供。
 
+订阅说明
+DontGoMart Plus 和 Pro 均为自动续期订阅。费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/DontGoMart/zh-hans/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/zh-hans/support.html
@@ -339,6 +364,11 @@ DontGoMart показывает обязательные выходные дни
 В календаре видны выходные на целый месяц. Оповещением о выходном можно поделиться в виде карточки с календарём на 2 недели и подсказкой для покупок. Поддерживаются размеры постов и Stories в Instagram, а также короткие видео.
 
 Проверка выходных и напоминания — бесплатно. С Plus можно добавить больше своих магазинов и ресторанов и делиться в Stories и видео. Pro добавляет дополнительные виджеты, виджеты экрана блокировки и автозаполнение выходных ресторанов.
+
+Подписки
+DontGoMart Plus и Pro — подписки с автопродлением. Оплата списывается с вашего Apple Account, а подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/DontGoMart/ru/privacy.html
 
 ### 지원 URL
 
@@ -398,6 +428,11 @@ DontGoMart 可以一次查看韓國大型超市與 Costco 的義務公休日，�
 
 查看公休日和接收提醒完全免費。想加入更多自訂店家和餐廳、用限時動態和影片分享，可選擇 Plus；更多小工具、鎖定畫面小工具和餐廳公休日自動填入則在 Pro 中提供。
 
+訂閱說明
+DontGoMart Plus 與 Pro 皆為自動續訂訂閱。費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/DontGoMart/zh-hant/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/zh-hant/support.html
@@ -455,6 +490,11 @@ Calendario y compartir
 Consulta los días de cierre de todo el mes en el calendario. Puedes compartir un aviso de cierre como una tarjeta con el calendario de dos semanas y un consejo de compra, en formato de publicación o historia de Instagram, o en un vídeo corto.
 
 Consultar los cierres y recibir avisos es gratis. Con Plus puedes añadir más tiendas y restaurantes propios y compartir en historias y vídeos. Pro suma los widgets adicionales, los de pantalla bloqueada y el autocompletado de cierres de restaurantes.
+
+Suscripciones
+DontGoMart Plus y Pro son suscripciones de renovación automática. El cargo se realiza en tu cuenta de Apple y la suscripción se renueva salvo que la canceles al menos 24 horas antes de que termine el periodo. Puedes gestionarla o cancelarla cuando quieras en Ajustes.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/DontGoMart/es/privacy.html
 
 ### 지원 URL
 
@@ -514,6 +554,11 @@ Im Kalender siehst du die Schließtage eines ganzen Monats. Eine Schließung kan
 
 Schließtage prüfen und Hinweise erhalten ist kostenlos. Mit Plus fügst du weitere eigene Märkte und Restaurants hinzu und teilst als Story und Video. Pro bringt die zusätzlichen Widgets, Sperrbildschirm-Widgets und das automatische Eintragen von Restaurant-Ruhetagen.
 
+Abonnements
+DontGoMart Plus und Pro sind Abos mit automatischer Verlängerung. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du es jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/DontGoMart/de/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/de/support.html
@@ -571,6 +616,11 @@ Calendrier et partage
 Consultez les jours de fermeture d’un mois entier dans le calendrier. Partagez une fermeture sous forme de carte avec le calendrier de deux semaines et un conseil de courses, aux formats post et story Instagram, ou en courte vidéo.
 
 Consulter les jours de fermeture et recevoir les alertes est gratuit. Avec Plus, ajoutez davantage de magasins et de restaurants et partagez en story et en vidéo. Pro ajoute les widgets supplémentaires, ceux de l’écran verrouillé et le remplissage automatique des fermetures des restaurants.
+
+Abonnements
+DontGoMart Plus et Pro sont des abonnements à renouvellement automatique. Le paiement est débité sur votre compte Apple, et l’abonnement se renouvelle sauf résiliation au moins 24 heures avant la fin de la période. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d'utilisation (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité: https://m1zz.github.io/DontGoMart/fr/privacy.html
 
 ### 지원 URL
 
@@ -630,6 +680,11 @@ Nel calendario vedi i giorni di chiusura di un intero mese. Puoi condividere una
 
 Controllare le chiusure e ricevere gli avvisi è gratis. Con Plus aggiungi altri negozi e ristoranti e condividi con storie e video. Pro aggiunge i widget extra, quelli della schermata di blocco e la compilazione automatica delle chiusure dei ristoranti.
 
+Abbonamenti
+DontGoMart Plus e Pro sono abbonamenti a rinnovo automatico. Il pagamento viene addebitato sul tuo Apple Account e l’abbonamento si rinnova se non lo disdici almeno 24 ore prima della scadenza. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d'uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/DontGoMart/it/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/it/support.html
@@ -687,6 +742,11 @@ Calendário e compartilhamento
 No calendário, veja os dias de fechamento de um mês inteiro. Você pode compartilhar um aviso de fechamento como um cartão com o calendário de duas semanas e uma dica de compras, nos formatos de post e story do Instagram ou em um vídeo curto.
 
 Consultar os fechamentos e receber alertas é grátis. Com o Plus, adicione mais lojas e restaurantes e compartilhe em stories e vídeos. O Pro traz os widgets extras, os widgets da Tela Bloqueada e o preenchimento automático dos fechamentos de restaurantes.
+
+Assinaturas
+DontGoMart Plus e Pro são assinaturas com renovação automática. A cobrança é feita na sua Conta Apple e a assinatura é renovada, a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/DontGoMart/pt-br/privacy.html
 
 ### 지원 URL
 
@@ -746,6 +806,11 @@ DontGoMart รวมวันปิดตามกฎหมายของซู
 
 การดูวันปิดและรับการแจ้งเตือนใช้ได้ฟรีทั้งหมด หากต้องการเพิ่มร้านของคุณและร้านอาหารได้มากขึ้น หรือแชร์เป็นสตอรี่และวิดีโอ เลือก Plus ส่วนวิดเจ็ตเพิ่มเติม วิดเจ็ตหน้าจอล็อก และการดึงวันหยุดร้านอาหารอัตโนมัติอยู่ใน Pro
 
+การสมัครสมาชิก
+DontGoMart Plus และ Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุเว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/DontGoMart/th/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/th/support.html
@@ -803,6 +868,11 @@ Lịch và chia sẻ
 Xem ngày đóng cửa của cả tháng trên lịch. Bạn có thể chia sẻ thông báo đóng cửa dưới dạng thẻ kèm lịch hai tuần và mẹo mua sắm, theo kích thước bài đăng và story Instagram, hoặc dưới dạng video ngắn.
 
 Xem ngày đóng cửa và nhận thông báo đều miễn phí. Gói Plus cho bạn thêm nhiều cửa hàng và nhà hàng hơn, chia sẻ bằng story và video. Gói Pro có thêm tiện ích bổ sung, tiện ích Màn hình khóa và tự điền ngày nghỉ của nhà hàng.
+
+Gói đăng ký
+DontGoMart Plus và Pro là các gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/DontGoMart/vi/privacy.html
 
 ### 지원 URL
 
@@ -862,6 +932,11 @@ V kalendáři vidíte dny zavření na celý měsíc. Zavření můžete sdílet
 
 Kontrola dnů zavření a upozornění jsou zdarma. S Plus přidáte další vlastní obchody a restaurace a můžete sdílet jako story i video. Pro přidává další widgety, widgety na zamčené obrazovce a automatické vyplnění zavíracích dnů restaurací.
 
+Předplatné
+DontGoMart Plus a Pro jsou automaticky obnovovaná předplatná. Platba se strhává z vašeho účtu Apple a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/DontGoMart/cs/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/cs/support.html
@@ -919,6 +994,11 @@ Kalender og deling
 I kalenderen ser du lukkedage for en hel måned. Du kan dele en lukkemeddelelse som et kort med to ugers kalender og et indkøbstip i størrelser til Instagram-opslag og -stories eller som en kort video.
 
 Det er gratis at tjekke lukkedage og få påmindelser. Med Plus kan du tilføje flere butikker og restauranter og dele som story og video. Pro giver de ekstra widgets, widgets til låseskærmen og automatisk udfyldning af restauranters lukkedage.
+
+Abonnementer
+DontGoMart Plus og Pro er abonnementer, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/DontGoMart/da/privacy.html
 
 ### 지원 URL
 
@@ -978,6 +1058,11 @@ Widgets για την Αρχική οθόνη και την οθόνη κλει�
 
 Ο έλεγχος των αργιών και οι ειδοποιήσεις είναι δωρεάν. Με το Plus προσθέτετε περισσότερα δικά σας καταστήματα και εστιατόρια και μοιράζεστε σε story και βίντεο. Το Pro προσθέτει τα επιπλέον widget, τα widget οθόνης κλειδώματος και την αυτόματη συμπλήρωση αργιών εστιατορίων.
 
+Συνδρομές
+Οι συνδρομές DontGoMart Plus και Pro ανανεώνονται αυτόματα. Η χρέωση γίνεται στον λογαριασμό Apple σας και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Μπορείτε να τη διαχειριστείτε ή να την ακυρώσετε οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/DontGoMart/el/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/el/support.html
@@ -1035,6 +1120,11 @@ Kalenteri ja jakaminen
 Kalenterista näet koko kuukauden sulkupäivät. Sulkemisilmoituksen voi jakaa korttina, jossa on kahden viikon kalenteri ja ostosvinkki, Instagram-julkaisun ja -storyn kokoisena tai lyhyenä videona.
 
 Sulkupäivien tarkistus ja muistutukset ovat ilmaisia. Plus-versiolla lisäät enemmän omia kauppoja ja ravintoloita ja jaat storyina ja videoina. Pro tuo lisäwidgetit, lukitusnäytön widgetit ja ravintoloiden sulkupäivien automaattisen täytön.
+
+Tilaukset
+DontGoMart Plus ja Pro ovat automaattisesti uusiutuvia tilauksia. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru tilaus milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/DontGoMart/fi/privacy.html
 
 ### 지원 URL
 
@@ -1094,6 +1184,11 @@ Lihat hari tutup satu bulan penuh di kalender. Kabar hari tutup bisa dibagikan s
 
 Melihat hari tutup dan menerima pengingat gratis. Dengan Plus, tambahkan lebih banyak toko dan restoran sendiri serta bagikan lewat story dan video. Pro menghadirkan widget tambahan, widget Layar Terkunci, dan isi otomatis hari tutup restoran.
 
+Langganan
+DontGoMart Plus dan Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/DontGoMart/id/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/id/support.html
@@ -1151,6 +1246,11 @@ Kalender og deling
 I kalenderen ser du stengedagene for en hel måned. Du kan dele en stengemelding som et kort med to ukers kalender og et handletips, i størrelser for Instagram-innlegg og -stories, eller som en kort video.
 
 Det er gratis å sjekke stengedager og få varsler. Med Plus kan du legge til flere butikker og restauranter og dele som story og video. Pro gir de ekstra widgetene, widgeter for låseskjermen og automatisk utfylling av restauranters stengedager.
+
+Abonnementer
+DontGoMart Plus og Pro er abonnementer som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/DontGoMart/nb/privacy.html
 
 ### 지원 URL
 
@@ -1210,6 +1310,11 @@ In de kalender zie je de sluitingsdagen van een hele maand. Je kunt een sluiting
 
 Sluitingsdagen bekijken en meldingen krijgen is gratis. Met Plus voeg je meer eigen winkels en restaurants toe en deel je als story en video. Pro voegt de extra widgets, widgets voor het toegangsscherm en het automatisch invullen van sluitingsdagen van restaurants toe.
 
+Abonnementen
+DontGoMart Plus en Pro zijn automatisch verlengende abonnementen. De betaling loopt via je Apple Account en het abonnement wordt verlengd tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/DontGoMart/nl/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/nl/support.html
@@ -1267,6 +1372,11 @@ Kalendarz i udostępnianie
 W kalendarzu zobaczysz dni zamknięcia na cały miesiąc. Informację o zamknięciu możesz udostępnić jako kartę z kalendarzem na dwa tygodnie i wskazówką zakupową, w rozmiarach postów i stories na Instagramie lub jako krótkie wideo.
 
 Sprawdzanie dni zamknięcia i alerty są za darmo. Z Plus dodasz więcej własnych sklepów i restauracji oraz udostępnisz jako story i wideo. Pro daje dodatkowe widżety, widżety ekranu blokady i automatyczne uzupełnianie dni zamknięcia restauracji.
+
+Subskrypcje
+DontGoMart Plus i Pro to subskrypcje odnawiane automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj nią lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/DontGoMart/pl/privacy.html
 
 ### 지원 URL
 
@@ -1326,6 +1436,11 @@ I kalendern ser du stängningsdagar för en hel månad. Du kan dela en stängnin
 
 Att se stängningsdagar och få påminnelser är gratis. Med Plus lägger du till fler egna butiker och restauranger och delar som story och video. Pro ger de extra widgetarna, widgetar för låsskärmen och automatisk ifyllning av restaurangers stängningsdagar.
 
+Prenumerationer
+DontGoMart Plus och Pro är prenumerationer som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/DontGoMart/sv/privacy.html
+
 ### 지원 URL
 
 https://m1zz.github.io/DontGoMart/sv/support.html
@@ -1383,6 +1498,11 @@ Takvim ve paylaşım
 Takvimde bir ayın tüm kapalı günlerini gör. Kapanış haberini, 2 haftalık takvim ve alışveriş ipucu içeren bir kart olarak Instagram gönderi ve hikâye boyutlarında ya da kısa bir video olarak paylaşabilirsin.
 
 Kapalı günlere bakmak ve uyarı almak ücretsiz. Plus ile daha fazla mağaza ve restoran ekleyebilir, hikâye ve video olarak paylaşabilirsin. Pro ise ek widget’ları, kilit ekranı widget’larını ve restoran kapalı günlerini otomatik doldurmayı getirir.
+
+Abonelikler
+DontGoMart Plus ve Pro otomatik yenilenen aboneliklerdir. Ödeme Apple Hesabınızdan alınır ve dönem bitmeden en az 24 saat önce iptal edilmezse abonelik yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/DontGoMart/tr/privacy.html
 
 ### 지원 URL
 
