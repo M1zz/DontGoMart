@@ -4,6 +4,200 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 `### 앱스토어 (언어)` 절만 스토어로 나가고, `### 개발 메모` 절은 나가지 않는다.
 확인: `DeployBar --reponotes 돈꼬마트 2.0.9`
 
+## 2.0.11
+
+### 앱스토어 (한국어)
+
+Siri에게 다음 마트 휴무일을 물어보세요
+이번 주 일요일 문 여는지도 Siri가 알려 줘요
+단골 식당을 iPhone 검색에서 바로 열어요
+저장한 정보가 매일 자동으로 백업돼요
+업데이트 뒤에도 기록이 사라지지 않게 했어요
+
+### App Store (English)
+
+Ask Siri when your store closes next
+Siri knows if it's open this Sunday
+Open favorite restaurants from search
+Your saved info is backed up every day
+Your records stay safe after updates
+
+### App Store (en-GB)
+
+Ask Siri when your shop closes next
+Siri knows if it's open this Sunday
+Open favourite restaurants from search
+Your saved info is backed up every day
+Your records stay safe after updates
+
+### 앱스토어 (일본어)
+
+次のお店の休業日をSiriに聞けます
+今週の日曜に営業するかもSiriが答えます
+お気に入りの店をiPhoneの検索から開けます
+保存した情報を毎日自動でバックアップします
+アップデート後も記録が消えないようにしました
+
+### 앱스토어 (중국어 간체)
+
+可以问 Siri 超市下次哪天休息
+Siri 还能告诉你本周日是否营业
+在 iPhone 搜索中直接打开常去餐厅
+保存的信息每天自动备份
+更新后记录也不会丢失
+
+### 앱스토어 (중국어 번체)
+
+可以問 Siri 賣場下次哪天公休
+Siri 也能告訴你這週日有沒有營業
+在 iPhone 搜尋中直接打開常去的餐廳
+儲存的資訊每天自動備份
+更新後紀錄也不會遺失
+
+### 앱스토어 (러시아어)
+
+Спросите Siri о следующем выходном
+Siri скажет, открыто ли в воскресенье
+Любимые кафе открываются из поиска
+Сохранённые данные копируются ежедневно
+Записи больше не теряются при обновлении
+
+### 앱스토어 (스페인어)
+
+Pregunta a Siri cuándo cierra tu súper
+Siri te dice si abre este domingo
+Abre tus restaurantes desde la búsqueda
+Tus datos se respaldan cada día
+Tus datos ya no se pierden al actualizar
+
+### 앱스토어 (독일어)
+
+Frag Siri nach dem nächsten Ruhetag
+Siri sagt dir, ob am Sonntag offen ist
+Lieblingslokale aus der Suche öffnen
+Deine Daten werden täglich gesichert
+Einträge bleiben nach Updates erhalten
+
+### 앱스토어 (프랑스어)
+
+Demandez à Siri la prochaine fermeture
+Siri vous dit si c'est ouvert dimanche
+Vos restos favoris depuis la recherche
+Vos données sauvegardées chaque jour
+Rien ne se perd lors des mises à jour
+
+### 앱스토어 (이탈리아어)
+
+Chiedi a Siri la prossima chiusura
+Siri ti dice se è aperto domenica
+Apri i tuoi ristoranti dalla ricerca
+I tuoi dati salvati ogni giorno
+I dati restano dopo gli aggiornamenti
+
+### 앱스토어 (포르투갈어)
+
+Pergunte à Siri o próximo dia fechado
+A Siri diz se abre neste domingo
+Abra seus restaurantes pela busca
+Seus dados têm backup todo dia
+Seus registros não somem ao atualizar
+
+### 앱스토어 (태국어)
+
+ถาม Siri ได้ว่าห้างหยุดวันไหนต่อไป
+Siri บอกได้ว่าอาทิตย์นี้เปิดไหม
+เปิดร้านโปรดได้จากการค้นหาใน iPhone
+ข้อมูลที่บันทึกไว้สำรองอัตโนมัติทุกวัน
+ข้อมูลไม่หายแม้หลังอัปเดต
+
+### 앱스토어 (베트남어)
+
+Hỏi Siri ngày nghỉ tới của siêu thị
+Siri cho biết Chủ nhật này có mở không
+Mở quán quen ngay từ tìm kiếm
+Dữ liệu đã lưu được sao lưu mỗi ngày
+Dữ liệu không còn mất sau khi cập nhật
+
+### 앱스토어 (체코어)
+
+Zeptejte se Siri na příští zavírací den
+Siri řekne, jestli je v neděli otevřeno
+Oblíbené podniky otevřete z hledání
+Uložená data se denně zálohují
+Záznamy po aktualizaci nezmizí
+
+### 앱스토어 (덴마크어)
+
+Spørg Siri om næste lukkedag
+Siri fortæller, om der er åbent søndag
+Åbn yndlingssteder fra søgning
+Dine data sikkerhedskopieres dagligt
+Dine data forsvinder ikke ved opdatering
+
+### 앱스토어 (그리스어)
+
+Ρωτήστε τη Siri πότε κλείνει ξανά
+Η Siri λέει αν είναι ανοιχτά την Κυριακή
+Ανοίξτε αγαπημένα μαγαζιά από αναζήτηση
+Τα δεδομένα σας σώζονται καθημερινά
+Τα δεδομένα μένουν μετά τις ενημερώσεις
+
+### 앱스토어 (핀란드어)
+
+Kysy Siriltä seuraava sulkupäivä
+Siri kertoo, onko sunnuntaina auki
+Avaa suosikkipaikat hausta
+Tiedot varmuuskopioidaan päivittäin
+Tiedot säilyvät päivitysten jälkeen
+
+### 앱스토어 (인도네시아어)
+
+Tanya Siri kapan toko libur berikutnya
+Siri tahu apakah buka Minggu ini
+Buka restoran favorit dari pencarian
+Data tersimpan dicadangkan tiap hari
+Data tidak hilang setelah pembaruan
+
+### 앱스토어 (노르웨이어 보크말)
+
+Spør Siri om neste stengedag
+Siri forteller om det er åpent søndag
+Åpne favorittsteder fra søk
+Dataene dine sikkerhetskopieres daglig
+Dataene forsvinner ikke ved oppdatering
+
+### 앱스토어 (네덜란드어)
+
+Vraag Siri naar de volgende sluitingsdag
+Siri zegt of het zondag open is
+Open favoriete zaken via zoeken
+Je gegevens krijgen elke dag een back-up
+Gegevens blijven na een update bewaard
+
+### 앱스토어 (폴란드어)
+
+Zapytaj Siri o następny dzień zamknięcia
+Siri powie, czy w niedzielę jest otwarte
+Otwieraj ulubione lokale z wyszukiwania
+Dane są codziennie kopiowane
+Dane nie znikają po aktualizacji
+
+### 앱스토어 (스웨덴어)
+
+Fråga Siri om nästa stängda dag
+Siri säger om det är öppet på söndag
+Öppna favoritställen från sökningen
+Dina data säkerhetskopieras dagligen
+Data försvinner inte vid uppdatering
+
+### 앱스토어 (튀르키예어)
+
+Sonraki kapalı günü Siri'ye sorun
+Siri bu pazar açık mı söyler
+Favori mekânları aramadan açın
+Kayıtlı veriler her gün yedeklenir
+Güncellemeden sonra kayıtlar kaybolmaz
+
 ## 2.0.10
 
 ### 앱스토어 (한국어)
