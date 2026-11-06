@@ -16,6 +16,9 @@ struct CustomMartEditView: View {
     @State private var patterns: [ClosurePattern] = []
     @State private var selectedColor: Color = .red
     @State private var showingPatternEditor = false
+    /// 무료로 넣을 수 있는 수(`PlanLimits.customMarts`)를 넘겨 새 마트를 넣으려 할 때
+    @State private var showingPaywall = false
+    @ObservedObject private var plans = PlanManager.shared
 
     init(editingMart: CustomMart? = nil) {
         self.editingMart = editingMart
@@ -94,10 +97,23 @@ struct CustomMartEditView: View {
                     patterns.append(newPattern)
                 }
             }
+            // 사고 돌아오면 쓰던 마트를 그대로 넣는다
+            .paywall(for: .moreMarts, isPresented: $showingPaywall) {
+                if canAdd { saveMart() }
+            }
         }
     }
 
+    /// 새 마트를 하나 더 넣을 수 있는가. 고치는 것은 언제나 된다(이미 넣은 마트는 잠그지 않는다).
+    private var canAdd: Bool {
+        editingMart != nil || plans.allows(.moreMarts, current: customMartManager.customMarts.count)
+    }
+
     private func saveMart() {
+        guard canAdd else {
+            showingPaywall = true
+            return
+        }
         let colorHex = selectedColor.toHex() ?? "#FF6B6B"
 
         if let existing = editingMart {

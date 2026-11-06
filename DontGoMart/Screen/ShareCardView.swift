@@ -456,8 +456,13 @@ struct ShareCardSheet: View {
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @State private var format: ShareFormat = .story
+    @ObservedObject private var plans = PlanManager.shared
+    /// 게시물 사진은 무료, 스토리 규격과 동영상은 Plus. 무료면 게시물로 연다.
+    @State private var format: ShareFormat = PlanManager.shared.allows(.storyAndVideo) ? .story : .post
     @State private var medium: Medium = .photo
+    /// 잠긴 형식 · 매체를 고르려 했을 때. 사고 돌아오면 그 선택을 그대로 쓴다.
+    @State private var wanted: (format: ShareFormat, medium: Medium)?
+    @State private var isShowingPaywall = false
     @State private var images: [ShareFormat: UIImage] = [:]
     @State private var videos: [ShareFormat: URL] = [:]
     @State private var videoProgress: Double?
@@ -471,15 +476,27 @@ struct ShareCardSheet: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
-                Picker("형식", selection: $format) {
+                Picker("형식", selection: formatChoice) {
                     ForEach(ShareFormat.allCases) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
 
-                Picker("매체", selection: $medium) {
+                Picker("매체", selection: mediumChoice) {
                     ForEach(Medium.allCases) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
+
+                if !plans.allows(.storyAndVideo) {
+                    HStack(spacing: 8) {
+                        PlanBadge(tier: .plus)
+                        Text("스토리 규격과 동영상은 Plus에서 열려요.")
+                            .font(.body)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .accessibilityElement(children: .combine)
+                }
 
                 preview
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -496,11 +513,37 @@ struct ShareCardSheet: View {
                 }
             }
             .task(id: "\(format.rawValue)-\(medium.rawValue)") { await prepareMedia() }
+            .paywall(for: .storyAndVideo, isPresented: $isShowingPaywall) {
+                if let wanted, plans.allows(.storyAndVideo) {
+                    format = wanted.format
+                    medium = wanted.medium
+                }
+                wanted = nil
+            }
             .alert("인스타그램이 없어요", isPresented: $showsInstagramUnavailableAlert) {
                 Button("확인", role: .cancel) {}
             } message: {
                 Text("인스타그램 앱이 설치되어 있어야 스토리로 공유할 수 있어요.")
             }
+        }
+    }
+
+    /// 형식 · 매체 고르기. 무료일 때 스토리나 동영상을 고르면 바꾸지 않고 Plus 페이월을 연다.
+    private var formatChoice: Binding<ShareFormat> {
+        Binding(get: { format }, set: { choose($0, medium) })
+    }
+
+    private var mediumChoice: Binding<Medium> {
+        Binding(get: { medium }, set: { choose(format, $0) })
+    }
+
+    private func choose(_ newFormat: ShareFormat, _ newMedium: Medium) {
+        if (newFormat == .story || newMedium == .video) && !plans.allows(.storyAndVideo) {
+            wanted = (newFormat, newMedium)
+            isShowingPaywall = true
+        } else {
+            format = newFormat
+            medium = newMedium
         }
     }
 

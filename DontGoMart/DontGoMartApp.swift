@@ -54,6 +54,8 @@ struct DontGoMartApp: App {
             // Provider 의 .after(nextMidnight) 정책과 함께 매일 최소 1회 갱신 보장.
             if newPhase == .active {
                 WidgetManager.shared.updateWidget()
+                // 산 칸을 영수증으로 다시 읽는다 — 다른 기기에서 산 것 · 구독 만료 · 환불 (켤 때는 ClosedDaysView 가 읽는다)
+                Task { await PlanManager.shared.refresh() }
             }
             // 단골 식당 Spotlight 색인을 지금 목록에 맞춘다
             if newPhase == .active || newPhase == .background {

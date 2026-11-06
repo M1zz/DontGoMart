@@ -28,6 +28,12 @@ struct SettingsView: View {
     @State private var showingCustomMartEditor = false
     @State private var editingCustomMart: CustomMart? = nil
 
+    @ObservedObject private var plans = PlanManager.shared
+    @State private var showingPaywall = false
+    @State private var showingGraduation = false
+    @State private var showingManageSubscriptions = false
+    @State private var restoreMessage: String?
+
     /// 개발자(마스터) 모드 — LeeoSupportSection 의 '버전' 행을 7번 탭하면 켜진다.
     /// 켜져 있을 때만 접수된 피드백·사용 통계 진입점이 보인다. 키 이름은 LeeoKit 과 같아야 한다.
     @AppStorage("dev.masterMode") private var isMasterMode = false
@@ -38,6 +44,7 @@ struct SettingsView: View {
                 martSelectionSection
                 customMartSection
                 notificationSection
+                planSection
                 supportSection
                 Section {
                     LeeoSupportSection<DontGoMartSpec>()
@@ -84,6 +91,56 @@ struct SettingsView: View {
             .sheet(isPresented: $showingCustomMartEditor) {
                 CustomMartEditView(editingMart: editingCustomMart)
             }
+            .paywall(for: nil, isPresented: $showingPaywall)
+            .sheet(isPresented: $showingGraduation) {
+                LeeoGraduationOfferView(graduate: plans.product(PlanProducts.proGraduate)) {
+                    await plans.refresh()
+                }
+            }
+            .manageSubscriptionsSheet(isPresented: $showingManageSubscriptions)
+            .alert(restoreMessage ?? "", isPresented: Binding(
+                get: { restoreMessage != nil },
+                set: { if !$0 { restoreMessage = nil } }
+            )) {
+                Button("확인", role: .cancel) {}
+            }
+        }
+    }
+
+    // MARK: - Plan Section (돈꼬마트 Plus · Pro)
+
+    /// 지금 칸 · 요금제 보기, 구독 중이면 구독 관리와 '평생으로 바꾸기', 그리고 구매 복원.
+    private var planSection: some View {
+        Section {
+            Button { showingPaywall = true } label: {
+                LabeledContent("요금제 보기", value: plans.tier.title)
+            }
+            if let subscription = plans.subscription {
+                Button(LeeoLadderText.manageSubscription) { showingManageSubscriptions = true }
+                // 구독을 평생으로 바꾸는 길을 늘 열어 둔다. 연 구독은 졸업가, 주 · 월 구독은 페이월의 평생.
+                Button(LeeoLadderText.switchToLifetimeEntry) {
+                    if PlanProducts.yearlies.contains(subscription.productID),
+                       plans.product(PlanProducts.proGraduate) != nil {
+                        showingGraduation = true
+                    } else {
+                        showingPaywall = true
+                    }
+                }
+            }
+            Button(Utillity.restorePurchases) {
+                Task {
+                    restoreMessage = await plans.restore()
+                        ? String(localized: "구매를 복원했어요.")
+                        : String(localized: "이 Apple 계정에서 구매한 기록을 찾지 못했어요.")
+                }
+            }
+            .disabled(plans.isWorking)
+        } header: {
+            Text("돈꼬마트 Plus · Pro")
+        } footer: {
+            if plans.isLegacy {
+                Text("모든 기능이 무료일 때부터 써 주셔서 Pro를 그대로 드려요.")
+            }
         }
     }
 
@@ -93,7 +150,7 @@ struct SettingsView: View {
     private var supportSection: some View {
         Section(
             header: Text("응원하기"),
-            footer: Text("모든 기능은 계속 무료예요. 후원은 순수한 응원이며, 몇 번이든 보낼 수 있어요.")
+            footer: Text("응원은 기능을 열지 않는 순수한 후원이에요. 몇 번이든 보낼 수 있어요.")
         ) {
             LeeoTipJarLink<DontGoMartSpec>(tipJar: DontGoMartTips.jar, systemImage: "cup.and.saucer.fill")
         }
@@ -254,7 +311,32 @@ struct SettingsView: View {
             }) {
                 Label("마트 추가", systemImage: "plus.circle.fill")
             }
+
+            // 내가 넣은 가게 목록은 칸과 상관없이 언제나 글로 내보낸다
+            if let storeList {
+                ShareLink(item: storeList) {
+                    Label("가게 목록 내보내기", systemImage: "square.and.arrow.up")
+                }
+            }
         }
+    }
+
+    /// 나만의 마트와 단골 식당을 휴무 규칙과 함께 적은 글. 넣은 가게가 없으면 nil.
+    private var storeList: String? {
+        let restaurants = RestaurantManager.shared.restaurants
+        let marts = customMartManager.customMarts
+        guard !marts.isEmpty || !restaurants.isEmpty else { return nil }
+        var lines: [String] = []
+        if !marts.isEmpty {
+            lines.append(String(localized: "나만의 마트"))
+            lines += marts.map { "· \($0.name) — " + $0.patterns.map(\.displayText).joined(separator: ", ") }
+        }
+        if !restaurants.isEmpty {
+            if !lines.isEmpty { lines.append("") }
+            lines.append(String(localized: "단골 식당"))
+            lines += restaurants.map { "· \($0.name) — \($0.patternSummary)" }
+        }
+        return lines.joined(separator: "\n")
     }
 
     // MARK: - Notification Section

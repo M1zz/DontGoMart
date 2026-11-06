@@ -48,7 +48,7 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 언어별 칸에 올린
 달력과 공유
 달력에서 한 달 치 휴무일을 한 번에 보고, 휴무 소식은 2주 달력과 장보기 팁이 담긴 카드로 만들어 보내세요. 인스타그램 게시물과 스토리 규격, 짧은 동영상으로도 만들 수 있어요.
 
-모든 기능은 무료입니다. 도움이 되었다면 커피 한 잔으로 개발을 응원해 주세요.
+마트 휴무를 확인하고 알림을 받는 기능은 모두 무료입니다. 나만의 마트와 단골 식당을 더 넣거나 스토리와 동영상으로 공유하려면 Plus를, 추가 위젯과 잠금 화면 위젯, 식당 휴무 자동 채우기는 Pro를 이용해 보세요.
 
 ### 지원 URL
 
@@ -106,7 +106,7 @@ Keep the nearest closed day, the next two closed days with a countdown, this Sun
 Calendar and sharing
 Browse a full month of closed days in the calendar, and send the news as a card with a two-week calendar and a shopping tip. Cards come in Instagram post and Story sizes, and as short videos.
 
-Every feature is free. If the app saves you a trip, you can support development with a coffee.
+Checking closed days and getting alerts is free. Plus lets you add more of your own stores and restaurants and share as Stories and videos. Pro adds the extra widgets, Lock Screen widgets and restaurant auto-fill.
 
 ### 지원 URL
 
@@ -164,7 +164,7 @@ Keep the nearest closed day, the next two closed days with a countdown, this Sun
 Calendar and sharing
 Browse a full month of closed days in the calendar, and send the news as a card with a two-week calendar and a shopping tip. Cards come in Instagram post and Story sizes, and as short videos.
 
-Every feature is free. If the app saves you a trip, you can support development with a coffee.
+Checking closed days and getting alerts is free. Plus lets you add more of your own stores and restaurants and share as Stories and videos. Pro adds the extra widgets, Lock Screen widgets and restaurant auto-fill.
 
 ### 지원 URL
 
@@ -222,7 +222,7 @@ DontGoMartは、韓国の大型スーパーやコストコの義務休業日を�
 カレンダーと共有
 カレンダーで1か月分の休業日をまとめて確認できます。休業のお知らせは、2週間分のカレンダーと買い物のヒントが入ったカードにして送れます。Instagramの投稿やストーリーズのサイズ、短い動画にも対応しています。
 
-すべての機能は無料です。お役に立てたら、コーヒー1杯で開発を応援してください。
+休業日の確認と通知はすべて無料です。マイストアやお気に入りの飲食店をもっと登録したり、ストーリーズや動画でシェアしたりするならPlus、追加のウィジェットとロック画面ウィジェット、飲食店の定休日の自動入力はProでどうぞ。
 
 ### 지원 URL
 
@@ -280,7 +280,7 @@ DontGoMart 可以一次查看韩国大型超市和 Costco 的义务休业日，�
 日历与分享
 在日历上一次查看整月的休业日。休业消息可以做成带有两周日历和购物小提示的卡片分享出去，也支持 Instagram 帖子、快拍尺寸和短视频。
 
-所有功能均免费。如果觉得有用，欢迎请开发者喝一杯咖啡。
+查看休业日和接收提醒完全免费。想添加更多自定义店铺和餐厅、用快拍和视频分享，可选择 Plus；更多小组件、锁定屏幕小组件和餐厅休息日自动填写则在 Pro 中提供。
 
 ### 지원 URL
 
@@ -338,7 +338,7 @@ DontGoMart показывает обязательные выходные дни
 Календарь и обмен
 В календаре видны выходные на целый месяц. Оповещением о выходном можно поделиться в виде карточки с календарём на 2 недели и подсказкой для покупок. Поддерживаются размеры постов и Stories в Instagram, а также короткие видео.
 
-Все функции бесплатны. Если приложение пригодилось, поддержите разработку чашкой кофе.
+Проверка выходных и напоминания — бесплатно. С Plus можно добавить больше своих магазинов и ресторанов и делиться в Stories и видео. Pro добавляет дополнительные виджеты, виджеты экрана блокировки и автозаполнение выходных ресторанов.
 
 ### 지원 URL
 
@@ -396,7 +396,7 @@ DontGoMart 可以一次查看韓國大型超市與 Costco 的義務公休日，�
 行事曆與分享
 在行事曆上一次查看整個月的公休日。公休消息可以做成附有兩週行事曆與採買小提示的卡片分享出去，也支援 Instagram 貼文、限時動態尺寸與短影片。
 
-所有功能皆免費。如果覺得有用，歡迎請開發者喝一杯咖啡。
+查看公休日和接收提醒完全免費。想加入更多自訂店家和餐廳、用限時動態和影片分享，可選擇 Plus；更多小工具、鎖定畫面小工具和餐廳公休日自動填入則在 Pro 中提供。
 
 ### 지원 URL
 
@@ -454,7 +454,7 @@ Con los widgets puedes ver el próximo día de cierre, los dos siguientes con lo
 Calendario y compartir
 Consulta los días de cierre de todo el mes en el calendario. Puedes compartir un aviso de cierre como una tarjeta con el calendario de dos semanas y un consejo de compra, en formato de publicación o historia de Instagram, o en un vídeo corto.
 
-Todas las funciones son gratis. Si te ha sido útil, apoya el desarrollo con un café.
+Consultar los cierres y recibir avisos es gratis. Con Plus puedes añadir más tiendas y restaurantes propios y compartir en historias y vídeos. Pro suma los widgets adicionales, los de pantalla bloqueada y el autocompletado de cierres de restaurantes.
 
 ### 지원 URL
 
@@ -512,7 +512,7 @@ Mit den Widgets siehst du den nächsten Schließtag, die kommenden zwei Schließ
 Kalender und Teilen
 Im Kalender siehst du die Schließtage eines ganzen Monats. Eine Schließung kannst du als Karte mit Zwei-Wochen-Kalender und Einkaufstipp teilen – im Format für Instagram-Beiträge und -Stories oder als kurzes Video.
 
-Alle Funktionen sind kostenlos. Wenn dir die App gefällt, unterstütze die Entwicklung gern mit einem Kaffee.
+Schließtage prüfen und Hinweise erhalten ist kostenlos. Mit Plus fügst du weitere eigene Märkte und Restaurants hinzu und teilst als Story und Video. Pro bringt die zusätzlichen Widgets, Sperrbildschirm-Widgets und das automatische Eintragen von Restaurant-Ruhetagen.
 
 ### 지원 URL
 
@@ -570,7 +570,7 @@ Les widgets affichent la prochaine fermeture, les deux suivantes avec les jours 
 Calendrier et partage
 Consultez les jours de fermeture d’un mois entier dans le calendrier. Partagez une fermeture sous forme de carte avec le calendrier de deux semaines et un conseil de courses, aux formats post et story Instagram, ou en courte vidéo.
 
-Toutes les fonctions sont gratuites. Si l’app vous est utile, soutenez-nous avec un café.
+Consulter les jours de fermeture et recevoir les alertes est gratuit. Avec Plus, ajoutez davantage de magasins et de restaurants et partagez en story et en vidéo. Pro ajoute les widgets supplémentaires, ceux de l’écran verrouillé et le remplissage automatique des fermetures des restaurants.
 
 ### 지원 URL
 
@@ -628,7 +628,7 @@ Con i widget vedi la prossima chiusura, le due successive con i giorni rimanenti
 Calendario e condivisione
 Nel calendario vedi i giorni di chiusura di un intero mese. Puoi condividere una chiusura come scheda con il calendario di due settimane e un consiglio per la spesa, nei formati per post e storie di Instagram o come breve video.
 
-Tutte le funzioni sono gratuite. Se ti è utile, sostieni lo sviluppo con un caffè.
+Controllare le chiusure e ricevere gli avvisi è gratis. Con Plus aggiungi altri negozi e ristoranti e condividi con storie e video. Pro aggiunge i widget extra, quelli della schermata di blocco e la compilazione automatica delle chiusure dei ristoranti.
 
 ### 지원 URL
 
@@ -686,7 +686,7 @@ Com os widgets você vê o próximo dia de fechamento, os dois seguintes com os 
 Calendário e compartilhamento
 No calendário, veja os dias de fechamento de um mês inteiro. Você pode compartilhar um aviso de fechamento como um cartão com o calendário de duas semanas e uma dica de compras, nos formatos de post e story do Instagram ou em um vídeo curto.
 
-Todos os recursos são gratuitos. Se o app foi útil, apoie o desenvolvimento com um café.
+Consultar os fechamentos e receber alertas é grátis. Com o Plus, adicione mais lojas e restaurantes e compartilhe em stories e vídeos. O Pro traz os widgets extras, os widgets da Tela Bloqueada e o preenchimento automático dos fechamentos de restaurantes.
 
 ### 지원 URL
 
@@ -744,7 +744,7 @@ DontGoMart รวมวันปิดตามกฎหมายของซู
 ปฏิทินและการแชร์
 ดูวันปิดทั้งเดือนในปฏิทิน แชร์ข่าวร้านปิดเป็นการ์ดที่มีปฏิทิน 2 สัปดาห์และเคล็ดลับการซื้อของ ในขนาดโพสต์และสตอรี่ของ Instagram หรือเป็นวิดีโอสั้น
 
-ทุกฟีเจอร์ใช้ฟรี ถ้าแอปนี้มีประโยชน์ ช่วยให้กำลังใจนักพัฒนาด้วยกาแฟสักแก้วนะ
+การดูวันปิดและรับการแจ้งเตือนใช้ได้ฟรีทั้งหมด หากต้องการเพิ่มร้านของคุณและร้านอาหารได้มากขึ้น หรือแชร์เป็นสตอรี่และวิดีโอ เลือก Plus ส่วนวิดเจ็ตเพิ่มเติม วิดเจ็ตหน้าจอล็อก และการดึงวันหยุดร้านอาหารอัตโนมัติอยู่ใน Pro
 
 ### 지원 URL
 
@@ -802,7 +802,7 @@ Với widget, bạn xem được ngày đóng cửa gần nhất, hai ngày đó
 Lịch và chia sẻ
 Xem ngày đóng cửa của cả tháng trên lịch. Bạn có thể chia sẻ thông báo đóng cửa dưới dạng thẻ kèm lịch hai tuần và mẹo mua sắm, theo kích thước bài đăng và story Instagram, hoặc dưới dạng video ngắn.
 
-Mọi tính năng đều miễn phí. Nếu thấy hữu ích, hãy ủng hộ nhà phát triển bằng một ly cà phê.
+Xem ngày đóng cửa và nhận thông báo đều miễn phí. Gói Plus cho bạn thêm nhiều cửa hàng và nhà hàng hơn, chia sẻ bằng story và video. Gói Pro có thêm tiện ích bổ sung, tiện ích Màn hình khóa và tự điền ngày nghỉ của nhà hàng.
 
 ### 지원 URL
 
@@ -860,7 +860,7 @@ Widgety ukazují nejbližší den zavření, dva další dny zavření s počtem
 Kalendář a sdílení
 V kalendáři vidíte dny zavření na celý měsíc. Zavření můžete sdílet jako kartu s kalendářem na dva týdny a tipem k nákupu ve formátu příspěvku nebo story na Instagramu, případně jako krátké video.
 
-Všechny funkce jsou zdarma. Pokud se vám aplikace hodí, podpořte vývoj kávou.
+Kontrola dnů zavření a upozornění jsou zdarma. S Plus přidáte další vlastní obchody a restaurace a můžete sdílet jako story i video. Pro přidává další widgety, widgety na zamčené obrazovce a automatické vyplnění zavíracích dnů restaurací.
 
 ### 지원 URL
 
@@ -918,7 +918,7 @@ Med widgets kan du se den nærmeste lukkedag, de næste to lukkedage med dage ti
 Kalender og deling
 I kalenderen ser du lukkedage for en hel måned. Du kan dele en lukkemeddelelse som et kort med to ugers kalender og et indkøbstip i størrelser til Instagram-opslag og -stories eller som en kort video.
 
-Alle funktioner er gratis. Hvis appen er til nytte, kan du støtte udviklingen med en kop kaffe.
+Det er gratis at tjekke lukkedage og få påmindelser. Med Plus kan du tilføje flere butikker og restauranter og dele som story og video. Pro giver de ekstra widgets, widgets til låseskærmen og automatisk udfyldning af restauranters lukkedage.
 
 ### 지원 URL
 
@@ -976,7 +976,7 @@ Widgets για την Αρχική οθόνη και την οθόνη κλει�
 Ημερολόγιο και κοινοποίηση
 Στο ημερολόγιο βλέπετε τις ημέρες κλεισίματος ενός ολόκληρου μήνα. Μπορείτε να κοινοποιήσετε ένα κλείσιμο ως κάρτα με ημερολόγιο δύο εβδομάδων και συμβουλή για ψώνια, σε μεγέθη ανάρτησης και story του Instagram ή ως σύντομο βίντεο.
 
-Όλες οι λειτουργίες είναι δωρεάν. Αν η εφαρμογή σάς φάνηκε χρήσιμη, στηρίξτε την ανάπτυξη με έναν καφέ.
+Ο έλεγχος των αργιών και οι ειδοποιήσεις είναι δωρεάν. Με το Plus προσθέτετε περισσότερα δικά σας καταστήματα και εστιατόρια και μοιράζεστε σε story και βίντεο. Το Pro προσθέτει τα επιπλέον widget, τα widget οθόνης κλειδώματος και την αυτόματη συμπλήρωση αργιών εστιατορίων.
 
 ### 지원 URL
 
@@ -1034,7 +1034,7 @@ Widgeteistä näet lähimmän sulkupäivän, kaksi seuraavaa sulkupäivää jäl
 Kalenteri ja jakaminen
 Kalenterista näet koko kuukauden sulkupäivät. Sulkemisilmoituksen voi jakaa korttina, jossa on kahden viikon kalenteri ja ostosvinkki, Instagram-julkaisun ja -storyn kokoisena tai lyhyenä videona.
 
-Kaikki ominaisuudet ovat ilmaisia. Jos sovellus on hyödyksi, tue kehitystä kupillisella kahvia.
+Sulkupäivien tarkistus ja muistutukset ovat ilmaisia. Plus-versiolla lisäät enemmän omia kauppoja ja ravintoloita ja jaat storyina ja videoina. Pro tuo lisäwidgetit, lukitusnäytön widgetit ja ravintoloiden sulkupäivien automaattisen täytön.
 
 ### 지원 URL
 
@@ -1092,7 +1092,7 @@ Lewat widget, kamu bisa melihat hari tutup terdekat, dua hari tutup berikutnya b
 Kalender dan berbagi
 Lihat hari tutup satu bulan penuh di kalender. Kabar hari tutup bisa dibagikan sebagai kartu berisi kalender dua minggu dan tips belanja, dalam ukuran postingan dan story Instagram, atau sebagai video pendek.
 
-Semua fitur gratis. Kalau aplikasi ini berguna, dukung pengembangannya dengan secangkir kopi.
+Melihat hari tutup dan menerima pengingat gratis. Dengan Plus, tambahkan lebih banyak toko dan restoran sendiri serta bagikan lewat story dan video. Pro menghadirkan widget tambahan, widget Layar Terkunci, dan isi otomatis hari tutup restoran.
 
 ### 지원 URL
 
@@ -1150,7 +1150,7 @@ Med widgetene ser du nærmeste stengedag, de to neste stengedagene med dager igj
 Kalender og deling
 I kalenderen ser du stengedagene for en hel måned. Du kan dele en stengemelding som et kort med to ukers kalender og et handletips, i størrelser for Instagram-innlegg og -stories, eller som en kort video.
 
-Alle funksjoner er gratis. Hvis appen er til nytte, kan du støtte utviklingen med en kaffe.
+Det er gratis å sjekke stengedager og få varsler. Med Plus kan du legge til flere butikker og restauranter og dele som story og video. Pro gir de ekstra widgetene, widgeter for låseskjermen og automatisk utfylling av restauranters stengedager.
 
 ### 지원 URL
 
@@ -1208,7 +1208,7 @@ Met widgets zie je de eerstvolgende sluitingsdag, de twee daarna met de resteren
 Kalender en delen
 In de kalender zie je de sluitingsdagen van een hele maand. Je kunt een sluiting delen als kaart met een kalender van twee weken en een boodschappentip, in formaten voor Instagram-berichten en -stories of als korte video.
 
-Alle functies zijn gratis. Als de app van pas komt, steun je de ontwikkeling met een kop koffie.
+Sluitingsdagen bekijken en meldingen krijgen is gratis. Met Plus voeg je meer eigen winkels en restaurants toe en deel je als story en video. Pro voegt de extra widgets, widgets voor het toegangsscherm en het automatisch invullen van sluitingsdagen van restaurants toe.
 
 ### 지원 URL
 
@@ -1266,7 +1266,7 @@ Widżety pokazują najbliższy dzień zamknięcia, dwa kolejne z liczbą pozosta
 Kalendarz i udostępnianie
 W kalendarzu zobaczysz dni zamknięcia na cały miesiąc. Informację o zamknięciu możesz udostępnić jako kartę z kalendarzem na dwa tygodnie i wskazówką zakupową, w rozmiarach postów i stories na Instagramie lub jako krótkie wideo.
 
-Wszystkie funkcje są bezpłatne. Jeśli aplikacja Ci się przydaje, wesprzyj jej rozwój kawą.
+Sprawdzanie dni zamknięcia i alerty są za darmo. Z Plus dodasz więcej własnych sklepów i restauracji oraz udostępnisz jako story i wideo. Pro daje dodatkowe widżety, widżety ekranu blokady i automatyczne uzupełnianie dni zamknięcia restauracji.
 
 ### 지원 URL
 
@@ -1324,7 +1324,7 @@ Med widgets ser du närmaste stängningsdag, de två nästa med dagar kvar, om d
 Kalender och delning
 I kalendern ser du stängningsdagar för en hel månad. Du kan dela en stängning som ett kort med tvåveckorskalender och ett inköpstips, i storlekar för Instagram-inlägg och -stories eller som en kort video.
 
-Alla funktioner är gratis. Om appen kommer till nytta kan du stödja utvecklingen med en kaffe.
+Att se stängningsdagar och få påminnelser är gratis. Med Plus lägger du till fler egna butiker och restauranger och delar som story och video. Pro ger de extra widgetarna, widgetar för låsskärmen och automatisk ifyllning av restaurangers stängningsdagar.
 
 ### 지원 URL
 
@@ -1382,7 +1382,7 @@ Widget’larla en yakın kapalı günü, sonraki iki kapalı günü ve kalan gü
 Takvim ve paylaşım
 Takvimde bir ayın tüm kapalı günlerini gör. Kapanış haberini, 2 haftalık takvim ve alışveriş ipucu içeren bir kart olarak Instagram gönderi ve hikâye boyutlarında ya da kısa bir video olarak paylaşabilirsin.
 
-Tüm özellikler ücretsiz. İşine yaradıysa geliştirmeyi bir kahveyle destekleyebilirsin.
+Kapalı günlere bakmak ve uyarı almak ücretsiz. Plus ile daha fazla mağaza ve restoran ekleyebilir, hikâye ve video olarak paylaşabilirsin. Pro ise ek widget’ları, kilit ekranı widget’larını ve restoran kapalı günlerini otomatik doldurmayı getirir.
 
 ### 지원 URL
 

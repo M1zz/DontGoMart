@@ -25,11 +25,23 @@ enum DontGoMartSpec: LeeoAppSpec {
         marketingURL: URL(string: "https://m1zz.github.io/DontGoMart/")!
     )
 
-    /// 수익모델 — 전 기능 무료다. 페이월이 없고, 잠긴 기능도 없다.
+    /// 수익모델 — 무료로 받아 쓰고, 동네 가게를 여럿 챙기면 Plus, 앱을 안 열고 알고 입력을 맡기면 Pro.
     ///
-    /// 파는 소모성 팁(coffee/cake/meal)이 있지만 `.credits` 가 아니다. 크레딧은 쓸 때마다
-    /// 차감되는 잔액 모델인데, 이 앱의 팁은 차감되지 않는 순수 후원이라 LeeoKit 팁을 혼자 쓴다
-    /// (`DontGoMartTips` — 리이오의 다른 앱과 같은 팁 화면 · 응원 단계). 결제가 기능을 열지 않으므로
-    /// 계약상으로는 무료 앱이 맞다.
-    static let monetization = LeeoMonetization.free
+    /// 칸마다 주 · 월 · 연 구독과 평생(`PlanProducts`). 무엇이 어느 칸인지는 `PlanFeature.tier` 한 곳에 있고,
+    /// 무료 개수는 `PlanLimits` 에 있다. 이미 쓰던 사람은 그대로 Pro 다(`PlanManager`).
+    ///
+    /// 팁(coffee/cake/meal)은 여기 넣지 않는다. 팁은 아무것도 열지 않는 순수 후원이고,
+    /// LeeoKit 팁을 혼자 쓴다(`DontGoMartTips` — 리이오의 다른 앱과 같은 팁 화면 · 응원 단계).
+    static let monetization = LeeoMonetization.freemiumSubscription(
+        LeeoSubscriptionConfig(
+            productIDs: PlanProducts.sale,
+            // 자체 약관이 없으므로 애플 표준 사용권 계약(EULA)을 건다. 구독을 파는 앱의 심사 필수 항목이다.
+            termsURL: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!,
+            entitlementIDs: PlanProducts.entitlements,
+            gate: LeeoGatePolicy(
+                freeLimits: [PlanFeature.moreMarts.rawValue: PlanLimits.customMarts,
+                             PlanFeature.moreRestaurants.rawValue: PlanLimits.restaurants],
+                proOnly: Set([PlanFeature.storyAndVideo, .moreWidgets, .lockScreenWidgets, .restaurantImport].map(\.rawValue))),
+            // 위젯과 함께 읽는 통. 권한 캐시가 여기 적힌다.
+            cacheSuiteName: Utillity.appGroupId))
 }

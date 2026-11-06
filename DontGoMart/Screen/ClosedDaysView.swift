@@ -21,6 +21,12 @@ struct ClosedDaysView: View {
     @State private var isShareButtonCollapsed = false
     /// 후원자 감사 리마인더(휴무일, 1년에 ~3번) 표시 여부
     @State private var isShowingSupporterThanks = false
+    /// 잠긴 위젯을 눌러 들어온 페이월. 그 위젯 줄을 짚는다.
+    @State private var paywallFeature: PlanFeature?
+    @State private var isShowingPaywall = false
+    /// 연 구독 6개월째 · 갱신 7일 전의 구독 졸업 제안
+    @State private var isShowingGraduation = false
+    @ObservedObject private var plans = PlanManager.shared
     /// 휴무 임박 배너를 닫은 휴무일 ("yyyy-MM-dd"). 같은 휴무일엔 다시 띄우지 않는다.
     @AppStorage("closingBanner.dismissedDay") private var dismissedClosingDay = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -58,14 +64,28 @@ struct ClosedDaysView: View {
                     .presentationDetents([.large])
             }
         }
+        .paywall(for: paywallFeature, isPresented: $isShowingPaywall)
+        .sheet(isPresented: $isShowingGraduation) {
+            LeeoGraduationOfferView(graduate: plans.product(PlanProducts.proGraduate)) {
+                await plans.refresh()
+            }
+        }
         .task { await announcements.refresh() }
+        .task {
+            // 연 구독 중이면 6개월째와 갱신 7일 전에 한 번씩 평생가를 보인다 (LeeoGraduation)
+            await plans.refresh()
+            if plans.graduationIsDue {
+                plans.markGraduationOffered()
+                isShowingGraduation = true
+            }
+        }
         #if DEBUG
         // 스토어 스크린샷용: 탭 없이 공유 카드 화면을 바로 연다 (디버그 빌드 전용)
         .task {
             if ProcessInfo.processInfo.arguments.contains("-ScreenshotShareCard") {
                 isShowingShareCard = true
             }
-            // -ScreenshotScreen calendar | settings | pattern : 스크린샷 스크립트가 화면을 바로 연다
+            // -ScreenshotScreen calendar | settings | pattern | share | paywall : 스크린샷 스크립트가 화면을 바로 연다
             if UserDefaults.standard.string(forKey: "ScreenshotScreen") != nil,
                martSelection.selectedMartTypes.isEmpty {
                 martSelection.setSelected(true, for: .normal(type: .sunday))
@@ -74,6 +94,7 @@ struct ClosedDaysView: View {
             case "calendar": isShowingCalendar = true
             case "settings", "pattern": isShowingSettings = true
             case "share": isShowingShareCard = true
+            case "paywall": isShowingPaywall = true
             default: break
             }
         }
@@ -88,6 +109,13 @@ struct ClosedDaysView: View {
             if url.scheme == Utillity.deepLinkScheme, url.host == "calendar" {
                 isShowingSettings = false
                 isShowingCalendar = true
+            }
+            // 잠긴 Pro 위젯 → 그 위젯 줄을 짚은 페이월
+            if url.scheme == Utillity.deepLinkScheme, url.host == "paywall" {
+                isShowingSettings = false
+                isShowingCalendar = false
+                paywallFeature = PlanFeature(rawValue: url.lastPathComponent)
+                isShowingPaywall = true
             }
         }
     }
@@ -239,10 +267,16 @@ struct ClosedDaysView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
                 todayStatusCard
-                // 헛걸음을 막아 준 날의 응원 부탁 — 리이오의 다른 앱과 같은 LeeoKit 카드 · 같은 드문 규칙
-                LeeoTipAskSlot<DontGoMartSpec>(tipJar: DontGoMartTips.jar,
-                                               reached: DontGoMartTips.moments(todayHasClosedMart: todayHasClosedMart))
-                    .padding(.horizontal)
+                // 헛걸음을 막아 준 날 — 이미 Pro 인 사람에게는 응원 부탁(LeeoKit 카드 · 같은 드문 규칙),
+                // 아직 무료인 사람에게는 같은 순간에 Plus 를 한 번 권한다('다음에' 면 30일 쉼)
+                if plans.tier == .pro {
+                    LeeoTipAskSlot<DontGoMartSpec>(tipJar: DontGoMartTips.jar,
+                                                   reached: DontGoMartTips.moments(todayHasClosedMart: todayHasClosedMart))
+                        .padding(.horizontal)
+                } else if plans.isKnown, plans.tier == .free, !DontGoMartTips.moments(todayHasClosedMart: todayHasClosedMart).isEmpty {
+                    PlusInviteCard()
+                        .padding(.horizontal)
+                }
                 nextClosedDateCard
                 RestaurantWeekCard()
                 // 펼친 화면에서는 캘린더가 결과 쪽 판에 이미 서 있다.

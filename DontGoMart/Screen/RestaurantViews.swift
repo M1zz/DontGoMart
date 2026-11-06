@@ -241,6 +241,11 @@ struct RestaurantEditView: View {
     @State private var importMessage: String?
     @State private var importSucceeded = false
     @State private var isShowingPatternEditor = false
+    /// 무료 수(`PlanLimits.restaurants`)를 넘겨 새 식당을 넣으려 할 때
+    @State private var isShowingLimitPaywall = false
+    /// 링크 · 스크린샷으로 휴무를 채우려 할 때 (Pro)
+    @State private var isShowingImportPaywall = false
+    @ObservedObject private var plans = PlanManager.shared
 
     init(editing: Restaurant? = nil) {
         self.editing = editing
@@ -325,7 +330,17 @@ struct RestaurantEditView: View {
                 guard let item else { return }
                 Task { await importPhoto(item) }
             }
+            // 사고 돌아오면 쓰던 식당을 그대로 넣는다
+            .paywall(for: .moreRestaurants, isPresented: $isShowingLimitPaywall) {
+                if canAdd { save() }
+            }
+            .paywall(for: .restaurantImport, isPresented: $isShowingImportPaywall)
         }
+    }
+
+    /// 새 식당을 하나 더 넣을 수 있는가. 고치는 것은 언제나 된다(이미 넣은 식당은 잠그지 않는다).
+    private var canAdd: Bool {
+        editing != nil || plans.allows(.moreRestaurants, current: manager.restaurants.count)
     }
 
     // MARK: 가져오기
@@ -337,52 +352,81 @@ struct RestaurantEditView: View {
                     .font(.body)
                     .foregroundColor(.secondary)
 
-                HStack(spacing: 10) {
-                    PasteButton(payloadType: String.self) { strings in
-                        guard let text = strings.first else { return }
-                        Task { @MainActor in
-                            pastedText = text
-                            await importText(text)
-                        }
-                    }
-                    .buttonBorderShape(.capsule)
-                    .labelStyle(.titleAndIcon)
-
-                    PhotosPicker(selection: $photoItem, matching: .screenshots) {
-                        Label("스크린샷", systemImage: "photo")
-                            .font(.body.weight(.semibold))
-                    }
-                    .buttonStyle(.bordered)
-                    .buttonBorderShape(.capsule)
-                    .accessibilityHint(Text("사진에서 휴무 문구를 기기 안에서 읽어옵니다"))
-                }
-
-                TextField("또는 공유 링크·문구를 여기에 붙여넣기", text: $pastedText, axis: .vertical)
-                    .font(.body)
-                    .lineLimit(1...4)
-                    .onSubmit { Task { await importText(pastedText) } }
-                if !pastedText.isEmpty && !isImporting {
-                    Button("이 내용으로 가져오기") {
-                        Task { await importText(pastedText) }
-                    }
-                    .font(.body.weight(.semibold))
-                }
-
-                if isImporting {
-                    HStack(spacing: 8) {
-                        ProgressView()
-                        Text("휴무 정보를 찾는 중…")
-                            .font(.body)
-                    }
-                } else if let importMessage {
-                    Label(importMessage, systemImage: importSucceeded ? "checkmark.circle.fill" : "exclamationmark.circle")
-                        .font(.body)
-                        .foregroundColor(importSucceeded ? .green : .orange)
+                if plans.allows(.restaurantImport) {
+                    importControls
+                } else {
+                    lockedImportControls
                 }
             }
             .padding(.vertical, 4)
         } header: {
-            Text("빠르게 가져오기")
+            HStack(spacing: 8) {
+                Text("빠르게 가져오기")
+                if !plans.allows(.restaurantImport) { PlanBadge(tier: .pro) }
+            }
+        }
+    }
+
+    /// Pro 가 아닐 때: 같은 자리에 같은 단추를 두고, 누르면 페이월을 연다.
+    /// (시스템 붙여넣기 단추는 누름을 가로챌 수 없어 보통 단추로 그린다.)
+    private var lockedImportControls: some View {
+        HStack(spacing: 10) {
+            Button { isShowingImportPaywall = true } label: {
+                Label("붙여넣기", systemImage: "doc.on.clipboard")
+                    .font(.body.weight(.semibold))
+            }
+            Button { isShowingImportPaywall = true } label: {
+                Label("스크린샷", systemImage: "photo")
+                    .font(.body.weight(.semibold))
+            }
+        }
+        .buttonStyle(.bordered)
+        .buttonBorderShape(.capsule)
+    }
+
+    @ViewBuilder
+    private var importControls: some View {
+        HStack(spacing: 10) {
+            PasteButton(payloadType: String.self) { strings in
+                guard let text = strings.first else { return }
+                Task { @MainActor in
+                    pastedText = text
+                    await importText(text)
+                }
+            }
+            .buttonBorderShape(.capsule)
+            .labelStyle(.titleAndIcon)
+
+            PhotosPicker(selection: $photoItem, matching: .screenshots) {
+                Label("스크린샷", systemImage: "photo")
+                    .font(.body.weight(.semibold))
+            }
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.capsule)
+            .accessibilityHint(Text("사진에서 휴무 문구를 기기 안에서 읽어옵니다"))
+        }
+
+        TextField("또는 공유 링크·문구를 여기에 붙여넣기", text: $pastedText, axis: .vertical)
+            .font(.body)
+            .lineLimit(1...4)
+            .onSubmit { Task { await importText(pastedText) } }
+        if !pastedText.isEmpty && !isImporting {
+            Button("이 내용으로 가져오기") {
+                Task { await importText(pastedText) }
+            }
+            .font(.body.weight(.semibold))
+        }
+
+        if isImporting {
+            HStack(spacing: 8) {
+                ProgressView()
+                Text("휴무 정보를 찾는 중…")
+                    .font(.body)
+            }
+        } else if let importMessage {
+            Label(importMessage, systemImage: importSucceeded ? "checkmark.circle.fill" : "exclamationmark.circle")
+                .font(.body)
+                .foregroundColor(importSucceeded ? .green : .orange)
         }
     }
 
@@ -440,6 +484,10 @@ struct RestaurantEditView: View {
     }
 
     private func save() {
+        guard canAdd else {
+            isShowingLimitPaywall = true
+            return
+        }
         var restaurant = editing ?? Restaurant(name: name, patterns: patterns)
         restaurant.name = name.trimmingCharacters(in: .whitespaces)
         restaurant.address = address

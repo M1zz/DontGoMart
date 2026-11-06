@@ -214,7 +214,7 @@ struct RestaurantWeekWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: RestaurantWeekProvider()) { entry in
-            RestaurantWeekEntryView(entry: entry)
+            ProWidget { RestaurantWeekEntryView(entry: entry) }
         }
         .configurationDisplayName("단골 식당 7일")
         .description("앞으로 7일 중 단골 식당이 쉬는 요일을 점으로 보여줘요.")

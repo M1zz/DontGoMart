@@ -208,7 +208,7 @@ struct SundayStatusWidget: Widget {
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: SundayStatusWidgetProvider()) { entry in
-            SundayStatusEntryView(entry: entry)
+            ProWidget { SundayStatusEntryView(entry: entry) }
         }
         .configurationDisplayName("Sunday Open/Closed")
         .description("Shows in green/red whether your store is open this Sunday.")

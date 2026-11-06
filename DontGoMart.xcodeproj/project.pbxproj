@@ -81,6 +81,11 @@
 		F296107E67395B3895BEAAE7 /* DontGoMartRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA94B637D861A2268C6114 /* DontGoMartRoadmap.swift */; };
 		F8CAF74282B87E515EA26B48 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6D8E1AF9898CD59B16480C /* LeeoKit */; };
 		FF86884D06664712A8FF1B17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1004BA229141238536EE02 /* ColorExtension.swift */; };
+		D0075D6100000000000000C1 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D6000000000000000C0 /* Plan.swift */; };
+		D0075D6200000000000000C2 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D6000000000000000C0 /* Plan.swift */; };
+		D0075D6400000000000000C4 /* PlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D6300000000000000C3 /* PlanManager.swift */; };
+		D0075D6600000000000000C6 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D6500000000000000C5 /* PaywallView.swift */; };
+		D0075D6800000000000000C8 /* ProLockedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0075D6700000000000000C7 /* ProLockedWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +183,10 @@
 		D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeekWidget.swift; sourceTree = "<group>"; };
 		D0075D5900000000000000B9 /* ShareVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVideoExporter.swift; sourceTree = "<group>"; };
 		D1C229952E0C2ABB00969839 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D0075D6000000000000000C0 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		D0075D6300000000000000C3 /* PlanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanManager.swift; sourceTree = "<group>"; };
+		D0075D6500000000000000C5 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		D0075D6700000000000000C7 /* ProLockedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProLockedWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -228,6 +237,7 @@
 				40E2B177256F4A4897EC2274 /* CustomMartManager.swift */,
 				D0075D5300000000000000B3 /* RestaurantImporter.swift */,
 				D0075D5900000000000000B9 /* ShareVideoExporter.swift */,
+				D0075D6300000000000000C3 /* PlanManager.swift */,
 				88F6FEDA032C4E719A0B32FB /* OperationStatusManager.swift */,
 				D1C229952E0C2ABB00969839 /* NotificationManager.swift */,
 				589D5F482A433EFD00DB3CCF /* StoreKitManager.swift */,
@@ -250,6 +260,7 @@
 				D0075D4300000000000000A3 /* ShareCardView.swift */,
 				D0075D4500000000000000A5 /* TipCelebrationView.swift */,
 				D0075D5500000000000000B5 /* RestaurantViews.swift */,
+				D0075D6500000000000000C5 /* PaywallView.swift */,
 				D0075D4900000000000000A9 /* AnnouncementBanner.swift */,
 			);
 			path = Screen;
@@ -260,6 +271,7 @@
 			children = (
 				A31C4AAD3D0F423DA964E0D9 /* CustomMart.swift */,
 				D0075D5000000000000000B0 /* Restaurant.swift */,
+				D0075D6000000000000000C0 /* Plan.swift */,
 				C3C2F8E72CEB18CE003ED9A5 /* MartModel.swift */,
 				58D40AD22CDF8E15008C6458 /* MartClosedData.swift */,
 				58D40AD42CDF8E68008C6458 /* DateValue.swift */,
@@ -382,6 +394,7 @@
 				C359F4FC2CFD96CA00F26B1D /* TwoHolidayWidget.swift */,
 				D0075D4100000000000000A1 /* SundayStatusWidget.swift */,
 				D0075D5700000000000000B7 /* RestaurantWeekWidget.swift */,
+				D0075D6700000000000000C7 /* ProLockedWidget.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -573,6 +586,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0075D6600000000000000C6 /* PaywallView.swift in Sources */,
+				D0075D6400000000000000C4 /* PlanManager.swift in Sources */,
+				D0075D6100000000000000C1 /* Plan.swift in Sources */,
 				507108D21EFD4F309ED7BC48 /* CustomMartEditView.swift in Sources */,
 				AEAF6767F1F6414DB8284EF1 /* CustomMartManager.swift in Sources */,
 				5EF8D5624A6C44509B77A5BA /* CustomMart.swift in Sources */,
@@ -617,6 +633,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0075D6800000000000000C8 /* ProLockedWidget.swift in Sources */,
+				D0075D6200000000000000C2 /* Plan.swift in Sources */,
 				C359F5082CFDC16300F26B1D /* TwoHolidayWidgetProvider.swift in Sources */,
 				58B693FD2A3B66AB00FF904B /* MonthConfig.swift in Sources */,
 				58AA3ED02ECF56C0007D4BBD /* CustomMart.swift in Sources */,

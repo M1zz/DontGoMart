@@ -10,28 +10,26 @@
     ]
   },
   "identifier" : "B2E09D5F",
-  "nonRenewingSubscriptions" : [
-
-  ],
+  "nonRenewingSubscriptions" : [],
   "products" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "26.99",
       "familyShareable" : false,
       "internalID" : "4E0AEB64",
       "localizations" : [
         {
-          "description" : "Cup of coffee",
-          "displayName" : "Coffee",
+          "description" : "Widgets, Lock Screen and restaurant auto-fill, for life",
+          "displayName" : "DontGoMart Pro Lifetime",
           "locale" : "en_US"
         },
         {
-          "description" : "커피 한 잔 사주세요",
-          "displayName" : "커피한잔",
+          "description" : "위젯 · 잠금화면 · 식당 휴무 자동 채우기까지 평생",
+          "displayName" : "돈꼬마트 Pro 평생",
           "locale" : "ko"
         }
       ],
       "productID" : "com.dontgomart.Coffee",
-      "referenceName" : "Coffee",
+      "referenceName" : "Pro Lifetime",
       "type" : "NonConsumable"
     },
     {
@@ -93,6 +91,66 @@
       "productID" : "com.dontgomart.tip.meal",
       "referenceName" : "Tip Meal",
       "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "17.99",
+      "familyShareable" : false,
+      "internalID" : "A043AB4C-162F-5CA3-8076-5296AE356ED8",
+      "localizations" : [
+        {
+          "description" : "Unlimited stores and restaurants, story and video sharing, for life",
+          "displayName" : "DontGoMart Plus Lifetime",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "마트와 단골 식당 무제한, 스토리 · 동영상 공유를 평생",
+          "displayName" : "돈꼬마트 Plus 평생",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.leeo.DontGoMart.plus",
+      "referenceName" : "Plus Lifetime",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "8.99",
+      "familyShareable" : false,
+      "internalID" : "E8E9EA6E-E941-5F64-B06B-AC95081F66B9",
+      "localizations" : [
+        {
+          "description" : "Upgrade your Plus Lifetime to Pro Lifetime",
+          "displayName" : "Plus Lifetime to Pro Lifetime",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Plus 평생을 Pro 평생으로 올립니다",
+          "displayName" : "Plus 평생 → Pro 평생",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.leeo.DontGoMart.pro.upgrade",
+      "referenceName" : "Pro Upgrade",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "17.99",
+      "familyShareable" : false,
+      "internalID" : "26ECA66D-E33B-5321-AC25-D54B2476BEA3",
+      "localizations" : [
+        {
+          "description" : "Pro Lifetime for current subscribers",
+          "displayName" : "Pro Lifetime for Subscribers",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "구독하신 분께만 드리는 Pro 평생",
+          "displayName" : "구독 졸업 Pro 평생",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.leeo.DontGoMart.pro.graduate",
+      "referenceName" : "Pro Graduate",
+      "type" : "NonConsumable"
     }
   ],
   "settings" : {
@@ -148,7 +206,198 @@
     ]
   },
   "subscriptionGroups" : [
-
+    {
+      "id" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "DontGoMart Plus · Pro",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "",
+          "displayName" : "돈꼬마트 Plus · Pro",
+          "locale" : "ko"
+        }
+      ],
+      "name" : "DontGoMart Plus · Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "8.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "8B69DEDD-9499-5F44-8893-C6C55D6DB4C9",
+          "introductoryOffer" : {
+            "displayPrice" : "4.49",
+            "internalID" : "74252030-04E7-5EE6-A2A0-3D27B2B5D750",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1Y"
+          },
+          "localizations" : [
+            {
+              "description" : "Widgets, Lock Screen and restaurant auto-fill",
+              "displayName" : "DontGoMart Pro Yearly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "위젯 · 잠금화면 · 식당 휴무 자동 채우기",
+              "displayName" : "돈꼬마트 Pro 연 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "822A05EE-4E27-5402-A8A4-9058B3BB449F",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Widgets, Lock Screen and restaurant auto-fill",
+              "displayName" : "DontGoMart Pro Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "위젯 · 잠금화면 · 식당 휴무 자동 채우기",
+              "displayName" : "돈꼬마트 Pro 월 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "1.49",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "8901346A-27AA-5E90-A062-8936B5BECCFC",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Widgets, Lock Screen and restaurant auto-fill",
+              "displayName" : "DontGoMart Pro Weekly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "위젯 · 잠금화면 · 식당 휴무 자동 채우기",
+              "displayName" : "돈꼬마트 Pro 주 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.pro.weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Pro Weekly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "5.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "590013C9-17AE-5916-813D-48016BD0A74E",
+          "introductoryOffer" : {
+            "displayPrice" : "2.99",
+            "internalID" : "4570D6BA-1B90-54B6-92B6-6F79EA2A6F83",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1Y"
+          },
+          "localizations" : [
+            {
+              "description" : "Unlimited stores and restaurants, story and video sharing",
+              "displayName" : "DontGoMart Plus Yearly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "마트와 단골 식당 무제한, 스토리 · 동영상 공유",
+              "displayName" : "돈꼬마트 Plus 연 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.plus.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Plus Yearly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "A7589317-4B63-5019-8858-D537CB33E672",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited stores and restaurants, story and video sharing",
+              "displayName" : "DontGoMart Plus Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "마트와 단골 식당 무제한, 스토리 · 동영상 공유",
+              "displayName" : "돈꼬마트 Plus 월 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.plus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Plus Monthly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "9D1653DD-B1B4-51EC-85DB-AACAE0BDAF12",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited stores and restaurants, story and video sharing",
+              "displayName" : "DontGoMart Plus Weekly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "마트와 단골 식당 무제한, 스토리 · 동영상 공유",
+              "displayName" : "돈꼬마트 Plus 주 구독",
+              "locale" : "ko"
+            }
+          ],
+          "productID" : "com.leeo.DontGoMart.plus.weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Plus Weekly",
+          "subscriptionGroupID" : "33DB7851-148C-5576-BF11-70DEA00D73E2",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 4,
