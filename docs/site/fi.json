@@ -5,7 +5,7 @@
     "headline": "Ennen kauppareissua\ntarkista, onko auki",
     "lead": "Kun avaat apin, näet ensimmäisenä, ovatko valitsemasi kaupat tänään auki. Ennen jokaista sulkupäivää tulee muistutus, joten et enää törmää lukittuun oveen.",
     "cta": "Lataa ilmaiseksi App Storesta",
-    "note": "Kaikki ominaisuudet ovat ilmaisia. Ei tiliä, ei mainoksia."
+    "note": "Sulkupäivien tarkistus ja muistutukset ovat ilmaisia. Ei tiliä, ei mainoksia."
   },
   "demo": {
     "title": "Kokeile omalla kaupallasi",
@@ -142,7 +142,7 @@
       },
       {
         "q": "Mitä tipit ovat?",
-        "a": "Kaikki DontGoMartin ominaisuudet ovat ilmaisia. Kahvi, kakku ja ateria ovat tippejä kehittäjälle. Sen jälkeen saat kiitoksen ja merkin, jossa näkyy tippiesi määrä."
+        "a": "Sulkupäivien tarkistus ja muistutukset ovat ilmaisia. Plus-versiolla lisäät enemmän omia kauppoja ja ravintoloita ja jaat storyina ja videoina. Pro tuo lisäwidgetit, lukitusnäytön widgetit ja ravintoloiden sulkupäivien automaattisen täytön. Kahvi, kakku ja ateria ovat tippejä kehittäjälle. Sen jälkeen saat kiitoksen ja merkin, jossa näkyy tippiesi määrä. Tipit eivät avaa mitään ominaisuuksia."
       },
       {
         "q": "Mistä kysyn maksuista tai hyvityksistä?",

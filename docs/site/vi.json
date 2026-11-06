@@ -1,11 +1,11 @@
 {
   "title": "DontGoMart: ngày nghỉ của đại siêu thị và Costco ở Hàn Quốc",
-  "description": "Xem đại siêu thị hay Costco ở Hàn Quốc hôm nay có mở không, nhận nhắc trước ngày nghỉ bắt buộc và theo dõi ngày nghỉ của quán quen. Miễn phí.",
+  "description": "Xem đại siêu thị hay Costco ở Hàn Quốc hôm nay có mở không, nhận nhắc trước ngày nghỉ bắt buộc và theo dõi ngày nghỉ của quán quen. Xem ngày nghỉ và nhận nhắc nhở đều miễn phí.",
   "hero": {
     "headline": "Trước khi đi chợ,\nxem hôm nay có mở cửa không",
     "lead": "Mở ứng dụng là thấy ngay cửa hàng bạn chọn hôm nay có mở không. Trước mỗi ngày nghỉ sẽ có nhắc nhở, để bạn không còn đến nơi rồi gặp cửa đóng.",
     "cta": "Tải miễn phí trên App Store",
-    "note": "Mọi tính năng đều miễn phí. Không cần tài khoản, không quảng cáo."
+    "note": "Xem ngày đóng cửa và nhận thông báo đều miễn phí. Không cần tài khoản, không quảng cáo."
   },
   "demo": {
     "title": "Thử với cửa hàng của bạn",
@@ -142,7 +142,7 @@
       },
       {
         "q": "Tip là gì?",
-        "a": "Mọi tính năng của DontGoMart đều miễn phí. Tip cà phê, bánh ngọt và bữa ăn là để ủng hộ nhà phát triển. Sau khi tip, bạn sẽ thấy lời cảm ơn và huy hiệu người ủng hộ kèm số lần tip."
+        "a": "Xem ngày đóng cửa và nhận thông báo đều miễn phí. Gói Plus cho bạn thêm nhiều cửa hàng và nhà hàng hơn, chia sẻ bằng story và video. Gói Pro có thêm tiện ích bổ sung, tiện ích Màn hình khóa và tự điền ngày nghỉ của nhà hàng. Tip cà phê, bánh ngọt và bữa ăn là để ủng hộ nhà phát triển. Sau khi tip, bạn sẽ thấy lời cảm ơn và huy hiệu người ủng hộ kèm số lần tip. Tip không mở khóa thêm tính năng nào."
       },
       {
         "q": "Hỏi về thanh toán hoặc hoàn tiền ở đâu?",

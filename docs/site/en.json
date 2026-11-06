@@ -1,11 +1,11 @@
 {
   "title": "DontGoMart: closing days for Korean supermarkets and Costco",
-  "description": "See whether your Korean supermarket or Costco is open today, get reminded before mandatory closing days, and track your restaurants' days off. Free.",
+  "description": "See whether your Korean supermarket or Costco is open today, get reminded before mandatory closing days, and track your restaurants' days off. Closing-day checks and alerts are free.",
   "hero": {
     "headline": "Before you go shopping,\ncheck that it's open",
     "lead": "Open the app and the first thing you see is whether your stores are open today. You get a heads up before each closed day, so you never walk up to locked doors.",
     "cta": "Get it free on the App Store",
-    "note": "Every feature is free. No account, no ads."
+    "note": "Checking closed days and getting alerts is free. No account, no ads."
   },
   "demo": {
     "title": "Try it with your store",
@@ -142,7 +142,7 @@
       },
       {
         "q": "What are tips?",
-        "a": "Every feature in DontGoMart is free. The coffee, cake and meal tips are a way to support the developer. After a tip you get a thank-you and a supporter badge showing how many times you've tipped."
+        "a": "Checking closed days and getting alerts is free. Plus lets you add more of your own stores and restaurants and share as Stories and videos. Pro adds the extra widgets, Lock Screen widgets and restaurant auto-fill. The coffee, cake and meal tips are a way to support the developer. After a tip you get a thank-you and a supporter badge showing how many times you've tipped. Tips don't unlock any features."
       },
       {
         "q": "Where do I ask about payments or refunds?",

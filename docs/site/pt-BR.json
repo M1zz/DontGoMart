@@ -1,11 +1,11 @@
 {
   "title": "DontGoMart: dias de fechamento de hipermercados e Costco na Coreia",
-  "description": "Veja se seu hipermercado ou Costco na Coreia abre hoje, receba aviso antes dos fechamentos e acompanhe a folga dos seus restaurantes. Tudo grátis.",
+  "description": "Veja se seu hipermercado ou Costco na Coreia abre hoje, receba aviso antes dos fechamentos e acompanhe a folga dos seus restaurantes. Consultar os fechamentos e receber alertas é grátis.",
   "hero": {
     "headline": "Antes de ir às compras,\nveja se está aberto",
     "lead": "Ao abrir o app, a primeira coisa que você vê é se suas lojas abrem hoje. Antes de cada fechamento chega um lembrete, para você nunca mais dar com a porta fechada.",
     "cta": "Baixe grátis na App Store",
-    "note": "Todos os recursos são grátis. Sem conta e sem anúncios."
+    "note": "Consultar os fechamentos e receber alertas é grátis. Sem conta e sem anúncios."
   },
   "demo": {
     "title": "Teste com a sua loja",
@@ -142,7 +142,7 @@
       },
       {
         "q": "O que são as gorjetas?",
-        "a": "Todos os recursos do DontGoMart são grátis. As gorjetas de café, bolo e refeição servem para apoiar o desenvolvedor. Depois você recebe um agradecimento e um selo com o número de gorjetas enviadas."
+        "a": "Consultar os fechamentos e receber alertas é grátis. Com o Plus, adicione mais lojas e restaurantes e compartilhe em stories e vídeos. O Pro traz os widgets extras, os widgets da Tela Bloqueada e o preenchimento automático dos fechamentos de restaurantes. As gorjetas de café, bolo e refeição servem para apoiar o desenvolvedor. Depois você recebe um agradecimento e um selo com o número de gorjetas enviadas. As gorjetas não desbloqueiam nenhum recurso."
       },
       {
         "q": "Com quem falo sobre pagamentos ou reembolsos?",

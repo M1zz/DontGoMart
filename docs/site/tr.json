@@ -5,7 +5,7 @@
     "headline": "Alışverişe çıkmadan önce\naçık olup olmadığına bak",
     "lead": "Uygulamayı açınca ilk gördüğün şey, seçtiğin mağazaların bugün açık olup olmadığı. Her kapalı günden önce hatırlatma gelir; bir daha kilitli kapıyla karşılaşmazsın.",
     "cta": "App Store’dan ücretsiz indir",
-    "note": "Tüm özellikler ücretsiz. Hesap yok, reklam yok."
+    "note": "Kapalı günlere bakmak ve uyarı almak ücretsiz. Hesap yok, reklam yok."
   },
   "demo": {
     "title": "Kendi mağazanla dene",
@@ -142,7 +142,7 @@
       },
       {
         "q": "Bahşiş nedir?",
-        "a": "DontGoMart’ın tüm özellikleri ücretsizdir. Kahve, pasta ve yemek bahşişleri geliştiriciyi desteklemek içindir. Sonrasında bir teşekkür ve kaç kez bahşiş verdiğini gösteren bir rozet görürsün."
+        "a": "Kapalı günlere bakmak ve uyarı almak ücretsiz. Plus ile daha fazla mağaza ve restoran ekleyebilir, hikâye ve video olarak paylaşabilirsin. Pro ise ek widget’ları, kilit ekranı widget’larını ve restoran kapalı günlerini otomatik doldurmayı getirir. Kahve, pasta ve yemek bahşişleri geliştiriciyi desteklemek içindir. Sonrasında bir teşekkür ve kaç kez bahşiş verdiğini gösteren bir rozet görürsün. Bahşiş hiçbir özelliğin kilidini açmaz."
       },
       {
         "q": "Ödeme ya da iade için nereye başvururum?",

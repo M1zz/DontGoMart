@@ -1,11 +1,11 @@
 {
   "title": "DontGoMart: días de cierre de hipermercados y Costco en Corea",
-  "description": "Mira si tu hipermercado o Costco en Corea abre hoy, recibe avisos antes de los cierres obligatorios y sigue los descansos de tus restaurantes. Gratis.",
+  "description": "Mira si tu hipermercado o Costco en Corea abre hoy, recibe avisos antes de los cierres obligatorios y sigue los descansos de tus restaurantes. Consultar los cierres y recibir avisos es gratis.",
   "hero": {
     "headline": "Antes de ir a comprar,\ncomprueba que esté abierto",
     "lead": "Al abrir la app, lo primero que ves es si tus tiendas abren hoy. Te avisa antes de cada día de cierre para que no vuelvas a encontrarte la puerta cerrada.",
     "cta": "Descárgala gratis en el App Store",
-    "note": "Todas las funciones son gratis. Sin cuenta ni anuncios."
+    "note": "Consultar los cierres y recibir avisos es gratis. Sin cuenta ni anuncios."
   },
   "demo": {
     "title": "Pruébalo con tu tienda",
@@ -142,7 +142,7 @@
       },
       {
         "q": "¿Qué son las propinas?",
-        "a": "Todas las funciones de DontGoMart son gratis. Las propinas de café, tarta y comida sirven para apoyar al desarrollador. Después verás un agradecimiento y una insignia con las veces que has dado propina."
+        "a": "Consultar los cierres y recibir avisos es gratis. Con Plus puedes añadir más tiendas y restaurantes propios y compartir en historias y vídeos. Pro suma los widgets adicionales, los de pantalla bloqueada y el autocompletado de cierres de restaurantes. Las propinas de café, tarta y comida sirven para apoyar al desarrollador. Después verás un agradecimiento y una insignia con las veces que has dado propina. Las propinas no desbloquean ninguna función."
       },
       {
         "q": "¿Dónde pregunto por pagos o reembolsos?",
