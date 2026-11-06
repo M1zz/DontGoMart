@@ -86,6 +86,8 @@ final class PlanManager: ObservableObject {
     @Published private(set) var isKnown = false
     /// 모든 기능이 무료일 때부터 쓴 사람이라 Pro 를 받았는가.
     @Published private(set) var isLegacy = false
+    /// 팔기 시작했는가. 아니면 아무것도 막지 않는다 (→ PlanAccess.isSelling).
+    @Published private(set) var isSelling = PlanAccess.isSelling
     @Published private(set) var products: [Product] = []
     @Published private(set) var ownedProductIDs: Set<String> = []
     /// 지금 살아 있는 자동 갱신 구독. 있으면 설정에 '구독 관리' · '평생으로 바꾸기' 가 선다.
@@ -111,7 +113,7 @@ final class PlanManager: ObservableObject {
 
     /// 이 기능을 지금 쓸 수 있는가. 개수가 걸린 것은 `current`(지금 개수)에 하나를 더해 본다.
     func allows(_ feature: PlanFeature, current: Int = 0) -> Bool {
-        LeeoGate(policy: DontGoMartSpec.monetization.gate, hasPro: tier >= feature.tier, isTrialActive: false)
+        LeeoGate(policy: DontGoMartSpec.monetization.gate, hasPro: !isSelling || tier >= feature.tier, isTrialActive: false)
             .evaluate(feature.rawValue, current: current)
             .isAllowed
     }
@@ -178,6 +180,11 @@ final class PlanManager: ObservableObject {
         products = store.products
         isWorking = store.purchasingProductID != nil || store.isRestoring
         failureMessage = store.lastError
+        if !isSelling, products.contains(where: { PlanProducts.tierByProduct[$0.id] != nil }) {
+            PlanAccess.markSelling()
+            isSelling = true
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 
     // MARK: - 모든 기능이 무료일 때부터 쓴 사람

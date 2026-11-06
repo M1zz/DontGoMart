@@ -64,6 +64,7 @@ enum PlanLimits {
 /// 앱이 확인한 칸을 위젯과 나눠 읽는 자리.
 enum PlanAccess {
     private static let tierKey = "plan.tier"
+    private static let onSaleKey = "plans.onSale"
 
     private static var defaults: UserDefaults {
         UserDefaults(suiteName: Utillity.appGroupId) ?? .standard
@@ -83,8 +84,16 @@ enum PlanAccess {
         return true
     }
 
-    /// Pro 위젯(추가 홈 위젯 3종 · 잠금화면)을 그려도 되는가. 아직 모르면 잠그지 않는다.
-    static var opensProWidgets: Bool { (cachedTier ?? .pro) >= .pro }
+    /// **팔기 시작했는가.** 유료 칸 상품을 하나도 못 불러온 기기는 한도로 막지 않는다 — 앱도 위젯도.
+    /// ⚠️ App Store Connect 에 상품이 서기 전에 빌드가 나가면, 살 수 없는데 막히는 사람이 생긴다.
+    ///    한 번이라도 불러온 기기는 기억해 둔다 — 그 뒤로 잠깐 오프라인이어도 다시 한도가 선다.
+    static var isSelling: Bool { defaults.bool(forKey: onSaleKey) }
+
+    /// `PlanManager` 만 부른다.
+    static func markSelling() { defaults.set(true, forKey: onSaleKey) }
+
+    /// Pro 위젯(추가 홈 위젯 3종 · 잠금화면)을 그려도 되는가. 아직 모르거나 팔기 전이면 잠그지 않는다.
+    static var opensProWidgets: Bool { !isSelling || (cachedTier ?? .pro) >= .pro }
 
     /// 잠긴 위젯을 누르면 여는 페이월. 홈 위젯과 잠금화면 위젯은 비교표의 다른 줄을 짚는다.
     static func paywallLink(for feature: PlanFeature) -> URL {
