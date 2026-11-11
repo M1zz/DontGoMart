@@ -1,3 +1,5 @@
+// visionOS 2 에는 위젯이 없다 — 앱 타깃에도 들어가는 파일이라 visionOS 빌드에서는 비운다.
+#if !os(visionOS)
 //
 //  TwoHolidayWidgetProvider.swift
 //  DontGoMart
@@ -90,3 +92,4 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
         completion(timeline)
     }
 }
+#endif

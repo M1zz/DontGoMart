@@ -28,7 +28,9 @@
 		58B693F02A3B59EF00FF904B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B693EF2A3B59EF00FF904B /* Assets.xcassets */; };
 		58B693F22A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
 		58B693F32A3B59EF00FF904B /* CalendarWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 58B693EE2A3B59EE00FF904B /* CalendarWidget.intentdefinition */; };
-		58B693F62A3B59EF00FF904B /* CalendarWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 58B693E12A3B59EE00FF904B /* CalendarWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58B693F62A3B59EF00FF904B /* CalendarWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 58B693E12A3B59EE00FF904B /* CalendarWidgetExtension.appex */; platformFilters = (
+				ios,
+			); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		58B693FD2A3B66AB00FF904B /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B693FB2A3B654A00FF904B /* MonthConfig.swift */; };
 		58D40AD12CDF81A5008C6458 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD02CDF81A2008C6458 /* Date+Ext.swift */; };
 		58D40AD32CDF8E15008C6458 /* MartClosedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D40AD22CDF8E15008C6458 /* MartClosedData.swift */; };
@@ -674,6 +676,9 @@
 /* Begin PBXTargetDependency section */
 		58B693F52A3B59EF00FF904B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+			);
 			target = 58B693E02A3B59EE00FF904B /* CalendarWidgetExtension */;
 			targetProxy = 58B693F42A3B59EF00FF904B /* PBXContainerItemProxy */;
 		};
@@ -834,12 +839,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -874,12 +881,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.DontGoMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1027,7 +1036,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.38.1;
+				minimumVersion = 3.43.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

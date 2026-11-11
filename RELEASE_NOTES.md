@@ -4,6 +4,152 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 `### 앱스토어 (언어)` 절만 스토어로 나가고, `### 개발 메모` 절은 나가지 않는다.
 확인: `DeployBar --reponotes 돈꼬마트 2.0.9`
 
+## 2.0.12
+
+### 앱스토어 (한국어)
+
+이제 Apple Vision Pro에서도 쓸 수 있어요
+넓은 창에서 이번 달 휴무일을 한눈에 봐요
+단골 식당도 같은 창에서 바로 확인해요
+
+### App Store (English)
+
+Now available on Apple Vision Pro
+The month’s closed days in a wide window
+Your go-to places are right there too
+
+### App Store (en-GB)
+
+Now available on Apple Vision Pro
+The month’s closed days in a wide window
+Your go-to places are right there too
+
+### 앱스토어 (일본어)
+
+Apple Vision Proでも使えるようになりました
+広いウインドウで今月の休業日を一望
+行きつけのお店も同じ画面で確認できます
+
+### 앱스토어 (중국어 간체)
+
+现在也能在 Apple Vision Pro 上使用
+在宽大的窗口中一览本月休息日
+常去的餐厅也能在同一窗口查看
+
+### 앱스토어 (중국어 번체)
+
+現在也能在 Apple Vision Pro 上使用
+在寬大的視窗中一覽本月休息日
+常去的餐廳也能在同一視窗查看
+
+### 앱스토어 (러시아어)
+
+Теперь и на Apple Vision Pro
+Выходные магазинов за месяц в одном окне
+Любимые места тоже под рукой
+
+### 앱스토어 (스페인어)
+
+Ya disponible en Apple Vision Pro
+Los cierres del mes en una gran ventana
+Tus sitios favoritos en la misma ventana
+
+### 앱스토어 (독일어)
+
+Jetzt auch auf Apple Vision Pro
+Ruhetage des Monats im großen Fenster
+Deine Stammlokale gleich daneben
+
+### 앱스토어 (프랑스어)
+
+Désormais aussi sur Apple Vision Pro
+Les fermetures du mois en grande fenêtre
+Vos adresses favorites juste à côté
+
+### 앱스토어 (이탈리아어)
+
+Ora anche su Apple Vision Pro
+Le chiusure del mese in finestra ampia
+I tuoi locali preferiti lì accanto
+
+### 앱스토어 (포르투갈어)
+
+Agora também no Apple Vision Pro
+Os fechamentos do mês numa janela ampla
+Seus lugares favoritos logo ao lado
+
+### 앱스토어 (태국어)
+
+ใช้งานได้แล้วบน Apple Vision Pro
+เห็นวันหยุดของเดือนนี้ในหน้าต่างกว้าง
+ร้านประจำก็ดูได้ในหน้าต่างเดียวกัน
+
+### 앱스토어 (베트남어)
+
+Nay đã có trên Apple Vision Pro
+Ngày nghỉ trong tháng gọn trong cửa sổ
+Quán quen cũng ở ngay cùng cửa sổ
+
+### 앱스토어 (체코어)
+
+Nyní také na Apple Vision Pro
+Zavírací dny měsíce v širokém okně
+Oblíbené podniky hned vedle
+
+### 앱스토어 (덴마크어)
+
+Nu også på Apple Vision Pro
+Månedens lukkedage i ét bredt vindue
+Dine stamsteder lige ved siden af
+
+### 앱스토어 (그리스어)
+
+Τώρα και στο Apple Vision Pro
+Οι αργίες του μήνα σε μεγάλο παράθυρο
+Τα στέκια σας ακριβώς δίπλα
+
+### 앱스토어 (핀란드어)
+
+Nyt myös Apple Vision Prossa
+Kuun kiinniolopäivät leveässä ikkunassa
+Kantapaikkasi samassa ikkunassa
+
+### 앱스토어 (인도네시아어)
+
+Kini tersedia di Apple Vision Pro
+Hari tutup bulan ini dalam jendela lebar
+Tempat langganan pun di jendela sama
+
+### 앱스토어 (노르웨이어 보크말)
+
+Nå også på Apple Vision Pro
+Månedens stengte dager i ett bredt vindu
+Stamstedene dine rett ved siden av
+
+### 앱스토어 (네덜란드어)
+
+Nu ook op Apple Vision Pro
+De sluitingsdagen in één breed venster
+Je vaste adresjes staan er meteen naast
+
+### 앱스토어 (폴란드어)
+
+Teraz także na Apple Vision Pro
+Dni zamknięcia miesiąca w szerokim oknie
+Ulubione miejsca tuż obok
+
+### 앱스토어 (스웨덴어)
+
+Nu även på Apple Vision Pro
+Månadens stängda dagar i brett fönster
+Dina stamställen precis bredvid
+
+### 앱스토어 (튀르키예어)
+
+Artık Apple Vision Pro'da da
+Bu ayın kapalı günleri geniş pencerede
+Müdavimi olduğunuz yerler hemen yanında
+
 ## 2.0.11
 
 ### 앱스토어 (한국어)

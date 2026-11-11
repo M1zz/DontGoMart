@@ -85,7 +85,9 @@ enum RestaurantStore {
         if let data = try? JSONEncoder().encode(list) {
             UserDefaults(suiteName: Utillity.appGroupId)?.set(data, forKey: key)
         }
+        #if !os(visionOS)   // visionOS 2 에는 위젯이 없다 — 위젯 확장은 iOS 에만 묶여 있다
         WidgetCenter.shared.reloadAllTimelines()
+        #endif
     }
 
     /// start 부터 days 일 동안, 날마다 쉬는 식당.

@@ -172,7 +172,9 @@ final class PlanManager: ObservableObject {
         // 물어보기 전에는 위젯 통에 쓰지 않는다. 빈 권한을 적으면 처음 켠 구매자의 위젯이 잠긴다.
         if checked {
             isKnown = true
+            #if !os(visionOS)   // visionOS 2 에는 위젯이 없다 — 위젯 확장은 iOS 에만 묶여 있다
             if PlanAccess.store(newTier) { WidgetCenter.shared.reloadAllTimelines() }
+            #endif
         }
         tier = newTier
         isLegacy = store.isGrandfathered && PlanProducts.tier(owning: owned, legacy: false) < .pro
@@ -183,7 +185,9 @@ final class PlanManager: ObservableObject {
         if !isSelling, products.contains(where: { PlanProducts.tierByProduct[$0.id] != nil }) {
             PlanAccess.markSelling()
             isSelling = true
+            #if !os(visionOS)   // visionOS 2 에는 위젯이 없다 — 위젯 확장은 iOS 에만 묶여 있다
             WidgetCenter.shared.reloadAllTimelines()
+            #endif
         }
     }
 
