@@ -150,6 +150,12 @@ Artık Apple Vision Pro'da da
 Bu ayın kapalı günleri geniş pencerede
 Müdavimi olduğunuz yerler hemen yanında
 
+### 앱스토어 (아랍어)
+
+أصبح التطبيق متاحًا على Apple Vision Pro
+أيام إغلاق الشهر كلها في نافذة واسعة
+ومطاعمك المفضلة في النافذة نفسها
+
 ## 2.0.11
 
 ### 앱스토어 (한국어)
