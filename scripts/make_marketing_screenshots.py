@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """앱스토어 마케팅 스크린샷 생성: HTML 생성 → 헤드리스 Chrome 렌더링.
 
 원본 캡처(docs/screenshots/raw/<locale>/)를 목업 위에 얹고 헤드라인을 붙여
@@ -194,6 +195,26 @@ SHOTS = {
         ("04-pattern.png", "flat-rotate", "Mahalle mağazanı<br>kendin ekle", "İkinci ve dördüncü salı gibi düzenler"),
         ("05-share.png", "dark", "Kapanışı tek kartla<br>duyur", "Aileni ve komşularını hemen haberdar et"),
     ],
+    "ar": [
+        ("01-main.png", "hero-bleed", "تحقّق<br>قبل أن تذهب", "اعرف فورًا هل المتجر مفتوح اليوم"),
+        ("02-calendar.png", "left-text", "أيام إغلاق<br>هذا الشهر", "كل أيام الإغلاق على التقويم مباشرة"),
+        ("03-marts.png", "text-bottom", "متاجرك أنت فقط", "هايبرماركت وCostco وعطلات الأعياد"),
+        ("04-pattern.png", "flat-rotate", "أضف متجر حيّك<br>بنفسك", "أنماط مثل الثلاثاء الثاني والرابع"),
+        ("05-share.png", "dark", "خبر الإغلاق<br>في بطاقة واحدة", "أخبر عائلتك وجيرانك فورًا"),
+    ],
+}
+
+# 오른쪽에서 왼쪽으로 읽는 언어 — 글은 오른쪽에 붙이고, 기운 폰도 거울처럼 반대로 놓는다
+RTL = {"ar"}
+RTL_CSS = {
+    "left-text": """
+.headline { text-align:right; margin:250px 100px 0 0; }
+.sub { text-align:right; margin:44px 104px 0 0; }
+.wrap { perspective-origin:70% 30%; left:auto; right:250px; }
+.phone { transform:rotateY(-16deg) rotateX(2deg); }
+""",
+    "text-bottom": ".phone { transform:rotateY(10deg) rotateX(2deg); }\n",
+    "flat-rotate": ".wrap { left:auto; right:100px; }\n.phone { transform:rotate(6deg); }\n",
 }
 
 BASE_CSS = f"""
@@ -253,7 +274,7 @@ BODY_TEXT_FIRST = ('<div class="headline">{headline}</div><div class="sub">{sub}
 BODY_PHONE_FIRST = ('<div class="wrap"><div class="phone"><img src="{img}"></div></div>'
                     '<div class="headline">{headline}</div><div class="sub">{sub}</div>')
 
-HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>
+HTML = """<!doctype html><html lang="{lang}" dir="{dir}"><head><meta charset="utf-8"><style>
 {base}{layout}
 </style></head><body>{body}</body></html>"""
 
@@ -269,7 +290,10 @@ def render(locale):
         body_tpl = BODY_PHONE_FIRST if layout == "text-bottom" else BODY_TEXT_FIRST
         body = body_tpl.format(headline=headline, sub=sub, img=src.as_uri())
         html_path = WORK / f"{locale}-{fname.replace('.png', '.html')}"
-        html_path.write_text(HTML.format(lang=locale, base=BASE_CSS, layout=LAYOUTS[layout], body=body), encoding="utf-8")
+        rtl = locale in RTL
+        css = LAYOUTS[layout] + (RTL_CSS.get(layout, "") if rtl else "")
+        html_path.write_text(HTML.format(lang=locale, dir="rtl" if rtl else "ltr", base=BASE_CSS, layout=css, body=body),
+                             encoding="utf-8")
         out_png = out_dir / fname
         subprocess.run([CHROME, "--headless=new", f"--screenshot={out_png}",
                         f"--window-size={W},{H}", "--force-device-scale-factor=1",
