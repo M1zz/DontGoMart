@@ -6,6 +6,8 @@
   if (!root) return;
   const T = JSON.parse(root.dataset.text);
   const lang = document.documentElement.lang;
+  // 아랍어는 앱처럼 양력과 0~9 숫자로 (브라우저 기본은 ١٢٣ 숫자, 지역에 따라 히즈라력)
+  const fmtLang = lang === "ar" ? "ar-u-ca-gregory-nu-latn" : lang;
 
   // [이름 순서는 T.marts 와 같다] 요일: 0=일 … 6=토, weeks: 그달 몇 번째 그 요일인지
   const RULES = [
@@ -39,9 +41,9 @@
     }
   }
 
-  const fmtLong = new Intl.DateTimeFormat(lang, { month: "long", day: "numeric", weekday: "short" });
-  const fmtMonth = new Intl.DateTimeFormat(lang, { year: "numeric", month: "long" });
-  const fmtWd = new Intl.DateTimeFormat(lang, { weekday: "narrow" });
+  const fmtLong = new Intl.DateTimeFormat(fmtLang, { month: "long", day: "numeric", weekday: "short" });
+  const fmtMonth = new Intl.DateTimeFormat(fmtLang, { year: "numeric", month: "long" });
+  const fmtWd = new Intl.DateTimeFormat(fmtLang, { weekday: "narrow" });
   const wdNames = Array.from({ length: 7 }, (_, i) => fmtWd.format(new Date(2024, 0, 7 + i)));
 
   root.innerHTML = `

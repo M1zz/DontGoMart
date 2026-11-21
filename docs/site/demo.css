@@ -40,3 +40,12 @@
 }
 @media (prefers-reduced-motion: reduce) { .chip, .mart-status { transition: none; } }
 @media (max-width: 760px) { .mart-board { grid-template-columns: 1fr; } }
+
+/* 오른쪽에서 왼쪽으로 쓰는 언어(아랍어). 공용 sitegen.css 는 왼쪽 · 오른쪽으로 적혀 있어 여기서 뒤집는다.
+   달력 칸은 앱처럼 오른쪽(일요일)부터 채우고, 이전 · 다음 달 화살표는 글 방향을 따른다. */
+[dir="rtl"] .mart-nav { transform: scaleX(-1); }
+[dir="rtl"] .plan ul { padding-left: 0; padding-right: 1.2em; }
+[dir="rtl"] summary { padding-left: var(--s6); padding-right: 0; }
+[dir="rtl"] summary::after { right: auto; left: 0; }
+[dir="rtl"] .skip { left: auto; right: var(--s4); }
+@media (max-width: 760px) { [dir="rtl"] .hero { text-align: right; } }

@@ -30,6 +30,7 @@
     {"code": "nl", "path": "nl/", "name": "Nederlands"},
     {"code": "pl", "path": "pl/", "name": "Polski"},
     {"code": "sv", "path": "sv/", "name": "Svenska"},
-    {"code": "tr", "path": "tr/", "name": "Türkçe"}
+    {"code": "tr", "path": "tr/", "name": "Türkçe"},
+    {"code": "ar", "path": "ar/", "name": "العربية"}
   ]
 }
