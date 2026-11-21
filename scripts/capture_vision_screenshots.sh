@@ -11,7 +11,7 @@ set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEV="$1"; APP="$2"; shift 2
 LANGS="$*"
-[ -n "$LANGS" ] || LANGS="ko en en-GB ja zh-Hans zh-Hant ru es de fr it pt-BR th vi cs da el fi id nb nl pl sv tr"
+[ -n "$LANGS" ] || LANGS="ko en en-GB ja zh-Hans zh-Hant ru es de fr it pt-BR th vi cs da el fi id nb nl pl sv tr ar"
 BUNDLE="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$APP/Info.plist")"
 WAIT="${WAIT:-8}"
 locale_of() {
@@ -20,7 +20,7 @@ locale_of() {
     ja) echo ja_JP ;; ru) echo ru_RU ;; es) echo es_ES ;; de) echo de_DE ;; fr) echo fr_FR ;; it) echo it_IT ;;
     pt-BR) echo pt_BR ;; th) echo th_TH ;; vi) echo vi_VN ;; cs) echo cs_CZ ;; da) echo da_DK ;; el) echo el_GR ;;
     fi) echo fi_FI ;; id) echo id_ID ;; nb) echo nb_NO ;; nl) echo nl_NL ;; pl) echo pl_PL ;; sv) echo sv_SE ;;
-    tr) echo tr_TR ;; *) echo "$1" ;;
+    tr) echo tr_TR ;; ar) echo ar_SA ;; *) echo "$1" ;;
   esac
 }
 t() { perl -e 'alarm shift; exec @ARGV' "$@"; }
