@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """돈꼬마트 App Store 크리에이티브 자산(제품 페이지 헤더 · 검색 결과): HTML → 헤드리스 Chrome.
 
 사용법: python3 scripts/make_creative_assets.py [언어 ...]     (없으면 전부: ko en)
@@ -59,6 +60,7 @@ HEADER = {
     "pl": ("Dni zamknięcia sklepów", "Wiedz z góry,<br>czy otwarte"),
     "sv": ("Butikers stängningsdagar", "Vet i förväg<br>om det är öppet"),
     "tr": ("Mağaza kapalı günleri", "Gitmeden önce<br>açık mı öğren"),
+    "ar": ("أيام إغلاق المتاجر في كوريا", "اعرف أنه مفتوح<br>قبل أن تذهب"),
 }
 
 # 검색 결과: 스크린샷 1장("마트 가기 전, 딱 3초")과 **같은 이야기**. 눈썹글은 그 나라 사람이 검색창에 치는 말.
@@ -87,7 +89,11 @@ SEARCH = {
     "pl": ("supermarket dni zamknięcia", "Sprawdź<br>przed wyjściem", "Od razu zobacz, czy sklep jest dziś otwarty"),
     "sv": ("stormarknad stängningsdagar", "Kolla<br>innan du åker", "Se med en blick om din butik har öppet i dag"),
     "tr": ("süpermarket kapalı günler", "Gitmeden önce<br>kontrol et", "Mağazanın bugün açık olup olmadığını bir bakışta gör"),
+    "ar": ("مواعيد إغلاق السوبرماركت", "تحقّق<br>قبل أن تذهب", "اعرف فورًا هل متجرك مفتوح اليوم"),
 }
+
+# 오른쪽에서 왼쪽으로 읽는 언어 — 검색 결과는 거울처럼 놓는다(글은 오른쪽, 기기는 왼쪽)
+RTL = {"ar"}
 
 ACCENT = "#F0566A"   # 앱의 분홍(D-Day · 휴무 표시)
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다.
@@ -110,6 +116,10 @@ body { background:#f6f5f3; position:relative;
 """
 # 헤드리스 Chrome 은 -apple-system 을 못 찾아 다음 글꼴(한글)로 그린다 — 영어는 Helvetica Neue 로 먼저.
 LATIN_FONT = 'body { font-family:"Helvetica Neue",-apple-system,sans-serif; }'
+# 아랍어는 글자가 이어 쓰인다 — 글자 사이를 좁히면 끊어진다. 라틴 글꼴에는 아랍 글자가 없다.
+ARABIC_FONT = (':lang(ar) body { font-family:"SF Arabic","Geeza Pro",-apple-system,sans-serif; }'
+               ':lang(ar) .headline, :lang(ar) .eyebrow, :lang(ar) .sub { letter-spacing:0; }'
+               ':lang(ar) .headline { line-height:1.3; }')
 
 # 글이 상자를 넘지 않을 때까지 줄인다. 잘리는 글은 없다 - 끝까지 안 맞으면 표시하고 멈춘다.
 FIT_JS = """
@@ -164,12 +174,16 @@ def search_html(lang):
     col = int(sw * 0.56)
     ph_w = 1040
     ph_left = l + col + int(sw * 0.04)
+    text_left = l
+    if lang in RTL:
+        ph_left = W - ph_left - ph_w
+        text_left = r - col
     return f"""
 <div class="glow" style="left:{ph_left - 300}px;top:500px;width:1700px;height:1700px;background:rgba(240,86,106,.12)"></div>
 <div class="glow" style="left:{l - 700}px;top:{t + 300}px;width:1600px;height:1200px;background:rgba(52,199,89,.08)"></div>
 {marks([(3260, 380, 380, 12), (220, 1980, 340, -10), (260, 200, 260, 8)])}
 {phone(raw(lang, "01-main.png"), ph_left, t - 360, ph_w, 0)}
-<div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
+<div class="text" style="left:{text_left}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:96px">{eyebrow}</div>
   <div class="headline" data-max="240" data-min="130" style="margin-top:36px">{headline}</div>
   <div class="sub" style="font-size:80px;margin-top:52px">{sub}</div>
@@ -215,8 +229,9 @@ def chrome(args, done, timeout=90):
 def render(lang, kind):
     W, H, _ = SPEC[kind]
     body = search_html(lang) if kind == "search" else header_html(lang)
-    css = BASE_CSS % {"W": W, "H": H} + ("" if lang == "ko" else LATIN_FONT)
-    page = (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>'
+    css = BASE_CSS % {"W": W, "H": H} + ("" if lang == "ko" else LATIN_FONT) + (ARABIC_FONT if lang in RTL else "")
+    rtl = ' dir="rtl"' if lang in RTL else ""
+    page = (f'<!doctype html><html lang="{lang}"{rtl}><head><meta charset="utf-8"><style>'
             f'{css}</style></head><body>{body}{FIT_JS}</body></html>')
     html_path = pathlib.Path(tempfile.gettempdir()) / f"dontgomart-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")
