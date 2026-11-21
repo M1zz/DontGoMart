@@ -178,6 +178,8 @@ struct PatternEditorView: View {
     private static let previewFormatter: DateFormatter = {
         let f = DateFormatter()
         // 요일은 앞의 "격주 수요일" 에서 이미 말하므로 날짜만 — 로케일이 9/13 / 13/9 순서를 정한다.
+        f.locale = .app
+        f.calendar = .app
         f.setLocalizedDateFormatFromTemplate("Md")
         return f
     }()
@@ -187,7 +189,7 @@ struct PatternEditorView: View {
     // 매주 모드: 선택된 요일들
     @State private var weeklyWeekdays: Set<Weekday> = []
     // 격주 모드: 첫 휴무일 (이 날 + 14일마다). 요일은 이 날짜에서 자동 도출.
-    @State private var biweeklyStart: Date = Calendar.current.startOfDay(for: Date())
+    @State private var biweeklyStart: Date = Calendar.app.startOfDay(for: Date())
     // 매월 주차 모드: (주차, 요일) 조합
     @State private var selectedCells: Set<GridCell> = []
 
@@ -328,7 +330,7 @@ struct PatternEditorView: View {
             return String(format: String(localized: "매주 %@요일", defaultValue: "Every %@"), names)
 
         case .biweekly:
-            let start = Calendar.current.startOfDay(for: biweeklyStart)
+            let start = Calendar.app.startOfDay(for: biweeklyStart)
             let wd = weekday(from: start)
             let dates = biweeklyPreviewDates(from: start, count: 3)
                 .map { Self.previewFormatter.string(from: $0) }
@@ -355,12 +357,12 @@ struct PatternEditorView: View {
     }
 
     private func weekday(from date: Date) -> Weekday {
-        let wd = Calendar.current.component(.weekday, from: date)
+        let wd = Calendar.app.component(.weekday, from: date)
         return Weekday(rawValue: wd) ?? .sunday
     }
 
     private func biweeklyPreviewDates(from start: Date, count: Int) -> [Date] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         var date = calendar.startOfDay(for: start)
         var result: [Date] = []
         for _ in 0..<count {
@@ -380,7 +382,7 @@ struct PatternEditorView: View {
             }
 
         case .biweekly:
-            let start = Calendar.current.startOfDay(for: biweeklyStart)
+            let start = Calendar.app.startOfDay(for: biweeklyStart)
             onSave(ClosurePattern(weekday: weekday(from: start),
                                   frequency: .biweekly,
                                   anchorDate: start))
@@ -437,6 +439,9 @@ struct PatternGridView: View {
                     // 주차 라벨
                     Text("\(week.rawValue)주")
                         .font(.caption2)
+                        // 아랍어 'الأسبوع 1' 이 좁은 칸에서 두 줄로 꺾였다 — 한 줄에 맞춰 줄인다
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                         .foregroundColor(.secondary)
                         .frame(width: 36)
 

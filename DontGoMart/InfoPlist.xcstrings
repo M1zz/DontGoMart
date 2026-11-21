@@ -147,6 +147,12 @@
             "state" : "translated",
             "value" : "DontGoMart"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
         }
       }
     },
@@ -292,6 +298,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -445,6 +457,12 @@
             "state" : "translated",
             "value" : "Yakındaki mağazaları bulmak ve önermek için konum gerekir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نحتاج إلى موقعك لنجد المتاجر القريبة منك ونقترحها."
+          }
         }
       }
     },
@@ -593,6 +611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış kartlarının fotoğraf ve videolarını kitaplığına kaydetmek için gerekir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نحتاج إلى هذا الإذن لحفظ صور بطاقة الإغلاق ومقاطعها في مكتبة الصور."
           }
         }
       }

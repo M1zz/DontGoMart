@@ -33,14 +33,14 @@ enum Weekday: Int, Codable, CaseIterable {
     /// 요일 한 글자(한국어 "일", 영어 "Sun"). 사용자 로케일의 캘린더 심볼을 그대로 쓴다 —
     /// 하드코딩하면 영어 화면에 한글 요일이 그대로 노출된다.
     var displayName: String {
-        let symbols = Calendar.current.shortWeekdaySymbols
+        let symbols = Calendar.app.shortWeekdaySymbols
         let index = rawValue - 1
         return symbols.indices.contains(index) ? symbols[index] : ""
     }
 
     /// 요일 전체 이름(한국어 "일요일", 영어 "Sunday"). VoiceOver 라벨 등 문장에 쓴다.
     var fullName: String {
-        let symbols = Calendar.current.weekdaySymbols
+        let symbols = Calendar.app.weekdaySymbols
         let index = rawValue - 1
         return symbols.indices.contains(index) ? symbols[index] : displayName
     }
@@ -92,6 +92,8 @@ struct ClosurePattern: Hashable, Identifiable {
     /// 격주 기준일 표기(9/13). 한국어를 하드코딩하지 않고 사용자 로케일의 월·일 순서를 따른다.
     private static let anchorFormatter: DateFormatter = {
         let f = DateFormatter()
+        f.locale = .app
+        f.calendar = .app
         f.setLocalizedDateFormatFromTemplate("Md")
         return f
     }()
@@ -163,7 +165,7 @@ struct CustomMart: Codable, Hashable, Identifiable {
 /// 내장 마트와 커스텀 마트가 동일하게 사용한다. (예전엔 내장 마트가 별도의
 /// Calendar.Weekday/Ordinal + findPatternDay 로직을 썼으나 이 엔진으로 통일)
 enum ClosureRuleEngine {
-    static func closedDates(patterns: [ClosurePattern], year: Int, calendar: Calendar = .current) -> [Date] {
+    static func closedDates(patterns: [ClosurePattern], year: Int, calendar: Calendar = .app) -> [Date] {
         var closedDates: [Date] = []
 
         // 격주(biweekly): 기준일부터 정확히 14일 간격

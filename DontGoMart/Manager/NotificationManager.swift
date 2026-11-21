@@ -85,7 +85,7 @@ final class NotificationManager {
             switch self {
             case .primary:
                 let format = String(localized: "notification_first_body", defaultValue: "%@ will be closed in %lld days.")
-                return String(format: format, storeName, NotificationManager.leadDays)
+                return String(format: format, locale: .app, storeName, NotificationManager.leadDays)
             case .beforeDayNotification:
                 let format = String(localized: "notification_before_body", defaultValue: "%@ is closed tomorrow. Today is a good day to shop!")
                 return String(format: format, storeName)
@@ -236,7 +236,7 @@ final class NotificationManager {
     /// 가까운 미래의 휴무일만 필터링 (앞으로 90일)
     private func filterNearFutureTasks(from tasks: [MetaMartsClosedDays]) -> [MetaMartsClosedDays] {
         let today = Date()
-        let futureLimit = Calendar.current.date(byAdding: .day, value: Constants.maxNotificationDays, to: today)!
+        let futureLimit = Calendar.app.date(byAdding: .day, value: Constants.maxNotificationDays, to: today)!
         
         return tasks.filter { task in
             task.taskDate >= today && task.taskDate <= futureLimit
@@ -250,7 +250,7 @@ final class NotificationManager {
         martType: MartType
     ) async -> Bool {
         // 알림 날짜 계산
-        guard let notificationDate = Calendar.current.date(
+        guard let notificationDate = Calendar.app.date(
             byAdding: .day,
             value: -type.daysToSubtract,
             to: closedDate
@@ -260,12 +260,12 @@ final class NotificationManager {
         }
         
         // 알림 시간 설정 (사용자 설정 시간 사용)
-        var dateComponents = Calendar.current.dateComponents([.year, .month, .day], from: notificationDate)
+        var dateComponents = Calendar.app.dateComponents([.year, .month, .day], from: notificationDate)
         dateComponents.hour = self.notificationHour
         dateComponents.minute = self.notificationMinute
         dateComponents.second = 0
         
-        guard let finalNotificationDate = Calendar.current.date(from: dateComponents) else {
+        guard let finalNotificationDate = Calendar.app.date(from: dateComponents) else {
             debugLog("❌ 최종 알림 시간 계산 실패")
             return false
         }

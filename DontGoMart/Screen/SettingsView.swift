@@ -426,11 +426,11 @@ struct SettingsView: View {
         let time = String(format: "%02d:%02d", notificationHour, notificationMinute)
         if beforeDayNotificationEnabled {
             return String(format: String(localized: "휴무일 %1$lld일 전과 전날 %2$@에 알림이 전송됩니다.",
-                                         defaultValue: "You'll be notified %1$lld days before and the day before, at %2$@."),
+                                         defaultValue: "You'll be notified %1$lld days before and the day before, at %2$@."), locale: .app,
                           notificationLeadDays, time)
         }
         return String(format: String(localized: "휴무일 %1$lld일 전 %2$@에 알림이 전송됩니다.",
-                                     defaultValue: "You'll be notified %1$lld days before, at %2$@."),
+                                     defaultValue: "You'll be notified %1$lld days before, at %2$@."), locale: .app,
                       notificationLeadDays, time)
     }
 

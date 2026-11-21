@@ -29,7 +29,7 @@ struct RestaurantWeekProvider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<RestaurantWeekEntry>) -> Void) {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let restaurants = RestaurantStore.load()
         let today = calendar.startOfDay(for: Date())
         // 7일치 자정 엔트리 — 앱을 열지 않아도 날마다 하루씩 밀린다.
@@ -121,7 +121,7 @@ struct RestaurantWeekEntryView: View {
             } else {
                 ForEach(closedDays.prefix(2)) { day in
                     HStack(spacing: 6) {
-                        Text(day.date.formatted(.dateTime.weekday(.abbreviated).day()))
+                        Text(day.date.formatted(.app.weekday(.abbreviated).day()))
                             .font(.body.weight(.semibold))
                         Text(day.closed.map(\.name).joined(separator: ", "))
                             .font(.body)
@@ -138,7 +138,7 @@ struct RestaurantWeekEntryView: View {
         HStack(spacing: 2) {
             ForEach(entry.days) { day in
                 VStack(spacing: 3) {
-                    Text(Weekday.symbol(calendarWeekday: Calendar.current.component(.weekday, from: day.date)))
+                    Text(Weekday.symbol(calendarWeekday: Calendar.app.component(.weekday, from: day.date)))
                         .font(.headline)
                         .minimumScaleFactor(0.6)
                     Circle()
@@ -154,7 +154,7 @@ struct RestaurantWeekEntryView: View {
     private func strip(showDayNumber: Bool) -> some View {
         HStack(spacing: 0) {
             ForEach(Array(entry.days.enumerated()), id: \.element.id) { index, day in
-                let weekday = Calendar.current.component(.weekday, from: day.date)
+                let weekday = Calendar.app.component(.weekday, from: day.date)
                 VStack(spacing: 4) {
                     Text(Weekday.symbol(calendarWeekday: weekday))
                         .font(.body.weight(index == 0 ? .heavy : .medium))
@@ -162,7 +162,7 @@ struct RestaurantWeekEntryView: View {
                         .minimumScaleFactor(0.5)
                         .lineLimit(1)
                     if showDayNumber {
-                        Text("\(Calendar.current.component(.day, from: day.date))")
+                        Text("\(Calendar.app.component(.day, from: day.date))")
                             .font(.body)
                             .foregroundStyle(index == 0 ? Color.white : Color.primary)
                             .minimumScaleFactor(0.6)
@@ -188,7 +188,7 @@ struct RestaurantWeekEntryView: View {
         guard let day = closedDays.first else {
             return String(localized: "7일간 휴무 없음", defaultValue: "No closures this week")
         }
-        let weekday = Weekday.symbol(calendarWeekday: Calendar.current.component(.weekday, from: day.date))
+        let weekday = Weekday.symbol(calendarWeekday: Calendar.app.component(.weekday, from: day.date))
         return "\(weekday) · " + day.closed.map(\.name).joined(separator: ", ")
     }
 
@@ -202,7 +202,7 @@ struct RestaurantWeekEntryView: View {
                           defaultValue: "None of your restaurants close in the next 7 days.")
         }
         return closedDays.map { day in
-            let date = day.date.formatted(.dateTime.month().day().weekday(.wide))
+            let date = day.date.formatted(.app.month().day().weekday(.wide))
             let names = day.closed.map(\.name).joined(separator: ", ")
             return date + " " + String(format: String(localized: "%@ 휴무", defaultValue: "%@ closed"), names)
         }.joined(separator: ". ")
@@ -214,7 +214,7 @@ struct RestaurantWeekWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: RestaurantWeekProvider()) { entry in
-            ProWidget { RestaurantWeekEntryView(entry: entry) }
+            ProWidget { RestaurantWeekEntryView(entry: entry) }.appLocale()
         }
         .configurationDisplayName("단골 식당 7일")
         .description("앞으로 7일 중 단골 식당이 쉬는 요일을 점으로 보여줘요.")

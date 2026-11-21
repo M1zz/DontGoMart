@@ -72,7 +72,7 @@ enum WidgetClosedDayStore {
     }
 
     static func upcoming(onOrAfter day: Date) -> [UpcomingClosedDay] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let startDay = calendar.startOfDay(for: day)
         return loadAll()
             .filter { calendar.startOfDay(for: $0.date) >= startDay }
@@ -87,7 +87,7 @@ enum WidgetClosedDayStore {
     }
 
     /// 기준일(day) 이후 가장 가까운 일요일. 오늘이 일요일이면 오늘.
-    static func nextSunday(onOrAfter day: Date, calendar: Calendar = .current) -> Date {
+    static func nextSunday(onOrAfter day: Date, calendar: Calendar = .app) -> Date {
         let start = calendar.startOfDay(for: day)
         let weekday = calendar.component(.weekday, from: start) // 1 = 일요일
         let daysToAdd = (1 - weekday + 7) % 7
@@ -97,7 +97,7 @@ enum WidgetClosedDayStore {
     /// 기준일(day) 기준 '이번 주 일요일' 과 그날 선택 마트의 휴무 여부.
     /// 저장된 다가오는 휴무일 목록에 그 일요일이 있으면 휴무(빨강)로 본다.
     static func sundayStatus(onOrAfter day: Date) -> (sunday: Date, isClosed: Bool) {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let sunday = nextSunday(onOrAfter: day, calendar: calendar)
         let isClosed = upcoming(onOrAfter: day).contains { closed in
             calendar.isDate(calendar.startOfDay(for: closed.date), inSameDayAs: sunday)

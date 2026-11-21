@@ -55,7 +55,7 @@ struct HolidayWidget: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: HolidayWidgetProvider()) { entry in
-            HolidayWidgetEntryView(entry: entry)
+            HolidayWidgetEntryView(entry: entry).appLocale()
         }
         .configurationDisplayName("Closure Alert Widget")
         .description("Alerts you when a closed day is within a week!")

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let year = Calendar.current.component(.year, from: Date())
+let year = Calendar.app.component(.year, from: Date())
 
 struct MonthConfig {
     let backgroundColor: Color
@@ -16,7 +16,7 @@ struct MonthConfig {
     let dayTextColor: Color
     
     static func determineConfig(from date: Date) -> MonthConfig {
-        let monthInt = Calendar.current.component(.month, from: date)
+        let monthInt = Calendar.app.component(.month, from: date)
         
         switch monthInt {
         case 1:

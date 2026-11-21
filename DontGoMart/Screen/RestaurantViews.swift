@@ -75,7 +75,7 @@ struct RestaurantWeekCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 ForEach(closedDays) { day in
                     HStack(alignment: .firstTextBaseline, spacing: 10) {
-                        Text(day.date.formatted(.dateTime.month(.defaultDigits).day().weekday(.abbreviated)))
+                        Text(day.date.formatted(.app.month(.defaultDigits).day().weekday(.abbreviated)))
                             .font(.body.weight(.semibold))
                             .frame(minWidth: 96, alignment: .leading)
                         Text(day.closed.map(\.name).joined(separator: ", "))
@@ -109,7 +109,7 @@ struct RestaurantDayCell: View {
     /// 오늘 동그라미 크기 — 글자 크기를 키우면 함께 커진다
     @ScaledMetric(relativeTo: .body) private var circleSize: CGFloat = 34
 
-    private var weekdayIndex: Int { Calendar.current.component(.weekday, from: day.date) }
+    private var weekdayIndex: Int { Calendar.app.component(.weekday, from: day.date) }
 
     var body: some View {
         VStack(spacing: 6) {
@@ -118,7 +118,7 @@ struct RestaurantDayCell: View {
                 .foregroundColor(weekdayIndex == 1 ? .red : (weekdayIndex == 7 ? .blue : .primary))
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
-            Text("\(Calendar.current.component(.day, from: day.date))")
+            Text("\(Calendar.app.component(.day, from: day.date))")
                 .font(.body)
                 .foregroundColor(isToday ? Color("OnPink") : .primary)
                 .lineLimit(1)
@@ -134,7 +134,7 @@ struct RestaurantDayCell: View {
     }
 
     static func accessibilityText(for day: RestaurantDay, isToday: Bool) -> String {
-        var date = day.date.formatted(.dateTime.month().day().weekday(.wide))
+        var date = day.date.formatted(.app.month().day().weekday(.wide))
         if isToday { date = String(localized: "오늘", defaultValue: "Today") + ", " + date }
         if day.closed.isEmpty {
             return date + ", " + String(localized: "쉬는 식당 없음", defaultValue: "No restaurant closed")

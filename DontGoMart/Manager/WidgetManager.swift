@@ -29,7 +29,7 @@ class WidgetManager {
     /// D-Day 를 매일 다시 계산한다. 덕분에 앱을 실행하지 않아도 하루가 지나면
     /// 위젯의 날짜·D-Day 가 자동으로 다음 휴무일로 넘어간다.
     private func updateUpcomingClosedList() {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
 
         let selectedMartTypes = MartSelectionManager.shared.getSelectedMartTypes()

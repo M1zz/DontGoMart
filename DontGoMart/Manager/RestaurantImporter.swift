@@ -299,7 +299,7 @@ enum ClosureTextParser {
             .filter(looksLikeClosure)
     }
 
-    static func parse(_ text: String, today: Date = Date(), calendar: Calendar = .current) -> [ClosurePattern] {
+    static func parse(_ text: String, today: Date = Date(), calendar: Calendar = .app) -> [ClosurePattern] {
         let all = text.components(separatedBy: .newlines).map(normalizeWeekdayToken)
         var lines = all.filter(looksLikeClosure)
 
@@ -346,7 +346,7 @@ enum ClosureTextParser {
         ("첫", 1), ("둘", 2), ("두", 2), ("셋", 3), ("세", 3), ("넷", 4), ("네", 4), ("다섯", 5)
     ]
 
-    static func parseLine(_ line: String, today: Date = Date(), calendar: Calendar = .current) -> [ClosurePattern] {
+    static func parseLine(_ line: String, today: Date = Date(), calendar: Calendar = .app) -> [ClosurePattern] {
         // "월, 화요일" / "월·화요일" / "월요일, 화요일" 를 모두 잡도록 요일 덩어리 단위로 찾는다.
         let groupRegex = try! NSRegularExpression(
             pattern: "([일월화수목금토](?:요일)?(?:\\s*[,·/및와과]\\s*[일월화수목금토](?:요일)?)*)\\s*요일")

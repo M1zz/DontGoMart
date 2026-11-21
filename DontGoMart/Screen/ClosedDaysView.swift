@@ -329,7 +329,7 @@ struct ClosedDaysView: View {
     // MARK: - 오늘 갈 수 있나요? (가장 큰 한 가지 정보)
 
     private var todayStatusCard: some View {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
 
         let selectedMartTypes = martSelection.getSelectedMartTypes()
@@ -432,7 +432,7 @@ struct ClosedDaysView: View {
 
     /// 오늘 선택한 매장 중 하나라도 휴무인지 — 앱이 헛걸음을 막아준 '감사의 순간' 판정.
     private var todayHasClosedMart: Bool {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         let selected = martSelection.getSelectedMartTypes()
         return tasks.contains { task in
@@ -443,7 +443,7 @@ struct ClosedDaysView: View {
     // MARK: - 다음 휴무일
 
     private var nextClosedDateCard: some View {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
 
         let selectedMartTypes = martSelection.getSelectedMartTypes()
@@ -461,7 +461,7 @@ struct ClosedDaysView: View {
         let cardAccessibilityLabel: String
         if let days = daysUntil, let closedDate = nextClosedDate {
             let header = String(localized: "다음 휴무일", defaultValue: "Next closed day")
-            let dateText = closedDate.taskDate.formatted(date: .long, time: .omitted)
+            let dateText = closedDate.taskDate.appFormatted(date: .long)
             cardAccessibilityLabel = "\(header), \(closedDate.type.displayName), \(dateText), \(spokenDaysUntil(days))"
         } else {
             cardAccessibilityLabel = String(localized: "다음 휴무일 정보 없음", defaultValue: "No closed day info")
@@ -481,7 +481,7 @@ struct ClosedDaysView: View {
                         Text(operationStatusManager.formatDDay(days))
                             .font(.title.bold())
                             .foregroundColor(Color("Pink"))
-                        Text(closedDate.taskDate.formatted(date: .long, time: .omitted))
+                        Text(closedDate.taskDate.appFormatted(date: .long))
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                         Text(closedDate.type.displayName)
@@ -511,7 +511,7 @@ struct ClosedDaysView: View {
     private func spokenDaysUntil(_ days: Int) -> String {
         if days <= 0 { return String(localized: "오늘 휴무", defaultValue: "Closed today") }
         if days == 1 { return String(localized: "내일 휴무", defaultValue: "Closed tomorrow") }
-        return String(format: String(localized: "%lld일 남음", defaultValue: "%lld days left"), days)
+        return String(format: String(localized: "%lld일 남음", defaultValue: "%lld days left"), locale: .app, days)
     }
 
     // MARK: - 캘린더 버튼
@@ -528,7 +528,7 @@ struct ClosedDaysView: View {
                 Text("휴무일 캘린더 보기")
                     .font(.headline)
                 Spacer()
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .accessibilityHidden(true)
@@ -581,7 +581,7 @@ struct ClosedDaysView: View {
 
     /// 휴무일을 날짜별로 묶어 한눈에 보이도록 한 카드.
     private func closedDayCard(date: Date, marts: [MetaMartsClosedDays], days: Int) -> some View {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let dayNumber = calendar.component(.day, from: date)
         let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
         let weekdaySymbol = Weekday.symbol(calendarWeekday: weekdayIndex)
@@ -687,7 +687,7 @@ struct ClosedDaysView: View {
     }
 
     private static func dayKey(_ date: Date) -> String {
-        let c = Calendar.current.dateComponents([.year, .month, .day], from: date)
+        let c = Calendar.app.dateComponents([.year, .month, .day], from: date)
         return String(format: "%04d-%02d-%02d", c.year ?? 0, c.month ?? 0, c.day ?? 0)
     }
 
@@ -697,7 +697,7 @@ struct ClosedDaysView: View {
     /// 2주 달력·다가오는 휴무·장보기 팁을 함께 담는다 (받는 사람이 한눈에 계획을 세우도록).
     /// 마트 미선택 등으로 만들 수 없으면 nil (텍스트 공유로 폴백).
     private var sharePayload: ShareCardPayload? {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         let selected = martSelection.getSelectedMartTypes()
         guard !selected.isEmpty else { return nil }
@@ -724,7 +724,7 @@ struct ClosedDaysView: View {
             calendarDays: shareCalendarDays(today: today, selected: selected),
             upcoming: groups.filter { $0.date != hero.date }.prefix(3).map { group in
                 ShareUpcoming(phrase: relativeDayPhrase(date: group.date, days: group.days),
-                              dateText: group.date.formatted(.dateTime.month().day().weekday(.abbreviated)),
+                              dateText: group.date.formatted(.app.month().day().weekday(.abbreviated)),
                               marts: uniqueMarts(group.marts))
             },
             tip: shoppingTip(heroDate: hero.date, isToday: hero.isToday, selected: selected)
@@ -742,7 +742,7 @@ struct ClosedDaysView: View {
 
     /// 이번 주 첫날부터 2주(14칸) — 지난 날은 흐리게, 휴무일은 마트 색으로.
     private func shareCalendarDays(today: Date, selected: [MartType]) -> [ShareDay] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let weekStart = calendar.dateInterval(of: .weekOfYear, for: today)?.start ?? today
         return (0..<14).compactMap { offset in
             guard let date = calendar.date(byAdding: .day, value: offset, to: weekStart) else { return nil }
@@ -757,7 +757,7 @@ struct ClosedDaysView: View {
     /// 받는 사람이 바로 행동할 수 있는 한 줄.
     /// 오늘 휴무 → 다시 여는 날, 다가오는 휴무 → 전날까지 장보기.
     private func shoppingTip(heroDate: Date, isToday: Bool, selected: [MartType]) -> String? {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         func isClosed(_ date: Date) -> Bool {
             tasks.contains { selected.contains($0.type) && calendar.isDate($0.taskDate, inSameDayAs: date) }
@@ -790,12 +790,12 @@ struct ClosedDaysView: View {
 
     /// 카드용 날짜 표기: "7월 13일 일요일" (로케일 자동 대응)
     private func formattedCardDate(_ date: Date) -> String {
-        date.formatted(.dateTime.month().day().weekday(.wide))
+        date.formatted(.app.month().day().weekday(.wide))
     }
 
     /// 오늘 영업 여부 + 다가오는 휴무일을 사람이 읽기 좋은 텍스트로 만든다 (공유용).
     private var shareText: String {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         let selected = martSelection.getSelectedMartTypes()
 
@@ -831,7 +831,7 @@ struct ClosedDaysView: View {
             for group in groups.prefix(3) {
                 let names = group.marts.map { $0.type.displayName }.joined(separator: ", ")
                 // 날짜는 "9월 13일" / "Sep 13" 처럼 로케일이 정하는 표기를 그대로 쓴다.
-                let dateText = group.date.formatted(.dateTime.month().day())
+                let dateText = group.date.formatted(.app.month().day())
                 lines.append("· " + String(format: String(localized: "%1$@ (%2$@) — %3$@ 휴무",
                                                           defaultValue: "%1$@ (%2$@) — %3$@ closed"),
                                            relativeDayPhrase(date: group.date, days: group.days),
@@ -847,7 +847,7 @@ struct ClosedDaysView: View {
 
     /// 다가오는 휴무일을 날짜별로 묶어 정렬된 배열로 반환한다 (가까운 8일치).
     private func upcomingGroups() -> [(date: Date, marts: [MetaMartsClosedDays], days: Int)] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         let endDate = calendar.date(byAdding: .month, value: 3, to: today) ?? today
 
@@ -880,7 +880,7 @@ struct ClosedDaysView: View {
         if days == 1 { return String(localized: "내일", defaultValue: "Tomorrow") }
         if days == 2 { return String(localized: "모레", defaultValue: "In 2 days") }
 
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let weekdayIndex = calendar.component(.weekday, from: date) // 1 = 일요일
         let weekday = Weekday.symbol(calendarWeekday: weekdayIndex)
         let weekdayName = String(format: String(localized: "%@요일", defaultValue: "%@"), weekday)
@@ -902,13 +902,13 @@ struct ClosedDaysView: View {
         let targetWeekStart = calendar.dateInterval(of: .weekOfYear, for: date)?.start ?? calendar.startOfDay(for: date)
         let dayDiff = calendar.dateComponents([.day], from: thisWeek.start, to: targetWeekStart).day ?? 14
         let weeksOut = max(2, dayDiff / 7)
-        return String(format: String(localized: "%lld주 뒤 %@", defaultValue: "in %lld weeks, %@"), weeksOut, weekdayName)
+        return String(format: String(localized: "%lld주 뒤 %@", defaultValue: "in %lld weeks, %@"), locale: .app, weeksOut, weekdayName)
     }
 
     /// 날짜별 카드를 VoiceOver 가 한 문장으로 읽도록 라벨을 구성한다.
     private func groupAccessibilityLabel(date: Date, marts: [MetaMartsClosedDays], days: Int) -> String {
         var parts: [String] = [relativeDayPhrase(date: date, days: days)]
-        parts.append(date.formatted(date: .complete, time: .omitted))
+        parts.append(date.appFormatted(date: .complete))
         let names = marts.map { $0.type.displayName }.joined(separator: ", ")
         parts.append(String(format: String(localized: "%@ 휴무", defaultValue: "%@ closed"), names))
         return parts.joined(separator: ", ")

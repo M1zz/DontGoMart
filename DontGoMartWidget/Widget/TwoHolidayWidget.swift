@@ -103,7 +103,7 @@ struct TwoHolidayWidget: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: TwoHoliydayWidgetProvider()) { entry in
-            ProWidget { TwoHolidayEntryView(entry: entry) }
+            ProWidget { TwoHolidayEntryView(entry: entry) }.appLocale()
         }
         .configurationDisplayName("Two Closed Days Widget")
         .description("Shows the next two upcoming closed days!")

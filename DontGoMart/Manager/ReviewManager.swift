@@ -65,7 +65,7 @@ enum ReviewManager {
 
         // 마지막 리뷰 요청 이후 충분한 시간이 지났는지 확인
         if let lastRequestDate = defaults.object(forKey: lastReviewRequestDateKey) as? Date {
-            let daysSinceLastRequest = Calendar.current.dateComponents([.day], from: lastRequestDate, to: Date()).day ?? 0
+            let daysSinceLastRequest = Calendar.app.dateComponents([.day], from: lastRequestDate, to: Date()).day ?? 0
             guard daysSinceLastRequest >= daysBetweenRequests else { return }
         }
 

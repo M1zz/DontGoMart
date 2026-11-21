@@ -26,15 +26,15 @@ struct DDayWidgetProvider: IntentTimelineProvider {
 
         let currentDate = Date()
         for dayOffset in 0 ..< 7 {
-            let entryDate = Calendar.current.date(byAdding: .day, value: dayOffset, to: currentDate)!
-            let startOfDate = Calendar.current.startOfDay(for: entryDate)
+            let entryDate = Calendar.app.date(byAdding: .day, value: dayOffset, to: currentDate)!
+            let startOfDate = Calendar.app.startOfDay(for: entryDate)
             let entry = DayEntry(date: startOfDate, configuration: configuration)
             entries.append(entry)
         }
 
         // 다음 날 자정에 위젯 업데이트
-        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
-        let nextMidnight = Calendar.current.startOfDay(for: tomorrow)
+        let tomorrow = Calendar.app.date(byAdding: .day, value: 1, to: currentDate)!
+        let nextMidnight = Calendar.app.startOfDay(for: tomorrow)
         let timeline = Timeline(entries: entries, policy: .after(nextMidnight))
         completion(timeline)
     }

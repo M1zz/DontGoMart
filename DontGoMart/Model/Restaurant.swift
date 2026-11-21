@@ -28,7 +28,7 @@ struct Restaurant: Codable, Hashable, Identifiable {
         self.placeURL = placeURL
     }
 
-    func isClosed(on date: Date, calendar: Calendar = .current) -> Bool {
+    func isClosed(on date: Date, calendar: Calendar = .app) -> Bool {
         patterns.contains { $0.matches(date, calendar: calendar) }
     }
 
@@ -43,7 +43,7 @@ struct Restaurant: Codable, Hashable, Identifiable {
 
 extension ClosurePattern {
     /// 이 날짜가 이 규칙의 휴무일인지. 연도 전체를 펼치지 않고 바로 판정한다.
-    func matches(_ date: Date, calendar: Calendar = .current) -> Bool {
+    func matches(_ date: Date, calendar: Calendar = .app) -> Bool {
         guard calendar.component(.weekday, from: date) == weekday.rawValue else { return false }
         switch frequency {
         case .weekOfMonth:
@@ -92,7 +92,7 @@ enum RestaurantStore {
 
     /// start 부터 days 일 동안, 날마다 쉬는 식당.
     static func week(from start: Date, days: Int = 7, restaurants: [Restaurant],
-                     calendar: Calendar = .current) -> [RestaurantDay] {
+                     calendar: Calendar = .app) -> [RestaurantDay] {
         let first = calendar.startOfDay(for: start)
         return (0..<days).compactMap { offset in
             guard let date = calendar.date(byAdding: .day, value: offset, to: first) else { return nil }

@@ -96,7 +96,7 @@ struct AnnouncementBanner: View {
             .frame(maxWidth: .infinity, alignment: .leading)
 
             if isTappable {
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.footnote.weight(.semibold))
                     .foregroundStyle(.tertiary)
                     .padding(.top, 2)

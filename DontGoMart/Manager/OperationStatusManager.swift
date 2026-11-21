@@ -42,7 +42,7 @@ class OperationStatusManager: ObservableObject {
     private init() {}
 
     func checkStatus(for martType: MartType, on date: Date = Date()) -> OperationStatus {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: date)
 
         let closedDates = tasks.filter { task in
@@ -60,7 +60,7 @@ class OperationStatusManager: ObservableObject {
     }
 
     func nextClosedDate(for martType: MartType, from date: Date = Date()) -> Date? {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: date)
 
         let futureClosed = tasks.filter { task in
@@ -75,7 +75,7 @@ class OperationStatusManager: ObservableObject {
             return nil
         }
 
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let components = calendar.dateComponents([.day], from: calendar.startOfDay(for: date), to: calendar.startOfDay(for: nextClosed))
         return components.day
     }

@@ -26,9 +26,9 @@ struct NextClosedDayIntent: AppIntent {
         guard let next = WidgetClosedDayStore.upcoming(onOrAfter: .now).first else {
             return .result(dialog: IntentDialog(LocalizedStringResource("다가오는 휴무일이 없어요.", comment: "Siri: no upcoming closed day")))
         }
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let days = calendar.dateComponents([.day], from: calendar.startOfDay(for: .now), to: calendar.startOfDay(for: next.date)).day ?? 0
-        let date = next.date.formatted(.dateTime.month().day().weekday())
+        let date = next.date.formatted(.app.month().day().weekday())
         if days == 0 {
             return .result(dialog: IntentDialog(LocalizedStringResource("오늘 \(next.martName) 쉬는 날이에요.", comment: "Siri: closed today. Argument is the mart name")))
         }

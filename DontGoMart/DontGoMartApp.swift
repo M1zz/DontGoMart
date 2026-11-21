@@ -26,6 +26,8 @@ struct DontGoMartApp: App {
     var body: some Scene {
         WindowGroup {
             ClosedDaysView()
+                // 아랍어: 오른쪽에서 왼쪽, 양력, 숫자 0~9
+                .appLocale()
                 // 큰 글씨 접근성 옵션도 레이아웃이 깨지지 않는 선에서 지원 (기본 글씨의 2배 이상).
                 .dynamicTypeSize(...DynamicTypeSize.accessibility3)
                 .leeoSatisfactionCheck(DontGoMartSpec.self)
@@ -88,7 +90,7 @@ struct DontGoMartApp: App {
         // tasks 배열이 이미 초기화되어 있으면 스킵
         guard tasks.isEmpty else { return }
 
-        let currentYear = Calendar.current.component(.year, from: Date())
+        let currentYear = Calendar.app.component(.year, from: Date())
 
         // 내장 마트: 선언형 규칙을 공통 엔진으로 펼친다 (작년~내년 3년치)
         for (martType, patterns) in Self.builtInMartRules {

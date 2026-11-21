@@ -25,7 +25,7 @@ struct HolidayWidgetProvider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<HolidayEntry>) -> ()) {
         var entries: [HolidayEntry] = []
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let currentDate = Date()
 
         // 16일치 일별 엔트리를 만든다. 각 엔트리는 그 날(startOfDate) 기준으로

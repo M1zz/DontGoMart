@@ -34,7 +34,7 @@ struct TwoHoliydayWidgetProvider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<TwoHolidayEntry>) -> ()) {
         var entries: [TwoHolidayEntry] = []
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let currentDate = Date()
 
         // 16일치 일별 엔트리. 각 엔트리는 그 날 기준으로 '다가오는 휴무일 2건' 을

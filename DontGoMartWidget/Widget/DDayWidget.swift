@@ -40,7 +40,7 @@ struct DDayWidget: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: DDayWidgetProvider()) { entry in
-            DDayWidgetEntryView(entry: entry)
+            DDayWidgetEntryView(entry: entry).appLocale()
         }
         .configurationDisplayName("Closure D-Day Widget")
         .description("Shows the number of days until the next closed day!")

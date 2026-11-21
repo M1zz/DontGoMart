@@ -72,7 +72,7 @@ class CustomMartManager: ObservableObject {
 
     // 커스텀 마트의 휴무일을 tasks에 통합
     func updateTasksWithCustomMarts() {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let currentYear = calendar.component(.year, from: Date())
 
         // 기존 커스텀 마트 태스크 제거

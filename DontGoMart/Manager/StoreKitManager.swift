@@ -160,7 +160,7 @@ enum SupporterThanksPrompt {
         // 기준점이 없는 기존 후원자는 다음 휴무일에 한 번 보여주고 주기를 시작한다
         guard last > 0 else { return true }
         let lastDate = Date(timeIntervalSince1970: last)
-        let days = Calendar.current.dateComponents([.day], from: lastDate, to: Date()).day ?? 0
+        let days = Calendar.app.dateComponents([.day], from: lastDate, to: Date()).day ?? 0
         return days >= minimumIntervalDays
     }
 

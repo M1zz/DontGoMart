@@ -49,7 +49,7 @@ struct ClosedDayCalendarView: View {
             Button {
                 withAnimation(reduceMotion ? nil : .default) { currentMonth -= 1 }
             } label: {
-                Image(systemName: "chevron.left")
+                Image(systemName: "chevron.backward")
                     .font(.title3.weight(.semibold))
                     .frame(width: 44, height: 44)
             }
@@ -58,7 +58,7 @@ struct ClosedDayCalendarView: View {
             Button {
                 withAnimation(reduceMotion ? nil : .default) { currentMonth += 1 }
             } label: {
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.title3.weight(.semibold))
                     .frame(width: 44, height: 44)
             }
@@ -74,6 +74,9 @@ struct ClosedDayCalendarView: View {
             ForEach(Array(weekdaySymbols.enumerated()), id: \.offset) { index, day in
                 Text(day)
                     .font(.caption.weight(.semibold))
+                    // 아랍어 요일(الأربعاء)은 짧은 이름도 길다 — 한 줄에 맞춰 줄인다
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
                     .foregroundColor(index == 0 ? .red : .secondary)
                     .frame(maxWidth: .infinity)
             }
@@ -152,7 +155,7 @@ struct ClosedDayCalendarView: View {
         let closedMarts = closedMarts(on: currentDate)
 
         return VStack(alignment: .leading, spacing: 12) {
-            Text(currentDate.formatted(date: .complete, time: .omitted))
+            Text(currentDate.appFormatted(date: .complete))
                 .font(.headline)
                 .accessibilityAddTraits(.isHeader)
 
@@ -198,7 +201,7 @@ struct ClosedDayCalendarView: View {
 
     private func cellAccessibilityLabel(for value: DateValue) -> String {
         guard value.day != -1 else { return "" }
-        let dateText = value.date.formatted(date: .complete, time: .omitted)
+        let dateText = value.date.appFormatted(date: .complete)
         let closed = closedMarts(on: value.date)
         if closed.isEmpty {
             return "\(dateText), " + String(localized: "휴무 없음", defaultValue: "No closing")
@@ -217,19 +220,19 @@ struct ClosedDayCalendarView: View {
     }
 
     private func isSameDay(_ d1: Date, _ d2: Date) -> Bool {
-        Calendar.current.isDate(d1, inSameDayAs: d2)
+        Calendar.app.isDate(d1, inSameDayAs: d2)
     }
 
     private func isToday(_ date: Date) -> Bool {
-        Calendar.current.isDateInToday(date)
+        Calendar.app.isDateInToday(date)
     }
 
     private func isWeekend(_ date: Date) -> Bool {
-        Calendar.current.component(.weekday, from: date) == 1 // 일요일
+        Calendar.app.component(.weekday, from: date) == 1 // 일요일
     }
 
     private func yearMonth() -> (year: String, month: String) {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let date = monthDate()
         let month = calendar.component(.month, from: date) - 1
         let year = calendar.component(.year, from: date)
@@ -238,11 +241,11 @@ struct ClosedDayCalendarView: View {
     }
 
     private func monthDate() -> Date {
-        Calendar.current.date(byAdding: .month, value: currentMonth, to: Date()) ?? Date()
+        Calendar.app.date(byAdding: .month, value: currentMonth, to: Date()) ?? Date()
     }
 
     private func extractDates() -> [DateValue] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let month = monthDate()
 
         var days = month.getAllDates().compactMap { date -> DateValue in

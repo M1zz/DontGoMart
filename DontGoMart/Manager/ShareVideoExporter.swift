@@ -22,7 +22,7 @@ enum ShareVideoExporter {
 
     @MainActor
     static func renderImage(payload: ShareCardPayload, format: ShareFormat, progress: Double) -> UIImage? {
-        let renderer = ImageRenderer(content: ShareCardView(payload: payload, format: format, progress: progress))
+        let renderer = ImageRenderer(content: ShareCardView(payload: payload, format: format, progress: progress).appLocale())
         renderer.scale = scale
         renderer.isOpaque = true
         return renderer.uiImage

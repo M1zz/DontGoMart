@@ -34,7 +34,7 @@ struct SundayStatusWidgetProvider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<SundayStatusEntry>) -> ()) {
         var entries: [SundayStatusEntry] = []
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let currentDate = Date()
         let hasMart = WidgetClosedDayStore.hasSelectedMart
 
@@ -70,7 +70,7 @@ private struct SundayDisplay {
 
     init(entry: SundayStatusEntry) {
         let mdw = entry.sundayDate.getMonthDayWeekday()
-        let dateText = "\(mdw.month) \(mdw.day)"
+        let dateText = [mdw.month, mdw.day].filter { !$0.isEmpty }.joined(separator: " ")
         self.dateText = dateText
 
         if !entry.hasMart {
@@ -208,7 +208,7 @@ struct SundayStatusWidget: Widget {
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: SundayStatusWidgetProvider()) { entry in
-            ProWidget { SundayStatusEntryView(entry: entry) }
+            ProWidget { SundayStatusEntryView(entry: entry) }.appLocale()
         }
         .configurationDisplayName("Sunday Open/Closed")
         .description("Shows in green/red whether your store is open this Sunday.")

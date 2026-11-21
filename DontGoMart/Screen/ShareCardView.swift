@@ -88,7 +88,7 @@ struct ShareCardView: View {
 
     /// 주인공 휴무일까지 남은 날 (0 = 오늘)
     private var daysUntilHero: Int {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let today = calendar.startOfDay(for: Date())
         return max(0, calendar.dateComponents([.day], from: today, to: calendar.startOfDay(for: payload.heroDate)).day ?? 0)
     }
@@ -232,7 +232,7 @@ struct ShareCardView: View {
     private func visibleMarts(limit: Int) -> [(name: String, color: Color)] {
         guard payload.marts.count > limit, limit > 0 else { return Array(payload.marts.prefix(limit)) }
         let shown = Array(payload.marts.prefix(limit - 1))
-        let more = String(format: String(localized: "외 %lld곳", defaultValue: "+%lld more"), payload.marts.count - shown.count)
+        let more = String(format: String(localized: "외 %lld곳", defaultValue: "+%lld more"), locale: .app, payload.marts.count - shown.count)
         return shown + [(name: more, color: Color.gray.opacity(0.6))]
     }
 
@@ -240,7 +240,7 @@ struct ShareCardView: View {
     private var dateBadge: some View {
         let width: CGFloat = isStory ? 58 : 52
         return VStack(spacing: 0) {
-            Text(payload.heroDate.formatted(.dateTime.month(.abbreviated)))
+            Text(payload.heroDate.formatted(.app.month(.abbreviated)))
                 .font(.system(size: isStory ? 15 : 13, weight: .bold))
                 .foregroundColor(.white)
                 // 베트남어 "Tháng 10" 처럼 긴 달 약칭이 "Thán…" 으로 잘리지 않게
@@ -250,7 +250,7 @@ struct ShareCardView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 3)
                 .background(Self.closedRed)
-            Text("\(Calendar.current.component(.day, from: payload.heroDate))")
+            Text("\(Calendar.app.component(.day, from: payload.heroDate))")
                 .font(.system(size: isStory ? 30 : 26, weight: .heavy))
                 .foregroundColor(Self.ink)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -285,7 +285,7 @@ struct ShareCardView: View {
             }
             HStack(spacing: 0) {
                 ForEach(Array(days.prefix(7).enumerated()), id: \.offset) { _, day in
-                    let weekday = Calendar.current.component(.weekday, from: day.date)
+                    let weekday = Calendar.app.component(.weekday, from: day.date)
                     Text(Weekday.symbol(calendarWeekday: weekday))
                         .font(.system(size: 13, weight: .semibold))
                         .foregroundColor(weekday == 1 ? Self.closedRed : (weekday == 7 ? .blue : .gray))
@@ -312,7 +312,7 @@ struct ShareCardView: View {
         let closed = !day.closedColors.isEmpty
         let size: CGFloat = isStory ? 36 : 32
         return VStack(spacing: 2) {
-            Text("\(Calendar.current.component(.day, from: day.date))")
+            Text("\(Calendar.app.component(.day, from: day.date))")
                 .font(.system(size: 16, weight: closed || day.isToday ? .heavy : .medium))
                 .foregroundColor(closed ? .white : Self.ink)
                 .frame(width: size, height: size)
@@ -746,7 +746,7 @@ private extension UIApplication {
 }
 
 #Preview {
-    let calendar = Calendar.current
+    let calendar = Calendar.app
     let today = calendar.startOfDay(for: Date())
     let start = calendar.dateInterval(of: .weekOfYear, for: today)?.start ?? today
     let days = (0..<14).map { offset -> ShareDay in

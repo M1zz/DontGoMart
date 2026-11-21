@@ -150,6 +150,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@ — alışverişi önceden yap"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ — تسوّق مبكرًا"
+          }
         }
       }
     },
@@ -300,6 +306,12 @@
             "state" : "translated",
             "value" : "%1$@ %2$@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
         }
       }
     },
@@ -444,6 +456,12 @@
             "state" : "translated",
             "value" : "%@ öğesini sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف %@"
+          }
         }
       }
     },
@@ -587,6 +605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ öğesini düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل %@"
           }
         }
       }
@@ -737,6 +761,12 @@
             "state" : "translated",
             "value" : "%@ kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق"
+          }
         }
       }
     },
@@ -880,6 +910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ kapalı Pro"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق Pro"
           }
         }
       }
@@ -1030,6 +1066,12 @@
             "state" : "translated",
             "value" : "Kapalı: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق %@"
+          }
         }
       }
     },
@@ -1173,6 +1215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ kapalı!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق %@!"
           }
         }
       }
@@ -1324,6 +1372,12 @@
             "state" : "translated",
             "value" : "%1$@, %2$@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@، %2$@"
+          }
         }
       }
     },
@@ -1473,6 +1527,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1613,6 +1673,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1762,6 +1828,12 @@
             "state" : "translated",
             "value" : "%lld / %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld / %2$lld"
+          }
         }
       }
     },
@@ -1905,6 +1977,48 @@
             "state" : "translated",
             "value" : "%lld öğe"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عنصر"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "عنصر واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "عنصران"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عناصر"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عنصرًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عنصر"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -2047,6 +2161,48 @@
             "state" : "translated",
             "value" : "%lld dk"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقيقة"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقيقة"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقيقة"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقائق"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقيقة"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld دقيقة"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -2188,6 +2344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat %lld"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الساعة %lld"
           }
         }
       }
@@ -2340,6 +2502,48 @@
             "state" : "translated",
             "value" : "Kalan gün: %lld"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد %lld يوم"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد يوم واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد يومين"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد %lld أيام"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد %lld يومًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "بعد %lld يوم"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -2484,6 +2688,48 @@
             "state" : "translated",
             "value" : "%lld gün önce"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل %lld يوم"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل يوم واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل يومين"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل %lld أيام"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل %lld يومًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قبل %lld يوم"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -2625,6 +2871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld. hafta"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسبوع %lld"
           }
         }
       }
@@ -2773,6 +3025,58 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld hafta sonra, %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ بعد %1$#@w@"
+          },
+          "substitutions" : {
+            "w" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أسبوع"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "أسبوع"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "أسبوعين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أسابيع"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أسبوعًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أسبوع"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -2924,6 +3228,12 @@
             "state" : "translated",
             "value" : "%lld. hafta, %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأسبوع %1$lld، %2$@"
+          }
         }
       }
     },
@@ -3072,6 +3382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver ile daha rahat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجربة أسهل مع VoiceOver"
           }
         }
       }
@@ -3222,6 +3538,12 @@
             "state" : "translated",
             "value" : "Siri ve Kestirmeler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri والاختصارات"
+          }
         }
       }
     },
@@ -3371,6 +3693,12 @@
             "state" : "translated",
             "value" : "Siri’ye sor veya bir kestirme çalıştır; mağazanın kapalı olup olmadığını hemen öğren."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل Siri أو شغّل اختصارًا لتعرف فورًا إن كان متجرك مغلقًا."
+          }
         }
       }
     },
@@ -3511,6 +3839,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "☕️"
@@ -3659,6 +3993,12 @@
             "state" : "translated",
             "value" : "☕️ ×%lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕️ ×%lld"
+          }
         }
       }
     },
@@ -3799,6 +4139,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚙️"
@@ -3947,6 +4293,12 @@
             "state" : "translated",
             "value" : "⚠️"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
+          }
         }
       }
     },
@@ -4087,6 +4439,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "✅"
@@ -4240,6 +4598,12 @@
             "state" : "translated",
             "value" : "En büyük yazı boyutunda bile ekranlar düzgünce yeniden yerleşir, hiçbir şey kesilmez."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُعاد ترتيب الشاشات بشكل أنيق دون أن يُقتطع منها شيء، حتى مع أكبر حجم للخط."
+          }
         }
       }
     },
@@ -4388,6 +4752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçtiğin ve eklediğin mağazaları ve bildirim ayarlarını uygulama içinde tek seferde sil."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امسح المتاجر التي اخترتها وأضفتها وإعدادات التنبيهات من داخل التطبيق دفعة واحدة."
           }
         }
       }
@@ -4538,6 +4908,12 @@
             "state" : "translated",
             "value" : "Duyuru"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعلان"
+          }
         }
       }
     },
@@ -4680,6 +5056,12 @@
             "state" : "translated",
             "value" : "Duyurunun tamamını açar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح نص الإعلان كاملًا"
+          }
         }
       }
     },
@@ -4821,6 +5203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duyuruyu kapat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق الإعلان"
           }
         }
       }
@@ -4971,6 +5359,12 @@
             "state" : "translated",
             "value" : "Koyu Mod"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوضع الداكن"
+          }
         }
       }
     },
@@ -5119,6 +5513,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontrastı Artır açıkken veya renkleri ayırt etmekte zorlansan bile kapalı günleri fark et."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعرّف على أيام الإغلاق حتى مع زيادة التباين أو إن صعب عليك تمييز الألوان."
           }
         }
       }
@@ -5269,6 +5669,12 @@
             "state" : "translated",
             "value" : "Daha fazla dil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لغات أكثر"
+          }
         }
       }
     },
@@ -5417,6 +5823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamayı daha fazla dilde kullan."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدم التطبيق بلغات أكثر."
           }
         }
       }
@@ -5567,6 +5979,12 @@
             "state" : "translated",
             "value" : "Eklediğin mağazaları bir dosyaya kaydet ve istediğin zaman geri yükle."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احفظ المتاجر التي أضفتها في ملف واسترجعها متى شئت."
+          }
         }
       }
     },
@@ -5716,6 +6134,12 @@
             "state" : "translated",
             "value" : "Tüm verilerimi sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف كل بياناتي"
+          }
         }
       }
     },
@@ -5863,6 +6287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza kapanış uyarısı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه إغلاق المتجر"
           }
         }
       }
@@ -6013,6 +6443,12 @@
             "state" : "translated",
             "value" : "Yazılar ve düğmeler koyu ekranda da net görünür."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقى النصوص والأزرار واضحة على الشاشة الداكنة."
+          }
         }
       }
     },
@@ -6161,6 +6597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha kolay görülen renkler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ألوان وتباين أوضح"
           }
         }
       }
@@ -6311,6 +6753,12 @@
             "state" : "translated",
             "value" : "iPad’de yalnızca klavyeyle mağaza seç ve takvimde gezin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "على iPad، اختر المتاجر وتنقّل في التقويم بلوحة المفاتيح وحدها."
+          }
         }
       }
     },
@@ -6459,6 +6907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Güncellemelerden sonra yenilikler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أخبار التحديثات"
           }
         }
       }
@@ -6609,6 +7063,12 @@
             "state" : "translated",
             "value" : "Güncellemeden sonra uygulamayı ilk açtığında nelerin yeni olduğunu görürsün."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند أول فتح بعد كل تحديث نعرّفك بالجديد."
+          }
         }
       }
     },
@@ -6757,6 +7217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kullanım ipuçları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نصائح الاستخدام"
           }
         }
       }
@@ -6907,6 +7373,12 @@
             "state" : "translated",
             "value" : "Yararlı özellikleri uygun anda nazikçe hatırlatırız."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نصيحة سريعة عن ميزة مفيدة في الوقت المناسب."
+          }
         }
       }
     },
@@ -7055,6 +7527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yedekleme ve dışa aktarma"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النسخ الاحتياطي والتصدير"
           }
         }
       }
@@ -7205,6 +7683,12 @@
             "state" : "translated",
             "value" : "Mağaza eklerken uygulama kapanırsa yazdıkların kaybolmaz."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إن أُغلق التطبيق أثناء إضافة متجر، يبقى ما كتبته محفوظًا."
+          }
         }
       }
     },
@@ -7346,6 +7830,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+%lld mağaza daha"
+          }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "و%lld متجر آخر"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "ومتجر آخر"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "ومتجران آخران"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "و%lld متاجر أخرى"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "و%lld متجرًا آخر"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "و%lld متجر آخر"
+                }
+              }
+            }
           }
         }
       }
@@ -7496,6 +8022,12 @@
             "state" : "translated",
             "value" : "VoiceOver kapalı günleri ve düğmeleri eksiksiz ve doğru sırayla okur."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ VoiceOver أيام الإغلاق والأزرار كاملة وبالترتيب الصحيح."
+          }
         }
       }
     },
@@ -7644,6 +8176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Büyük yazıya hazır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شاشات تناسب الخط الكبير"
           }
         }
       }
@@ -7794,6 +8332,12 @@
             "state" : "translated",
             "value" : "Klavye ile kontrol"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التحكم بلوحة المفاتيح"
+          }
         }
       }
     },
@@ -7942,6 +8486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hızlı başlangıç rehberi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دليل البداية"
           }
         }
       }
@@ -8092,6 +8642,12 @@
             "state" : "translated",
             "value" : "Uygulamayı ilk açtığında neler yapabildiğini birkaç kısa adımda gör."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند فتح التطبيق أول مرة نعرض لك ما يمكنه فعله في خطوات قصيرة."
+          }
         }
       }
     },
@@ -8240,6 +8796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Katlanabilir iPhone için tasarlandı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مصمَّم لـ iPhone القابل للطي"
           }
         }
       }
@@ -8390,6 +8952,12 @@
             "state" : "translated",
             "value" : "Katlanabilir iPhone’da geniş ekranı yan yana iki bölme olarak kullan."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "على iPhone القابل للطي، قسّم الشاشة الواسعة إلى جزأين متجاورين."
+          }
         }
       }
     },
@@ -8539,6 +9107,12 @@
             "state" : "translated",
             "value" : "Kaldığın yerden devam et"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع من حيث توقفت"
+          }
         }
       }
     },
@@ -8679,6 +9253,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💛"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💛"
@@ -8827,6 +9407,12 @@
             "state" : "translated",
             "value" : "📅"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📅"
+          }
         }
       }
     },
@@ -8967,6 +9553,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚫"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🚫"
@@ -9115,6 +9707,12 @@
             "state" : "translated",
             "value" : "🛒"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒"
+          }
         }
       }
     },
@@ -9257,6 +9855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Alışveriş için uygun gün uyarısı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 تنبيه يوم مناسب للتسوّق"
           }
         }
       }
@@ -9405,6 +10009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🛒 Alışveriş için güzel bir gün"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛒 يوم مناسب للتسوّق"
           }
         }
       }
@@ -9556,6 +10166,12 @@
             "state" : "translated",
             "value" : "Bir hafta içinde kapalı gün varsa seni uyarır!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ينبّهك حين يقترب يوم إغلاق خلال أسبوع!"
+          }
         }
       }
     },
@@ -9696,6 +10312,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottom"
@@ -9850,6 +10472,12 @@
             "state" : "translated",
             "value" : "Kapanış uyarısı widget’ı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أداة تنبيه الإغلاق"
+          }
         }
       }
     },
@@ -10000,6 +10628,12 @@
             "state" : "translated",
             "value" : "Kapanışa geri sayım widget’ı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أداة العد التنازلي للإغلاق"
+          }
         }
       }
     },
@@ -10140,6 +10774,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDayWidget"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DDayWidget"
@@ -10288,6 +10928,12 @@
             "state" : "translated",
             "value" : "Hello"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
         }
       }
     },
@@ -10428,6 +11074,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "L"
@@ -10576,6 +11228,12 @@
             "state" : "translated",
             "value" : "Leading"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leading"
+          }
         }
       }
     },
@@ -10716,6 +11374,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Min"
@@ -10868,6 +11532,12 @@
             "state" : "translated",
             "value" : "%@ yarın kapalı. Bugün alışveriş için güzel bir gün!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق غدًا. اليوم مناسب للتسوّق!"
+          }
         }
       }
     },
@@ -11015,6 +11685,58 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ %lld gün sonra kapanacak."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سيُغلق %1$@ بعد %2$#@d@."
+          },
+          "substitutions" : {
+            "d" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -11165,6 +11887,58 @@
             "state" : "translated",
             "value" : "%@ %lld gün sonra kapanacak."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سيُغلق %1$@ بعد %2$#@d@."
+          },
+          "substitutions" : {
+            "d" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -11313,6 +12087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir sonraki kapalı günden önce alışverişini yapmayı unutma!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تنسَ التسوّق قبل يوم الإغلاق القادم!"
           }
         }
       }
@@ -11463,6 +12243,12 @@
             "state" : "translated",
             "value" : "Çevrendeki mağazaların kapalı günlerini de yönet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع أيام إغلاق متاجر حيّك أيضًا"
+          }
         }
       }
     },
@@ -11611,6 +12397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kendi mağazanın kapanış düzenini kaydet"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجّل نمط إغلاق متجرك الخاص"
           }
         }
       }
@@ -11761,6 +12553,12 @@
             "state" : "translated",
             "value" : "Favorilerin her zaman en üstte"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفضّلاتك تظهر دائمًا في الأعلى"
+          }
         }
       }
     },
@@ -11909,6 +12707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sevdiğin mağazaları yer imlerine ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احفظ متاجرك المفضّلة"
           }
         }
       }
@@ -12059,6 +12863,12 @@
             "state" : "translated",
             "value" : "Tek seferlik satın alma, tüm özellikler sonsuza dek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دفعة واحدة لكل الميزات، مدى الحياة"
+          }
         }
       }
     },
@@ -12207,6 +13017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart Pro’ya yükselt"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الترقية إلى DontGoMart Pro"
           }
         }
       }
@@ -12357,6 +13173,12 @@
             "state" : "translated",
             "value" : "E-Mart, Costco ve Homeplus kapalı günlerini bir arada gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقّق من إغلاق E-Mart وCostco وHomeplus معًا"
+          }
         }
       }
     },
@@ -12505,6 +13327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Birden fazla mağazayı aynı anda takip et"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع عدة متاجر في وقت واحد"
           }
         }
       }
@@ -12655,6 +13483,12 @@
             "state" : "translated",
             "value" : "Kapalı günlerden önce uyarı al, boşuna yola çıkma"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيهات قبل أيام الإغلاق كي لا يضيع مشوارك"
+          }
         }
       }
     },
@@ -12803,6 +13637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir daha kapalı mağaza kapısında kalma"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لن تذهب إلى متجر مغلق بعد اليوم"
           }
         }
       }
@@ -12953,6 +13793,12 @@
             "state" : "translated",
             "value" : "İhtiyacın kadar öğe ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف كل ما تحتاجه من عناصر"
+          }
         }
       }
     },
@@ -13101,6 +13947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sınırsız alışveriş listesi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قائمة تسوّق بلا حدود"
           }
         }
       }
@@ -13251,6 +14103,12 @@
             "state" : "translated",
             "value" : "☕ Bir kahve parasına her şeyin kilidini sonsuza dek aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "☕ بسعر فنجان قهوة، افتح كل شيء إلى الأبد"
+          }
         }
       }
     },
@@ -13399,6 +14257,102 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı günlerden %1$lld gün ve %2$lld gün önce saat %3$@ itibarıyla bildirim alırsın."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصلك التنبيهات في %3$@، %1$#@a@ و%2$#@b@ من يوم الإغلاق."
+          },
+          "substitutions" : {
+            "a" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  }
+                }
+              }
+            },
+            "b" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -13550,6 +14504,12 @@
             "state" : "translated",
             "value" : "Mağazanın bu pazar açık olup olmadığını yeşil veya kırmızıyla gösterir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض بالأخضر أو الأحمر هل متجرك مفتوح يوم الأحد هذا."
+          }
         }
       }
     },
@@ -13697,6 +14657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sıradaki iki kapalı günü gösterir!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض يومَي الإغلاق القادمين!"
           }
         }
       }
@@ -13848,6 +14814,12 @@
             "state" : "translated",
             "value" : "Bir sonraki kapalı güne kaç gün kaldığını gösterir!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض عدد الأيام حتى يوم الإغلاق القادم!"
+          }
         }
       }
     },
@@ -13998,6 +14970,12 @@
             "state" : "translated",
             "value" : "Pazar açık/kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد: مفتوح أم مغلق"
+          }
         }
       }
     },
@@ -14142,6 +15120,12 @@
             "state" : "translated",
             "value" : "T"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T"
+          }
         }
       }
     },
@@ -14282,6 +15266,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailing"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trailing"
@@ -14436,6 +15426,12 @@
             "state" : "translated",
             "value" : "İki kapalı gün widget’ı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أداة يومَي إغلاق"
+          }
         }
       }
     },
@@ -14579,6 +15575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teşekkür mesajını kapatır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يغلق رسالة الشكر"
           }
         }
       }
@@ -14724,6 +15726,12 @@
             "state" : "translated",
             "value" : "Teşekkürler!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شكرًا لك!"
+          }
         }
       }
     },
@@ -14868,6 +15876,12 @@
             "state" : "translated",
             "value" : "Geliştiriciye bir kahve ısmarlar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرسل للمطوّر ثمن فنجان قهوة"
+          }
         }
       }
     },
@@ -15011,6 +16025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geliştiriciye bahşiş gönderir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرسل دعمًا للمطوّر"
           }
         }
       }
@@ -15161,6 +16181,12 @@
             "state" : "translated",
             "value" : "Gyeonggi/Cheongju’nun bir kısmı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أجزاء من غيونغي/تشونغجو"
+          }
         }
       }
     },
@@ -15305,6 +16331,12 @@
             "state" : "translated",
             "value" : "Teşekkürler, görüşmek üzere"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شكرًا لك، نراك في المرة القادمة"
+          }
         }
       }
     },
@@ -15447,6 +16479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yakında kapanıyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُغلق قريبًا"
           }
         }
       }
@@ -15591,6 +16629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paylaş"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشاركة"
           }
         }
       }
@@ -15740,6 +16784,12 @@
             "state" : "translated",
             "value" : "Tatil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عطلة رسمية"
+          }
         }
       }
     },
@@ -15881,6 +16931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Satın Alımları Geri Yükle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استعادة المشتريات"
           }
         }
       }
@@ -16031,6 +17087,12 @@
             "state" : "translated",
             "value" : "Özellik"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الميزة"
+          }
         }
       }
     },
@@ -16172,6 +17234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağazalarım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متاجري"
           }
         }
       }
@@ -16322,6 +17390,12 @@
             "state" : "translated",
             "value" : "Yarın"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غدًا"
+          }
         }
       }
     },
@@ -16464,6 +17538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yarın kapalı: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق غدًا"
           }
         }
       }
@@ -16616,6 +17696,12 @@
             "state" : "translated",
             "value" : "Yarın kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق غدًا"
+          }
         }
       }
     },
@@ -16757,6 +17843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yaklaşan kapalı günler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام الإغلاق القادمة"
           }
         }
       }
@@ -16901,6 +17993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gelecek ay"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشهر التالي"
           }
         }
       }
@@ -17053,6 +18151,12 @@
             "state" : "translated",
             "value" : "Gelecek hafta: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ القادم"
+          }
         }
       }
     },
@@ -17202,6 +18306,12 @@
             "state" : "translated",
             "value" : "Sonraki kapalı gün"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم الإغلاق القادم"
+          }
         }
       }
     },
@@ -17344,6 +18454,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir sonraki kapalı günden 2 gün önce sana alışverişi hatırlatırız."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سنذكّرك بالتسوّق قبل يوم الإغلاق القادم بيومين."
           }
         }
       }
@@ -17496,6 +18612,12 @@
             "state" : "translated",
             "value" : "Kapalı gün bilgisi yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا معلومات عن يوم الإغلاق القادم"
+          }
         }
       }
     },
@@ -17639,6 +18761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha sonra"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لاحقًا"
           }
         }
       }
@@ -17789,6 +18917,12 @@
             "state" : "translated",
             "value" : "Birden fazla mağazayı aynı anda takip et"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع عدة متاجر في آن واحد"
+          }
         }
       }
     },
@@ -17938,6 +19072,12 @@
             "state" : "translated",
             "value" : "Çoklu mağaza takibi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة عدة متاجر"
+          }
         }
       }
     },
@@ -18081,6 +19221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
           }
         }
       }
@@ -18226,6 +19372,12 @@
             "state" : "translated",
             "value" : "Kapalı günleri görmek için takvimi açar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح التقويم لعرض أيام الإغلاق"
+          }
         }
       }
     },
@@ -18368,6 +19520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taegu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دايغو"
           }
         }
       }
@@ -18518,6 +19676,12 @@
             "state" : "translated",
             "value" : "Costco Taegu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco دايغو"
+          }
         }
       }
     },
@@ -18665,6 +19829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taegu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دايغو"
           }
         }
       }
@@ -18814,6 +19984,12 @@
             "state" : "translated",
             "value" : "Taegu, Taegu Innovation"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دايغو، دايغو هيوكشين"
+          }
         }
       }
     },
@@ -18956,6 +20132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت"
           }
         }
       }
@@ -19105,6 +20287,12 @@
             "state" : "translated",
             "value" : "Süpermarket (çarşamba kapalı)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (يُغلق الأربعاء)"
+          }
         }
       }
     },
@@ -19252,6 +20440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket (çarşamba kapalı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (يُغلق الأربعاء)"
           }
         }
       }
@@ -19401,6 +20595,12 @@
             "state" : "translated",
             "value" : "Süpermarket (Çar)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (الأربعاء)"
+          }
         }
       }
     },
@@ -19548,6 +20748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket (Ulsan, karma)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (أولسان، مختلط)"
           }
         }
       }
@@ -19697,6 +20903,12 @@
             "state" : "translated",
             "value" : "Süpermarket (Ulsan)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (أولسان)"
+          }
         }
       }
     },
@@ -19844,6 +21056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket (Ulsan)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (أولسان)"
           }
         }
       }
@@ -19993,6 +21211,12 @@
             "state" : "translated",
             "value" : "Süpermarket (pazar kapalı)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (يُغلق الأحد)"
+          }
         }
       }
     },
@@ -20140,6 +21364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket (pazar kapalı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (يُغلق الأحد)"
           }
         }
       }
@@ -20289,6 +21519,12 @@
             "state" : "translated",
             "value" : "Süpermarket (Paz)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (الأحد)"
+          }
         }
       }
     },
@@ -20436,6 +21672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süpermarket (Jeju)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (جيجو)"
           }
         }
       }
@@ -20585,6 +21827,12 @@
             "state" : "translated",
             "value" : "Süpermarket (Jeju)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (جيجو)"
+          }
         }
       }
     },
@@ -20733,6 +21981,12 @@
             "state" : "translated",
             "value" : "Süpermarket (Jeju)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هايبرماركت (جيجو)"
+          }
         }
       }
     },
@@ -20877,6 +22131,12 @@
             "state" : "translated",
             "value" : "Uygulama işine yaradıysa bir kahveyle bize moral ver."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إن أفادك التطبيق، شجّعنا بفنجان قهوة."
+          }
         }
       }
     },
@@ -21017,6 +22277,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart"
@@ -21166,6 +22432,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro - %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro - %@"
+          }
         }
       }
     },
@@ -21310,6 +22582,12 @@
             "state" : "translated",
             "value" : "Kapatmak için iki kez dokun"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انقر مرتين للإغلاق"
+          }
         }
       }
     },
@@ -21453,6 +22731,12 @@
             "state" : "translated",
             "value" : "Mağaza"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر"
+          }
         }
       }
     },
@@ -21595,6 +22879,12 @@
             "state" : "translated",
             "value" : "Alışverişe çıkmadan önce kapalı günleri DontGoMart’ta kontrol et ✅"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقّق من أيام الإغلاق في DontGoMart قبل التسوّق ✅"
+          }
         }
       }
     },
@@ -21736,6 +23026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza rengi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لون المتجر"
           }
         }
       }
@@ -21885,6 +23181,12 @@
             "state" : "translated",
             "value" : "Mağaza seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر متجرًا"
+          }
         }
       }
     },
@@ -22026,6 +23328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza adı (örn. Homeplus Gangnam)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المتجر (مثال: Homeplus غانغنام)"
           }
         }
       }
@@ -22169,6 +23477,12 @@
             "state" : "translated",
             "value" : "Mağaza bilgisi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معلومات المتجر"
+          }
         }
       }
     },
@@ -22310,6 +23624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة متجر"
           }
         }
       }
@@ -22453,6 +23773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza kapalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر مغلق"
           }
         }
       }
@@ -22603,6 +23929,12 @@
             "state" : "translated",
             "value" : "Mağaza kapalı gün bildirimi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إشعار إغلاق المتجر"
+          }
         }
       }
     },
@@ -22746,6 +24078,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza kapanış uyarısı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه أيام إغلاق المتجر"
           }
         }
       }
@@ -22896,6 +24234,12 @@
             "state" : "translated",
             "value" : "Mağaza"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر"
+          }
         }
       }
     },
@@ -23044,6 +24388,12 @@
             "state" : "translated",
             "value" : "Mağaza"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر"
+          }
         }
       }
     },
@@ -23187,6 +24537,12 @@
             "state" : "translated",
             "value" : "Mağaza seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختيار المتجر"
+          }
         }
       }
     },
@@ -23328,6 +24684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza seçimini ve bildirim ayarlarını açar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح شاشة اختيار المتاجر وإعدادات التنبيهات"
           }
         }
       }
@@ -23478,6 +24840,12 @@
             "state" : "translated",
             "value" : "Mağazaya göre değişir"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يختلف حسب الفرع"
+          }
         }
       }
     },
@@ -23620,6 +24988,12 @@
             "state" : "translated",
             "value" : "Mağaza seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختيار المتجر"
+          }
         }
       }
     },
@@ -23761,6 +25135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lütfen bir mağaza seç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى اختيار متجر"
           }
         }
       }
@@ -23911,6 +25291,12 @@
             "state" : "translated",
             "value" : "Mağaza seçilmedi. Lütfen Ayarlar’dan seç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يُختر أي متجر. اختر متجرًا من الإعدادات."
+          }
         }
       }
     },
@@ -24054,6 +25440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Her hafta: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام %@"
           }
         }
       }
@@ -24206,6 +25598,12 @@
             "state" : "translated",
             "value" : "Öbür gün"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعد غد"
+          }
         }
       }
     },
@@ -24354,6 +25752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alışveriş listende öğe sınırı yok"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا حدّ لعناصر قائمة التسوّق"
           }
         }
       }
@@ -24504,6 +25908,12 @@
             "state" : "translated",
             "value" : "Sınırsız alışveriş listesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قائمة تسوّق بلا حدود"
+          }
         }
       }
     },
@@ -24653,6 +26063,12 @@
             "state" : "translated",
             "value" : "Sınırsız öğe eklemek için Pro’ya yükselt"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رقِّ اشتراكك لعناصر تسوّق بلا حدود"
+          }
         }
       }
     },
@@ -24795,6 +26211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sürüm"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإصدار"
           }
         }
       }
@@ -24940,6 +26362,12 @@
             "state" : "translated",
             "value" : "Desteğin sayesinde uygulamayı geliştirmeye devam edebiliyoruz."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دعمك هو ما يُبقي هذا التطبيق مستمرًا."
+          }
         }
       }
     },
@@ -25084,6 +26512,12 @@
             "state" : "translated",
             "value" : "Desteğin çok değerli. (şu ana kadar ☕️ ×%lld)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دعمك يعني لنا الكثير. (حتى الآن ☕️ ×%lld)"
+          }
         }
       }
     },
@@ -25225,6 +26659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "dk"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدقيقة"
           }
         }
       }
@@ -25368,6 +26808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hızlı İşlemler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجراءات سريعة"
           }
         }
       }
@@ -25520,6 +26966,12 @@
             "state" : "translated",
             "value" : "Seçilmedi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غير محدد"
+          }
         }
       }
     },
@@ -25662,6 +27114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçimi temizle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح الاختيار"
           }
         }
       }
@@ -25811,6 +27269,12 @@
             "state" : "translated",
             "value" : "Mağaza seçilmedi. Seçmek için uygulamayı aç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يُختر أي متجر. افتح التطبيق لتختار."
+          }
         }
       }
     },
@@ -25952,6 +27416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçilen düzen"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النمط المختار"
           }
         }
       }
@@ -26104,6 +27574,12 @@
             "state" : "translated",
             "value" : "Seçildi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محدد"
+          }
         }
       }
     },
@@ -26247,6 +27723,12 @@
             "state" : "translated",
             "value" : "Seçilen tüm mağazalar açık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل المتاجر المختارة مفتوحة"
+          }
         }
       }
     },
@@ -26389,6 +27871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçilen tüm mağazalar kapalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل المتاجر المختارة مغلقة"
           }
         }
       }
@@ -26538,6 +28026,12 @@
             "state" : "translated",
             "value" : "Seollal/Chuseok tatilleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عطلتا رأس السنة القمرية وتشوسوك"
+          }
         }
       }
     },
@@ -26679,6 +28173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ayarlar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإعدادات"
           }
         }
       }
@@ -26824,6 +28324,12 @@
             "state" : "translated",
             "value" : "Takip edeceğin mağazaları Ayarlar’dan seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر المتاجر التي تتابعها من الإعدادات"
+          }
         }
       }
     },
@@ -26967,6 +28473,12 @@
             "state" : "translated",
             "value" : "Takip edeceğin mağazaları Ayarlar’dan seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدّد المتاجر التي تريد متابعتها في الإعدادات"
+          }
         }
       }
     },
@@ -27109,6 +28621,12 @@
             "state" : "translated",
             "value" : "Ayarlar’a git"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الانتقال إلى الإعدادات"
+          }
         }
       }
     },
@@ -27250,6 +28768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الساعة"
           }
         }
       }
@@ -27400,6 +28924,12 @@
             "state" : "translated",
             "value" : "Bilinmiyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غير معروف"
+          }
         }
       }
     },
@@ -27541,6 +29071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bildirim izni gerekli"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يلزم إذن التنبيهات"
           }
         }
       }
@@ -27685,6 +29221,12 @@
             "state" : "translated",
             "value" : "Bildirim ayarları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعدادات التنبيهات"
+          }
         }
       }
     },
@@ -27826,6 +29368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bildirim saati"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقت التنبيه"
           }
         }
       }
@@ -27970,6 +29518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beni uyar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موعد التنبيه"
           }
         }
       }
@@ -28120,6 +29674,12 @@
             "state" : "translated",
             "value" : "Kapalı günlerden önce bildirim al"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيهات قبل أيام الإغلاق"
+          }
         }
       }
     },
@@ -28268,6 +29828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bildirimler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التنبيهات"
           }
         }
       }
@@ -28418,6 +29984,12 @@
             "state" : "translated",
             "value" : "Kapalı günlerden önce bildirim al"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيهات قبل أيام الإغلاق"
+          }
         }
       }
     },
@@ -28559,6 +30131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bildirimler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التنبيهات"
           }
         }
       }
@@ -28703,6 +30281,12 @@
             "state" : "translated",
             "value" : "App Store’da yorum yaz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قيّم التطبيق في App Store"
+          }
         }
       }
     },
@@ -28845,6 +30429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "App Store’da görüntüle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض في App Store"
           }
         }
       }
@@ -28990,6 +30580,12 @@
             "state" : "translated",
             "value" : "Uygulamayı desteklediğin için teşekkürler ☕️"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شكرًا لدعمك التطبيق ☕️"
+          }
         }
       }
     },
@@ -29132,6 +30728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يانغبيونغ، دايجون، يانغجاي، \nسانغبونغ، بوسان، غوانغميونغ، \nتشونان، أويجونغبو، غونغسي، \nسونغدو، سيجونغ، هانام، \nغيمهاي، غوتشوك"
           }
         }
       }
@@ -29280,6 +30882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Açık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح"
           }
         }
       }
@@ -29430,6 +31038,12 @@
             "state" : "translated",
             "value" : "Açık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح"
+          }
         }
       }
     },
@@ -29572,6 +31186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün açık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح اليوم"
           }
         }
       }
@@ -29722,6 +31342,12 @@
             "state" : "translated",
             "value" : "Bugün"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اليوم"
+          }
         }
       }
     },
@@ -29864,6 +31490,12 @@
             "state" : "translated",
             "value" : "Bugün kapalı: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق اليوم"
+          }
         }
       }
     },
@@ -30005,6 +31637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün gidebilir miyim?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل أستطيع الذهاب اليوم؟"
           }
         }
       }
@@ -30155,6 +31793,12 @@
             "state" : "translated",
             "value" : "Seçilen tüm mağazalar bugün açık."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل المتاجر المختارة مفتوحة اليوم."
+          }
         }
       }
     },
@@ -30304,6 +31948,12 @@
             "state" : "translated",
             "value" : "Seçilen tüm mağazalar bugün kapalı."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل المتاجر المختارة مغلقة اليوم."
+          }
         }
       }
     },
@@ -30448,6 +32098,12 @@
             "state" : "translated",
             "value" : "Bugünkü durumu ve yaklaşan kapalı günleri paylaşır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشارك حالة اليوم وأيام الإغلاق القادمة"
+          }
         }
       }
     },
@@ -30591,6 +32247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün açık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح اليوم"
           }
         }
       }
@@ -30743,6 +32405,12 @@
             "state" : "translated",
             "value" : "Bugün yalnızca bazı mağazalar kapalı: %@."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعض المتاجر مغلقة اليوم: %@."
+          }
         }
       }
     },
@@ -30886,6 +32554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün seni boşuna yoldan kurtardık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وفّرنا عليك مشوارًا ضائعًا اليوم"
           }
         }
       }
@@ -31038,6 +32712,12 @@
             "state" : "translated",
             "value" : "Bugün kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق اليوم"
+          }
         }
       }
     },
@@ -31182,6 +32862,12 @@
             "state" : "translated",
             "value" : "Bugün kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق اليوم"
+          }
         }
       }
     },
@@ -31323,6 +33009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün seni bir kez daha boşuna yoldan kurtardık.\nCömert desteğini hep hatırlıyoruz."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وفّرنا عليك مشوارًا ضائعًا آخر اليوم.\nما زلنا نذكر دعمك الكريم."
           }
         }
       }
@@ -31472,6 +33164,12 @@
             "state" : "translated",
             "value" : "Bitti"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم"
+          }
         }
       }
     },
@@ -31615,6 +33313,12 @@
             "state" : "translated",
             "value" : "Tamamlanan öğeleri sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف العناصر المكتملة"
+          }
         }
       }
     },
@@ -31757,6 +33461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أولسان"
           }
         }
       }
@@ -31907,6 +33617,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco أولسان"
+          }
         }
       }
     },
@@ -32054,6 +33770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ulsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أولسان"
           }
         }
       }
@@ -32203,6 +33925,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أولسان"
+          }
         }
       }
     },
@@ -32351,6 +34079,12 @@
             "state" : "translated",
             "value" : "Ulsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أولسان"
+          }
         }
       }
     },
@@ -32493,6 +34227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aylık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شهري"
           }
         }
       }
@@ -32637,6 +34377,12 @@
             "state" : "translated",
             "value" : "Konum izni gerekli"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يلزم إذن الموقع"
+          }
         }
       }
     },
@@ -32780,6 +34526,12 @@
             "state" : "translated",
             "value" : "Konum özellikleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ميزات الموقع"
+          }
         }
       }
     },
@@ -32921,6 +34673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bize destek ol"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ادعمنا"
           }
         }
       }
@@ -33069,6 +34827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد"
           }
         }
       }
@@ -33221,6 +34985,12 @@
             "state" : "translated",
             "value" : "Bu hafta: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ هذا الأسبوع"
+          }
         }
       }
     },
@@ -33363,6 +35133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu hafta kapalı: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق هذا الأسبوع"
           }
         }
       }
@@ -33512,6 +35288,12 @@
             "state" : "translated",
             "value" : "Bu pazar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد هذا الأسبوع"
+          }
         }
       }
     },
@@ -33659,6 +35441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu pazar %@, mağaza açık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد هذا الأسبوع %@، المتجر مفتوح"
           }
         }
       }
@@ -33808,6 +35596,12 @@
             "state" : "translated",
             "value" : "Bu pazar %@, mağaza kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد هذا الأسبوع %@، المتجر مغلق"
+          }
         }
       }
     },
@@ -33951,6 +35745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önceki ay"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشهر السابق"
           }
         }
       }
@@ -34096,6 +35896,12 @@
             "state" : "translated",
             "value" : "Instagram Hikâyeleri’nde paylaş"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشاركة في قصة Instagram"
+          }
         }
       }
     },
@@ -34240,6 +36046,12 @@
             "state" : "translated",
             "value" : "Hikâyelerde paylaşmak için Instagram’ın yüklü olması gerekir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب تثبيت Instagram للمشاركة في القصص."
+          }
         }
       }
     },
@@ -34383,6 +36195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram bulunamadı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram غير مثبت"
           }
         }
       }
@@ -34529,6 +36347,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -34681,6 +36505,12 @@
             "state" : "translated",
             "value" : "Normal"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفروع العامة"
+          }
         }
       }
     },
@@ -34823,6 +36653,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Normal mağazalar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفروع العامة"
           }
         }
       }
@@ -34967,6 +36803,12 @@
             "state" : "translated",
             "value" : "Bazıları açık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعضها مفتوح"
+          }
         }
       }
     },
@@ -35108,6 +36950,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bazı mağazalar kapalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعض المتاجر مغلقة"
           }
         }
       }
@@ -35251,6 +37099,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيلسان"
           }
         }
       }
@@ -35401,6 +37255,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco إيلسان"
+          }
         }
       }
     },
@@ -35549,6 +37409,12 @@
             "state" : "translated",
             "value" : "Ilsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيلسان"
+          }
         }
       }
     },
@@ -35696,6 +37562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيلسان"
           }
         }
       }
@@ -35846,6 +37718,12 @@
             "state" : "translated",
             "value" : "Tek seferlik satın alma. Abonelik yok."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دفعة واحدة. بلا اشتراك."
+          }
         }
       }
     },
@@ -35987,6 +37865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sevdiğin mağazaların kapanış düzenlerini ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف أنماط إغلاق متاجرك المفضّلة"
           }
         }
       }
@@ -36131,6 +38015,12 @@
             "state" : "translated",
             "value" : "Alışveriş hatırlatıcısı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكير التسوّق"
+          }
         }
       }
     },
@@ -36274,6 +38164,12 @@
             "state" : "translated",
             "value" : "Alışveriş listesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قائمة التسوّق"
+          }
         }
       }
     },
@@ -36416,6 +38312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alışveriş uyarısı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه التسوّق"
           }
         }
       }
@@ -36566,6 +38468,12 @@
             "state" : "translated",
             "value" : "Alışveriş hatırlatıcısı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكير التسوّق"
+          }
         }
       }
     },
@@ -36710,6 +38618,12 @@
             "state" : "translated",
             "value" : "Alışveriş için uygun gün uyarısı (bir gün önce)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه اليوم المناسب للتسوّق (قبلها بيوم)"
+          }
         }
       }
     },
@@ -36853,6 +38767,12 @@
             "state" : "translated",
             "value" : "Öğe ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
         }
       }
     },
@@ -36995,6 +38915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alışveriş listene öğe ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف عناصر إلى قائمة تسوّقك"
           }
         }
       }
@@ -37143,6 +39069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaydet"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ"
           }
         }
       }
@@ -37293,6 +39225,12 @@
             "state" : "translated",
             "value" : "Ülke genelinde çoğu bölge"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معظم المناطق في البلاد"
+          }
         }
       }
     },
@@ -37441,6 +39379,12 @@
             "state" : "translated",
             "value" : "Resmî tatil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عطلة رسمية"
+          }
         }
       }
     },
@@ -37588,6 +39532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Resmî tatil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عطلة رسمية"
           }
         }
       }
@@ -37738,6 +39688,12 @@
             "state" : "translated",
             "value" : "Gün boyu kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق طوال اليوم"
+          }
         }
       }
     },
@@ -37881,6 +39837,12 @@
             "state" : "translated",
             "value" : "Tümünü sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف الكل"
+          }
         }
       }
     },
@@ -38023,6 +39985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tümünü gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الكل"
           }
         }
       }
@@ -38168,6 +40136,12 @@
             "state" : "translated",
             "value" : "Çok teşekkürler!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شكرًا جزيلًا!"
+          }
         }
       }
     },
@@ -38310,6 +40284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hakkında"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حول التطبيق"
           }
         }
       }
@@ -38459,6 +40439,12 @@
             "state" : "translated",
             "value" : "Jeju"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جيجو"
+          }
         }
       }
     },
@@ -38601,6 +40587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haftalık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسبوعي"
           }
         }
       }
@@ -38745,6 +40737,12 @@
             "state" : "translated",
             "value" : "Yakındaki mağazalar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متاجر قريبة"
+          }
         }
       }
     },
@@ -38887,6 +40885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yakındaki mağazaları otomatik bul"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتشاف المتاجر القريبة تلقائيًا"
           }
         }
       }
@@ -39031,6 +41035,12 @@
             "state" : "translated",
             "value" : "Yakındaki mağazaları bulmak için\nAyarlar > DontGoMart > Konum yolundan\nkonum erişimine izin ver."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "للعثور على المتاجر القريبة،\nاسمح بالوصول إلى الموقع من\nالإعدادات > DontGoMart > الموقع."
+          }
         }
       }
     },
@@ -39174,6 +41184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çevrendekilere kapanışları haber ver"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أخبر من حولك بأيام الإغلاق"
           }
         }
       }
@@ -39324,6 +41340,12 @@
             "state" : "translated",
             "value" : "Sevdiğin mağazaları en üste sabitle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ثبّت متاجرك المفضّلة في الأعلى"
+          }
         }
       }
     },
@@ -39473,6 +41495,12 @@
             "state" : "translated",
             "value" : "Favoriler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المفضّلة"
+          }
         }
       }
     },
@@ -39617,6 +41645,12 @@
             "state" : "translated",
             "value" : "Şu ana kadar alınan destek ☕️ ×%lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدعم الذي وصلنا حتى الآن ☕️ ×%lld"
+          }
         }
       }
     },
@@ -39759,6 +41793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İlerleme"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقدّم"
           }
         }
       }
@@ -39903,6 +41943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İlk kapalı gün"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أول يوم إغلاق"
           }
         }
       }
@@ -40052,6 +42098,12 @@
             "state" : "translated",
             "value" : "Ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة"
+          }
         }
       }
     },
@@ -40193,6 +42245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Takip edilecek mağazaları seç (birden fazla seçilebilir)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر المتاجر التي تتابعها (يمكن اختيار أكثر من متجر)"
           }
         }
       }
@@ -40342,6 +42400,12 @@
             "state" : "translated",
             "value" : "Vazgeç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
         }
       }
     },
@@ -40486,6 +42550,12 @@
             "state" : "translated",
             "value" : "Kart hazırlanıyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نجهّز بطاقتك"
+          }
         }
       }
     },
@@ -40629,6 +42699,12 @@
             "state" : "translated",
             "value" : "Takvimi gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض التقويم"
+          }
         }
       }
     },
@@ -40771,6 +42847,12 @@
             "state" : "translated",
             "value" : "Özel mağaza ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة متجر مخصّص"
+          }
         }
       }
     },
@@ -40912,6 +42994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Özel mağazayı düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل متجر مخصّص"
           }
         }
       }
@@ -41061,6 +43149,12 @@
             "state" : "translated",
             "value" : "Özel mağaza"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر مخصّص"
+          }
         }
       }
     },
@@ -41209,6 +43303,12 @@
             "state" : "translated",
             "value" : "Özel mağaza"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر مخصّص"
+          }
         }
       }
     },
@@ -41356,6 +43456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Özel mağaza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر مخصّص"
           }
         }
       }
@@ -41506,6 +43612,12 @@
             "state" : "translated",
             "value" : "Kendi mağazanın kapanış düzenlerini ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف أنماط إغلاق متجرك الخاص"
+          }
         }
       }
     },
@@ -41654,6 +43766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Özel mağaza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متجر مخصّص"
           }
         }
       }
@@ -41804,6 +43922,12 @@
             "state" : "translated",
             "value" : "Kendi mağazanın kapanış düzenlerini ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف أنماط إغلاق متجرك الخاص"
+          }
         }
       }
     },
@@ -41947,6 +44071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kahve ısmarla %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ لنا قهوة %@"
           }
         }
       }
@@ -42092,6 +44222,12 @@
             "state" : "translated",
             "value" : "Kahve ısmarla, %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ لنا قهوة، %@"
+          }
         }
       }
     },
@@ -42231,6 +44367,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -42383,6 +44525,12 @@
             "state" : "translated",
             "value" : "Costco Taegu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco دايغو"
+          }
         }
       }
     },
@@ -42530,6 +44678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Taegu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco دايغو"
           }
         }
       }
@@ -42679,6 +44833,12 @@
             "state" : "translated",
             "value" : "Costco Taegu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco دايغو"
+          }
         }
       }
     },
@@ -42826,6 +44986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco أولسان"
           }
         }
       }
@@ -42975,6 +45141,12 @@
             "state" : "translated",
             "value" : "Costco Ulsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco أولسان"
+          }
         }
       }
     },
@@ -43122,6 +45294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ulsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco أولسان"
           }
         }
       }
@@ -43271,6 +45449,12 @@
             "state" : "translated",
             "value" : "Costco normal"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco (الفروع العامة)"
+          }
         }
       }
     },
@@ -43418,6 +45602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco normal"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco (الفروع العامة)"
           }
         }
       }
@@ -43567,6 +45757,12 @@
             "state" : "translated",
             "value" : "Costco normal"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco (الفروع العامة)"
+          }
         }
       }
     },
@@ -43714,6 +45910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco Ilsan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco إيلسان"
           }
         }
       }
@@ -43863,6 +46065,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco إيلسان"
+          }
         }
       }
     },
@@ -44011,6 +46219,12 @@
             "state" : "translated",
             "value" : "Costco Ilsan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco إيلسان"
+          }
         }
       }
     },
@@ -44155,6 +46369,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costco"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Costco"
@@ -44307,6 +46527,12 @@
             "state" : "translated",
             "value" : "Normal – Yangpyeong, Daejeon, Yangjae, \nSangbong, Busan, Gwangmyeong, \nCheonan, Uijeongbu, Gongse, \nSongdo, Sejong, Hanam, \nGimhae, Gocheok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفروع العامة - يانغبيونغ، دايجون، يانغجاي، \nسانغبونغ، بوسان، غوانغميونغ، \nتشونان، أويجونغبو، غونغسي، \nسونغدو، سيجونغ، هانام، \nغيمهاي، غوتشوك"
+          }
         }
       }
     },
@@ -44449,6 +46675,12 @@
             "state" : "translated",
             "value" : "Düzen ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة نمط"
+          }
         }
       }
     },
@@ -44590,6 +46822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lütfen bir düzen ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى إضافة نمط"
           }
         }
       }
@@ -44740,6 +46978,12 @@
             "state" : "translated",
             "value" : "Çoklu mağaza takibinin, bildirimlerin ve daha fazlasının kilidini aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح متابعة عدة متاجر والتنبيهات وغيرها"
+          }
         }
       }
     },
@@ -44884,6 +47128,12 @@
             "state" : "translated",
             "value" : "Bir kez daha destek ol ☕️"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ادعمنا مرة أخرى ☕️"
+          }
         }
       }
     },
@@ -45027,6 +47277,12 @@
             "state" : "translated",
             "value" : "Seçilen şube"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفرع المعني"
+          }
         }
       }
     },
@@ -45169,6 +47425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mevcut konumuna göre yakındaki mağazaları bulur ve önerir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نجد لك أقرب المتاجر ونقترحها بناءً على موقعك الحالي."
           }
         }
       }
@@ -45314,6 +47576,12 @@
             "state" : "translated",
             "value" : "Tamam"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسنًا"
+          }
         }
       }
     },
@@ -45457,6 +47725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bahşiş seçenekleri listesini yeniden yükler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعيد تحميل خيارات الدعم"
           }
         }
       }
@@ -45602,6 +47876,12 @@
             "state" : "translated",
             "value" : "Bahşiş seçenekleri yükleniyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ تحميل خيارات الدعم"
+          }
         }
       }
     },
@@ -45745,6 +48025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bahşiş seçenekleri yüklenemedi. Tekrar dene"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل خيارات الدعم. أعد المحاولة"
           }
         }
       }
@@ -45890,6 +48176,12 @@
             "state" : "translated",
             "value" : "Bahşiş hakkında"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عن الدعم"
+          }
         }
       }
     },
@@ -46033,6 +48325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bahşiş kartını kapatır. 30 gün boyunca tekrar görünmez"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يغلق بطاقة الدعم. لن تظهر مجددًا لمدة 30 يومًا"
           }
         }
       }
@@ -46178,6 +48476,12 @@
             "state" : "translated",
             "value" : "Destekçi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "داعم"
+          }
         }
       }
     },
@@ -46321,6 +48625,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Destekçi. Şu ana kadar %lld kahve. Uygulamayı desteklediğin için teşekkürler."
+          }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. %lld فنجان قهوة حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. فنجان قهوة واحد حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. فنجانا قهوة حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. %lld فناجين قهوة حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. %lld فنجانًا من القهوة حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "داعم. %lld فنجان قهوة حتى الآن. شكرًا لدعمك التطبيق."
+                }
+              }
+            }
           }
         }
       }
@@ -46466,6 +48812,12 @@
             "state" : "translated",
             "value" : "Seni unutmadık!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم ننسَك أيها الداعم!"
+          }
         }
       }
     },
@@ -46609,6 +48961,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desteğin için teşekkürler. Şu ana kadar %lld kahve gönderdin."
+          }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن %lld فنجان قهوة."
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن فنجان قهوة واحدًا."
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن فنجانَي قهوة."
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن %lld فناجين قهوة."
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن %lld فنجانًا من القهوة."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا لدعمك. أرسلت لنا حتى الآن %lld فنجان قهوة."
+                }
+              }
+            }
           }
         }
       }
@@ -46761,6 +49155,12 @@
             "state" : "translated",
             "value" : "Desteğin için çok teşekkürler. Bizim için çok değerli."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شكرًا جزيلًا لدعمك. دعمك يعني لنا الكثير."
+          }
         }
       }
     },
@@ -46904,6 +49304,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desteğin için çok teşekkürler. Şu ana kadar %lld kahve gönderdin."
+          }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن %lld فنجان قهوة."
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن فنجان قهوة واحدًا."
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن فنجانَي قهوة."
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن %lld فناجين قهوة."
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن %lld فنجانًا من القهوة."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "شكرًا جزيلًا لدعمك. أرسلت لنا حتى الآن %lld فنجان قهوة."
+                }
+              }
+            }
           }
         }
       }
@@ -47055,6 +49497,12 @@
             "state" : "translated",
             "value" : "Kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق"
+          }
         }
       }
     },
@@ -47196,6 +49644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış düzeni"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نمط الإغلاق"
           }
         }
       }
@@ -47341,6 +49795,12 @@
             "state" : "translated",
             "value" : "Kapanışı duyur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شارك خبر الإغلاق"
+          }
         }
       }
     },
@@ -47484,6 +49944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış kartı görselini paylaşır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشارك صورة بطاقة الإغلاق"
           }
         }
       }
@@ -47635,6 +50101,12 @@
             "state" : "translated",
             "value" : "Kapanış kartı. %1$@ %2$@, %3$@ kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بطاقة إغلاق. %1$@ %2$@، %3$@ مغلق"
+          }
         }
       }
     },
@@ -47779,6 +50251,12 @@
             "state" : "translated",
             "value" : "Bir kapanış kartı oluşturur ve paylaşır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ينشئ بطاقة إغلاق ويشاركها"
+          }
         }
       }
     },
@@ -47922,6 +50400,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış kartını Instagram Hikâyeleri’nde paylaşır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشارك بطاقة الإغلاق في قصة Instagram"
           }
         }
       }
@@ -48074,6 +50558,12 @@
             "state" : "translated",
             "value" : "Kapanış yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا إغلاق"
+          }
         }
       }
     },
@@ -48215,6 +50705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış düzeni"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نمط الإغلاق"
           }
         }
       }
@@ -48364,6 +50860,12 @@
             "state" : "translated",
             "value" : "Kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق"
+          }
         }
       }
     },
@@ -48506,6 +51008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün kapalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق اليوم"
           }
         }
       }
@@ -48651,6 +51159,12 @@
             "state" : "translated",
             "value" : "Kapalı mağaza yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد متاجر مغلقة"
+          }
         }
       }
     },
@@ -48793,6 +51307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı günler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام الإغلاق"
           }
         }
       }
@@ -48937,6 +51457,12 @@
             "state" : "translated",
             "value" : "Kapalı günlerden 3 gün ve 1 gün önce bildirim gönderilir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصلك التنبيهات قبل أيام الإغلاق بثلاثة أيام وبيوم واحد."
+          }
         }
       }
     },
@@ -49078,6 +51604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı gün uyarıları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيهات أيام الإغلاق"
           }
         }
       }
@@ -49222,6 +51754,12 @@
             "state" : "translated",
             "value" : "Lütfen önce kapalı gün uyarılarını aç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فعّل تنبيهات أيام الإغلاق أولًا."
+          }
         }
       }
     },
@@ -49363,6 +51901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı gün uyarıları almak için Ayarlar’da bildirimlere izin ver."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لتصلك تنبيهات أيام الإغلاق، اسمح بالتنبيهات من الإعدادات."
           }
         }
       }
@@ -49506,6 +52050,12 @@
             "state" : "translated",
             "value" : "Kapalı gün bilgisi yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا معلومات عن أيام الإغلاق"
+          }
         }
       }
     },
@@ -49648,6 +52198,12 @@
             "state" : "translated",
             "value" : "Kapalı gün bilgisi mevcut değil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تتوفر معلومات عن أيام الإغلاق"
+          }
         }
       }
     },
@@ -49789,6 +52345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı gün takvimi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقويم أيام الإغلاق"
           }
         }
       }
@@ -49934,6 +52496,12 @@
             "state" : "translated",
             "value" : "Kapalı gün takvimini gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض تقويم أيام الإغلاق"
+          }
         }
       }
     },
@@ -50077,6 +52645,12 @@
             "state" : "translated",
             "value" : "Kapalı günleri seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر أيام الإغلاق"
+          }
         }
       }
     },
@@ -50219,6 +52793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı gün değil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس يوم إغلاق"
           }
         }
       }
@@ -50368,6 +52948,12 @@
             "state" : "translated",
             "value" : "“%@” bulundu. Kontrol et ve Ekle’ye dokun."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وجدنا «%@». تحقّق منه ثم اضغط إضافة."
+          }
         }
       }
     },
@@ -50515,6 +53101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önümüzdeki 7 gün içinde kapanan yer yok"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا شيء مغلق في الأيام السبعة القادمة"
           }
         }
       }
@@ -50664,6 +53256,12 @@
             "state" : "translated",
             "value" : "Restoranlarından hiçbiri önümüzdeki 7 gün içinde kapalı değil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا مطعم من مطاعمك يُغلق في الأيام السبعة القادمة"
+          }
         }
       }
     },
@@ -50811,6 +53409,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu hafta kapalı gün yok"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا إغلاق هذا الأسبوع"
           }
         }
       }
@@ -50960,6 +53564,12 @@
             "state" : "translated",
             "value" : "Yönet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدارة"
+          }
         }
       }
     },
@@ -51107,6 +53717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Naver Maps paylaşım bağlantısı veya ekran görüntüsüyle ekleyebilirsin"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يمكنك الإضافة من رابط مشاركة Naver Map أو من لقطة شاشة"
           }
         }
       }
@@ -51256,6 +53872,12 @@
             "state" : "translated",
             "value" : "Restoranlarım"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مطاعمي"
+          }
         }
       }
     },
@@ -51403,6 +54025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoranlar · 7 gün"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مطاعمي · 7 أيام"
           }
         }
       }
@@ -51552,6 +54180,12 @@
             "state" : "translated",
             "value" : "Restoranlarını ekle veya düzenle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف مطاعمك أو عدّلها"
+          }
         }
       }
     },
@@ -51699,6 +54333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Henüz restoran yok. Uygulamadan ekle."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا مطاعم بعد. أضفها من التطبيق."
           }
         }
       }
@@ -51848,6 +54488,12 @@
             "state" : "translated",
             "value" : "Veya paylaşılan bağlantıyı ya da metni buraya yapıştır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أو الصق رابط المشاركة أو النص هنا"
+          }
         }
       }
     },
@@ -51995,6 +54641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hızlı içe aktarma"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استيراد سريع"
           }
         }
       }
@@ -52144,6 +54796,12 @@
             "state" : "translated",
             "value" : "Fotoğraftaki kapanış bilgisini cihazında okur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ معلومات الإغلاق من الصورة على جهازك"
+          }
         }
       }
     },
@@ -52291,6 +54949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotoğraf yüklenemedi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل الصورة"
           }
         }
       }
@@ -52440,6 +55104,12 @@
             "state" : "translated",
             "value" : "Kapalı restoran yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا مطعم مغلق"
+          }
         }
       }
     },
@@ -52587,6 +55257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ekran görüntüsü"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لقطة شاشة"
           }
         }
       }
@@ -52736,6 +55412,12 @@
             "state" : "translated",
             "value" : "Restoranı sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف المطعم"
+          }
         }
       }
     },
@@ -52883,6 +55565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoran adı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المطعم"
           }
         }
       }
@@ -53032,6 +55720,12 @@
             "state" : "translated",
             "value" : "Restoran"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المطعم"
+          }
         }
       }
     },
@@ -53179,6 +55873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoran ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة مطعم"
           }
         }
       }
@@ -53328,6 +56028,12 @@
             "state" : "translated",
             "value" : "Restoran ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة مطعم"
+          }
         }
       }
     },
@@ -53475,6 +56181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoranı düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل المطعم"
           }
         }
       }
@@ -53624,6 +56336,12 @@
             "state" : "translated",
             "value" : "Restoranlarından hiçbiri önümüzdeki 7 gün içinde kapalı değil."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا مطعم من مطاعمك يُغلق في الأيام السبعة القادمة."
+          }
         }
       }
     },
@@ -53771,6 +56489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önümüzdeki 7 gün içinde restoranlarının kapalı olduğu günleri nokta ile gösterir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض نقطة على الأيام التي تُغلق فيها مطاعمك خلال الأيام السبعة القادمة."
           }
         }
       }
@@ -53920,6 +56644,12 @@
             "state" : "translated",
             "value" : "Restoranları uygulamada ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف مطاعمك من التطبيق"
+          }
         }
       }
     },
@@ -54067,6 +56797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Her gün açık olarak görünüyor — sabit tatil günü yok."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مكتوب أنه مفتوح طوال أيام السنة، فلا يوم إغلاق ثابت له."
           }
         }
       }
@@ -54216,6 +56952,12 @@
             "state" : "translated",
             "value" : "Uygulamayı açmadan görmek için “Restoranlar · 7 gün” widget’ını Ana Ekran’a ekle."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف أداة «مطاعمي · 7 أيام» إلى الشاشة الرئيسية لترى هذا دون فتح التطبيق."
+          }
         }
       }
     },
@@ -54363,6 +57105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bunu içe aktar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استيراد هذا"
           }
         }
       }
@@ -54512,6 +57260,12 @@
             "state" : "translated",
             "value" : "Ad alındı ancak kapanış bilgisi yok. Çalışma saatlerinin ekran görüntüsünü dene veya günleri aşağıdan seç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حصلنا على الاسم بلا معلومات إغلاق. جرّب لقطة شاشة لساعات العمل أو اختر الأيام بالأسفل."
+          }
         }
       }
     },
@@ -54659,6 +57413,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sık gittiğin restoranların sabit tatil günlerini gir; önümüzdeki 7 gün içindeki kapalı günleri nokta ile işaretleyelim."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف أيام الإغلاق الثابتة للمطاعم التي تزورها، وسنضع نقطة على أيام إغلاقها خلال الأيام السبعة القادمة."
           }
         }
       }
@@ -54808,6 +57568,12 @@
             "state" : "translated",
             "value" : "Nokta rengi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لون النقطة"
+          }
         }
       }
     },
@@ -54955,6 +57721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sabit tatil günleri"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام الإغلاق الثابتة"
           }
         }
       }
@@ -55104,6 +57876,12 @@
             "state" : "translated",
             "value" : "Adres (isteğe bağlı)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العنوان (اختياري)"
+          }
         }
       }
     },
@@ -55251,6 +58029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Harita uygulamasında restoranda Paylaş → Kopyala’ya dokunup buraya yapıştır veya bilgi sayfasının ekran görüntüsünü seç."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "في تطبيق الخرائط، اضغط مشاركة ← نسخ على المطعم والصقه هنا، أو اختر لقطة شاشة لصفحة معلوماته."
           }
         }
       }
@@ -55400,6 +58184,12 @@
             "state" : "translated",
             "value" : "Haritalar’da aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح في الخرائط"
+          }
         }
       }
     },
@@ -55547,6 +58337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tatil gününü elle ekle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة يوم إغلاق يدويًا"
           }
         }
       }
@@ -55696,6 +58492,12 @@
             "state" : "translated",
             "value" : "Lütfen bir tatil günü ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى إضافة يوم إغلاق"
+          }
         }
       }
     },
@@ -55843,6 +58645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış bilgisini düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل معلومات الإغلاق"
           }
         }
       }
@@ -55992,6 +58800,12 @@
             "state" : "translated",
             "value" : "Kapanış bilgisi aranıyor…"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ البحث عن معلومات الإغلاق…"
+          }
         }
       }
     },
@@ -56139,6 +58953,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapanış bilgisi bulunamadı. Günleri aşağıdan seç."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم نجد معلومات الإغلاق. اختر الأيام بالأسفل."
           }
         }
       }
@@ -56288,6 +59108,12 @@
             "state" : "translated",
             "value" : "Gönderi 4:5"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منشور 4:5"
+          }
         }
       }
     },
@@ -56435,6 +59261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hikâye 9:16"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قصة 9:16"
           }
         }
       }
@@ -56584,6 +59416,12 @@
             "state" : "translated",
             "value" : "2 haftalık kapanış takvimi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقويم إغلاق لأسبوعين"
+          }
         }
       }
     },
@@ -56731,6 +59569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yakında"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإغلاقات القادمة"
           }
         }
       }
@@ -56880,6 +59724,12 @@
             "state" : "translated",
             "value" : "App Store’da “DontGoMart” ara"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابحث عن «DontGoMart» في App Store"
+          }
         }
       }
     },
@@ -57027,6 +59877,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağazalar kapalı!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتاجر مغلقة!"
           }
         }
       }
@@ -57176,6 +60032,12 @@
             "state" : "translated",
             "value" : "Fotoğraf"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صورة"
+          }
         }
       }
     },
@@ -57323,6 +60185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فيديو"
           }
         }
       }
@@ -57472,6 +60340,12 @@
             "state" : "translated",
             "value" : "Biçim"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المقاس"
+          }
         }
       }
     },
@@ -57619,6 +60493,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ortam"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النوع"
           }
         }
       }
@@ -57768,6 +60648,12 @@
             "state" : "translated",
             "value" : "Kapanış kartı. %1$@ %2$@, %3$@ kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بطاقة إغلاق. %1$@ %2$@، %3$@ مغلق"
+          }
         }
       }
     },
@@ -57915,6 +60801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video hazırlanıyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نصنع الفيديو"
           }
         }
       }
@@ -58064,6 +60956,12 @@
             "state" : "translated",
             "value" : "Instagram’da paylaş"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النشر على Instagram"
+          }
         }
       }
     },
@@ -58211,6 +61109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gönderi, hikâye veya reel olarak paylaşmak için paylaşım listesinden Instagram’ı seç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر Instagram من قائمة المشاركة لتنشره منشورًا أو قصة أو ريلز"
           }
         }
       }
@@ -58360,6 +61264,12 @@
             "state" : "translated",
             "value" : "Instagram hikâye düzenleyicisini doğrudan açar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح محرر قصص Instagram مباشرة"
+          }
         }
       }
     },
@@ -58507,6 +61417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paylaş"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشاركة"
           }
         }
       }
@@ -58656,6 +61572,12 @@
             "state" : "translated",
             "value" : "Kapanış videosunu paylaşır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشارك فيديو يوم الإغلاق"
+          }
         }
       }
     },
@@ -58803,6 +61725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video oluşturulamadı. Bunun yerine fotoğrafı paylaş."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر صنع الفيديو. شارك الصورة بدلًا منه."
           }
         }
       }
@@ -58952,6 +61880,12 @@
             "state" : "translated",
             "value" : "%@ tarihinde yeniden açılıyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح من جديد %@"
+          }
         }
       }
     },
@@ -59100,6 +62034,12 @@
             "state" : "translated",
             "value" : "Alışverişi %@ tarihine kadar bitir"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنهِ تسوّقك بحلول %@"
+          }
         }
       }
     },
@@ -59241,6 +62181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı günleri görmek için Ayarlar'dan bir mağaza seç."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر متجرًا في الإعدادات لترى أيام إغلاقه."
           }
         }
       }
@@ -59384,6 +62330,12 @@
             "state" : "translated",
             "value" : "Bugün açık ✅"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح اليوم ✅"
+          }
         }
       }
     },
@@ -59525,6 +62477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün kapalı 🚫"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق اليوم 🚫"
           }
         }
       }
@@ -59668,6 +62626,12 @@
             "state" : "translated",
             "value" : "Bugün bazıları kapalı: %@ ⚠️"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعضها مغلق اليوم: %@ ⚠️"
+          }
         }
       }
     },
@@ -59809,6 +62773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$@) — %3$@ kapalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$@) — %3$@ مغلق"
           }
         }
       }
@@ -59952,6 +62922,12 @@
             "state" : "translated",
             "value" : "Mağazaların kapalı günlerini DontGoMart ile önceden öğren."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعرف أيام إغلاق المتاجر مسبقًا مع DontGoMart."
+          }
         }
       }
     },
@@ -60093,6 +63069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İki haftada bir %1$@ · %2$@ itibarıyla"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ كل أسبوعين · بدءًا من %2$@"
           }
         }
       }
@@ -60236,6 +63218,12 @@
             "state" : "translated",
             "value" : "İki haftada bir %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ كل أسبوعين"
+          }
         }
       }
     },
@@ -60377,6 +63365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Her %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام %@"
           }
         }
       }
@@ -60520,6 +63514,12 @@
             "state" : "translated",
             "value" : "%1$@ · %2$@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ (%1$@)"
+          }
         }
       }
     },
@@ -60661,6 +63661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld. hafta"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأسبوع %lld"
           }
         }
       }
@@ -60804,6 +63810,12 @@
             "state" : "translated",
             "value" : "Her hafta"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل أسبوع"
+          }
         }
       }
     },
@@ -60945,6 +63957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İki haftada bir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل أسبوعين"
           }
         }
       }
@@ -61088,6 +64106,12 @@
             "state" : "translated",
             "value" : "Aylık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسابيع محددة شهريًا"
+          }
         }
       }
     },
@@ -61229,6 +64253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir gün seç; o gün her hafta kapalı gün olarak tekrarlanır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر يومًا من الأسبوع ليتكرر إغلاقًا كل أسبوع."
           }
         }
       }
@@ -61372,6 +64402,12 @@
             "state" : "translated",
             "value" : "İlk kapalı günü seç; o günden itibaren iki haftada bir tekrarlanır. (Aydan bağımsız olarak her zaman 14 gün arayla.)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر أول يوم إغلاق ليتكرر كل أسبوعين من ذلك اليوم. (كل 14 يومًا تمامًا بغض النظر عن الشهر)"
+          }
         }
       }
     },
@@ -61513,6 +64549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza her ay belirli haftalarda kapalıysa bunu kullan. (ör. 2. ve 4. salı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدمه حين يُغلق المتجر في أسابيع وأيام محددة من كل شهر. (مثال: الثلاثاء في الأسبوعين الثاني والرابع)"
           }
         }
       }
@@ -61656,6 +64698,12 @@
             "state" : "translated",
             "value" : "İki haftada bir %1$@ · %2$@ …"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ كل أسبوعين · %2$@ …"
+          }
         }
       }
     },
@@ -61797,6 +64845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@. hafta · %2$@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ · الأسبوع %1$@"
           }
         }
       }
@@ -61940,6 +64994,12 @@
             "state" : "translated",
             "value" : "%@ kapalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق %@"
+          }
         }
       }
     },
@@ -62081,6 +65141,58 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bildirim saati %2$@: %1$lld gün önce ve bir gün önce."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصلك التنبيهات في %2$@، %1$#@d@ من يوم الإغلاق وفي اليوم السابق له."
+          },
+          "substitutions" : {
+            "d" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -62224,6 +65336,58 @@
             "state" : "translated",
             "value" : "Bildirim saati %2$@: kapalı günden %1$lld gün önce."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصلك التنبيهات في %2$@، %1$#@d@ من يوم الإغلاق."
+          },
+          "substitutions" : {
+            "d" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "قبل %arg يوم"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -62365,6 +65529,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kullanım istatistikleri (geliştirici)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إحصاءات الاستخدام (للمطوّر)"
           }
         }
       }
@@ -62508,6 +65678,12 @@
             "state" : "translated",
             "value" : "Destek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدعم الفني"
+          }
         }
       }
     },
@@ -62646,6 +65822,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "💡"
@@ -62792,6 +65974,12 @@
             "state" : "translated",
             "value" : "Alışverişi bugün yap"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنهِ تسوّقك اليوم"
+          }
         }
       }
     },
@@ -62933,6 +66121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alışverişi yarına kadar bitir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنهِ تسوّقك بحلول الغد"
           }
         }
       }
@@ -63076,6 +66270,12 @@
             "state" : "translated",
             "value" : "Alışverişi 2 gün içinde bitir"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنهِ تسوّقك بحلول بعد غد"
+          }
         }
       }
     },
@@ -63217,6 +66417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "告訴你所選賣場的下次公休日。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يخبرك بيوم الإغلاق القادم للمتاجر التي اخترتها."
           }
         }
       }
@@ -63360,6 +66566,12 @@
             "state" : "translated",
             "value" : "請先在 App 裡選擇賣場。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر متاجرك في التطبيق أولًا."
+          }
         }
       }
     },
@@ -63501,6 +66713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有即將到來的公休日。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد أيام إغلاق قادمة."
           }
         }
       }
@@ -63644,6 +66862,12 @@
             "state" : "translated",
             "value" : "%@今天公休。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ مغلق اليوم."
+          }
         }
       }
     },
@@ -63785,6 +67009,58 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@在%2$@公休，還有 %3$lld 天。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُغلق %1$@ في %2$@، أي بعد %3$#@d@."
+          },
+          "substitutions" : {
+            "d" : {
+              "argNum" : 3,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يوم واحد"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "يومين"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg أيام"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يومًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg يوم"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -63928,6 +67204,12 @@
             "state" : "translated",
             "value" : "本週日營業"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد هذا الأسبوع"
+          }
         }
       }
     },
@@ -64069,6 +67351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "告訴你所選賣場本週日是否營業。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يخبرك هل متاجرك مفتوحة يوم الأحد هذا."
           }
         }
       }
@@ -64212,6 +67500,12 @@
             "state" : "translated",
             "value" : "本週日公休，請週六去。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مغلق يوم الأحد هذا. اذهب يوم السبت بدلًا منه."
+          }
         }
       }
     },
@@ -64353,6 +67647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週日營業。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتوح يوم الأحد هذا."
           }
         }
       }
@@ -64502,6 +67802,12 @@
             "state" : "translated",
             "value" : "下次公休日"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم الإغلاق القادم"
+          }
         }
       }
     },
@@ -64649,6 +67955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週日"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحد هذا الأسبوع"
           }
         }
       }
@@ -64800,6 +68112,12 @@
             "state" : "translated",
             "value" : "Restoranı aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح مطعم"
+          }
         }
       }
     },
@@ -64949,6 +68267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaydettiğin restoranın kapalı olduğu günleri açar."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح أيام إغلاق مطعم حفظته."
           }
         }
       }
@@ -65100,6 +68424,12 @@
             "state" : "translated",
             "value" : "Restoran"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المطعم"
+          }
         }
       }
     },
@@ -65249,6 +68579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapalı günleri açılacak kayıtlı restoran"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المطعم المحفوظ الذي تريد فتح أيام إغلاقه"
           }
         }
       }
@@ -65400,6 +68736,12 @@
             "state" : "translated",
             "value" : "Uygulama adını söylemeden Siri’ye sor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل Siri دون ذكر اسم التطبيق"
+          }
         }
       }
     },
@@ -65550,6 +68892,12 @@
             "state" : "translated",
             "value" : "Uygulama adını söylemesen de Siri anlar; mağazanın kapalı günlerini ve restoranlarını bulur."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سيفهمك Siri دون ذكر اسم التطبيق، ويجد أيام إغلاق متجرك ومطاعمك."
+          }
         }
       }
     },
@@ -65698,6 +69046,12 @@
             "state" : "translated",
             "value" : "Ücretsiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجاني"
+          }
         }
       }
     },
@@ -65842,6 +69196,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Plus"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart Plus"
@@ -65994,6 +69354,12 @@
             "state" : "translated",
             "value" : "DontGoMart Pro"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Pro"
+          }
         }
       }
     },
@@ -66138,6 +69504,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DontGoMart Plus · Pro"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "DontGoMart Plus · Pro"
@@ -66290,6 +69662,12 @@
             "state" : "translated",
             "value" : "Planlar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطط"
+          }
         }
       }
     },
@@ -66438,6 +69816,12 @@
             "state" : "translated",
             "value" : "Artık boşuna yol yok, mahalledeki dükkânlar için de. Yıllık ya da ömür boyu seçeneğini seç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسوّق بلا مشاوير ضائعة، حتى لمتاجر حيّك. اختر الاشتراك السنوي أو مدى الحياة."
+          }
         }
       }
     },
@@ -66582,6 +69966,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -66734,6 +70124,12 @@
             "state" : "translated",
             "value" : "Sınırsız"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بلا حدود"
+          }
         }
       }
     },
@@ -66881,6 +70277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dahil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشمول"
           }
         }
       }
@@ -67030,6 +70432,12 @@
             "state" : "translated",
             "value" : "Dahil değil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غير مشمول"
+          }
         }
       }
     },
@@ -67177,6 +70585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zorunlu kapalı günler · bugün açık mı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام الإغلاق الإلزامية · هل هو مفتوح اليوم"
           }
         }
       }
@@ -67326,6 +70740,12 @@
             "state" : "translated",
             "value" : "Takvim · kapalı gün uyarıları · banner"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقويم · تنبيهات الإغلاق · الشريط"
+          }
         }
       }
     },
@@ -67473,6 +70893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoranlarım · 7 günlük kart"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مطاعمي · بطاقة إغلاق 7 أيام"
           }
         }
       }
@@ -67622,6 +71048,12 @@
             "state" : "translated",
             "value" : "Paylaşım kartı (gönderi)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بطاقة مشاركة (منشور)"
+          }
         }
       }
     },
@@ -67769,6 +71201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hikâye boyutu · video paylaşımı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مقاس القصة · مشاركة الفيديو"
           }
         }
       }
@@ -67918,6 +71356,12 @@
             "state" : "translated",
             "value" : "En yakın kapalı gün widget’ı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أداة أقرب يوم إغلاق"
+          }
         }
       }
     },
@@ -68065,6 +71509,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 ek ana ekran widget’ı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 أدوات إضافية للشاشة الرئيسية"
           }
         }
       }
@@ -68214,6 +71664,12 @@
             "state" : "translated",
             "value" : "Kilit ekranı widget’ları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدوات شاشة القفل"
+          }
         }
       }
     },
@@ -68361,6 +71817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restoran kapalı günlerini otomatik doldur"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعبئة أيام إغلاق المطاعم تلقائيًا"
           }
         }
       }
@@ -68510,6 +71972,12 @@
             "state" : "translated",
             "value" : "Mevcut plan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطتك الحالية"
+          }
         }
       }
     },
@@ -68657,6 +72125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mahalledeki tüm dükkânları takip et"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع كل متاجر حيّك"
           }
         }
       }
@@ -68806,6 +72280,12 @@
             "state" : "translated",
             "value" : "Uygulamayı açmadan öğren, doldurmayı ona bırak"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعرف دون فتح التطبيق، ودع الإدخال علينا"
+          }
         }
       }
     },
@@ -68953,6 +72433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yıllık aboneliği başlat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الاشتراك السنوي"
           }
         }
       }
@@ -69102,6 +72588,12 @@
             "state" : "translated",
             "value" : "Ömür boyu Pro’ya yükselt"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الترقية إلى Pro مدى الحياة"
+          }
         }
       }
     },
@@ -69249,6 +72741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ömür boyu satın al"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشراء مدى الحياة"
           }
         }
       }
@@ -69398,6 +72896,12 @@
             "state" : "translated",
             "value" : "Haftalık · aylık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك أسبوعي · شهري"
+          }
         }
       }
     },
@@ -69545,6 +73049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haftalık · %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك أسبوعي · %@"
           }
         }
       }
@@ -69694,6 +73204,12 @@
             "state" : "translated",
             "value" : "Aylık · %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك شهري · %@"
+          }
         }
       }
     },
@@ -69841,6 +73357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fiyatlar yükleniyor…"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ تحميل الأسعار…"
           }
         }
       }
@@ -69990,6 +73512,12 @@
             "state" : "translated",
             "value" : "Planlar yüklenemedi. İnternet bağlantını kontrol edip tekrar dene."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل الخطط. تحقّق من اتصالك بالإنترنت ثم أعد التحميل."
+          }
         }
       }
     },
@@ -70137,6 +73665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yeniden yükle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة التحميل"
           }
         }
       }
@@ -70286,6 +73820,12 @@
             "state" : "translated",
             "value" : "Abonelikler, dönem bitmeden en az 24 saat önce iptal edilmezse aynı fiyattan otomatik olarak yenilenir ve Apple Hesabına yansıtılır. Yıllık aboneliği ilk kez başlatırsan ilk yıl indirimli fiyattan ücretlendirilir, sonrasında normal fiyattan yenilenir. Yönetmek veya iptal etmek için App Store hesap ayarlarını kullan. Ömür boyu seçeneği abonelik değil, tek seferlik bir satın alımdır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتجدد الاشتراك تلقائيًا بالسعر نفسه ما لم يُلغَ قبل انتهاء المدة بـ24 ساعة على الأقل، ويُحصَّل من حساب Apple. عند بدء الاشتراك السنوي لأول مرة تُدفع السنة الأولى بالسعر المخفّض، ثم يتجدد بالسعر العادي. يمكنك الإدارة والإلغاء من إعدادات حسابك في App Store. خيار مدى الحياة دفعة واحدة وليس اشتراكًا."
+          }
         }
       }
     },
@@ -70433,6 +73973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kullanım Koşulları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شروط الاستخدام"
           }
         }
       }
@@ -70582,6 +74128,12 @@
             "state" : "translated",
             "value" : "Gizlilik Politikası"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسة الخصوصية"
+          }
         }
       }
     },
@@ -70729,6 +74281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus ile açılır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متاح مع Plus"
           }
         }
       }
@@ -70878,6 +74436,12 @@
             "state" : "translated",
             "value" : "Pro ile açılır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متاح مع Pro"
+          }
         }
       }
     },
@@ -71025,6 +74589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İstediğin kadar mağaza ve restoran ekle, kapalı gün haberlerini hikâye ve video olarak paylaş."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع ما شئت من المتاجر والمطاعم، وشارك أخبار الإغلاق قصصًا ومقاطع فيديو."
           }
         }
       }
@@ -71174,6 +74744,12 @@
             "state" : "translated",
             "value" : "Plus’ı gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض Plus"
+          }
         }
       }
     },
@@ -71321,6 +74897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yapıştır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لصق"
           }
         }
       }
@@ -71470,6 +75052,12 @@
             "state" : "translated",
             "value" : "Hikâye boyutu ve video Plus ile açılır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مقاس القصة والفيديو متاحان مع Plus."
+          }
         }
       }
     },
@@ -71617,6 +75205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Planları gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الخطط"
           }
         }
       }
@@ -71766,6 +75360,12 @@
             "state" : "translated",
             "value" : "Satın alımların geri yüklendi."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمت استعادة مشترياتك."
+          }
         }
       }
     },
@@ -71913,6 +75513,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu Apple Hesabında satın alım bulunamadı."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم نجد أي مشتريات لحساب Apple هذا."
           }
         }
       }
@@ -72062,6 +75668,12 @@
             "state" : "translated",
             "value" : "Her şey ücretsizken bizimleydin, bu yüzden Pro senin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنت معنا منذ كانت كل الميزات مجانية، لذا Pro لك."
+          }
         }
       }
     },
@@ -72210,6 +75822,12 @@
             "state" : "translated",
             "value" : "Destek tamamen gönülden ve özellik açmaz. İstediğin kadar gönderebilirsin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدعم تشجيع خالص لا يفتح ميزات. أرسله متى شئت."
+          }
         }
       }
     },
@@ -72357,6 +75975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mağaza listesini dışa aktar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصدير قائمة المتاجر"
           }
         }
       }
