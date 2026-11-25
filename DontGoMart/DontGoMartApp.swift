@@ -12,6 +12,8 @@ import LeeoKit
 struct DontGoMartApp: App {
 
     @Environment(\.scenePhase) private var scenePhase
+    /// 할인 배너에서 연 페이월
+    @State private var showsSalePaywall = false
 
     init() {
         // 백업 금고 — 예약된 복원 적용 · 업데이트 직전 백업. 저장된 마트를 읽기 전에 가장 먼저.
@@ -35,6 +37,9 @@ struct DontGoMartApp: App {
                 .leeoFeedbackReplyNotice(DontGoMartSpec.self)
                 // 아이폰 듀오: 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
+                // 할인 기간이면 앱을 연 뒤 한 번 할인 배너를 띄운다. 단추는 요금제를 연다 (LeeoKit).
+                .leeoSaleBanner { showsSalePaywall = true }
+                .sheet(isPresented: $showsSalePaywall) { PaywallView() }
                 .onAppear {
                     WidgetManager.shared.updateWidget()
                     ReviewManager.incrementAppOpenCount()
