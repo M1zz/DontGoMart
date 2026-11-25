@@ -27,22 +27,22 @@ W, H = 1242, 2688
 # (파일명, 레이아웃, 헤드라인, 서브카피) — 로케일별로 따로 쓴다(기계번역 금지)
 SHOTS = {
     "ko": [
-        ("01-main.png",     "hero-bleed",  "마트 가기 전,<br>딱 3초",   "오늘 여는지 한눈에 확인하세요"),
-        ("02-calendar.png", "left-text",   "이번 달 휴무일을<br>한눈에", "달력에서 쉬는 날만 콕 집어드려요"),
+        ("01-main.png",     "hero-bleed",  "마트 쉬는 날,<br>미리 알려 드려요", "오늘 여는지, 다음 휴무까지 며칠인지 한눈에"),
+        ("02-calendar.png", "left-text",   "헛걸음 없는<br>이번 달 장보기", "의무휴업일만 달력에 콕 집어 드려요"),
         ("03-marts.png",    "text-bottom", "내가 가는 마트만 골라서",    "대형마트·코스트코·명절 휴무까지"),
         ("04-pattern.png",  "flat-rotate", "동네 마트도<br>직접 등록",   "2·4주 화요일 같은 패턴 그대로"),
         ("05-share.png",    "dark",        "휴무 소식,<br>카드 한 장으로", "가족과 이웃에게 바로 알려주세요"),
     ],
     "en": [
-        ("01-main.png",     "hero-bleed",  "Check before<br>you go",      "See at a glance if the store is open"),
-        ("02-calendar.png", "left-text",   "This month's<br>closings",    "Every closed day, right on the calendar"),
+        ("01-main.png",     "hero-bleed",  "Know when Korean<br>supermarkets close", "Open today? Next closed day? At a glance"),
+        ("02-calendar.png", "left-text",   "Never find<br>the doors shut", "Every mandatory closing day on one calendar"),
         ("03-marts.png",    "text-bottom", "Track only your stores",      "Supermarkets, Costco, holiday closings"),
         ("04-pattern.png",  "flat-rotate", "Add your<br>local store",     "Patterns like 2nd and 4th Tuesday"),
         ("05-share.png",    "dark",        "Share a closing<br>in one card", "Let family and neighbors know"),
     ],
     "en-GB": [
-        ("01-main.png",     "hero-bleed",  "Check before<br>you go",      "See at a glance if the shop is open"),
-        ("02-calendar.png", "left-text",   "This month's<br>closings",    "Every closed day, right on the calendar"),
+        ("01-main.png",     "hero-bleed",  "Know when Korean<br>supermarkets close", "Open today? Next closed day? At a glance"),
+        ("02-calendar.png", "left-text",   "Never find<br>the doors shut", "Every mandatory closing day on one calendar"),
         ("03-marts.png",    "text-bottom", "Track only your shops",       "Supermarkets, Costco, bank holiday closings"),
         ("04-pattern.png",  "flat-rotate", "Add your<br>local shop",      "Patterns like 2nd and 4th Tuesday"),
         ("05-share.png",    "dark",        "Share a closing<br>in one card", "Let family and neighbours know"),

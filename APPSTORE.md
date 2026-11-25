@@ -12,20 +12,20 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 언어별 칸에 올린
 
 ### 부제
 
-의무휴업일 D-Day와 위젯으로 헛걸음 끝
+대형마트 의무휴업일, 오늘 여는지 바로
 
 ### 키워드
 
-문닫는날,정기휴무,휴점,의무휴업,휴업,마트휴무,마트쉬는날,영업일,수요일,대형마트,창고형,영업시간,쉬는날,일요일,장보기,명절,설날,추석,휴무,마트영업시간,대형마트휴무,공휴일
+마트쉬는날,문닫는날,정기휴무,휴점,의무휴업,영업시간,영업일,일요일,수요일,창고형,장보기,쉬는날,명절,설날,추석,공휴일,식당휴무,단골식당,휴무달력,위젯,오늘영업,휴일,주말
 
 ### 프로모션 텍스트
 
-이제 단골 식당이 쉬는 날도 챙겨요. 네이버지도 링크나 사진 한 장으로 휴무일을 가져오고, 마트 쉬는 날이 다가오면 화면 위에 바로 알려 드려요.
+마트 가기 전에 오늘 여는지부터 확인하세요. 대형마트와 코스트코 의무휴업일을 달력과 위젯으로 보여 주고, 쉬는 날 전에 알려 드려요. 단골 식당 휴무도 함께, 모두 무료예요.
 
 ### 설명
 
-마트 가기 전에, 오늘 문을 여는지부터 확인하세요.
-대형마트와 코스트코의 의무휴업일을 한눈에 보여 주고, 쉬는 날이 다가오면 미리 알려 드립니다.
+대형마트와 코스트코가 쉬는 날을 미리 알려 드려서, 문 닫은 마트 앞에서 돌아서는 일이 없게 해 주는 무료 앱입니다.
+마트 가기 전에 오늘 문을 여는지, 다음 휴무까지 며칠 남았는지 한눈에 확인하세요.
 
 오늘 갈 수 있는지 바로 보여 줘요
 앱을 열면 고른 매장이 오늘 영업하는지가 가장 먼저 보입니다. 다음 휴무일까지 남은 날짜와 다가오는 휴무일 목록도 함께 확인할 수 있어요.
@@ -70,20 +70,20 @@ DontGoMart: Store Closed Days
 
 ### 부제
 
-Know before you go shopping
+When Korean supermarkets close
 
 ### 키워드
 
-sunday,grocery,supermarket,mart,hours,opening,holiday,korea,closure,reminder,warehouse,widget
+korea,mart,sunday,grocery,hours,opening,holiday,reminder,warehouse,widget,expat,seoul,calendar
 
 ### 프로모션 텍스트
 
-Now covers your favorite restaurants too. Import their days off from a Naver Map link or a screenshot, and get a heads up when a store closure is near.
+Living in Korea? See if your supermarket or Costco is open today, count down to the next mandatory closing day, and get a reminder before it shuts. All free.
 
 ### 설명
 
-Check whether your store is open before you head out.
-DontGoMart tracks the mandatory closing days of large supermarkets and Costco in Korea, and reminds you before they shut.
+DontGoMart tells you when supermarkets and Costco in Korea are closed, so you never walk up to locked doors. Every feature is free.
+Open the app to see whether your store is open today and how many days are left until the next closed day.
 
 See today's status at a glance
 Open the app and the first thing you see is whether your stores are open today, followed by a countdown to the next closed day and a list of upcoming ones.
@@ -128,20 +128,20 @@ DontGoMart: Shop Closing Days
 
 ### 부제
 
-Check before you head out
+When Korean supermarkets close
 
 ### 키워드
 
-supermarket,grocery,opening hours,bank holiday,sunday,korea,mart,reminder,widget,calendar,restaurant
+korea,mart,grocery,opening hours,sunday,holiday,reminder,widget,calendar,restaurant,expat,seoul
 
 ### 프로모션 텍스트
 
-Now covers your favourite restaurants too. Import their days off from a Naver Map link or a screenshot, and get a heads-up when a shop closure is near.
+Living in Korea? See if your supermarket or Costco is open today, count down to the next mandatory closing day, and get a reminder before it shuts. All free.
 
 ### 설명
 
-Check whether your shop is open before you head out.
-DontGoMart tracks the mandatory closing days of large supermarkets and Costco in Korea, and reminds you before they shut.
+DontGoMart tells you when supermarkets and Costco in Korea are closed, so you never turn up to locked doors. Every feature is free.
+Open the app to see whether your shop is open today and how many days are left until the next closed day.
 
 See today's status at a glance
 Open the app and the first thing you see is whether your shops are open today, followed by a countdown to the next closed day and a list of upcoming ones.
