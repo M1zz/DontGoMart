@@ -35,6 +35,8 @@ struct DontGoMartApp: App {
                 .leeoSatisfactionCheck(DontGoMartSpec.self)
                 // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
                 .leeoFeedbackReplyNotice(DontGoMartSpec.self)
+                // 유료가 되면 축하, 모든 사용자에게 한 번은 감사 인사 (LeeoKit)
+                .leeoCelebrations(appName: DontGoMartSpec.displayName)
                 // 아이폰 듀오: 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
                 // 할인 기간이면 앱을 연 뒤 한 번 할인 배너를 띄운다. 단추는 요금제를 연다 (LeeoKit).

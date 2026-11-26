@@ -11,150 +11,175 @@ DeployBar 가 배포할 때 이 파일에서 '이 버전의 새로운 기능' �
 이제 주간 월간 연간 구독으로도 쓸 수 있어요
 할인 기간에는 앱을 열 때 소식을 알려 드려요
 할인 소식은 3일 동안 숨길 수 있어요
+보낸 의견이 채택되면 감사 선물을 드려요
 
 ### App Store (English)
 
 New weekly, monthly and yearly plans
 The app now tells you when a sale is on
 You can hide the sale notice for 3 days
+Get a thank-you gift when we use your idea
 
 ### App Store (en-GB)
 
 New weekly, monthly and yearly plans
 The app now tells you when a sale is on
 You can hide the sale notice for 3 days
+Get a thank-you gift when we use your idea
 
 ### 앱스토어 (日本語)
 
 週ごと、月ごと、年ごとのプランが登場
 セール期間中はアプリを開くとお知らせします
 お知らせは3日間非表示にできます
+ご意見が採用されるとお礼のギフトが届きます
 
 ### 앱스토어 (Русский)
 
 Подписка на неделю, месяц или год
 Приложение сообщит о скидках при запуске
 Уведомление можно скрыть на 3 дня
+Если мы примем ваш отзыв, вас ждёт подарок
 
 ### 앱스토어 (简体中文)
 
 新增按周、按月和按年订阅
 优惠期间打开应用时会通知你
 优惠通知可以隐藏3天
+你的建议被采纳后，会收到一份感谢礼物
 
 ### 앱스토어 (繁體中文)
 
 新增按週、按月和按年訂閱
 優惠期間開啟 App 時會通知你
 優惠通知可以隱藏3天
+你的建議被採納後，會收到一份感謝禮物
 
 ### 앱스토어 (Español)
 
 Suscríbete por semana, mes o año
 La app te avisa cuando hay ofertas
 Puedes ocultar el aviso durante 3 días
+Si adoptamos tu idea, te enviamos un regalo
 
 ### 앱스토어 (Deutsch)
 
 Neu: Abo pro Woche, Monat oder Jahr
 Die App zeigt dir laufende Angebote
 Du kannst den Hinweis 3 Tage ausblenden
+Danke-Geschenk für umgesetzte Vorschläge
 
 ### 앱스토어 (Français)
 
 Abonnement par semaine, mois ou année
 L’app vous prévient pendant les promos
 Vous pouvez masquer l’annonce 3 jours
+Un cadeau si nous retenons votre idée
 
 ### 앱스토어 (Italiano)
 
 Abbonati per settimana, mese o anno
 L’app ti avvisa quando c’è un’offerta
 Puoi nascondere l’avviso per 3 giorni
+Un regalo se scegliamo la tua idea
 
 ### 앱스토어 (pt-BR)
 
 Assine por semana, mês ou ano
 O app avisa quando há promoção
 Você pode ocultar o aviso por 3 dias
+Ganhe um presente se usarmos sua ideia
 
 ### 앱스토어 (ไทย)
 
 สมัครแบบรายสัปดาห์ รายเดือน หรือรายปีได้แล้ว
 ช่วงลดราคา เราจะแจ้งเมื่อคุณเปิดแอป
 ซ่อนการแจ้งเตือนได้ 3 วัน
+รับของขวัญเมื่อเรานำไอเดียของคุณไปใช้
 
 ### 앱스토어 (Tiếng Việt)
 
 Có gói đăng ký theo tuần, tháng và năm
 Khi có ưu đãi, ứng dụng sẽ báo cho bạn
 Bạn có thể ẩn thông báo trong 3 ngày
+Nhận quà khi góp ý của bạn được chọn
 
 ### 앱스토어 (Čeština)
 
 Nově předplatné na týden, měsíc nebo rok
 Během slev vám dáme vědět po otevření
 Oznámení můžete na 3 dny skrýt
+Za přijatý návrh dostanete dárek
 
 ### 앱스토어 (Dansk)
 
 Abonnér nu per uge, måned eller år
 Appen fortæller dig, når der er udsalg
 Du kan skjule beskeden i 3 dage
+Få en gave, når vi bruger din idé
 
 ### 앱스토어 (Ελληνικά)
 
 Συνδρομή ανά εβδομάδα, μήνα ή χρόνο
 Η εφαρμογή σας ενημερώνει για προσφορές
 Μπορείτε να την κρύψετε για 3 μέρες
+Ένα δώρο αν υιοθετήσουμε την ιδέα σας
 
 ### 앱스토어 (Suomi)
 
 Tilaa viikoksi, kuukaudeksi tai vuodeksi
 Alennuksista kerrotaan, kun avaat apin
 Ilmoituksen voi piilottaa 3 päiväksi
+Saat lahjan, kun toteutamme ideasi
 
 ### 앱스토어 (Indonesia)
 
 Langganan mingguan, bulanan, tahunan
 App memberi tahu saat ada diskon
 Pemberitahuan bisa disembunyikan 3 hari
+Dapatkan hadiah saat ide Anda kami pakai
 
 ### 앱스토어 (Norsk bokmål)
 
 Abonner per uke, måned eller år
 Appen sier fra når det er salg
 Du kan skjule meldingen i 3 dager
+Få en gave når vi bruker ideen din
 
 ### 앱스토어 (Nederlands)
 
 Abonneer per week, maand of jaar
 De app laat weten wanneer er korting is
 Je kunt de melding 3 dagen verbergen
+Een cadeau als we jouw idee gebruiken
 
 ### 앱스토어 (Polski)
 
 Subskrypcja na tydzień, miesiąc lub rok
 Aplikacja powie Ci o promocjach
 Powiadomienie możesz ukryć na 3 dni
+Prezent, gdy wykorzystamy Twój pomysł
 
 ### 앱스토어 (Svenska)
 
 Prenumerera per vecka, månad eller år
 Appen berättar nu när det är rea
 Du kan dölja meddelandet i 3 dagar
+Få en gåva när vi använder din idé
 
 ### 앱스토어 (Türkçe)
 
 Haftalık, aylık veya yıllık abone olun
 Uygulama indirimleri size haber verir
 Bildirimi 3 gün gizleyebilirsiniz
+Fikriniz kullanılırsa size bir hediye
 
 ### 앱스토어 (아랍어)
 
 اشتراكات أسبوعية وشهرية وسنوية جديدة
 سيخبرك التطبيق عند وجود تخفيضات
 يمكنك إخفاء إشعار التخفيض لمدة 3 أيام
+هدية شكر عندما نعتمد اقتراحك
 
 ## 2.0.12
 
